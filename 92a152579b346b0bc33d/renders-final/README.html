@@ -1,0 +1,123 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Record sconce: final product image set | Spindle</title>
+<style>
+:root{--bg:#f6f2ea;--ink:#1b1916;--mute:#6b645a;--line:#e3dccf;--accent:#b8732e;--panel:#fffdf8}
+@media (prefers-color-scheme:dark){:root{--bg:#121110;--ink:#ece6da;--mute:#a19887;--line:#2c2925;--accent:#e6a456;--panel:#1a1816}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Inter",system-ui,sans-serif}
+main{max-width:880px;margin:0 auto;padding:28px 16px 80px}
+a{color:var(--accent)} .back{font-size:14px;display:inline-block;margin-bottom:18px}
+h1{font-size:28px;line-height:1.2} h2{margin-top:36px;font-size:21px} h3{font-size:17px}
+table{border-collapse:collapse;width:100%;display:block;overflow-x:auto;font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top} th{background:var(--panel)}
+code{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:0 4px;font-size:.9em}
+pre{background:var(--panel);border:1px solid var(--line);padding:12px;overflow-x:auto;border-radius:8px}
+img{max-width:100%}
+</style></head><body><main><a class="back" href="../START-HERE.html">Back to START HERE</a>
+<h1>Record sconce: final product image set</h1>
+<p>Open <code>index.html</code> for the contact sheet (thumbnails link to the full PNGs).</p>
+<p>All stills are Blender 5.0.1 Cycles (Metal GPU, never EEVEE), OpenImageDenoise, AgX view
+transform, 448 adaptive samples. Every PNG was opened and checked by eye after rendering.
+Labels are invented ("Halo Pressings", "Meridian", "Ember", "Lantern", "After Hours",
+"sunroom", promo blanks). No real labels, band names, logos or album art anywhere.</p>
+<h2>What is in here</h2>
+<table>
+<thead>
+<tr>
+<th>Shot</th>
+<th>Files (<code>png/</code>)</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Heroes</td>
+<td><code>hero_chrome_*</code>, <code>hero_brass_*</code>, <code>hero_black_*</code></td>
+<td>12 in LP on warm cream plaster, 3/4 view like the chrome hero Austin liked. Brass = brushed, black = gloss black dome with a chrome bezel.</td>
+</tr>
+<tr>
+<td>7 in single</td>
+<td><code>single7_*</code></td>
+<td>Chromed 45-adapter cap with a small jewel dome, 6 in backplate.</td>
+</tr>
+<tr>
+<td>The Set</td>
+<td><code>set_*</code></td>
+<td>12 in centre + two 7 in, reference-1 composition. Tall version adds a credenza with leaning sleeves.</td>
+</tr>
+<tr>
+<td>Living room</td>
+<td><code>living_*</code></td>
+<td>Credenza, turntable, bookshelf speakers, cube record shelf, floor lamp, snake plant. Chrome.</td>
+</tr>
+<tr>
+<td>Home bar</td>
+<td><code>bar_*</code></td>
+<td>Brushed brass dome on an oxblood wall, back-bar shelves of bottles, rocks glasses. (Dark green was tried first: the amber halo turned olive on it.)</td>
+</tr>
+<tr>
+<td>Creative studio</td>
+<td><code>studio_*</code></td>
+<td>Black-dome 3-piece set over a desk with monitors, controller keyboard, laptop.</td>
+</tr>
+<tr>
+<td>Bedroom</td>
+<td><code>bedroom_*</code></td>
+<td>Over the nightstand, the sconce is the only light source.</td>
+</tr>
+<tr>
+<td>Macro</td>
+<td><code>macro_*</code></td>
+<td>Chrome dome on the label, room reflected in it, shallow depth of field.</td>
+</tr>
+<tr>
+<td>Change the record</td>
+<td><code>swap1_*</code>, <code>swap2_*</code>, <code>swap3_*</code>, <code>swap_triptych.png</code></td>
+<td>No hands: dome + felt washer off, record lifted off the post (felt pads and brass insert visible), new record on.</td>
+</tr>
+<tr>
+<td>Kit flat-lay</td>
+<td><code>flatlay_*</code></td>
+<td>Kraft box with pulp tray and backplate, printed lid, dome + washer + post, 45 cap, steel wall plate with bayonet studs, 12 V adapter with lead, insert card, screws/anchors/L key.</td>
+</tr>
+<tr>
+<td>Install</td>
+<td><code>install_*</code></td>
+<td>In-wall cutaway rebuilt from <code>render/sconce_v2.py</code>: halo on, real label, bigger sconce in frame, warm dim room.</td>
+</tr>
+<tr>
+<td>Video</td>
+<td><code>video/halo_fade_loop_1080x1920.mp4</code></td>
+<td>8 s loop, 30 fps, 240 frames: dark room, halo eases on, holds, eases off. <code>video/pass_*.exr</code> kept so the timing can be changed in seconds; <code>video/qa_frame_*.png</code> are the dark / mid / full check frames.</td>
+</tr>
+</tbody>
+</table>
+<p>Each still exists in three formats: <code>_wide</code> 1920x1080, <code>_square</code> 1600x1600, <code>_tall</code> 1080x1920.</p>
+<h2>How it was made</h2>
+<ul>
+<li><code>src/make_textures.py</code> (PIL): fictional labels, insert card, box lid print -&gt; <code>tex/</code>.</li>
+<li><code>src/final.py</code>: every scene except the install. Geometry follows <code>render/sconce_v2.py</code>
+  (1 in hub = wall gap, 10.5 in backplate, felt pads, 1/4-20 dome on a felt washer, brass insert).
+  One change for the look: a rear-facing COB ring just inside the backplate rim (plus a weaker
+  side strip). With the hub's 1 in gap, a rim-only strip gave a wide washed-out glow; aiming the
+  ring at the wall gives the tight amber halo of reference 1. Worth telling engineering: the halo
+  in these images assumes LEDs facing the wall near the rim.</li>
+<li><code>src/install_v3.py</code>: copy of <code>render/sconce_v2.py</code> (original untouched) with the camera, light,
+  label and halo changes.</li>
+<li><code>src/video_comp.py</code>: the loop is built from two linear EXR passes of the same frame (room only,
+  halo only). Light adds linearly, so ambient + k(t) x halo is exactly what a dimmer does, at the
+  cost of two renders instead of 240. Tone-mapped with Blender's own OCIO AgX so it matches the stills.</li>
+<li>Bar and studio glossy reflections use no HDR (it tinted the vinyl navy); living room exposure was raised after the first pass.</li>
+<li><code>src/batch.sh</code>: detached renderer (nohup, absolute PATH), skips finished files. <code>src/build_index.py</code>
+  makes <code>index.html</code> and <code>thumbs/</code>.</li>
+</ul>
+<p>Re-render one image: <code>Blender -b -P src/final.py -- &lt;scene&gt; &lt;wide|square|tall&gt; --samples 448</code>
+(scenes: hero_chrome hero_brass hero_black single7 set living bar studio bedroom macro swap1 swap2 swap3 flatlay darkroom).</p>
+<h2>Open items</h2>
+<ul>
+<li>Plants, furniture and props are procedural and read as set dressing, not hero objects. Fine for
+  ads and the site. If one image goes on a billboard, buy a real plant/furniture asset pack.</li>
+<li>Brand name is not final, so nothing carries a brand. The kit box lid says "SCONCE KIT No. 001".</li>
+<li>The 7 in cap is rendered as the design report's chromed 45 adapter; the 12 in dome is 1.5 in
+  diameter, low segment of sphere. Both still need machine-shop quotes (mounting-report.md).</li>
+<li>Nothing was sent anywhere.</li>
+</ul></main></body></html>

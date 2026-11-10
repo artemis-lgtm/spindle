@@ -1,0 +1,2768 @@
+{
+  "uspto": {
+    "deadwax": {
+      "total": "3",
+      "shown": 3,
+      "cards": [
+        {
+          "mark": "DEADWAX",
+          "status": "LIVEPENDING",
+          "goods": "IC 009: Downloadable computer application software for mobile phones,...",
+          "cls": "009",
+          "serial": "99755434",
+          "owner": "Jason Michael Means (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "LIVING DEADWAX",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 020: Furniture.",
+          "cls": "020",
+          "serial": "90555211",
+          "owner": "MILLS, GREGORY NELSON, MR. (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "DEADWAX RECORDS",
+          "status": "DEADABANDONED",
+          "goods": "IC 035: Retail music and record stores; Retail store services...",
+          "cls": "035",
+          "serial": "99098283",
+          "owner": "Declassified Records, LLC (LIMITED LIABILITY COMPANY; Texas, USA)"
+        }
+      ]
+    },
+    "side a": {
+      "total": "8,810",
+      "shown": 50,
+      "cards": [
+        {
+          "mark": "SIDE 2 SIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 025: CLOTHING, NAMELY, DRESSES, SKIRTS, BLOUSES, SKORTS, SHORTS,...",
+          "cls": "025",
+          "serial": "78639609",
+          "owner": "BYER CALIFORNIA (CORPORATION; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "SIDE-BY-SIDE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 041: Providing an Internet news portal featuring links to news...",
+          "cls": "041",
+          "serial": "98653926",
+          "owner": "SpeedFind Inc (CORPORATION; California, USA)"
+        },
+        {
+          "mark": "SIDE BY SIDE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 035: [ exhibiting and demonstrating in trade and retail shows in...",
+          "cls": "035, 041",
+          "serial": "75325474",
+          "owner": "FIRELANDS MEDIA GROUP LLC (LIMITED LIABILITY COMPANY; OHIO, USA)"
+        },
+        {
+          "mark": "SIDE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 041: [ Charitable services, namely, providing sporting goods in the...",
+          "cls": "041",
+          "serial": "86247823",
+          "owner": "MEGAN LORRAINE HUTCHINSON (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "SIDE X SIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 035: Retail store services featuring a wide variety of consumer...",
+          "cls": "035",
+          "serial": "78737557",
+          "owner": "Bala Duce (CORPORATION; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "SIDE BI SIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 025: [ footwear ].",
+          "cls": "025",
+          "serial": "74650713",
+          "owner": "TFG DEVELOPMENT (CHINA) LIMITED (COMPANY WITH LIMITED LIABILITY; Not in List)"
+        },
+        {
+          "mark": "SIDE 2 SIDE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 035: [ Outsourcing professionals in the field of fields of...",
+          "cls": "035",
+          "serial": "78225449",
+          "owner": "Robinson, Patricia (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "SIDE+",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 009: Downloadable computer application software for streaming audio...",
+          "cls": "009, 016, 018, 025, 038, 041, 045",
+          "serial": "97363128",
+          "owner": "Sidemen Holdings Limited (private limited company; UNITED KINGDOM)"
+        },
+        {
+          "mark": "BUY SIDE. SALE SIDE. YOUR SIDE.",
+          "status": "LIVEPENDING",
+          "goods": "IC 035: Advice in the field of business management and marketing.",
+          "cls": "035",
+          "serial": "50104920",
+          "owner": "George Kurisky Jr. (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "HIS SIDE HER SIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 020: PILLOWS.; IC 024: pillow protectors and pillow shams.",
+          "cls": "020, 024",
+          "serial": "76595057",
+          "owner": "Dreamwell, Ltd. (LIMITED LIABILITY COMPANY; NEVADA, USA)"
+        },
+        {
+          "mark": "SIDE X SIDE JAMBOREE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 041: [ Entertainment in the nature of a festival featuring side by...",
+          "cls": "041",
+          "serial": "77685673",
+          "owner": "Platinum Global, Inc. (CORPORATION; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "SIDE-BI-SIDE GUIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 016: BILINGUAL BOOKS ON A VARIETY OF TOPICS.",
+          "cls": "016",
+          "serial": "78093942",
+          "owner": "Iland, Emily D. (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "SIDE X SIDE ACTION",
+          "status": "DEADCANCELLED",
+          "goods": "IC 016: [ Printed materials, namely, magazines, posters, calendars,...",
+          "cls": "016",
+          "serial": "78864131",
+          "owner": "Platinum Global, Inc. (CORPORATION; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "SIDE-BY-SIDE ENTERTAINMENT",
+          "status": "DEADABANDONED",
+          "goods": "IC 041: entertainment services, namely, performances by a disc jockey...",
+          "cls": "041",
+          "serial": "78268611",
+          "owner": "Thompson, Scott F. (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "SIDE BY SIDE LEADERSHIP",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 041: Training services in the field of business management and...",
+          "cls": "041",
+          "serial": "76400013",
+          "owner": "SIDE BY SIDE, INC. (CORPORATION; TEXAS, USA)"
+        },
+        {
+          "mark": "NAUTI SIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 035: Retail clothing stores.",
+          "cls": "035",
+          "serial": "88941581",
+          "owner": "Nothing But Nauti LLC (LIMITED LIABILITY COMPANY; NORTH DAKOTA, USA)"
+        },
+        {
+          "mark": "LYTE-SIDE!",
+          "status": "LIVEPENDING",
+          "goods": "IC 032: non-alcoholic non-carbonated beverages containing hemp with a...",
+          "cls": "032",
+          "serial": "99760361",
+          "owner": "George's Beverage Company LLC (LIMITED LIABILITY COMPANY; Maryland, USA)"
+        },
+        {
+          "mark": "B-SIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 035: ecommerce retail goods.",
+          "cls": "035",
+          "serial": "97483635",
+          "owner": "Blaq World (LIMITED LIABILITY COMPANY; WISCONSIN, USA)"
+        },
+        {
+          "mark": "SIDE BY SIDE STUFF .COM",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 035: Online retail store services featuring parts and equipment for...",
+          "cls": "035",
+          "serial": "86882662",
+          "owner": "NIVEL PARTS & MANUFACTURING CO., LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+        },
+        {
+          "mark": "SIDE CHIK",
+          "status": "DEADABANDONED",
+          "goods": "IC 043: Restaurant services featuring chicken, poultry, greens,...",
+          "cls": "043",
+          "serial": "90695770",
+          "owner": "Banks, Monique (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "SERV-SIDE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 021: [ PAPER AND ALUMINUM DISPOSABLE CONTAINERS FOR DOMESTIC USE ].",
+          "cls": "021",
+          "serial": "73704023",
+          "owner": "ROSMAN, MORRIS (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "B-SIDE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 020: Furniture, namely, specially reinforced stools to provide...",
+          "cls": "020",
+          "serial": "88957971",
+          "owner": "Norix Group, Inc. (CORPORATION; ILLINOIS, USA)"
+        },
+        {
+          "mark": "WILDE SIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 031: Pet food.",
+          "cls": "031",
+          "serial": "90574701",
+          "owner": "Brilliant Ventures Ltd. (limited company (ltd.); UNITED KINGDOM)"
+        },
+        {
+          "mark": "LITE-SIDE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 005: [ NUTRITIONAL FOOD SUPPLEMENTS, VITAMINS AND MINERALS ].",
+          "cls": "005",
+          "serial": "73507116",
+          "owner": "NEW DIMENSION PRODUCTS, INC. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "SOFT SIDE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 009: [ COMPUTER SOFTWARE FOR BUSINESS AND DATABASE MANAGEMENT ].",
+          "cls": "009",
+          "serial": "74022707",
+          "owner": "J. F. DeSantis Inc. (CORPORATION; NEW JERSEY, USA)"
+        },
+        {
+          "mark": "WILDE SIDE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 016: [ PRINTED MATTER, NAMELY MAGAZINES CATERING TO THE GAY...",
+          "cls": "016",
+          "serial": "73796013",
+          "owner": "WILDE SIDE PUBLICATIONS, LTD. (CORPORATION; NEW YORK, USA)"
+        },
+        {
+          "mark": "SIDE QUICKS",
+          "status": "DEADCANCELLED",
+          "goods": "IC 029: [ PROCESSED VEGETABLES ].",
+          "cls": "029",
+          "serial": "73802167",
+          "owner": "DEL MONTE CORPORATION (CORPORATION; NEW YORK, USA)"
+        },
+        {
+          "mark": "CHAIR SIDE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 009: [ computer software, namely, patient clinical records...",
+          "cls": "009",
+          "serial": "75167325",
+          "owner": "EagleSoft Incorporated (CORPORATION; ILLINOIS, USA)"
+        },
+        {
+          "mark": "NU*SIDE",
+          "status": "DEAD",
+          "goods": "US 012: [ RESURFACING MATERIAL, COMPRISING AN ASBESTOS AND MICA...",
+          "cls": "019",
+          "serial": "71606175",
+          "owner": "RE-NU-IT CORPORATION (CORPORATION; NEW YORK, USA)"
+        },
+        {
+          "mark": "COASTAL SIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 009: Eyewear accessories, namely, straps, neck cords and head...",
+          "cls": "009",
+          "serial": "85873529",
+          "owner": "Konstantin Robert Sevetson (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "3RD SIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 041: Presentation of musical performance.",
+          "cls": "041",
+          "serial": "77264646",
+          "owner": "Mercado, Alberto (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "SIDE LITES",
+          "status": "DEADABANDONED",
+          "goods": "IC 011: Aircraft lighting system, comprising lamps, relay box, switch...",
+          "cls": "011",
+          "serial": "75374603",
+          "owner": "Planezip, Inc. (CORPORATION; ILLINOIS, USA)"
+        },
+        {
+          "mark": "MEN'S SIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 025: men's clothing, namely, shirts, pants, suits, ties and...",
+          "cls": "025, 035",
+          "serial": "75336629",
+          "owner": "Blair Corporation (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "B-SIDE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 041: [ Entertainment services in the nature of live performances by...",
+          "cls": "041",
+          "serial": "78022021",
+          "owner": "Recchia, Steven, A. (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "SIDE-CLIC",
+          "status": "DEADABANDONED",
+          "goods": "IC 020: Container closures of plastic; plastic medication containers;...",
+          "cls": "020",
+          "serial": "78030734",
+          "owner": "Owens-Brockway Plastic Products Inc. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "SIDE SHOTZ",
+          "status": "DEADABANDONED",
+          "goods": "IC 029: PREPARED APPETIZERS CONSISTING PRIMARILY OF MEAT, SEAFOOD,...",
+          "cls": "029, 030",
+          "serial": "77938800",
+          "owner": "McCain Foods USA, Inc. (CORPORATION; MAINE, USA)"
+        },
+        {
+          "mark": "SIDE-WIRE",
+          "status": "DEADABANDONED",
+          "goods": "IC 010: IMPLANTABLE PACING LEAD FOR HEART FAILURE.",
+          "cls": "010",
+          "serial": "78064678",
+          "owner": "MEDTRONIC INC. (CORPORATION; MINNESOTA, USA)"
+        },
+        {
+          "mark": "B-SIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 025: Women's clothing, namely, bathing suits, belts, caps, coats,...",
+          "cls": "025",
+          "serial": "75757986",
+          "owner": "MXG media, inc. (CORPORATION; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "BRITE SIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 033: Hard seltzer.",
+          "cls": "033",
+          "serial": "90145613",
+          "owner": "Community Brewing Co., LLC (LIMITED LIABILITY COMPANY; TEXAS, USA)"
+        },
+        {
+          "mark": "HI SIDE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 007: [ REFRIGERANT CONDENSING UNITS ].",
+          "cls": "007",
+          "serial": "73727898",
+          "owner": "COPELAND CORPORATION (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "SIDE WINGER",
+          "status": "DEADCANCELLED",
+          "goods": "IC 028: [ SPORTING GOODS, NAMELY DOWNRIGGER CONTROL BOARDS FOR USE...",
+          "cls": "028",
+          "serial": "73728469",
+          "owner": "SKILLE, GENE L. (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "EAST SIDE VS WEST SIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 041: Hosting social entertainment events, namely, car shows, for...",
+          "cls": "041",
+          "serial": "97117844",
+          "owner": "Whip Game Inc. (CORPORATION; MICHIGAN, USA)"
+        },
+        {
+          "mark": "SIDE CLOCK",
+          "status": "DEADCANCELLED",
+          "goods": "IC 009: [ COMPUTER ADD-ON FOR USE IN KEEPING AND DISPLAYING TIME...",
+          "cls": "009",
+          "serial": "73624939",
+          "owner": "INNOVENTIONS, INC. (CORPORATION; TEXAS, USA)"
+        },
+        {
+          "mark": "SIDE GLOW",
+          "status": "DEADCANCELLED",
+          "goods": "IC 009: [ product, namely, illuminated fiber optic cables ].",
+          "cls": "009",
+          "serial": "74735824",
+          "owner": "ZODIAC POOL SYSTEMS LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+        },
+        {
+          "mark": "VINAL SIDE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 019: [ Solid Vinyl Siding ].",
+          "cls": "019",
+          "serial": "73194936",
+          "owner": "Wolverine Aluminum Corporation (CORPORATION; MICHIGAN, USA)"
+        },
+        {
+          "mark": "WILDE SIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 031: Pet food.",
+          "cls": "031",
+          "serial": "90574707",
+          "owner": "Brilliant Ventures Ltd. (limited company (ltd.); UNITED KINGDOM)"
+        },
+        {
+          "mark": "SIDE FX",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 041: Entertainment services in the nature of live musical...",
+          "cls": "041",
+          "serial": "77462179",
+          "owner": "Albert, Kim (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "SIDE-LOC",
+          "status": "DEADABANDONED",
+          "goods": "IC 020: Plastic containers, namely bottles for consumer products...",
+          "cls": "020",
+          "serial": "78368473",
+          "owner": "Fenton, Weber & Jones Packaging, Inc. (CORPORATION; NEW YORK, USA)"
+        },
+        {
+          "mark": "R-SIDE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 037: Repair and reclamation in the nature of decontamination of...",
+          "cls": "037",
+          "serial": "75532328",
+          "owner": "HUDSON TECHNOLOGIES COMPANY (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "UVA SIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 025: UVA Side is a rap group. We will be selling t-shirts and other...",
+          "cls": "025",
+          "serial": "97485325",
+          "owner": "UVA Side (LIMITED LIABILITY COMPANY; RHODE ISLAND, USA)"
+        }
+      ]
+    },
+    "spindle": {
+      "total": "150",
+      "shown": 50,
+      "cards": [
+        {
+          "mark": "SPINDLE-LOK",
+          "status": "DEADCANCELLED",
+          "goods": "IC 009: [ automotive wheel balancing apparatus ].",
+          "cls": "009",
+          "serial": "74520030",
+          "owner": "HUNTER ENGINEERING COMPANY (CORPORATION; MISSOURI, USA)"
+        },
+        {
+          "mark": "SPINDLE-TITE!",
+          "status": "DEADCANCELLED",
+          "goods": "IC 006: [ Metal Fasteners, Namely, spindle lock nuts, wheel spindle...",
+          "cls": "006",
+          "serial": "75568799",
+          "owner": "RBMARK, Inc. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "SPINDLE-LOK",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 009: AUTOMOTIVE WHEEL BALANCING MACHINES FOR LAND VEHICLES.",
+          "cls": "009",
+          "serial": "78827102",
+          "owner": "Hunter Engineering Company (CORPORATION; MISSOURI, USA)"
+        },
+        {
+          "mark": "ZERO SPINDLE",
+          "status": "DEAD",
+          "goods": "US 026: [ CHECKING FIXTURES OF THE TYPE USED FOR TESTING THE...",
+          "cls": "009",
+          "serial": "71671476",
+          "owner": "ALPHA Q, INC. (CORPORATION; CONNECTICUT, USA)"
+        },
+        {
+          "mark": "SPINDLE & SIN",
+          "status": "DEADABANDONED",
+          "goods": "IC 025: Bandannas, head bands, bathing suits, bathrobes, shorts, caps,...",
+          "cls": "025",
+          "serial": "85441484",
+          "owner": "HOLLYWOOD PRODUCTS, INC. (CORPORATION; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "SPINDLE & OAK",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 037: Building construction, remodeling and repair.",
+          "cls": "037",
+          "serial": "98282749",
+          "owner": "Spindle & Oak, LLC (LIMITED LIABILITY COMPANY; GEORGIA, USA)"
+        },
+        {
+          "mark": "SPINDLE & SIN",
+          "status": "DEADCANCELLED",
+          "goods": "IC 025: [ Clothing, namely, shirts, jackets, sweaters, T-shirts,...",
+          "cls": "025",
+          "serial": "85977684",
+          "owner": "SLP INTERNATIONAL, LLC (LIMITED LIABILITY COMPANY; OHIO, USA)"
+        },
+        {
+          "mark": "SPINDLE & SIN",
+          "status": "DEADABANDONED",
+          "goods": "IC 033: Alcoholic beverages except beer; alcoholic cocktail mixes.",
+          "cls": "033",
+          "serial": "85863642",
+          "owner": "Hollywood Products, Inc. (CORPORATION; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "SPINDLE & CANISTER",
+          "status": "DEADCANCELLED",
+          "goods": "IC 025: [ Clothing, namely, T-shirts and sweaters ].",
+          "cls": "025",
+          "serial": "87208551",
+          "owner": "Tayo Abidoye (INDIVIDUAL; NIGERIA)"
+        },
+        {
+          "mark": "SPINDLE & STONES",
+          "status": "LIVEPENDING",
+          "goods": "IC 009: Downloadable mobile applications using artificial intelligence...",
+          "cls": "009, 042",
+          "serial": "99773430",
+          "owner": "bethan Nicole mcintyre (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "SPINDLE & SIN",
+          "status": "DEADCANCELLED",
+          "goods": "IC 011: [ Temperature-controlled portable beverage dispensers;...",
+          "cls": "011, 021",
+          "serial": "85863640",
+          "owner": "Hollywood Products, Inc. (CORPORATION; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "SPINDLE & SIN",
+          "status": "DEADABANDONED",
+          "goods": "IC 034: Cigars.",
+          "cls": "034",
+          "serial": "85863644",
+          "owner": "Hollywood Products, Inc. (CORPORATION; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 009: Attachment for cameras and microscopes for capturing or...",
+          "cls": "009",
+          "serial": "87667533",
+          "owner": "DOUBLE HELIX OPTICS, INC. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "DEADABANDONED",
+          "goods": "IC 005: [ herbicides for use in agriculture ].",
+          "cls": "005",
+          "serial": "74547393",
+          "owner": "ROHM AND HAAS COMPANY (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "DEADABANDONED",
+          "goods": "IC 009: audio speakers; computer software to control audio speakers;...",
+          "cls": "009",
+          "serial": "86260189",
+          "owner": "Spindle Haus, Inc. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 041: [ Health club services, namely, providing instruction and...",
+          "cls": "041",
+          "serial": "86414909",
+          "owner": "Spindle Fitness LLC (LIMITED LIABILITY COMPANY; ILLINOIS, USA)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 009: Downloadable operations management software.; IC 042:...",
+          "cls": "009, 042",
+          "serial": "98560046",
+          "owner": "Dober Chemical Corp. (CORPORATION; Illinois, USA)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 029: Preserved, frozen, dried and cooked fruits and vegetables;...",
+          "cls": "029",
+          "serial": "99054381",
+          "owner": "Samyang Roundsquare Inc. (CORPORATION; Korea, Republic of)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 035: Employment hiring, recruiting, placement, staffing and career...",
+          "cls": "035",
+          "serial": "98082314",
+          "owner": "TTF Holdings, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 041: Dance schools; Dance events; Dance instruction; Dance...",
+          "cls": "041",
+          "serial": "90330360",
+          "owner": "Spindle Live LLC (LIMITED LIABILITY COMPANY; NEW YORK, USA)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "DEADABANDONED",
+          "goods": "IC 041: Entertainment services, namely, providing a web site featuring...",
+          "cls": "041",
+          "serial": "85420833",
+          "owner": "Booker, Stuart Byron (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 009: [ Computer software accessible through a web-based interface...",
+          "cls": "009, 035, 038, 042, 045",
+          "serial": "77794245",
+          "owner": "SPINDLE, INC. (CORPORATION; NEVADA, USA)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "DEAD",
+          "goods": "US 040: [ STRANDS OF DECORATIVE BEADS ].",
+          "cls": "026",
+          "serial": "72445074",
+          "owner": "ABLI, INC. (CORPORATION; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 032: Dried hops for brewing beer; Protein-enriched sports...",
+          "cls": "032",
+          "serial": "99054392",
+          "owner": "Samyang Roundsquare Inc. (CORPORATION; Korea, Republic of)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 005: medicinal healthcare preparations for supporting nutritional...",
+          "cls": "005",
+          "serial": "99054373",
+          "owner": "Samyang Roundsquare Inc. (CORPORATION; Korea, Republic of)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "DEADABANDONED",
+          "goods": "IC 005: herbicides for use in agriculture, horticulture or forestry...",
+          "cls": "005",
+          "serial": "75632498",
+          "owner": "DOW AGROSCIENCES LLC (CORPORATION; INDIANA, USA)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 009: [ computer operating system software for use with embedded...",
+          "cls": "009",
+          "serial": "77954061",
+          "owner": "Micropier, LLC (LIMITED LIABILITY COMPANY; FLORIDA, USA)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "DEADABANDONED",
+          "goods": "IC 009: Downloadable software in the nature of a mobile application...",
+          "cls": "009, 042",
+          "serial": "85526103",
+          "owner": "SPINDLE, INC. (CORPORATION; NEVADA, USA)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 009: [ Prerecorded phonograph records, [audio tapes,] CDs, [ audio...",
+          "cls": "009, 041",
+          "serial": "78896711",
+          "owner": "Spindle (SOLE PROPRIETORSHIP; WASHINGTON, USA)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 030: Processed cereals; Almond paste; Instant noodles; Ramen; Dried...",
+          "cls": "030",
+          "serial": "99054387",
+          "owner": "Samyang Roundsquare Inc. (CORPORATION; Korea, Republic of)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 009: Downloadable operations management software.; IC 042:...",
+          "cls": "009, 042",
+          "serial": "98560049",
+          "owner": "Dober Chemical Corp. (CORPORATION; Illinois, USA)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 020: Beds, mattresses, * and * pillows [ and bolsters ].",
+          "cls": "020",
+          "serial": "87823987",
+          "owner": "MIAMI LABS, INC. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "DEADABANDONED",
+          "goods": "IC 005: [ herbicides for agricultural and non-agricultural use ].",
+          "cls": "005",
+          "serial": "74324931",
+          "owner": "MONSANTO COMPANY (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 009: [ Computer game software ].",
+          "cls": "009",
+          "serial": "86733073",
+          "owner": "Samsung Eletrônica da Amazônia Ltda. (LIMITED LIABILITY COMPANY; BRAZIL)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 010: [ Medical guidewires, and structural parts therefor; IVR...",
+          "cls": "010",
+          "serial": "79173308",
+          "owner": "ASAHI INTECC CO., LTD. (CORPORATION; JAPAN)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 009: Computer software platforms for publishing e-books.; IC 041: [...",
+          "cls": "009, 041",
+          "serial": "86125733",
+          "owner": "iPortfolio Inc. (CORPORATION; REPUBLIC OF KOREA)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "DEADABANDONED",
+          "goods": "IC 042: Customized software development and implementation in the...",
+          "cls": "042",
+          "serial": "90491649",
+          "owner": "Motorcity Systems LLC (LIMITED LIABILITY COMPANY; MICHIGAN, USA)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "DEADABANDONED",
+          "goods": "IC 025: Sweaters; Women's clothing, namely, shirts, dresses, skirts,...",
+          "cls": "025",
+          "serial": "85272447",
+          "owner": "DESIGN NETWORK (CORPORATION; NEW YORK, USA)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 009: [ Downloadable media content, namely, magazines, newsletters,...",
+          "cls": "009, 035",
+          "serial": "87211283",
+          "owner": "Weller, Sebastian Peter (INDIVIDUAL; UNITED KINGDOM)"
+        },
+        {
+          "mark": "SPINDLE",
+          "status": "LIVEPENDING",
+          "goods": "IC 005: Herbicides for agricultural use; Insecticides for agricultural...",
+          "cls": "005",
+          "serial": "99845848",
+          "owner": "Winfield Solutions, LLC (LIMITED LIABILITY COMPANY; Delaware, USA)"
+        },
+        {
+          "mark": "THE BLOOMIN' SPINDLE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 035: Retail store services featuring yarns, knitting needles,...",
+          "cls": "035",
+          "serial": "97756986",
+          "owner": "The Knitted Robin LLC (LIMITED LIABILITY COMPANY; ILLINOIS, USA)"
+        },
+        {
+          "mark": "THE BLOOMIN' SPINDLE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 041: Education services, namely, providing classes and workshops in...",
+          "cls": "041",
+          "serial": "97757020",
+          "owner": "The Knitted Robin LLC (LIMITED LIABILITY COMPANY; ILLINOIS, USA)"
+        },
+        {
+          "mark": "THE BLOOMIN' SPINDLE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 023: Yarn.",
+          "cls": "023",
+          "serial": "97757045",
+          "owner": "The Knitted Robin LLC (LIMITED LIABILITY COMPANY; ILLINOIS, USA)"
+        },
+        {
+          "mark": "SPINDLE WIZARD",
+          "status": "DEADCANCELLED",
+          "goods": "IC 007: [ Computer Numerically Controlled Machinery-Namely, Milling...",
+          "cls": "007",
+          "serial": "73267002",
+          "owner": "Lesnor Maehr Mfg. Corp. (CORPORATION; NEW YORK, USA)"
+        },
+        {
+          "mark": "SPINDLE SLIK",
+          "status": "DEADCANCELLED",
+          "goods": "IC 004: [ Lubricants, Slip Agents and Release Agents for Use in the...",
+          "cls": "004",
+          "serial": "73269767",
+          "owner": "Witco Chemical Corporation (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "SPINDLE SURGEON",
+          "status": "DEADABANDONED",
+          "goods": "IC 019: [ SPINDLES FOR USE IN REAR END HOUSING ON ONE TON AND ABOVE...",
+          "cls": "019",
+          "serial": "73599575",
+          "owner": "WEST END MACHINE AND WELDING, INC. (CORPORATION; VIRGINIA, USA)"
+        },
+        {
+          "mark": "SPINDLE DYNAMICS",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 012: MOTOR VEHICLE AND TRAILER SPINDLES.",
+          "cls": "012",
+          "serial": "73777709",
+          "owner": "WEST END MACHINE & WELDING COMPANY (CORPORATION; VIRGINIA, USA)"
+        },
+        {
+          "mark": "SONG SPINDLE",
+          "status": "DEADABANDONED",
+          "goods": "IC 014: Sculptures made of precious metal.",
+          "cls": "014",
+          "serial": "86565748",
+          "owner": "Lancaster Phillip M (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "SPINDLE CORE",
+          "status": "DEADABANDONED",
+          "goods": "IC 009: Downloadable operations management software.; IC 042:...",
+          "cls": "009, 042",
+          "serial": "99126766",
+          "owner": "Dober Chemical Corp. (CORPORATION; Illinois, USA)"
+        },
+        {
+          "mark": "SPINDLE-FLEX",
+          "status": "DEAD",
+          "goods": "US 032: [ CARVED POLES FOR USE AS DECORATIVE ROOM DIVIDERS AND AS...",
+          "cls": "020",
+          "serial": "72233011",
+          "owner": "RUSS STONIER DESIGNS, INC. (CORPORATION; ILLINOIS, USA)"
+        }
+      ]
+    },
+    "runout": {
+      "total": "6",
+      "shown": 6,
+      "cards": [
+        {
+          "mark": "RUNOUT",
+          "status": "DEADABANDONED",
+          "goods": "IC 011: Air purifiers; Air sterilisers; Air sterilising apparatus;...",
+          "cls": "011",
+          "serial": "90190704",
+          "owner": "Hangzhou Epstar Technology Co., Ltd. (limited company (ltd.); CHINA)"
+        },
+        {
+          "mark": "RUNOUT",
+          "status": "DEADABANDONED",
+          "goods": "IC 025: Athletic apparel, namely, shirts, pants, jackets, footwear,...",
+          "cls": "025",
+          "serial": "85045764",
+          "owner": "Allen David J (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "RUNOUT",
+          "status": "DEADABANDONED",
+          "goods": "IC 009: Downloadable software in the nature of a mobile application...",
+          "cls": "009",
+          "serial": "88020221",
+          "owner": "Jannotta, Laura (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "RUNOUT QUEST",
+          "status": "LIVEPENDING",
+          "goods": "IC 009: Downloadable computer application software for mobile phones,...",
+          "cls": "009",
+          "serial": "50000985",
+          "owner": "ANDRE RICARDO MARTINS (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "THE RUNOUT",
+          "status": "LIVEPENDING",
+          "goods": "IC 041: Entertainment services, namely, an ongoing multimedia program...",
+          "cls": "041",
+          "serial": "99815892",
+          "owner": "POP LIFE HOLDINGS LLC (LIMITED LIABILITY COMPANY; Georgia, USA)"
+        },
+        {
+          "mark": "RUNOUT ROYALE",
+          "status": "LIVEPENDING",
+          "goods": "IC 041: Entertainment services, namely, casino gaming.",
+          "cls": "041",
+          "serial": "99679506",
+          "owner": "Xybram Innovations LLC (LIMITED LIABILITY COMPANY; Florida, USA)"
+        }
+      ]
+    },
+    "lead-in": {
+      "total": "4,561",
+      "shown": 50,
+      "cards": [
+        {
+          "mark": "&LEAD",
+          "status": "DEADABANDONED",
+          "goods": "IC 041: Business education and training services, namely, developing...",
+          "cls": "041",
+          "serial": "88493734",
+          "owner": "LIVING HR, INC. (CORPORATION; FLORIDA, USA)"
+        },
+        {
+          "mark": "LEAD",
+          "status": "DEADCANCELLED",
+          "goods": "IC 035: [ providing information via the Internet in connection with...",
+          "cls": "035, 041",
+          "serial": "78613205",
+          "owner": "LEAD International (Private operating foundation incorporated with limited liability; DELAWARE, USA)"
+        },
+        {
+          "mark": "LEAD-TOKN",
+          "status": "LIVEPENDING",
+          "goods": "IC 009: Voltage stabilizing power supply; Low-voltage power supplies;...",
+          "cls": "009",
+          "serial": "99941012",
+          "owner": "SHENZHEN CENTER POWER TECH. CO., LTD. (Limited Company; China)"
+        },
+        {
+          "mark": "LEAD TEWDAY",
+          "status": "LIVEPENDING",
+          "goods": "IC 041: Professional coaching services in the field of career...",
+          "cls": "041",
+          "serial": "50085691",
+          "owner": "Tracy Ellis Ward Consulting, LLC (LIMITED LIABILITY COMPANY; New York, USA)"
+        },
+        {
+          "mark": "LEAD-LOK",
+          "status": "DEADABANDONED",
+          "goods": "IC 002: Paint sealers.",
+          "cls": "002",
+          "serial": "99012631",
+          "owner": "Spirochaete Research Labs LLC (LIMITED LIABILITY COMPANY; New York, USA)"
+        },
+        {
+          "mark": "LEAD-TOK",
+          "status": "LIVEPENDING",
+          "goods": "IC 009: Voltage stabilizing power supply; Low-voltage power supplies;...",
+          "cls": "009",
+          "serial": "99941026",
+          "owner": "SHENZHEN CENTER POWER TECH. CO., LTD. (Limited Company; China)"
+        },
+        {
+          "mark": "LEAD GENISYS",
+          "status": "DEADABANDONED",
+          "goods": "IC 042: Application service provider (ASP) featuring software for use...",
+          "cls": "042",
+          "serial": "76701565",
+          "owner": "Castle Advertising (CORPORATION; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "LEAD-GUARD",
+          "status": "DEADABANDONED",
+          "goods": "IC 035: Business consulting services, namely, services that assist...",
+          "cls": "035",
+          "serial": "76214202",
+          "owner": "Nexsan Technologies, Inc. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "NET-LEAD",
+          "status": "DEADABANDONED",
+          "goods": "IC 009: Computer programs for use in disseminating information in the...",
+          "cls": "009",
+          "serial": "75488504",
+          "owner": "NEWMARKET INTERNATIONAL, INC. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "REDI-LEAD",
+          "status": "DEADCANCELLED",
+          "goods": "IC 016: [ simulated border strips for glass and mosaic surface...",
+          "cls": "016",
+          "serial": "75642150",
+          "owner": "Plaid Enterprises, Inc. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "LEAD BLOCK",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 002: Water-based chemical coating used to cover and encapsulate...",
+          "cls": "002",
+          "serial": "76558917",
+          "owner": "COMPLEMENTARY COATINGS CORP. (CORPORATION; NEW YORK, USA)"
+        },
+        {
+          "mark": "INSTA-LEAD",
+          "status": "DEADCANCELLED",
+          "goods": "IC 035: [ Direct Mail Advertising Services for Others ].",
+          "cls": "035",
+          "serial": "73444754",
+          "owner": "American Mail Systems, Inc. (CORPORATION; PENNSYLVANIA, USA)"
+        },
+        {
+          "mark": "LEAD CLICKZ",
+          "status": "LIVEPENDING",
+          "goods": "IC 035: Marketing services; Advertising services.",
+          "cls": "035",
+          "serial": "99946796",
+          "owner": "LeadClickz LLC (LIMITED LIABILITY COMPANY; Texas, USA)"
+        },
+        {
+          "mark": "LEAD-LOC",
+          "status": "DEADCANCELLED",
+          "goods": "IC 001: [ chemical compositions for suppressing lead bearing dust...",
+          "cls": "001",
+          "serial": "74268288",
+          "owner": "Midwest Industrial Supply, Inc. (CORPORATION; OHIO, USA)"
+        },
+        {
+          "mark": "FLYIN' LEAD",
+          "status": "DEADABANDONED",
+          "goods": "IC 035: Retail store services featuring firearms.; IC 041: Gun firing...",
+          "cls": "035, 041",
+          "serial": "87486518",
+          "owner": "Myska, Edmund (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "LEAD-COTE",
+          "status": "DEADABANDONED",
+          "goods": "IC 019: [ EXTERIOR AND INTERIOR COATINGS FOR FABRICATED METAL ROOFING...",
+          "cls": "019",
+          "serial": "73818388",
+          "owner": "BERRIDGE MANUFACTURING CO. (CORPORATION; TEXAS, USA)"
+        },
+        {
+          "mark": "MAG LEAD",
+          "status": "DEADCANCELLED",
+          "goods": "IC 009: [ Electronic leads for electrical measuring instruments having...",
+          "cls": "009",
+          "serial": "77001556",
+          "owner": "Electronic Specialties, Inc. (CORPORATION; ILLINOIS, USA)"
+        },
+        {
+          "mark": "LEAD BELLY",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 035: Licensing others the right to use and/or exploit the name and...",
+          "cls": "035",
+          "serial": "76363439",
+          "owner": "HOUSE OF LEAD BELLY (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+        },
+        {
+          "mark": "LEAD DAWG",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 012: Tires for industrial equipment not for highway service.",
+          "cls": "012",
+          "serial": "78361846",
+          "owner": "East Bay Tire Co. (CORPORATION; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "LEAD AV",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 038: Teleconferencing services; Audio teleconferencing; Network...",
+          "cls": "038, 041",
+          "serial": "90816273",
+          "owner": "Atrium Hospitality LP (LIMITED PARTNERSHIP; DELAWARE, USA)"
+        },
+        {
+          "mark": "REDI-LEAD",
+          "status": "DEADCANCELLED",
+          "goods": "IC 028: [ HOBBY CRAFT KITS FOR MAKING STAINED GLASS CONTAINING...",
+          "cls": "028",
+          "serial": "73483070",
+          "owner": "PLAID ENTERPRISES, INC. (CORPORATION; GEORGIA, USA)"
+        },
+        {
+          "mark": "AGRI-LEAD",
+          "status": "DEADCANCELLED",
+          "goods": "IC 036: [ AGRICULTURAL AND COMMERCIAL BUILDING LEASING SERVICES ].; IC...",
+          "cls": "036, 037",
+          "serial": "73716970",
+          "owner": "AGWAY, INC. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "LEAD CHEK",
+          "status": "DEADABANDONED",
+          "goods": "IC 001: [ lead reactive test product ].",
+          "cls": "001",
+          "serial": "74208600",
+          "owner": "CHUNG, MICHAEL (INDIVIDUAL; Not in List)"
+        },
+        {
+          "mark": "LEAD-LOK",
+          "status": "DEADCANCELLED",
+          "goods": "IC 010: [ DISPOSABLE EKG ELECTRODES ].",
+          "cls": "010",
+          "serial": "73651497",
+          "owner": "LEAD-LOK, INC. (CORPORATION; IDAHO, USA)"
+        },
+        {
+          "mark": "NU-LEAD",
+          "status": "DEADCANCELLED",
+          "goods": "IC 001: [ TETRA-ETHYL LEAD REPLACEMENT ADDITIVE FOR GASOLINE FUEL ].",
+          "cls": "001",
+          "serial": "73587951",
+          "owner": "U. S. AVIEX COMPANY (CORPORATION; MICHIGAN, USA)"
+        },
+        {
+          "mark": "WEB-LEAD",
+          "status": "DEADABANDONED",
+          "goods": "IC 009: Computer software for use in data management Namely, for use...",
+          "cls": "009",
+          "serial": "76265273",
+          "owner": "Bodapati, Chandra (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "UNI-LEAD",
+          "status": "DEADCANCELLED",
+          "goods": "IC 010: [ medical devices, namely, sensor arrays used with...",
+          "cls": "010",
+          "serial": "76435138",
+          "owner": "Unilead International, Inc. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "EASY-LEAD",
+          "status": "DEADABANDONED",
+          "goods": "IC 016: writing instruments and lead therefor.",
+          "cls": "016",
+          "serial": "76489298",
+          "owner": "KABUSHIKI KAISHA PILOT (CORPORATION; JAPAN)"
+        },
+        {
+          "mark": "INSTA-LEAD",
+          "status": "DEADCANCELLED",
+          "goods": "IC 015: [ Parts of musical instruments, namely, mouthpieces for brass...",
+          "cls": "015",
+          "serial": "75801437",
+          "owner": "Najoom Music Products, Inc. (CORPORATION; WISCONSIN, USA)"
+        },
+        {
+          "mark": "FAX LEAD",
+          "status": "DEADCANCELLED",
+          "goods": "IC 016: [ refill leads for automatic pencils ].",
+          "cls": "016",
+          "serial": "74431862",
+          "owner": "Pentel of America, Ltd. (CORPORATION; ILLINOIS, USA)"
+        },
+        {
+          "mark": "\"LEAD SAFE\"",
+          "status": "DEADCANCELLED",
+          "goods": "IC 013: [ ammunition and projectiles for firearms; namely, bullets ].",
+          "cls": "013",
+          "serial": "74373554",
+          "owner": "RAINER BALLISTICS, LLC (LIMITED LIABILITY CORPORATION; WASHINGTON, USA)"
+        },
+        {
+          "mark": "LEAD 1",
+          "status": "DEADABANDONED",
+          "goods": "IC 025: Clothing, namely, t-shirts, polo shirts, sweatshirts, caps,...",
+          "cls": "025",
+          "serial": "88028496",
+          "owner": "Outside the Walls Ministry (CORPORATION; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "FIRST LEAD",
+          "status": "DEADCANCELLED",
+          "goods": "IC 018: [ BACKPACKS ].; IC 020: [ SLEEPING BAGS ].; IC 022: [ TENTS...",
+          "cls": "018, 020, 022, 025",
+          "serial": "73666890",
+          "owner": "HUDSON TRAIL OUTFITTERS, LTD. (CORPORATION; MARYLAND, USA)"
+        },
+        {
+          "mark": "LEAD CHEC",
+          "status": "DEADABANDONED",
+          "goods": "IC 001: [ test kit for lead detection ].",
+          "cls": "001",
+          "serial": "74026939",
+          "owner": "Precision Laboratories Inc. (CORPORATION; OHIO, USA)"
+        },
+        {
+          "mark": "4-LEAD",
+          "status": "DEADABANDONED",
+          "goods": "IC 028: Hunting blinds; Hunting game calls; hunting decoy bags;...",
+          "cls": "028",
+          "serial": "86531052",
+          "owner": "Messinger, Jacob (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "TELE-LEAD",
+          "status": "DEADABANDONED",
+          "goods": "IC 010: Medical devices, namely, electrocardiograph apparatuses,...",
+          "cls": "010",
+          "serial": "75580513",
+          "owner": "Unilead International, Inc. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "REFLECTIN-LEAD",
+          "status": "DEAD",
+          "goods": "US 006: [ PLATING SOLUTIONS FOR TIN-LEAD ALLOY; NAMELY, BRIGHTENER,...",
+          "cls": "001",
+          "serial": "72379765",
+          "owner": "MACDERMID, INCORPORATED (CORPORATION; CONNECTICUT, USA)"
+        },
+        {
+          "mark": "LEAD 1",
+          "status": "DEADABANDONED",
+          "goods": "IC 025: Clothing, namely, t-shirts, polo shirts, sweatshirts, caps,...",
+          "cls": "025",
+          "serial": "86415987",
+          "owner": "Outside the Walls Ministry (CORPORATION; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "HANGIN' LEAD",
+          "status": "DEADABANDONED",
+          "goods": "IC 025: Clothing, namely, shirts, hats, hoodies, socks, jackets.",
+          "cls": "025",
+          "serial": "88539414",
+          "owner": "Riddle, Blake (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "LEAD W.E.L.L.",
+          "status": "DEADABANDONED",
+          "goods": "IC 041: Business training; Educational services, namely, providing a...",
+          "cls": "041",
+          "serial": "88873241",
+          "owner": "Szyper, Paula (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "I-LEAD",
+          "status": "DEADABANDONED",
+          "goods": "IC 035: DISSEMINATION OF ADVERTISING FOR OTHERS VIA A GLOBAL...",
+          "cls": "035, 038, 042",
+          "serial": "75754423",
+          "owner": "HOMESTORE, INC. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "ACCU-LEAD",
+          "status": "DEADABANDONED",
+          "goods": "IC 010: Medical devices, namely, electrocardiograph apparatuses,...",
+          "cls": "010",
+          "serial": "75580512",
+          "owner": "Unilead International, Inc. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "LEAD-FINDER",
+          "status": "DEADABANDONED",
+          "goods": "IC 035: [ computer services; namely, information storage and retrieval...",
+          "cls": "035",
+          "serial": "74353711",
+          "owner": "Database America Companies, Inc. (CORPORATION; NEW JERSEY, USA)"
+        },
+        {
+          "mark": "LEAD SELF. LEAD THE TEAM. LEAD THE ORGANIZATION.",
+          "status": "LIVEPENDING",
+          "goods": "IC 016: Printed instructional, educational, and teaching materials in...",
+          "cls": "016, 041, 042",
+          "serial": "99555619",
+          "owner": "LeaderFactor LLC (LIMITED LIABILITY COMPANY; Utah, USA)"
+        },
+        {
+          "mark": "GROW + LEAD",
+          "status": "DEADCANCELLED",
+          "goods": "IC 035: [ Negotiation of sales and leaseback agreements for the...",
+          "cls": "035, 036",
+          "serial": "77245308",
+          "owner": "FIRST BEVERAGE GROUP, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+        },
+        {
+          "mark": "FAITH+LEAD",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 009: Downloadable articles and downloadable e-books all featuring...",
+          "cls": "009, 035, 036, 041, 042, 045",
+          "serial": "88944360",
+          "owner": "Luther Seminary (non-profit corporation; MINNESOTA, USA)"
+        },
+        {
+          "mark": "READ & LEAD",
+          "status": "DEADCANCELLED",
+          "goods": "IC 016: [ manuals for use in training high school students to mentor...",
+          "cls": "016",
+          "serial": "75403898",
+          "owner": "Randall, Henry Pettus, IV (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "LEAD & LACE",
+          "status": "DEADABANDONED",
+          "goods": "IC 016: Decals.; IC 021: Cups.; IC 025: Fabric sold as an integral...",
+          "cls": "016, 021, 025",
+          "serial": "90596228",
+          "owner": "Lewis, Florence E (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "LET'S LEAD",
+          "status": "DEADABANDONED",
+          "goods": "IC 041: Publication of middle and high school math curricula, in print...",
+          "cls": "041",
+          "serial": "86259812",
+          "owner": "J. Weston Walch, Publisher (CORPORATION; MAINE, USA)"
+        },
+        {
+          "mark": "CONNECT & LEAD",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 041: Provision of information in the field of recreational...",
+          "cls": "041",
+          "serial": "99201522",
+          "owner": "Isabella Elisabeth Burwell (INDIVIDUAL; Germany)"
+        }
+      ]
+    },
+    "flipside": {
+      "total": "128",
+      "shown": 50,
+      "cards": [
+        {
+          "mark": "FLIPSIDE KOLLEKTIVE",
+          "status": "DEADABANDONED",
+          "goods": "IC 025: Shirts.",
+          "cls": "025",
+          "serial": "98145761",
+          "owner": "Wells, Santio J (SOLE PROPRIETORSHIP; ARIZONA, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 016: [ desk top organizers, namely, self-mounting organizers ].",
+          "cls": "016",
+          "serial": "75230095",
+          "owner": "KANTEK INC. (CORPORATION; NEW YORK, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 026: Artificial wreaths and artificial garland.",
+          "cls": "026",
+          "serial": "87086849",
+          "owner": "Garven, LLC (LIMITED LIABILITY COMPANY; MINNESOTA, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 035: [ retail store featuring clothing ].",
+          "cls": "035",
+          "serial": "78464222",
+          "owner": "Moravec Enterprise, Inc. (CORPORATION; HAWAII, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 005: [ [ Bone cement and bone paste for use in bone and joint...",
+          "cls": "005, 010",
+          "serial": "85520620",
+          "owner": "BIOCOMPOSITES LIMITED (CORPORATION; UNITED KINGDOM)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 041: Entertainment in the nature of visual and audio performances,...",
+          "cls": "041",
+          "serial": "78751906",
+          "owner": "Cory Harding (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 009: Cellular phones.",
+          "cls": "009",
+          "serial": "85091637",
+          "owner": "MOTOROLA TRADEMARK HOLDINGS, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 021: Dinnerware.",
+          "cls": "021",
+          "serial": "77238125",
+          "owner": "HLC HOLDING, INC. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 025: [ T-shirts, sweatshirts, sweatpants, windbreakers, sweaters,...",
+          "cls": "025",
+          "serial": "75024757",
+          "owner": "Soundz In Action Inc. (CORPORATION; NEW YORK, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 020: Tables; Side tables.",
+          "cls": "020",
+          "serial": "86934801",
+          "owner": "Calderone, Joel (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 018: Rigid-framed and hard-sided RFID shielding wallets and...",
+          "cls": "018",
+          "serial": "85649739",
+          "owner": "Flipside Wallets LLC (LIMITED LIABILITY COMPANY; PENNSYLVANIA, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 042: On-line newsletters provided to bank customers containing...",
+          "cls": "042",
+          "serial": "78292530",
+          "owner": "Washington Mutual, Inc. (CORPORATION; WASHINGTON, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 041: [ entertainment in the nature of an on-going comedy television...",
+          "cls": "041",
+          "serial": "75024755",
+          "owner": "Soundz In Action Inc. (CORPORATION; NEW YORK, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 009: COMPUTER GAME SOFTWARE AND INSTRUCTION MANUALS SOLD THEREWITH.",
+          "cls": "009",
+          "serial": "75872663",
+          "owner": "FLIPSIDE, INC. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "\"FLIPSIDE\"",
+          "status": "DEADCANCELLED",
+          "goods": "IC 025: [ adult and youth wearing apparel; namely, jackets, warm-up...",
+          "cls": "025",
+          "serial": "74293836",
+          "owner": "STARTER CORPORATION (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 009: [ COMPUTER PROGRAMS FOR FACILITATING AND CONTROLLING THE...",
+          "cls": "009",
+          "serial": "73837929",
+          "owner": "SYSTEMS ESSENTIALS, INC. (CORPORATION; MISSOURI, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 033: [ Alcoholic beverages except beers ].",
+          "cls": "033",
+          "serial": "85781590",
+          "owner": "E. & J. Gallo Winery (CORPORATION; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 032: Beer and ale.",
+          "cls": "032",
+          "serial": "85935296",
+          "owner": "SIERRA NEVADA BREWING CO. (CORPORATION; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 020: Plastic party ornaments, plastic bunting.",
+          "cls": "020",
+          "serial": "87086819",
+          "owner": "Garven, LLC (LIMITED LIABILITY COMPANY; MINNESOTA, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 011: Showerheads and hand showers.",
+          "cls": "011",
+          "serial": "77705014",
+          "owner": "Kohler Co. (CORPORATION; WISCONSIN, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 042: [ Product testing; Product development; Product development...",
+          "cls": "042",
+          "serial": "88200375",
+          "owner": "Flipside System AB (CORPORATION; SWEDEN)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEAD",
+          "goods": "IC 041: [ TELEVISION PROGRAMS IN THE NATURE OF MUSICAL VARIETY SHOWS...",
+          "cls": "041",
+          "serial": "73015181",
+          "owner": "MARKS/AUCOIN PRODUCTIONS, INC. (CORPORATION; NEW YORK, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 021: Dinnerware.",
+          "cls": "021",
+          "serial": "77237367",
+          "owner": "HLC HOLDING, INC. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 009: Computer software for processing digital music files.",
+          "cls": "009",
+          "serial": "77326529",
+          "owner": "Electric Pocket Ltd (LIMITED LIABILITY COMPANY; UNITED KINGDOM)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 025: [ Clothing, namely, t-shirts, polo shirts, dress shirts,...",
+          "cls": "025",
+          "serial": "78464210",
+          "owner": "Moravec Enterprises, Inc. (CORPORATION; HAWAII, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 028: [ Manipulable Puzzles ].",
+          "cls": "028",
+          "serial": "78585218",
+          "owner": "ThinkFun, Inc. (CORPORATION; VIRGINIA, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 021: [ combs and picks for hair ].",
+          "cls": "021",
+          "serial": "74066988",
+          "owner": "Mebco Industries, Inc. (CORPORATION; MINNESOTA, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 016: [ periodical of interest to teenagers for distribution through...",
+          "cls": "016",
+          "serial": "74256245",
+          "owner": "Thomson Newspapers Holdings Inc. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 041: PROVIDING INTERACTIVE MULTIMEDIA GAMES BY MEANS OF A GLOBAL...",
+          "cls": "041",
+          "serial": "75872665",
+          "owner": "FLIPSIDE, INC. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 016: [ GREETING CARDS, CALENDARS, GIFT WRAP PAPER, PAPER GIFT BAGS...",
+          "cls": "016",
+          "serial": "76130001",
+          "owner": "AGC, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 025: [ bottoms, denim pants and jeans ].",
+          "cls": "025",
+          "serial": "85981549",
+          "owner": "Topson Downs of California, Inc. (CORPORATION; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 028: Wallets, [ purses, clutches; ] RFID shielding wallets [,...",
+          "cls": "028",
+          "serial": "86230365",
+          "owner": "Flipside Wallets LLC (LIMITED LIABILITY COMPANY; PENNSYLVANIA, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 009: Cases for smartphones; Smartphone mounts; Smartphone...",
+          "cls": "009",
+          "serial": "88515513",
+          "owner": "Trip Tech, LLC (LIMITED LIABILITY COMPANY; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 011: electric waffle maker.",
+          "cls": "011",
+          "serial": "86773809",
+          "owner": "National Presto Industries, Inc. (CORPORATION; WISCONSIN, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 009: Musical sound recordings; Audio and video recordings featuring...",
+          "cls": "009, 025",
+          "serial": "99659404",
+          "owner": "Flipside Trading Company (CORPORATION; Minnesota, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 009: Downloadable computer application software for mobile phones...",
+          "cls": "009",
+          "serial": "97002065",
+          "owner": "Banter LLC (LIMITED LIABILITY COMPANY; PUERTO RICO, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 016: Newsletters provided to bank customers containing information...",
+          "cls": "016",
+          "serial": "78292527",
+          "owner": "Washington Mutual, Inc. (CORPORATION; WASHINGTON, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 025: [ adult and youth wearing apparel; namely, jackets, warm-up...",
+          "cls": "025",
+          "serial": "74293831",
+          "owner": "STARTER CORPORATION (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 027: wallpaper.",
+          "cls": "027",
+          "serial": "88093946",
+          "owner": "Garven, LLC (LIMITED LIABILITY COMPANY; MINNESOTA, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 025: [ CLOTHING; NAMELY, DRESSES, BLOUSES, SKIRTS, T-SHIRTS, PANTS,...",
+          "cls": "025",
+          "serial": "73786060",
+          "owner": "INNOVATIVE CLOTHING EXCHANGE, INC. (CORPORATION; FLORIDA, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 038: [ TELECOMMUNICATIONS SERVICES, NAMELY PERSONAL COMMUNICATIONS...",
+          "cls": "038",
+          "serial": "75872664",
+          "owner": "FLIPSIDE, INC. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 035: Retail store services featuring mattresses.",
+          "cls": "035",
+          "serial": "88720977",
+          "owner": "Flipside, LLC (LIMITED LIABILITY COMPANY; WEST VIRGINIA, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 009: Holders for magnetically encoded gift cards.",
+          "cls": "009",
+          "serial": "87086779",
+          "owner": "Garven, LLC (LIMITED LIABILITY COMPANY; MINNESOTA, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 016: [ Decals ].",
+          "cls": "016",
+          "serial": "87086811",
+          "owner": "Garven, LLC (LIMITED LIABILITY COMPANY; MINNESOTA, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 028: Paper party hats, party favor hats; party favors, namely,...",
+          "cls": "028",
+          "serial": "87086855",
+          "owner": "Garven, LLC (LIMITED LIABILITY COMPANY; MINNESOTA, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 018: Wallets, purses, clutches; RFID shielding wallets, purses and...",
+          "cls": "018",
+          "serial": "86230406",
+          "owner": "Flipside Wallets LLC (LIMITED LIABILITY COMPANY; PENNSYLVANIA, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 025: tops, capri pants, hooded tops, hooded jackets, leggings,...",
+          "cls": "025",
+          "serial": "85661135",
+          "owner": "Topson Downs of California, Inc. (CORPORATION; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 009: Cases for portable electronic devices such as laptop...",
+          "cls": "009",
+          "serial": "85746496",
+          "owner": "Adaptive Designs, Inc. (CORPORATION; MAINE, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "DEADABANDONED",
+          "goods": "IC 041: Entertainment services, namely, providing bowling, billiards,...",
+          "cls": "041",
+          "serial": "85489258",
+          "owner": "Emblem Entertainment, LLC (LIMITED LIABILITY COMPANY; ARIZONA, USA)"
+        },
+        {
+          "mark": "FLIPSIDE",
+          "status": "LIVEPENDING",
+          "goods": "IC 011: Electric grills.",
+          "cls": "011",
+          "serial": "99387237",
+          "owner": "National Presto Industries, Inc. (CORPORATION; Wisconsin, USA)"
+        }
+      ]
+    },
+    "thirty three": {
+      "total": "9,834",
+      "shown": 50,
+      "cards": [
+        {
+          "mark": "THIRTY-THREE TTA33+",
+          "status": "DEADABANDONED",
+          "goods": "IC 028: Electronically operated toy motor vehicles; Racks and stands...",
+          "cls": "028",
+          "serial": "88541602",
+          "owner": "Shanghai Thirty-three Electronic Tech Co., Ltd. (LIMITED LIABILITY COMPANY; CHINA)"
+        },
+        {
+          "mark": "SHEARWATER THIRTY THREE",
+          "status": "DEADABANDONED",
+          "goods": "IC 012: Shearwater Thirty Three foot Sport Fishing Boat with hull...",
+          "cls": "012",
+          "serial": "78457647",
+          "owner": "Shearwater Boatworks, LLC (LIMITED LIABILITY CORPORATION; NEW JERSEY, USA)"
+        },
+        {
+          "mark": "THREE THIRTY THREE",
+          "status": "DEADABANDONED",
+          "goods": "IC 043: Restaurant services.",
+          "cls": "043",
+          "serial": "97300113",
+          "owner": "de Vries, John (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "THREE THIRTY THREE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 043: Restaurant services.",
+          "cls": "043",
+          "serial": "97616778",
+          "owner": "SDV Hospitality Group (CORPORATION; Nevada, USA)"
+        },
+        {
+          "mark": "THIRTY THREE FOUNDATION",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 036: Charitable foundation services, namely, providing fundraising...",
+          "cls": "036",
+          "serial": "87183698",
+          "owner": "Citrone Foundation Inc. (CORPORATION; CONNECTICUT, USA)"
+        },
+        {
+          "mark": "SIX THIRTY THREE",
+          "status": "DEADABANDONED",
+          "goods": "IC 025: Blouses; Pants; Sweaters; T-shirts; Cardigans; Jackets;...",
+          "cls": "025",
+          "serial": "97167598",
+          "owner": "Six Thirty Three & Co., LLC (LIMITED LIABILITY COMPANY; SOUTH CAROLINA, USA)"
+        },
+        {
+          "mark": "BREWERY THIRTY-THREE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 043: Taproom services; brewery services, namely, providing taproom...",
+          "cls": "043",
+          "serial": "90552367",
+          "owner": "Brewery 33 LLC (LIMITED LIABILITY COMPANY; NEW JERSEY, USA)"
+        },
+        {
+          "mark": "THIRTY THREE COMMANDMENTS",
+          "status": "DEADABANDONED",
+          "goods": "IC 025: Hats; Bottoms as clothing; Tops as clothing.",
+          "cls": "025",
+          "serial": "98861860",
+          "owner": "Candelario, Christian (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "THIRTY THREE ACRES",
+          "status": "DEADCANCELLED",
+          "goods": "IC 024: [ Bed linen; bed blankets ].",
+          "cls": "024",
+          "serial": "88493490",
+          "owner": "THIRTY THREE ACRES LLC (LIMITED LIABILITY COMPANY; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "CLUB THIRTY THREE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 025: jackets; shirts; headwear; baseball caps.",
+          "cls": "025",
+          "serial": "88585728",
+          "owner": "Disney Enterprises, Inc. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "INFINITE THIRTY THREE",
+          "status": "DEADABANDONED",
+          "goods": "IC 016: Reusable plastic food storage bags for household use.",
+          "cls": "016",
+          "serial": "97536261",
+          "owner": "RosaMaria Faith Griffith LLC (LIMITED LIABILITY COMPANY; OKLAHOMA, USA)"
+        },
+        {
+          "mark": "E THIRTY THREE",
+          "status": "DEADABANDONED",
+          "goods": "IC 033: [ wines; distilled spirits; liqueurs; mead; and alcoholic...",
+          "cls": "033",
+          "serial": "74736682",
+          "owner": "ORLANDO WYNDHAM GROUP PTY LTD (COMPANY; AUSTRALIA)"
+        },
+        {
+          "mark": "CLUB THIRTY THREE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 041: Arranging and conducting special events for entertainment...",
+          "cls": "041",
+          "serial": "88585736",
+          "owner": "Disney Enterprises, Inc. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "DELMAS THIRTY THREE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 016: Journaling and stationery supplies, namely, paper notebooks,...",
+          "cls": "016",
+          "serial": "90535213",
+          "owner": "Bon Travail LLC (LIMITED LIABILITY COMPANY; COLORADO, USA)"
+        },
+        {
+          "mark": "VITAL THIRTY THREE",
+          "status": "DEADABANDONED",
+          "goods": "IC 003: Perfumes and colognes.",
+          "cls": "003",
+          "serial": "97198525",
+          "owner": "Balance on One Accord, LLC (LIMITED LIABILITY COMPANY; NORTH CAROLINA, USA)"
+        },
+        {
+          "mark": "FATHOM THIRTY-THREE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 025: [ Clothing, Namely - T-shirts; sweatshirts; jackets; hats,...",
+          "cls": "025",
+          "serial": "76341150",
+          "owner": "ZEULNER, RYAN (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "THIRTY-THREE DEGREES",
+          "status": "DEADABANDONED",
+          "goods": "IC 033: Wine.",
+          "cls": "033",
+          "serial": "87392405",
+          "owner": "CADUCEUS CELLARS, LLC (LIMITED LIABILITY COMPANY; ARIZONA, USA)"
+        },
+        {
+          "mark": "BLACK THIRTY THREE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 034: cigarettes.",
+          "cls": "034",
+          "serial": "86733767",
+          "owner": "GTS ENTERPRISES (PARTNERSHIP; NEW YORK, USA)"
+        },
+        {
+          "mark": "THIRTY-THREE LIFE PATH",
+          "status": "DEADABANDONED",
+          "goods": "IC 035: Business consulting services; Business development consulting...",
+          "cls": "035",
+          "serial": "99302639",
+          "owner": "Kevin Lester Jones, Jr (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "THIRTY ONE THIRTY THREE",
+          "status": "LIVEPENDING",
+          "goods": "IC 014: Jewelry.",
+          "cls": "014",
+          "serial": "98383191",
+          "owner": "31:33 LLC (LIMITED LIABILITY COMPANY; FLORIDA, USA)"
+        },
+        {
+          "mark": "THREE THIRTY THREE CREATIVE",
+          "status": "DEADABANDONED",
+          "goods": "IC 035: Social media strategy and marketing consultancy focusing on...",
+          "cls": "035",
+          "serial": "90502899",
+          "owner": "Prolific Media, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+        },
+        {
+          "mark": "THIRTY THREE & 1/3 RECORDS",
+          "status": "DEADABANDONED",
+          "goods": "IC 041: Entertainment namely, live performances by a musical band;...",
+          "cls": "041",
+          "serial": "77260845",
+          "owner": "THIRTY THREE & 1/3 RECORDS, LLC (LIMITED LIABILITY COMPANY; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "THIRTY THREE & 1/3 RECORDS",
+          "status": "DEADABANDONED",
+          "goods": "IC 009: Musical sound recordings; Musical video recordings; Sound...",
+          "cls": "009",
+          "serial": "77261029",
+          "owner": "THIRTY THREE & 1/3 RECORDS, LLC (LIMITED LIABILITY COMPANY; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "THIRTY THREE & 1/3 RECORDS",
+          "status": "DEADABANDONED",
+          "goods": "IC 035: Retail stores featuring music, CDs, Videos, pre-recorded...",
+          "cls": "035",
+          "serial": "77261011",
+          "owner": "THIRTY THREE & 1/3 RECORDS, LLC (LIMITED LIABILITY COMPANY; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "THIRTY-THREE FORTY-TWO",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 029: Meat and all natural meats.",
+          "cls": "029",
+          "serial": "88347374",
+          "owner": "MEYER FOODS GROUP LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+        },
+        {
+          "mark": "THIRTY THREE HARD SELTZER",
+          "status": "DEADABANDONED",
+          "goods": "IC 033: Hard seltzer.",
+          "cls": "033",
+          "serial": "90566340",
+          "owner": "Dust Bowl Brewing Co., LLC (LIMITED LIABILITY COMPANY; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "33.3 THIRTY THREE POINT THREE",
+          "status": "DEADABANDONED",
+          "goods": "IC 025: Clothing, Scarves, Gloves, Bags, Make up.",
+          "cls": "025",
+          "serial": "86111665",
+          "owner": "33POINT3, Inc. (CORPORATION; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "A 33 AGENCY THIRTY THREE",
+          "status": "DEADABANDONED",
+          "goods": "IC 042: Graphic design.",
+          "cls": "042",
+          "serial": "90246953",
+          "owner": "Leeper,Charron,A (LIMITED LIABILITY COMPANY; OHIO, USA)"
+        },
+        {
+          "mark": "33 THIRTY THREE GLOVE CO",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 028: Baseball batting gloves; Baseball training gloves.",
+          "cls": "028",
+          "serial": "99374500",
+          "owner": "33 Glove Co. LLC (LIMITED LIABILITY COMPANY; California, USA)"
+        },
+        {
+          "mark": "PEACE LOVE BEER BREWERY THIRTY-THREE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 032: Beer.; IC 043: Taproom services; brewery services, namely,...",
+          "cls": "032, 043",
+          "serial": "90552369",
+          "owner": "Brewery 33 LLC (LIMITED LIABILITY COMPANY; NEW JERSEY, USA)"
+        },
+        {
+          "mark": "THIRTY THREE HARD SELTZER DUST BOWL BREWING CO.",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 033: Hard seltzer.",
+          "cls": "033",
+          "serial": "97368883",
+          "owner": "Dust Bowl Brewing Co., LLC (LIMITED LIABILITY COMPANY; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "THREE 3IN30 THIRTY",
+          "status": "DEADCANCELLED",
+          "goods": "IC 028: [ Educational word card game comprised of lettered cards, a...",
+          "cls": "028",
+          "serial": "86457482",
+          "owner": "LEE, JACQUELINE (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "TEQUILA 33 PRODUCT OF MEXICO 100% DE AGAVE",
+          "status": "DEADABANDONED",
+          "goods": "IC 033: Wine & Spirits namely Tequila; Tequila; Tequila.",
+          "cls": "033",
+          "serial": "78602486",
+          "owner": "Murillo, Joel Abel (INDIVIDUAL; MEXICO)"
+        },
+        {
+          "mark": "30 THREE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 003: [ Body cream; Body oil; Body splash; Essential oils; Body...",
+          "cls": "003",
+          "serial": "87301969",
+          "owner": "Boom Boom Enterprises Incorporated (CORPORATION; TEXAS, USA)"
+        },
+        {
+          "mark": "THIRTY-THR33",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 035: Advertising services.",
+          "cls": "035",
+          "serial": "90221017",
+          "owner": "Oliver, Katharine O (INDIVIDUAL; UNITED KINGDOM)"
+        },
+        {
+          "mark": "HOUSE THREE THIRTY",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 035: Providing business meeting facilities.; IC 043: Restaurants...",
+          "cls": "035, 043",
+          "serial": "90262118",
+          "owner": "LBJ Trademarks, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+        },
+        {
+          "mark": "TWELVE THREE THIRTY",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 041: ENTERTAINMENT SERVICES, NAMELY, PRODUCING MOTION PICTURE FILMS...",
+          "cls": "041",
+          "serial": "90480645",
+          "owner": "Lauren Giraldo, Inc. (CORPORATION; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "TWELVE THREE THIRTY",
+          "status": "DEADABANDONED",
+          "goods": "IC 009: DOWNLOADABLE COMPUTER APPLICATION SOFTWARE FOR MOBILE PHONES...",
+          "cls": "009",
+          "serial": "90480616",
+          "owner": "Lauren Giraldo, Inc. (CORPORATION; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "HOUSE THREE THIRTY",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 041: Educational services, namely, job training in the fields of...",
+          "cls": "041",
+          "serial": "90390374",
+          "owner": "LBJ Trademarks, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+        },
+        {
+          "mark": "3 -THIRTY -3 NAIL BAR",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 044: Day spa services, namely, nail care, manicures, pedicures and...",
+          "cls": "044",
+          "serial": "88169870",
+          "owner": "3THIRTY3NAILBAR, LLC (LIMITED LIABILITY COMPANY; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "THIRTY THIRTY",
+          "status": "DEADABANDONED",
+          "goods": "IC 025: Clothing, namely, blouses, pants, skirts, dresses, tops,...",
+          "cls": "025",
+          "serial": "99056438",
+          "owner": "EVOLUTIONARY APPAREL INC. (CORPORATION; California, USA)"
+        },
+        {
+          "mark": "H HOUSE THREE THIRTY",
+          "status": "DEADABANDONED",
+          "goods": "IC 036: Financial advice services rendered via a community center.; IC...",
+          "cls": "036, 043",
+          "serial": "90799396",
+          "owner": "LBJ Trademarks, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+        },
+        {
+          "mark": "THIRTY SIX THIRTY",
+          "status": "DEADABANDONED",
+          "goods": "IC 045: Legal services.",
+          "cls": "045",
+          "serial": "86589894",
+          "owner": "Leak & Jamison, PLLC (LIMITED LIABILITY COMPANY; NORTH CAROLINA, USA)"
+        },
+        {
+          "mark": "THIRTY TO THIRTY",
+          "status": "LIVEPENDING",
+          "goods": "IC 025: Clothing, namely, t-shirts, shirts, sweatshirts, hats and...",
+          "cls": "025, 041",
+          "serial": "99748912",
+          "owner": "1 Hundred Percent Entertainment LLC (LIMITED LIABILITY COMPANY; Pennsylvania, USA)"
+        },
+        {
+          "mark": ":THIRTY",
+          "status": "DEADABANDONED",
+          "goods": "IC 025: Athletic apparel, namely, shirts, pants, jackets, footwear,...",
+          "cls": "025",
+          "serial": "87559947",
+          "owner": "Joe Cramier (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "THIRTY+",
+          "status": "DEADABANDONED",
+          "goods": "IC 025: [ (Based on Use in Commerce) Hats; Shirts; Graphic T-shirts;...",
+          "cls": "025",
+          "serial": "88164867",
+          "owner": "THIRTY+ LLC (LIMITED LIABILITY COMPANY; WASHINGTON, USA)"
+        },
+        {
+          "mark": "THIRTY THIRTY LA",
+          "status": "LIVEPENDING",
+          "goods": "IC 025: Clothing, namely, t-shirts, shirts, blouses, pants, shorts,...",
+          "cls": "025",
+          "serial": "99056443",
+          "owner": "EVOLUTIONARY APPAREL INC. (CORPORATION; California, USA)"
+        },
+        {
+          "mark": "33 THREE COLLECTIVE",
+          "status": "DEADABANDONED",
+          "goods": "IC 025: Graphic T-shirts.",
+          "cls": "025",
+          "serial": "98008077",
+          "owner": "Pantoja, A, Jahzel (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "THREE CLICKS AND THIRTY SECONDS",
+          "status": "DEADABANDONED",
+          "goods": "IC 035: Providing information about the goods and services of others...",
+          "cls": "035",
+          "serial": "78658144",
+          "owner": "World.info, Inc. (CORPORATION; NEVADA, USA)"
+        },
+        {
+          "mark": "THREE THIRTY 3 ELF PLACE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 026: [ needlecraft cross-stitch kits comprising of needles, thread...",
+          "cls": "026",
+          "serial": "74530776",
+          "owner": "POMEROY, JOHN (INDIVIDUAL; USA)"
+        }
+      ]
+    },
+    "revolve lighting": {
+      "total": "3,949",
+      "shown": 50,
+      "cards": [
+        {
+          "mark": "REVOLVE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 037: Construction, installation, maintenance, replacement and...",
+          "cls": "037",
+          "serial": "79321600",
+          "owner": "RELECTRIFY HOLDINGS PTY LTD (proprietary limited company (p/l or pty.ltd.); AUSTRALIA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADABANDONED",
+          "goods": "IC 035: retail store services featuring sportswear and snowboard...",
+          "cls": "035",
+          "serial": "76273286",
+          "owner": "MORELAND, DAVID (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADABANDONED",
+          "goods": "IC 025: Clothing, namely, shirts, T-shirts, sweat shirts, sweaters,...",
+          "cls": "025",
+          "serial": "76273287",
+          "owner": "MORELAND, DAVID (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 010: Spinal implants for use in spine surgery consisting of...",
+          "cls": "010",
+          "serial": "77429567",
+          "owner": "Globus Medical, Inc. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADABANDONED",
+          "goods": "IC 030: Candy.",
+          "cls": "030",
+          "serial": "78379978",
+          "owner": "SmithKline Beecham Corporation (CORPORATION; PENNSYLVANIA, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADABANDONED",
+          "goods": "IC 014: Jewelry, namely necklaces, brooches, pendents, rings,...",
+          "cls": "014",
+          "serial": "75586400",
+          "owner": "Revolve, L.L.C. (CORPORATION; LOUISIANA, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 005: Vitamins; All-purpose sanitizing preparations; Dietary and...",
+          "cls": "005",
+          "serial": "97250907",
+          "owner": "Eminent, Inc. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 025: [ men's clothing; namely, shirts, sweaters, jackets, pants,...",
+          "cls": "025",
+          "serial": "74283076",
+          "owner": "LABEL MARKETING INTERNATIONAL, INC. (CORPORATION; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADABANDONED",
+          "goods": "IC 016: Writing instruments.",
+          "cls": "016",
+          "serial": "86943199",
+          "owner": "Revolve Consumer Products Group LLC (LIMITED LIABILITY COMPANY; GEORGIA, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 040: Agricultural seed treatment services.",
+          "cls": "040",
+          "serial": "86561843",
+          "owner": "Axis Seed, LLC (CORPORATION; IOWA, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 035: [ wholesale distributorship services of sorted and processed...",
+          "cls": "035, 039, 040",
+          "serial": "87262742",
+          "owner": "Revolve Group, LLC (LIMITED LIABILITY COMPANY; UTAH, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADABANDONED",
+          "goods": "IC 030: Coffee.",
+          "cls": "030",
+          "serial": "87349746",
+          "owner": "Sheets, Melissa A. (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 003: [ Hotel amenity products, namely, shower gel, body soap,...",
+          "cls": "003",
+          "serial": "87026772",
+          "owner": "Erwyn Products Co., Inc. (CORPORATION; NEW JERSEY, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 019: Molded plastic building supply products to replace wood;...",
+          "cls": "019",
+          "serial": "87035939",
+          "owner": "N.E.W. Plastics Corp. (CORPORATION; WASHINGTON, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 012: Strollers.",
+          "cls": "012",
+          "serial": "90696171",
+          "owner": "Delta Enterprise Corp. (CORPORATION; NEW YORK, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADABANDONED",
+          "goods": "IC 003: Bath bombs; Body scrubs; Cosmetic bath salts; Non-medicated...",
+          "cls": "003, 005, 025, 034",
+          "serial": "88516352",
+          "owner": "URBAN SOUL VENTURES (CORPORATION; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 003: Wipes impregnated with a cleaning preparation; disposable...",
+          "cls": "003, 005, 021",
+          "serial": "88776283",
+          "owner": "Illinois Tool Works Inc. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 009: Electrical outlets; Surge protectors; USB charging ports.",
+          "cls": "009",
+          "serial": "88730056",
+          "owner": "360 ELectrical, LLC (LIMITED LIABILITY COMPANY; UTAH, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 028: [ Tennis racquet strings ].",
+          "cls": "028",
+          "serial": "87610669",
+          "owner": "The Prophet Corporation (CORPORATION; MINNESOTA, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 009: [ Downloadable mobile applications for scheduling, planning,...",
+          "cls": "009, 039",
+          "serial": "87732595",
+          "owner": "Revolve Technology Company, Inc. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADABANDONED",
+          "goods": "IC 045: Christian ministry services, namely, church youth ministry...",
+          "cls": "045",
+          "serial": "86974918",
+          "owner": "MARANATHA FELLOWSHIP OF SADDLEBACK VALLEY (CORPORATION; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 009: Automated microscope and operating software sold as a unit for...",
+          "cls": "009",
+          "serial": "86731897",
+          "owner": "DISCOVER ECHO INC. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADABANDONED",
+          "goods": "IC 018: Leather, imitation leather, and cloth purses, tote bags,...",
+          "cls": "018, 045",
+          "serial": "86771253",
+          "owner": "Revolve, Inc. (CORPORATION; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADABANDONED",
+          "goods": "IC 008: non-electric scissors and shears for cutting hair.",
+          "cls": "008",
+          "serial": "78952793",
+          "owner": "International Consulting Associates, Inc. (CORPORATION; NEVADA, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 042: [ Software as a service (SAAS) services featuring software for...",
+          "cls": "042",
+          "serial": "85727592",
+          "owner": "Revolve (LIMITED LIABILITY COMPANY; ILLINOIS, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 009: [ computer software; namely, software utilized to analyze and...",
+          "cls": "009",
+          "serial": "74288492",
+          "owner": "MICRO FOCUS IP DEVELOPMENT LIMITED (LIMITED COMPANY; UNITED KINGDOM)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 011: LED light bars and light pods for vehicles, namely, utility...",
+          "cls": "011",
+          "serial": "97088468",
+          "owner": "JST Performance, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 016: Paper napkins; Paper towels; Bathroom tissue; Facial tissue;...",
+          "cls": "016",
+          "serial": "97820208",
+          "owner": "MARCAL MANUFACTURING, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 016: Paper napkins; Paper towels; Bathroom tissue; Facial tissue;...",
+          "cls": "016",
+          "serial": "97917540",
+          "owner": "MARCAL MANUFACTURING, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADABANDONED",
+          "goods": "IC 028: Golf clubs; Golf tees; golf balls; golf tee markers; golf ball...",
+          "cls": "028",
+          "serial": "98029942",
+          "owner": "BLUE TEES ENTERPRISES, LLC (LIMITED LIABILITY COMPANY; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 041: [ HEALTH CLUB SERVICES FEATURING BICYCLE SPINNING ].",
+          "cls": "041",
+          "serial": "85248314",
+          "owner": "Revolve Holdings Group LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 011: [ Filters for drinking water; Waste water purification units;...",
+          "cls": "011, 021",
+          "serial": "85186856",
+          "owner": "Sovereign Earth LLC (LIMITED LIABILITY COMPANY; CALIFORNIA, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 003: Hotel amenity products, namely, shower gel, body soap,...",
+          "cls": "003",
+          "serial": "87026747",
+          "owner": "Erwyn Products Co., Inc. (CORPORATION; NEW JERSEY, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "LIVEPENDING",
+          "goods": "IC 024: gym towels; hand towels; no-slip towels; yoga towels; yoga...",
+          "cls": "024, 027, 028",
+          "serial": "99532906",
+          "owner": "Eminent, Inc. (CORPORATION; Delaware, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 009: laser levels.",
+          "cls": "009",
+          "serial": "88713228",
+          "owner": "Robert Bosch Tool Corporation (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADABANDONED",
+          "goods": "IC 009: Computer software for producing and performing music, and...",
+          "cls": "009",
+          "serial": "86343906",
+          "owner": "inMusic Brands, Inc. (CORPORATION; FLORIDA, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 009: Downloadable digital image files containing photographs...",
+          "cls": "009",
+          "serial": "97052604",
+          "owner": "TSC LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "LIVEPENDING",
+          "goods": "IC 009: Downloadable virtual goods, namely, image files featuring...",
+          "cls": "009, 035, 041, 042",
+          "serial": "97620224",
+          "owner": "Eminent, Inc. (CORPORATION; DELAWARE, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 009: [ Electrical outlets; Surge protectors; USB charging ports ].",
+          "cls": "009",
+          "serial": "86301203",
+          "owner": "360 Electrical (LIMITED LIABILITY COMPANY; UTAH, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "LIVEREGISTERED",
+          "goods": "IC 043: Restaurant services.",
+          "cls": "043",
+          "serial": "85890182",
+          "owner": "DCW Investments, LLC (LIMITED LIABILITY COMPANY; OKLAHOMA, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 020: [ CHAIRS, CAMPING FURNITURE, STADIUM CHAIRS, TURNING CHAIRS ].",
+          "cls": "020",
+          "serial": "76710768",
+          "owner": "REVOLVE, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADABANDONED",
+          "goods": "IC 040: Printing/transfer of logo to fabric items.",
+          "cls": "040",
+          "serial": "85003769",
+          "owner": "Kress, Marcia L. (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADABANDONED",
+          "goods": "IC 033: Wine.",
+          "cls": "033",
+          "serial": "86494518",
+          "owner": "Latitude Beverage Company (CORPORATION; MASSACHUSETTS, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADABANDONED",
+          "goods": "IC 025: Children's cloth eating bibs; Cloth bibs for adult diners;...",
+          "cls": "025",
+          "serial": "77849952",
+          "owner": "Pittman, Brian Troy (INDIVIDUAL; USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADABANDONED",
+          "goods": "IC 012: bicycles.",
+          "cls": "012",
+          "serial": "77856251",
+          "owner": "LMT Global LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 009: [ Cellular Telephones ].",
+          "cls": "009",
+          "serial": "85549379",
+          "owner": "TCT Mobile Ltd. (CORPORATION; HONG KONG)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 012: [ Bicycles and Scooters ].",
+          "cls": "012",
+          "serial": "85722167",
+          "owner": "Genesis Electric Vehicles, Inc. (CORPORATION; NEW YORK, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 042: [ Software as a service (SAAS) services featuring software for...",
+          "cls": "042",
+          "serial": "85800773",
+          "owner": "Domain IP MGMT LLC (LIMITED LIABILITY COMPANY; NEVADA, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 036: [ Art appraisal; Art brokerage; Consultation in art as an...",
+          "cls": "036",
+          "serial": "86836503",
+          "owner": "Revolve, LLC (LIMITED LIABILITY COMPANY; NEBRASKA, USA)"
+        },
+        {
+          "mark": "REVOLVE",
+          "status": "DEADCANCELLED",
+          "goods": "IC 036: [ Art appraisal; Art brokerage; Consultation in art as an...",
+          "cls": "036",
+          "serial": "86836505",
+          "owner": "Revolve, LLC (LIMITED LIABILITY COMPANY; NEBRASKA, USA)"
+        }
+      ]
+    }
+  },
+  "instagram": {
+    "sidea": {
+      "http": 200,
+      "title": "Emanuel Sidea (@sidea) • Instagram photos and videos",
+      "og": "Emanuel Sidea (@sidea) • Instagram photos and videos",
+      "desc": "739 Followers, 894 Following, 201 Posts - Emanuel Sidea (@sidea) on Instagram: \"U.S. Correspondent at Sweden's largest business daily Dagens Industri. Based in New York City\"",
+      "body": "Log In\nSign Up\nsidea\n739 followers\n871 following\nEmanuel Sidea\nsidea\nU.S. Correspondent at Sweden's largest business daily Dagens Industri. Based in New York City\nsidea.se\nJump!\nShow more posts from sidea\nMeta\nAbout\nBlog\nJobs\nHelp\nAPI\nPrivacy\nConsumer Health Privacy\nTerms\nLocations\nPopular\nInstagram Lite\nMeta AI\nMuse\nThreads\nContact Uploading & Non-Users\nMeta Verified\nEnglish\nAfrikaans\nالعربية\nČeš",
+      "url": "https://www.instagram.com/sidea/"
+    },
+    "sideastudio": {
+      "http": 200,
+      "title": "Side-A Music Studio (@sideastudio) • Instagram photos and videos",
+      "og": "Side-A Music Studio (@sideastudio) • Instagram photos and videos",
+      "desc": "2 Followers, 0 Following, 0 Posts - Side-A Music Studio (@sideastudio) on Instagram: \"음악으로 꿈 꾸는 모두를 위한 열린 공간, 사이드에이 뮤직 스튜디오에 오신 것을 환영합니다.\"",
+      "body": "Log In\nSign Up\nsideastudio\n2 followers\n0 following\nSide-A Music Studio\n음악으로 꿈 꾸는 모두를 위한 열린 공간, 사이드에이 뮤직 스튜디오에 오신 것을 환영합니다.\nwww.sideamusic.co.kr\nMeta\nAbout\nBlog\nJobs\nHelp\nAPI\nPrivacy\nConsumer Health Privacy\nTerms\nLocations\nPopular\nInstagram Lite\nMeta AI\nMuse\nThreads\nContact Uploading & Non-Users\nMeta Verified\nEnglish\nAfrikaans\nالعربية\nČeština\nDansk\nDeutsch\nΕλληνικά\nEnglish\nEnglish (UK)\nEspañol (Esp",
+      "url": "https://www.instagram.com/sideastudio/"
+    },
+    "sidea.lighting": {
+      "http": 200,
+      "title": "Profile isn't available • Instagram",
+      "og": null,
+      "desc": null,
+      "body": "Log in\nProfile isn't available\nThe link may be broken, or the profile may have been removed.\nSign up for Instagram",
+      "url": "https://www.instagram.com/sidea.lighting/"
+    },
+    "deadwax": {
+      "http": 200,
+      "title": "Buz Deadwax (@deadwax) • Instagram photos and videos",
+      "og": "Buz Deadwax (@deadwax) • Instagram photos and videos",
+      "desc": "475 Followers, 919 Following, 843 Posts - Buz Deadwax (@deadwax) on Instagram: \"\"",
+      "body": "Log In\nSign Up\ndeadwax\n475 followers\n900 following\nBuz Deadwax\nThis profile is private\nAlready follow deadwax? Log in to see their photos and videos.\nMeta\nAbout\nBlog\nJobs\nHelp\nAPI\nPrivacy\nConsumer Health Privacy\nTerms\nLocations\nPopular\nInstagram Lite\nMeta AI\nMuse\nThreads\nContact Uploading & Non-Users\nMeta Verified\nEnglish\nAfrikaans\nالعربية\nČeština\nDansk\nDeutsch\nΕλληνικά\nEnglish\nEnglish (UK)\nEspaño",
+      "url": "https://www.instagram.com/deadwax/"
+    },
+    "deadwaxlighting": {
+      "http": 200,
+      "title": "Profile isn't available • Instagram",
+      "og": null,
+      "desc": null,
+      "body": "Log in\nProfile isn't available\nThe link may be broken, or the profile may have been removed.\nSign up for Instagram",
+      "url": "https://www.instagram.com/deadwaxlighting/"
+    },
+    "deadwax.studio": {
+      "http": 200,
+      "title": "Profile isn't available • Instagram",
+      "og": null,
+      "desc": null,
+      "body": "Log in\nProfile isn't available\nThe link may be broken, or the profile may have been removed.\nSign up for Instagram",
+      "url": "https://www.instagram.com/deadwax.studio/"
+    },
+    "spindle": {
+      "http": 200,
+      "title": "Profile isn't available • Instagram",
+      "og": null,
+      "desc": null,
+      "body": "Log in\nProfile isn't available\nThe link may be broken, or the profile may have been removed.\nSign up for Instagram",
+      "url": "https://www.instagram.com/spindle/"
+    },
+    "spindlelighting": {
+      "http": 200,
+      "title": "Profile isn't available • Instagram",
+      "og": null,
+      "desc": null,
+      "body": "Log in\nProfile isn't available\nThe link may be broken, or the profile may have been removed.\nSign up for Instagram",
+      "url": "https://www.instagram.com/spindlelighting/"
+    },
+    "runout": {
+      "http": 200,
+      "title": "(@runout) • Instagram photos and videos",
+      "og": " (@runout) • Instagram photos and videos",
+      "desc": "6 Followers, 1 Following, 0 Posts - @runout on Instagram: \"\"",
+      "body": "Log In\nSign Up\nrunout\n6 followers\n1 following\nMeta\nAbout\nBlog\nJobs\nHelp\nAPI\nPrivacy\nConsumer Health Privacy\nTerms\nLocations\nPopular\nInstagram Lite\nMeta AI\nMuse\nThreads\nContact Uploading & Non-Users\nMeta Verified\nEnglish\nAfrikaans\nالعربية\nČeština\nDansk\nDeutsch\nΕλληνικά\nEnglish\nEnglish (UK)\nEspañol (España)\nEspañol\nفارسی\nSuomi\nFrançais\nעברית\nBahasa Indonesia\nItaliano\n日本語\n한국어\nBahasa Melayu\nNorsk\nNede",
+      "url": "https://www.instagram.com/runout/"
+    },
+    "runoutstudio": {
+      "http": 200,
+      "title": "Jed (@runoutstudio) • Instagram photos and videos",
+      "og": "Jed (@runoutstudio) • Instagram photos and videos",
+      "desc": "0 Followers, 0 Following, 0 Posts - Jed (@runoutstudio) on Instagram: \"\"",
+      "body": "Log In\nSign Up\nrunoutstudio\n0 followers\n0 following\nJed\nMeta\nAbout\nBlog\nJobs\nHelp\nAPI\nPrivacy\nConsumer Health Privacy\nTerms\nLocations\nPopular\nInstagram Lite\nMeta AI\nMuse\nThreads\nContact Uploading & Non-Users\nMeta Verified\nEnglish\nAfrikaans\nالعربية\nČeština\nDansk\nDeutsch\nΕλληνικά\nEnglish\nEnglish (UK)\nEspañol (España)\nEspañol\nفارسی\nSuomi\nFrançais\nעברית\nBahasa Indonesia\nItaliano\n日本語\n한국어\nBahasa Melayu\n",
+      "url": "https://www.instagram.com/runoutstudio/"
+    },
+    "leadin": {
+      "http": 200,
+      "title": "(@leadin) • Instagram photos and videos",
+      "og": " (@leadin) • Instagram photos and videos",
+      "desc": "11 Followers, 9 Following, 1 Posts - @leadin on Instagram: \"\"",
+      "body": "Log In\nSign Up\nleadin\n11 followers\n9 following\nShow more posts from leadin\nMeta\nAbout\nBlog\nJobs\nHelp\nAPI\nPrivacy\nConsumer Health Privacy\nTerms\nLocations\nPopular\nInstagram Lite\nMeta AI\nMuse\nThreads\nContact Uploading & Non-Users\nMeta Verified\nEnglish\nAfrikaans\nالعربية\nČeština\nDansk\nDeutsch\nΕλληνικά\nEnglish\nEnglish (UK)\nEspañol (España)\nEspañol\nفارسی\nSuomi\nFrançais\nעברית\nBahasa Indonesia\nItaliano\n日本語",
+      "url": "https://www.instagram.com/leadin/"
+    },
+    "flipside": {
+      "http": 200,
+      "title": "John Greenleigh (@flipside) • Instagram photos and videos",
+      "og": "John Greenleigh (@flipside) • Instagram photos and videos",
+      "desc": "493 Followers, 973 Following, 504 Posts - John Greenleigh (@flipside) on Instagram: \"Apple and PC history in photographs, animations, and 360° by Apple's most-commissioned photographer.\"",
+      "body": "Log In\nSign Up\nflipside\n494 followers\n962 following\nJohn Greenleigh\nflipside\nApple and PC history in photographs, animations, and 360° by Apple's most-commissioned photographer.\nwww.flipsidestudios.com/the-apple-360-gallery\nApple\nBTS\nMission Wkshp\nPersonal\nShow more posts from flipside\nMeta\nAbout\nBlog\nJobs\nHelp\nAPI\nPrivacy\nConsumer Health Privacy\nTerms\nLocations\nPopular\nInstagram Lite\nMeta AI\nMuse",
+      "url": "https://www.instagram.com/flipside/"
+    },
+    "thirtythree": {
+      "http": 200,
+      "title": "Agnes Petho (@thirtythree) • Instagram photos and videos",
+      "og": "Agnes Petho (@thirtythree) • Instagram photos and videos",
+      "desc": "156 Followers, 609 Following, 88 Posts - Agnes Petho (@thirtythree) on Instagram: \"\"",
+      "body": "Log In\nSign Up\nthirtythree\n155 followers\n599 following\nAgnes Petho\nthirtythree\nShow more posts from thirtythree\nMeta\nAbout\nBlog\nJobs\nHelp\nAPI\nPrivacy\nConsumer Health Privacy\nTerms\nLocations\nPopular\nInstagram Lite\nMeta AI\nMuse\nThreads\nContact Uploading & Non-Users\nMeta Verified\nEnglish\nAfrikaans\nالعربية\nČeština\nDansk\nDeutsch\nΕλληνικά\nEnglish\nEnglish (UK)\nEspañol (España)\nEspañol\nفارسی\nSuomi\nFrançai",
+      "url": "https://www.instagram.com/thirtythree/"
+    },
+    "revolvelighting": {
+      "http": 200,
+      "title": "Profile isn't available • Instagram",
+      "og": null,
+      "desc": null,
+      "body": "Log in\nProfile isn't available\nThe link may be broken, or the profile may have been removed.\nSign up for Instagram",
+      "url": "https://www.instagram.com/revolvelighting/"
+    },
+    "zq9x_definitely_not_taken_7731": {
+      "http": 200,
+      "title": "Profile isn't available • Instagram",
+      "og": null,
+      "desc": null,
+      "body": "Log in\nProfile isn't available\nThe link may be broken, or the profile may have been removed.\nSign up for Instagram",
+      "url": "https://www.instagram.com/zq9x_definitely_not_taken_7731/"
+    }
+  },
+  "tiktok": {
+    "sidea": {
+      "http": 200,
+      "title": "SideA (@sidea) | TikTok",
+      "og": "SideA (@sidea) | TikTok",
+      "notfound": false,
+      "body": "TikTok Shop is now available on web!\n\nBrowse your favorite items.\n\nTikTok\nSearch\nFor You\nShop\nExplore\nFollowing\nShort dramas\nLIVE\nUpload\nProfile\nMore\nLog in\nCompany\nProgram\nTerms & Policies\n© 2026 TikTok\nGet Coins\nGet App\nSideA\nsidea\n0\nFollowing\n14\nFollowers\n0\nLikes\nFollow\nMessage\nNo bio yet.\n\nSugge",
+      "url": "https://www.tiktok.com/@sidea"
+    },
+    "sideastudio": {
+      "http": 200,
+      "title": "Couldn’t find this account. Visit TikTok to discover more trending creators, hashtags, and sounds.",
+      "og": "Couldn’t find this account. Visit TikTok to discover more trending creators, hashtags, and sounds.",
+      "notfound": true,
+      "body": "TikTok\nSearch\nFor You\nShop\nExplore\nFollowing\nShort dramas\nLIVE\nUpload\nProfile\nMore\nLog in\nCompany\nProgram\nTerms & Policies\n© 2026 TikTok\nGet Coins\nGet App\n\nCouldn't find this account\n\nLooking for videos? Try browsing our trending creators, hashtags, and sounds.",
+      "url": "https://www.tiktok.com/@sideastudio"
+    },
+    "sidea.lighting": {
+      "http": 200,
+      "title": "Couldn’t find this account. Visit TikTok to discover more trending creators, hashtags, and sounds.",
+      "og": "Couldn’t find this account. Visit TikTok to discover more trending creators, hashtags, and sounds.",
+      "notfound": true,
+      "body": "TikTok\nSearch\nFor You\nShop\nExplore\nFollowing\nShort dramas\nLIVE\nUpload\nProfile\nMore\nLog in\nCompany\nProgram\nTerms & Policies\n© 2026 TikTok\nGet Coins\nGet App\n\nCouldn't find this account\n\nLooking for videos? Try browsing our trending creators, hashtags, and sounds.",
+      "url": "https://www.tiktok.com/@sidea.lighting"
+    },
+    "deadwax": {
+      "http": 200,
+      "title": "deadwax (@deadwax) | TikTok",
+      "og": "deadwax (@deadwax) | TikTok",
+      "notfound": false,
+      "body": "TikTok\nSearch\nFor You\nShop\nExplore\nFollowing\nShort dramas\nLIVE\nUpload\nProfile\nMore\nLog in\nCompany\nProgram\nTerms & Policies\n© 2026 TikTok\nGet Coins\nGet App\ndeadwax\ndeadwax\n0\nFollowing\n0\nFollowers\n0\nLikes\nFollow\nMessage\nNo bio yet.\n\nSuggested accounts\n\nView all\n\nJENNIE\n\n26.5M followers\n\nFollow\n\nLISA\n\n",
+      "url": "https://www.tiktok.com/@deadwax"
+    },
+    "deadwaxlighting": {
+      "http": 200,
+      "title": "Couldn’t find this account. Visit TikTok to discover more trending creators, hashtags, and sounds.",
+      "og": "Couldn’t find this account. Visit TikTok to discover more trending creators, hashtags, and sounds.",
+      "notfound": true,
+      "body": "TikTok\nSearch\nFor You\nShop\nExplore\nFollowing\nShort dramas\nLIVE\nUpload\nProfile\nMore\nLog in\nCompany\nProgram\nTerms & Policies\n© 2026 TikTok\nGet Coins\nGet App\n\nCouldn't find this account\n\nLooking for videos? Try browsing our trending creators, hashtags, and sounds.",
+      "url": "https://www.tiktok.com/@deadwaxlighting"
+    },
+    "deadwax.studio": {
+      "http": 200,
+      "title": "Couldn’t find this account. Visit TikTok to discover more trending creators, hashtags, and sounds.",
+      "og": "Couldn’t find this account. Visit TikTok to discover more trending creators, hashtags, and sounds.",
+      "notfound": true,
+      "body": "TikTok\nSearch\nFor You\nShop\nExplore\nFollowing\nShort dramas\nLIVE\nUpload\nProfile\nMore\nLog in\nCompany\nProgram\nTerms & Policies\n© 2026 TikTok\nGet Coins\nGet App\n\nCouldn't find this account\n\nLooking for videos? Try browsing our trending creators, hashtags, and sounds.",
+      "url": "https://www.tiktok.com/@deadwax.studio"
+    },
+    "spindle": {
+      "http": 200,
+      "title": "Adam Harris (@spindle) | TikTok",
+      "og": "Adam Harris (@spindle) | TikTok",
+      "notfound": false,
+      "body": "TikTok\nSearch\nFor You\nShop\nExplore\nFollowing\nShort dramas\nLIVE\nUpload\nProfile\nMore\nLog in\nCompany\nProgram\nTerms & Policies\n© 2026 TikTok\nGet Coins\nGet App\nAdam Harris\nspindle\n961\nFollowing\n114\nFollowers\n0\nLikes\nFollow\nMessage\nNo bio yet.\n\nSuggested accounts\n\nView all\n\nJENNIE\n\n26.5M followers\n\nFollow",
+      "url": "https://www.tiktok.com/@spindle"
+    },
+    "spindlelighting": {
+      "http": 200,
+      "title": "Couldn’t find this account. Visit TikTok to discover more trending creators, hashtags, and sounds.",
+      "og": "Couldn’t find this account. Visit TikTok to discover more trending creators, hashtags, and sounds.",
+      "notfound": true,
+      "body": "TikTok\nSearch\nFor You\nShop\nExplore\nFollowing\nShort dramas\nLIVE\nUpload\nProfile\nMore\nLog in\nCompany\nProgram\nTerms & Policies\n© 2026 TikTok\nGet Coins\nGet App\n\nCouldn't find this account\n\nLooking for videos? Try browsing our trending creators, hashtags, and sounds.",
+      "url": "https://www.tiktok.com/@spindlelighting"
+    },
+    "runout": {
+      "http": 200,
+      "title": "run out (@runout) | TikTok",
+      "og": "run out (@runout) | TikTok",
+      "notfound": false,
+      "body": "TikTok\nSearch\nFor You\nShop\nExplore\nFollowing\nShort dramas\nLIVE\nUpload\nProfile\nMore\nLog in\nCompany\nProgram\nTerms & Policies\n© 2026 TikTok\nGet Coins\nGet App\nrun out\nrunout\n1\nFollowing\n3\nFollowers\n0\nLikes\nFollow\nMessage\nNo bio yet.\n\nSuggested accounts\n\nView all\n\nJENNIE\n\n26.5M followers\n\nFollow\n\nLISA\n\n2",
+      "url": "https://www.tiktok.com/@runout"
+    },
+    "runoutstudio": {
+      "http": 200,
+      "title": "Couldn’t find this account. Visit TikTok to discover more trending creators, hashtags, and sounds.",
+      "og": "Couldn’t find this account. Visit TikTok to discover more trending creators, hashtags, and sounds.",
+      "notfound": true,
+      "body": "TikTok\nSearch\nFor You\nShop\nExplore\nFollowing\nShort dramas\nLIVE\nUpload\nProfile\nMore\nLog in\nCompany\nProgram\nTerms & Policies\n© 2026 TikTok\nGet Coins\nGet App\n\nCouldn't find this account\n\nLooking for videos? Try browsing our trending creators, hashtags, and sounds.",
+      "url": "https://www.tiktok.com/@runoutstudio"
+    },
+    "leadin": {
+      "http": 200,
+      "title": "Couldn’t find this account. Visit TikTok to discover more trending creators, hashtags, and sounds.",
+      "og": "Couldn’t find this account. Visit TikTok to discover more trending creators, hashtags, and sounds.",
+      "notfound": true,
+      "body": "TikTok\nSearch\nFor You\nShop\nExplore\nFollowing\nShort dramas\nLIVE\nUpload\nProfile\nMore\nLog in\nCompany\nProgram\nTerms & Policies\n© 2026 TikTok\nGet Coins\nGet App\n\nCouldn't find this account\n\nLooking for videos? Try browsing our trending creators, hashtags, and sounds.",
+      "url": "https://www.tiktok.com/@leadin"
+    },
+    "flipside": {
+      "http": 200,
+      "title": "Flipside (@flipside) | TikTok",
+      "og": "Flipside (@flipside) | TikTok",
+      "notfound": false,
+      "body": "TikTok\nSearch\nFor You\nShop\nExplore\nFollowing\nShort dramas\nLIVE\nUpload\nProfile\nMore\nLog in\nCompany\nProgram\nTerms & Policies\n© 2026 TikTok\nGet Coins\nGet App\nFlipside\nflipside\n0\nFollowing\n26\nFollowers\n0\nLikes\nFollow\nMessage\nNo bio yet.\n\nSuggested accounts\n\nView all\n\nJENNIE\n\n26.5M followers\n\nFollow\n\nLIS",
+      "url": "https://www.tiktok.com/@flipside"
+    },
+    "thirtythree": {
+      "http": 200,
+      "title": "user3432584852689 (@thirtythree) | TikTok",
+      "og": "user3432584852689 (@thirtythree) | TikTok",
+      "notfound": false,
+      "body": "TikTok\nSearch\nFor You\nShop\nExplore\nFollowing\nShort dramas\nLIVE\nUpload\nProfile\nMore\nLog in\nCompany\nProgram\nTerms & Policies\n© 2026 TikTok\nGet Coins\nGet App\nuser3432584852689\nthirtythree\n27\nFollowing\n9\nFollowers\n0\nLikes\nFollow\nMessage\nNo bio yet.\n\nSuggested accounts\n\nView all\n\nJENNIE\n\n26.5M followers\n",
+      "url": "https://www.tiktok.com/@thirtythree"
+    },
+    "revolvelighting": {
+      "http": 200,
+      "title": "Couldn’t find this account. Visit TikTok to discover more trending creators, hashtags, and sounds.",
+      "og": "Couldn’t find this account. Visit TikTok to discover more trending creators, hashtags, and sounds.",
+      "notfound": true,
+      "body": "TikTok\nSearch\nFor You\nShop\nExplore\nFollowing\nShort dramas\nLIVE\nUpload\nProfile\nMore\nLog in\nCompany\nProgram\nTerms & Policies\n© 2026 TikTok\nGet Coins\nGet App\n\nCouldn't find this account\n\nLooking for videos? Try browsing our trending creators, hashtags, and sounds.",
+      "url": "https://www.tiktok.com/@revolvelighting"
+    },
+    "zq9x_definitely_not_taken_7731": {
+      "http": 200,
+      "title": "Couldn’t find this account. Visit TikTok to discover more trending creators, hashtags, and sounds.",
+      "og": "Couldn’t find this account. Visit TikTok to discover more trending creators, hashtags, and sounds.",
+      "notfound": true,
+      "body": "TikTok\nSearch\nFor You\nShop\nExplore\nFollowing\nShort dramas\nLIVE\nUpload\nProfile\nMore\nLog in\nCompany\nProgram\nTerms & Policies\n© 2026 TikTok\nGet Coins\nGet App\n\nCouldn't find this account\n\nLooking for videos? Try browsing our trending creators, hashtags, and sounds.",
+      "url": "https://www.tiktok.com/@zq9x_definitely_not_taken_7731"
+    }
+  }
+}

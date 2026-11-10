@@ -1,0 +1,204 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Production costing at 100 and 500 units | Spindle</title>
+<style>
+:root{--bg:#f6f2ea;--ink:#1b1916;--mute:#6b645a;--line:#e3dccf;--accent:#b8732e;--panel:#fffdf8}
+@media (prefers-color-scheme:dark){:root{--bg:#121110;--ink:#ece6da;--mute:#a19887;--line:#2c2925;--accent:#e6a456;--panel:#1a1816}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Inter",system-ui,sans-serif}
+main{max-width:880px;margin:0 auto;padding:28px 16px 80px}
+a{color:var(--accent)} .back{font-size:14px;display:inline-block;margin-bottom:18px}
+h1{font-size:28px;line-height:1.2} h2{margin-top:36px;font-size:21px} h3{font-size:17px}
+table{border-collapse:collapse;width:100%;display:block;overflow-x:auto;font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top} th{background:var(--panel)}
+code{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:0 4px;font-size:.9em}
+pre{background:var(--panel);border:1px solid var(--line);padding:12px;overflow-x:auto;border-radius:8px}
+img{max-width:100%}
+</style></head><body><main><a class="back" href="../START-HERE.html">Back to START HERE</a>
+<h1>Production costing at 100 and 500 units</h1>
+<p>Per-unit parts cost for the sconce body (identical for the Kit and the Sconce; the record is added separately). Two columns per quantity: a US-sourced path that could be ordered this month with US stock vendors and on-demand shops, and a mixed path that moves the cap, strip, adapter and keystone to vetted overseas makers once a sample has been approved. Sources are in vendors.md; (live) is a price read tonight, everything else is an estimate from the published examples and tiers.</p>
+<h2>Per-unit parts</h2>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>100, US path</th>
+<th>100, mixed path</th>
+<th>500, US path</th>
+<th>500, mixed path</th>
+<th>Basis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chrome dome cap, brass, polished, chromed</td>
+<td>$11.00 (Xometry US)</td>
+<td>$5.50 (PCBWay)</td>
+<td>$9.00</td>
+<td>$3.00 (Alibaba Dongguan, 500 MOQ)</td>
+<td>PCBWay/JLCCNC estimate; Alibaba snippet $0.50-5.00 class</td>
+</tr>
+<tr>
+<td>Steel wall plate, 14 ga, 3 PEM studs, powder coat</td>
+<td>$8.50</td>
+<td>$8.50</td>
+<td>$5.50</td>
+<td>$5.50</td>
+<td>SendCutSend published 100-unit examples $4.30-18.97 (live)</td>
+</tr>
+<tr>
+<td>Backplate, 10.5" x 1/2" MDF, CNC, painted</td>
+<td>$6.25</td>
+<td>$6.25</td>
+<td>$5.00</td>
+<td>$5.00</td>
+<td>local CNC estimate + MDF $1.82 + paint</td>
+</tr>
+<tr>
+<td>Hub, 5" x 1"</td>
+<td>$7.00 (MJF PA12, JLC3DP/Craftcloud)</td>
+<td>$7.00</td>
+<td>$4.50</td>
+<td>$4.50</td>
+<td>Craftcloud live $6.95 FDM at 10; MJF tiers estimate</td>
+</tr>
+<tr>
+<td>COB strip 2700K CRI90, 3 ft</td>
+<td>$5.00 (HitLights wholesale ask; $6.90 retail live)</td>
+<td>$2.05 (Adled, $2.24/m snippet)</td>
+<td>$4.50</td>
+<td>$1.90</td>
+<td></td>
+</tr>
+<tr>
+<td>UL Class 2 12V 2A adapter</td>
+<td>$9.00 (LED Updates/HitLights volume)</td>
+<td>$3.50 (UL 1310 OEM, E-file verified)</td>
+<td>$8.00</td>
+<td>$3.00</td>
+<td>LED Updates $11.99 single</td>
+</tr>
+<tr>
+<td>Inline dimmer</td>
+<td>$3.50</td>
+<td>$1.50</td>
+<td>$3.00</td>
+<td>$1.20</td>
+<td>Ecolocity $3.99 live</td>
+</tr>
+<tr>
+<td>Panel DC jack 5.5 x 2.1</td>
+<td>$0.35</td>
+<td>$0.25</td>
+<td>$0.30</td>
+<td>$0.20</td>
+<td>Mouser class</td>
+</tr>
+<tr>
+<td>E-Z Lok 400-4 insert</td>
+<td>$1.70 (live, $170/100)</td>
+<td>$1.70</td>
+<td>$1.50 (live, 1,000 tier)</td>
+<td>$1.50</td>
+<td>Albany County</td>
+</tr>
+<tr>
+<td>Felt washer + 6 pads</td>
+<td>$0.23 (live)</td>
+<td>$0.23</td>
+<td>$0.20</td>
+<td>$0.20</td>
+<td>Durofelt</td>
+</tr>
+<tr>
+<td>45 adapter</td>
+<td>$0.16</td>
+<td>$0.16</td>
+<td>$0.13</td>
+<td>$0.13</td>
+<td>eBay bulk</td>
+</tr>
+<tr>
+<td>M3 set screw, key, 2 screws, 2 anchors</td>
+<td>$0.60</td>
+<td>$0.60</td>
+<td>$0.50</td>
+<td>$0.50</td>
+<td>McMaster class</td>
+</tr>
+<tr>
+<td>Box 13x13x3 (Uline live) + insert + tissue/label</td>
+<td>$1.48 + $1.50 foam + $0.40 = $3.38</td>
+<td>$3.38</td>
+<td>$1.18 + $1.20 pulp + $0.30 = $2.68 plus mould</td>
+<td>$2.68</td>
+<td>Uline live; Custom Foam Parts; Pulp Packaging MOQ 500, mould under $1,000</td>
+</tr>
+<tr>
+<td>Body total</td>
+<td>about $56.70</td>
+<td>about $40.60</td>
+<td>about $44.80</td>
+<td>about $29.30</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>The engineering report's $27 at 100 assumed a $1.80 brass knob, a $0.41 keyhole plate, a $3 hub and a $3.50 box. The decided mount (custom chrome dome, steel plate with PEM studs and powder, J-slot hub) adds roughly $12-15 per unit over that, and that is the honest number: at 100 units bought in the US this month the body costs about $55-57 in parts; with the cap, strip and adapter moved overseas after a sample approval it is about $40. At 500 with the same mix it is about $29-30, or about $45 all-US.</p>
+<p>Records: Checkered Records at $2.50 each for 100 (live, $250 per 100, VG+ and genre-filtered); at 500, Record Head ($0.10 and up, $100 minimum) or Dusty Groove ($4.99 per 60, snippet) at well under $1 each plus a sorting hour per 60 to pull the ugly labels. Marquee titles remain $20-40 each per the scope report.</p>
+<p>Add-on in-wall kit (separate SKU): 15 ft CL2 cable $4.50, old-work bracket $1.20 (Sunco 100-pack live), 1-port keystone plate $0.99 (live), DC keystone coupler $6.50 US (eBay 5-pack snippet) or about $1.20 from an Alibaba keystone maker at 500, pull string and card $0.50. About $13.70 at 100 US, about $8.40 at 500 mixed. Sell at $29.</p>
+<h2>Margin check at the decided prices</h2>
+<p>Kit at $89: parts $56.70 (100, US) leaves $32 before shipping, processing and ads; at $40.60 (mixed) it leaves $48. Sconce at $129 with a $2.50 record: $70 and $86 respectively. Set at $249 kit / $329 with records: three bodies (two of them smaller and cheaper, call it 2.4 body-equivalents) at $136 / $97 leaves $113 / $152 on the kit set. The mixed path is what makes the Kit work at $89 under a $39 CPA; the US path makes the Kit a loss leader at 100 and only breaks even on ads at 500. Recommendation stands from the design report: the Sconce and the Set carry the margin, and the first 100 should be bought on the US path for speed and then re-sourced on approved samples.</p>
+<h2>Cash and lead time</h2>
+<p>100 units: body parts about $5,700 US path or $4,100 mixed, plus $250 records, plus about $300 for the in-wall kits if 20% take it. Lead time on the US path is governed by the caps: Xometry 7-10 business days, SendCutSend with powder 7-12 days, local CNC a week, MJF hubs 7-10 days, everything else stock. Parts in hand in about 3 weeks. On the mixed path PCBWay caps are about 3 weeks and Alibaba strip and adapters 3-5 weeks with air freight, so 5-6 weeks.</p>
+<p>500 units: body parts about $22,400 US or $14,700 mixed, plus the pulp-tray mould (under $1,000, Pulp Packaging) and records ($500-1,500 depending on source). Alibaba caps at 500 MOQ, strip and adapters run 5-7 weeks including sea or consolidated air freight; pulp trays 6-8 weeks including the mould. Plan 8 weeks from PO to parts, and order the US-path cap and plate for the first 100 of the 500 so shipping never stops. An injection-moulded hub (aluminium tool $5,000-8,000, 2-3 weeks, Jaycon 2026 data) does not pay back until roughly 1,500-2,000 hubs against MJF at $4.50-7; skip it at 500.</p>
+<h2>Lead-time table</h2>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>100</th>
+<th>500</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dome cap</td>
+<td>Xometry 7-10 bd; PCBWay 15-22 d</td>
+<td>PCBWay 3-4 wk; Alibaba 5-7 wk</td>
+</tr>
+<tr>
+<td>Steel plate</td>
+<td>SendCutSend 7-12 d with powder</td>
+<td>same, in two releases</td>
+</tr>
+<tr>
+<td>Backplate</td>
+<td>Local CNC 5-7 d</td>
+<td>Local CNC 2 wk, or SendCutSend aluminium 2 wk at the $179 tier</td>
+</tr>
+<tr>
+<td>Hub</td>
+<td>MJF 7-10 d</td>
+<td>MJF 2-3 wk</td>
+</tr>
+<tr>
+<td>Strip, adapter, dimmer</td>
+<td>US stock 3-5 d</td>
+<td>Alibaba 4-6 wk incl. freight; US stock 1 wk</td>
+</tr>
+<tr>
+<td>Inserts, felt, hardware, 45s</td>
+<td>Stock 2-5 d</td>
+<td>Stock 1 wk</td>
+</tr>
+<tr>
+<td>Box</td>
+<td>Uline next day</td>
+<td>Uline next day; pulp tray 6-8 wk</td>
+</tr>
+<tr>
+<td>Records</td>
+<td>Checkered 1-2 wk Media Mail</td>
+<td>Record Head / Dusty Groove 1-2 wk plus sorting</td>
+</tr>
+</tbody>
+</table></main></body></html>

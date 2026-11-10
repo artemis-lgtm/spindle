@@ -1,0 +1,17 @@
+RFQ: CNC-routed backplates, 2 sizes (sample run)
+Parts: RS-BP-12-MDF (D 266.7 / 10.50 in) and RS-BP-7-MDF (D 152.4 / 6.00 in), both 12.7 mm (1/2 in) thick.
+Material: 1/2 in MDF (preferred for flatness and paint) OR 1/2 in Baltic birch plywood; quote both.
+Quantity: 5 + 5 samples; please also quote 100 + 50.
+Features (see STEP + PDF): outer profile; rim rabbet 10.2 wide x 1.5 deep centred on the rim (3D rim feature, needs a
+ rabbet/slot pass or a lathe); centre bore 25/64 in through; 3x #8 90 deg countersinks on the FRONT face on R 45 at
+ 90/210/330 deg; 6 felt-pad spot pockets 13.3 dia x 0.5 deep (12 in part) / 3 on the 7 in part; one 6.35 wide notch at
+ 6 o'clock from the rabbet floor to the back face; REAR face: pocket 16 x 13 x 6.5 deep at (0, +15) and a channel
+ 6 wide x 4 deep from the notch to R 60 at 6 o'clock.
+Tolerances: diameter +/-0.3; thickness as supplied; rabbet depth +/-0.2; bore +0.1/-0; countersinks +/-0.3 on position.
+Finish: supply sanded, ready for paint (we paint matte black) OR quote painted matte black 2 coats as an option.
+Deliverable: parts, bagged, no labels on the front face.
+Ship to: Florida, USA. Please state lead time and tooling/setup charge separately.
+Files: STEP is the master; DXF layers CUT / ETCH (rabbet floor) / POCKET (rear features) are a 2D aid.
+
+Files in this folder: RS-BP-12-MDF.step, RS-BP-12-MDF.dxf, RS-BP-12-MDF.stl, RS-BP-7-MDF.step, RS-BP-7-MDF.dxf, RS-BP-12-MDF.pdf, RS-BP-7-MDF.pdf
+Contact: (fill in before sending; nothing has been sent)

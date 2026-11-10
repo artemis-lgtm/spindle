@@ -1,0 +1,14 @@
+:root {
+  --c-vinyl: #16130F;
+  --c-soot: #2B2622;
+  --c-plaster: #E9DFCF;
+  --c-label: #F4ECDD;
+  --c-halo: #F0A43B;
+  --c-ember: #B9661C;
+  --c-chrome: #C7CBD0;
+  --c-chrome-deep: #5F6468;
+  --c-brass: #B7955B;
+  --f-display: 'Inter Tight', 'Helvetica Neue', Arial, sans-serif;
+  --f-editorial: 'Instrument Serif', Georgia, serif;
+  --f-mono: 'JetBrains Mono', ui-monospace, Menlo, monospace;
+}

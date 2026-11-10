@@ -1,0 +1,109 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>brand: identity, naming and packaging for the record sconce | Spindle</title>
+<style>
+:root{--bg:#f6f2ea;--ink:#1b1916;--mute:#6b645a;--line:#e3dccf;--accent:#b8732e;--panel:#fffdf8}
+@media (prefers-color-scheme:dark){:root{--bg:#121110;--ink:#ece6da;--mute:#a19887;--line:#2c2925;--accent:#e6a456;--panel:#1a1816}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Inter",system-ui,sans-serif}
+main{max-width:880px;margin:0 auto;padding:28px 16px 80px}
+a{color:var(--accent)} .back{font-size:14px;display:inline-block;margin-bottom:18px}
+h1{font-size:28px;line-height:1.2} h2{margin-top:36px;font-size:21px} h3{font-size:17px}
+table{border-collapse:collapse;width:100%;display:block;overflow-x:auto;font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top} th{background:var(--panel)}
+code{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:0 4px;font-size:.9em}
+pre{background:var(--panel);border:1px solid var(--line);padding:12px;overflow-x:auto;border-radius:8px}
+img{max-width:100%}
+</style></head><body><main><a class="back" href="../START-HERE.html">Back to START HERE</a>
+<h1>brand: identity, naming and packaging for the record sconce</h1>
+<p>Built overnight 2026-11-09 by the brand agent. Nothing registered, nothing ordered, nobody contacted. Every claim with a number or a vendor carries a URL in the file where it is made; estimates are marked.</p>
+<h2>Recommendation</h2>
+<p><strong>Brand and product: Spindle.</strong> Deadwax is the alternate; Side A drops to third because a live SIDE A registration (class 009/021, protective sleeves for vinyl records) sits on the same shelf as us. Reasons, the eight-name table and the method are in <code>naming-report.md</code>. Austin's working name was Side A; all three names are built out so the switch is one line (see "Regenerating").</p>
+<h2>What is here</h2>
+<table>
+<thead>
+<tr>
+<th>Path</th>
+<th>What</th>
+<th>Open</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>brand-guide.html</code></td>
+<td>One page: name table, mark, lockups, colour, type, photography rules, voice and taglines, packaging previews, references, file index. Google Fonts loaded from the CDN; renders standalone from disk.</td>
+<td>Add real photography when the first units are shot.</td>
+</tr>
+<tr>
+<td><code>naming-report.md</code></td>
+<td>8 names x USPTO (011/020/035 + 009/021) x .com/.co x Instagram x TikTok, with the recommendation and the lawyer questions.</td>
+<td>IP lawyer hour before filing; confirm @spindle on Instagram in the app.</td>
+</tr>
+<tr>
+<td><code>tokens.json</code>, <code>tokens.css</code></td>
+<td>Palette (9 colours, hex), fonts (Google + licensed alternatives), type scale, spacing, radii, rules.</td>
+<td>None.</td>
+</tr>
+<tr>
+<td><code>logo/</code></td>
+<td>Monogram (on light, on dark, one-colour black and white, 512 icon). Wordmarks (caps + editorial italic) and horizontal + stacked lockups for Spindle, Deadwax, Side A. <code>palette.svg</code> sheet. All text outlined, no font dependency.</td>
+<td>None.</td>
+</tr>
+<tr>
+<td><code>packaging/mailer-13x13x3-outside.svg</code>, <code>-inside.svg</code></td>
+<td>RETT mailer dieline artwork, 25 x 33.5 in flat, kraft B-flute, K + Ember outside, Soot flood + Halo radial on the lid interior. Cut magenta, crease cyan, 0.125 in bleed, 0.25 in safe, legend on sheet.</td>
+<td>Re-flow onto the vendor's production dieline PDF (Packlane gives it after choosing options). Drawdown of Ember and Soot on kraft.</td>
+</tr>
+<tr>
+<td><code>packaging/insert-tray.svg</code></td>
+<td>Two-layer black EPE foam (pulp at volume) tray: dome pocket dead centre, cord and hardware pockets, backplate pocket below, record sleeve under everything. Plan views + centre section with dimensions.</td>
+<td>Confirm final hub Ø and backplate Ø with the mounting agent before cutting foam.</td>
+</tr>
+<tr>
+<td><code>packaging/insert-card-front.svg</code>, <code>-back.svg</code></td>
+<td>5 x 7 uncoated card. Front: mark, wordmark, "Change the record. Change the room." Back: four install steps, QR, the swap ritual, safety paragraph.</td>
+<td>QR points at spindlelighting.com/install, a free but unregistered domain. Regenerate after the domain is bought.</td>
+</tr>
+<tr>
+<td><code>packaging/warranty-card.svg</code></td>
+<td>3.5 x 5 Soot card, two-year warranty text, serial/finish/date lines.</td>
+<td>Warranty terms are a draft; Austin to approve the exclusions.</td>
+</tr>
+<tr>
+<td><code>packaging/sticker-2in-round.svg</code>, <code>sticker-finish-labels.svg</code></td>
+<td>Round seal sticker; 3 x 0.55 in finish labels (Chrome, Brass, Black) so one box SKU serves three finishes.</td>
+<td>None.</td>
+</tr>
+<tr>
+<td><code>packaging/spec-sheet.md</code></td>
+<td>Vendor-ready spec: style, size, board, inks, files, dieline note, quantities, lead times, tray material, card stocks, sticker vendor, unboxing order. Packlane numbers from their live product page; Arka rate-limited the scraper, quote by form.</td>
+<td>Instant quote on packlane.com for 100 and 250 units.</td>
+</tr>
+<tr>
+<td><code>preview/</code></td>
+<td>PNG of every SVG (headless Chrome via <code>tools/render_previews.sh</code>). <code>_check/</code> holds downscaled copies and two brand-guide screenshots.</td>
+<td>None.</td>
+</tr>
+<tr>
+<td><code>tools/</code></td>
+<td><code>svgtext.py</code> (fontTools text-to-path with GPOS kerning), <code>gen_brand.py</code>, <code>gen_packaging.py</code>, <code>render_previews.sh</code>, <code>fonts/</code> (Inter Tight, Instrument Serif, JetBrains Mono TTFs, OFL), <code>namecheck-results/</code> (raw USPTO/IG/TikTok JSON + domain RDAP notes + the Playwright script).</td>
+<td>None.</td>
+</tr>
+</tbody>
+</table>
+<h2>Regenerating (for a name change or copy edit)</h2>
+<pre><code>cd projects/record-sconces/brand/tools
+# edit RECOMMENDED = &quot;spindle&quot; | &quot;deadwax&quot; | &quot;sidea&quot; in gen_brand.py
+python3 gen_brand.py &amp;&amp; python3 gen_packaging.py &amp;&amp; ./render_previews.sh
+</code></pre>
+<p>Headless Chrome is at /Applications/Google Chrome.app. No Inkscape or ImageMagick on this box; everything is pure Python + fontTools + Chrome.</p>
+<h2>Design decisions in one breath</h2>
+<p>Lane: premium physical product, warm. References cited in the guide: Schoolhouse (plain object names, stamped wordmark), Rejuvenation (finish-first), Gantri (pulp tray, sconce price band), Tom Dixon Press (one polished part on a matte body), Teenage Engineering (mono spec type, exploded diagrams), Audio-Technica (record culture without album art), Poplight (brand equals product). Token discipline cross-checked against the Apple entry in the local brand library: one accent, near-black ink not pure black, negative tracking at display sizes, then warmed. Palette comes from the reference photo: Vinyl #16130F, Plaster #E9DFCF, Halo #F0A43B, Chrome #C7CBD0. Fonts: Inter Tight, Instrument Serif italic, JetBrains Mono, all Google Fonts.</p>
+<h2>House rules honoured</h2>
+<p>No band names, logos or album art anywhere; labels in renders and artwork are plain or fictional. Written only inside brand/. No sends, no orders, no accounts, no payments. No em-dashes.</p>
+<h2>Open items, in priority order</h2>
+<ol>
+<li>Austin picks the name (Spindle recommended). Then register spindlelighting.com, spindle.lighting, @spindlelighting on Instagram and TikTok, same morning.</li>
+<li>IP lawyer hour: SPINDLE vs the class 020 mattress registration; whether to file SPINDLE or SPINDLE LIGHTING.</li>
+<li>Packlane instant quote for the custom 13 x 13 x 3 kraft B-flute RETT at 100 and 250, both sides printed; download their dieline and re-flow the panel art.</li>
+<li>Foam converter quote for the two-layer tray (or Packlane's insert partner); confirm pocket diameters against the final hub and backplate.</li>
+<li>Shoot the three photographs per finish per the guide, replace the Blender renders in the guide.</li>
+</ol></main></body></html>

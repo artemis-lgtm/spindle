@@ -1,0 +1,1215 @@
+{
+  "side a exact": {
+    "query": "WM:\"side a\"",
+    "total": "4,431",
+    "shown": 49,
+    "cards": [
+      {
+        "mark": "SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 007: Automatic dispensers for hot and cold beverages in the nature...",
+        "cls": "007, 009, 011, 029, 030, 031, 032",
+        "serial": "79202327",
+        "owner": "RHEA VENDORS GROUP S.P.A. (Società per azioni; ITALY)"
+      },
+      {
+        "mark": "SIDE",
+        "status": "LIVEPENDING",
+        "goods": "IC 041: Entertainment and educational services, namely, artistic...",
+        "cls": "041",
+        "serial": "99476963",
+        "owner": "Side International Holdings Limited (PRIVATE LIMITED COMPANY; United Kingdom)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 002: [ Paints ].",
+        "cls": "002",
+        "serial": "73236764",
+        "owner": "Saxon Paint & Home Care Centers, Inc. (CORPORATION; ILLINOIS, USA)"
+      },
+      {
+        "mark": "SIDE-BY-SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 036: Providing information for patients, families and health care...",
+        "cls": "036, 044, 045",
+        "serial": "90502034",
+        "owner": "JOHNSON & JOHNSON (CORPORATION; NEW JERSEY, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 028: [ jigsaw puzzles ].",
+        "cls": "028",
+        "serial": "74079505",
+        "owner": "HASBRO INC. (CORPORATION; RHODE ISLAND, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 007: [ ROLLFORMING MACHINES FOR FORMING SHEET METAL AND STRUCTURAL...",
+        "cls": "007",
+        "serial": "73650451",
+        "owner": "BRADBURY COMPANY, INC., THE (CORPORATION; KANSAS, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 031: Pet food.",
+        "cls": "031",
+        "serial": "87834342",
+        "owner": "Habi, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE-TO-SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 009: Mobile units for shelving or files.",
+        "cls": "009",
+        "serial": "78363187",
+        "owner": "Richards-Wilcox, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 009: wearable activity trackers for pets, pet scales, pet...",
+        "cls": "009",
+        "serial": "87476820",
+        "owner": "Habi, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 041: Providing educational services in the nature of courses of...",
+        "cls": "041, 043, 044, 045",
+        "serial": "88168235",
+        "owner": "SIDE BY SIDE (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEAD",
+        "goods": "IC 025: [ PANTYHOSE ].",
+        "cls": "025",
+        "serial": "73041280",
+        "owner": "LEATH MCARTHY & MAYNARD, INC. (CORPORATION; NORTH CAROLINA, USA)"
+      },
+      {
+        "mark": "SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 011: [ Lighting apparatus and installations and their components,...",
+        "cls": "011",
+        "serial": "79000342",
+        "owner": "Kreon, naamloze vennootschap (UNKNOWN; Not in List)"
+      },
+      {
+        "mark": "SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 009: Flash memory cards, integrated smart card chips, and near...",
+        "cls": "009",
+        "serial": "87816937",
+        "owner": "SIDEASSURE, INC. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 028: [ exercise machines ].",
+        "cls": "028",
+        "serial": "74385648",
+        "owner": "StairMaster Sports/Medical Products, Inc. (CORPORATION; OKLAHOMA, USA)"
+      },
+      {
+        "mark": "SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 020: Furniture parts; Sectional furniture parts.",
+        "cls": "020",
+        "serial": "87392560",
+        "owner": "THE LOVESAC COMPANY (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 041: [ Charitable services, namely, providing sporting goods in the...",
+        "cls": "041",
+        "serial": "86247823",
+        "owner": "MEGAN LORRAINE HUTCHINSON (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 036: Real estate brokerage services.",
+        "cls": "036",
+        "serial": "88382167",
+        "owner": "Side, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE+",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 009: Downloadable computer application software for streaming audio...",
+        "cls": "009, 016, 018, 025, 038, 041, 045",
+        "serial": "97363128",
+        "owner": "Sidemen Holdings Limited (private limited company; UNITED KINGDOM)"
+      },
+      {
+        "mark": "SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 009: Flash memory cards, integrated smart card chips, and near...",
+        "cls": "009",
+        "serial": "86363418",
+        "owner": "Tyfone, Inc. (CORPORATION; OREGON, USA)"
+      },
+      {
+        "mark": "SIDE-BY-SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 041: Providing an Internet news portal featuring links to news...",
+        "cls": "041",
+        "serial": "98653926",
+        "owner": "SpeedFind Inc (CORPORATION; California, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 016: Printed training materials in the field of corporate...",
+        "cls": "016",
+        "serial": "76027351",
+        "owner": "SIDE BY SIDE, INC. (CORPORATION; TEXAS, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 009: [ COMPUTER PROGRAMS AND INSTRUCTION MANUALS SOLD AS A UNIT FOR...",
+        "cls": "009",
+        "serial": "73717835",
+        "owner": "MATH CORPORATION (CORPORATION; WISCONSIN, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ exhibiting and demonstrating in trade and retail shows in...",
+        "cls": "035, 041",
+        "serial": "75325474",
+        "owner": "FIRELANDS MEDIA GROUP LLC (LIMITED LIABILITY COMPANY; OHIO, USA)"
+      },
+      {
+        "mark": "SIDE-BY-SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 012: strollers.",
+        "cls": "012",
+        "serial": "75507253",
+        "owner": "Combi International Corporation (CORPORATION; ILLINOIS, USA)"
+      },
+      {
+        "mark": "SIDE X SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 007: Concrete construction machines.",
+        "cls": "007",
+        "serial": "87320538",
+        "owner": "William M. Del Zotto (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 018: pet products, namely, pet restraining devices consisting of...",
+        "cls": "018",
+        "serial": "87476834",
+        "owner": "Habi, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 041: Health club services, namely, providing instruction,...",
+        "cls": "041",
+        "serial": "78635539",
+        "owner": "Moore-Lange, Inc. (CORPORATION; COLORADO, USA)"
+      },
+      {
+        "mark": "SIDE 2 SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 025: CLOTHING, NAMELY, DRESSES, SKIRTS, BLOUSES, SKORTS, SHORTS,...",
+        "cls": "025",
+        "serial": "78639609",
+        "owner": "BYER CALIFORNIA (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Advertising and marketing services, namely, promoting the...",
+        "cls": "035",
+        "serial": "86743714",
+        "owner": "A&E Television Networks, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE-BY-SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 036: Banking services, financing services, financial consulting...",
+        "cls": "036",
+        "serial": "86349475",
+        "owner": "1st Source Bank (CORPORATION; INDIANA, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 041: Providing educational services in the nature of courses of...",
+        "cls": "041, 043, 044, 045",
+        "serial": "88135184",
+        "owner": "SIDE BY SIDE (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 041: Educational services, namely, conducting programs in the...",
+        "cls": "041, 044",
+        "serial": "88423718",
+        "owner": "Habi, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE X SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 025: [ clothing, namely pants, tops, jackets, dresses, skirts,...",
+        "cls": "025",
+        "serial": "75041252",
+        "owner": "Back2Back Kidswear, Inc. (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Training services in the field of business management and...",
+        "cls": "035",
+        "serial": "76026945",
+        "owner": "SIDE BY SIDE, INC. (CORPORATION; TEXAS, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 033: Wine.",
+        "cls": "033",
+        "serial": "85174941",
+        "owner": "Rootstock Cellars, LLC (LIMITED LIABILITY COMPANY; NORTH CAROLINA, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 018: [ BABY CARRIERS, NAMELY SOFT CARRIERS TO BE WORN ON THE BODY...",
+        "cls": "018",
+        "serial": "74025381",
+        "owner": "Gerry Baby Products Company (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE-BY-SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 041: [ long-term educational programs for improving schools in...",
+        "cls": "041",
+        "serial": "74181722",
+        "owner": "Center for Educational Programs (NOT-FOR-PROFIT EDUCATIONAL FOUNDATION; NEW YORK, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 016: Series of books for children.",
+        "cls": "016",
+        "serial": "87915305",
+        "owner": "Scholastic Inc. (CORPORATION; NEW YORK, USA)"
+      },
+      {
+        "mark": "SIDE-BY-SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 030: MILK SHAKES.",
+        "cls": "030",
+        "serial": "78399426",
+        "owner": "STEAK N SHAKE, LLC (LIMITED LIABILITY COMPANY; INDIANA, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 041: Providing educational services in the nature of courses of...",
+        "cls": "041, 043, 044, 045",
+        "serial": "88135197",
+        "owner": "SIDE BY SIDE (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "SIDE-BY-SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 041: Educational services, namely providing educational programs...",
+        "cls": "041",
+        "serial": "87203162",
+        "owner": "Drexel University (CORPORATION; PENNSYLVANIA, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 029: [ bacon ].",
+        "cls": "029",
+        "serial": "75192207",
+        "owner": "Cloverdale Foods Company (CORPORATION; NORTH DAKOTA, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 009: [ computer utility programs for connectivity for networked,...",
+        "cls": "009",
+        "serial": "74541086",
+        "owner": "STRIVE TECHNOLOGIES CORPORATION (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Beds for household pets.",
+        "cls": "020",
+        "serial": "87476985",
+        "owner": "Habi, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 028: Pet toys.",
+        "cls": "028",
+        "serial": "87477009",
+        "owner": "Habi, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 031: Pet food; Pet treats.",
+        "cls": "031",
+        "serial": "87477039",
+        "owner": "Habi, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 031: Pet food.",
+        "cls": "031",
+        "serial": "87834330",
+        "owner": "Habi, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 036: Advice relating to investments; Capital investment consulting;...",
+        "cls": "036",
+        "serial": "98409501",
+        "owner": "Dodson Robinette, PLLC (LIMITED LIABILITY COMPANY; NEVADA, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 036: [ annuity underwriting and brokerage services, investment...",
+        "cls": "036, 042",
+        "serial": "74648210",
+        "owner": "AMERUS GROUP, INC. (CORPORATION; IOWA, USA)"
+      }
+    ]
+  },
+  "side-a": {
+    "query": "WM:\"side-a\" OR WM:sidea OR WM:\"side a lighting\" OR WM:\"side a home\"",
+    "total": "4,432",
+    "shown": 48,
+    "cards": [
+      {
+        "mark": "THE BEST FRIED CHICKEN THIS SIDE OF HOME",
+        "status": "DEADCANCELLED",
+        "goods": "IC 042: [ restaurant services ].",
+        "cls": "042",
+        "serial": "74400100",
+        "owner": "McDONALD'S CORPORATION (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 007: Automatic dispensers for hot and cold beverages in the nature...",
+        "cls": "007, 009, 011, 029, 030, 031, 032",
+        "serial": "79202327",
+        "owner": "RHEA VENDORS GROUP S.P.A. (Società per azioni; ITALY)"
+      },
+      {
+        "mark": "SIDE",
+        "status": "LIVEPENDING",
+        "goods": "IC 041: Entertainment and educational services, namely, artistic...",
+        "cls": "041",
+        "serial": "99476963",
+        "owner": "Side International Holdings Limited (PRIVATE LIMITED COMPANY; United Kingdom)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 002: [ Paints ].",
+        "cls": "002",
+        "serial": "73236764",
+        "owner": "Saxon Paint & Home Care Centers, Inc. (CORPORATION; ILLINOIS, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 007: [ ROLLFORMING MACHINES FOR FORMING SHEET METAL AND STRUCTURAL...",
+        "cls": "007",
+        "serial": "73650451",
+        "owner": "BRADBURY COMPANY, INC., THE (CORPORATION; KANSAS, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 028: [ jigsaw puzzles ].",
+        "cls": "028",
+        "serial": "74079505",
+        "owner": "HASBRO INC. (CORPORATION; RHODE ISLAND, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 041: Providing educational services in the nature of courses of...",
+        "cls": "041, 043, 044, 045",
+        "serial": "88168235",
+        "owner": "SIDE BY SIDE (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "SIDE-TO-SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 009: Mobile units for shelving or files.",
+        "cls": "009",
+        "serial": "78363187",
+        "owner": "Richards-Wilcox, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEAD",
+        "goods": "IC 025: [ PANTYHOSE ].",
+        "cls": "025",
+        "serial": "73041280",
+        "owner": "LEATH MCARTHY & MAYNARD, INC. (CORPORATION; NORTH CAROLINA, USA)"
+      },
+      {
+        "mark": "SIDE-BY-SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 036: Providing information for patients, families and health care...",
+        "cls": "036, 044, 045",
+        "serial": "90502034",
+        "owner": "JOHNSON & JOHNSON (CORPORATION; NEW JERSEY, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 031: Pet food.",
+        "cls": "031",
+        "serial": "87834342",
+        "owner": "Habi, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 009: wearable activity trackers for pets, pet scales, pet...",
+        "cls": "009",
+        "serial": "87476820",
+        "owner": "Habi, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 009: Flash memory cards, integrated smart card chips, and near...",
+        "cls": "009",
+        "serial": "86363418",
+        "owner": "Tyfone, Inc. (CORPORATION; OREGON, USA)"
+      },
+      {
+        "mark": "SIDE+",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 009: Downloadable computer application software for streaming audio...",
+        "cls": "009, 016, 018, 025, 038, 041, 045",
+        "serial": "97363128",
+        "owner": "Sidemen Holdings Limited (private limited company; UNITED KINGDOM)"
+      },
+      {
+        "mark": "SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 011: [ Lighting apparatus and installations and their components,...",
+        "cls": "011",
+        "serial": "79000342",
+        "owner": "Kreon, naamloze vennootschap (UNKNOWN; Not in List)"
+      },
+      {
+        "mark": "SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 009: Flash memory cards, integrated smart card chips, and near...",
+        "cls": "009",
+        "serial": "87816937",
+        "owner": "SIDEASSURE, INC. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 028: [ exercise machines ].",
+        "cls": "028",
+        "serial": "74385648",
+        "owner": "StairMaster Sports/Medical Products, Inc. (CORPORATION; OKLAHOMA, USA)"
+      },
+      {
+        "mark": "SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 041: [ Charitable services, namely, providing sporting goods in the...",
+        "cls": "041",
+        "serial": "86247823",
+        "owner": "MEGAN LORRAINE HUTCHINSON (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 036: Real estate brokerage services.",
+        "cls": "036",
+        "serial": "88382167",
+        "owner": "Side, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 020: Furniture parts; Sectional furniture parts.",
+        "cls": "020",
+        "serial": "87392560",
+        "owner": "THE LOVESAC COMPANY (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 029: [ bacon ].",
+        "cls": "029",
+        "serial": "75192207",
+        "owner": "Cloverdale Foods Company (CORPORATION; NORTH DAKOTA, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 009: [ computer utility programs for connectivity for networked,...",
+        "cls": "009",
+        "serial": "74541086",
+        "owner": "STRIVE TECHNOLOGIES CORPORATION (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 036: [ annuity underwriting and brokerage services, investment...",
+        "cls": "036, 042",
+        "serial": "74648210",
+        "owner": "AMERUS GROUP, INC. (CORPORATION; IOWA, USA)"
+      },
+      {
+        "mark": "SIDE-BY-SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 007: Carpet cleaning machines.",
+        "cls": "007",
+        "serial": "78715492",
+        "owner": "HEALTHY GAIN INVESTMENTS LIMITED (COMPANY; VIRGIN ISLANDS, BRITISH)"
+      },
+      {
+        "mark": "SIDE X SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Retail store services featuring a wide variety of consumer...",
+        "cls": "035",
+        "serial": "78737557",
+        "owner": "Bala Duce (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 036: Advice relating to investments; Capital investment consulting;...",
+        "cls": "036",
+        "serial": "98409501",
+        "owner": "Dodson Robinette, PLLC (LIMITED LIABILITY COMPANY; NEVADA, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 044: Medical information; Medical services.",
+        "cls": "044",
+        "serial": "85670340",
+        "owner": "Novartis AG (CORPORATION; SWITZERLAND)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Beds for household pets.",
+        "cls": "020",
+        "serial": "87476985",
+        "owner": "Habi, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 028: Pet toys.",
+        "cls": "028",
+        "serial": "87477009",
+        "owner": "Habi, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 031: Pet food; Pet treats.",
+        "cls": "031",
+        "serial": "87477039",
+        "owner": "Habi, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE-BY-SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 045: Charitable volunteer program services, namely, providing...",
+        "cls": "045",
+        "serial": "90056218",
+        "owner": "University Presbyterian Church (CORPORATION; WASHINGTON, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 031: Pet food.",
+        "cls": "031",
+        "serial": "87834330",
+        "owner": "Habi, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 039: Packing articles for transportation of clothing, namely,...",
+        "cls": "039",
+        "serial": "98577942",
+        "owner": "Civil Clothing, Inc. (CORPORATION; California, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 005: [ Pet food nutraceuticals for use as a dietary supplement for...",
+        "cls": "005, 031, 035",
+        "serial": "88409795",
+        "owner": "Habi, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 005: [ Pet food nutraceuticals for use as a dietary supplement for...",
+        "cls": "005, 031, 035",
+        "serial": "88409815",
+        "owner": "Habi, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 016: Printed training materials in the field of corporate...",
+        "cls": "016",
+        "serial": "76027351",
+        "owner": "SIDE BY SIDE, INC. (CORPORATION; TEXAS, USA)"
+      },
+      {
+        "mark": "SIDE-BY-SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 012: strollers.",
+        "cls": "012",
+        "serial": "75507253",
+        "owner": "Combi International Corporation (CORPORATION; ILLINOIS, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 041: Educational services, namely, conducting programs in the...",
+        "cls": "041, 044",
+        "serial": "88423718",
+        "owner": "Habi, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 009: [ COMPUTER PROGRAMS AND INSTRUCTION MANUALS SOLD AS A UNIT FOR...",
+        "cls": "009",
+        "serial": "73717835",
+        "owner": "MATH CORPORATION (CORPORATION; WISCONSIN, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ exhibiting and demonstrating in trade and retail shows in...",
+        "cls": "035, 041",
+        "serial": "75325474",
+        "owner": "FIRELANDS MEDIA GROUP LLC (LIMITED LIABILITY COMPANY; OHIO, USA)"
+      },
+      {
+        "mark": "SIDE-BY-SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 041: Providing an Internet news portal featuring links to news...",
+        "cls": "041",
+        "serial": "98653926",
+        "owner": "SpeedFind Inc (CORPORATION; California, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Advertising and marketing services, namely, promoting the...",
+        "cls": "035",
+        "serial": "86743714",
+        "owner": "A&E Television Networks, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 041: Health club services, namely, providing instruction,...",
+        "cls": "041",
+        "serial": "78635539",
+        "owner": "Moore-Lange, Inc. (CORPORATION; COLORADO, USA)"
+      },
+      {
+        "mark": "SIDE 2 SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 025: CLOTHING, NAMELY, DRESSES, SKIRTS, BLOUSES, SKORTS, SHORTS,...",
+        "cls": "025",
+        "serial": "78639609",
+        "owner": "BYER CALIFORNIA (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "SIDE-BY-SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 036: Banking services, financing services, financial consulting...",
+        "cls": "036",
+        "serial": "86349475",
+        "owner": "1st Source Bank (CORPORATION; INDIANA, USA)"
+      },
+      {
+        "mark": "SIDE X SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 007: Concrete construction machines.",
+        "cls": "007",
+        "serial": "87320538",
+        "owner": "William M. Del Zotto (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 041: Providing educational services in the nature of courses of...",
+        "cls": "041, 043, 044, 045",
+        "serial": "88135184",
+        "owner": "SIDE BY SIDE (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 018: pet products, namely, pet restraining devices consisting of...",
+        "cls": "018",
+        "serial": "87476834",
+        "owner": "Habi, Inc. (CORPORATION; DELAWARE, USA)"
+      }
+    ]
+  },
+  "side a cls": {
+    "query": "WM:\"side a\" AND IC:(011 OR 020 OR 035 OR 021 OR 009)",
+    "total": "1,027",
+    "shown": 50,
+    "cards": [
+      {
+        "mark": "SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 020: Furniture parts; Sectional furniture parts.",
+        "cls": "020",
+        "serial": "87392560",
+        "owner": "THE LOVESAC COMPANY (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 011: [ Lighting apparatus and installations and their components,...",
+        "cls": "011",
+        "serial": "79000342",
+        "owner": "Kreon, naamloze vennootschap (UNKNOWN; Not in List)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Beds for household pets.",
+        "cls": "020",
+        "serial": "87476985",
+        "owner": "Habi, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE-BY-SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 020: pillows.",
+        "cls": "020",
+        "serial": "78745714",
+        "owner": "BEDDING ACQUISITION, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 021: [ Wastebasket ].",
+        "cls": "021",
+        "serial": "73230719",
+        "owner": "Borden, Inc. (CORPORATION; NEW JERSEY, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 021: pet feeding and drinking bowls; grooming tools for pets,...",
+        "cls": "021",
+        "serial": "87476859",
+        "owner": "Habi, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE-FILE",
+        "status": "DEAD",
+        "goods": "US 032: [ FILING CABINETS ].",
+        "cls": "020",
+        "serial": "72267647",
+        "owner": "MOSLER HARBOR SALES CORPORATION (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "DIRTY SIDE CLEAN SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 011: sterilizers and decontamination units, namely decontamination...",
+        "cls": "011",
+        "serial": "78174853",
+        "owner": "STERIS Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE-FLO",
+        "status": "DEAD",
+        "goods": "US 031: [ AIR FILTERS ].",
+        "cls": "011",
+        "serial": "72239375",
+        "owner": "CAMBRIDGE FILTER CORPORATION (CORPORATION; NEW YORK, USA)"
+      },
+      {
+        "mark": "MY SIDE/YOUR SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: [ bedding ].",
+        "cls": "020",
+        "serial": "74427119",
+        "owner": "Sibley, Ellen (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "SIDE-CARB",
+        "status": "DEAD",
+        "goods": "US 031: [ AIR FILTERS ].",
+        "cls": "011",
+        "serial": "72289476",
+        "owner": "CAMBRIDGE FILTER CORPORATION (CORPORATION; NEW YORK, USA)"
+      },
+      {
+        "mark": "HIS SIDE HER SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 020: [ Mattresses and box springs ].",
+        "cls": "020",
+        "serial": "76595053",
+        "owner": "Dreamwell, Ltd. (LIMITED LIABILITY COMPANY; NEVADA, USA)"
+      },
+      {
+        "mark": "SIDE-CAP",
+        "status": "DEAD",
+        "goods": "US 031: [ AIR FILTERS ].",
+        "cls": "011",
+        "serial": "72239374",
+        "owner": "CAMBRIDGE FILTER CORPORATION (CORPORATION; NEW YORK, USA)"
+      },
+      {
+        "mark": "IN SIDE OUT SIDE LIVING",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Indoor and outdoor furniture; Indoor and outdoor decorations,...",
+        "cls": "020, 035",
+        "serial": "87866436",
+        "owner": "Seasonal Living Trading, Ltd. Co. (LIMITED LIABILITY COMPANY; TEXAS, USA)"
+      },
+      {
+        "mark": "SIDE WINDER",
+        "status": "DEADCANCELLED",
+        "goods": "US 023: [ Machinery and Tools-Namely, Utility Blades, Rotary Brush...",
+        "cls": "012 016 028 021 008 009 006 011 007",
+        "serial": "72183037",
+        "owner": "HERCULES SERVICE PARTS, L.L.C. (LIMITED LIABILITY COMPANY; LOUISIANA, USA)"
+      },
+      {
+        "mark": "SIDE A",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 009: Protective sleeves for vinyl records.; IC 021: Cleaning...",
+        "cls": "009, 021",
+        "serial": "99015247",
+        "owner": "Sparkles Gift & Party Shop, Inc. (CORPORATION; New York, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Advertising and marketing services, namely, promoting the...",
+        "cls": "035",
+        "serial": "86743714",
+        "owner": "A&E Television Networks, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Training services in the field of business management and...",
+        "cls": "035",
+        "serial": "76026945",
+        "owner": "SIDE BY SIDE, INC. (CORPORATION; TEXAS, USA)"
+      },
+      {
+        "mark": "SIDE X SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Retail store services featuring a wide variety of consumer...",
+        "cls": "035",
+        "serial": "78737557",
+        "owner": "Bala Duce (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "B-SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 020: Furniture, namely, specially reinforced stools to provide...",
+        "cls": "020",
+        "serial": "88957971",
+        "owner": "Norix Group, Inc. (CORPORATION; ILLINOIS, USA)"
+      },
+      {
+        "mark": "SIDE SLEEPING",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Pillows; Bath pillows; Bed pillows; Beds, mattresses, pillows...",
+        "cls": "020",
+        "serial": "98654094",
+        "owner": "Peng, Xinghui (INDIVIDUAL; China)"
+      },
+      {
+        "mark": "SIDE(ING)",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: [ chairs ].",
+        "cls": "020",
+        "serial": "74035142",
+        "owner": "Walker Group Designs Inc. (CORPORATION; NEW YORK, USA)"
+      },
+      {
+        "mark": "SIDE-CLIC",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Container closures of plastic; plastic medication containers;...",
+        "cls": "020",
+        "serial": "78030734",
+        "owner": "Owens-Brockway Plastic Products Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "MY SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 009: [ [ BEDDING DIAGNOSTIC SYSTEM COMPRISING A COMPUTER AND...",
+        "cls": "009, 020",
+        "serial": "85187968",
+        "owner": "KINGSDOWN, INC. (CORPORATION; NORTH CAROLINA, USA)"
+      },
+      {
+        "mark": "SIDE LITES",
+        "status": "DEADABANDONED",
+        "goods": "IC 011: Aircraft lighting system, comprising lamps, relay box, switch...",
+        "cls": "011",
+        "serial": "75374603",
+        "owner": "Planezip, Inc. (CORPORATION; ILLINOIS, USA)"
+      },
+      {
+        "mark": "SIDE-WINDER",
+        "status": "DEADABANDONED",
+        "goods": "IC 011: lighting system and components for vehicles, comprising -...",
+        "cls": "011",
+        "serial": "74614512",
+        "owner": "LOCTITE CORPORATION (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE SLEEPER",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Pillows; Bath pillows; Bed pillows; Beds, mattresses, pillows...",
+        "cls": "020",
+        "serial": "98654096",
+        "owner": "Peng, Xinghui (INDIVIDUAL; China)"
+      },
+      {
+        "mark": "SAFE SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 020: [ PLAYPENS ].",
+        "cls": "020",
+        "serial": "73636449",
+        "owner": "SPALDING & EVENFLO COMPANIES, INC. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SOFT SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Dog kennels; Kennels with carriers; Pet crates; Play yards;...",
+        "cls": "020",
+        "serial": "77853231",
+        "owner": "Precision Pet Products, Inc. (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "SIDE-LOC",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Plastic containers, namely bottles for consumer products...",
+        "cls": "020",
+        "serial": "78368473",
+        "owner": "Fenton, Weber & Jones Packaging, Inc. (CORPORATION; NEW YORK, USA)"
+      },
+      {
+        "mark": "SIDE&CORNER",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 020: 3D decorative ornaments made from plastic; Bathroom furniture;...",
+        "cls": "020",
+        "serial": "97614218",
+        "owner": "Ma Zhenhai (INDIVIDUAL; CHINA)"
+      },
+      {
+        "mark": "WILDER SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 020: Non-metal mounting brackets for general use.",
+        "cls": "020",
+        "serial": "97678014",
+        "owner": "Wilder Side LLC (LIMITED LIABILITY COMPANY; ILLINOIS, USA)"
+      },
+      {
+        "mark": "WILD SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Pillows; Mattresses.",
+        "cls": "020",
+        "serial": "90685192",
+        "owner": "IMAGINARIUM & CO, INC. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE SLEEPER",
+        "status": "DEADCANCELLED",
+        "goods": "IC 020: [ PILLOWS ].",
+        "cls": "020",
+        "serial": "73592174",
+        "owner": "OFFICIAL PILLOWTEX LLC (LIMITED LIABILITY JOINT STOCK COMPANY; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE SLEEP",
+        "status": "DEADCANCELLED",
+        "goods": "IC 020: [ Furniture; Furniture for motor homes; Residential and...",
+        "cls": "020",
+        "serial": "86514017",
+        "owner": "Flexsteel Industries, Inc. (CORPORATION; MINNESOTA, USA)"
+      },
+      {
+        "mark": "SIDE-CAT",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Pet furniture in the nature of cat trees.",
+        "cls": "020",
+        "serial": "99038547",
+        "owner": "Paul Rodgers (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "SIDE-TRAC",
+        "status": "DEADCANCELLED",
+        "goods": "IC 020: [ Office Mobile Storage Systems-Namely, Shelf-Type Filing...",
+        "cls": "020",
+        "serial": "73469737",
+        "owner": "TAB PRODUCTS CO., LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE SLEEPER",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Straw mattresses; mattresses, other than childbirth...",
+        "cls": "020",
+        "serial": "78915895",
+        "owner": "Hotung Investments Limited (CORPORATION; VIRGIN ISLANDS, BRITISH)"
+      },
+      {
+        "mark": "SIDE SOLUTION",
+        "status": "DEADCANCELLED",
+        "goods": "IC 020: [ Bed pillows; Head supporting pillows; Neck-supporting...",
+        "cls": "020",
+        "serial": "77906340",
+        "owner": "AbsolutelyNew (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "WIDE SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: pillows.",
+        "cls": "020",
+        "serial": "78081449",
+        "owner": "Louisville Bedding Company (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE-BY-SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ optically scanning documents and entering the resulting...",
+        "cls": "035",
+        "serial": "74079966",
+        "owner": "Lawyer's Edge, Inc., The (CORPORATION; COLORADO, USA)"
+      },
+      {
+        "mark": "SIDE 2 SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ Outsourcing professionals in the field of fields of...",
+        "cls": "035",
+        "serial": "78225449",
+        "owner": "Robinson, Patricia (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Providing a website featuring information for consumers in the...",
+        "cls": "035",
+        "serial": "87477021",
+        "owner": "Habi, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE-KICK",
+        "status": "DEADCANCELLED",
+        "goods": "IC 020: [ modular plastic cable protectors ].",
+        "cls": "020",
+        "serial": "78953820",
+        "owner": "CHECKERS INDUSTRIAL PRODUCTS, LLC (LIMITED LIABILITY COMPANY; COLORADO, USA)"
+      },
+      {
+        "mark": "WIDE SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 020: [ pillows and featherbeds ].",
+        "cls": "020",
+        "serial": "76340005",
+        "owner": "OFFICIAL PILLOWTEX LLC (LIMITED LIABILITY JOINT STOCK COMPANY; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE-KIK",
+        "status": "DEADCANCELLED",
+        "goods": "IC 020: [ plastic display cases ].",
+        "cls": "020",
+        "serial": "74686915",
+        "owner": "Side-Kik Corporation (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "FUNNY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: FIGURINES, PRIMARILY OF RESIN.",
+        "cls": "020",
+        "serial": "78477467",
+        "owner": "SECOND NATURE DESIGN, INC. (CORPORATION; ARIZONA, USA)"
+      },
+      {
+        "mark": "SIDE-KICK",
+        "status": "DEADCANCELLED",
+        "goods": "IC 011: [ gas grills for use on recreational vehicles ].",
+        "cls": "011",
+        "serial": "76627435",
+        "owner": "Did-It, L.L.C. (LIMITED LIABILITY CORPORATION; MICHIGAN, USA)"
+      },
+      {
+        "mark": "HEARTH-SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 011: [ Fireplaces ].",
+        "cls": "011",
+        "serial": "73339460",
+        "owner": "Standex International Corporation (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "WILD SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 011: [ ELECTRIC HAND HELD HAIR DRYERS AND PARTS THEREOF ].",
+        "cls": "011",
+        "serial": "75862714",
+        "owner": "ROVCAL, INC. (CORPORATION; CALIFORNIA, USA)"
+      }
+    ]
+  },
+  "spindle 011": {
+    "query": "WM:spindle AND IC:011",
+    "error": "TimeoutError: page.waitForFunction: Timeout 60000ms exceeded."
+  },
+  "spindle lighting": {
+    "query": "WM:\"spindle lighting\" OR WM:\"spindle light\" OR WM:\"spindle home\"",
+    "total": "0",
+    "shown": 0,
+    "cards": []
+  },
+  "deadwax lighting": {
+    "query": "WM:\"deadwax lighting\" OR WM:\"dead wax lighting\" OR WM:\"deadwax home\"",
+    "total": "0",
+    "shown": 0,
+    "cards": []
+  }
+}

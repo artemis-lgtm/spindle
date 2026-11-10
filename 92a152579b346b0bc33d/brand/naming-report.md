@@ -1,0 +1,39 @@
+# Naming report: eight candidates, checked 2026-11-09 (evening ET)
+
+Nothing registered, nothing reserved. Every check below was run live tonight; re-run before filing.
+
+How each check was done
+- USPTO: the new Trademark Search (https://tmsearch.uspto.gov/search/search-information), driven by headless Chromium because the site sits behind an AWS WAF challenge that blocks curl. Wordmark searches, then expert queries limited to the classes we care about: 011 (lighting fixtures), 020 (furniture, wall decor), 035 (retail), 021 and 009 where vinyl accessories show up. Raw result JSON is in brand/tools/namecheck-results/.
+- .com and .co: Verisign RDAP (https://rdap.verisign.com/com/v1/domain/<name>.com) and `whois <name>.co`. HTTP 404 from RDAP means unregistered. New-TLD checks against the Identity Digital RDAP (.lighting, .studio) and GMO (.shop).
+- Instagram and TikTok: profile pages loaded in headless Chromium and the page title read. Instagram "Profile isn't available" means no public account at that handle (free, or a suspended one; confirm in the app at signup). TikTok "Couldn't find this account" means free. Plain curl is useless here: both sites return 200 and a login wall for every handle, including a control handle that does not exist.
+
+## The table
+
+| Candidate | USPTO, classes 011 / 020 / 035 (live marks that matter) | .com | .co | Instagram | TikTok | Verdict |
+|---|---|---|---|---|---|---|
+| **Spindle** | 011: clear (only SPINDLE & SIN, dead). 020: SPINDLE registered for beds and mattresses (Miami Labs); WALKER EDISON SPINDLE registered for furniture. 035: SPINDLE registered for staffing (unrelated). 44 live SPINDLE-family marks overall, none in lighting. | spindle.com taken (1998). spindlelighting.com FREE. spindle.lighting FREE. | spindle.co taken (2016) | @spindle "not available" (free or suspended, confirm). @spindlelighting FREE | @spindle taken (Adam Harris). @spindlelighting FREE | **Recommend.** Clear in our class, product and brand become one word, handles and a descriptive domain are open. The Miami Labs mattress mark is the one to raise with the IP lawyer; different goods, same "home" aisle. |
+| **Deadwax** | 011: clear. 020: LIVING DEADWAX registered for furniture (Gregory Mills). 009: DEADWAX pending (mobile app software, Jason Means); DEAD WAX RECORDS registered (audio recordings). 035: DEADWAX RECORDS and DEAD WAX both dead/abandoned. | deadwax.com taken (2010). deadwaxlighting.com FREE, deadwaxhome.com FREE. deadwax.lighting FREE | deadwax.co taken (Aug 2025) | @deadwax taken (Buz Deadwax). @deadwaxlighting FREE | @deadwax taken. @deadwaxlighting FREE | **Alternate.** Best insider name on the list and clear in lighting, but a live furniture registration one word away, a pending DEADWAX mark, and the bare handle gone on both platforms. Workable as "Deadwax Lighting" with counsel's blessing. |
+| Side A | 011: clear. 009 and 021: **SIDE A registered** for protective sleeves for vinyl records and record-cleaning goods (Sparkles Gift & Party Shop). 1,027 results in our classes for the words; the phrase is everywhere in music retail. | sidea.com taken (2003). sidealighting.com, sideastudio.com, sideahome.com FREE. sidea.lighting FREE | sidea.co taken (May 2025) | @sidea taken (Emanuel Sidea). @sideastudio is a music studio. @sidea.lighting FREE | @sidea taken (SideA). @sideastudio FREE | **Drop to third.** A registered SIDE A mark for vinyl-record accessories is the one conflict on this list that overlaps our customer and our product shelf. It is also a generic music phrase, so it would be hard to defend even if cleared. |
+| Runout | 011: RUNOUT (air purifiers, Hangzhou Epstar) dead. 035: RUN OUT GROOVE RECORDS registered for record retail. | runout.com taken (1998) | runout.co taken (2023) | @runout taken | @runout taken | No. Both bare handles gone, a live records-retail mark, and the word reads as "ran out" to anyone outside vinyl. |
+| Lead-In | Generic. 773 results in our classes; LEADIN dead (marketing software). "Lead" is also the metal, which is a bad word to put next to a wall fixture. | leadin.com and lead-in.com taken (2003) | leadin.co taken (2024) | @leadin taken | @leadin FREE | No. Unpronounceable on the shelf, descriptive, and "lead" next to "lighting" invites a Prop 65 joke. |
+| Flipside | 011: FLIPSIDE registered twice (Kohler showerheads; Presto waffle maker) and pending (Presto grills). 020: FLIPSIDE pending (Comfort Research furniture). | flipside.com taken (1997) | flipside.co taken (2010) | @flipside taken | @flipside taken | No. Two live class-011 registrations by large companies. |
+| Thirty Three | 011: "33" registered for vehicle lighting (Truck-Lite); URBAN 33 registered for lamps and lighting fixtures (Classic Lamp Parts). 020: "33" registered (Disney). | thirtythree.com taken (2000) | thirtythree.co taken (2010) | @thirtythree taken | @thirtythree taken | No. URBAN 33 is a live lighting-fixture mark, and the number has no story to a non-collector. |
+| Revolve | 011: REVOLVE registered (JST Performance LED light bars); REVOLVE pending (ceiling fans). 035: REVOLVE registered (Eminent Inc., the fashion retailer). | revolve.com taken (1995, Revolve Clothing) | taken | @revolve taken | @revolve taken | No. A $1B fashion brand owns the word online and a lighting company owns it at the USPTO. |
+
+## Recommendation: Spindle
+
+1. It is the only candidate that is clear in class 011 and has a descriptive .com (spindlelighting.com), a new-TLD short domain (spindle.lighting) and matching handles (@spindlelighting on both platforms) open at the same time.
+2. The brand and the product carry the same name. One word on the box, the hub, the ads and the URL, the way Poplight does it (https://www.poplight.com). "Spindle 12", "Spindle 7", "Spindle Kit", "Spindle Set" need no second brand.
+3. It is the true name of the part the customer touches. The post that threads through the hole in a record is the spindle; the dome is the spindle cap. The name is a factual description of our own hardware, not a reference to anyone's music, so it stays clear of the artist and label trademark problem the brief rules out.
+4. It sounds like Schoolhouse, Rejuvenation and Gantri names: a plain English object word, no invented spelling, no "Co." Listen to how "a Spindle" reads in a Domino roundup next to "a Poplight" and "a Wooj".
+5. The exposure is one registered SPINDLE in class 020 for beds and mattresses. Our goods are lighting fixtures in class 011. An IP lawyer hour before filing should decide whether to file "SPINDLE" alone or "SPINDLE LIGHTING" with "lighting" disclaimed.
+
+What to do with Side A and Deadwax: keep "Side A" as copy, not as a brand. It is our best tagline material ("Side A, always."), and a tagline does not need to be a trademark. Deadwax is the right name for the editorial side if we ever want one (a blog, a zine, the newsletter): "Deadwax, notes from Spindle".
+
+## If Austin keeps Side A anyway
+The assets regenerate for any of the three names with one edit (`RECOMMENDED` in brand/tools/gen_brand.py, then run gen_brand.py and gen_packaging.py). Lockups and wordmarks for all three are already in brand/logo/. Before using Side A in commerce, get a lawyer's read on the Sparkles Gift & Party Shop SIDE A registration (class 009/021, vinyl record sleeves): if that owner also sells record display goods, we would be the junior user in the same aisle.
+
+## Open items
+- IP lawyer hour (scope-report.md already budgets it). Bring this file and brand/tools/namecheck-results/.
+- Confirm @spindle on Instagram in the app; "Profile isn't available" can mean a deactivated account that still holds the handle.
+- Register spindlelighting.com and spindle.lighting, and the two @spindlelighting handles, the morning Austin says go. Not done tonight on purpose (house rule).

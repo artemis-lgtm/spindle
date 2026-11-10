@@ -1,0 +1,239 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Record Sconce: manufacturer-ready CAD | Spindle</title>
+<style>
+:root{--bg:#f6f2ea;--ink:#1b1916;--mute:#6b645a;--line:#e3dccf;--accent:#b8732e;--panel:#fffdf8}
+@media (prefers-color-scheme:dark){:root{--bg:#121110;--ink:#ece6da;--mute:#a19887;--line:#2c2925;--accent:#e6a456;--panel:#1a1816}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Inter",system-ui,sans-serif}
+main{max-width:880px;margin:0 auto;padding:28px 16px 80px}
+a{color:var(--accent)} .back{font-size:14px;display:inline-block;margin-bottom:18px}
+h1{font-size:28px;line-height:1.2} h2{margin-top:36px;font-size:21px} h3{font-size:17px}
+table{border-collapse:collapse;width:100%;display:block;overflow-x:auto;font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top} th{background:var(--panel)}
+code{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:0 4px;font-size:.9em}
+pre{background:var(--panel);border:1px solid var(--line);padding:12px;overflow-x:auto;border-radius:8px}
+img{max-width:100%}
+</style></head><body><main><a class="back" href="../START-HERE.html">Back to START HERE</a>
+<h1>Record Sconce: manufacturer-ready CAD</h1>
+<p>Built 2026-11-09 (overnight brief). Parametric CadQuery 2.8 source, STEP as the master format, with STL for printed parts,
+DXF for flat parts, 2D drawings (PDF + PNG) and per-vendor RFQ packets. Nothing has been sent or ordered; the RFQ text is
+drafted to files only. All decisions follow ../NOTES.md, ../engineering-report.md, ../mounting-report.md and
+../design-report.md; where the CAD had to add a detail the reports did not fix, it is listed under "Design calls made here".</p>
+<h2>Folder map</h2>
+<table>
+<thead>
+<tr>
+<th>Path</th>
+<th>What</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>sconce_cad.py</code></td>
+<td>every part as a function of named parameters (mm). Edit here, never the STEP.</td>
+</tr>
+<tr>
+<td><code>assembly.py</code></td>
+<td>placement of all solids, boolean interference check, derived clearance numbers</td>
+</tr>
+<tr>
+<td><code>drawings.py</code>, <code>dxf_out.py</code>, <code>preview.py</code>, <code>blender_preview.py</code></td>
+<td>2D drawings, DXF export, PNG previews, Cycles renders</td>
+</tr>
+<tr>
+<td><code>build_all.py</code></td>
+<td>one command rebuilds everything: <code>.venv/bin/python build_all.py</code> (about 45 s)</td>
+</tr>
+<tr>
+<td><code>parts/</code></td>
+<td>STEP / STL / DXF per part</td>
+</tr>
+<tr>
+<td><code>assemblies/</code></td>
+<td>STEP assemblies (named, coloured): 12 in MDF, 7 in MDF, 12 in aluminum 5 mm and 3 mm</td>
+</tr>
+<tr>
+<td><code>drawings/</code></td>
+<td>PDF + PNG drawing sheets with dimensions, tolerances, material and finish notes</td>
+</tr>
+<tr>
+<td><code>previews/</code></td>
+<td>PNG preview of each part (front + rear), assembly previews, <code>*_cycles.png</code> Blender renders, <code>*_dxf.png</code> what the laser vendor sees</td>
+</tr>
+<tr>
+<td><code>rfq/&lt;part&gt;/</code></td>
+<td>files + <code>SPEC.txt</code> a shop or online quoter accepts (SendCutSend, OSH Cut, Xometry, a local CNC shop, a brass turner + plater)</td>
+</tr>
+<tr>
+<td><code>checks.md</code>, <code>checks.json</code></td>
+<td>interference + clearance report</td>
+</tr>
+<tr>
+<td><code>.venv/</code></td>
+<td>Python 3.12 venv with cadquery, ezdxf, matplotlib (gitignored)</td>
+</tr>
+</tbody>
+</table>
+<h2>Parts list</h2>
+<table>
+<thead>
+<tr>
+<th>Part no.</th>
+<th>Part</th>
+<th>Qty / unit</th>
+<th>Process, material</th>
+<th>Files</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RS-BP-12-MDF</td>
+<td>Backplate 12 in record, D 266.7 x 12.7</td>
+<td>1</td>
+<td>CNC router, 1/2 in MDF or Baltic birch, painted matte black</td>
+<td>step, stl, dxf, drawing</td>
+</tr>
+<tr>
+<td>RS-BP-7-MDF</td>
+<td>Backplate 7 in record, D 152.4 x 12.7</td>
+<td>1 (7 in SKU)</td>
+<td>same</td>
+<td>step, stl, dxf, drawing</td>
+</tr>
+<tr>
+<td>RS-BP-12-AL5 / -AL3</td>
+<td>Backplate 12 in, flat aluminum 5 mm / 3 mm (floating-record configuration)</td>
+<td>alt</td>
+<td>laser/waterjet 5052, powder coat</td>
+<td>step, dxf, drawing</td>
+</tr>
+<tr>
+<td>RS-BP-7-AL5</td>
+<td>Backplate 7 in, flat aluminum 5 mm</td>
+<td>alt</td>
+<td>same</td>
+<td>step, dxf, drawing</td>
+</tr>
+<tr>
+<td>RS-HUB-01</td>
+<td>Hub, D 127 x 25.4, twist-lock, DC jack carrier</td>
+<td>1</td>
+<td>FDM PETG/ASA now, injection mould later</td>
+<td>step, stl, drawing</td>
+</tr>
+<tr>
+<td>RS-WP-01</td>
+<td>Wall mounting plate, D 101.6, 14 ga steel, one bent tab, 3 PEM studs</td>
+<td>1</td>
+<td>laser + bend + PEM, zinc</td>
+<td>step, flat dxf, drawing</td>
+</tr>
+<tr>
+<td>RS-CAP-12</td>
+<td>Dome cap D 38.1 x 10.0, integral 1/4-20 x 5/8 stud</td>
+<td>1</td>
+<td>turned brass C360, polished, plated (-CR / -BR / -BK)</td>
+<td>step, stl, drawing</td>
+</tr>
+<tr>
+<td>RS-CAP-7</td>
+<td>Dome cap D 48.0 x 8.5 with D 37.6 locating boss (chromed 45-adapter form)</td>
+<td>1 (7 in SKU)</td>
+<td>same</td>
+<td>step, stl, drawing</td>
+</tr>
+</tbody>
+</table>
+<p>Purchased parts modelled for fit (envelopes, not vendor CAD): E-Z Lok 400-4 insert, 8 mm COB LED strip, 1/2 in felt pads,
+1 in felt washer, PEM FH-832-10 studs, 8-32 nylon lock nuts, #8 pan-head wall screws, panel-mount 5.5 x 2.1 DC jack and
+plug, M3 x 12 set screw, 3/8 in x 1 in 1/4-20 standoff and 1/4-20 flat/pan head (aluminum variant), 6 x 12 neon-flex ring
+(aluminum variant), the customer's 12 in / 7 in record.</p>
+<h2>Key dimensions (mm, inches in brackets)</h2>
+<ul>
+<li>Wall gap (hub thickness) 25.4 [1.00]; record overhang past the backplate 19.05 (12 in) / 12.7 (7 in).</li>
+<li>Backplate: D 266.7 [10.50] / 152.4 [6.00] x 12.7 [0.50]; insert bore 9.92 [25/64] through; rim rabbet 10.2 wide x 1.5 deep
+  centred on the rim (8 mm COB strip sits 0.1 proud); lead notch 6.35 at 6 o'clock; rear channel 6 x 4 to R 60; rear jack
+  pocket 16 x 13 x 6.5 at (0, +15); felt targets D 13.3 x 0.5 on R 127 and R 69.85 at 90/210/330 deg; 3x #8 countersinks
+  on R 45 at 90/210/330 (front face, hidden by the record).</li>
+<li>Hub: D 127 x 25.4; rear recess D 107 x 5.5; J-slots on R 33 (entry D 10.8, slot 4.8, 20 deg lock arc, nut pocket 11.5 wide
+  to z 19); DC pocket 27 wide, y -13.5..+28.5, 16.5 deep; jack hole D 8.0 at (0, +15) through a 3.1 web; jack-body cavity
+  14 x 13 open to the front; cord channel 9.5 x 12 (rear, 6 o'clock); lead channel 6 x 4 (front, 6 o'clock); M3 heat-set
+  insert at 250 deg, z 9.5; 3x D 3.2 x 14 pilots on R 45.</li>
+<li>Wall plate: D 101.6 [4.00] x 1.90 [14 ga]; centre slot 30 x 37 (y -15..+22); arc slots 4.8 wide +/-10 deg on D 83.3
+  (90/270) and D 88.9 (0/180); PEM holes D 4.22 on R 33 at 75/195/315; tab 8 wide, 12.0 tall, D 3.4 hole at z 9.5,
+  bend Ri 1.9, K 0.44, BA 4.30, flat tab length 12.50 from the plate edge.</li>
+<li>Caps: RS-CAP-12 D 38.1 [1.50], 10.0 tall (1.6 band + 8.4 sphere segment R 25.8), base R 0.8, stud 1/4-20 x 15.9 [5/8];
+  RS-CAP-7 D 48.0 [1.89], 8.5 tall (2.0 band + 6.5 dome R 47.6), boss D 37.6 x 1.6, same stud.</li>
+<li>Stud engagement in the 12.7 insert: 9.0 mm (12 in, with 3.2 felt washer) / 10.8 mm (7 in). Never proud of the back face.</li>
+</ul>
+<h2>Checks that ran (see checks.md)</h2>
+<ul>
+<li>Pairwise boolean interference of all 20 solids in each of the four assemblies: 0 hits.</li>
+<li>30 derived clearances (wall-screw head under the recess, nut and stud under the pocket ceiling, set-screw reach, plug through
+  the plate slot and a 1-1/4 in wall hole, thread engagement, jack body vs insert bore, hub screw pilot depth).</li>
+<li>Every solid is a single valid closed solid (asserted in build_all.py). Volumes in build-log.json
+  (hub 245 cm3 solid, about 100 g at 40% infill in PETG; brass cap 12 = 7.4 cm3 = 63 g; cap 7 = 11.8 cm3 = 100 g).</li>
+</ul>
+<h2>Design calls made here (not in the reports; flag if you disagree)</h2>
+<ol>
+<li>Bayonet head = PEM FH-832-10 self-clinching stud (8-32 x 5/8) + 8-32 nylon-insert lock nut set at a 7.2 mm gauge. The mounting
+   report said "8-32 shoulder screws"; a shoulder screw needs a tapped plate (14 ga is too thin to tap 8-32 reliably), so a
+   pressed stud + lock nut gives the same geometry with off-the-shelf parts and an adjustable preload.</li>
+<li>Set screw sits at the 250 deg position (about 6:40) instead of exactly 6 o'clock, because the 6 o'clock position carries the
+   surface-cord channel. The set screw lands in a hole in a bent-up tab on the plate, which locks rotation and lift in both
+   directions; a radial screw bearing on a flat plate edge only blocks one direction.</li>
+<li>DC jack axis is offset 15 mm toward 12 o'clock so the jack body never shares the axis with the cap stud and the insert; the
+   plate centre hole is therefore a 30 x 37 slot and the customer's wall hole is 1-1/4 in centred 6 mm above the plate centre.
+   The jack body (10 mm long) also needs a 6.5 mm rear pocket in the backplate (hidden by the record) because the hub's
+   25.4 mm cannot hold pocket + web + body.</li>
+<li>Cap stud is 5/8 in, not 1 in (engineering report), so it never protrudes behind the backplate (which would hit the jack).
+   Engagement stays at 7 to 8 threads for a 160 g record.</li>
+<li>Hub fastens to the backplate with 3x #8 x 1 in flat-head screws from the FRONT of the backplate (hidden by the record) rather
+   than glue alone, so a hub can be swapped. Glue is still fine as a second line.</li>
+<li>The 7 in cap carries a D 37.6 x 1.6 boss that centres it in the 1.5 in hole, replacing the plastic 45 adapter for the 7 in SKU
+   (the plastic adapter is still shipped for a 7 in on a 12 in backplate). It needs a 47 x 39 x 1.6 felt ring (custom die-cut).</li>
+<li>Thin aluminum backplates (3 / 5 mm) cannot take a rim rabbet or a 12.7 mm insert, so they are modelled as the engineering
+   report's FLOATING configuration: 1/4-20 flat head countersunk from the back (5 mm) or pan head in the hub relief (3 mm) into
+   the 3/8 in x 1 in F-F standoff on the front; LED is a 6 x 12 mm top-emitting COB neon-flex ring on the back face (it bends
+   in-plane, a flat COB strip does not). Different look (double halo), own BOM line. The 1/2 in CNC MDF path is the primary.</li>
+<li>Hub recess is a uniform 5.5 deep so any pan-head wall screw or box screw clears; J-slot web 3.0 thick.</li>
+</ol>
+<h2>Standard dimensions used, with sources</h2>
+<ul>
+<li>LP spindle hole 0.286 in (7.26 mm); 45 rpm hole 1.5 in: engineering-report.md sec. 1
+  (https://allforturntables.com/2023/07/28/vinyl-record-spindle-hole/,
+  https://www.audio-technica.com/en-us/support/audio-solutions-question-of-the-week-what-do-i-need-to-know-about-45-rpm-records).</li>
+<li>E-Z Lok 400-4: 1/4-20, 0.500 in long, 25/64 in drill: https://www.albanycountyfasteners.com/1-4-20-brass-thread-inserts-wood-400-4-p/117012.htm
+  and https://www.ezlok.com/assets/documents/EZ-LOKBrochure_2023.pdf.</li>
+<li>Box spacings 83.3 mm (single gang) and 88.9 mm (round / octagon): mounting-report.md sec. 1 (verify against the specific LV bracket).</li>
+<li>14 ga steel = 0.0747 in (1.897 mm): US standard sheet gauge for steel; SendCutSend lists 0.075 in mild steel
+  (https://sendcutsend.com/materials/processing-min-max/). Bend radius 1t and K 0.44 are typical CRS values; the vendor will apply
+  its own K, which is why the formed STEP is the master and the DXF is marked as derived.</li>
+<li>PEM FH self-clinching studs: 8-32, lengths in 1/16 in steps, clinch hole about 0.166 in for 0.060 in+ sheet
+  (PEM bulletin FH, https://www.pemnet.com). Marked "verify" in the RFQ: the exact hole for 0.075 in sheet must be read off the bulletin.</li>
+<li>8-32 nylon-insert lock nut 11/32 in across flats (ASME B18.16.6 / common catalogue), height about 0.23 in: envelope only.</li>
+<li>1/4-20 pan head 0.492 dia x 0.133 high; 1/4 flat head 0.507 dia, 82 deg (ASME B18.6.3): envelopes for clearance only.</li>
+<li>3/8 in OD x 1 in 1/4-20 F-F aluminum standoff: https://www.aluminumspacers.com/as38-1420-64 (engineering-report sec. 1).</li>
+<li>Felt washer 1 in OD x 3/8 in ID x 1/8 in, pads 1/2 in x 1/16 in: https://www.durofelt.com/categories/self-adhesive-felt-washers.</li>
+<li>Panel-mount 5.5 x 2.1 DC jack with 8 mm threaded barrel (DC-022B class) and plug body about 10 mm dia: generic envelope, estimate;
+  confirm against the jack actually bought before the hub is tooled.</li>
+<li>COB strip 8 mm wide x about 1.6 thick: engineering-report sec. 2 (HitLights / Ecolocity class), estimate for thickness.</li>
+<li>Halo gap 1 in, LED on the rim facing outward: engineering-report sec. 1 and 2 (sign-industry halo-letter guidance).</li>
+<li>Plating spec ASTM B456 SC2 (copper + bright nickel + decorative chrome) is the normal interior decorative chrome callout;
+  PVD and black-chrome alternatives are listed in the RFQ for the plater to choose.</li>
+</ul>
+<h2>Open questions</h2>
+<ol>
+<li>Confirm the DC jack and plug actually purchased (barrel length, body size, plug body diameter) and re-run <code>build_all.py</code>
+   with <code>JACK_BARREL_L</code>, <code>JACK_BODY_L</code>, <code>POCKET_W</code> adjusted. The hub and plate geometry depend on it.</li>
+<li>PEM FH-832 clinch hole for 0.075 in sheet: read it off bulletin FH and set <code>STUD_HOLE_D</code> before cutting.</li>
+<li>7 in SKU felt ring 47 x 39 x 1.6 is not a stock Durofelt size: die-cut quote or use three 1/2 in pads on the cap underside.</li>
+<li>Aluminum variant is a different product (floating record, neon-flex ring, double halo). Keep as an upsell or drop; the
+   decision changes which RFQ goes out.</li>
+<li>MDF jack pocket leaves 6.2 mm of MDF under the pocket; fine for MDF, check tear-out in birch ply.</li>
+<li>Hub as printed is 25.4 tall with 5.8 of material above the DC pocket; for injection moulding the designer should add drafts,
+   core out the solid ring between R 54 and R 63 and gate at the rim. The RFQ asks the print vendor for this DFM review.</li>
+<li>Thermal: unchanged from the engineering report (strip on the rim, 0.7 in from the record edge). The first sample still needs
+   the 2-hour IR soak before a page claim.</li>
+<li>Cosmetic threads: STEP studs and bores are plain cylinders at major / drill diameter (standard for shop quotes); the 2D sheets
+   carry the thread callouts.</li>
+</ol></main></body></html>

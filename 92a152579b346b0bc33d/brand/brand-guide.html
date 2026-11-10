@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spindle Brand Guide</title>
+<meta name="description" content="Identity, packaging and naming for the record sconce: Spindle (recommended), Deadwax and Side A alternates.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="logo/icon-512.svg">
+<style>
+:root{
+  --c-vinyl:#16130F; --c-soot:#2B2622; --c-plaster:#E9DFCF; --c-label:#F4ECDD;
+  --c-halo:#F0A43B; --c-ember:#B9661C; --c-chrome:#C7CBD0; --c-chrome-deep:#5F6468; --c-brass:#B7955B;
+  --bg:var(--c-label); --bg-2:var(--c-plaster); --ink:var(--c-vinyl); --ink-2:var(--c-chrome-deep); --rule:#D9CFBE; --accent:var(--c-ember); --card:#FBF7EE;
+  --f-display:'Inter Tight','Helvetica Neue',Arial,sans-serif; --f-editorial:'Instrument Serif',Georgia,serif; --f-mono:'JetBrains Mono',ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --bg:var(--c-vinyl); --bg-2:var(--c-soot); --ink:var(--c-label); --ink-2:var(--c-chrome); --rule:#3A332C; --accent:var(--c-halo); --card:#1E1A16; } }
+:root[data-theme="dark"]{ --bg:var(--c-vinyl); --bg-2:var(--c-soot); --ink:var(--c-label); --ink-2:var(--c-chrome); --rule:#3A332C; --accent:var(--c-halo); --card:#1E1A16; }
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-display);font-size:17px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+a:hover{border-bottom-color:var(--accent)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+header.hero{padding:72px 0 48px;border-bottom:1px solid var(--rule)}
+.hero .kicker{font-family:var(--f-mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-2)}
+.hero h1{font-size:clamp(40px,7vw,84px);line-height:.98;letter-spacing:-.025em;font-weight:600;margin:16px 0 8px}
+.hero h1 em{font-family:var(--f-editorial);font-style:italic;font-weight:400;color:var(--accent);letter-spacing:0}
+.hero p.lede{max-width:720px;font-size:20px;color:var(--ink-2);margin:16px 0 0}
+nav.toc{display:flex;flex-wrap:wrap;gap:8px 20px;padding:20px 0;border-bottom:1px solid var(--rule);font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+nav.toc a{color:var(--ink-2)}
+section{padding:64px 0;border-bottom:1px solid var(--rule)}
+section h2{font-size:clamp(28px,4vw,44px);letter-spacing:-.02em;font-weight:600;margin:0 0 8px;line-height:1.05}
+section h3{font-size:22px;letter-spacing:-.01em;font-weight:600;margin:40px 0 12px}
+.num{font-family:var(--f-mono);font-size:12px;letter-spacing:.2em;color:var(--ink-2);display:block;margin-bottom:10px}
+p{max-width:72ch}
+.grid{display:grid;gap:20px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+figure{margin:0;background:var(--card);border:1px solid var(--rule);border-radius:8px;overflow:hidden}
+figure img{display:block;width:100%;height:auto}
+figure.pad img{padding:24px}
+figure.dark{background:var(--c-soot)}
+figure.plaster{background:var(--c-plaster)}
+figure.vinyl{background:var(--c-vinyl)}
+figcaption{font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-2);padding:10px 14px;border-top:1px solid var(--rule)}
+.swatches{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:12px}
+.sw{border-radius:8px;overflow:hidden;border:1px solid var(--rule);background:var(--card)}
+.sw .chip{height:96px}
+.sw .meta{padding:10px 12px;font-size:13px}
+.sw .meta b{display:block;font-weight:600}
+.sw .meta code{font-family:var(--f-mono);font-size:11px;color:var(--ink-2)}
+.sw .meta small{display:block;color:var(--ink-2);font-size:12px;line-height:1.35;margin-top:4px}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:14px}
+th,td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--rule)}
+th{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);font-weight:500}
+td.ok{color:#2E7D4F}td.bad{color:#A33A2A}
+.tag{display:inline-block;font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:4px 9px;border-radius:999px;border:1px solid var(--rule);color:var(--ink-2)}
+.tag.rec{border-color:var(--accent);color:var(--accent)}
+.type-sample{background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:28px}
+.type-sample .d{font-size:56px;letter-spacing:-.025em;font-weight:600;line-height:1}
+.type-sample .e{font-family:var(--f-editorial);font-style:italic;font-size:44px;line-height:1.05;color:var(--accent);margin-top:14px}
+.type-sample .m{font-family:var(--f-mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-2);margin-top:18px}
+.type-sample .b{margin-top:18px;max-width:60ch;color:var(--ink)}
+ul.rules{padding-left:18px;max-width:72ch}
+ul.rules li{margin:6px 0}
+.do-dont{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.do-dont div{background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:20px}
+.do-dont h4{margin:0 0 10px;font-family:var(--f-mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-2)}
+.do-dont ul{margin:0;padding-left:18px}
+blockquote.tag-line{font-family:var(--f-editorial);font-style:italic;font-size:clamp(26px,3.4vw,40px);line-height:1.1;margin:0;padding:18px 0;border-top:1px solid var(--rule);color:var(--ink)}
+blockquote.tag-line small{display:block;font-family:var(--f-mono);font-style:normal;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-2);margin-top:8px}
+.files{font-family:var(--f-mono);font-size:12.5px;line-height:1.7;color:var(--ink-2)}
+.files b{color:var(--ink);font-weight:500}
+footer{padding:40px 0 80px;font-family:var(--f-mono);font-size:12px;color:var(--ink-2);letter-spacing:.06em}
+@media (max-width:640px){ section{padding:44px 0} .type-sample .d{font-size:40px} .type-sample .e{font-size:32px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+  <span class="kicker">Brand guide · v0.1 · 2026-11-09</span>
+  <h1>Spindle<br><em>record sconces</em></h1>
+  <p class="lede">A halo-backlit wall light built around a real 12-inch record, held by a mirror-chrome dome where the spindle would be. This page is the identity, the packaging and the naming work in one place. Nothing here uses a band name, a label logo or album art; every label shown is plain or fictional.</p>
+</header>
+
+<nav class="toc">
+  <a href="#name">01 Name</a><a href="#mark">02 Mark</a><a href="#lockups">03 Lockups</a><a href="#color">04 Color</a><a href="#type">05 Type</a><a href="#photo">06 Photography</a><a href="#voice">07 Voice</a><a href="#pack">08 Packaging</a><a href="#refs">09 References</a><a href="#files">10 Files</a>
+</nav>
+
+<section id="name">
+  <span class="num">01</span>
+  <h2>The name: Spindle, with Deadwax as the alternate</h2>
+  <p>Eight candidates were checked tonight against the USPTO trademark search (classes 011 lighting, 020 furniture, 035 retail, plus 009 and 021 where vinyl accessories live), .com and .co registration via RDAP and whois, and Instagram and TikTok handle pages loaded in a real browser. Full table and method in <a href="naming-report.md">naming-report.md</a>; raw results in <code>tools/namecheck-results/</code>.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Name</th><th>USPTO in our classes</th><th>Domains</th><th>Handles</th><th></th></tr></thead>
+    <tbody>
+      <tr><td><b>Spindle</b></td><td class="ok">011 clear. 020: SPINDLE registered for beds and mattresses (Miami Labs), WALKER EDISON SPINDLE for furniture.</td><td>spindle.com taken · <b>spindlelighting.com free</b> · <b>spindle.lighting free</b></td><td>@spindle IG not available (confirm), TikTok taken · <b>@spindlelighting free on both</b></td><td><span class="tag rec">Recommended</span></td></tr>
+      <tr><td><b>Deadwax</b></td><td>011 clear. 020: LIVING DEADWAX registered (furniture). 009: DEADWAX pending (app), DEAD WAX RECORDS registered.</td><td>deadwax.com taken · deadwaxlighting.com free · deadwax.lighting free</td><td>@deadwax taken on both · @deadwaxlighting free on both</td><td><span class="tag">Alternate</span></td></tr>
+      <tr><td><b>Side A</b></td><td class="bad">SIDE A registered (009/021) for protective sleeves for vinyl records: same customer, same shelf.</td><td>sidea.com taken · sidealighting.com free · sidea.lighting free</td><td>@sidea taken on both · @sideastudio is a music studio</td><td><span class="tag">Third; keep as copy</span></td></tr>
+      <tr><td>Runout</td><td>RUN OUT GROOVE RECORDS registered (035, record retail)</td><td>taken</td><td>taken on both</td><td><span class="tag">No</span></td></tr>
+      <tr><td>Lead-In</td><td>Generic, 773 hits; "lead" next to a fixture is a bad word</td><td>taken</td><td>IG taken</td><td><span class="tag">No</span></td></tr>
+      <tr><td>Flipside</td><td class="bad">FLIPSIDE registered twice in 011 (Kohler, Presto)</td><td>taken</td><td>taken on both</td><td><span class="tag">No</span></td></tr>
+      <tr><td>Thirty Three</td><td class="bad">URBAN 33 registered for lighting fixtures; 33 for vehicle lighting</td><td>taken</td><td>taken on both</td><td><span class="tag">No</span></td></tr>
+      <tr><td>Revolve</td><td class="bad">REVOLVE registered in 011 (LED light bars); the fashion retailer owns the word online</td><td>taken</td><td>taken on both</td><td><span class="tag">No</span></td></tr>
+    </tbody>
+  </table></div>
+  <h3>Why Spindle</h3>
+  <ul class="rules">
+    <li>Only candidate clear in class 011 with a descriptive .com, a short new-TLD domain and matching handles all open at once.</li>
+    <li>Brand and product share one word, the Poplight pattern: Spindle 12, Spindle 7, Spindle Kit, Spindle Set. No second brand to explain on a $89 to $329 product.</li>
+    <li>It names our own hardware (the post through the record's hole), so it is factual about us and silent about anyone's music, which is exactly where the legal line sits.</li>
+    <li>Plain English object word, like Schoolhouse, Rejuvenation and Gantri names. Reads as a thing, not a startup.</li>
+    <li>Exposure to raise with the IP lawyer: the class 020 SPINDLE for mattresses. Different goods, same "home" aisle. File SPINDLE or SPINDLE LIGHTING on counsel's call.</li>
+  </ul>
+  <p>Side A survives as our best tagline material ("Side A, always.") and Deadwax as the name for the editorial side if we ever want one. Neither needs to be a trademark to do that job.</p>
+</section>
+
+<section id="mark">
+  <span class="num">02</span>
+  <h2>The mark</h2>
+  <p>A record seen head-on. Three groove arcs broken where the light catches them, the label at one third of the disc (4 inches of 12), and the dome at the centre where the spindle hole is. The halo is a ring behind the disc, the way the wall glows behind the real thing. Proportions are the product's proportions, so the mark is a drawing of what you get, not a metaphor.</p>
+  <div class="grid g4">
+    <figure class="pad"><img src="logo/monogram-on-light.svg" alt="Monogram on light"><figcaption>monogram-on-light.svg</figcaption></figure>
+    <figure class="pad dark"><img src="logo/monogram-on-dark.svg" alt="Monogram on dark"><figcaption>monogram-on-dark.svg</figcaption></figure>
+    <figure class="pad"><img src="logo/monogram-mono-black.svg" alt="One-colour monogram black"><figcaption>mono black · emboss, laser, foil</figcaption></figure>
+    <figure class="pad vinyl"><img src="logo/monogram-mono-white.svg" alt="One-colour monogram white"><figcaption>mono white · reverse</figcaption></figure>
+  </div>
+  <h3>Rules</h3>
+  <ul class="rules">
+    <li>Minimum size 18 px on screen, 0.35 in in print. Below that use the one-colour mark without rings.</li>
+    <li>Clear space equals the dome diameter times four on every side.</li>
+    <li>The halo ring is Halo on dark and plaster surfaces, Ember on kraft and light surfaces (Halo on cream has no contrast).</li>
+    <li>Never rotate, never add a second ring, never put a letter inside the disc. The one-colour mark is what gets lasered on the hub.</li>
+  </ul>
+</section>
+
+<section id="lockups">
+  <span class="num">03</span>
+  <h2>Wordmark and lockups</h2>
+  <p>Inter Tight SemiBold, all caps, tracked +0.06em. A quiet grotesk plate, the kind you find stamped on Schoolhouse hardware. The horizontal lockup aligns the wordmark's x-height band to the dome centre; the stacked lockup carries a one-line descriptor in mono underneath. Alternates for Deadwax and Side A are built in the same system so a late name change costs nothing.</p>
+  <div class="grid g2">
+    <figure class="plaster"><img src="logo/lockup-spindle-horizontal-on-plaster.svg" alt="Spindle horizontal lockup on plaster"><figcaption>lockup-spindle-horizontal-on-plaster.svg</figcaption></figure>
+    <figure class="vinyl"><img src="logo/lockup-spindle-horizontal-on-dark.svg" alt="Spindle horizontal lockup on dark"><figcaption>lockup-spindle-horizontal-on-dark.svg</figcaption></figure>
+  </div>
+  <div class="grid g3" style="margin-top:20px">
+    <figure class="pad"><img src="logo/lockup-spindle-stacked-on-light.svg" alt="Spindle stacked lockup"><figcaption>spindle · stacked</figcaption></figure>
+    <figure class="pad vinyl"><img src="logo/lockup-deadwax-stacked-on-dark.svg" alt="Deadwax stacked lockup"><figcaption>deadwax · alternate</figcaption></figure>
+    <figure class="pad"><img src="logo/lockup-side-a-stacked-on-light.svg" alt="Side A stacked lockup"><figcaption>side a · alternate</figcaption></figure>
+  </div>
+  <div class="grid g3" style="margin-top:20px">
+    <figure class="pad"><img src="logo/wordmark-spindle-on-light.svg" alt="Spindle wordmark"><figcaption>wordmark · caps · Inter Tight 600</figcaption></figure>
+    <figure class="pad"><img src="logo/wordmark-spindle-serif-italic.svg" alt="Spindle editorial wordmark"><figcaption>editorial variant · Instrument Serif italic · copy only, never the logo</figcaption></figure>
+    <figure class="pad vinyl"><img src="logo/icon-512.svg" alt="App icon"><figcaption>icon-512 · favicon and social avatar</figcaption></figure>
+  </div>
+</section>
+
+<section id="color">
+  <span class="num">04</span>
+  <h2>Color</h2>
+  <p>Taken from the reference photograph: the black of the vinyl, the warm plaster wall, the 2700K halo. The system follows the Apple rule of one accent used sparingly, adapted warm. There is no pure white and no pure black anywhere; Label and Vinyl are the extremes. Chrome greys exist for hardware and metadata only. Brass is a configurator swatch and never a UI colour.</p>
+  <div class="swatches">
+    <div class="sw"><div class="chip" style="background:#16130F"></div><div class="meta"><b>Vinyl</b><code>#16130F</code><small>Ink. Primary text, dark surfaces, the record.</small></div></div>
+    <div class="sw"><div class="chip" style="background:#2B2622"></div><div class="meta"><b>Soot</b><code>#2B2622</code><small>Second dark. Box interior, warranty card.</small></div></div>
+    <div class="sw"><div class="chip" style="background:#E9DFCF"></div><div class="meta"><b>Plaster</b><code>#E9DFCF</code><small>Canvas. The wall.</small></div></div>
+    <div class="sw"><div class="chip" style="background:#F4ECDD;border-bottom:1px solid #D9CFBE"></div><div class="meta"><b>Label</b><code>#F4ECDD</code><small>Lightest surface. Cards, web background.</small></div></div>
+    <div class="sw"><div class="chip" style="background:#F0A43B"></div><div class="meta"><b>Halo</b><code>#F0A43B</code><small>The accent. Appears as light: glows, hairlines, one word.</small></div></div>
+    <div class="sw"><div class="chip" style="background:#B9661C"></div><div class="meta"><b>Ember</b><code>#B9661C</code><small>Halo for light surfaces and kraft. Print-safe.</small></div></div>
+    <div class="sw"><div class="chip" style="background:#C7CBD0"></div><div class="meta"><b>Chrome</b><code>#C7CBD0</code><small>Hardware highlight. Rules, metadata on dark.</small></div></div>
+    <div class="sw"><div class="chip" style="background:#5F6468"></div><div class="meta"><b>Chrome Deep</b><code>#5F6468</code><small>Hardware shadow. Secondary text on light.</small></div></div>
+    <div class="sw"><div class="chip" style="background:#B7955B"></div><div class="meta"><b>Brass</b><code>#B7955B</code><small>Finish swatch only.</small></div></div>
+  </div>
+  <ul class="rules" style="margin-top:28px">
+    <li>Halo is never a fill behind text. It is a ring, a gradient, a hairline, or a single highlighted word.</li>
+    <li>Body text on light is Vinyl; secondary text is Chrome Deep (contrast 5.6:1 on Label). On dark, Label and Chrome.</li>
+    <li>Finish names in the configurator are Chrome, Brass, Black, in that order, shown as rendered metal, not as flat swatches.</li>
+  </ul>
+</section>
+
+<section id="type">
+  <span class="num">05</span>
+  <h2>Typography</h2>
+  <div class="type-sample">
+    <div class="d">Put something on.</div>
+    <div class="e">Change the record. Change the room.</div>
+    <div class="m">Spindle 12 · Chrome · 2700 K · 12 V Class 2</div>
+    <div class="b">Inter Tight carries the wordmark, headlines and body: 600 at display sizes with -0.02em tracking, 400 and 500 for reading. Instrument Serif italic is the editorial voice, for taglines and the ritual line, never below 20px and never for the logo. JetBrains Mono is the deadwax etching: specs, serials, finish codes, in caps with +0.2em tracking.</div>
+  </div>
+  <div class="scroll" style="margin-top:24px"><table>
+    <thead><tr><th>Role</th><th>Google Fonts (OFL, free)</th><th>Licensed alternative</th><th>Use</th></tr></thead>
+    <tbody>
+      <tr><td>Display and body</td><td><a href="https://fonts.google.com/specimen/Inter+Tight">Inter Tight</a> 400 / 500 / 600 / 700</td><td>Söhne (Klim) or Neue Haas Grotesk</td><td>Wordmark 600 caps +0.06em; H1 64px -0.02em; body 17px / 1.5</td></tr>
+      <tr><td>Editorial</td><td><a href="https://fonts.google.com/specimen/Instrument+Serif">Instrument Serif</a> italic</td><td>GT Alpina (Grilli) or Canela (Commercial Type)</td><td>Taglines, pull quotes, the lid interior line. 20px minimum</td></tr>
+      <tr><td>Mono</td><td><a href="https://fonts.google.com/specimen/JetBrains+Mono">JetBrains Mono</a> 400 / 500</td><td>Söhne Mono (Klim) or Berkeley Mono</td><td>Specs, serials, labels, captions. Caps, +0.18 to +0.22em</td></tr>
+    </tbody>
+  </table></div>
+  <p style="margin-top:16px">Scale (px): 64 / 44 / 32 / 24 / 17 / 14 / 12. Spacing: 4, 8, 12, 16, 24, 32, 48, 64, 96, 128. Radii: 6 cards, 8 images, pill buttons. Tokens in <a href="tokens.json">tokens.json</a> and <a href="tokens.css">tokens.css</a>.</p>
+</section>
+
+<section id="photo">
+  <span class="num">06</span>
+  <h2>Photography</h2>
+  <p>Austin's reference is the brief: a warm plaster wall at dusk, the halo doing the work, a plant edge and a frame edge in shot so it reads as a real room. Three shots per finish, in this order of importance.</p>
+  <div class="grid g3">
+    <figure><img src="../render/sconce_hero_chrome.png" alt="Chrome hero render"><figcaption>1 · hero · straight on · room lights down · expose for the glow</figcaption></figure>
+    <figure><img src="../render/sconce_hero_brass.png" alt="Brass hero render"><figcaption>finish variant · brass · same frame, same exposure</figcaption></figure>
+    <figure><img src="../render/sconce_hero_black.png" alt="Black hero render"><figcaption>finish variant · black · the one that disappears into the wall</figcaption></figure>
+  </div>
+  <div class="do-dont" style="margin-top:24px">
+    <div><h4>Do</h4><ul>
+      <li>Shoot at dusk or with blackout; the halo must be the brightest thing in frame.</li>
+      <li>White balance to the wall, not the LED, so the glow stays amber and the plaster stays warm.</li>
+      <li>Second shot at 45 degrees, close on the dome reflecting the room; grooves in focus.</li>
+      <li>Third shot: hands unscrewing the dome and lifting the record off. That is the kit's whole pitch.</li>
+      <li>Plain house labels, promo blanks, or our own printed test label. The product page may show a real label as a factual example of the customer's own record.</li>
+      <li>One 10 to 15 second clip of the switch-on and dim to amber for Meta.</li>
+    </ul></div>
+    <div><h4>Do not</h4><ul>
+      <li>No band names, label logos or album art in any ad, render or social post.</li>
+      <li>No daylight-white LED, no RGB, no colour modes. 2700K only.</li>
+      <li>No white wall-wart or white cord in frame. Black cord, or the in-wall install with nothing showing.</li>
+      <li>No lifestyle clutter: one plant, one frame, one record. The Tom Dixon Press page is the density target.</li>
+      <li>No flat-lay product-on-white. The product is the glow on a wall; it has no meaning on a white sweep.</li>
+    </ul></div>
+  </div>
+</section>
+
+<section id="voice">
+  <span class="num">07</span>
+  <h2>Voice and taglines</h2>
+  <p>Plain, specific, a little dry. We write like a record store clerk who also happens to be an electrician: facts first, feelings implied. Short sentences. Numbers where they matter (2700K, 12 V, two turns of the dome). No exclamation marks, no "elevate", no "vibe", no "curated". We never say "official", "limited edition" or an artist's name. The product is the customer's record and our light; the copy knows which half is ours.</p>
+  <div class="do-dont">
+    <div><h4>Sounds like us</h4><ul>
+      <li>"Your record, lit from behind. Nothing glued, nothing drilled."</li>
+      <li>"The dome comes off in two turns. Put on what you are playing this month."</li>
+      <li>"12 V from a listed adapter. The wiring goes in the wall; the light goes on the record."</li>
+      <li>"First batch of 20 sold out. Join the waitlist for the next one."</li>
+    </ul></div>
+    <div><h4>Does not</h4><ul>
+      <li>"Elevate your space with this stunning vinyl wall art!"</li>
+      <li>"Official [famous band] wall light" (never: trademark, copyright, and a lie about what we are)</li>
+      <li>"Limited edition, selling fast" for something that is made to order</li>
+      <li>Any sentence with "vibe", "aesthetic", or "curated" in it</li>
+    </ul></div>
+  </div>
+  <h3>Taglines</h3>
+  <blockquote class="tag-line">Change the record. Change the room.<small>Primary · insert card, box back wall, homepage hero</small></blockquote>
+  <blockquote class="tag-line">Put something on.<small>Lid interior · the first words on opening the box</small></blockquote>
+  <blockquote class="tag-line">Side A, always.<small>Social and email sign-off · keeps the Side A idea alive without the trademark problem</small></blockquote>
+  <blockquote class="tag-line">Your record. Our light.<small>Kit SKU · the whole legal position in four words</small></blockquote>
+  <blockquote class="tag-line">Twelve inches of what you love, lit at 2700 K.<small>Long-form · product page subhead, ad primary text</small></blockquote>
+  <blockquote class="tag-line">The sconce that takes requests.<small>Playful · ad headline test B</small></blockquote>
+</section>
+
+<section id="pack">
+  <span class="num">08</span>
+  <h2>Packaging</h2>
+  <p>One kraft 13 x 13 x 3 in roll-end tuck-top mailer, printed outside in black and Ember, printed inside on the lid only. A two-layer black foam tray presents the chrome dome dead centre on the spindle axis, with the record in its sleeve safe at the bottom under everything. One uncoated 5 x 7 card with the install steps and the swap ritual, a Soot warranty card, a round seal sticker and a finish label so one box serves three finishes. Vendor-ready spec in <a href="packaging/spec-sheet.md">packaging/spec-sheet.md</a>; artwork is outlined vector with bleed, safe zones and a cut/crease legend on every sheet.</p>
+  <div class="grid g2">
+    <figure><img src="preview/mailer-13x13x3-outside.png" alt="Mailer outside dieline artwork"><figcaption>mailer-13x13x3-outside.svg · 25 x 33.5 in flat · K + Ember on kraft</figcaption></figure>
+    <figure><img src="preview/mailer-13x13x3-inside.png" alt="Mailer inside dieline artwork"><figcaption>mailer-13x13x3-inside.svg · lid interior Soot flood + Halo radial</figcaption></figure>
+  </div>
+  <figure style="margin-top:20px"><img src="preview/insert-tray.png" alt="Insert tray plan and section"><figcaption>insert-tray.svg · two layers, dome pocket at centre, section through the middle</figcaption></figure>
+  <div class="grid g4" style="margin-top:20px">
+    <figure><img src="preview/insert-card-front.png" alt="Insert card front"><figcaption>insert card · front · 5 x 7</figcaption></figure>
+    <figure><img src="preview/insert-card-back.png" alt="Insert card back"><figcaption>insert card · back · install QR + ritual + safety</figcaption></figure>
+    <figure><img src="preview/warranty-card.png" alt="Warranty card"><figcaption>warranty card · 3.5 x 5 · two years</figcaption></figure>
+    <div class="grid" style="gap:20px">
+      <figure class="pad"><img src="preview/sticker-2in-round.png" alt="Round sticker"><figcaption>seal sticker · 2 in</figcaption></figure>
+      <figure class="pad"><img src="preview/sticker-finish-labels.png" alt="Finish labels"><figcaption>finish labels · 3 x 0.55 in</figcaption></figure>
+    </div>
+  </div>
+  <h3>Unboxing order</h3>
+  <ul class="rules">
+    <li>Seal sticker off the tuck. Lid opens to "Put something on." in a halo on Soot.</li>
+    <li>The chrome dome, face up, alone in the centre of black foam. Card and warranty in the slot above it.</li>
+    <li>Layer one out: the backplate and hub in their round pocket, cord and adapter coiled beside.</li>
+    <li>Layer two out: the record in its poly-lined sleeve on the box floor, or the empty sleeve with a note if it is the kit.</li>
+  </ul>
+</section>
+
+<section id="refs">
+  <span class="num">09</span>
+  <h2>References, and what we took from each</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>Brand</th><th>What we borrowed</th><th>What we left</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://www.schoolhouse.com">Schoolhouse</a></td><td>Plain-English object names, the stamped-plate wordmark, US-assembled story told in one line, warm interiors shot at dusk</td><td>The full heritage catalogue voice; we are one product</td></tr>
+      <tr><td><a href="https://www.rejuvenation.com">Rejuvenation</a></td><td>Finish as the first choice on the page, shown as metal not as a swatch; restraint in the type</td><td>Serif-heavy catalogue typography</td></tr>
+      <tr><td><a href="https://www.gantri.com">Gantri</a></td><td>Moulded-pulp tray as the premium packaging move at volume; the "designed by, made by" credit line; best-sellers page that is all sconces at $298 to $448</td><td>Colour names as product personality; our object is the record, the colour is the customer's</td></tr>
+      <tr><td><a href="https://www.tomdixon.net">Tom Dixon</a> (Press, $755 at <a href="https://www.dwr.com/lighting-ceiling/press-surface-light/2585264.html?lang=en_US">DWR</a>)</td><td>One polished part on a matte body; interchangeable centre caps; 2700K ring; the photographic density of one object on one wall</td><td>The price, and the glass</td></tr>
+      <tr><td><a href="https://teenage.engineering">Teenage Engineering</a></td><td>Mono spec typography as decoration; exploded diagrams as marketing; the insert card that reads like a datasheet</td><td>Grey-on-grey minimalism; ours is warm</td></tr>
+      <tr><td><a href="https://www.audio-technica.com">Audio-Technica</a></td><td>Record-culture credibility without a single album cover: the product photographed in use with a blank or house label</td><td>Hi-fi spec tables; one line of specs is enough on a sconce</td></tr>
+      <tr><td><a href="https://www.poplight.com">Poplight</a> ($99)</td><td>Brand equals product, one word; the renter-friendly plug-in pitch at a $99 price point that reviewers accepted</td><td>Adhesive mounting and the app; we have a plate and a dimmer</td></tr>
+    </tbody>
+  </table></div>
+  <p style="margin-top:16px">Design-system tokens were cross-checked against the Apple entry in the local brand library (single accent, near-black ink instead of pure black, negative tracking at display sizes) and warmed for this product. Market numbers and the competitor table live in <a href="../design-report.md">design-report.md</a>.</p>
+</section>
+
+<section id="files">
+  <span class="num">10</span>
+  <h2>Files</h2>
+  <div class="files">
+    <b>brand/naming-report.md</b> · eight names, every check, the recommendation<br>
+    <b>brand/tokens.json</b>, <b>brand/tokens.css</b> · colours, fonts, scale, rules<br>
+    <b>brand/logo/</b> · monogram (4 variants + icon), wordmarks and lockups for Spindle, Deadwax, Side A, palette.svg<br>
+    <b>brand/packaging/</b> · mailer outside + inside dielines, insert tray, insert card front/back, warranty card, two stickers, <b>spec-sheet.md</b><br>
+    <b>brand/preview/</b> · PNG renders of every SVG (headless Chrome)<br>
+    <b>brand/tools/</b> · gen_brand.py, gen_packaging.py, svgtext.py (fontTools outlining), render_previews.sh, fonts/, namecheck-results/<br>
+    <b>brand/README.md</b> · what was made, where, what is open
+  </div>
+  <p style="margin-top:16px">Regenerate everything for a different name: set <code>RECOMMENDED</code> in <code>tools/gen_brand.py</code>, run <code>gen_brand.py</code>, <code>gen_packaging.py</code>, <code>render_previews.sh</code>.</p>
+</section>
+
+<footer>Spindle brand guide · built 2026-11-09 · no names registered, no orders placed · every label in this guide is plain or fictional</footer>
+</div>
+</body>
+</html>

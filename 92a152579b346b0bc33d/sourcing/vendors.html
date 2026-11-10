@@ -1,0 +1,733 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Record Sconces: vendor tables (sourcing pass, 2026-11-09 night) | Spindle</title>
+<style>
+:root{--bg:#f6f2ea;--ink:#1b1916;--mute:#6b645a;--line:#e3dccf;--accent:#b8732e;--panel:#fffdf8}
+@media (prefers-color-scheme:dark){:root{--bg:#121110;--ink:#ece6da;--mute:#a19887;--line:#2c2925;--accent:#e6a456;--panel:#1a1816}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Inter",system-ui,sans-serif}
+main{max-width:880px;margin:0 auto;padding:28px 16px 80px}
+a{color:var(--accent)} .back{font-size:14px;display:inline-block;margin-bottom:18px}
+h1{font-size:28px;line-height:1.2} h2{margin-top:36px;font-size:21px} h3{font-size:17px}
+table{border-collapse:collapse;width:100%;display:block;overflow-x:auto;font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top} th{background:var(--panel)}
+code{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:0 4px;font-size:.9em}
+pre{background:var(--panel);border:1px solid var(--line);padding:12px;overflow-x:auto;border-radius:8px}
+img{max-width:100%}
+</style></head><body><main><a class="back" href="../START-HERE.html">Back to START HERE</a>
+<h1>Record Sconces: vendor tables (sourcing pass, 2026-11-09 night)</h1>
+<p>Scope: every part in the decided design (BRIEF.md, engineering-report.md section 6, mounting-report.md). Nothing ordered, no accounts created, nothing sent. Every price below was either read off the vendor page tonight (marked live), scraped from a search snippet because the page blocked the fetch (marked snippet), or is my estimate (marked estimate). Fetch status is the HTTP result of a curl from the Mini tonight. Search budget for the session ran out midway, so a few rows lean on snippets; those are flagged.</p>
+<p>Two files for instant quotes sit in this folder: plate_4in.dxf (4" plate, 1" centre hole, four arc slots, three 8-32 stud holes, one tab hole) and hub_127.stl (simplified 127 x 25.4 mm ring, 249,764 mm3). They are placeholders built from the mounting-report dimensions so a vendor can price the envelope; the real CAD comes from render/sconce_v2.py.</p>
+<h2>1. Chrome dome cap (1.5" mirror-chrome low dome on a 1/4-20 x 1" stud; brass and gloss black variants)</h2>
+<p>This is the one part with no stock equivalent. Turned brass (C360), polished, then nickel plus decorative chrome. Volume is tiny (about 4 cm3), so the price is almost all setup, polish and plating minimums.</p>
+<table>
+<thead>
+<tr>
+<th>Vendor</th>
+<th>What they do for us</th>
+<th>Price</th>
+<th>MOQ</th>
+<th>Lead time</th>
+<th>URL (fetch)</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PCBWay CNC (Shenzhen)</td>
+<td>CNC turning in brass C360 with "Decorative Bright Chrome" as a listed finish (nickel underlayer, 0.2-0.5 um chrome)</td>
+<td>Quote needs upload + login; plating is price-corrected by hand after the instant quote. Estimate $9-14 each at 10, $4-7 at 100, $2.50-4 at 500</td>
+<td>1</td>
+<td>7-12 days plus 5-8 days DHL (estimate)</td>
+<td>https://www.pcbway.com/rapid-prototyping/cnc-machining/metal/brass/ (200); https://www.pcbway.com/rapid-prototyping/Surface-Finishing/spray-plating/chrome-plating/ (200)</td>
+<td>Best overseas first pick because chrome is a menu item, not a side conversation. They want R0.3 mm minimum on edges for plating.</td>
+</tr>
+<tr>
+<td>JLCCNC (JLCPCB group)</td>
+<td>CNC turning from $5.00, brass H59 listed, MOQ 1, 3 business days production</td>
+<td>Instant quote needs login. Estimate $8-12 each at 10, $3.50-6 at 100</td>
+<td>1</td>
+<td>3 business days plus shipping</td>
+<td>https://jlccnc.com/ (200)</td>
+<td>Plating/polish options are not on the public page; ask in the RFQ. Cheapest route for the brass variant if we polish and lacquer instead of plating.</td>
+</tr>
+<tr>
+<td>Xometry (US network)</td>
+<td>CNC turning, brass, plating via partners; no minimum order quantity</td>
+<td>Account required for the quote. Estimate $25-40 each at 10, $9-14 at 100</td>
+<td>1</td>
+<td>5-10 business days</td>
+<td>https://www.xometry.com/ (200); https://community.xometry.com/kb/articles/642-what-is-your-minimum-order-quantity (200)</td>
+<td>US-made, fast, expensive at our volumes. Good for the first 10 if we want them in hand in a week.</td>
+</tr>
+<tr>
+<td>Protolabs</td>
+<td>CNC turning as fast as 1 day; brass listed; finishes include nickel plating but chrome is not on the list; turning max 3.95" dia</td>
+<td>Interactive quote from CAD, account required. Estimate $30-50 each at 10</td>
+<td>1</td>
+<td>1-7 days</td>
+<td>https://www.protolabs.com/services/cnc-machining/ (200)</td>
+<td>Nickel only, so a "bright nickel" cap rather than chrome. Bright nickel is visually close and cheaper to plate; worth one sample for comparison.</td>
+</tr>
+<tr>
+<td>Fictiv</td>
+<td>360 brass turning "as fast as 5 days", nickel plating and hand polish listed, 13 finishes</td>
+<td>Account required</td>
+<td>1</td>
+<td>5+ days</td>
+<td>https://www.fictiv.com/capabilities/cnc-machining (200)</td>
+<td>Same story as Protolabs: nickel yes, chrome no.</td>
+</tr>
+<tr>
+<td>Alibaba turned-part makers (Dongguan)</td>
+<td>Custom brass knobs with threaded studs; snippet shows Dongguan Huantong Hardware polished brass knobs $0.50-0.80 MOQ 1, Dongguan Qijia with chrome plating $0.50-5.00 MOQ 1, and a "1/4 x 20 x 1 brass knurled knob" from Dongguan Star Machining MOQ 500</td>
+<td>$0.50-5.00 per piece (snippet; expect $2-4 for a 1.5" polished and chromed dome at 500, estimate)</td>
+<td>1-500 depending on shop</td>
+<td>15-25 days plus freight (estimate)</td>
+<td>https://www.alibaba.com/showroom/custom-machined-brass-knob.html (410 tonight, listing rotated); https://www.alibaba.com/supplier/china-brass-turned-parts-customized.html (200)</td>
+<td>The 500-unit price point. Not a day-one source; sample first from one shop, chrome quality varies wildly.</td>
+</tr>
+<tr>
+<td>R &amp; H Plating, Fort Lauderdale</td>
+<td>Chrome, nickel, brass, copper, gold plating and polishing; automotive and marine trim</td>
+<td>Quote by phone; small lots are usually a per-rack minimum of about $75-150 (estimate)</td>
+<td>None stated</td>
+<td>1-2 weeks (estimate)</td>
+<td>https://www.processregister.com/R_H_Plating/Supplier/sid100735.htm (200); 2300 W Oakland Park Blvd Ste 300, Fort Lauderdale 33311, (954) 497-2330, 800-270-2510, Felix Reynoso</td>
+<td>Local plater for the US-turned path: have Xometry or a local lathe turn raw brass, drive the caps to R &amp; H for polish and chrome. Also our fix if overseas chrome arrives dull.</td>
+</tr>
+<tr>
+<td>Mark Plating, Fort Lauderdale</td>
+<td>Chrome, brushed nickel, brass, copper, zinc, tin; decorative and functional</td>
+<td>Contact form for quote</td>
+<td>None stated</td>
+<td>"Fast turnaround" (no number)</td>
+<td>https://markplating.com/hardware-plating-fort-lauderdale/ (200)</td>
+<td>Second local plater; address and phone are not on the page, use the form.</td>
+</tr>
+<tr>
+<td>All Points Boats CNC shop, Fort Lauderdale</td>
+<td>AXYZ 3-axis router, FLOW 5-axis waterjet, press brake; takes outside jobs</td>
+<td>Quote by email</td>
+<td>None</td>
+<td>Local</td>
+<td>https://apb1.com/apbs-cnc-machine-shop-in-fort-lauderdale-unleashing-precision-across-industries/ (200); 900 SW 21st Terrace, Fort Lauderdale 33312, 954-767-8255, info@apb1.com</td>
+<td>No lathe listed, so not the dome; listed here because they can cut the backplates and plates locally (sections 2 and 3).</td>
+</tr>
+<tr>
+<td>Stock fallback: chrome-plated brass acorn (cap) nuts, 1/4-20</td>
+<td>A chrome acorn nut on a 1/4-20 stud is a 7/16" dome, not the 1.5" hero cap, but it is the budget "spindle nut" look</td>
+<td>100-pack listings on Amazon (price not captured, estimate $0.40-0.70 each)</td>
+<td>20-100</td>
+<td>2 days</td>
+<td>https://www.amazon.com/Acorn-Closed-Brass-Chrome-Plated/dp/B07TC1G1YP (not fetched; Amazon blocks) ; https://fastenerwholesale.com/1-4-28-acorn-cap-dome-nuts-closed-end-brass-chrome-plated/ (1/4-28 variant, not fetched)</td>
+<td>Use for the 7" singles or as a day-one placeholder while the real dome is in plating.</td>
+</tr>
+</tbody>
+</table>
+<p>Note on Blanda Inc: it advertises "Fort Lauderdale machine shop" but the address on the page is Eagan, Minnesota (https://blanda.net/fort-lauderdale-machine-shop-2/, 200). Not local; skip.</p>
+<h2>2. Steel wall plate (4" dia, 14 ga / .075" mild steel, four arc slots, 1" centre hole, three 8-32 self-clinching studs, one tab hole, textured black powder coat)</h2>
+<table>
+<thead>
+<tr>
+<th>Vendor</th>
+<th>Service</th>
+<th>Price</th>
+<th>MOQ</th>
+<th>Lead time</th>
+<th>URL (fetch)</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SendCutSend (Reno NV)</td>
+<td>Laser cut, deburr, PEM hardware insertion (nuts, studs, standoffs, 200+ sizes, 8-32 named on the page), powder coat (15 stock colours, Textured Black most popular)</td>
+<td>Published examples (live): 5052 .187" 3.5 x 2.5" part, cut + deburr + powder, $23.55 single vs $4.30 each at 100; cold-rolled .119" 6.5 x 7.5" with multiple services $78.86 single vs $18.97 at 100. Hardware insertion examples $16.65-55.24 at qty 1 and $3.71-16.06 at qty 100. Our plate: estimate $35-45 each at 5, $7-10 each at 100, $5-7 at 500 all-in</td>
+<td>None; free US shipping at $39</td>
+<td>Cut 2-4 days; hardware adds 1-2 days; powder adds 3-5 days (live)</td>
+<td>https://sendcutsend.com/services/powder-coating/ (200); https://sendcutsend.com/services/hardware/ (200); https://sendcutsend.com/pricing/ (200)</td>
+<td>Instant quote requires a login (app bounced to a reCAPTCHA customer page tonight), so no live number. Upload plate_4in.dxf once Austin's account exists. First pick.</td>
+</tr>
+<tr>
+<td>OSH Cut (Spanish Fork UT, Burlington KY)</td>
+<td>Fiber laser .005"-1", 400+ self-clinching fasteners, tapping 6-32 to M36, powder coat 22 colours, no minimums, ~3 business days standard</td>
+<td>Instant quote on upload (needs account at checkout); estimate same band as SendCutSend</td>
+<td>None</td>
+<td>~3 business days, rush 1 day</td>
+<td>https://www.oshcut.com/ (200)</td>
+<td>Second source and the one with tapping, so the plate could take tapped 8-32 holes plus shoulder screws instead of PEM studs.</td>
+</tr>
+<tr>
+<td>Ponoko</td>
+<td>Laser cutting of metal and plastics, max 0.25" thick, no minimum, same-day shipping</td>
+<td>Estimator shows $2.36 for an aluminium faceplate example (live); 93% off at 10k</td>
+<td>None</td>
+<td>Same day to 2 days</td>
+<td>https://www.ponoko.com/ (200)</td>
+<td>Thin sheet only (0.25" max), no PEM or powder; fine for a bare zinc-plated plate if we skip powder coat.</td>
+</tr>
+<tr>
+<td>Hardwick &amp; Sons keyhole plate (fallback for 7" singles)</td>
+<td>Heavy-gauge zinc steel keyhole plate</td>
+<td>$0.45 each, $40.50 per 100 (verified 11/9 by the engineering pass; 429 rate-limited tonight)</td>
+<td>1</td>
+<td>Stock</td>
+<td>https://hardwickandsons.com/products/steel-keyhole-hanger-plate (429)</td>
+<td>Budget hanger for the 7" units per mounting-report.</td>
+</tr>
+</tbody>
+</table>
+<h2>3. Backplate (10.5" dia x 1/2", centre 25/64" hole, rim rabbet 0.40" x 0.06", lead notch; MDF or Baltic birch, painted matte black; aluminium at the $179 tier)</h2>
+<table>
+<thead>
+<tr>
+<th>Vendor</th>
+<th>Material / service</th>
+<th>Price</th>
+<th>MOQ</th>
+<th>Lead time</th>
+<th>URL (fetch)</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CNC Cut Service of Homestead, FL</td>
+<td>CNC routing of plywood, MDF, melamine for cabinet shops across Miami-Dade, Broward, Monroe; overflow and tight deadlines welcome</td>
+<td>Quote by form; estimate $4-6 per disc at 100 with our MDF, $8-12 at 10</td>
+<td>None stated</td>
+<td>Days, local</td>
+<td>https://cnccutservicefl.com/ (200); 225 SW 2nd Ave Bldg 2, Homestead 33030, (786) 339-9236, sales@cnccutservicefl.com</td>
+<td>Closest fit to "local CNC shop" in the engineering BOM. One sheet of 1/2" MDF yields eight discs.</td>
+</tr>
+<tr>
+<td>Market Wood LLC, Hialeah</td>
+<td>Lumber yard with CNC cutting; MDF, plywood, melamine, PVC; serves Broward</td>
+<td>Free estimate by phone/email</td>
+<td>None stated</td>
+<td>"Fast turn-around"</td>
+<td>https://market-wood.com/cnc-cutting/ (200); 2382 W 77th St, Hialeah 33016, (305) 934-4666, market.woodllc@gmail.com</td>
+<td>They stock the sheet and cut it, which removes the Home Depot trip.</td>
+</tr>
+<tr>
+<td>All Points Boats, Fort Lauderdale</td>
+<td>AXYZ 3-axis router on wood/plastics/metal</td>
+<td>Quote by email</td>
+<td>None</td>
+<td>Local</td>
+<td>see section 1</td>
+<td>Broward option; marine shop so expect a higher hourly rate.</td>
+</tr>
+<tr>
+<td>Woodpeckers Crafts (online)</td>
+<td>Stock 12" x 1/2" Baltic birch circles</td>
+<td>$20.30 single, 50% off at 100+, 25-pack $129.99 ($5.20 each) (verified 11/9; collection page 404 tonight)</td>
+<td>1</td>
+<td>Stock</td>
+<td>https://woodpeckerscrafts.com/products/12-circle-wooden-cutout-1-2-thick (404 tonight, collection moved)</td>
+<td>Stock 12" needs our centre hole and rabbet drilled in-house; a custom 10.5" is by quote.</td>
+</tr>
+<tr>
+<td>Ponoko (laser MDF)</td>
+<td>Laser-cut MDF up to 0.25" thick, no minimum, same-day</td>
+<td>From $50 for one part (live)</td>
+<td>None</td>
+<td>Same day</td>
+<td>https://www.ponoko.com/laser-cutting/wood/MDF (200)</td>
+<td>Thickness cap of 0.25" kills it for the 1/2" plate; usable only if we laminate two 1/4" discs.</td>
+</tr>
+<tr>
+<td>Fabberz (NYC, LA)</td>
+<td>CNC cutting incl. MDF</td>
+<td>$500 project minimum, up to 7 business days (snippet)</td>
+<td>$500</td>
+<td>7 business days</td>
+<td>https://www.fabberz.com/ (200; /faq 404)</td>
+<td>Fine at 100+, pointless for samples.</td>
+</tr>
+<tr>
+<td>SendCutSend (aluminium backplate, premium tier)</td>
+<td>5052 .125" laser-cut 10.5" disc with centre hole, powder coat</td>
+<td>Estimate $9-13 each at 100 cut, plus $3-4 powder; $25-35 single</td>
+<td>None</td>
+<td>5-9 days with powder</td>
+<td>https://sendcutsend.com/materials/ (200)</td>
+<td>Needs a rivet-nut or PEM 1/4-20 nut for the insert (engineering report section 1).</td>
+</tr>
+</tbody>
+</table>
+<h2>4. Hub (5" x 1" PETG/ABS print: rear plate recess, three J-slots, M3 set-screw boss, DC jack pocket)</h2>
+<table>
+<thead>
+<tr>
+<th>Vendor</th>
+<th>Service</th>
+<th>Price</th>
+<th>MOQ</th>
+<th>Lead time</th>
+<th>URL (fetch)</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Craftcloud (All3DP marketplace)</td>
+<td>Instant quotes without an account, 148 materials, 150+ partner shops</td>
+<td>LIVE QUOTE tonight on hub_127.stl, qty 10: PETG FDM standard finish, 20% infill, best offer $69.51 + $13.38 shipping = $82.89 ($8.29 each landed); 40% infill +$11.25; ABS FDM $55.17 + $13.38; SLS Nylon PA12 $424.26 + $23.00; sanded finish +$93.86</td>
+<td>1</td>
+<td>"Delivery from Nov 11-12" shown for FDM (that is the earliest partner; expect 5-10 days realistically)</td>
+<td>https://craftcloud3d.com/en/upload (200)</td>
+<td>The number to beat for samples. Partner location was not shown before checkout.</td>
+</tr>
+<tr>
+<td>JLC3DP</td>
+<td>SLA/MJF/SLS/FDM from $0.30 per part; PA12-HP nylon "from $1.00"; PETG not offered (they steer to PLA/ABS-like resin or nylon)</td>
+<td>Instant quote needs login; estimate $6-9 each in MJF PA12 at 100 for this volume</td>
+<td>1</td>
+<td>2 days production plus 5-8 days DHL</td>
+<td>https://jlc3dp.com/ (200); https://jlc3dp.com/help/article/pa12-hp-nylon (not fetched)</td>
+<td>MJF nylon is the right material once volume is 100+: no layer lines, J-slots hold tolerance.</td>
+</tr>
+<tr>
+<td>Xometry</td>
+<td>FDM/MJF/SLS, no MOQ</td>
+<td>Account required; estimate $18-28 each at 10, $9-14 at 100 (MJF)</td>
+<td>1</td>
+<td>3-7 days</td>
+<td>https://www.xometry.com/capabilities/plastic-3d-printing/ (not fetched)</td>
+<td>US option.</td>
+</tr>
+<tr>
+<td>In-house (Bambu/Prusa class printer)</td>
+<td>5" x 1" PETG at 250 g, $0.02-0.03/g filament</td>
+<td>$5-8 material, 6-9 hours machine time each (estimate)</td>
+<td>n/a</td>
+<td>Immediate</td>
+<td>https://quotruder.com/resources/how-much-does-petg-cost-to-print/ (engineering report)</td>
+<td>Right for the first 10 if a printer is available; wrong for 100.</td>
+</tr>
+<tr>
+<td>Injection mould (bridge tool)</td>
+<td>Class 105 aluminium tool, 2-3 weeks</td>
+<td>2026 data (live, Jaycon): aluminium tooling $1,500-8,000; palm-sized ABS part $4.20 each at 1,000, $1.40 at 10,000. Our hub is bigger than palm-sized: estimate tool $5,000-8,000, part $2.50-4.00 at 1,000</td>
+<td>1,000</td>
+<td>2-3 weeks tool + 1-2 weeks parts</td>
+<td>https://www.jaycon.com/2026-injection-molding-pricing-report-us-costs-reshoring-tooling-data/ (200); https://formlabs.com/blog/injection-molding-cost/ (not fetched)</td>
+<td>Break-even against MJF at about $7: tool pays back around 1,500-2,000 hubs. Not before the 500 run.</td>
+</tr>
+</tbody>
+</table>
+<h2>5. LED strip (12 V COB, 2700K, CRI 90+, about 2.75 ft per unit) and UL Class 2 adapter with dimmer</h2>
+<table>
+<thead>
+<tr>
+<th>Vendor</th>
+<th>Product</th>
+<th>Price</th>
+<th>MOQ</th>
+<th>Lead time</th>
+<th>URL (fetch)</th>
+<th>UL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HitLights (Baton Rouge LA)</td>
+<td>12V COB LED Strip Spotless 16.4 ft, 2700K option, CRI 90+, 3.048 W/ft, 327-351 lm/ft, 10 mm, cut every 48.2 mm</td>
+<td>$37.28 per 16.4 ft reel (live) = about $6.90 per sconce at 3 ft; no wholesale tiers on the page, ask</td>
+<td>1</td>
+<td>3-5 days ground, free over $199</td>
+<td>https://hitlights.com/products/12v-cob-led-strip-light-16ft (200)</td>
+<td>UL Listed, file IFDR.E362417 (on the product page). UL Product iQ shows E362417 registered to HIT INTERNATIONAL CONSULTING LLC under Luminous Strip Lighting Systems (IFDR): https://productiq.ulprospector.com/en/profile/962806/ifdr.e362417 (403 to the scraper; confirmed through the search index). Verified as far as can be done without a UL login.</td>
+</tr>
+<tr>
+<td>Alibaba: Adled Light Limited (Guangdong)</td>
+<td>Flexible COB 12 V 10 mm 2700K CRI90, "UL" claimed</td>
+<td>$2.24/m at 5-499 m, $2.13 at 500-2,000 m, $2.02 above (snippet) = about $2.05 per sconce</td>
+<td>5 m</td>
+<td>10-15 days + freight (estimate)</td>
+<td>https://www.alibaba.com/product-detail/DC12V-12W-M-waterproof-IP20-Warmer_1601420886740.html (page returned empty to the fetcher)</td>
+<td>UL claim unverified; the RFQ asks for the E-file number and we check it on Product iQ before any PO.</td>
+</tr>
+<tr>
+<td>Super Lighting LED</td>
+<td>12 V COB CCT 2700-6500K, CRI 90+, 14.4 W/m</td>
+<td>$17.98 per 5 m reel, $16.54 at 200+ (live)</td>
+<td>1</td>
+<td>Ships from US stock</td>
+<td>https://www.superlightingled.com/12-volt-cob-led-cct-2700-to-6500-kelvin-adjustable-light-strip-cuttable-p-6950.html (200)</td>
+<td>No UL on the page (CE/FCC/RoHS only), and it is tunable not fixed 2700K. Listed as the price floor, not a pick.</td>
+</tr>
+<tr>
+<td>Ecolocity LED</td>
+<td>Ribbon Star 2835 low-power warm, 1.46 W/ft, 153 lm/ft, CRI 90+, ETL Class 2</td>
+<td>$8.99/m, $44.99 per 3 m (engineering pass)</td>
+<td>1</td>
+<td>US stock</td>
+<td>https://www.ecolocityled.com/product/low-power-2835-warm-strip (200 site)</td>
+<td>ETL. The dimmer-friendly fallback if COB is too bright.</td>
+</tr>
+<tr>
+<td>LED Updates</td>
+<td>UL Listed 12 V 2 A 24 W Class 2 adapter with on/off switch, 5.5 x 2.1</td>
+<td>from $11.99 (verified 11/9; site 429 tonight)</td>
+<td>1</td>
+<td>US stock</td>
+<td>https://ledupdates.com/products/ul-listed-12v-2a-24w-power-supply-driver-with-on-off-switch (429)</td>
+<td>UL claimed on page; ask for the E-number.</td>
+</tr>
+<tr>
+<td>HitLights</td>
+<td>12 V 2 A 24 W Class 2 UL adapter, 2-pack</td>
+<td>Amazon 2-pack (price not captured; Amazon 503 to the fetcher)</td>
+<td>1</td>
+<td>2 days</td>
+<td>https://www.amazon.com/HitLights-12V-Pack-Transformer-24W/dp/B0B9S26G71 (503)</td>
+<td>Same brand as the strip, one vendor relationship.</td>
+</tr>
+<tr>
+<td>Armacost Lighting</td>
+<td>12 V 24 W 2 A plug-in adapter 810240</td>
+<td>Amazon (price not captured)</td>
+<td>1</td>
+<td>2 days</td>
+<td>https://www.amazon.com/Armacost-Lighting-Transformer-100V-120V-5-5x2-1mm/dp/B0BLHXY9L5 (not fetched)</td>
+<td>UL file E527208 for Armacost Lighting LLC confirmed in UL Product iQ via the search index (https://productiq.ulprospector.com/en/profile/4740458/ifdr.e527208, 403 to scraper). Strongest UL paper trail of the three.</td>
+</tr>
+<tr>
+<td>Alibaba / Made-in-China OEM: Anen Power</td>
+<td>"UL 1310 Certified 12V 2A Power Adapter US plug" for LED</td>
+<td>Not captured; class sells $2.80-4.50 at 100-500 (estimate)</td>
+<td>100</td>
+<td>15-25 days + freight</td>
+<td>https://anenpower.en.made-in-china.com/product/jfcUOIJxauRS/China-UL-1310-Certified-12V-2A-Power-Adapter-Us-Plug-for-LED-Rigid-Light-Bars-LED-Modules-LED-Display-Screens.html (not fetched)</td>
+<td>UL 1310 is the Class 2 power unit standard; the RFQ demands the E-file and we verify on Product iQ.</td>
+</tr>
+<tr>
+<td>Ecolocity LED</td>
+<td>Inline PWM dimmer, 12-24 V, 2 A, 5.5 x 2.1 barrels in/out</td>
+<td>$3.99 (sale from $12.99), 10 in stock (live)</td>
+<td>1</td>
+<td>US stock</td>
+<td>https://www.ecolocityled.com/product/led_pwm_dimmer_inline_12V (200)</td>
+<td>Stock is 10; for 100 we need the Inshareplus-class dimmer at $3.99-7.99 or an adapter with the dimmer built in.</td>
+</tr>
+</tbody>
+</table>
+<h2>6. In-wall kit (CL2 18/2 cable, low-voltage old-work bracket, keystone plate, DC 5.5 x 2.1 keystone coupler, panel-mount jack in the hub)</h2>
+<table>
+<thead>
+<tr>
+<th>Vendor</th>
+<th>Product</th>
+<th>Price</th>
+<th>MOQ</th>
+<th>Lead time</th>
+<th>URL (fetch)</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Diode LED (Reno NV)</td>
+<td>In-Wall Rated Two Conductor Wire, DI-0824-S, 18 AWG, 250 ft spool, UL Listed CL2</td>
+<td>Price not shown on the page; via distributor</td>
+<td>1 spool</td>
+<td>Distributor stock</td>
+<td>https://www.diodeled.com/in-wall-rated-two-conductor-wire.html (200); 877-817-6028</td>
+<td>The spec-grade pick; the RFQ asks for direct or distributor pricing.</td>
+</tr>
+<tr>
+<td>Ellumiglow</td>
+<td>18 AWG 2-conductor in-wall LED cable, UL / NEC 725 Class 2</td>
+<td>$29.99 per 100 ft ($0.30/ft); sold out tonight (live)</td>
+<td>100 ft</td>
+<td>Backorder</td>
+<td>https://www.ellumiglow.com/18awg-low-voltage-2-conductor-led-cable-jacketed-in-wall-ul-cul-class-2 (200)</td>
+<td>15 ft per kit = $4.50.</td>
+</tr>
+<tr>
+<td>Advance LED Supply / MaxBrite (Glendale CA)</td>
+<td>18/2 Class 2 LED cable 500 ft, UL Recognized / NEC 725</td>
+<td>$156.00 per 500 ft ($0.31/ft), backordered, in-store pickup (live)</td>
+<td>500 ft</td>
+<td>Backorder</td>
+<td>https://advanceledsupply.com/products/18-2-led-class-2-wire (200)</td>
+<td>33 kits per spool.</td>
+</tr>
+<tr>
+<td>J. Thomas Home</td>
+<td>18/2 low voltage LED cable 500 ft</td>
+<td>$20-35 (snippet, oddly low; verify rating before trusting)</td>
+<td>500 ft</td>
+<td>Unknown</td>
+<td>https://www.jthomashome.com/products/18-2-low-voltage-led-cable (not fetched)</td>
+<td>Flagged.</td>
+</tr>
+<tr>
+<td>Sunco</td>
+<td>1-gang old-work low-voltage bracket, 100-pack</td>
+<td>$119.99 ($1.20 each), ships in 1 business day (live)</td>
+<td>100</td>
+<td>1 day</td>
+<td>https://sunco.com/products/low-voltage-mounting-bracket-remodel-1-gang (200)</td>
+<td>100-pack only on that page.</td>
+</tr>
+<tr>
+<td>Cmple</td>
+<td>Single-gang LV bracket 10-pack</td>
+<td>$29.49, $25.95 at 50+ packs (snippet; site 403)</td>
+<td>10</td>
+<td>US stock</td>
+<td>https://www.cmple.com/10-pack-low-voltage-mounting-bracket-single-gang-multipurpose-on-existing-construction (403)</td>
+<td>For the sample run.</td>
+</tr>
+<tr>
+<td>Monoprice</td>
+<td>1-gang LV bracket</td>
+<td>$1.99, $1.59 at 50+ (snippet; 403)</td>
+<td>1</td>
+<td>US stock</td>
+<td>https://www.monoprice.com/product?p_id=7013 (403)</td>
+<td></td>
+</tr>
+<tr>
+<td>Primus Cable</td>
+<td>1-port keystone wall plate, white</td>
+<td>$0.75 (Universal) to $0.99 (MIG+) (live)</td>
+<td>1</td>
+<td>US stock</td>
+<td>https://www.primuscable.com/collections/keystone-wall-plates (200)</td>
+<td>No DC keystone on this site.</td>
+</tr>
+<tr>
+<td>eBay sellers</td>
+<td>DC power keystone jack 5.5 x 2.1, F-F coupler or screw-terminal, 5-pack</td>
+<td>$32-37 per 5-pack, about $6.50-7.40 each (snippet; eBay 403 to fetcher)</td>
+<td>5</td>
+<td>3-5 days</td>
+<td>https://www.ebay.com/itm/116789485980 (403); https://www.ebay.com/itm/326865684562 (403)</td>
+<td>Expensive for what it is; at 100 go to an Alibaba keystone maker ($0.80-1.50 estimate) or terminate the cable in a plain F-F coupler behind a blank plate.</td>
+</tr>
+<tr>
+<td>Mouser / Digi-Key</td>
+<td>Panel-mount 5.5 x 2.1 DC jack (CUI PJ-002AH class) for the hub</td>
+<td>Engineering estimate $0.80 single, $0.35 at 100; Mouser page timed out, Digi-Key 403</td>
+<td>1</td>
+<td>2 days</td>
+<td>https://www.mouser.com/ (200 home)</td>
+<td>Buy 20 for samples from either.</td>
+</tr>
+</tbody>
+</table>
+<h2>7. Fasteners, inserts, felt, 45 adapters</h2>
+<table>
+<thead>
+<tr>
+<th>Vendor</th>
+<th>Product</th>
+<th>Price</th>
+<th>MOQ</th>
+<th>Lead</th>
+<th>URL (fetch)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Albany County Fasteners</td>
+<td>E-Z Lok 400-4 brass knife-thread insert, 1/4-20 x 0.500", wood/MDF</td>
+<td>$1.90 each at 1, $170.00 per 100 ($1.70), $1.50 each at 1,000 (live tonight)</td>
+<td>1</td>
+<td>Stock</td>
+<td>https://www.albanycountyfasteners.com/1-4-20-brass-thread-inserts-wood-400-4-p/117012.htm (200)</td>
+</tr>
+<tr>
+<td>McFeely's</td>
+<td>1/4-20 x 1/2" solid brass inserts for hardwood</td>
+<td>$29.80 per 25, $107.92 per 100 (snippet)</td>
+<td>25</td>
+<td>Stock</td>
+<td>https://www.mcfeelys.com/1-4-20-x-1-2-in-solid-brass-threaded-inserts-for-hard-wood-qty-100.html (not fetched)</td>
+</tr>
+<tr>
+<td>McMaster-Carr</td>
+<td>Inserts, M3 cup-point set screws, #8 screws, shoulder washers</td>
+<td>Site returns 200 but prices render by script; use the catalog in a browser. Forum snippet puts McMaster 1/4-20 wood inserts at $13.84 per 100 (unverified)</td>
+<td>1</td>
+<td>Next day to FL</td>
+<td>https://www.mcmaster.com/ (200)</td>
+</tr>
+<tr>
+<td>Durofelt</td>
+<td>Self-adhesive felt washer 1" OD x 3/8" ID x 1/8", grey, 50-pack</td>
+<td>$8.00 per 50 ($0.16 each), free shipping (live)</td>
+<td>50</td>
+<td>Stock</td>
+<td>https://www.durofelt.com/categories/self-adhesive-felt-washers (200)</td>
+</tr>
+<tr>
+<td>Durofelt</td>
+<td>Self-adhesive felt washer 1/2" OD x 1/4" ID x 1/16", black or white, 100-pack (the three-pad record rest)</td>
+<td>$7.00 per 100 (live)</td>
+<td>100</td>
+<td>Stock</td>
+<td>same</td>
+</tr>
+<tr>
+<td>Rockler</td>
+<td>Decorative solid brass knurled knob 1/4-20 x 1", 4-pack (brass-variant cap, or placeholder)</td>
+<td>$7.99 per 4 ($2.00 each) (live)</td>
+<td>1 pack</td>
+<td>Stock</td>
+<td>https://www.rockler.com/decorative-solid-brass-knurled-knob-1-4-x-20-x-1-4-per-pack (200)</td>
+</tr>
+<tr>
+<td>Fastener Superstore / value fastener</td>
+<td>1/4" nylon shoulder washer (optional sleeve)</td>
+<td>about $0.13 each in a 2,500 carton (snippet)</td>
+<td>carton</td>
+<td>Stock</td>
+<td>https://www.fastenersuperstore.com/products/337953/shoulder-washers (not fetched)</td>
+</tr>
+<tr>
+<td>aluminumspacers.com</td>
+<td>3/8" OD x 1" 6061 standoff 1/4-20 F-F (floating variant only)</td>
+<td>$1.88 at 1, $0.69 at 100, $0.39 at 500 (engineering pass; 200 tonight)</td>
+<td>1</td>
+<td>Stock</td>
+<td>https://www.aluminumspacers.com/as38-1420-64 (200)</td>
+</tr>
+<tr>
+<td>eBay bulk sellers</td>
+<td>Snap-in plastic 45 adapters</td>
+<td>$36.99 per 250, $79.99 per 500, $131.89 per 1,000 (engineering pass; eBay 403 tonight)</td>
+<td>250</td>
+<td>5 days</td>
+<td>https://www.ebay.com/itm/314437745370 (403)</td>
+</tr>
+</tbody>
+</table>
+<h2>8. Packaging (13 x 13 x 3 box plus insert)</h2>
+<table>
+<thead>
+<tr>
+<th>Vendor</th>
+<th>Product</th>
+<th>Price</th>
+<th>MOQ</th>
+<th>Lead time</th>
+<th>URL (fetch)</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Uline</td>
+<td>S-19090 13 x 13 x 3" 200# corrugated, plain kraft</td>
+<td>$1.62 each at 25, $1.48 at 100, $1.26 at 250, $1.18 at 500, $1.17 at 1,000+ (live scrape tonight; a search snippet showed $1.53/1.40/1.19/1.11/1.10, so prices moved up)</td>
+<td>25</td>
+<td>Next day from Uline FL</td>
+<td>https://www.uline.com/Product/Detail/S-19090/Corrugated-Boxes-200-Test/13-x-13-x-3-Corrugated-Boxes (200)</td>
+<td>The sample-run box. Add a printed kraft label and a black tissue wrap for the unboxing.</td>
+</tr>
+<tr>
+<td>Packlane</td>
+<td>Custom printed mailer box, E or B flute, custom sizes</td>
+<td>Default configurator shows $3.40 each at 250 for a standard size (live); MOQ "one"; 7-15 business days production, rush 4-7. Custom 13 x 13 x 3 not priced tonight (the editor loads a default 9.5 x 7.75 x 4 and needs multi-step config)</td>
+<td>1</td>
+<td>7-15 business days + shipping</td>
+<td>https://packlane.com/products/mailer-box (200)</td>
+<td>Reviews on their own page are mixed (misprints, delays); order a 10-box proof before 100.</td>
+</tr>
+<tr>
+<td>Arka</td>
+<td>Custom mailer boxes, lowest MOQ in class</td>
+<td>MOQ 10; "from $7.49 a unit" as of Oct 2026 (snippet); volume pricing above 5,000</td>
+<td>10</td>
+<td>10-15 business days (estimate)</td>
+<td>https://arka.com/ (200; /products and /pricing 404)</td>
+<td>For a 10-box branded sample batch.</td>
+</tr>
+<tr>
+<td>EcoEnclose</td>
+<td>100% recycled custom shipping boxes</td>
+<td>Min 100 units post-production; print plates $95-800 (snippet); proof in 2 business days</td>
+<td>100</td>
+<td>Confirm on their lead-time page</td>
+<td>https://www.ecoenclose.com/eco-friendly-custom-packaging/ (200)</td>
+<td>The sustainability story at 100-500.</td>
+</tr>
+<tr>
+<td>Custom Foam Parts (Sterling Mfg, Houston)</td>
+<td>Die-cut PE/PU foam inserts, no MOQ</td>
+<td>Quote within 24 h; 7-10 business days (live)</td>
+<td>None</td>
+<td>7-10 business days</td>
+<td>https://customfoamparts.com/ (200); 713-695-5333</td>
+<td>Sample-run insert.</td>
+</tr>
+<tr>
+<td>Pulp Packaging (Calgary)</td>
+<td>Custom moulded pulp tray, low volume</td>
+<td>MOQ 500, moulds "under $1,000" (live)</td>
+<td>500</td>
+<td>Not stated</td>
+<td>https://pulppackaging.com/ (200); Sales@PulpPackaging.com, 1-403-863-8448</td>
+<td>The 500-run insert; pulp reads premium and ships flat-ish.</td>
+</tr>
+</tbody>
+</table>
+<h2>9. Vintage records in bulk</h2>
+<table>
+<thead>
+<tr>
+<th>Vendor</th>
+<th>Lot</th>
+<th>Price</th>
+<th>Condition</th>
+<th>URL (fetch)</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Checkered Records</td>
+<td>Curated bundles 20 to 100 LPs, rock/soul/jazz, no polka or big band</td>
+<td>20 for $69.00, 100 for $250.00, free USPS Media Mail (live)</td>
+<td>Average VG+, guaranteed to play</td>
+<td>https://www.checkeredrecords.com/product/quality-bulk-record-album-bundles/ (200)</td>
+<td>Best label variety per dollar for the $129 sconce; $2.50 each at 100.</td>
+</tr>
+<tr>
+<td>Dusty Groove (Chicago)</td>
+<td>60-count box of random bulk vinyl</td>
+<td>$4.99 per box plus shipping (snippet; Cloudflare blocks the page)</td>
+<td>Unsorted, decor grade</td>
+<td>https://www.dustygroove.com/item/843809/Bulk-Vinyl-Records:60-Count-Box-of-Random-Bulk-Vinyl (Cloudflare challenge)</td>
+<td>Under a dime a record; expect 40% filler genres. Phone to confirm before relying on it.</td>
+</tr>
+<tr>
+<td>Record Head (West Allis WI)</td>
+<td>Wholesale LPs, "items starting as low as ten cents each"</td>
+<td>$100 minimum order (live)</td>
+<td>Mixed</td>
+<td>https://recordhead.biz/wholesale/we-sell-wholesale-inventory/ (200); (414) 453-3900</td>
+<td>RFQ drafted.</td>
+</tr>
+<tr>
+<td>eBay craft lots</td>
+<td>100 LP lot for decor/crafts</td>
+<td>about $52 (snippet)</td>
+<td>Decor grade</td>
+<td>https://www.ebay.com/shop/bulk-vinyl-records?_nkw=bulk+vinyl+records (403)</td>
+<td>Backup.</td>
+</tr>
+<tr>
+<td>Local: Broward/Miami thrift and record stores</td>
+<td>Walk-in bins</td>
+<td>$1-3 each (scope report)</td>
+<td>Pick by label</td>
+<td>n/a</td>
+<td>Still the fastest way to get 10 good-looking labels for the samples.</td>
+</tr>
+</tbody>
+</table></main></body></html>

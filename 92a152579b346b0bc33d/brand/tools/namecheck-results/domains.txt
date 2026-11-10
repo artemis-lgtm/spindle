@@ -1,0 +1,6 @@
+# RDAP / whois results 2026-11-09 (Verisign RDAP: 200 = registered, 404 = free)
+sidea.com 200 reg 2003-01-24 | sidea.co taken 2025-05-24 | sidealighting.com 404 FREE | sideastudio.com 404 FREE | sideahome.com 404 FREE | sidea.lighting FREE | sidea.studio FREE
+deadwax.com 200 reg 2010-10-23 | deadwax.co taken 2025-08-01 | deadwaxlighting.com 404 FREE | deadwaxhome.com 404 FREE | deadwaxlight.com 404 FREE | deadwaxstudio.com 200 taken 2024-12-16 | deadwax.lighting FREE | deadwax.studio taken
+spindle.com 200 reg 1998-05-26 | spindle.co taken 2016-10-19 | spindlelighting.com 404 FREE | spindle.lighting FREE | spindle.studio taken | spindle.shop FREE
+runout.com 200 reg 1998 | runout.co taken 2023 | runout.lighting FREE
+revolve.com 200 reg 1995 | leadin.com 200 reg 2003 | lead-in.com 200 | flipside.com 200 reg 1997 | flipside.co taken 2010 | thirtythree.com 200 reg 2000 | thirtythree.co taken 2010 | leadin.co taken 2024

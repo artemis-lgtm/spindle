@@ -1,0 +1,1821 @@
+{
+  "side a": {
+    "query": "WM:\"side a\" AND IC:(011 OR 020 OR 035 OR 021)",
+    "total": "716",
+    "shown": 50,
+    "cards": [
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Beds for household pets.",
+        "cls": "020",
+        "serial": "87476985",
+        "owner": "Habi, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 020: Furniture parts; Sectional furniture parts.",
+        "cls": "020",
+        "serial": "87392560",
+        "owner": "THE LOVESAC COMPANY (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 011: [ Lighting apparatus and installations and their components,...",
+        "cls": "011",
+        "serial": "79000342",
+        "owner": "Kreon, naamloze vennootschap (UNKNOWN; Not in List)"
+      },
+      {
+        "mark": "SIDE-BY-SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 020: pillows.",
+        "cls": "020",
+        "serial": "78745714",
+        "owner": "BEDDING ACQUISITION, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 021: [ Wastebasket ].",
+        "cls": "021",
+        "serial": "73230719",
+        "owner": "Borden, Inc. (CORPORATION; NEW JERSEY, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 021: pet feeding and drinking bowls; grooming tools for pets,...",
+        "cls": "021",
+        "serial": "87476859",
+        "owner": "Habi, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "DIRTY SIDE CLEAN SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 011: sterilizers and decontamination units, namely decontamination...",
+        "cls": "011",
+        "serial": "78174853",
+        "owner": "STERIS Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE-FILE",
+        "status": "DEAD",
+        "goods": "US 032: [ FILING CABINETS ].",
+        "cls": "020",
+        "serial": "72267647",
+        "owner": "MOSLER HARBOR SALES CORPORATION (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "SIDE-CARB",
+        "status": "DEAD",
+        "goods": "US 031: [ AIR FILTERS ].",
+        "cls": "011",
+        "serial": "72289476",
+        "owner": "CAMBRIDGE FILTER CORPORATION (CORPORATION; NEW YORK, USA)"
+      },
+      {
+        "mark": "SIDE-FLO",
+        "status": "DEAD",
+        "goods": "US 031: [ AIR FILTERS ].",
+        "cls": "011",
+        "serial": "72239375",
+        "owner": "CAMBRIDGE FILTER CORPORATION (CORPORATION; NEW YORK, USA)"
+      },
+      {
+        "mark": "HIS SIDE HER SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 020: [ Mattresses and box springs ].",
+        "cls": "020",
+        "serial": "76595053",
+        "owner": "Dreamwell, Ltd. (LIMITED LIABILITY COMPANY; NEVADA, USA)"
+      },
+      {
+        "mark": "MY SIDE/YOUR SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: [ bedding ].",
+        "cls": "020",
+        "serial": "74427119",
+        "owner": "Sibley, Ellen (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "SIDE-CAP",
+        "status": "DEAD",
+        "goods": "US 031: [ AIR FILTERS ].",
+        "cls": "011",
+        "serial": "72239374",
+        "owner": "CAMBRIDGE FILTER CORPORATION (CORPORATION; NEW YORK, USA)"
+      },
+      {
+        "mark": "IN SIDE OUT SIDE LIVING",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Indoor and outdoor furniture; Indoor and outdoor decorations,...",
+        "cls": "020, 035",
+        "serial": "87866436",
+        "owner": "Seasonal Living Trading, Ltd. Co. (LIMITED LIABILITY COMPANY; TEXAS, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Advertising and marketing services, namely, promoting the...",
+        "cls": "035",
+        "serial": "86743714",
+        "owner": "A&E Television Networks, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE X SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Retail store services featuring a wide variety of consumer...",
+        "cls": "035",
+        "serial": "78737557",
+        "owner": "Bala Duce (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Training services in the field of business management and...",
+        "cls": "035",
+        "serial": "76026945",
+        "owner": "SIDE BY SIDE, INC. (CORPORATION; TEXAS, USA)"
+      },
+      {
+        "mark": "B-SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 020: Furniture, namely, specially reinforced stools to provide...",
+        "cls": "020",
+        "serial": "88957971",
+        "owner": "Norix Group, Inc. (CORPORATION; ILLINOIS, USA)"
+      },
+      {
+        "mark": "SIDE(ING)",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: [ chairs ].",
+        "cls": "020",
+        "serial": "74035142",
+        "owner": "Walker Group Designs Inc. (CORPORATION; NEW YORK, USA)"
+      },
+      {
+        "mark": "SIDE-CLIC",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Container closures of plastic; plastic medication containers;...",
+        "cls": "020",
+        "serial": "78030734",
+        "owner": "Owens-Brockway Plastic Products Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE SLEEPING",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Pillows; Bath pillows; Bed pillows; Beds, mattresses, pillows...",
+        "cls": "020",
+        "serial": "98654094",
+        "owner": "Peng, Xinghui (INDIVIDUAL; China)"
+      },
+      {
+        "mark": "SIDE LITES",
+        "status": "DEADABANDONED",
+        "goods": "IC 011: Aircraft lighting system, comprising lamps, relay box, switch...",
+        "cls": "011",
+        "serial": "75374603",
+        "owner": "Planezip, Inc. (CORPORATION; ILLINOIS, USA)"
+      },
+      {
+        "mark": "SIDE-WINDER",
+        "status": "DEADABANDONED",
+        "goods": "IC 011: lighting system and components for vehicles, comprising -...",
+        "cls": "011",
+        "serial": "74614512",
+        "owner": "LOCTITE CORPORATION (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "WIDE SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 020: [ pillows and featherbeds ].",
+        "cls": "020",
+        "serial": "76340005",
+        "owner": "OFFICIAL PILLOWTEX LLC (LIMITED LIABILITY JOINT STOCK COMPANY; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE-KICK",
+        "status": "DEADCANCELLED",
+        "goods": "IC 020: [ modular plastic cable protectors ].",
+        "cls": "020",
+        "serial": "78953820",
+        "owner": "CHECKERS INDUSTRIAL PRODUCTS, LLC (LIMITED LIABILITY COMPANY; COLORADO, USA)"
+      },
+      {
+        "mark": "SIDE-KIK",
+        "status": "DEADCANCELLED",
+        "goods": "IC 020: [ plastic display cases ].",
+        "cls": "020",
+        "serial": "74686915",
+        "owner": "Side-Kik Corporation (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "FUNNY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: FIGURINES, PRIMARILY OF RESIN.",
+        "cls": "020",
+        "serial": "78477467",
+        "owner": "SECOND NATURE DESIGN, INC. (CORPORATION; ARIZONA, USA)"
+      },
+      {
+        "mark": "SIDE-LOC",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Plastic containers, namely bottles for consumer products...",
+        "cls": "020",
+        "serial": "78368473",
+        "owner": "Fenton, Weber & Jones Packaging, Inc. (CORPORATION; NEW YORK, USA)"
+      },
+      {
+        "mark": "SIDE&CORNER",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 020: 3D decorative ornaments made from plastic; Bathroom furniture;...",
+        "cls": "020",
+        "serial": "97614218",
+        "owner": "Ma Zhenhai (INDIVIDUAL; CHINA)"
+      },
+      {
+        "mark": "SAFE SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 020: [ PLAYPENS ].",
+        "cls": "020",
+        "serial": "73636449",
+        "owner": "SPALDING & EVENFLO COMPANIES, INC. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE SLEEPER",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Pillows; Bath pillows; Bed pillows; Beds, mattresses, pillows...",
+        "cls": "020",
+        "serial": "98654096",
+        "owner": "Peng, Xinghui (INDIVIDUAL; China)"
+      },
+      {
+        "mark": "SOFT SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Dog kennels; Kennels with carriers; Pet crates; Play yards;...",
+        "cls": "020",
+        "serial": "77853231",
+        "owner": "Precision Pet Products, Inc. (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "SIDE STAR SIDE SLEEPER PILLOW",
+        "status": "DEADCANCELLED",
+        "goods": "IC 020: [ Pillows ].",
+        "cls": "020",
+        "serial": "87014606",
+        "owner": "Jupina, Andrew S. (LIMITED LIABILITY COMPANY; NEW JERSEY, USA)"
+      },
+      {
+        "mark": "SIDE BY SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Providing a website featuring information for consumers in the...",
+        "cls": "035",
+        "serial": "87477021",
+        "owner": "Habi, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE 2 SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ Outsourcing professionals in the field of fields of...",
+        "cls": "035",
+        "serial": "78225449",
+        "owner": "Robinson, Patricia (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "SIDE-BY-SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ optically scanning documents and entering the resulting...",
+        "cls": "035",
+        "serial": "74079966",
+        "owner": "Lawyer's Edge, Inc., The (CORPORATION; COLORADO, USA)"
+      },
+      {
+        "mark": "WIDE SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: pillows.",
+        "cls": "020",
+        "serial": "78081449",
+        "owner": "Louisville Bedding Company (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE-TRAC",
+        "status": "DEADCANCELLED",
+        "goods": "IC 020: [ Office Mobile Storage Systems-Namely, Shelf-Type Filing...",
+        "cls": "020",
+        "serial": "73469737",
+        "owner": "TAB PRODUCTS CO., LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+      },
+      {
+        "mark": "WILD SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Pillows; Mattresses.",
+        "cls": "020",
+        "serial": "90685192",
+        "owner": "IMAGINARIUM & CO, INC. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE SOLUTION",
+        "status": "DEADCANCELLED",
+        "goods": "IC 020: [ Bed pillows; Head supporting pillows; Neck-supporting...",
+        "cls": "020",
+        "serial": "77906340",
+        "owner": "AbsolutelyNew (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "SIDE-CAT",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Pet furniture in the nature of cat trees.",
+        "cls": "020",
+        "serial": "99038547",
+        "owner": "Paul Rodgers (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "SIDE SLEEPER",
+        "status": "DEADCANCELLED",
+        "goods": "IC 020: [ PILLOWS ].",
+        "cls": "020",
+        "serial": "73592174",
+        "owner": "OFFICIAL PILLOWTEX LLC (LIMITED LIABILITY JOINT STOCK COMPANY; DELAWARE, USA)"
+      },
+      {
+        "mark": "WILDER SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 020: Non-metal mounting brackets for general use.",
+        "cls": "020",
+        "serial": "97678014",
+        "owner": "Wilder Side LLC (LIMITED LIABILITY COMPANY; ILLINOIS, USA)"
+      },
+      {
+        "mark": "SIDE SLEEPER",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Straw mattresses; mattresses, other than childbirth...",
+        "cls": "020",
+        "serial": "78915895",
+        "owner": "Hotung Investments Limited (CORPORATION; VIRGIN ISLANDS, BRITISH)"
+      },
+      {
+        "mark": "SIDE SLEEP",
+        "status": "DEADCANCELLED",
+        "goods": "IC 020: [ Furniture; Furniture for motor homes; Residential and...",
+        "cls": "020",
+        "serial": "86514017",
+        "owner": "Flexsteel Industries, Inc. (CORPORATION; MINNESOTA, USA)"
+      },
+      {
+        "mark": "SIDE FX",
+        "status": "DEADABANDONED",
+        "goods": "IC 011: LED LIGHTING UNITS, DECORATIVE LIGHTING UNITS, FLEXIBLE...",
+        "cls": "011",
+        "serial": "76635684",
+        "owner": "Radiantz, Inc. (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "BAY SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 011: [ fireplaces and gas stoves ].",
+        "cls": "011",
+        "serial": "74571876",
+        "owner": "Heat-N-Glo Fireplace Products, Inc. (CORPORATION; MINNESOTA, USA)"
+      },
+      {
+        "mark": "SIDE WISE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 011: [ appliances, namely, refrigerators for recreational vehicles...",
+        "cls": "011",
+        "serial": "78267243",
+        "owner": "Dometic Corporation (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SIDE-KICK",
+        "status": "DEADCANCELLED",
+        "goods": "IC 011: [ gas grills for use on recreational vehicles ].",
+        "cls": "011",
+        "serial": "76627435",
+        "owner": "Did-It, L.L.C. (LIMITED LIABILITY CORPORATION; MICHIGAN, USA)"
+      },
+      {
+        "mark": "HEARTH-SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 011: [ Fireplaces ].",
+        "cls": "011",
+        "serial": "73339460",
+        "owner": "Standex International Corporation (CORPORATION; DELAWARE, USA)"
+      }
+    ]
+  },
+  "sidea": {
+    "query": "WM:sidea",
+    "error": "TimeoutError: page.waitForFunction: Timeout 60000ms exceeded."
+  },
+  "spindle": {
+    "query": "WM:spindle AND IC:(011 OR 020 OR 035 OR 021)",
+    "total": "14",
+    "shown": 14,
+    "cards": [
+      {
+        "mark": "SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 020: Beds, mattresses, * and * pillows [ and bolsters ].",
+        "cls": "020",
+        "serial": "87823987",
+        "owner": "MIAMI LABS, INC. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SPINDLE & SIN",
+        "status": "DEADCANCELLED",
+        "goods": "IC 011: [ Temperature-controlled portable beverage dispensers;...",
+        "cls": "011, 021",
+        "serial": "85863640",
+        "owner": "Hollywood Products, Inc. (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "SPINDLE-FLEX",
+        "status": "DEAD",
+        "goods": "US 032: [ CARVED POLES FOR USE AS DECORATIVE ROOM DIVIDERS AND AS...",
+        "cls": "020",
+        "serial": "72233011",
+        "owner": "RUSS STONIER DESIGNS, INC. (CORPORATION; ILLINOIS, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Employment hiring, recruiting, placement, staffing and career...",
+        "cls": "035",
+        "serial": "98082314",
+        "owner": "TTF Holdings, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 009: [ Downloadable media content, namely, magazines, newsletters,...",
+        "cls": "009, 035",
+        "serial": "87211283",
+        "owner": "Weller, Sebastian Peter (INDIVIDUAL; UNITED KINGDOM)"
+      },
+      {
+        "mark": "LILY SPINDLE",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: (Based on Use in Commerce) Pillows(Based on Intent to Use)...",
+        "cls": "020",
+        "serial": "88459605",
+        "owner": "Lily Spindle (LIMITED LIABILITY COMPANY; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "SPINDLE TREE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 021: [ Crystalware and glassware, namely, water goblets, wine,...",
+        "cls": "021",
+        "serial": "75719327",
+        "owner": "Tipperary Crystal Designs Ltd. (LIMITED COMPANY; IRELAND)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 009: [ Computer software accessible through a web-based interface...",
+        "cls": "009, 035, 038, 042, 045",
+        "serial": "77794245",
+        "owner": "SPINDLE, INC. (CORPORATION; NEVADA, USA)"
+      },
+      {
+        "mark": "WALKER EDISON SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 020: furniture.",
+        "cls": "020",
+        "serial": "98500284",
+        "owner": "TWIN STAR INTERNATIONAL, INC. (CORPORATION; FLORIDA, USA)"
+      },
+      {
+        "mark": "THE BLOOMIN' SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Retail store services featuring yarns, knitting needles,...",
+        "cls": "035",
+        "serial": "97756986",
+        "owner": "The Knitted Robin LLC (LIMITED LIABILITY COMPANY; ILLINOIS, USA)"
+      },
+      {
+        "mark": "SOUTHERN SPINDLE CO.",
+        "status": "DEADABANDONED",
+        "goods": "IC 025: Dresses; Tops as clothing; Footwear; Bottoms as clothing;...",
+        "cls": "025, 035",
+        "serial": "98943135",
+        "owner": "Southern Spindle Co. LLC (LIMITED LIABILITY COMPANY; South Carolina, USA)"
+      },
+      {
+        "mark": "SPINDLE LIFE SCIENCES CONSULTING",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ Advisory, development, and strategic planning services...",
+        "cls": "035",
+        "serial": "87682896",
+        "owner": "Spindle Life Sciences Consulting (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "AXLE SPINDLE AMERICAN INGENUITY",
+        "status": "LIVEPENDING",
+        "goods": "IC 012: Structural parts for trucks.; IC 035: Wholesale...",
+        "cls": "012, 035",
+        "serial": "50125330",
+        "owner": "AXLE SPINDLE INC. (CORPORATION; New York, USA)"
+      },
+      {
+        "mark": "AXLE SPINDLE AMERICAN INGENUITY",
+        "status": "LIVEPENDING",
+        "goods": "IC 012: Structural parts for trucks.; IC 035: Wholesale...",
+        "cls": "012, 035",
+        "serial": "50125407",
+        "owner": "AXLE SPINDLE INC. (CORPORATION; New York, USA)"
+      }
+    ]
+  },
+  "deadwax": {
+    "query": "WM:deadwax",
+    "total": "3",
+    "shown": 3,
+    "cards": [
+      {
+        "mark": "DEADWAX",
+        "status": "LIVEPENDING",
+        "goods": "IC 009: Downloadable computer application software for mobile phones,...",
+        "cls": "009",
+        "serial": "99755434",
+        "owner": "Jason Michael Means (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "LIVING DEADWAX",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 020: Furniture.",
+        "cls": "020",
+        "serial": "90555211",
+        "owner": "MILLS, GREGORY NELSON, MR. (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "DEADWAX RECORDS",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Retail music and record stores; Retail store services...",
+        "cls": "035",
+        "serial": "99098283",
+        "owner": "Declassified Records, LLC (LIMITED LIABILITY COMPANY; Texas, USA)"
+      }
+    ]
+  },
+  "dead wax": {
+    "query": "WM:\"dead wax\"",
+    "total": "3",
+    "shown": 3,
+    "cards": [
+      {
+        "mark": "DEAD WAX",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Retail music and record stores; Retail store services...",
+        "cls": "035",
+        "serial": "99098260",
+        "owner": "Declassified Records, LLC (LIMITED LIABILITY COMPANY; Texas, USA)"
+      },
+      {
+        "mark": "DEAD WAX RECORDS",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 009: Audio recordings featuring music and spoken word; Audio and...",
+        "cls": "009",
+        "serial": "90421413",
+        "owner": "Crookston, Christopher R. (SOLE PROPRIETORSHIP; NORTH CAROLINA, USA)"
+      },
+      {
+        "mark": "DEAD WAX RECORDS",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Business operation, business administration and office...",
+        "cls": "035",
+        "serial": "90868182",
+        "owner": "Crookston, Christopher R. (SOLE PROPRIETORSHIP; NORTH CAROLINA, USA)"
+      }
+    ]
+  },
+  "runout": {
+    "query": "WM:(runout OR \"run out\") AND IC:(011 OR 020 OR 035)",
+    "total": "12",
+    "shown": 12,
+    "cards": [
+      {
+        "mark": "RUNOUT",
+        "status": "DEADABANDONED",
+        "goods": "IC 011: Air purifiers; Air sterilisers; Air sterilising apparatus;...",
+        "cls": "011",
+        "serial": "90190704",
+        "owner": "Hangzhou Epstar Technology Co., Ltd. (limited company (ltd.); CHINA)"
+      },
+      {
+        "mark": "NEVER RUN OUT",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: [ Plastic packaging containers for commercial use for storing...",
+        "cls": "020, 021, 035, 042",
+        "serial": "87365971",
+        "owner": "WePlenish, LLC (LIMITED LIABILITY COMPANY; FLORIDA, USA)"
+      },
+      {
+        "mark": "DON'T RUN OUT",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: On-line retail store services featuring household goods, dry...",
+        "cls": "035",
+        "serial": "86783617",
+        "owner": "MSG DISTRIBUTORS INC. (CORPORATION; NEW YORK, USA)"
+      },
+      {
+        "mark": "DON'T RUN OUT",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Computerized on-line ordering services in the field of contact...",
+        "cls": "035",
+        "serial": "86303769",
+        "owner": "1-800 Contacts, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "NEVER RUN OUT AGAIN",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Computerized on-line ordering services in the field of contact...",
+        "cls": "035",
+        "serial": "86303763",
+        "owner": "1-800 Contacts, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "RUN OUT GROOVE RECORDS",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Retail store services featuring records, shirts, mugs, books,...",
+        "cls": "035",
+        "serial": "97573323",
+        "owner": "Squirrel Apple, LLC (LIMITED LIABILITY COMPANY; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "YOU'LL RUN OUT OF PROBLEMS BEFORE WE RUN OUT OF SOLUTIONS",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Wholesale distributorship services and online retail store...",
+        "cls": "035",
+        "serial": "77014744",
+        "owner": "Beza, L.P. (LIMITED PARTNERSHIP; TEXAS, USA)"
+      },
+      {
+        "mark": "NEVER RUN OUT OF CONTACTS",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 009: Contact lenses; Optical lenses.; IC 035: Computerized on-line...",
+        "cls": "009, 035",
+        "serial": "86303760",
+        "owner": "1-800 Contacts, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "RUN IN BEFORE YOU RUN OUT",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ Retail department store services; retail grocery store...",
+        "cls": "035",
+        "serial": "78896184",
+        "owner": "Target Brands, Inc. (CORPORATION; MINNESOTA, USA)"
+      },
+      {
+        "mark": "HEY, YOU DON'T HAVE TO RUN OUT.",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: mail order catalog services via a global computer network...",
+        "cls": "035",
+        "serial": "75922269",
+        "owner": "Staples The Office Superstore, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "RUN OUT OF GAS...PLUG IN TO THE PRESENT",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Promoting awareness of alternative fuel automobiles via...",
+        "cls": "035",
+        "serial": "87864268",
+        "owner": "Electrify America, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+      },
+      {
+        "mark": "JUEWEI",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ Advertising services; business management of hotels;...",
+        "cls": "035",
+        "serial": "79209689",
+        "owner": "JUEWEI FOOD CO., LTD (Limited Company; CHINA)"
+      }
+    ]
+  },
+  "lead-in": {
+    "query": "WM:(\"lead in\" OR leadin) AND IC:(011 OR 020 OR 035)",
+    "total": "773",
+    "shown": 50,
+    "cards": [
+      {
+        "mark": "LEADIN",
+        "status": "DEADCANCELLED",
+        "goods": "IC 009: [ Marketing platform software downloadable via the internet...",
+        "cls": "009, 035, 041, 042",
+        "serial": "86206279",
+        "owner": "LEAD ROAD, SL (SOCIEDAD LIMITADA; SPAIN)"
+      },
+      {
+        "mark": "LEAD",
+        "status": "DEADABANDONED",
+        "goods": "IC 011: [ water coolers ].",
+        "cls": "011",
+        "serial": "74441516",
+        "owner": "ELKAY MANUFACTURING COMPANY (CORPORATION; ILLINOIS, USA)"
+      },
+      {
+        "mark": "LEAD",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: charitiable services, namely, programs designed to help youths...",
+        "cls": "035",
+        "serial": "77957467",
+        "owner": "Volunteers of America, Inc. (CORPORATION; NEW YORK, USA)"
+      },
+      {
+        "mark": "LEAD",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Consultation services, namely, assisting non-profit...",
+        "cls": "035",
+        "serial": "87943138",
+        "owner": "LEAD (CORPORATION; COLORADO, USA)"
+      },
+      {
+        "mark": "LEAD",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Business management consulting services in the field of sports...",
+        "cls": "035",
+        "serial": "88801103",
+        "owner": "ADI DASSLER LEGACY LTD (LIMITED LIABILITY COMPANY; BAHAMAS)"
+      },
+      {
+        "mark": "LEAD",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Charitable services, namely, organizing troubled and at-risk...",
+        "cls": "035",
+        "serial": "86101543",
+        "owner": "Volunteers of America, Inc. (CORPORATION; NEW YORK, USA)"
+      },
+      {
+        "mark": "LEAD GUARD",
+        "status": "DEADABANDONED",
+        "goods": "IC 011: [ water filters for domestic use ].",
+        "cls": "011",
+        "serial": "74345009",
+        "owner": "POLLENEX CORPORATION (CORPORATION; MISSOURI, USA)"
+      },
+      {
+        "mark": "LEAD YOUNG",
+        "status": "DEADCANCELLED",
+        "goods": "IC 011: [ Air exchangers for cleaning and purifying air; Air...",
+        "cls": "011",
+        "serial": "86839034",
+        "owner": "ZHONGXIAOXUAN (INDIVIDUAL; CHINA)"
+      },
+      {
+        "mark": "EA LEAD",
+        "status": "DEADABANDONED",
+        "goods": "IC 011: Luminaries; Refrigerators; Air fryers; Air sterilisers;...",
+        "cls": "011",
+        "serial": "97222152",
+        "owner": "Yiling Technology Development Co., Ltd. (limited company (ltd.); CHINA)"
+      },
+      {
+        "mark": "LIGHT-LEAD",
+        "status": "DEADCANCELLED",
+        "goods": "IC 011: [ Lead and Polymer Neutron Shields for Use with Nuclear...",
+        "cls": "011",
+        "serial": "73457847",
+        "owner": "Reactor Experiments, Inc. (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "LIGHT-LEAD",
+        "status": "DEADCANCELLED",
+        "goods": "IC 011: [ lead and polymer neutron shields for use with nuclear...",
+        "cls": "011",
+        "serial": "74246863",
+        "owner": "Reactor Experiments (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "LEAD DOG",
+        "status": "DEADCANCELLED",
+        "goods": "IC 020: [ pet beds ].",
+        "cls": "020",
+        "serial": "74572974",
+        "owner": "CedarSack Pet Products, Inc. (CORPORATION; WASHINGTON, USA)"
+      },
+      {
+        "mark": "MOVE&LEAD",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 020: Furniture.",
+        "cls": "020",
+        "serial": "79313474",
+        "owner": "UAB \"Narbutas International\" (LIMITED LIABILITY COMPANY; LITHUANIA)"
+      },
+      {
+        "mark": "LEAD ERASER",
+        "status": "DEADABANDONED",
+        "goods": "IC 011: Activated foam filters for the selective removal of water...",
+        "cls": "011",
+        "serial": "86970254",
+        "owner": "Foam Design Inc. (CORPORATION; KENTUCKY, USA)"
+      },
+      {
+        "mark": "· LEAD FREE ·",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 011: Faucets; Plumbing fittings, namely, valves, namely, ball...",
+        "cls": "011",
+        "serial": "87517529",
+        "owner": "Leo International, Inc. (CORPORATION; NEW YORK, USA)"
+      },
+      {
+        "mark": "LEAD WEALTH",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 011: Air cooling apparatus; Beverage cooling apparatus; Cooling...",
+        "cls": "011",
+        "serial": "98939089",
+        "owner": "BYD Company Limited (limited company (ltd.); China)"
+      },
+      {
+        "mark": "LEAD",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Public advocacy to promote awareness of the benefits of...",
+        "cls": "035, 045",
+        "serial": "86645131",
+        "owner": "Public Defender Association (CORPORATION; WASHINGTON, USA)"
+      },
+      {
+        "mark": "LEAD",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ PROMOTING PUBLIC AWARENESS OF THE HEALTHCARE INFORMATION...",
+        "cls": "035, 041",
+        "serial": "86322955",
+        "owner": "College of Healthcare Information Management Executives Foundation, Inc. (CORPORATION; ILLINOIS, USA)"
+      },
+      {
+        "mark": "LEAD",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ providing information via the Internet in connection with...",
+        "cls": "035, 041",
+        "serial": "78613205",
+        "owner": "LEAD International (Private operating foundation incorporated with limited liability; DELAWARE, USA)"
+      },
+      {
+        "mark": "LEAD",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ [ Advertising; business management including project...",
+        "cls": "035, 041, 042",
+        "serial": "79149735",
+        "owner": "LEADing Practice SAS (UNKNOWN; FRANCE)"
+      },
+      {
+        "mark": "KNOW LEAD, NO LEAD",
+        "status": "DEAD",
+        "goods": "IC 035: General business networking referral services, namely,...",
+        "cls": "035",
+        "serial": "76665012",
+        "owner": "A FRESH DRINK OF WATER (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "LEAD",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 016: Printed publications, namely, informational and training...",
+        "cls": "016, 035, 036, 041",
+        "serial": "98909545",
+        "owner": "BLACK FREEDOM FUND (CORPORATION; California, USA)"
+      },
+      {
+        "mark": "LEAD PB FREE",
+        "status": "DEADABANDONED",
+        "goods": "IC 011: [ faucets; namely, drinking fountains and fittings ].",
+        "cls": "011",
+        "serial": "74280369",
+        "owner": "HAWS DRINKING FAUCET COMPANY (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "LEAD GUARD (HMR)",
+        "status": "DEADABANDONED",
+        "goods": "IC 011: Water treatment equipment, namely, water filtration units.",
+        "cls": "011",
+        "serial": "87080347",
+        "owner": "Next Filtration Technologies, Inc. (CORPORATION; FLORIDA, USA)"
+      },
+      {
+        "mark": "BEST LEAD FURNITURE",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Furniture.",
+        "cls": "020",
+        "serial": "87488259",
+        "owner": "purple star furniture corp (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "TAKE THE LEAD",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 011: Lighting devices, namely, flashlights, lanterns and...",
+        "cls": "011",
+        "serial": "88874747",
+        "owner": "Simple Products Corporation (CORPORATION; UTAH, USA)"
+      },
+      {
+        "mark": "LEAD FOOTERS",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Advertising and publicity services, namely, promoting the...",
+        "cls": "035",
+        "serial": "90117903",
+        "owner": "Nichols, Kyle (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "LEAD ROVER",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Marketing consulting, namely, B2B sales and lead prospecting...",
+        "cls": "035",
+        "serial": "88691514",
+        "owner": "Point Vision, LLC (LIMITED LIABILITY COMPANY; PENNSYLVANIA, USA)"
+      },
+      {
+        "mark": "LEAD LIGHTNING",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Business consultation and management regarding marketing...",
+        "cls": "035",
+        "serial": "88623494",
+        "owner": "Daniel Berlin Heltz Jr (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "LEAD MACHINE",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Marketing services.",
+        "cls": "035",
+        "serial": "97598785",
+        "owner": "Marketopia LLC (LIMITED LIABILITY COMPANY; FLORIDA, USA)"
+      },
+      {
+        "mark": "LEAD BUSINESS",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ Administration of educational programs for minority students...",
+        "cls": "035",
+        "serial": "77861560",
+        "owner": "Leadership, Education and Development (LEAD) (CORPORATION; PENNSYLVANIA, USA)"
+      },
+      {
+        "mark": "LEAD-GUARD",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Business consulting services, namely, services that assist...",
+        "cls": "035",
+        "serial": "76214202",
+        "owner": "Nexsan Technologies, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "LEAD 411",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ Providing business information and a database in the fields...",
+        "cls": "035",
+        "serial": "77015164",
+        "owner": "Lead411, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "GLOBAL LEAD",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ business management consultation ].",
+        "cls": "035",
+        "serial": "75427550",
+        "owner": "KORN FERRY (US) (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "LEAD SMITH",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Business marketing services.",
+        "cls": "035",
+        "serial": "88473590",
+        "owner": "Smith, James Ryan (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "LEAD SQUAD",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Digital Marketing Services.",
+        "cls": "035",
+        "serial": "87575300",
+        "owner": "Lead Squad, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+      },
+      {
+        "mark": "INSTA-LEAD",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ Direct Mail Advertising Services for Others ].",
+        "cls": "035",
+        "serial": "73444754",
+        "owner": "American Mail Systems, Inc. (CORPORATION; PENNSYLVANIA, USA)"
+      },
+      {
+        "mark": "PEOPLE LEAD",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Providing an application process via a global computer network...",
+        "cls": "035",
+        "serial": "78043618",
+        "owner": "People Lead, Inc. (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "LEAD GENEALOGY",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Database management; Marketing services.",
+        "cls": "035",
+        "serial": "86172202",
+        "owner": "Business Metrics, Inc. (CORPORATION; MASSACHUSETTS, USA)"
+      },
+      {
+        "mark": "LEAD AVIATOR",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Advertising and marketing services.",
+        "cls": "035",
+        "serial": "85737159",
+        "owner": "Dahlgren Enterprises, Inc. (CORPORATION; MINNESOTA, USA)"
+      },
+      {
+        "mark": "LEAD GENESIS",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Providing demand creation and lead generation activities and...",
+        "cls": "035",
+        "serial": "86687683",
+        "owner": "Lead Genesis Partners, LLC (LIMITED LIABILITY COMPANY; NEVADA, USA)"
+      },
+      {
+        "mark": "LEAD BANK",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Providing demand creation and lead generation activities and...",
+        "cls": "035",
+        "serial": "85113598",
+        "owner": "Donald N Klahre (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "LEAD MARVELS",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Digital marketing and lead generation services for media and...",
+        "cls": "035",
+        "serial": "87304334",
+        "owner": "LEAD MARVELS, INC. (CORPORATION; FLORIDA, USA)"
+      },
+      {
+        "mark": "LEAD CLICKZ",
+        "status": "LIVEPENDING",
+        "goods": "IC 035: Marketing services; Advertising services.",
+        "cls": "035",
+        "serial": "99946796",
+        "owner": "LeadClickz LLC (LIMITED LIABILITY COMPANY; Texas, USA)"
+      },
+      {
+        "mark": "LEAD MACHINE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Advertising, marketing and promotional services; Design of...",
+        "cls": "035",
+        "serial": "88533987",
+        "owner": "Mudd, Inc. (CORPORATION; IOWA, USA)"
+      },
+      {
+        "mark": "LEAD 3C",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Business consultation in the field of business leadership...",
+        "cls": "035",
+        "serial": "88616779",
+        "owner": "Lead 3C, LLC (LIMITED LIABILITY COMPANY; ILLINOIS, USA)"
+      },
+      {
+        "mark": "LEAD MACHINE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Business data analysis for use in matching and connecting...",
+        "cls": "035",
+        "serial": "90477872",
+        "owner": "Gates Corporation (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "ON LEAD",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: conducting business seminars, conferences and consultations...",
+        "cls": "035",
+        "serial": "75826582",
+        "owner": "BRINTON, ELISABETH (SOLE PROPRIETORSHIP; USA)"
+      },
+      {
+        "mark": "LEAD EAST",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Providing marketing and promotion of special events.",
+        "cls": "035",
+        "serial": "86140695",
+        "owner": "Appleton Productions, Inc. (CORPORATION; NEW JERSEY, USA)"
+      },
+      {
+        "mark": "LEAD ANGEL",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ Customer relationship management ].",
+        "cls": "035",
+        "serial": "85134436",
+        "owner": "Customer Focused Marketing, Inc (CORPORATION; TEXAS, USA)"
+      }
+    ]
+  },
+  "flipside": {
+    "query": "WM:(flipside OR \"flip side\") AND IC:(011 OR 020 OR 035)",
+    "total": "33",
+    "shown": 33,
+    "cards": [
+      {
+        "mark": "FLIP SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ PROMOTING THE SALE OF GOODS OF OTHERS THROUGH UNDER THE LID...",
+        "cls": "035",
+        "serial": "73592853",
+        "owner": "MARYLAND CUP CORPORATION (CORPORATION; MARYLAND, USA)"
+      },
+      {
+        "mark": "FLIPSIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Tables; Side tables.",
+        "cls": "020",
+        "serial": "86934801",
+        "owner": "Calderone, Joel (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "FLIPSIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Plastic party ornaments, plastic bunting.",
+        "cls": "020",
+        "serial": "87086819",
+        "owner": "Garven, LLC (LIMITED LIABILITY COMPANY; MINNESOTA, USA)"
+      },
+      {
+        "mark": "FLIPSIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 011: Showerheads and hand showers.",
+        "cls": "011",
+        "serial": "77705014",
+        "owner": "Kohler Co. (CORPORATION; WISCONSIN, USA)"
+      },
+      {
+        "mark": "FLIPSIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 011: electric waffle maker.",
+        "cls": "011",
+        "serial": "86773809",
+        "owner": "National Presto Industries, Inc. (CORPORATION; WISCONSIN, USA)"
+      },
+      {
+        "mark": "FLIPSIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Mattresses, mattress toppers and pillows.",
+        "cls": "020",
+        "serial": "77690179",
+        "owner": "Sleep Innovations, Inc. (CORPORATION; NEW JERSEY, USA)"
+      },
+      {
+        "mark": "FLIPSIDE",
+        "status": "LIVEPENDING",
+        "goods": "IC 020: Furniture.",
+        "cls": "020",
+        "serial": "99690958",
+        "owner": "Comfort Research, LLC (LIMITED LIABILITY COMPANY; Michigan, USA)"
+      },
+      {
+        "mark": "FLIPSIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 011: Lanterns for lighting; decorative lighting in the nature of...",
+        "cls": "011",
+        "serial": "87086784",
+        "owner": "Garven, LLC (LIMITED LIABILITY COMPANY; MINNESOTA, USA)"
+      },
+      {
+        "mark": "FLIPSIDE",
+        "status": "LIVEPENDING",
+        "goods": "IC 011: Electric grills.",
+        "cls": "011",
+        "serial": "99387237",
+        "owner": "National Presto Industries, Inc. (CORPORATION; Wisconsin, USA)"
+      },
+      {
+        "mark": "THE FLIP SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Retail store services featuring second-hand furniture and home...",
+        "cls": "035",
+        "serial": "85789314",
+        "owner": "Daniels, Ashley (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "FLIPSIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ retail store featuring clothing ].",
+        "cls": "035",
+        "serial": "78464222",
+        "owner": "Moravec Enterprise, Inc. (CORPORATION; HAWAII, USA)"
+      },
+      {
+        "mark": "THE FLIP SIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 016: [ gift wrapping paper printed on both sides; gift paper bags;...",
+        "cls": "016, 020, 026",
+        "serial": "74281416",
+        "owner": "CPS Corporation of Delaware (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "FLIPSIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Promoting the window, siding and door products and services of...",
+        "cls": "035",
+        "serial": "85158689",
+        "owner": "GREAT DAY IMPROVEMENTS, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+      },
+      {
+        "mark": "FLIP SIDE GRILL",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Concession stands, retail kiosks and roving vendor services...",
+        "cls": "035, 043",
+        "serial": "78289764",
+        "owner": "Volume Services America, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "FLIPSIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Retail store services featuring mattresses.",
+        "cls": "035",
+        "serial": "88720977",
+        "owner": "Flipside, LLC (LIMITED LIABILITY COMPANY; WEST VIRGINIA, USA)"
+      },
+      {
+        "mark": "THE FLIP SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 009: Downloadable podcasts in the field of finance; downloadable...",
+        "cls": "009, 035, 036, 041, 042",
+        "serial": "79428513",
+        "owner": "Barclays PLC (public limited company (plc); United Kingdom, United Kingdom)"
+      },
+      {
+        "mark": "THE FLIP SIDE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 009: Downloadable podcasts in the field of finance; downloadable...",
+        "cls": "009, 035, 036, 041, 042",
+        "serial": "79428512",
+        "owner": "Barclays PLC (public limited company (plc); United Kingdom, United Kingdom)"
+      },
+      {
+        "mark": "FLIPSIDE PRODUCTS",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 016: Chalk boards; dry erase writing boards; dry erase writing...",
+        "cls": "016, 020",
+        "serial": "90482034",
+        "owner": "Flipside Products, Inc. (CORPORATION; OHIO, USA)"
+      },
+      {
+        "mark": "ON THE FLIP SIDE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ Convention and visitors bureau services, namely, promoting...",
+        "cls": "035, 041",
+        "serial": "77723979",
+        "owner": "Memphis Convention & Visitors Bureau (CORPORATION; TENNESSEE, USA)"
+      },
+      {
+        "mark": "FLIPSIDE GAMING",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: In-person and Online retail services; namely dealing in Card...",
+        "cls": "035",
+        "serial": "99106390",
+        "owner": "Flipside Gaming, Inc. (CORPORATION; New York, USA)"
+      },
+      {
+        "mark": "FLIPSIDE CRYPTO",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: providing business intelligence services.",
+        "cls": "035",
+        "serial": "88711754",
+        "owner": "Flipside Crypto, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "FLIPSIDE MARKETING",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Advertising and marketing.",
+        "cls": "035",
+        "serial": "86520848",
+        "owner": "McCain Shawn L. (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "FLIPSIDE MARKETING",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Advertising and marketing.",
+        "cls": "035",
+        "serial": "86902804",
+        "owner": "McCain, Shawn (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "FLIPSIDE KICKZ",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Online and retail clothing store services; Retail consignment...",
+        "cls": "035",
+        "serial": "86254560",
+        "owner": "Rivera, Arbey (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "FLIPSIDE MEMPHIS",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ Convention and visitors bureau services, namely, promoting...",
+        "cls": "035, 041",
+        "serial": "77722723",
+        "owner": "Memphis Convention & Visitors Bureau (CORPORATION; TENNESSEE, USA)"
+      },
+      {
+        "mark": "FLIPSIDE WORKSTYLE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ Business consulting and advisory services in the field of...",
+        "cls": "035, 042",
+        "serial": "86568751",
+        "owner": "Duncan+Coleverria, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "HARLEQUIN FLIPSIDE",
+        "status": "DEADABANDONED",
+        "goods": "IC 009: PRE-RECORDED AUDIO AND VIDEO TAPES, CASSETTES AND DISKS...",
+        "cls": "009, 016, 035",
+        "serial": "78208471",
+        "owner": "Harlequin Enterprises Limited (CORPORATION; CANADA)"
+      },
+      {
+        "mark": "F FLIPSIDE CRYPTO",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: providing business intelligence services.",
+        "cls": "035",
+        "serial": "88711792",
+        "owner": "Flipside Crypto, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "FLIP SIDE GRILL A CENTERPLATE BRAND",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ Concession stands, retail kiosks and roving vendor services...",
+        "cls": "035, 043",
+        "serial": "78321162",
+        "owner": "Volume Services America, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "CHAINWALKING BY FLIPSIDE CRYPTO",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Providing business intelligence services.",
+        "cls": "035",
+        "serial": "88958057",
+        "owner": "Flipside Crypto, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "THE ORIGINAL FLIPSIDE PILLOW REST RALLY REPEAT",
+        "status": "DEADCANCELLED",
+        "goods": "IC 020: [ Pillows ].",
+        "cls": "020",
+        "serial": "86646799",
+        "owner": "FLIPSIDE PILLOW, INC. (CORPORATION; COLORADO, USA)"
+      },
+      {
+        "mark": "FLIPSIDE ALL NATIONS IN ONE HOUSE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Arranging and conducting marketing promotional events for...",
+        "cls": "035",
+        "serial": "77196176",
+        "owner": "Russell, David A. (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "F FCAS POWERED BY FLIPSIDE CRYPTO",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Providing business intelligence services.",
+        "cls": "035",
+        "serial": "90200138",
+        "owner": "Flipside Crypto, Inc. (CORPORATION; DELAWARE, USA)"
+      }
+    ]
+  },
+  "thirty three": {
+    "query": "WM:(\"thirty three\" OR thirtythree OR \"33\") AND IC:(011 OR 020)",
+    "total": "19",
+    "shown": 19,
+    "cards": [
+      {
+        "mark": "33",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 020: Hand-held mirrors [ ; Pillows ].",
+        "cls": "020",
+        "serial": "86555873",
+        "owner": "Disney Enterprises, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "33",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Furniture.",
+        "cls": "020",
+        "serial": "97321052",
+        "owner": "33 3D Acrylics, LLC (LIMITED LIABILITY COMPANY; INDIANA, USA)"
+      },
+      {
+        "mark": "33",
+        "status": "DEADABANDONED",
+        "goods": "IC 011: modular lighting systems comprised of a light source and...",
+        "cls": "011",
+        "serial": "87176525",
+        "owner": "TTP Holdings LLC (LIMITED LIABILITY COMPANY; TEXAS, USA)"
+      },
+      {
+        "mark": "33",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 011: Lighting products for vehicles, namely, rear and front...",
+        "cls": "011",
+        "serial": "78436202",
+        "owner": "TRUCK-LITE CO., LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+      },
+      {
+        "mark": "URBAN 33",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 011: Chandeliers; Lamps; Lighting fixtures.; IC 020: Bedroom...",
+        "cls": "011, 020, 021",
+        "serial": "88041690",
+        "owner": "Classic Lamp Parts LLC (LIMITED LIABILITY COMPANY; ARIZONA, USA)"
+      },
+      {
+        "mark": "CONTINENT 33",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Chairs; Cushions; Furniture; Furniture casters, not of metal;...",
+        "cls": "020",
+        "serial": "97373656",
+        "owner": "Claude & Tina Co., Ltd. (CORPORATION; REPUBLIC OF KOREA)"
+      },
+      {
+        "mark": "ORTUS 33",
+        "status": "DEADCANCELLED",
+        "goods": "IC 020: [ FURNITURE-NAMELY, CUPBOARDS, WALL MOUNTED CUPBOARDS,...",
+        "cls": "020",
+        "serial": "73113860",
+        "owner": "INTERLUBKE GEBR. LUBKE KG (GERMAN LIMITED PARTNERSHIP; Not in List)"
+      },
+      {
+        "mark": "MINERS 33",
+        "status": "DEADABANDONED",
+        "goods": "IC 011: Apparatus for heating and cooking, namely, electric, gas,...",
+        "cls": "011",
+        "serial": "85234843",
+        "owner": "Ingeniería de Combustión Bosca Chile S.A. (CORPORATION; CHILE)"
+      },
+      {
+        "mark": "T/33",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 011: Water filtering units for commercial and residential use.",
+        "cls": "011",
+        "serial": "76219283",
+        "owner": "Omnipure Filter Company, Inc. (CORPORATION; IDAHO, USA)"
+      },
+      {
+        "mark": "33 3D ACRYLICS, LLC 33",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Furniture.",
+        "cls": "020",
+        "serial": "97321115",
+        "owner": "33 3D Acrylics, LLC (LIMITED LIABILITY COMPANY; INDIANA, USA)"
+      },
+      {
+        "mark": "TAKE 33",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Plastic or cardboard carrier tower for holding, displaying and...",
+        "cls": "020",
+        "serial": "86122430",
+        "owner": "Vollano, Carol B. (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "ICEFREE 33",
+        "status": "DEADABANDONED",
+        "goods": "IC 011: System for delivering chilled water to a container, cooler,...",
+        "cls": "011",
+        "serial": "86401436",
+        "owner": "ICEFREE LLC (LIMITED LIABILITY COMPANY; FLORIDA, USA)"
+      },
+      {
+        "mark": "33",
+        "status": "LIVEPENDING",
+        "goods": "IC 016: Decals; Stickers.; IC 020: Non-metal license plates; Printed...",
+        "cls": "016, 020, 021, 024, 025, 028, 041",
+        "serial": "50006686",
+        "owner": "RCR Enterprises, LLC (LIMITED LIABILITY COMPANY; North Carolina, USA)"
+      },
+      {
+        "mark": "33 DREAMS",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: Cat scratching posts; Pet furniture in the nature of cat...",
+        "cls": "020, 022",
+        "serial": "98093967",
+        "owner": "Hargett, Helen Mechelle (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "DRAWER SYSTEM 33",
+        "status": "DEADABANDONED",
+        "goods": "IC 020: [ DRAWERS FOR FURNITURE AND ACCESSORIES THEREFOR, NAMELY,...",
+        "cls": "020",
+        "serial": "73424660",
+        "owner": "275893 ALBERTA LTD. (CORPORATION; CANADA)"
+      },
+      {
+        "mark": "SORB 33",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 001: Chemicals for treating organic and inorganic contaminates,...",
+        "cls": "001, 011, 037, 040",
+        "serial": "78185921",
+        "owner": "DE NORA WATER TECHNOLOGIES, LLC (LIMITED LIABILITY COMPANY; PENNSYLVANIA, USA)"
+      },
+      {
+        "mark": "LUCKY 33",
+        "status": "DEADCANCELLED",
+        "goods": "IC 009: [ Telecommunications products and applications for use in...",
+        "cls": "009, 014, 016, 018, 020, 024, 025, 028, 030, 032, 035, 041",
+        "serial": "77912553",
+        "owner": "Golf Club St. Leon-Rot Betriebsgesellschaft mbH & Co. KG (LIMITED PARTNERSHIP; GERMANY)"
+      },
+      {
+        "mark": "• COFFEE MACHINE • CAFE 33 SINCE 2021",
+        "status": "DEADABANDONED",
+        "goods": "IC 011: Coffee machines, electric; Commercial cooking ovens;...",
+        "cls": "011",
+        "serial": "98852694",
+        "owner": "Cafe 33 LLC (LIMITED LIABILITY COMPANY; Wyoming, USA)"
+      },
+      {
+        "mark": "3 42 12 33 21 18 27 24 30 15 39 6 9 45 99",
+        "status": "DEADCANCELLED",
+        "goods": "IC 009: [ telescopes; cameras; dvd players; dry cells batteries; flat...",
+        "cls": "009, 011, 014, 016, 018, 019, 021, 025, 028, 032, 033",
+        "serial": "79072541",
+        "owner": "Lee, Hyung Ki (INDIVIDUAL; REPUBLIC OF KOREA)"
+      }
+    ]
+  },
+  "revolve": {
+    "query": "WM:revolve AND IC:(011 OR 020 OR 035)",
+    "total": "35",
+    "shown": 35,
+    "cards": [
+      {
+        "mark": "REVOLVE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 011: LED light bars and light pods for vehicles, namely, utility...",
+        "cls": "011",
+        "serial": "97088468",
+        "owner": "JST Performance, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+      },
+      {
+        "mark": "REVOLVE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 020: [ CHAIRS, CAMPING FURNITURE, STADIUM CHAIRS, TURNING CHAIRS ].",
+        "cls": "020",
+        "serial": "76710768",
+        "owner": "REVOLVE, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+      },
+      {
+        "mark": "REVOLVE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 020: [ CHAIRS; CAMPING FURNITURE, STADIUM CHAIRS, REVOLVING CHAIRS...",
+        "cls": "020",
+        "serial": "76703421",
+        "owner": "REVOLVE, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+      },
+      {
+        "mark": "REVOLVE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 011: [ Outdoor flood, motion activated, and photocell controlled...",
+        "cls": "011",
+        "serial": "86677171",
+        "owner": "SIGNIFY HOLDING B.V. (LIMITED LIABILITY COMPANY; NETHERLANDS)"
+      },
+      {
+        "mark": "REVOLVE",
+        "status": "DEADABANDONED",
+        "goods": "IC 011: Faucets.",
+        "cls": "011",
+        "serial": "98918715",
+        "owner": "Karran USA, LLC (LIMITED LIABILITY COMPANY; Indiana, USA)"
+      },
+      {
+        "mark": "REVOLVE",
+        "status": "LIVEPENDING",
+        "goods": "IC 011: Ceiling fans.",
+        "cls": "011",
+        "serial": "99061171",
+        "owner": "Oryx International LLC (LIMITED LIABILITY COMPANY; Florida, USA)"
+      },
+      {
+        "mark": "REVOLVE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 011: [ Filters for drinking water; Waste water purification units;...",
+        "cls": "011, 021",
+        "serial": "85186856",
+        "owner": "Sovereign Earth LLC (LIMITED LIABILITY COMPANY; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "REVOLVE",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: retail store services featuring sportswear and snowboard...",
+        "cls": "035",
+        "serial": "76273286",
+        "owner": "MORELAND, DAVID (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "REVOLVE",
+        "status": "DEADABANDONED",
+        "goods": "IC 009: Electronic components, namely, remote controls and repeaters...",
+        "cls": "009, 020",
+        "serial": "97403536",
+        "owner": "Current Products Corp. (CORPORATION; FLORIDA, USA)"
+      },
+      {
+        "mark": "REVOLVE",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: On-line retail store services featuring auto parts.",
+        "cls": "035",
+        "serial": "97893737",
+        "owner": "Marsons International Inc. (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "REVOLVE.",
+        "status": "LIVEPENDING",
+        "goods": "IC 035: Advertising; business management; business administration;...",
+        "cls": "035",
+        "serial": "98117025",
+        "owner": "Fogelman, Dave (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "REVOLVE",
+        "status": "LIVEPENDING",
+        "goods": "IC 035: Administration of a customer loyalty program which provides...",
+        "cls": "035",
+        "serial": "98904426",
+        "owner": "Eminent, Inc. (CORPORATION; Delaware, USA)"
+      },
+      {
+        "mark": "REVOLVE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Retail store and on-line retail store services featuring...",
+        "cls": "035",
+        "serial": "86925355",
+        "owner": "Eminent, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "REVOLVE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ wholesale distributorship services of sorted and processed...",
+        "cls": "035, 039, 040",
+        "serial": "87262742",
+        "owner": "Revolve Group, LLC (LIMITED LIABILITY COMPANY; UTAH, USA)"
+      },
+      {
+        "mark": "GOPHER REVOLVE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 020: [ Stools ].",
+        "cls": "020",
+        "serial": "87908412",
+        "owner": "The Prophet Corporation (CORPORATION; MINNESOTA, USA)"
+      },
+      {
+        "mark": "REVOLVE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ Business consultation; Management and business consulting...",
+        "cls": "035, 036, 045",
+        "serial": "77433107",
+        "owner": "Exemplar Companies, Inc. (CORPORATION; MASSACHUSETTS, USA)"
+      },
+      {
+        "mark": "REVOLVE",
+        "status": "LIVEPENDING",
+        "goods": "IC 009: Downloadable virtual goods, namely, image files featuring...",
+        "cls": "009, 035, 041, 042",
+        "serial": "97620224",
+        "owner": "Eminent, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "REVOLVE",
+        "status": "LIVEPENDING",
+        "goods": "IC 014: Jewelry; Jewelry cases; Jewelry charms.; IC 018: Backpacks;...",
+        "cls": "014, 018, 025, 035",
+        "serial": "99532880",
+        "owner": "Eminent, Inc. (CORPORATION; Delaware, USA)"
+      },
+      {
+        "mark": "REVOLVE OUTDOORS",
+        "status": "LIVEPENDING",
+        "goods": "IC 020: hunting chairs.; IC 028: Hunting blinds; field blinds used in...",
+        "cls": "020, 028",
+        "serial": "98655687",
+        "owner": "Revolve Outdoors LLC (LIMITED LIABILITY COMPANY; Louisiana, USA)"
+      },
+      {
+        "mark": "REVOLVE MARKET",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: [ Convenience center in the nature of a mini-market, namely,...",
+        "cls": "035",
+        "serial": "97851499",
+        "owner": "Five Star Food Service, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "REVOLVE CLOTHING",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Retail store and on-line retail store services featuring...",
+        "cls": "035",
+        "serial": "85060880",
+        "owner": "Eminent Inc (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "REVOLVE TAX",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Tax consultation; Tax advisory services; Tax and taxation...",
+        "cls": "035",
+        "serial": "88753918",
+        "owner": "Revolve Tax LLC (LIMITED LIABILITY COMPANY; WYOMING, USA)"
+      },
+      {
+        "mark": "SYSTEM 83 REVOLVE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 011: Sterilization units for medical instruments; Sterilizers for...",
+        "cls": "011",
+        "serial": "98022119",
+        "owner": "Wassenburg Medical, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "REVOLVE INFUSION",
+        "status": "LIVEPENDING",
+        "goods": "IC 009: Downloadable software in the nature of a mobile application...",
+        "cls": "009, 035",
+        "serial": "98674420",
+        "owner": "REVOLVE INFUSION MANAGEMENT, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+      },
+      {
+        "mark": "REVOLVE INFUSION",
+        "status": "DEADABANDONED",
+        "goods": "IC 009: Downloadable software in the nature of a mobile application...",
+        "cls": "009, 035",
+        "serial": "98674357",
+        "owner": "REVOLVE INFUSION MANAGEMENT, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+      },
+      {
+        "mark": "R REVOLVE OUTDOORS",
+        "status": "LIVEPENDING",
+        "goods": "IC 020: hunting chairs.; IC 028: Hunting blinds; field blinds used in...",
+        "cls": "020, 028",
+        "serial": "98655721",
+        "owner": "Revolve Outdoors LLC (LIMITED LIABILITY COMPANY; Louisiana, USA)"
+      },
+      {
+        "mark": "REVOLVE MIDSTREAM",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Marketing services in the field of energy services for...",
+        "cls": "035, 036, 039, 040",
+        "serial": "88200756",
+        "owner": "Valiant Midstream, LLC (LIMITED LIABILITY COMPANY; OKLAHOMA, USA)"
+      },
+      {
+        "mark": "REVOLVE I T",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ Business consulting services in recycling, remarketing and...",
+        "cls": "035, 040",
+        "serial": "78464320",
+        "owner": "ARROW ELECTRONICS, INC. (CORPORATION; NEW YORK, USA)"
+      },
+      {
+        "mark": "REVOLVE LOS ANGELES",
+        "status": "LIVEPENDING",
+        "goods": "IC 014: Jewelry; Jewelry cases; Jewelry charms.; IC 018: Backpacks;...",
+        "cls": "014, 018, 025, 035",
+        "serial": "99330899",
+        "owner": "Eminent, Inc. (CORPORATION; Delaware, USA)"
+      },
+      {
+        "mark": "REVOLVE BUY+SELL+TRADE",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: Retail clothing stores.",
+        "cls": "035",
+        "serial": "99044229",
+        "owner": "Emily M Quinn (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "REVOLVE LOS ANGELES CALIFORNIA",
+        "status": "LIVEPENDING",
+        "goods": "IC 014: Jewelry; Jewelry cases; Jewelry charms.; IC 018: Backpacks;...",
+        "cls": "014, 018, 025, 035",
+        "serial": "99314107",
+        "owner": "Eminent, Inc. (CORPORATION; Delaware, USA)"
+      },
+      {
+        "mark": "LET YOUR JOB REVOLVE AROUND YOUR LIFE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ Personnel recruiting and employee engagement, namely,...",
+        "cls": "035",
+        "serial": "77118356",
+        "owner": "NEW YORK COMMUNITY BANCORP, INC. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SOLUTIONS THAT REVOLVE AROUND YOU",
+        "status": "DEADABANDONED",
+        "goods": "IC 035: On-line retail store services featuring fire protection goods...",
+        "cls": "035, 037, 040, 041, 042, 045",
+        "serial": "99501557",
+        "owner": "Century Fire Protection, LLC (LIMITED LIABILITY COMPANY; Delaware, USA)"
+      },
+      {
+        "mark": "REVOLVE STRATEGIC BUSINESS SOLUTIONS FOR A CHANGING WORLD",
+        "status": "DEADCANCELLED",
+        "goods": "IC 035: [ Strategic business consulting services ].",
+        "cls": "035",
+        "serial": "85198213",
+        "owner": "Minnick, Rebecca (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "SPIN",
+        "status": "DEADCANCELLED",
+        "goods": "IC 021: [ Pottery and household items made of porcelain, ceramic,...",
+        "cls": "021, 035",
+        "serial": "86273137",
+        "owner": "Spin Ceramics LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+      }
+    ]
+  }
+}

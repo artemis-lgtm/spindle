@@ -1,0 +1,44 @@
+sku,part,q1,q20,q100,q500,source
+12in (kit and sconce),"Backplate 10.5in x 1/2in MDF, CNC-cut, painted matte black",6.0,5.0,4.5,3.5,E (HD ProWood panel $14.58 = $1.82/disc + CNC + paint)
+12in (kit and sconce),"Hub, 5in x 1in PETG print (J-slots, jack pocket, cable channel)",6.0,4.5,3.0,2.0,"E (PETG $0.02-0.03/g, ~250 g + machine time)"
+12in (kit and sconce),Threaded insert E-Z Lok 400-4 brass 1/4-20 x 0.5in,1.9,1.76,1.7,1.6,"V Albany County Fasteners $1.90 ea, $17.63/10, $170/100; 500 est"
+12in (kit and sconce),Chrome dome cap assembly (38 mm 304 SS hemisphere + 1/4-20 x 1in bolt + fender washer + epoxy + felt),5.15,4.65,3.4,2.65,"dome-cap agent: shell $3.47 (Walmart uxcell 4-pk $13.89, V) to ~$1.05 bulk (S); +$0.65 hardware (E)"
+12in (kit and sconce),Felt washer 1in OD x 3/8in ID x 1/8in self-adhesive (Durofelt SAW1GY-50),0.16,0.16,0.16,0.14,V Durofelt $8.00/50
+12in (kit and sconce),"Felt pads x6, 1/2in OD x 1/16in self-adhesive (Durofelt SAW12BK-100)",0.42,0.42,0.42,0.36,V Durofelt $7.00/100
+12in (kit and sconce),45 rpm snap-in adapter (ships in every box),0.5,0.5,0.15,0.13,"P eBay $36.99/250, $79.99/500, $131.89/1000; qty1 local shop est"
+12in (kit and sconce),"COB LED strip 12V 2700K CRI90+ UL, ~3 ft (0.92 m)",5.0,4.0,2.5,2.0,"E (HitLights/BTF 16.4 ft reel ~$25, Amazon blocks bots). Verified alt: Ecolocity 2835 ETL $17.99/m, $44.99/3 m (V)"
+12in (kit and sconce),"Power adapter UL Class 2 12V 2A 24W, 5.5x2.1 barrel, 6 ft",11.99,11.0,8.5,7.0,P LED Updates $11.99 (verified 11/9; 429 tonight); bulk est
+12in (kit and sconce),"Inline PWM dimmer 12-24V 2A, barrel in/out (Ecolocity LC-OL-8DIM)",3.99,3.99,2.5,2.0,V Ecolocity $3.99 sale (list $12.99); bulk est
+12in (kit and sconce),DC panel-mount jack 5.5x2.1 (Adafruit 610),2.95,2.66,2.36,1.5,"V Adafruit $2.95, $2.66 @10+, $2.36 @100+; 500 est (CUI via Digi-Key)"
+12in (kit and sconce),"Steel mounting plate 4in 14 ga, 4 arc slots, laser-cut + finish",10.0,6.0,3.5,2.25,E inwall-parts: SendCutSend laser $6-10/$3-4/$1.50-2.50/$1-1.50 + powder coat $2-3; upload DXF for real quote
+12in (kit and sconce),"Bayonet studs x3, 8-32 shoulder screws",1.8,1.5,0.9,0.6,E pending (McMaster class)
+12in (kit and sconce),M3 set screw + L key,0.4,0.3,0.2,0.15,E pending
+12in (kit and sconce),Wall screws #8 x 1-1/4in x2 + drywall anchors x2,0.6,0.4,0.3,0.2,E hardware store
+12in (kit and sconce),Silicone bumpers x2 clear self-adhesive,0.13,0.13,0.13,0.1,P eBay 100/$6.51
+12in (kit and sconce),"Lead wire 18 AWG 12in, heat shrink, hot glue",0.3,0.25,0.15,0.1,E
+12in (kit and sconce),"Hang + safety card, printed",0.5,0.4,0.2,0.1,E
+12in (kit and sconce),Box 13x13x3 double-wall + foam corners + inner poly sleeve + cap pouch,5.0,4.5,3.5,2.75,E Uline/Amazon; scope report $3-4 box at 25
+12in (kit and sconce),TOTAL parts,62.79,52.12,38.07,29.13,
+7in kit,"Backplate 6in x 1/2in MDF, CNC-cut, painted",3.0,2.5,2.0,1.5,"E same panel, 20+ discs"
+7in kit,"Hub, 4in x 1in PETG print",4.5,3.5,2.25,1.5,E
+7in kit,Threaded insert E-Z Lok 400-4,1.9,1.76,1.7,1.6,V Albany
+7in kit,"7in cap (chromed 45-adapter look) - PENDING, carried at 12in dome cost",5.15,4.65,3.4,2.65,E pending dome-cap
+7in kit,Felt washer 1in OD,0.16,0.16,0.16,0.14,V Durofelt
+7in kit,Felt pads x3,0.21,0.21,0.21,0.18,V Durofelt
+7in kit,45 rpm adapter,0.5,0.5,0.15,0.13,P eBay
+7in kit,COB LED strip ~1.6 ft (19in rim),2.75,2.2,1.4,1.1,E
+7in kit,Power adapter UL 12V 2A,11.99,11.0,8.5,7.0,P LED Updates
+7in kit,Inline PWM dimmer,3.99,3.99,2.5,2.0,V Ecolocity
+7in kit,DC panel jack (Adafruit 610),2.95,2.66,2.36,1.5,V Adafruit
+7in kit,Keyhole plate heavy gauge (Hardwick & Sons) + #8 screw + anchor,0.75,0.75,0.6,0.5,"P Hardwick $0.45, $40.50/100 (verified 11/9; 429 tonight)"
+7in kit,Silicone bumpers x2,0.13,0.13,0.13,0.1,P eBay
+7in kit,"Lead wire, heat shrink",0.3,0.25,0.15,0.1,E
+7in kit,Hang card,0.5,0.4,0.2,0.1,E
+7in kit,Box 10x10x3 + foam + sleeve,3.5,3.0,2.25,1.75,E
+7in kit,TOTAL parts,42.28,37.66,27.96,21.85,
+in-wall kit,Screw-terminal barrel plug pair 5.5x2.1 (Oiyagai 10 pr $13.50),1.35,1.35,0.5,0.5,inwall-parts: S Amazon B07D67B3HM; bulk E
+in-wall kit,"CL2 18/2 in-wall cable, 8 ft (Monoprice 50 ft $18.54)",3.0,3.0,1.6,1.2,inwall-parts: S Monoprice p_id 4044; 1000 ft reel est
+in-wall kit,Arlington LV1 old-work low-voltage bracket,1.8,1.8,1.1,0.95,V avoutlet $1.80; eBay 10/$10.99 S; 500 E
+in-wall kit,Datacomm 45-0001-WH recessed LV plate,3.45,2.97,2.97,2.5,"V zackelectronics $3.45, $2.97 @20+; 500 E"
+in-wall kit,Pull string + drill-size card + bag,0.6,0.5,0.3,0.2,E pending
+in-wall kit,TOTAL parts,10.2,9.62,6.47,5.35,

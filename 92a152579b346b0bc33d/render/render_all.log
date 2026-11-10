@@ -1,0 +1,56 @@
+START hero --cap chrome Mon Nov  9 15:49:37 EST 2026
+/Users/artemis/.openclaw/workspace/projects/record-sconces/render/sconce.py:80: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes = True
+/Users/artemis/.openclaw/workspace/projects/record-sconces/render/sconce.py:423: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes = True
+01:54.798  render           | Saved: '/Users/artemis/.openclaw/workspace/projects/record-sconces/render/sconce_hero_chrome.png'
+BlenderMCP addon registered
+BlenderMCP addon unregistered
+Info: Saved as "sconce_hero_chrome.blend"
+WROTE /Users/artemis/.openclaw/workspace/projects/record-sconces/render/sconce_hero_chrome.png
+Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:51:40)
+
+Blender quit
+END hero --cap chrome Mon Nov  9 15:51:31 EST 2026
+START hero --cap brass Mon Nov  9 15:51:31 EST 2026
+/Users/artemis/.openclaw/workspace/projects/record-sconces/render/sconce.py:80: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes = True
+/Users/artemis/.openclaw/workspace/projects/record-sconces/render/sconce.py:423: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes = True
+01:54.577  render           | Saved: '/Users/artemis/.openclaw/workspace/projects/record-sconces/render/sconce_hero_brass.png'
+BlenderMCP addon registered
+BlenderMCP addon unregistered
+Info: Saved as "sconce_hero_brass.blend"
+WROTE /Users/artemis/.openclaw/workspace/projects/record-sconces/render/sconce_hero_brass.png
+Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:51:40)
+
+Blender quit
+END hero --cap brass Mon Nov  9 15:53:26 EST 2026
+START hero --cap black Mon Nov  9 15:53:26 EST 2026
+/Users/artemis/.openclaw/workspace/projects/record-sconces/render/sconce.py:80: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes = True
+/Users/artemis/.openclaw/workspace/projects/record-sconces/render/sconce.py:423: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes = True
+01:55.946  render           | Saved: '/Users/artemis/.openclaw/workspace/projects/record-sconces/render/sconce_hero_black.png'
+BlenderMCP addon registered
+BlenderMCP addon unregistered
+Info: Saved as "sconce_hero_black.blend"
+WROTE /Users/artemis/.openclaw/workspace/projects/record-sconces/render/sconce_hero_black.png
+Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:51:40)
+
+Blender quit
+END hero --cap black Mon Nov  9 15:55:22 EST 2026
+START exploded --cap chrome Mon Nov  9 15:55:22 EST 2026
+/Users/artemis/.openclaw/workspace/projects/record-sconces/render/sconce.py:80: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes = True
+/Users/artemis/.openclaw/workspace/projects/record-sconces/render/sconce.py:423: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes = True
+00:45.493  render           | Saved: '/Users/artemis/.openclaw/workspace/projects/record-sconces/render/sconce_exploded_chrome.png'
+BlenderMCP addon registered
+BlenderMCP addon unregistered
+Info: Saved as "sconce_exploded_chrome.blend"
+WROTE /Users/artemis/.openclaw/workspace/projects/record-sconces/render/sconce_exploded_chrome.png
+Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:51:40)
+
+Blender quit
+END exploded --cap chrome Mon Nov  9 15:56:08 EST 2026

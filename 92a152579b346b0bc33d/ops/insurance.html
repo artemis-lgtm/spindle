@@ -1,0 +1,75 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Insurance | Spindle</title>
+<style>
+:root{--bg:#f6f2ea;--ink:#1b1916;--mute:#6b645a;--line:#e3dccf;--accent:#b8732e;--panel:#fffdf8}
+@media (prefers-color-scheme:dark){:root{--bg:#121110;--ink:#ece6da;--mute:#a19887;--line:#2c2925;--accent:#e6a456;--panel:#1a1816}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Inter",system-ui,sans-serif}
+main{max-width:880px;margin:0 auto;padding:28px 16px 80px}
+a{color:var(--accent)} .back{font-size:14px;display:inline-block;margin-bottom:18px}
+h1{font-size:28px;line-height:1.2} h2{margin-top:36px;font-size:21px} h3{font-size:17px}
+table{border-collapse:collapse;width:100%;display:block;overflow-x:auto;font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top} th{background:var(--panel)}
+code{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:0 4px;font-size:.9em}
+pre{background:var(--panel);border:1px solid var(--line);padding:12px;overflow-x:auto;border-radius:8px}
+img{max-width:100%}
+</style></head><body><main><a class="back" href="../START-HERE.html">Back to START HERE</a>
+<h1>Insurance</h1>
+<p>Written 2026-11-10. Figures marked estimate are mine, not quotes.</p>
+<h2>What we need</h2>
+<p>Product liability (bodily injury and property damage caused by the product), $1M per occurrence / $2M aggregate. A light fixture, even 12 V, is a fire and fall risk class, so this is the one policy that matters before the first unit ships. General liability usually comes bundled. Bind it the day the first deposit is taken, not the day the first box ships (scope-report.md).</p>
+<h2>Options</h2>
+<table>
+<thead>
+<tr>
+<th>Carrier / route</th>
+<th>What it is</th>
+<th>Price</th>
+<th>Fit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ACT Insurance (artists and crafters program)</td>
+<td>Product + general liability, $1M/$2M, priced on revenue</td>
+<td>$279/yr or $24.25/mo quoted on their site (https://www.actinsurance.com/product-liability-insurance)</td>
+<td>Cheapest start. Check that "electrical lighting" is not excluded from the crafter class; some craft programs exclude electrical products. Ask before binding.</td>
+</tr>
+<tr>
+<td>Next Insurance</td>
+<td>Online GL + product liability for small retailers and makers</td>
+<td>Estimate $400 to $1,200/yr at under $100k revenue (https://www.nextinsurance.com/general-liability-insurance/)</td>
+<td>Fast online quote; asks product type.</td>
+</tr>
+<tr>
+<td>Hiscox</td>
+<td>GL for small businesses, product liability via GL</td>
+<td>Estimate $500 to $1,500/yr (https://www.hiscox.com/small-business-insurance/general-liability-insurance)</td>
+<td>Some manufacturing classes route to a broker.</td>
+</tr>
+<tr>
+<td>The Hartford</td>
+<td>Business owner's policy incl. product liability</td>
+<td>Estimate $600 to $2,000/yr (https://www.thehartford.com/general-liability-insurance)</td>
+<td>Better once there is inventory and a workspace to cover.</td>
+</tr>
+<tr>
+<td>Independent broker (NSI Group already handles Ritz/HI lines)</td>
+<td>Market the risk to several carriers</td>
+<td>Varies</td>
+<td>Use only for the Spindle entity, keep it separate from HI policies.</td>
+</tr>
+</tbody>
+</table>
+<p>build/cost-model.md carries $279 as the year-one line. My estimate for a realistic bound policy once the carrier hears "LED wall light, hand-assembled, in-wall wiring option" is $500 to $1,200 a year at launch volume.</p>
+<h2>Questions to ask every carrier</h2>
+<ol>
+<li>Is a hand-assembled 12 V LED wall light accepted, or excluded as electrical?</li>
+<li>Does the policy cover the in-wall installation the customer performs?</li>
+<li>Products-completed operations included?</li>
+<li>Vendor endorsement available (marketplaces ask for it)?</li>
+<li>Who is the named insured: the entity Austin chooses in ops/entity.md, not HI and not Elbo.</li>
+</ol>
+<h2>Open</h2>
+<ul>
+<li>Austin picks the entity first, then one quote from ACT and one from Next. Estimate 30 minutes online, needs the entity name and EIN.</li>
+</ul></main></body></html>

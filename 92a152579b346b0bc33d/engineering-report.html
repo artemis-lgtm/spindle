@@ -1,0 +1,202 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Record Sconces: engineering report | Spindle</title>
+<style>
+:root{--bg:#f6f2ea;--ink:#1b1916;--mute:#6b645a;--line:#e3dccf;--accent:#b8732e;--panel:#fffdf8}
+@media (prefers-color-scheme:dark){:root{--bg:#121110;--ink:#ece6da;--mute:#a19887;--line:#2c2925;--accent:#e6a456;--panel:#1a1816}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Inter",system-ui,sans-serif}
+main{max-width:880px;margin:0 auto;padding:28px 16px 80px}
+a{color:var(--accent)} .back{font-size:14px;display:inline-block;margin-bottom:18px}
+h1{font-size:28px;line-height:1.2} h2{margin-top:36px;font-size:21px} h3{font-size:17px}
+table{border-collapse:collapse;width:100%;display:block;overflow-x:auto;font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top} th{background:var(--panel)}
+code{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:0 4px;font-size:.9em}
+pre{background:var(--panel);border:1px solid var(--line);padding:12px;overflow-x:auto;border-radius:8px}
+img{max-width:100%}
+</style></head><body><main><a class="back" href="START-HERE.html">Back to START HERE</a>
+<h1>Record Sconces: engineering report</h1>
+<p>Prepared 2026-11-09 for Austin. Research only: nothing bought, nobody contacted, nothing posted. This builds on scope-report.md and takes Austin's 11/9 decisions as fixed: halo backlit wall sconce around a real 12" LP; a light-only kit sold separately for the customer's own record; screw-on mount with a brass-head thumbscrew through the spindle hole into a threaded insert in the backplate; nothing glued to a customer's record; 12V Class 2 plug-in adapter only, no 120V inside our housing. Every number carries a URL or is marked (estimate). Etsy, Amazon and McMaster block the scraper, so those figures come from search snippets and are flagged where they are not confirmed on the page.</p>
+<h2>1. Mount mechanics</h2>
+<p>The hole and the screw. The spindle hole on a 12" LP is 0.286" (7.26mm) (https://allforturntables.com/2023/07/28/vinyl-record-spindle-hole/). A 1/4-20 screw is 0.250" (6.35mm), so it drops through with 0.9mm of radial slop; an M6 is 6.0mm and gives 1.26mm. Either works mechanically. Pick 1/4-20, for three reasons: the E-Z Lok wood insert, the brass thumbscrews, the aluminum standoffs and the decorative brass knobs all exist off the shelf in 1/4-20 from US suppliers at qty-100 pricing (links below), the 45 adapter inserts are made around a quarter-inch spindle (https://www.audio-technica.com/en-us/support/audio-solutions-question-of-the-week-what-do-i-need-to-know-about-45-rpm-records), and a customer who loses the screw can replace it at any hardware store in the US. M6 only wins if the backplate is 3D-printed and we use metric heat-set inserts, and even then 1/4-20 heat-set inserts exist. Do not try to fill the hole exactly: a snug pin would need a 7.2mm turned brass shoulder and would bind on records whose holes have been chewed by spindles for forty years. Let the felt washer and the clamping do the centering.</p>
+<p>The brass cap. A plain knurled brass thumbscrew in 1/4-20 is about 1/2" across the head, which looks like hardware, not jewelry, on a 4" label. Price reference anyway: Albany County Fasteners lists 1/4-20 x 3/8" brass knurled thumb screws at $1.80 each for 1-99 and $1.49 for 100-999 (https://www.albanycountyfasteners.com/1-4-20-brass-knurled-thumb-machine-screws-p/1018-10004.htm); MSC's are $3.69-3.84 each (https://www.mscdirect.com/product/details/50150978). The better-looking part is a decorative solid brass knurled knob, 1/4-20 x 1" stud, which Rockler sells at $7.99 per 4-pack ($2.00 each, $1.80 at 5+ packs) (https://www.rockler.com/decorative-solid-brass-knurled-knob-1-4-x-20-x-1-4-per-pack). Head diameter on that knob is roughly 1" (estimate from the product class; confirm on the page before the 3D model is frozen). A 1" brass dome on a 4" label reads as a turntable spindle clamp, which is exactly the visual we want. For a cheaper cap, decorative brass dome screw caps for mirror fixings run 16-40mm in packs of 10 for about $8 (https://www.etsy.com/market/brass_screw_cap), but those cover a screw rather than being one, so they add a part.</p>
+<p>Threaded insert by backplate material. For MDF or plywood use the E-Z Lok 400-4 brass knife-thread insert, 1/4-20 internal, 0.500" long, 25/64" drill; $1.90 single, $170 per 100 ($1.70 each), $1,500 per 1,000 (https://www.albanycountyfasteners.com/1-4-20-brass-thread-inserts-wood-400-4-p/117012.htm, https://www.ezlok.com/assets/documents/EZ-LOKBrochure_2023.pdf). E-Z Lok's own guidance puts the knife-thread brass series in soft woods, MDF and plywood (https://techtalk.parts-express.com/forum/tech-talk-forum/1381453-threaded-inserts). In 1/2" MDF put a drop of CA or epoxy in the hole before driving the insert; MDF has weak internal bond and an insert that is only threaded in will eventually spin (https://rettekcarbide.com/what-are-the-best-threaded-inserts-for-mdf-and-why/). For a 3D-printed PETG plate use a brass heat-set insert (1/4-20 or M6), which is the standard for PLA/PETG/ABS and keeps the threads reusable (https://www.albanycountyfasteners.com/fasteners-101-threaded-insert-information); per-piece cost in bulk is about $0.20-0.40 (estimate). For a 1/8" aluminum disc there is not enough thickness to tap 1/4-20 reliably (three threads), so rivet a 1/4-20 rivet-nut or press a PEM-style self-clinching nut, or let a female-female aluminum standoff do the job by bolting it through the plate from the back (estimate on cost, about $0.50-1.00 added).</p>
+<p>Standoffs and the halo gap. The sign industry has already run this experiment for us. Halo-lit channel letters stand 1 to 1.5" off the wall, sometimes 2"; shorter is tighter and brighter, longer is softer and wider, and the current practice is close to 1", which spreads light roughly 2-3" beyond the edge (https://crispsign.com/blog/halo-lit-channel-letters, https://www.thesigncenter.biz/blog/custom-backlit-lobby-signs-design-rules-nj). Graphics Pro's channel-letter guide calls 1.5" the standard and warns that too far blurs the halo (https://graphics-pro.com/feature/hello-halo-a-deeper-look-at-halo-lit-channel-letters/). One DIY source says that if the LEDs face the wall from closer than about 1.5" you see individual dots (pixelation) (https://tailormaderooms.com/blogs/modern-farmhouse-wall-decor/how-to-add-led-backlighting-to-your-acrylic-or-metal-sign). Design to a 1" wall gap and put the LEDs on the rim pointing outward rather than straight at the wall, which kills the dot problem at 1" (section 2). The gap is produced not by the center screw but by a 1"-thick hub on the back of the backplate that also carries the keyhole hanger. The center screw's job is only to clamp the record to the front of the backplate.</p>
+<p>The hardware for the record side: a 1" long, 3/8" OD, 6061-T6 aluminum standoff, 1/4-20 female both ends, made in the USA, is $1.88 single, $1.34 at 25, $0.69 at 100, $0.39 at 500 (https://www.aluminumspacers.com/as38-1420-64). Use it only in the "floating record" variant where the record sits forward of the backplate and light leaks around behind it; in the default build the record sits flat on felt pads and no standoff is needed (section 7 gives both dimension sets).</p>
+<p>Washers. Put a self-adhesive felt washer under the brass head so brass never touches the label. Durofelt sells 1/2" OD x 1/4" ID x 1/16" self-adhesive felt washers at $5-7 per 100 and 1" OD x 3/8" ID x 1/8" medium-density felt washers at $8 per pack (https://www.durofelt.com/categories/self-adhesive-felt-washers, https://www.durofelt.com/categories/close-out-self-adhesive-felt-washers). The 1" OD one matches a 1" knob head. A nylon shoulder washer (0.513" OD, 1/4" screw, $17.19 per 100 at US Plastic, https://www.usplastic.com/catalog/item.aspx?itemid=155501) is the alternative if we want the screw shank sleeved inside the spindle hole so vinyl never touches the thread; its 0.375" shoulder length is too long for a 2mm record, so the 0.187" version ($17.44 per 100, https://www.usplastic.com/catalog/item.aspx?itemid=155500) is the one. Felt under the head plus the nylon shoulder is belt and braces; felt alone is enough for the first 100 (estimate).</p>
+<p>Rotation, sag and warp. A 12" LP weighs about 4.9-6.3 oz (139-179g) (https://turntablewave.com/vinyl-records-dimensions-and-size-of-record-cover/); other guides give 120-180g (https://one2eleven.co.uk/vinyl-lp-dimensions/). Hanging 160g on a single center screw against a vertical surface produces a bending moment of effectively zero at the center because the mass is symmetric, so there is no off-center stress to speak of; what a single point does allow is rotation, and PVC creeps slowly under a point load, so a record clamped at the center alone and resting on nothing else will, over months, develop a dish or a slight slump at 6 o'clock. The fix is to support the record's back face at three points on a 5" radius (in the groove area, which the customer never sees from the front) with 1/16" self-adhesive felt pads, and to clamp it to those pads with the thumbscrew. Three pads give a stable plane (a fourth pad would rock on a warped record). Felt-to-vinyl friction under even light thumbscrew torque stops rotation; anyone who wants a different label orientation unscrews, turns, screws. Clear silicone bumpers (100 for $6.51, https://www.ebay.com/itm/128096161974) work too but grip harder and can leave rings on a hot day, so felt is the pick. A record that arrives warped is a record that sits flat against three pads once clamped; the design is actually a mild warp-corrector, which is a line worth using in the kit copy.</p>
+<p>7" singles. A 45 has a 1.5" center hole and weighs about 1.4 oz (40g) (https://vinylai.app/guides/45-vs-33-rpm-explained/, https://turntablewave.com/vinyl-records-dimensions-and-size-of-record-cover/). The standard snap-in plastic 45 adapter is exactly the part we need: 1.5" OD, quarter-inch center, and it stays in the record. Bulk is $36.99 per 250, $79.99 per 500, $131.89 per 1,000 (13-16 cents each) (https://www.ebay.com/itm/314437745370, https://www.ebay.com/itm/314443288025, https://www.ebay.com/itm/314829783072). Ship one in every kit box. The 7" record then hangs on the same 1/4-20 screw; it needs a second set of three felt pads at 2.75" radius because the 5" pads are outside its edge, and it will show the backplate as a visible ring behind it, so the "7-inch look" is either a smaller 6" backplate variant or an honest "the halo ring frames your 45" presentation. Recommend the second for launch, the first as a later SKU.</p>
+<h2>2. Backplate and LED</h2>
+<p>Material options at qty 100, per unit. Birch plywood: Woodpeckers sells 12" x 1/2" Baltic birch circles at $20.30 single with 50% off at 100+ (about $10), and the retail 25-pack is $129.99 ($5.20 each) (https://woodpeckerscrafts.com/products/12-circle-wooden-cutout-1-2-thick, https://woodartsupply.com/products/wood-circles-12-inch-1-2-inch-thick-unfinished-birch-plaques-pack-of-25-wooden-circles-for-crafts-and-blank-sign-rounds-by-woodpeckers); a custom 10.5" diameter would be quoted. MDF: a ProWood 1/2" x 2' x 4' project panel is $14.58 at Home Depot (https://www.homedepot.com/p/ProWood-1-2-in-x-2-ft-x-4-ft-Medium-Density-Fiberboard-Project-Panel-109097/202093821), which yields eight 10.5" discs, $1.82 of material each, plus about $3-5 per disc to have a local CNC shop route them with the center hole and rim rabbet (estimate; 1/2" MDF is a poor laser material, it chars and needs CNC). Finished in matte black paint, MDF is the cheapest and the flattest. Aluminum: a 1/8" 5052 12" disc is $12.50 single on eBay (https://www.ebay.com/itm/192248841244); SendCutSend will laser 5052 .125" to any 10.5" profile with the center hole for roughly $6-9 each at 100 (estimate; their max is 26" x 56" and they advertise bulk discounts to 80%, https://sendcutsend.com/materials/processing-min-max/, https://sendcutsend.com/pricing/), and powder coating flat panels runs $2-5 per square foot in batches (https://performancecoating.com/how-much-does-powder-coating-cost/), so add about $3 per disc (0.6 sq ft) when done in one run. Aluminum is the premium feel and the best heat spreader but needs a rivet-nut for the thread and a separate hub. Powder-coated steel is the same cost class as aluminum and heavier, with no advantage here (estimate). 3D-printed PETG: material at $0.02-0.03 per gram (https://quotruder.com/resources/how-much-does-petg-cost-to-print/), a 10.5" x 1/2" disc with a hollowed back is roughly 250-300g, about $7 in filament plus machine time, and Makelab's real dispatched orders put a palm-sized FDM part at a median $11.39 (https://www.makelab.com/insights/what-3d-printed-parts-actually-cost); the practical problem is that 10.5" (267mm) exceeds a 256mm Bambu bed, so the plate prints in two halves or at 9.8" (estimate). PETG is the right material for the hub (keyhole slot, cord channel and LED rim can all be one print), not for the big disc. Recommendation: MDF or Baltic birch backplate, painted black, with a 3D-printed PETG hub; move to aluminum at the $179 tier if margin allows.</p>
+<p>LED choice. A halo wants a dotless, warm, evenly diffused band. Low-power 2835 at 60 LEDs/m is cheap and cool-running: Ecolocity's Ribbon Star 2835 is 1.46 W/ft, 153 lm/ft warm white, CRI above 90, 8mm wide, cut every 1.97", ETL listed for Class 2, $8.99 per metre or $44.99 per 3m reel (about $2.75/ft) (https://www.ecolocityled.com/product/low-power-2835-warm-strip). COB (chip-on-board) strip is the dotless option: HitLights COB in 2700K, UL listed, 350+ lm/ft, CRI 90+ (https://www.amazon.com/cob-led-strip-light-2700k/s?k=cob+led+strip+light+2700k; UL listing and lumens from the snippet, price not confirmed on page, estimate $20-30 per 16 ft reel). 2700K is the right colour: channel-letter guidance pairs warm Kelvins with warm wall colours and reserves cool white for dark exteriors (https://graphics-pro.com/feature/hello-halo-a-deeper-look-at-halo-lit-channel-letters/). CRI 90+ matters because the glow lands on the customer's wall paint and the record label; CRI 80 strip makes cream walls green. Brightness: the sign trade's recommendation is 75-100 lumens per module for halo letters (same source); a 10.5" backplate's rim is about 33" (2.75 ft), so 2835 low-power gives about 420 lm at 4 W and COB gives about 950 lm at roughly 8-10 W. With a dimmer in line, 2835 low-power is enough for a bedroom sconce and COB is the choice if the hero photo needs a bold halo on a dark wall. Ship COB on the sconce and the kit; the extra $1-2 per unit buys the dotless look that separates us from the "Now Playing" shelves.</p>
+<p>Where the strip goes. Flat strips bend easily in the face direction (around a drum) and badly sideways; general guidance is a 20-25mm minimum radius on the face bend, and COB side-bend minimums are 30-80mm with many strips not meant to side-bend at all (https://www.arraystarled.com/blog/led-strip-bending-radius-prevent-solder-damage.html, https://enoled.com/learning-center/flexible-led-strips/). Wrapping a strip around the rim of a 1/2"-thick disc is a face bend at a 5.25" radius, which every strip tolerates, and an 8mm or 10mm strip sits on a 12.7mm rim with margin. So: mount the strip on the rim, LEDs pointing radially outward, inside a shallow rabbet so the strip edge is flush. The record overhangs the backplate by about 0.7" on every side (12" record on a 10.5" plate), which hides the strip from a viewer standing in front, and the light throws onto the wall and forward into the room as a soft ring. This is the same geometry as a backlit mirror (https://mancaveinsider.com/glossary/backlit-mirror). Face-mounting on the back of the plate pointing at the wall is the alternative, inset 1/2 to 1" from the edge per the sign guides (https://tailormaderooms.com/blogs/modern-farmhouse-wall-decor/how-to-add-led-backlighting-to-your-acrylic-or-metal-sign), but it needs the strip laid as a polygon of straight cuts and jumpers (no side bend) and shows dots at a 1" gap unless COB. Rim mount wins on both counts. Aluminum channel is optional: with the strip on a rim at 1.5-3.5 W/ft there is no thermal need (section 3), and an opaque rim plus overhang already does the diffusing. If we want the strip protected and the glow softer, a 1m U-channel with frosted cover for 8-12mm strip is about $2.50-3.50 per metre in 10-packs (https://www.sunbrightlighting.com/collections/aluminum-channel; Amazon 10-packs listed, price estimate), but a straight extruded channel will not follow a 10.5" circle; a flexible silicone diffuser sleeve is the only channel that will, and it is not worth the complexity for batch one.</p>
+<h2>3. Heat</h2>
+<p>The record is safe by a wide margin, and this section exists so we can say so with numbers. Vinyl's danger zone: collectors and dealers use roughly 130-140°F (55-60°C) as the point where a record softens enough to deform under its own weight (https://vinylai.app/guides/heat-and-sunlight-damage-to-vinyl/); other sources put the PVC compound's glass-transition range at 60-71°C (140-160°F) with chemical change beginning around 57°C (https://allforturntables.com/2023/10/16/does-vinyl-crack-in-heat/, https://1byoneaudio.com/blogs/guide/how-to-store-vinyl-records-does-humidity-really-warp-vinyl-what-actually-damages-records); pure PVC's glass transition is 82°C (https://en.wikipedia.org/wiki/Polyvinyl_chloride). Gradual warping is reported from prolonged exposure in the 30-38°C range when records are stacked or leaning under load (same vinylai source), which is why the three-pad flat clamp matters more than any LED number.</p>
+<p>What the LED produces: 2835 low-power strip at 1.46 W/ft over 2.75 ft is 4 W total; COB at about 3-3.5 W/ft is 8-10 W. The thermal rule of thumb from the trade is that low-power strip on an open surface rarely needs a channel and that only strip above about 6 W/ft on a closed surface must have aluminum and air (https://unitoplighting.com/blog/led-strip-thermal-management/). 2835 strips are rated to an ambient of 45°C with a 60°C maximum (https://www.vst-lighting.com/led-strip-lights-overheating-professional-troubleshooting-guide/); COB strips run 45-65°C at the surface when mounted on aluminum in rooms under 30°C and manufacturers want the substrate under 60°C (https://www.ledlighting-supplier.com/what-are-the-acceptable-operating-temperatures-for-a-cob-strip/, https://www.led-neonflex.com/news/how-heat-affects-cob-led-strip-lights-and-best-cooling-practices.html). Quality strips with 2 oz copper on an open surface show less than a 20°C rise over ambient (https://hitlights.com/blogs/premium-led-strip-lighting/best-way-to-reduce-heat-on-led-strip-lights). So the strip surface itself is in the 40-60°C band at worst, which is at or above the vinyl softening threshold, which is exactly why the strip must not touch the record and must not sit under it.</p>
+<p>In this design it does neither. The strip is on the rim of the backplate, radiating outward into free air, separated from the nearest vinyl (the record's overhanging edge, 0.7" outboard and about 1/8" forward) by air, and separated from the record's back face by 1/2" of MDF or plywood, which is an insulator. Four to ten watts spread over a 33" ring in a room has no path to raise the record above a few degrees over ambient. The one real heat risk is the customer hanging the sconce over a radiator or in a sunny window, which heats the record far more than our LEDs ever will, and the safety card should say so. To be certain rather than confident, the first prototype gets a 2-hour soak with a $20 IR thermometer at three points (strip surface, record back face at the pad radius, record label), and we print the numbers on the product page. Target: record face under 35°C in a 24°C room (estimate; this is the acceptance criterion, not a measurement yet).</p>
+<h2>4. Wall mounting and cord</h2>
+<p>Hanger. A single heavy-gauge keyhole plate on the hub is the simplest and self-levelling, and it is what Art Vinyl's record frames use: one screw through a central slot that allows vertical adjustment and keeps the frame straight (https://artvinyl.com/product/art-vinyl-play-and-display-12-record-frame-black/). Hardwick &amp; Sons makes zinc-plated steel keyhole plates in the US: heavy gauge 1/16" at $0.45 each or $40.50 per 100, thin 1/32" at $0.29 or $26.10 per 100 (https://hardwickandsons.com/products/steel-keyhole-hanger-plate, https://hardwickandsons.com/products/thin-steel-keyhole-hanger-plate). Use the heavy one, recessed into the hub so the plate sits flush, with a 1-1/4" #8 screw into drywall anchor or stud. A French cleat is overkill for 1.5 lb and prevents the fine rotation that lets the customer true the record. Two keyholes 4" apart would stop rotation but doubles the chance of a crooked hang; a single keyhole plus the three felt pads' friction is the right call for a sconce that is meant to rotate when you swap the record anyway. Add a strip of clear silicone bumper at the hub's 6 o'clock to keep the hub from marking the wall (https://www.ebay.com/itm/128096161974).</p>
+<p>Cord. The 12V adapter's DC lead runs from the hub down to the outlet; a 6 ft lead reaches a baseboard outlet from a 60" sconce height in almost every room. Surface run is the default and the only one we ship for: a paintable cord cover such as Legrand CordMate 5 ft channel at $9.58 or the 9 ft kit at $15.54 (https://www.homedepot.com/p/Legrand-Wiremold-CordMate-Cord-Cover-9-ft-Kit-Cord-Hider-for-Home-or-Office-Holds-1-Cable-Ivory-C100/100077640), or generic 157" paintable raceway kits at $14.98 (https://www.walmart.com/ip/Delamu-Cord-Cover-Raceway-Kit-157-Cable-Management-Channel-Paintable-Concealer-System-Covers-Cable-Wires-Hiding-Wall-Mount-TV-Powers-Cords-In-Home-Of/536922716). Offer that as a $15 add-on or include a 5 ft channel in the box. For an in-wall run the rule is simple and we should print it: only the low-voltage DC side may go inside the wall, and only in cable listed CL2 or better under NEC Article 725 (https://silverfoxlabeling.com/blogs/news-us/what-is-a-cl2-cable-an-installers-guide-to-nec-cable-ratings, https://www.ecmweb.com/national-electrical-code/code-basics/article/20901694/article-725-class-2-and-3-circuits); Diode LED sells in-wall rated two-conductor 18 AWG for exactly this (https://www.diodeled.com/in-wall-rated-two-conductor-wire.html). The adapter itself never goes in the wall. A customer who wants no visible cord at all buys a PowerBridge-style recessed in-wall power kit ($49.95-69.95, https://www.homedepot.com/p/PowerBridge-In-Wall-Power-Connection-Kit-with-Single-Power-and-Cable-Management-for-Wall-Mounted-HDTV-ONE-CK/204820257, https://www.powerbridgesolution.com/product/two-pro) behind the sconce so the adapter plugs in behind the record. We should link to it, not sell it.</p>
+<p>Power supply and dimmer. One part does both: a UL-listed Class 2 12V 2A (24W) plug-in adapter with an inline rotary or slide dimmer and a 5.5 x 2.1mm barrel; GXILEE's is the archetype on Amazon (https://www.amazon.com/Supply-GXILEE-Adapter-Transformer-Connector/dp/B09J4KCY4T) and the same class sells at $20.57-24.44 on eBay (https://www.ebay.com/itm/206445007463) and $44.57 at Home Depot (https://www.homedepot.com/p/12v-2A-Led-Power-Supply-w-Dimmer-Switch-100-240V-Input-6-ft-Power-Cord-Plug-DC-5-5mm-x-2-1-mm-Connector-27ISA11378/337231624). LED Updates sells a UL-listed 12V 2A 24W adapter with an on/off switch from $11.99 (https://ledupdates.com/products/ul-listed-12v-2a-24w-power-supply-driver-with-on-off-switch), and a separate inline PWM 12V dimmer with barrel jacks is $3.99-7.99 (https://www.ecolocityled.com/product/led_pwm_dimmer_inline_12V, https://inshareplus.com/products/inshareplus-mini-inline-led-dimmer-switch-dc-12v-2a-pwm-with-dc-jack-5-5-2-1-connector-for-single-color-3528-5050-led-strip-light1pack-black). At qty 100 budget $8-9 for adapter plus dimmer (estimate; direct from the same brands' wholesale storefronts). The barrel jack sits in the hub so the customer can unplug the sconce from the cord to take it down.</p>
+<p>Battery or USB-C version. Two honest options. The cheap one: build the kit around 5V USB COB strip instead of 12V (Gingsow USB 5V COB 1m 2700K dimmable is about 5 W, BTF-Lighting's FCOB 5V 2700K CRI 90+ is similar, https://us.amazon.com/dp/B0CZHWGYDH, https://www.amazon.com/BTF-LIGHTING-Powered-320LEDs-Flexible-Backlight/dp/B0F7HK7B28) with a USB-C socket on the hub; the customer plugs in any phone charger or velcroes a power bank behind the record, and a 10,000 mAh bank (about 37 Wh) runs 5 W for roughly 7 hours (estimate, arithmetic). The nicer one, later: a built-in cell like the rechargeable picture lights use, 4,400-5,400 mAh for 12-20 hours per charge on USB-C (https://luwinohome.com/products/cordless-wall-art-light, https://www.photoworkout.com/best-battery-operated-picture-lights/); that adds a lithium cell, a charge board and shipping restrictions, so it is a batch-two SKU, not batch one. For batch one, ship 12V plug-in and list "USB-C version coming" on the page to measure demand.</p>
+<h2>5. What similar products do</h2>
+<p>Real-vinyl lighting on Etsy is upcycled and glued: stacked-LP pendants on a wooden arm with an inline switch at about CA$146 (https://www.etsy.com/ca/listing/583317430/wall-light-upcycled-12lp-vinyl-record), single-record pendants at $22-30 and a 5-tier record lamp at $80 (https://www.etsy.com/market/vinyl_record_lamp), a "Vinyl Record LED Lamp" with engraved wooden base at $134.50 on sale (https://www.etsy.com/market/backlit_sconce), and a wireless rechargeable LED record-and-sleeve display with remote at $75 (same page). Nobody in that camp has a non-destructive mount; records are heat-formed, drilled or glued, so they are decor made from a record rather than a fixture that holds yours.</p>
+<p>Halo sconces without a record are the price ceiling we want to sit under: a "Modern Brass Halo Sconce, Backlit Round Disc Wall Light" at $164.49 on sale from $328.97, and a "Wooden LED Wall Sconce, Halo Layered Round Light, Dimmable Backlit, Ash Wood" at $269.10 (https://www.etsy.com/market/backlit_sconce). These are plain discs with an LED ring behind them; our product is that object with a record as the disc, at $129, which is a straightforward value story. At the designer end, Diesel Living with Lodes' "Vinyl" glass wall light is $740 (https://citylightssf.com/products/vinyl-wall-light-by-diesel-living-with-lodes).</p>
+<p>"Now Playing" display stands are the mass-market competitor for the light-only kit: a wooden base, two acrylic sheets, a USB LED bar and a 16-colour remote, with the record standing in a slot rather than mounted; $22.75-65.99 depending on storefront (https://www.amazon.com/Lampeez-Playing-Spinning-Acrylic-Display/dp/B0BZTS3332, https://www.billboard.com/culture/product-recommendations/light-up-vinyl-record-stand-now-playing-sign-buy-online-1235950991/, https://www.etsy.com/market/now_playing_led). They light the acrylic sign, not the record, and they read as a gadget. Art Vinyl's Play &amp; Display flip frame ($45-52 US) is the best-engineered record holder on the market: four sprung fingers on the back plate grip any sleeve thickness, the back plate hangs on one screw through a central slot, and the display changes in seconds without taking the frame down (https://artvinyl.com/product/art-vinyl-play-and-display-12-record-frame-black/, https://elusivedisc.com/art-vinyl-play-and-display-lp-frame-single-pack-black/). The CLRCASE acrylic case uses a removable spindle adaptor to float a bare record, which is the closest thing to our mount concept, and a roundup of backlit record frames points out that true backlighting through vinyl is impossible, so every product does edge glow, a halo behind the frame, or a front wash (https://mancaveinsider.com/decor-accessories/best-led-backlit-vinyl-frames-to-showcase-your-records). Nanoleaf Shapes mount on adhesive tape with optional screw plates ($3.99-9.99 per 10 plates) and Govee Glide Hexa are tape-only (https://nanoleaf.me/en-US/products/nanoleaf-shapes/mini-mounting-plates-10-pack/, https://www.pcworld.com/article/700649/govee-glide-hexa-light-panels-review.html); at 1.5 lb with a keyhole we are more secure than either, and a screw-hung sconce feels like lighting rather than a sticker.</p>
+<p>The lesson across all of them: the only mounts that treat the record as the customer's property are the frame (sprung fingers) and the acrylic case (spindle adaptor); neither lights the record as a halo fixture; and nobody sells a kit that turns the customer's own LP into a sconce. That gap is the kit.</p>
+<h2>6. BOM, assembly, dimensions</h2>
+<p>Costs are per unit, parts only, excluding the record, labour and shipping. Qty-1 is retail single-unit buying; qty-100 is the tier price where published, otherwise (estimate).</p>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Spec</th>
+<th>Supplier</th>
+<th>Qty 1</th>
+<th>Qty 100</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Backplate</td>
+<td>10.5" dia x 1/2" MDF, CNC-cut, center 25/64" hole, rim rabbet, painted matte black</td>
+<td>Home Depot ProWood panel $14.58 (8 discs) + local CNC (https://www.homedepot.com/p/ProWood-1-2-in-x-2-ft-x-4-ft-Medium-Density-Fiberboard-Project-Panel-109097/202093821)</td>
+<td>$6.00 (est.)</td>
+<td>$4.50 (est.)</td>
+</tr>
+<tr>
+<td>Backplate, alt</td>
+<td>12" x 1/2" Baltic birch circle</td>
+<td>Woodpeckers (https://woodpeckerscrafts.com/products/12-circle-wooden-cutout-1-2-thick; 25-pack https://woodartsupply.com/products/wood-circles-12-inch-1-2-inch-thick-unfinished-birch-plaques-pack-of-25-wooden-circles-for-crafts-and-blank-sign-rounds-by-woodpeckers)</td>
+<td>$20.30</td>
+<td>$5.20-10.00</td>
+</tr>
+<tr>
+<td>Hub</td>
+<td>5" dia x 1" PETG print, keyhole recess, cord channel, barrel-jack pocket</td>
+<td>In-house or print farm (https://quotruder.com/resources/how-much-does-petg-cost-to-print/)</td>
+<td>$6.00 (est.)</td>
+<td>$3.00 (est.)</td>
+</tr>
+<tr>
+<td>Threaded insert</td>
+<td>E-Z Lok 400-4 brass, 1/4-20, 0.5" long, 25/64" drill</td>
+<td>Albany County Fasteners (https://www.albanycountyfasteners.com/1-4-20-brass-thread-inserts-wood-400-4-p/117012.htm)</td>
+<td>$1.90</td>
+<td>$1.70</td>
+</tr>
+<tr>
+<td>Brass cap screw</td>
+<td>Decorative solid brass knurled knob, 1/4-20 x 1"</td>
+<td>Rockler (https://www.rockler.com/decorative-solid-brass-knurled-knob-1-4-x-20-x-1-4-per-pack)</td>
+<td>$2.00</td>
+<td>$1.80</td>
+</tr>
+<tr>
+<td>Felt washer</td>
+<td>1" OD x 3/8" ID x 1/8" self-adhesive</td>
+<td>Durofelt (https://www.durofelt.com/categories/self-adhesive-felt-washers)</td>
+<td>$0.30 (est.)</td>
+<td>$0.15 (est.)</td>
+</tr>
+<tr>
+<td>Felt pads x6</td>
+<td>1/2" OD x 1/16" self-adhesive (3 at 5" radius, 3 at 2.75")</td>
+<td>Durofelt (https://www.durofelt.com/categories/close-out-self-adhesive-felt-washers)</td>
+<td>$0.42</td>
+<td>$0.30</td>
+</tr>
+<tr>
+<td>45 adapter</td>
+<td>Snap-in 1.5" plastic</td>
+<td>eBay bulk (https://www.ebay.com/itm/314443288025)</td>
+<td>$0.50 (est.)</td>
+<td>$0.16</td>
+</tr>
+<tr>
+<td>LED strip</td>
+<td>12V COB 2700K CRI 90+, ~3 ft</td>
+<td>HitLights or equivalent, UL (https://www.amazon.com/cob-led-strip-light-2700k/s?k=cob+led+strip+light+2700k)</td>
+<td>$5.00 (est.)</td>
+<td>$2.50 (est.)</td>
+</tr>
+<tr>
+<td>LED strip, alt</td>
+<td>12V 2835 low-power, 153 lm/ft, 1.46 W/ft, ETL, 1m</td>
+<td>Ecolocity (https://www.ecolocityled.com/product/low-power-2835-warm-strip)</td>
+<td>$8.99</td>
+<td>$2.75</td>
+</tr>
+<tr>
+<td>Power supply + dimmer</td>
+<td>UL Class 2 12V 2A, inline dimmer, 6 ft, 5.5x2.1 barrel</td>
+<td>GXILEE / LED Updates (https://www.amazon.com/Supply-GXILEE-Adapter-Transformer-Connector/dp/B09J4KCY4T, https://ledupdates.com/products/ul-listed-12v-2a-24w-power-supply-driver-with-on-off-switch)</td>
+<td>$20.00</td>
+<td>$8.50 (est.)</td>
+</tr>
+<tr>
+<td>Barrel jack, panel mount</td>
+<td>5.5x2.1mm female, in hub</td>
+<td>generic (est.)</td>
+<td>$0.80</td>
+<td>$0.35</td>
+</tr>
+<tr>
+<td>Keyhole hanger</td>
+<td>Heavy-gauge zinc steel</td>
+<td>Hardwick &amp; Sons (https://hardwickandsons.com/products/steel-keyhole-hanger-plate)</td>
+<td>$0.45</td>
+<td>$0.41</td>
+</tr>
+<tr>
+<td>Wall screw + anchor</td>
+<td>#8 x 1-1/4" + drywall anchor</td>
+<td>hardware store (est.)</td>
+<td>$0.30</td>
+<td>$0.15</td>
+</tr>
+<tr>
+<td>Standoff (floating variant only)</td>
+<td>3/8" OD x 1" 6061 aluminum, 1/4-20 F-F</td>
+<td>aluminumspacers.com (https://www.aluminumspacers.com/as38-1420-64)</td>
+<td>$1.88</td>
+<td>$0.69</td>
+</tr>
+<tr>
+<td>Silicone bumpers x2</td>
+<td>Clear, self-adhesive, on hub</td>
+<td>eBay (https://www.ebay.com/itm/128096161974)</td>
+<td>$0.13</td>
+<td>$0.13</td>
+</tr>
+<tr>
+<td>Cord cover (optional add-on)</td>
+<td>CordMate 5 ft paintable channel</td>
+<td>Home Depot (https://www.homedepot.com/p/Legrand-Wiremold-CordMate-Cord-Cover-9-ft-Kit-Cord-Hider-for-Home-or-Office-Holds-1-Cable-Ivory-C100/100077640)</td>
+<td>$9.58</td>
+<td>$6.00 (est.)</td>
+</tr>
+<tr>
+<td>Box + foam</td>
+<td>13x13x3 double-wall</td>
+<td>Uline/Amazon (est., from scope report)</td>
+<td>$5.00</td>
+<td>$3.50</td>
+</tr>
+<tr>
+<td><strong>Total, default build (MDF, COB, no standoff, no cord cover)</strong></td>
+<td></td>
+<td></td>
+<td><strong>about $49</strong></td>
+<td><strong>about $27</strong></td>
+</tr>
+<tr>
+<td><strong>Kit only (identical parts list, no record)</strong></td>
+<td></td>
+<td></td>
+<td><strong>about $49</strong></td>
+<td><strong>about $27</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The kit and the sconce share an identical parts list; the sconce adds the record ($0.50-40 per scope-report.md section 2) and ten more minutes of fitting. The qty-100 total lands a few dollars above the $15-22 in the scope report because this BOM carries the brass knob, the insert, the hub and COB instead of 2835; dropping to 2835 and the plain thumbscrew gets back to about $22. At $129 (sconce) and $79 (kit) the contribution after a $14 ship and 3% processing is roughly $84 and $34 respectively before ads, so the kit needs either a $89-99 price or the 2835/thumbscrew spec to clear ads at the $39 median CPA cited in the scope report.</p>
+<p>Assembly sequence, about 20 minutes per unit once jigged. 1. Cut and sand the backplate; drill the 25/64" center hole and the rim rabbet; paint matte black, two coats. 2. Wet the center hole with thin CA, drive the E-Z Lok insert flush with the front face using the hex driver. 3. Apply the six felt pads using a printed template (three at 5.0" radius, three at 2.75", 120° apart, one of each set at 12 o'clock). 4. Print or receive the hub; press the keyhole plate into its recess and secure with two #4 screws; press the barrel jack into its pocket. 5. Glue the hub to the back center of the backplate (wood glue on MDF, or two #8 screws from the back) with the keyhole at 12 o'clock and the cord channel at 6 o'clock; let it cure flat. 6. Starting at 6 o'clock, peel and press the COB strip into the rim rabbet, LEDs outward, working around the circumference; cut at the last cut mark; solder the two leads, route them through the rim notch to the hub and to the barrel jack; hot-glue the solder joint. 7. Plug in the dimmer adapter, verify the halo, run the 2-hour thermal soak on the first ten units and log temperatures. 8. For the sconce: set the record on the pads, drop the felt-washered brass knob through the spindle hole and tighten to finger-snug; check it does not rotate under a firm push. 9. Pack with the knob in a small bag taped to the hub, the 45 adapter, the adapter and dimmer, the wall screw and anchor, and the one-page safety and hanging card; record in the sconce box sits in an inner sleeve against the backplate.</p>
+<p>Dimensions for the 3D modeller. Backplate: 10.50" (266.7mm) diameter, 0.50" (12.7mm) thick; center hole 25/64" (9.9mm) through, for the E-Z Lok 400-4 insert, which is 0.50" long, so it fills the full thickness; rim rabbet for the strip 0.40" (10.2mm) wide by 0.06" (1.5mm) deep, centred on the rim, with a 0.25" wide lead notch at 6 o'clock running to the back face; six felt-pad targets 0.50" diameter at radius 5.00" (127mm) and 2.75" (70mm), one each at 12 o'clock and the rest at 120°. The record is 11.9-12.0" in diameter, so overhang is about 0.70" all round. Hub: 5.00" (127mm) diameter, 1.00" (25.4mm) thick, which sets the wall gap at 1.00"; keyhole recess at 12 o'clock sized to the Hardwick heavy plate (about 1-3/4" x 5/8" x 1/16" (estimate from Woodpeckers' comparable plate at https://www.walmart.com/ip/Keyhole-Hangers-Single-Hole-Hanging-Plates-Pack-of-100-by-Woodpeckers/793870845), confirm against the Hardwick drawing); cord channel 0.375" wide x 0.25" deep from the barrel-jack pocket to the 6 o'clock edge; barrel-jack pocket 0.32" (8mm) through-hole at the bottom edge of the hub with a flat for the jack's nut; two 0.5" bumper targets at 5 and 7 o'clock. Brass cap: head 1.00" (25.4mm) diameter, about 0.35" tall, 1/4-20 x 1.00" stud; clamp stack in the default build is record (0.06-0.08", 1.5-2.0mm) plus felt washer (0.125") plus pads (0.0625"), about 0.27" total, so roughly 0.73" of the 1.00" stud passes below the record face: 0.50" through the insert and about 0.23" protruding behind the plate, which is why the hub needs a 0.30" deep clearance pocket behind the insert. LED inset: strip centreline on the rim at 0.25" from the front face (centred on the 0.5" rim). Floating variant: insert the 1.00" x 3/8" OD standoff between plate and record using a 1/4-20 x 1/2" set screw into the insert, which moves the record 1.00" forward of the plate, removes the felt pads from play, and shortens the brass stud requirement to 0.50" into the standoff; in this variant the wall gap and the record gap are both 1.00" and the rim light leaks around behind the record for a double halo. Build the default first; model the floating variant as a configuration, not a second part.</p></main></body></html>

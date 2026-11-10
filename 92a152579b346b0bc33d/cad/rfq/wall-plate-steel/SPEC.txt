@@ -1,0 +1,17 @@
+RFQ: laser-cut + formed 14 ga steel mounting plate with 3 PEM studs (SendCutSend / OSH Cut style order)
+Part: RS-WP-01. Round plate D 101.6 (4.00 in) with one 8 mm wide tab bent up 90 deg.
+Material: mild steel CRS 14 ga (0.0747 in / 1.90 mm). Alt quote: 304 stainless 14 ga.
+Quantity: 10 samples; also quote 100 and 250.
+Cut: centre slot 30 x 37; 4 arc slots 4.8 wide (+/-10 deg) on D 83.3 (at 90/270 deg) and D 88.9 (at 0/180 deg);
+ 3 holes D 4.22 on R 33 at 75/195/315 deg for PEM studs; 1 hole D 3.4 in the tab.
+Bend: one 90 deg bend UP (tab stands on the same side as the stud threads), inside radius 1.9 (1t), tab height 12.0
+ from the wall face. Flat pattern supplied (K 0.44, BA 4.30) but use your own K if you prefer; the formed STEP is the master.
+Hardware: 3x PEM self-clinching studs FH-832-10 (8-32 x 5/8 in), pressed from the plain (wall) face so the head is flush
+ on the wall side and the threads stand on the tab side. Please confirm the D 4.22 clinch hole against PEM bulletin FH
+ for 0.075 in sheet and adjust if needed.
+Finish: zinc plate clear (or black zinc); powder coat black acceptable if the studs are masked.
+Deburr: all edges; the plate sits against drywall.
+Ship to: Florida, USA. State lead time. DXF is mm.
+
+Files in this folder: RS-WP-01.step, RS-WP-01_flat.dxf, RS-WP-01.pdf
+Contact: (fill in before sending; nothing has been sent)

@@ -1,0 +1,772 @@
+{
+  "spindle 011": {
+    "query": "WM:spindle AND IC:011",
+    "error": "TimeoutError: page.waitForFunction: Timeout 90000ms exceeded."
+  },
+  "spindle live all": {
+    "query": "WM:spindle AND LD:true",
+    "total": "44",
+    "shown": 44,
+    "cards": [
+      {
+        "mark": "SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 009: Downloadable operations management software.; IC 042:...",
+        "cls": "009, 042",
+        "serial": "98560046",
+        "owner": "Dober Chemical Corp. (CORPORATION; Illinois, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 009: Attachment for cameras and microscopes for capturing or...",
+        "cls": "009",
+        "serial": "87667533",
+        "owner": "DOUBLE HELIX OPTICS, INC. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 029: Preserved, frozen, dried and cooked fruits and vegetables;...",
+        "cls": "029",
+        "serial": "99054381",
+        "owner": "Samyang Roundsquare Inc. (CORPORATION; Korea, Republic of)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 030: Processed cereals; Almond paste; Instant noodles; Ramen; Dried...",
+        "cls": "030",
+        "serial": "99054387",
+        "owner": "Samyang Roundsquare Inc. (CORPORATION; Korea, Republic of)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Employment hiring, recruiting, placement, staffing and career...",
+        "cls": "035",
+        "serial": "98082314",
+        "owner": "TTF Holdings, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 041: Dance schools; Dance events; Dance instruction; Dance...",
+        "cls": "041",
+        "serial": "90330360",
+        "owner": "Spindle Live LLC (LIMITED LIABILITY COMPANY; NEW YORK, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 032: Dried hops for brewing beer; Protein-enriched sports...",
+        "cls": "032",
+        "serial": "99054392",
+        "owner": "Samyang Roundsquare Inc. (CORPORATION; Korea, Republic of)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 005: medicinal healthcare preparations for supporting nutritional...",
+        "cls": "005",
+        "serial": "99054373",
+        "owner": "Samyang Roundsquare Inc. (CORPORATION; Korea, Republic of)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "LIVEPENDING",
+        "goods": "IC 005: Herbicides for agricultural use; Insecticides for agricultural...",
+        "cls": "005",
+        "serial": "99845848",
+        "owner": "Winfield Solutions, LLC (LIMITED LIABILITY COMPANY; Delaware, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 009: Downloadable operations management software.; IC 042:...",
+        "cls": "009, 042",
+        "serial": "98560049",
+        "owner": "Dober Chemical Corp. (CORPORATION; Illinois, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 020: Beds, mattresses, * and * pillows [ and bolsters ].",
+        "cls": "020",
+        "serial": "87823987",
+        "owner": "MIAMI LABS, INC. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 009: Computer software platforms for publishing e-books.; IC 041: [...",
+        "cls": "009, 041",
+        "serial": "86125733",
+        "owner": "iPortfolio Inc. (CORPORATION; REPUBLIC OF KOREA)"
+      },
+      {
+        "mark": "SPINDLE DYNAMICS",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 012: MOTOR VEHICLE AND TRAILER SPINDLES.",
+        "cls": "012",
+        "serial": "73777709",
+        "owner": "WEST END MACHINE & WELDING COMPANY (CORPORATION; VIRGINIA, USA)"
+      },
+      {
+        "mark": "SPINDLE-LOK",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 009: AUTOMOTIVE WHEEL BALANCING MACHINES FOR LAND VEHICLES.",
+        "cls": "009",
+        "serial": "78827102",
+        "owner": "Hunter Engineering Company (CORPORATION; MISSOURI, USA)"
+      },
+      {
+        "mark": "SPINDLE & STONES",
+        "status": "LIVEPENDING",
+        "goods": "IC 009: Downloadable mobile applications using artificial intelligence...",
+        "cls": "009, 042",
+        "serial": "99773430",
+        "owner": "bethan Nicole mcintyre (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "SPINDLE KIN",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 009: Musical sound recordings; Musical video recordings; Audio and...",
+        "cls": "009",
+        "serial": "88725170",
+        "owner": "Spindle Kin, a limited liability companyof Iowa (LIMITED LIABILITY COMPANY; IOWA, USA)"
+      },
+      {
+        "mark": "SPINDLE SOURCE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 012: Suspension shock absorbers for vehicles; Suspension systems...",
+        "cls": "012",
+        "serial": "88692346",
+        "owner": "TREKLINE MOTORSPORTS, INC. (CORPORATION; TENNESSEE, USA)"
+      },
+      {
+        "mark": "SPINDLE SQUARE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 009: Calibration devices, namely, calibration device for manual and...",
+        "cls": "009",
+        "serial": "77760450",
+        "owner": "Allied Manufacturing Technologies, Inc. (CORPORATION; NORTH CAROLINA, USA)"
+      },
+      {
+        "mark": "S SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 009: Downloadable operations management software.; IC 042:...",
+        "cls": "009, 042",
+        "serial": "99210161",
+        "owner": "Dober Chemical Corp. (CORPORATION; Illinois, USA)"
+      },
+      {
+        "mark": "SPINDLE MASTERS",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 007: Spindles for machine tools, especially spindle motors, milling...",
+        "cls": "007, 037",
+        "serial": "79410012",
+        "owner": "Hugo Reckerth GmbH (GESELLSCHAFT MIT BESCHRÄNKTER HAFTUNG (GMBH); GERMANY)"
+      },
+      {
+        "mark": "SYNCHRO SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 007: power operated spindles for saws.",
+        "cls": "007",
+        "serial": "75204038",
+        "owner": "DISCO CORPORATION (CORPORATION; JAPAN)"
+      },
+      {
+        "mark": "NEWTON'S SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 028: Spinning fidget toys.",
+        "cls": "028",
+        "serial": "88546381",
+        "owner": "Safety Nailer LLC (LIMITED LIABILITY COMPANY; VIRGINIA, USA)"
+      },
+      {
+        "mark": "SPINDLE DOCTORS",
+        "status": "LIVEPENDING",
+        "goods": "IC 012: Jig for semi-trailer brake spindle repair, namely, jigs for...",
+        "cls": "012",
+        "serial": "99738998",
+        "owner": "Erin Turner (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "SPINDLE & OAK",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 037: Building construction, remodeling and repair.",
+        "cls": "037",
+        "serial": "98282749",
+        "owner": "Spindle & Oak, LLC (LIMITED LIABILITY COMPANY; GEORGIA, USA)"
+      },
+      {
+        "mark": "SPINDLE ROBOTICS",
+        "status": "LIVEPENDING",
+        "goods": "IC 007: Commercial laundry robots with artificial intelligence;...",
+        "cls": "007, 009",
+        "serial": "99126757",
+        "owner": "Dober Chemical Corp. (CORPORATION; Illinois, USA)"
+      },
+      {
+        "mark": "SPINDLE GARD",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 003: Cleaner for use on cotton picker spindles.",
+        "cls": "003",
+        "serial": "86605763",
+        "owner": "Martin Operating Partnership L.P. (PARTNERSHIP; DELAWARE, USA)"
+      },
+      {
+        "mark": "SPINDLE GARD",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 004: Lubricating greases for cotton picker spindles.",
+        "cls": "004",
+        "serial": "86979797",
+        "owner": "Martin Operating Partnership L.P. (PARTNERSHIP; DELAWARE, USA)"
+      },
+      {
+        "mark": "SPINDLE STOP",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 007: Power tools, namely, wood routers.",
+        "cls": "007",
+        "serial": "97757935",
+        "owner": "Nanjing Chervon Industry Co., Ltd. (limited company (ltd.); CHINA)"
+      },
+      {
+        "mark": "SPINDLE ERROR ANALYZER",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 009: Computer systems comprising computer hardware and software for...",
+        "cls": "009",
+        "serial": "86107718",
+        "owner": "AMPHENOL CABLE AND INTERCONNECT TECHNOLOGIES, INC. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "THE BLOOMIN' SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Retail store services featuring yarns, knitting needles,...",
+        "cls": "035",
+        "serial": "97756986",
+        "owner": "The Knitted Robin LLC (LIMITED LIABILITY COMPANY; ILLINOIS, USA)"
+      },
+      {
+        "mark": "SPINDLE MASSAGE WELLNESS",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 044: Massage therapy services.",
+        "cls": "044",
+        "serial": "87698090",
+        "owner": "Spindle Massage and Wellness, LLC (LIMITED LIABILITY COMPANY; COLORADO, USA)"
+      },
+      {
+        "mark": "THE BLOOMIN' SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 023: Yarn.",
+        "cls": "023",
+        "serial": "97757045",
+        "owner": "The Knitted Robin LLC (LIMITED LIABILITY COMPANY; ILLINOIS, USA)"
+      },
+      {
+        "mark": "WALKER EDISON SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 020: furniture.",
+        "cls": "020",
+        "serial": "98500284",
+        "owner": "TWIN STAR INTERNATIONAL, INC. (CORPORATION; FLORIDA, USA)"
+      },
+      {
+        "mark": "THE SPINDLE FAMILY",
+        "status": "LIVEPENDING",
+        "goods": "IC 041: Online publication of blogs.",
+        "cls": "041",
+        "serial": "50167680",
+        "owner": "Tiffany Owens (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "AIR POWER SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 007: MACHINE TOOL HOLDERS.",
+        "cls": "007",
+        "serial": "78845483",
+        "owner": "BIG DAISHOWA CO., LTD. (CORPORATION; JAPAN)"
+      },
+      {
+        "mark": "SPINDLE REBUILDING SPECIALISTS",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 037: Repair and rebuilding services for spindles used in the...",
+        "cls": "037",
+        "serial": "76139783",
+        "owner": "Northland Tool & Electronics, Inc. (CORPORATION; NEW HAMPSHIRE, USA)"
+      },
+      {
+        "mark": "THE BLOOMIN' SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 041: Education services, namely, providing classes and workshops in...",
+        "cls": "041",
+        "serial": "97757020",
+        "owner": "The Knitted Robin LLC (LIMITED LIABILITY COMPANY; ILLINOIS, USA)"
+      },
+      {
+        "mark": "MR. CHARLIE'S SPINDLE BRITE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 003: Cotton Picker Spindle Cleaner.",
+        "cls": "003",
+        "serial": "76632078",
+        "owner": "CHAMPANE, INC. (CORPORATION; GEORGIA, USA)"
+      },
+      {
+        "mark": "AXLE SPINDLE AMERICAN INGENUITY",
+        "status": "LIVEPENDING",
+        "goods": "IC 012: Structural parts for trucks.; IC 035: Wholesale...",
+        "cls": "012, 035",
+        "serial": "50125330",
+        "owner": "AXLE SPINDLE INC. (CORPORATION; New York, USA)"
+      },
+      {
+        "mark": "SAVINGS UNDER THE SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 007: machine tools for clamping, mounting and fixturing workpieces...",
+        "cls": "007",
+        "serial": "85429127",
+        "owner": "Jergens, Inc. (CORPORATION; OHIO, USA)"
+      },
+      {
+        "mark": "AXLE SPINDLE AMERICAN INGENUITY",
+        "status": "LIVEPENDING",
+        "goods": "IC 012: Structural parts for trucks.; IC 035: Wholesale...",
+        "cls": "012, 035",
+        "serial": "50125407",
+        "owner": "AXLE SPINDLE INC. (CORPORATION; New York, USA)"
+      },
+      {
+        "mark": "VALUE AT THE SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 007: High performance metalworking machine tools, namely, end...",
+        "cls": "007",
+        "serial": "86604062",
+        "owner": "Kyocera SGS Precision Tools, Inc. (CORPORATION; OHIO, USA)"
+      },
+      {
+        "mark": "HUSO",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 043: Restaurant and bar services.",
+        "cls": "043",
+        "serial": "97919273",
+        "owner": "OPTIMUS, INC. (CORPORATION; FLORIDA, USA)"
+      },
+      {
+        "mark": "BIG PLUS SPINDLE SYSTEM BIG BIG DAISHOWA",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 007: Machine tools, namely, lathes, milling machines, metalworking...",
+        "cls": "007",
+        "serial": "79035533",
+        "owner": "BIG DAISHOWA CO., LTD. (CORPORATION; JAPAN)"
+      }
+    ]
+  },
+  "the spindle": {
+    "query": "WM:\"the spindle\"",
+    "total": "113",
+    "shown": 50,
+    "cards": [
+      {
+        "mark": "SPINDLE",
+        "status": "DEADABANDONED",
+        "goods": "IC 005: [ herbicides for use in agriculture ].",
+        "cls": "005",
+        "serial": "74547393",
+        "owner": "ROHM AND HAAS COMPANY (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "DEADABANDONED",
+        "goods": "IC 009: audio speakers; computer software to control audio speakers;...",
+        "cls": "009",
+        "serial": "86260189",
+        "owner": "Spindle Haus, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 041: [ Health club services, namely, providing instruction and...",
+        "cls": "041",
+        "serial": "86414909",
+        "owner": "Spindle Fitness LLC (LIMITED LIABILITY COMPANY; ILLINOIS, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 009: Downloadable operations management software.; IC 042:...",
+        "cls": "009, 042",
+        "serial": "98560046",
+        "owner": "Dober Chemical Corp. (CORPORATION; Illinois, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 009: Attachment for cameras and microscopes for capturing or...",
+        "cls": "009",
+        "serial": "87667533",
+        "owner": "DOUBLE HELIX OPTICS, INC. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 029: Preserved, frozen, dried and cooked fruits and vegetables;...",
+        "cls": "029",
+        "serial": "99054381",
+        "owner": "Samyang Roundsquare Inc. (CORPORATION; Korea, Republic of)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "DEADABANDONED",
+        "goods": "IC 009: Downloadable software in the nature of a mobile application...",
+        "cls": "009, 042",
+        "serial": "85526103",
+        "owner": "SPINDLE, INC. (CORPORATION; NEVADA, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 009: [ Prerecorded phonograph records, [audio tapes,] CDs, [ audio...",
+        "cls": "009, 041",
+        "serial": "78896711",
+        "owner": "Spindle (SOLE PROPRIETORSHIP; WASHINGTON, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "DEADABANDONED",
+        "goods": "IC 005: herbicides for use in agriculture, horticulture or forestry...",
+        "cls": "005",
+        "serial": "75632498",
+        "owner": "DOW AGROSCIENCES LLC (CORPORATION; INDIANA, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 009: [ computer operating system software for use with embedded...",
+        "cls": "009",
+        "serial": "77954061",
+        "owner": "Micropier, LLC (LIMITED LIABILITY COMPANY; FLORIDA, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 030: Processed cereals; Almond paste; Instant noodles; Ramen; Dried...",
+        "cls": "030",
+        "serial": "99054387",
+        "owner": "Samyang Roundsquare Inc. (CORPORATION; Korea, Republic of)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 035: Employment hiring, recruiting, placement, staffing and career...",
+        "cls": "035",
+        "serial": "98082314",
+        "owner": "TTF Holdings, LLC (LIMITED LIABILITY COMPANY; DELAWARE, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 009: [ Computer software accessible through a web-based interface...",
+        "cls": "009, 035, 038, 042, 045",
+        "serial": "77794245",
+        "owner": "SPINDLE, INC. (CORPORATION; NEVADA, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "DEADABANDONED",
+        "goods": "IC 041: Entertainment services, namely, providing a web site featuring...",
+        "cls": "041",
+        "serial": "85420833",
+        "owner": "Booker, Stuart Byron (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 041: Dance schools; Dance events; Dance instruction; Dance...",
+        "cls": "041",
+        "serial": "90330360",
+        "owner": "Spindle Live LLC (LIMITED LIABILITY COMPANY; NEW YORK, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "DEAD",
+        "goods": "US 040: [ STRANDS OF DECORATIVE BEADS ].",
+        "cls": "026",
+        "serial": "72445074",
+        "owner": "ABLI, INC. (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 032: Dried hops for brewing beer; Protein-enriched sports...",
+        "cls": "032",
+        "serial": "99054392",
+        "owner": "Samyang Roundsquare Inc. (CORPORATION; Korea, Republic of)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 005: medicinal healthcare preparations for supporting nutritional...",
+        "cls": "005",
+        "serial": "99054373",
+        "owner": "Samyang Roundsquare Inc. (CORPORATION; Korea, Republic of)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "DEADABANDONED",
+        "goods": "IC 042: Customized software development and implementation in the...",
+        "cls": "042",
+        "serial": "90491649",
+        "owner": "Motorcity Systems LLC (LIMITED LIABILITY COMPANY; MICHIGAN, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "DEADABANDONED",
+        "goods": "IC 025: Sweaters; Women's clothing, namely, shirts, dresses, skirts,...",
+        "cls": "025",
+        "serial": "85272447",
+        "owner": "DESIGN NETWORK (CORPORATION; NEW YORK, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "LIVEPENDING",
+        "goods": "IC 005: Herbicides for agricultural use; Insecticides for agricultural...",
+        "cls": "005",
+        "serial": "99845848",
+        "owner": "Winfield Solutions, LLC (LIMITED LIABILITY COMPANY; Delaware, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 009: [ Downloadable media content, namely, magazines, newsletters,...",
+        "cls": "009, 035",
+        "serial": "87211283",
+        "owner": "Weller, Sebastian Peter (INDIVIDUAL; UNITED KINGDOM)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "DEADABANDONED",
+        "goods": "IC 005: [ herbicides for agricultural and non-agricultural use ].",
+        "cls": "005",
+        "serial": "74324931",
+        "owner": "MONSANTO COMPANY (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 010: [ Medical guidewires, and structural parts therefor; IVR...",
+        "cls": "010",
+        "serial": "79173308",
+        "owner": "ASAHI INTECC CO., LTD. (CORPORATION; JAPAN)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 009: Downloadable operations management software.; IC 042:...",
+        "cls": "009, 042",
+        "serial": "98560049",
+        "owner": "Dober Chemical Corp. (CORPORATION; Illinois, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 020: Beds, mattresses, * and * pillows [ and bolsters ].",
+        "cls": "020",
+        "serial": "87823987",
+        "owner": "MIAMI LABS, INC. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 009: [ Computer game software ].",
+        "cls": "009",
+        "serial": "86733073",
+        "owner": "Samsung Eletrônica da Amazônia Ltda. (LIMITED LIABILITY COMPANY; BRAZIL)"
+      },
+      {
+        "mark": "SPINDLE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 009: Computer software platforms for publishing e-books.; IC 041: [...",
+        "cls": "009, 041",
+        "serial": "86125733",
+        "owner": "iPortfolio Inc. (CORPORATION; REPUBLIC OF KOREA)"
+      },
+      {
+        "mark": "SPINDLE WIZARD",
+        "status": "DEADCANCELLED",
+        "goods": "IC 007: [ Computer Numerically Controlled Machinery-Namely, Milling...",
+        "cls": "007",
+        "serial": "73267002",
+        "owner": "Lesnor Maehr Mfg. Corp. (CORPORATION; NEW YORK, USA)"
+      },
+      {
+        "mark": "SPINDLE SLIK",
+        "status": "DEADCANCELLED",
+        "goods": "IC 004: [ Lubricants, Slip Agents and Release Agents for Use in the...",
+        "cls": "004",
+        "serial": "73269767",
+        "owner": "Witco Chemical Corporation (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SPINDLE SURGEON",
+        "status": "DEADABANDONED",
+        "goods": "IC 019: [ SPINDLES FOR USE IN REAR END HOUSING ON ONE TON AND ABOVE...",
+        "cls": "019",
+        "serial": "73599575",
+        "owner": "WEST END MACHINE AND WELDING, INC. (CORPORATION; VIRGINIA, USA)"
+      },
+      {
+        "mark": "SPINDLE-LOK",
+        "status": "DEADCANCELLED",
+        "goods": "IC 009: [ automotive wheel balancing apparatus ].",
+        "cls": "009",
+        "serial": "74520030",
+        "owner": "HUNTER ENGINEERING COMPANY (CORPORATION; MISSOURI, USA)"
+      },
+      {
+        "mark": "SPINDLE DYNAMICS",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 012: MOTOR VEHICLE AND TRAILER SPINDLES.",
+        "cls": "012",
+        "serial": "73777709",
+        "owner": "WEST END MACHINE & WELDING COMPANY (CORPORATION; VIRGINIA, USA)"
+      },
+      {
+        "mark": "SPINDLE & SIN",
+        "status": "DEADABANDONED",
+        "goods": "IC 025: Bandannas, head bands, bathing suits, bathrobes, shorts, caps,...",
+        "cls": "025",
+        "serial": "85441484",
+        "owner": "HOLLYWOOD PRODUCTS, INC. (CORPORATION; CALIFORNIA, USA)"
+      },
+      {
+        "mark": "SONG SPINDLE",
+        "status": "DEADABANDONED",
+        "goods": "IC 014: Sculptures made of precious metal.",
+        "cls": "014",
+        "serial": "86565748",
+        "owner": "Lancaster Phillip M (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "SPINDLE CORE",
+        "status": "DEADABANDONED",
+        "goods": "IC 009: Downloadable operations management software.; IC 042:...",
+        "cls": "009, 042",
+        "serial": "99126766",
+        "owner": "Dober Chemical Corp. (CORPORATION; Illinois, USA)"
+      },
+      {
+        "mark": "SPINDLE-FLEX",
+        "status": "DEAD",
+        "goods": "US 032: [ CARVED POLES FOR USE AS DECORATIVE ROOM DIVIDERS AND AS...",
+        "cls": "020",
+        "serial": "72233011",
+        "owner": "RUSS STONIER DESIGNS, INC. (CORPORATION; ILLINOIS, USA)"
+      },
+      {
+        "mark": "SPINDLE HILL",
+        "status": "DEAD",
+        "goods": "US 037: [ NOTEPAPER ].",
+        "cls": "016",
+        "serial": "71647491",
+        "owner": "FERGUSON, MARTHA C. (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "COTTON SPINDLE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 009: [ SURVEYOR GROUND STATES ].",
+        "cls": "009",
+        "serial": "76581187",
+        "owner": "Municipal Marking Distributors, Inc. (CORPORATION; ILLINOIS, USA)"
+      },
+      {
+        "mark": "SPINDLE TREE",
+        "status": "DEADCANCELLED",
+        "goods": "IC 021: [ Crystalware and glassware, namely, water goblets, wine,...",
+        "cls": "021",
+        "serial": "75719327",
+        "owner": "Tipperary Crystal Designs Ltd. (LIMITED COMPANY; IRELAND)"
+      },
+      {
+        "mark": "SPINDLE-TITE!",
+        "status": "DEADCANCELLED",
+        "goods": "IC 006: [ Metal Fasteners, Namely, spindle lock nuts, wheel spindle...",
+        "cls": "006",
+        "serial": "75568799",
+        "owner": "RBMARK, Inc. (CORPORATION; DELAWARE, USA)"
+      },
+      {
+        "mark": "SPINDLE INTELLIGENCE",
+        "status": "DEADABANDONED",
+        "goods": "IC 009: Downloadable computer software using artificial intelligence...",
+        "cls": "009, 042",
+        "serial": "99126772",
+        "owner": "Dober Chemical Corp. (CORPORATION; Illinois, USA)"
+      },
+      {
+        "mark": "SPINDLE-LOK",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 009: AUTOMOTIVE WHEEL BALANCING MACHINES FOR LAND VEHICLES.",
+        "cls": "009",
+        "serial": "78827102",
+        "owner": "Hunter Engineering Company (CORPORATION; MISSOURI, USA)"
+      },
+      {
+        "mark": "SPINDLE & STONES",
+        "status": "LIVEPENDING",
+        "goods": "IC 009: Downloadable mobile applications using artificial intelligence...",
+        "cls": "009, 042",
+        "serial": "99773430",
+        "owner": "bethan Nicole mcintyre (INDIVIDUAL; USA)"
+      },
+      {
+        "mark": "SPINDLE KIN",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 009: Musical sound recordings; Musical video recordings; Audio and...",
+        "cls": "009",
+        "serial": "88725170",
+        "owner": "Spindle Kin, a limited liability companyof Iowa (LIMITED LIABILITY COMPANY; IOWA, USA)"
+      },
+      {
+        "mark": "SPINDLE SOURCE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 012: Suspension shock absorbers for vehicles; Suspension systems...",
+        "cls": "012",
+        "serial": "88692346",
+        "owner": "TREKLINE MOTORSPORTS, INC. (CORPORATION; TENNESSEE, USA)"
+      },
+      {
+        "mark": "SPINDLE SQUARE",
+        "status": "LIVEREGISTERED",
+        "goods": "IC 009: Calibration devices, namely, calibration device for manual and...",
+        "cls": "009",
+        "serial": "77760450",
+        "owner": "Allied Manufacturing Technologies, Inc. (CORPORATION; NORTH CAROLINA, USA)"
+      },
+      {
+        "mark": "SPINDLE TECHNOLOGIES",
+        "status": "DEADCANCELLED",
+        "goods": "IC 009: [ individual and bundled software programs and software...",
+        "cls": "009",
+        "serial": "77218100",
+        "owner": "Dober Chemical Corporation (CORPORATION; ILLINOIS, USA)"
+      },
+      {
+        "mark": "SPINDLE TOP",
+        "status": "DEADABANDONED",
+        "goods": "IC 028: Radio controlled toy vehicles.",
+        "cls": "028",
+        "serial": "75707628",
+        "owner": "Echo Toys, Ltd. (CORPORATION; HONG KONG)"
+      },
+      {
+        "mark": "SPINDLE PHOTOGRAPHY",
+        "status": "DEADCANCELLED",
+        "goods": "IC 041: [ Photography ].",
+        "cls": "041",
+        "serial": "85650081",
+        "owner": "Spindle Photography, LLC (LIMITED LIABILITY COMPANY; ALABAMA, USA)"
+      }
+    ]
+  }
+}

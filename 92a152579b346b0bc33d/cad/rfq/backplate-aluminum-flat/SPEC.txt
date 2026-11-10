@@ -1,0 +1,13 @@
+RFQ: laser / waterjet flat aluminum backplates + countersinks + powder coat
+Parts: RS-BP-12-AL5 (D 266.7, 5.0 mm), RS-BP-12-AL3 (D 266.7, 3.0 mm), RS-BP-7-AL5 (D 152.4, 5.0 mm).
+Material: 5052-H32 aluminum sheet (6061-T6 acceptable). Thickness 5.0 mm (0.197 in; 3/16 in = 4.76 acceptable, tell us) or 3.0 mm.
+Quantity: 5 of each for samples; please also quote 100 of the 12 in / 5 mm.
+Cutting: outer D, centre hole D 6.6, 3x D 4.5 holes on R 45 at 90/210/330, one 16 x 13 rectangular cut-out at (0, +15).
+Countersinks (layer CSK in the DXF): 3x 90 deg for #8 flat head on the FRONT (+Z) face, D 8.6 (5 mm) / D 5.6 (3 mm);
+ 5 mm parts only: centre hole countersunk 82 deg D 13.0 on the BACK face for a 1/4-20 flat head.
+Finish: powder coat matte black (RAL 9005 fine texture or your closest), both faces, hang from the 16 x 13 cut-out.
+Deburr: both faces, no heat tint. Flat within 0.5 after coating.
+Ship to: Florida, USA. State lead time. DXF is mm, R2010; STEP is the 3D master.
+
+Files in this folder: RS-BP-12-AL5.step, RS-BP-12-AL5.dxf, RS-BP-12-AL3.step, RS-BP-12-AL3.dxf, RS-BP-7-AL5.step, RS-BP-7-AL5.dxf, RS-BP-12-AL5.pdf, RS-BP-12-AL3.pdf, RS-BP-7-AL5.pdf
+Contact: (fill in before sending; nothing has been sent)

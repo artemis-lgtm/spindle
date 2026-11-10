@@ -1,0 +1,23 @@
+START install wide 22:40:37
+END   install wide 22:41:55 ok
+START install square 22:41:55
+END   install square 22:43:33 ok
+START install tall 22:43:33
+END   install tall 22:45:00 ok
+START pass ambient 22:45:00
+END   pass ambient 22:45:19 ok
+START pass halo 22:45:19
+END   pass halo 22:46:57 ok
+START video 22:46:57
+END   video 22:47:20 ok
+triptych ok
+index ok
+index ok
+index ok
+START install wide 22:59:14
+END   install wide 23:00:30
+START install square 23:00:30
+END   install square 23:02:10
+START install tall 23:02:10
+END   install tall 23:03:39
+index ok

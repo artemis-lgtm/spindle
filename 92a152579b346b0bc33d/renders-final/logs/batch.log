@@ -1,0 +1,104 @@
+START hero_chrome wide 21:42:55
+END   hero_chrome wide 21:44:21 ok
+START hero_chrome square 21:44:21
+END   hero_chrome square 21:46:03 ok
+START hero_chrome tall 21:46:03
+END   hero_chrome tall 21:47:21 ok
+START hero_brass wide 21:47:21
+END   hero_brass wide 21:48:43 ok
+START hero_brass square 21:48:43
+END   hero_brass square 21:50:21 ok
+START hero_brass tall 21:50:21
+END   hero_brass tall 21:51:41 ok
+START hero_black wide 21:51:41
+END   hero_black wide 21:53:00 ok
+START hero_black square 21:53:00
+END   hero_black square 21:54:47 ok
+START hero_black tall 21:54:47
+END   hero_black tall 21:56:06 ok
+START set wide 21:56:06
+END   set wide 21:57:19 ok
+START set square 21:57:19
+END   set square 21:58:43 ok
+START set tall 21:58:43
+END   set tall 22:00:04 ok
+START single7 wide 22:00:04
+END   single7 wide 22:01:46 ok
+START single7 square 22:01:46
+END   single7 square 22:04:00 ok
+START single7 tall 22:04:00
+END   single7 tall 22:05:34 ok
+START macro wide 22:05:35
+END   macro wide 22:07:08 ok
+START macro square 22:07:08
+END   macro square 22:08:45 ok
+START macro tall 22:08:45
+END   macro tall 22:09:59 ok
+START living wide 22:09:59
+END   living wide 22:11:11 ok
+START living square 22:11:11
+END   living square 22:12:41 ok
+START living tall 22:12:41
+END   living tall 22:13:51 ok
+START bar wide 22:13:51
+END   bar wide 22:15:23 ok
+START bar square 22:15:23
+END   bar square 22:17:09 ok
+START bar tall 22:17:09
+END   bar tall 22:18:41 ok
+START studio wide 22:18:41
+END   studio wide 22:19:33 ok
+START studio square 22:19:33
+END   studio square 22:20:37 ok
+START studio tall 22:20:37
+END   studio tall 22:21:42 ok
+START bedroom wide 22:21:42
+END   bedroom wide 22:22:42 ok
+START bedroom square 22:22:42
+END   bedroom square 22:23:59 ok
+START bedroom tall 22:23:59
+END   bedroom tall 22:25:05 ok
+START swap1 wide 22:25:05
+END   swap1 wide 22:26:21 ok
+START swap1 square 22:26:21
+END   swap1 square 22:27:52 ok
+START swap1 tall 22:27:52
+END   swap1 tall 22:29:07 ok
+START swap2 wide 22:29:07
+END   swap2 wide 22:30:19 ok
+START swap2 square 22:30:19
+END   swap2 square 22:31:58 ok
+START swap2 tall 22:31:58
+END   swap2 tall 22:33:12 ok
+START swap3 wide 22:33:12
+END   swap3 wide 22:34:30 ok
+START swap3 square 22:34:30
+END   swap3 square 22:36:08 ok
+START swap3 tall 22:36:08
+END   swap3 tall 22:37:21 ok
+START flatlay wide 22:37:21
+END   flatlay wide 22:38:17 ok
+START flatlay square 22:38:17
+END   flatlay square 22:39:25 ok
+START flatlay tall 22:39:25
+END   flatlay tall 22:40:23 ok
+START living wide 22:47:38
+END   living wide 22:48:50 ok
+START living square 22:48:50
+END   living square 22:50:18 ok
+START living tall 22:50:18
+END   living tall 22:51:27 ok
+START bar wide 22:51:27
+END   bar wide 22:52:50 ok
+START bar square 22:52:50
+END   bar square 22:54:22 ok
+START bar tall 22:54:22
+END   bar tall 22:55:37 ok
+START studio wide 22:55:37
+END   studio wide 22:56:16 ok
+START studio square 22:56:16
+END   studio square 22:57:06 ok
+START studio tall 22:57:06
+END   studio tall 22:57:50 ok
+START flatlay tall 22:58:07
+END   flatlay tall 22:59:03 ok

@@ -1,0 +1,19 @@
+RFQ: turned brass dome caps, polished and plated, 2 sizes x 3 finishes (sample run)
+Parts: RS-CAP-12 (D 38.1 / 1.50 in, 10.0 tall, integral 1/4-20 UNC-2A x 15.9 stud)
+       RS-CAP-7  (D 48.0 / 1.89 in, 8.5 tall, D 37.6 x 1.6 locating boss underneath, same stud)
+Material: brass C360 (CDA 360) bar. Option: machine the stud separately (tap 1/4-20 x 10 deep in the cap and fit a 1/4-20
+ x 1-1/8 in stainless stud with Loctite 243) if that is cheaper; tell us which you quoted.
+Quantity: samples 4 + 4 per finish (chrome, brass, black) = 24; also quote 100 and 500 per size in chrome.
+Geometry: dome is a sphere segment (RS-CAP-12: R 25.8; RS-CAP-7: R 47.6) on a short straight band; base edge R 0.8.
+ No knurl. No witness lines. Underside face flat and square to the stud within 0.05; stud concentric within 0.05.
+Surface: polish the dome and band to mirror (Ra 0.1 um or better) before plating; the dome is the only part the customer
+ sees, so it is a Class A surface: inspect under daylight at 300 mm, zero pits, haze or polishing lines.
+Finishes:  -CR bright chrome: copper strike + bright nickel + decorative chrome, ASTM B456 SC2 (or PVD chrome over bright nickel).
+           -BR brass: polished brass, clear lacquer (or brushed + lacquer; quote both).
+           -BK black: black chrome over bright nickel, or PVD black (TiC / DLC), or black nickel + lacquer; say which.
+ Mask the thread or chase it after plating; thread must accept a 1/4-20 2B insert by hand.
+Packing: individually sleeved, no part-to-part contact.
+Ship to: Florida, USA. State lead time and plating minimum lot charges separately.
+
+Files in this folder: RS-CAP-12.step, RS-CAP-12.stl, RS-CAP-7.step, RS-CAP-7.stl, RS-CAP-12.pdf, RS-CAP-7.pdf
+Contact: (fill in before sending; nothing has been sent)

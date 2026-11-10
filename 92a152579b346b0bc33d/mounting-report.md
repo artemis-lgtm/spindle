@@ -1,0 +1,53 @@
+# Record Sconces: wall attachment + in-wall wiring report
+
+Prepared 2026-11-09 for Austin. Design + sourcing only: nothing bought, nobody contacted, nothing posted. Takes the 11/9 decisions as fixed (halo-backlit 12" LP, 10.5" backplate with the E-Z Lok 1/4-20 insert, chrome dome cap on a 1/4-20 stud, 12 V Class 2 COB ring, hub between backplate and wall) and adds the two things that were missing: how the fixture attaches to the wall, and how the wire disappears into it. Behind-the-wall is the default per Austin; surface cord stays as option B.
+
+Renders (Cycles, 1920x1080): `render/sconce_v2_cutaway.png` (wall cutaway, cable down the stud bay to the outlet) and `render/sconce_v2_rear.png` (rear 3/4 exploded mount). Model: `render/sconce_v2.py` (the original `sconce.py` is untouched).
+
+## 1. The recommended system in one paragraph
+
+A 4" round, 14-gauge zinc-plated steel mounting plate screws to the wall over a 1" hole. Its four arc slots match a single-gang low-voltage bracket (83.3 mm) and a round/octagon box (88.9 mm), and take two #8 screws into drywall anchors or a stud when there is no box; the arcs give about +/-9 degrees of rotation so the plate is levelled after the screws are started. Three 8-32 shoulder screws on the plate are bayonet studs. The 5" x 1" printed hub (glued/screwed to the back of the backplate) has a shallow rear recess that swallows the plate, three J-slots that drop over the studs and twist about 20 degrees to lock, and one M3 set screw at 6 o'clock through the hub rim into a tab hole in the plate so a knock cannot untwist it. The hub's centre pocket holds a panel-mount 5.5 x 2.1 mm DC jack; the in-wall CL2 cable comes straight out of the hole, through the plate's centre, and plugs into that jack. The record is clamped from the front by the dome cap, so swapping a record never touches the mount. Nothing above 12 V DC is ever inside the fixture or the wall; the UL plug-in adapter lives at the existing outlet.
+
+Why not a keyhole plate (the engineering report's first pick): a single keyhole on a 1.5 lb fixture with a 12" lever arm rotates when the record is swapped and can be lifted off by a bump. Two keyholes stop rotation but need precise screw spacing and do not level. The plate + bayonet gives levelling (slots), anti-lift (twist + set screw), a clear 1" cable path through the centre, and a plate that also bolts to any box or low-voltage bracket the customer already has. It costs about $3 more per unit than a keyhole plate. Keep the Hardwick keyhole plate (already verified) as the budget fallback for the 7" singles, which weigh a third as much.
+
+## 2. Wiring options
+
+Option A (default): in-wall low-voltage. Legal for a homeowner in every US jurisdiction that follows the NEC, because only the Class 2 side is inside the wall, in cable listed CL2 or better (NEC 725.135 / 725.179; Class 2 cable may be run in walls without conduit). The plug-in adapter never goes in the wall: NEC 400.12 prohibits flexible cords and power-supply cords concealed in walls, so the wall-wart and its cord stay at the receptacle. Path: hub jack -> CL2 18/2 cable with a barrel plug -> 1" hole behind the hub -> down the stud bay -> low-voltage old-work bracket at outlet height -> keystone wall plate with a DC barrel coupler -> the adapter's own lead plugs into the coupler on the room side, and the adapter into the existing receptacle beside it. Visible: a white single-gang plate next to the outlet, a 6" jumper, and the adapter. Nothing on the wall between.
+
+Option A+ (hidden adapter): a recessed low-voltage + power kit (PowerBridge, Legrand/Wiremold, Datacomm) at outlet height gives a recessed receptacle inside the wall so the adapter sits in the recess behind a flush plate, with the DC lead going straight into the stud bay. The PowerBridge and Legrand kits include an inlet that plugs into the existing outlet with a short cord, so a homeowner can install them without an electrician; the Datacomm 45-0071 recessed duplex needs a 120 V pigtail from the adjacent outlet (electrician, or permitted DIY where allowed). We link to these, we do not sell them.
+
+Option B: surface. The cable leaves the hub's 6 o'clock channel (same jack, the cable simply turns down instead of back) and runs inside a paintable raceway to the outlet. Ship the 6 ft adapter lead as usual; raceway is a $10-15 add-on or the customer's own.
+
+Option C (premium, electrician): hardwired. A UL Class 2 LED driver (Mean Well LPV-20-12 or an Armacost/Diode LED driver with an integral junction-box enclosure) sits in a standard box behind the sconce or in the attic, fed by the wall-switch circuit; our plate bolts to that box's ears, the driver's 12 V output lands on a barrel plug into the hub jack. What it means for listing: the driver is listed (UL 8750 / UL 1310 Class 2) and the wiring is the electrician's; our fixture remains a Class 2 low-voltage luminaire. Strictly, NEC 410.6 wants luminaires listed, and inspectors see the hardwired install, so for option C the honest line on the page is "installed by your electrician with a listed Class 2 driver; the sconce itself is a 12 V Class 2 device and carries no 120 V parts". If this becomes a line, UL 2108 (low-voltage lighting systems) is the standard we would pursue, with UL 8750 covering the LED parts; UL 1598 would only apply if we ever put the driver inside the fixture. The plug-in version is a cord-connected 12 V device fed from a listed Class 2 adapter and is sold like every LED strip kit on the market.
+
+## 3. Install steps for the customer
+
+In-wall (Option A, about 45 minutes, no electrician):
+1. Pick the spot. Centre of the record at 58-62" is typical. Use a stud finder; the plate works on drywall anchors or a stud, but the cable needs to drop in a clear bay to the outlet below, so the hole must sit between studs, in the same bay as the outlet.
+2. Hold the plate on the wall, bubble level on its top edge, mark the two slots you will use (any two opposite slots; use a stud screw plus one anchor if a stud is handy).
+3. Cut the 1" hole at the centre mark (hole saw or spade bit). Fish the pull string down the bay to a point 4-6" beside the existing outlet, 12-18" off the floor; cut the single-gang opening with the bracket's template and clip the low-voltage bracket in.
+4. Pull the CL2 cable from the top hole down to the bottom opening (barrel plug end stays at the top). Press the DC keystone coupler into the plate, land the bottom cable end in it, screw the plate to the bracket.
+5. Screw the mounting plate on, through the slots, leaving the screws a quarter turn loose; level it, tighten. The three bayonet studs face you.
+6. Pass the cable's barrel plug through the plate's centre hole and into the hub jack. Hang the hub: line the three J-slots up with the studs, push flat to the wall, twist clockwise until it stops. Turn the set screw at 6 o'clock in with the supplied key.
+7. Plug the adapter's lead into the keystone coupler and the adapter into the outlet. Set the dimmer.
+8. Set the record on the felt pads, drop the dome cap through the spindle hole with its felt washer on, finger-tighten. Swap any time by unscrewing the dome; the fixture stays on the wall.
+
+Surface (Option B, about 15 minutes): steps 1, 2, 5, 6 with no holes other than the plate screws; the 6 ft adapter lead plugs into the hub jack and leaves through the 6 o'clock channel; stick the raceway to the wall from the hub to the outlet and snap the cover on; paint it if you like.
+
+Hardwired (Option C): give the electrician the one-page sheet: standard round or single-gang box at the sconce centre, listed Class 2 12 V DC driver (20 W class) in or at the box, switched, output on a 5.5 x 2.1 mm barrel plug (centre positive), 12" tail. We supply the plate, which bolts to the box ears, and the sconce.
+
+## 4. Bill of materials
+
+BOM_PLACEHOLDER
+
+## 5. Dome cap
+
+DOME_PLACEHOLDER
+
+## 6. What goes in the box
+
+Sconce or kit box (13 x 13 x 3): backplate with LED ring, hub and jack pre-fitted; dome cap with felt washer (bagged, taped to the hub); 45 adapter; steel mounting plate with three bayonet studs fitted; 2 x #8 x 1-1/4" screws + 2 drywall anchors; M3 set screw + L key; 12 V UL dimming adapter with 6 ft lead; the one-page hang sheet (level, hole sizes, in-wall vs surface, "adapter never in the wall").
+
+In-wall kit (separate SKU, see BOM for cost): 15 ft CL2 18/2 cable with a barrel plug factory-fitted on the hub end and bare on the other; low-voltage old-work bracket; single-gang keystone plate; DC 5.5 x 2.1 keystone coupler; screw-terminal barrel plug for the bottom end (or we pre-terminate both ends and ship the coupler so the plug passes through the 1" hole: a 5.5 mm plug body is 10 mm, it fits); pull string; drill-size card.
+
+Surface add-on: 5 ft paintable raceway.

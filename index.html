@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Spindle Package</title>
+<style>
+:root{--bg:#f6f2ea;--panel:#fffdf8;--ink:#1b1916;--mute:#6b645a;--line:#e3dccf;--accent:#b8732e}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111010;--panel:#1a1816;--ink:#ece6da;--mute:#a19887;--line:#2c2925;--accent:#e6a456}}
+:root[data-theme="dark"]{--bg:#111010;--panel:#1a1816;--ink:#ece6da;--mute:#a19887;--line:#2c2925;--accent:#e6a456}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--bg);color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,system-ui,sans-serif;padding:16px}
+.box{width:100%;max-width:340px;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:26px 22px;text-align:center}
+.halo{width:72px;height:72px;margin:0 auto 14px;border-radius:50%;background:#111;box-shadow:0 0 0 6px #1d1d1d,0 0 34px 12px rgba(242,194,122,.55)}
+h1{font-size:22px;margin:0 0 4px} p{color:var(--mute);margin:0 0 18px;font-size:14px}
+input{width:100%;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:8px;padding:11px 12px;font-size:16px;margin-bottom:10px;text-align:center}
+button{width:100%;border:0;border-radius:8px;padding:11px;background:var(--accent);color:#fff;font-weight:600;font-size:15px;cursor:pointer}
+.err{color:#c0392b;font-size:14px;min-height:20px;margin-top:8px}
+</style>
+</head>
+<body>
+<form class="box" id="f">
+  <div class="halo"></div>
+  <h1>Spindle</h1>
+  <p>Private package. Enter the password.</p>
+  <input type="password" id="pw" inputmode="numeric" placeholder="Password" autocomplete="current-password" autofocus>
+  <button type="submit">Open</button>
+  <div class="err" id="e"></div>
+</form>
+<script>
+async function dir(pw){
+  var b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode('spindle-'+pw));
+  return Array.from(new Uint8Array(b)).map(function(x){return x.toString(16).padStart(2,'0')}).join('').slice(0,20);
+}
+async function go(pw,quiet){
+  var d=await dir(pw), u=d+'/START-HERE.html';
+  try{var r=await fetch(u,{method:'HEAD',cache:'no-store'});
+    if(r.ok){try{sessionStorage.setItem('spindle-pw',pw)}catch(e){} location.href=u; return;}}catch(e){}
+  if(!quiet) document.getElementById('e').textContent='That password did not work.';
+}
+document.getElementById('f').addEventListener('submit',function(ev){ev.preventDefault();go(document.getElementById('pw').value.trim())});
+try{var s=sessionStorage.getItem('spindle-pw'); if(s) go(s,true);}catch(e){}
+</script>
+</body>
+</html>
