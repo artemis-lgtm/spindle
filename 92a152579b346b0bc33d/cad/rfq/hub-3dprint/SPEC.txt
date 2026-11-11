@@ -1,12 +1,18 @@
+REVISION STATUS (2026-11-11): CURRENT = RS-HUB-01 rev B.
+SUPERSEDED, DO NOT QUOTE OR BUILD: rev A (2026-11-09): panel-jack hub, J-slots the other hand, 4.5 centre relief.
+If you hold any earlier drawing, STEP or zip of these parts, discard it. See cad/rfq/README.md.
+
 RFQ: FDM printed hub (PETG or ASA), sample run, with injection moulding in mind later
-Part: RS-HUB-01, D 127 x 25.4 mm, one piece, ~250 cm3 solid volume (print at 40% infill, 5 perimeters, 0.2 mm layers).
+Part: RS-HUB-01 rev B, D 127 x 25.4 mm, one piece, ~250 cm3 solid volume (print at 40% infill, 5 perimeters, 0.2 mm layers).
 Material: PETG black (ASA black acceptable; no PLA). Orientation: REAR face (the flat face with the shallow 107 mm recess)
  DOWN on the bed; the front face carries the shallow pockets and prints up. Supports only inside the J-slot nut pockets
  if your slicer insists; prefer bridging.
 Quantity: 5 samples; also quote 50 and 100.
 Critical features: 3 J-slots (10.8 entry, 4.8 slot) on R 33: must be clean, no elephant foot in the recess (chamfer or
- z-hop compensation); 8.0 jack hole; 4.0 pilot in the rim for an M3 heat-set insert (we install); 3x 3.2 pilots on the front.
-Tolerance: +/-0.2 on holes, +/-0.3 elsewhere; recess floor flat (we glue a steel plate into it).
+ z-hop compensation); D 6.5 cable hole (there is NO panel jack in rev B); D 2.4 x 6.0 pilot in the rear pocket
+ ceiling for a #4 screw; front centre relief D 14 x 9.1 +/-0.2 deep with a FLAT floor; 4.0 pilot in the rim for an M3
+ heat-set insert (we install); 3x 3.2 pilots on the front.
+Tolerance: +/-0.2 on holes and on the centre relief depth, +/-0.3 elsewhere; recess floor flat (we glue a steel plate into it).
 Finish: as printed, matte black.
 Also wanted (separate line): a DFM review for injection moulding this part in ABS or PC-ABS, with draft and gate
  suggestions, and a rough tooling + per-part quote at 1,000 and 5,000 pieces.

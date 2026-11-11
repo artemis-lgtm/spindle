@@ -3,7 +3,9 @@
 numbers quoted in BOM.md / cost-model.md. Run: python3 cost-model.py
 Every line carries a source tag. "est" = estimate, not a quoted price.
 Tiers are per-unit cost when buying for 1 / 20 / 100 / 500 units.
-Prices as fetched 2026-11-09 to 2026-11-10 (see BOM.md for URLs and fetch status)."""
+Prices as fetched 2026-11-09 to 2026-11-10 (see BOM.md for URLs and fetch status).
+2026-11-11: the 12 in unit gained the two heat-safe rings and their screws (three lines above the box line).
+The box line must stay LAST in PARTS_12 and PARTS_7: the Set total subtracts parts[-1]."""
 import csv, os
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -31,6 +33,10 @@ PARTS_12 = [
     ("Silicone bumpers x2 clear self-adhesive", (0.13, 0.13, 0.13, 0.10), "P eBay 100/$6.51"),
     ("Lead wire 18 AWG 12in, heat shrink, hot glue", (0.30, 0.25, 0.15, 0.10), "E"),
     ("Hang + safety card, printed", (0.50, 0.40, 0.20, 0.10), "E"),
+    # Heat-safe halo, added 2026-11-11 (cad/FIXES-heat-layout.md). Evidence: sourcing/quotes-2026-11-11/README.md
+    ("Aluminium heat ring RS-HR-12, 5052-H32 0.040in, OD 260 ID 200, 4 holes, laser cut", (27.10, 13.83, 7.38, 7.38), "V SendCutSend guest quote of the canonical cad/parts/RS-HR-12.dxf, 2026-11-11: $27.10 @1, $20.34 @2, $13.83 @10, $10.85 @50, $7.38 @100, $4.69 @1000; q20 uses the 10 price, q500 uses the 100 price"),
+    ("Cork ring RS-CK-12, 1/16in cork, OD 260 ID 200, 4 punched holes, cut in-house", (1.89, 1.89, 1.89, 1.89), "V material: WidgetCo 1/16in x 12in x 30ft roll $66 = 35 rings; E cutting (tool not picked, no labour in this price)"),
+    ("Heat-ring screws x4, #4 x 3/8in pan head sheet-metal", (0.20, 0.16, 0.12, 0.08), "E hardware store / box of 100, not looked up"),
     ("Box 13x13x3 double-wall + foam corners + inner poly sleeve + cap pouch", (5.00, 4.50, 3.50, 2.75), "E Uline/Amazon; scope report $3-4 box at 25"),
 ]
 PARTS_7 = [

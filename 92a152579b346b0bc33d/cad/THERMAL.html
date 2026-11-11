@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1"><title>Record temperature from the halo strip (2026-11-11) | Spindle</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Record temperature from the halo strip (2026-11-11, updated for the final layout) | Spindle</title>
 <style>
 :root{--bg:#f6f2ea;--ink:#1b1916;--mute:#6b645a;--line:#e3dccf;--accent:#b8732e;--panel:#fffdf8}
 @media (prefers-color-scheme:dark){:root{--bg:#121110;--ink:#ece6da;--mute:#a19887;--line:#2c2925;--accent:#e6a456;--panel:#1a1816}}
@@ -13,76 +13,165 @@ code{background:var(--panel);border:1px solid var(--line);border-radius:4px;padd
 pre{background:var(--panel);border:1px solid var(--line);padding:12px;overflow-x:auto;border-radius:8px}
 img{max-width:100%}
 </style></head><body><main><a class="back" href="../START-HERE.html">Back to START HERE</a>
-<h1>Record temperature from the halo strip (2026-11-11)</h1>
-<p>Question from Austin: will the light heat the vinyl, and what goes between them. Answered with a model this time, not a sentence.</p>
-<p>Model: <code>cad/thermal.py</code>, steady-state axisymmetric finite-volume conduction (MDF, air gap, PVC record, aluminium, cork) with film coefficients to room air, plus the light and infrared that land on the record's overhang (view factor 0.32 for the rim strip). Results in <code>cad/thermal-results.json</code>. It is a calculation. The buoyant air plume is not modelled and nothing has been measured.</p>
-<p>Geometry fact that was missed before: the record (304.8 mm) is wider than the backplate (266.7 mm). Its outer 19 mm overhangs the rim strip, 3.45 mm in front of it, with only air between.</p>
-<p>Normal case: 4 W strip, 30 C (86 F) room. Temperatures are rise over room air.</p>
+<h1>Record temperature from the halo strip (2026-11-11, updated for the final layout)</h1>
+<p>Question from Austin: will the light heat the vinyl, and what goes between them. Answered with a model, not a sentence.</p>
+<p><strong>Status: the heat-safe layout is now the canonical CAD.</strong> It is the same on the plain-cap sconce and the lit-cap sconce (12 in, MDF backplate). What changed in the CAD and every file touched: <code>cad/FIXES-heat-layout.md</code>.</p>
+<p>Model: <code>cad/thermal.py</code>, steady-state axisymmetric finite-volume conduction (MDF, air gap, PVC record, aluminium, cork) with film coefficients to room air, plus the light and infrared that land on the record's overhang. Results in <code>cad/thermal-results.json</code>. <code>build_all.py</code> re-runs it on every build and reads the final geometry straight from <code>sconce_cad.py</code>, so the numbers below cannot drift from the CAD. It is a calculation. Nothing has been measured.</p>
+<p>Geometry fact that was missed before: the record (304.8 mm) is wider than the backplate (266.7 mm). With the old rim strip, the record's outer 19 mm overhung the strip, 3.45 mm in front of it, with only air between.</p>
+<h2>The final layout (what is in the CAD now)</h2>
+<ul>
+<li>LED strip, 8 mm wide, on the BACK of the backplate, LEDs facing the wall, centred at r 115 mm (r 111 to 119).</li>
+<li>Aluminium ring RS-HR-12 under the strip: 1.0 mm thick, r 100 to 130 mm (OD 260, ID 200). It spreads the heat.</li>
+<li>Cork ring RS-CK-12 between the aluminium and the wood: 1.6 mm (1/16 in) thick, same OD and ID. It was 2.0 mm in the study; 2 mm sheet is not a stocked size and 1/16 in is, so 1/16 in is the spec (see the cork table below).</li>
+<li>Four small screws hold the two rings to the back of the backplate.</li>
+<li>The strip is 14.35 mm inside the backplate rim, on the far side of the wood. The LEDs cannot see the record. 15.3 mm of aluminium, cork and MDF sit between the strip and the record.</li>
+<li>Nothing gets thicker: the stack is 4.2 mm deep (4.7 mm at a screw head) inside the 25.4 mm gap behind the backplate. The strip face is 21.2 mm from the wall.</li>
+</ul>
+<h2>Normal case: 4 W strip, 30 C (86 F) room</h2>
+<p>Temperatures in the "rise" columns are above room air.</p>
 <table>
 <thead>
 <tr>
 <th>Layout</th>
-<th>Strip</th>
-<th>Record, hottest spot</th>
+<th>Strip rise</th>
+<th>Record hottest spot, rise</th>
 <th>Record in a 30 C room</th>
+<th>Strip in a 30 C room</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>A. Today: strip on the rim, facing out</td>
-<td>+12.9 K</td>
+<td>A. Old: strip on the rim, facing out</td>
+<td>+13.0 K</td>
 <td>+4.9 K</td>
 <td>34.9 C (95 F)</td>
+<td>43.0 C</td>
 </tr>
 <tr>
 <td>B. Strip on the back face, bare MDF</td>
-<td>+17.3 K</td>
+<td>+17.2 K</td>
 <td>+4.5 K</td>
 <td>34.5 C</td>
+<td>47.2 C</td>
 </tr>
 <tr>
 <td>C. Back face on a 1 mm aluminium ring, 30 mm wide</td>
 <td>+8.0 K</td>
 <td>+3.5 K</td>
 <td>33.5 C</td>
+<td>38.0 C</td>
 </tr>
 <tr>
-<td>D. C plus 2 mm cork under the aluminium</td>
+<td>D. Study version: C plus 2 mm cork (ring r 103 to 133, strip r 114 to 122)</td>
 <td>+9.2 K</td>
 <td>+3.0 K</td>
-<td>33.0 C (91 F)</td>
+<td>33.0 C</td>
+<td>39.2 C</td>
 </tr>
 <tr>
 <td>E. D with the ring 10 mm further in</td>
 <td>+9.9 K</td>
 <td>+3.2 K</td>
 <td>33.2 C</td>
+<td>39.9 C</td>
+</tr>
+<tr>
+<td><strong>F  FINAL, as built in the CAD (ring r 100 to 130, strip r 111 to 119, cork 1.6 mm)</strong></td>
+<td><strong>+9.2 K</strong></td>
+<td><strong>+3.1 K</strong></td>
+<td><strong>33.1 C (92 F)</strong></td>
+<td><strong>39.2 C (102 F)</strong></td>
 </tr>
 </tbody>
 </table>
-<p>Stacked worst case: the wrong 6 W strip, dead-still air (film coefficients halved), 35 C (95 F) room.</p>
+<p>The record's hottest spot in the final layout is at r 114 mm, directly in front of the strip through the wood. The overhanging edge of the record rises 1.3 K.</p>
+<h2>Stacked worst case: the wrong 6 W strip, dead-still air (every film coefficient halved), 35 C (95 F) room</h2>
 <table>
 <thead>
 <tr>
 <th>Layout</th>
+<th>Record hottest spot, rise</th>
 <th>Record</th>
+<th>Strip</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>A. Today</td>
-<td>49.7 C (121 F)</td>
+<td>A. Old: strip on the rim</td>
+<td>+14.6 K</td>
+<td>49.6 C (121 F)</td>
+<td>64.1 C</td>
 </tr>
 <tr>
-<td>D. Aluminium ring + cork, back face</td>
+<td>D. Study version</td>
+<td>+9.9 K</td>
 <td>44.9 C (113 F)</td>
+<td>56.5 C</td>
+</tr>
+<tr>
+<td><strong>F  FINAL, as built in the CAD</strong></td>
+<td><strong>+10.2 K</strong></td>
+<td><strong>45.2 C (113 F)</strong></td>
+<td><strong>56.2 C (133 F)</strong></td>
 </tr>
 </tbody>
 </table>
-<p>Vinyl softens at about 55 to 60 C (130 to 140 F).</p>
-<p>Recommendation: layout D. The strip moves to the back face of the backplate, about 15 mm in from the rim, facing the wall. It sits on a 1 mm aluminium ring (30 mm wide, r 103 to 133 mm) that spreads the heat, with a 2 mm cork ring between the aluminium and the wood. The LEDs then have no line of sight to the record at all, and the wood plus cork sit between them. This is also the layout the approved product photos were lit with, so it closes the halo-mismatch flag. Nothing gets thicker: ring + cork + strip is about 5 mm inside the 25.4 mm gap behind the backplate.</p>
-<p>Not done yet: the CAD, drawings, BOM and RFQ packets still describe the rim strip. First prototype: thermocouple on the record's back at r 117 mm and at the top edge, 2 hours on, before anything ships.</p>
-<p>Projection from the wall, installed and tightened (from <code>assembly.py</code> / <code>assembly_lit.py</code>):</p>
+<p>Vinyl softens at about 55 to 60 C (130 to 140 F). The final layout keeps the record about 10 K below that even in the stacked worst case, and 22 K below it in the normal case.</p>
+<p>The final geometry differs from the study version (D) in two ways: the ring is 3 mm further in, so it clears the rim by 3.35 mm, and the cork is 1.6 mm instead of 2.0 mm. Together that costs 0.1 K in the normal case and 0.3 K in the worst case.</p>
+<h2>Why 1/16 in cork is fine</h2>
+<p>Same final geometry, only the cork thickness changed. Record hottest spot:</p>
+<table>
+<thead>
+<tr>
+<th>Cork</th>
+<th>Normal (4 W, 30 C room)</th>
+<th>Stacked worst (6 W, still air, 35 C room)</th>
+<th>Can we buy it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2.0 mm</td>
+<td>33.04 C</td>
+<td>44.92 C</td>
+<td>not a stocked sheet size</td>
+</tr>
+<tr>
+<td><strong>1.6 mm (1/16 in), the spec</strong></td>
+<td><strong>33.14 C</strong></td>
+<td><strong>45.16 C</strong></td>
+<td>yes, WidgetCo roll</td>
+</tr>
+<tr>
+<td>1.5 mm</td>
+<td>33.17 C</td>
+<td>45.22 C</td>
+<td>yes, The Cork Store sheets</td>
+</tr>
+<tr>
+<td>no cork at all</td>
+<td>33.55 C</td>
+<td>45.98 C</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Going from 2.0 mm to 1/16 in costs 0.10 K in the normal case and 0.23 K in the worst case. The whole cork ring is worth about 0.4 K normal and 0.8 K worst. The aluminium ring and the move to the back face do most of the work.</p>
+<p>Model note: the grid step through the thickness was refined from 0.25 mm to 0.1 mm for this run so that 1.6 mm and 1.5 mm are told apart. A few older rows moved by 0.1 as a result (for example the old rim strip's worst case reads 49.6 C, where the first run printed 49.7 C).</p>
+<h2>The lit cap</h2>
+<p>The lit cap adds 0.17 W at the centre of the record, 95 mm away from the halo's warm band. <code>label-light/DESIGN.md</code> section 4 estimates the cap's own rise at about 11 K worst case with convection only, and 5 to 7 K once conduction into the record and screw is counted. The record under the cap cannot be warmer than the cap, so that is about 41 C worst case in a 30 C room (35 to 37 C expected). The halo adds 0.02 K at the centre in the normal case and 0.30 K in the stacked worst case, so the two do not stack. Both the cap figure and this combination are estimates: DESIGN.md marks the cap rise "must be measured", and the cap is not in <code>thermal.py</code>.</p>
+<h2>What the model leaves out</h2>
+<ul>
+<li>The buoyant air plume rising behind the backplate. Not modelled.</li>
+<li>The four steel screws through the cork. Hand calculation: each #4 screw buried 6.9 mm in MDF passes about 0.003 W/K into the wood (the wood around it is the bottleneck), 0.011 W/K for four, against about 0.61 W/K through the cork ring itself. That is 2 percent more heat path. Not in the model.</li>
+<li>The hub (it covers the back face inside r 63.5) and the cap. Not in the model.</li>
+<li>The 7 in sconce and the aluminium-backplate variants. Not modelled, and not on this layout.</li>
+<li>Strip efficiency is assumed 35 percent light, 65 percent heat. Stray light reaching the record's overhang off the wall is assumed 0.1 W at 4 W.</li>
+</ul>
+<h2>First prototype test (not done, nothing exists to test yet)</h2>
+<p>Thermocouple on the record's back at r 114 mm, at the top edge, and under the cap. Two hours on, in a still room. Accept: record no more than 5 K above the room with the 4 W strip. Nothing ships before this.</p>
+<h2>Projection from the wall, installed and tightened</h2>
+<p>Measured on the rebuilt assemblies (<code>gates.py</code>, section HEAT). Unchanged by the new layout.</p>
 <table>
 <thead>
 <tr>
@@ -91,6 +180,10 @@ img{max-width:100%}
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>LED strip face (now behind the backplate)</td>
+<td>21.20 mm = 0.83 in</td>
+</tr>
 <tr>
 <td>Backplate back (the halo gap)</td>
 <td>25.40 mm = 1.00 in</td>

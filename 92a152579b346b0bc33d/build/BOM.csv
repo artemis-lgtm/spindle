@@ -17,8 +17,11 @@ sku,part,q1,q20,q100,q500,source
 12in (kit and sconce),Silicone bumpers x2 clear self-adhesive,0.13,0.13,0.13,0.1,P eBay 100/$6.51
 12in (kit and sconce),"Lead wire 18 AWG 12in, heat shrink, hot glue",0.3,0.25,0.15,0.1,E
 12in (kit and sconce),"Hang + safety card, printed",0.5,0.4,0.2,0.1,E
+12in (kit and sconce),"Aluminium heat ring RS-HR-12, 5052-H32 0.040in, OD 260 ID 200, 4 holes, laser cut",27.1,13.83,7.38,7.38,"V SendCutSend guest quote of the canonical cad/parts/RS-HR-12.dxf, 2026-11-11: $27.10 @1, $20.34 @2, $13.83 @10, $10.85 @50, $7.38 @100, $4.69 @1000; q20 uses the 10 price, q500 uses the 100 price"
+12in (kit and sconce),"Cork ring RS-CK-12, 1/16in cork, OD 260 ID 200, 4 punched holes, cut in-house",1.89,1.89,1.89,1.89,"V material: WidgetCo 1/16in x 12in x 30ft roll $66 = 35 rings; E cutting (tool not picked, no labour in this price)"
+12in (kit and sconce),"Heat-ring screws x4, #4 x 3/8in pan head sheet-metal",0.2,0.16,0.12,0.08,"E hardware store / box of 100, not looked up"
 12in (kit and sconce),Box 13x13x3 double-wall + foam corners + inner poly sleeve + cap pouch,5.0,4.5,3.5,2.75,E Uline/Amazon; scope report $3-4 box at 25
-12in (kit and sconce),TOTAL parts,62.79,52.12,38.07,29.13,
+12in (kit and sconce),TOTAL parts,91.98,68.0,47.46,38.48,
 7in kit,"Backplate 6in x 1/2in MDF, CNC-cut, painted",3.0,2.5,2.0,1.5,"E same panel, 20+ discs"
 7in kit,"Hub, 4in x 1in PETG print",4.5,3.5,2.25,1.5,E
 7in kit,Threaded insert E-Z Lok 400-4,1.9,1.76,1.7,1.6,V Albany

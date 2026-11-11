@@ -1,3 +1,7 @@
+REVISION STATUS (2026-11-11): CURRENT = RS-WP-01 rev A (geometry unchanged, sheet re-issued 2026-11-11).
+SUPERSEDED, DO NOT QUOTE OR BUILD: none.
+If you hold any earlier drawing, STEP or zip of these parts, discard it. See cad/rfq/README.md.
+
 RFQ: laser-cut + formed 14 ga steel mounting plate with 3 PEM studs (SendCutSend / OSH Cut style order)
 Part: RS-WP-01. Round plate D 101.6 (4.00 in) with one 8 mm wide tab bent up 90 deg.
 Material: mild steel CRS 14 ga (0.0747 in / 1.90 mm). Alt quote: 304 stainless 14 ga.

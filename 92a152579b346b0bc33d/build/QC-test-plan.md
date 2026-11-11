@@ -1,5 +1,7 @@
 # QC and test plan (build/QC-test-plan.md)
 
+> **SUPERSEDED IN PART, 2026-11-11 (heat-safe layout, `../cad/FIXES-heat-layout.md` and `../cad/THERMAL.md`):** on the 12 in unit the LED strip is now on the BACK of the backplate on an aluminium ring over a cork ring, not on the rim. Test 1 points T1 (strip face at 3 o'clock on the rim) and T2 (rim wood beside the strip) no longer exist as described. Measure instead: the strip face from behind (limit under 55 C), the aluminium ring, and the record's BACK face 114 mm from the centre, at the top edge and under the cap (limit: no more than 5 C above the room). The record-face limits in this plan are unchanged. This plan has not been rewritten.
+
 Prepared 2026-11-10. Five tests. Tests 1 to 4 run on all three prototypes and on the first 10 production units; tests 2 to 4 run on every production unit as a 90-second check; test 5 runs on three packed boxes before the first shipment. Acceptance limits come from engineering-report.md section 3 (heat) and the mounting report (mount); shipping limits are an ISTA 3A-lite reading of the real ISTA 3A procedure for small parcels, scaled to one home-built drop rig.
 
 Equipment: IR thermometer with emissivity set to 0.95, a room thermometer, a 1-gallon water jug (8.3 lb), a #8 screw-and-loop hook, a tape measure, a phone camera at 240 fps (slow-motion mode), a bathroom scale, a hard floor (concrete garage or tile), masking tape, the pass/fail sheet in section 6.

@@ -1,0 +1,16 @@
+board,designator,part,side,x_mm,y_mm,rot_deg
+RS-PCB-12L-LED,D1,LUXEON 2835 L128-2790SA35A0DF1,bottom,0.0,8.5,0.0
+RS-PCB-12L-LED,D2,LUXEON 2835 L128-2790SA35A0DF1,bottom,-7.361,4.25,60.0
+RS-PCB-12L-LED,D3,LUXEON 2835 L128-2790SA35A0DF1,bottom,-7.361,-4.25,120.0
+RS-PCB-12L-LED,D4,LUXEON 2835 L128-2790SA35A0DF1,bottom,-0.0,-8.5,180.0
+RS-PCB-12L-LED,D5,LUXEON 2835 L128-2790SA35A0DF1,bottom,7.361,-4.25,240.0
+RS-PCB-12L-LED,D6,LUXEON 2835 L128-2790SA35A0DF1,bottom,7.361,4.25,300.0
+RS-PCB-12L-LED,R1,100R 1% 0603,bottom,-5.5,9.526,120
+RS-PCB-12L-LED,R2,100R 1% 0603,bottom,5.5,-9.526,300
+RS-PCB-12L-LED,Z1,ESD/TVS 12 V UNIDIRECTIONAL 0402 (e.g. PESD12VS1UL class), cathode to LED+, anode to LED-,bottom,-5.5,-9.526,240
+RS-PCB-12L-HUB,P1,spring pad D 2.6 ENIG, no part (contact spring + plunger live in the carrier),top,0.0,0.0,0
+RS-PCB-12L-HUB,P2,Mill-Max 0919-0-15-20-89-14-11-0 (SMT) return pin,top,-3.8,0.0,0
+RS-PCB-12L-HUB,U1,onsemi NSI45020AT1G SOD-123,top,3.6,-3.0,0
+RS-PCB-12L-HUB,D1,1N4148WS SOD-323 (reverse-polarity block),top,-3.0,-3.6,0
+RS-PCB-12L-HUB,Z1,TVS 15 V standoff unidirectional 0402 (SMF15A class in 0402/SOD-523), contact node to return,top,3.0,3.6,0
+RS-PCB-12L-HUB,F1,PTC resettable fuse 100 mA hold 0603, in the +12 V tap ahead of D1,top,-3.0,3.6,0

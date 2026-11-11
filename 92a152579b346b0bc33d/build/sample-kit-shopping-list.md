@@ -1,5 +1,9 @@
 # Sample-kit shopping list: 3 hand-built prototypes this week
 
+> **SUPERSEDED IN PART, 2026-11-11 (heat-safe layout, `../cad/FIXES-heat-layout.md`):** the prototypes now also need, per 12 in unit, one 260 x 200 mm ring of 0.040 in aluminium, one matching ring of 1/16 in (1.6 mm) cork and four #4 x 3/8 in pan-head screws. None of these is on this list or priced. Question D.1 below ("rim-mounted outward-facing COB") is superseded: the strip is on the back of the backplate facing the wall. The backplate needs no rim rabbet.
+
+> **SUPERSEDED IN PART, 2026-11-11:** lines 8, 10 and 15 (1 in dome bolts, 1/8 in SAW1GY felt washers, panel jacks) are superseded. Current parts: RS-CAP-12 rev D (one-piece turned cap), RS-HUB-01 rev B (150 mm power pigtail, no jack), PEM FH-832-10 studs, die-cut 1/16 in felt, PET label washer, centre backing ring. See `BOM.md` and `../cad/FIXES-fable52.md`. Do not buy from this list until it is rewritten.
+
 Prepared 2026-11-10. Goal: Austin and I build three working 12" units (one chrome, one brass, one black cap) plus one 7" test, by hand, before any custom part (CNC backplate, printed hub, laser plate, turned dome) exists. Off-the-shelf stand-ins are used where the final part is custom. Nothing has been ordered; this is the list to order from. Prices as fetched 2026-11-09/10; V = confirmed on the page tonight, P = confirmed 11/9 and rate-limited tonight, S = snippet, E = estimate. Home Depot, Amazon and Harbor Freight return 403/503 to scrapers, so those prices are marked E or S and the links are for a human browser.
 
 ## A. Parts (for 3 x 12" + 1 x 7")

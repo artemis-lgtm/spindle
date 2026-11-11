@@ -1,3 +1,5 @@
+> **SUPERSEDED DRAFT, DO NOT SEND (2026-11-11, heat-safe layout).** This text asks for a 12 in backplate with a rim rabbet and a 6 o'clock rim notch. The current part is RS-BP-12-MDF rev C: plain rim, no rabbet, no notch, four blind pilot holes and a short lead channel on the back. Quote only from `cad/rfq/backplate-mdf-cnc/SPEC.txt` and the files in that folder. The 12 in sconce also needs two new parts with their own packets: `cad/rfq/heat-ring-aluminum/` and `cad/rfq/cork-ring/`. Rewrite this cover note before anything is sent.
+
 To: sales@cnccutservicefl.com
 From: artemis@higneyintl.com
 Cc: austin@higneyintl.com

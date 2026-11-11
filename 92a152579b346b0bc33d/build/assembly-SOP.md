@@ -1,5 +1,9 @@
 # Assembly SOP: one 12" unit (build/assembly-SOP.md)
 
+> **SUPERSEDED IN PART, 2026-11-11 (heat-safe layout, `../cad/FIXES-heat-layout.md`):** on the 12 in unit the LED strip no longer goes in a rim rabbet. Jig J4 (the 6 o'clock kerf in the rabbet), the rabbet and notch checks in step 1, and step 6 (pressing the strip into the rabbet, LEDs outward) are superseded. Current build: stick the cork ring's adhesive face to the aluminium ring; wipe the ring's other face with alcohol and lay about 700 mm of strip on it centred 115 mm from the centre, joint and leads at 6 o'clock; sleeve the solder joints; fix the ring to the BACK of the backplate with four #4 x 3/8 in screws, snug only; run the leads in the back channel to the hub. This SOP has not been rewritten or timed for that.
+
+> **SUPERSEDED IN PART, 2026-11-11:** steps 4, 10 and 11 (panel jack pressed into the hub, bonded dome on a 1 in bolt, shoulder-screw studs) describe parts that no longer exist. Current parts: RS-CAP-12 rev D (one-piece turned cap), RS-HUB-01 rev B (150 mm power pigtail, no jack), PEM FH-832-10 studs, die-cut 1/16 in felt, PET label washer, centre backing ring. See `BOM.md` and `../cad/FIXES-fable52.md`. Do not buy from this list until it is rewritten.
+
 Prepared 2026-11-10. Builds one Kit or Sconce from the BOM.md parts. Times are for one person with the jigs in section 1 already made; the first three prototypes will take about double. Target: 20 minutes per unit at batch 100 (cost-model.md assumes 25 minutes for the first 20, 20 minutes at 100). Dimensions come from engineering-report.md section 6 and mounting-report.md section 1 and are not re-derived.
 
 Safety rule that governs every step: nothing in this fixture carries more than 12 V DC. The UL-listed adapter is the only part that touches 120 V and it is never opened, modified or placed inside a wall.

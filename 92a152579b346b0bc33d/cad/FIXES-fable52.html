@@ -1,0 +1,262 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Fixes applied from the Fable 5.2 pessimist review | Spindle</title>
+<style>
+:root{--bg:#f6f2ea;--ink:#1b1916;--mute:#6b645a;--line:#e3dccf;--accent:#b8732e;--panel:#fffdf8}
+@media (prefers-color-scheme:dark){:root{--bg:#121110;--ink:#ece6da;--mute:#a19887;--line:#2c2925;--accent:#e6a456;--panel:#1a1816}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Inter",system-ui,sans-serif}
+main{max-width:880px;margin:0 auto;padding:28px 16px 80px}
+a{color:var(--accent)} .back{font-size:14px;display:inline-block;margin-bottom:18px}
+h1{font-size:28px;line-height:1.2} h2{margin-top:36px;font-size:21px} h3{font-size:17px}
+table{border-collapse:collapse;width:100%;display:block;overflow-x:auto;font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top} th{background:var(--panel)}
+code{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:0 4px;font-size:.9em}
+pre{background:var(--panel);border:1px solid var(--line);padding:12px;overflow-x:auto;border-radius:8px}
+img{max-width:100%}
+</style></head><body><main><a class="back" href="../START-HERE.html">Back to START HERE</a>
+<h1>Fixes applied from the Fable 5.2 pessimist review</h1>
+<blockquote>
+<p><strong>Update 2026-11-11, later the same day:</strong> item M11 i (renders show the LED ring on the back face, CAD had it on the rim) is now CLOSED by <code>FIXES-heat-layout.md</code>: the strip moved to the back face on an aluminium ring over a cork ring, RS-BP-12-MDF went to rev C, and the build now ends with more gates than the 105 quoted below. Everything else in this file stands as written.</p>
+</blockquote>
+<p>Answers <code>cad/REVIEW-fable52.md</code> item by item. Applied 2026-11-11 by claude-fable-5-2. Nothing was sent, ordered or published.</p>
+<p><strong>New revisions:</strong> RS-CAP-12 <strong>rev D</strong>, RS-CAP-7 <strong>rev C</strong>, RS-CAP-12L and its hub module <strong>rev B</strong>, RS-BP-12-MDF / RS-BP-7-MDF <strong>rev B</strong>, RS-HUB-01 <strong>rev B</strong>. RS-WP-01 and the aluminum plates are unchanged (rev A, sheets re-issued).
+<strong>Superseded, never quote:</strong> RS-CAP-12 rev A/B/C, RS-CAP-7 rev A/B, RS-CAP-12L rev A/A.1, backplate rev A, hub rev A. Old zips are in <code>cad/rfq/SUPERSEDED-do-not-quote/</code>; <code>cad/rfq/README.md</code> is the index; every SPEC.txt opens with a REVISION STATUS block and every title block has a SUPERSEDES line.</p>
+<p><strong>Build result:</strong> <code>cad/.venv/bin/python build_all.py</code> ends with <code>gates: 105 pass, 0 FAIL</code>. The gates live in <code>cad/gates.py</code> and are printed at the top of <code>cad/checks.md</code>; the build exits non-zero if one fails. File:line references below are to the files as committed.</p>
+<h2>Where I did not follow the review to the letter (read this first)</h2>
+<ol>
+<li><strong>M6, the "5 mm stroke Mill-Max pin" does not exist.</strong> Mill-Max's own page calls the 3.0 mm 0919 family its longest travel, and a search of Harwin, Preci-Dip, PTR and Same Sky found nothing compact above 3.5. The stack needs 4.2 mm. So the centre contact is now a custom gold plunger on a catalogue compression spring, running inside the carrier's spigot, which doubles as the PEEK guard tube the review asked for. It has 4.9 mm of travel. This is a new mechanism that has never been built, and the spring is calculated, not a picked part number.</li>
+<li><strong>M8, the pin head is at the tip end, not on the sleeve top.</strong> The spring pushes the pin into the cap. A head on top of the sleeve stops it falling out, not walking in, and a D 2.4 head cannot sit in the D 2.2 bore the review specified above the sleeve. The head now seats in a counterbore in the sleeve's tip end, which is a real stop in the direction of the load. The sleeve becomes a turned PEEK part instead of cut tubing.</li>
+<li><strong>M4, I deleted the lit cap's felt and recess instead of thickening the flange.</strong> Thickening to 1.8 (tried first) lifted the light slot 0.5 mm and the ray trace showed the dark collar next to the cap growing from about 3 mm to about 8 mm. With no recess the flange is solid 1.3, sits flat on the PET washer, and the optics are unchanged (max/min 3.96 against 3.73 before).</li>
+<li><strong>M3, the lip went up 0.20; the louver did not come down.</strong> Same reason: the louver is the optic. The gap is 0.25 either way.</li>
+<li><strong>M1, the centre ring has no 0.5 pocket.</strong> With the review's own compression figure (1.6 free, 1.1 loaded) a 0.5 pocket would leave the clamped centre 0.5 lower than the unloaded pads: a new dish. The ring sits on the face inside a scored witness circle, so its loaded top is coplanar with the pads. One parameter (<code>CENTER_RING_SET</code>) carries the assumption; measure it and the pocket depth follows.</li>
+<li><strong>M11c, the separate-stud option is deleted, not corrected to 18.7.</strong> The new D 7.10 shoulder cannot be tapped 1/4-20 (0.37 wall).</li>
+<li><strong>Found on the way, not in the review:</strong> the felt pads sit in 0.5 targets, so the record is 1.1 off the backplate, not the 1.6 every stack assumed. All stacks now use 1.1. The 7 in sconce had the same unsupported-centre problem as the 12 in (its 38 mm hole is wider than the 12 in ring); it gets a 47 x 39 backing ring. Durofelt does not stock the 1-1/4 x 3/8 x 1/16 cap felt (page read 2026-11-11): it is a die-cut part. The dome-cap RFQ drafts in <code>sourcing/rfq-drafts/</code> describe a 1 in stud; they are now bannered as superseded.</li>
+</ol>
+<h2>MUST-FIX</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>What changed (old -&gt; new)</th>
+<th>Where</th>
+<th>Gate that proves it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>M1</td>
+<td>Centre backing ring added: 31.75 x 9.5 x 1.6 felt on the backplate front face, concentric with the insert, same blank as the cap felt. None -&gt; ring + scored witness circle D 32.4 (D 47.65 on the 7 in). Record seat 1.6 (assumed) -&gt; 1.1 (real). Outer pads R 127 -&gt; R 120.</td>
+<td><code>cad/sconce_cad.py:52</code>, <code>cad/sconce_cad.py:48</code>, backplate cut <code>cad/sconce_cad.py:281</code>, solid <code>cad/sconce_cad.py:534</code>, assembly <code>cad/assembly.py:68</code>, drawing <code>cad/drawings.py:204</code>, BOM line 6a</td>
+<td><code>centre_ring_loaded_top_minus_pad_top</code> = 0.0 (abs &lt;= 0.05); <code>backplate_*_centre_ring_seat_found_in_the_solid</code> = 1; <code>record_back_face_above_backplate_front_face</code> = 1.1; interference 0</td>
+</tr>
+<tr>
+<td>M2</td>
+<td>D-key height 0.9 -&gt; 0.55 (under the 0.72 thinnest PCB). Boss mouth: none -&gt; counterbore D 8.3 x 0.4 + 0.2 chamfer. Spigot: run-out groove D 7.3 x 0.5 added. LED PCB: return ring bottom only -&gt; both faces, stitched. Dome bore now modelled at its tap-drill D 7.46 and the assembly spigot at minor diameter, so the interference check can see a clash inside the thread.</td>
+<td><code>cad/sconce_lit.py:70</code>, <code>cad/sconce_lit.py:109</code>, <code>cad/sconce_lit.py:72</code>, <code>cad/sconce_lit.py:198</code>, <code>cad/sconce_lit.py:250</code>, <code>cad/label-light/pcb.py:64</code>, <code>cad/label-light/PCB-SPEC.md</code></td>
+<td><code>pcb_min_top_minus_key_top</code> = 0.17 (&gt;= 0.1); <code>boss_counterbore_dia_minus_key_dia</code> = 0.3; <code>core_key_top_measured_below_min_pcb_top</code> = 1; <code>dome_boss_counterbore_found</code> = 1; negative control (0.9 key fails) = 1</td>
+</tr>
+<tr>
+<td>M3</td>
+<td>Lip-to-louver and lip-to-window gap 0.05 -&gt; 0.25 (lip face z 4.80 -&gt; 5.00, cap 14.8 -&gt; 15.0 tall). Datums toleranced on the sheets: column top 4.80 +/-0.02, boss face above lip face 0.60 +/-0.02, PCB 0.80 +/-0.08; both sheets say the boss is the stop.</td>
+<td><code>cad/sconce_lit.py:92</code>, <code>cad/sconce_lit.py:102</code>, <code>cad/sconce_lit.py:125</code>, <code>cad/drawings_lit.py:30</code>, <code>cad/drawings_lit.py:64</code></td>
+<td><code>louver_top_to_dome_lip_gap</code> = 0.25; <code>lip_gap_minus_tolerance_stack</code> = 0.13 (&gt;= 0.1); <code>lip_gap_measured_on_the_solids</code> = 0.25</td>
+</tr>
+<tr>
+<td>M4</td>
+<td>Flange web over the felt recess 0.3 -&gt; no recess at all: solid 1.3 flange, flat underside on the PET washer. Lit cap felt deleted.</td>
+<td><code>cad/sconce_lit.py:61</code>, profile <code>cad/sconce_lit.py:213</code>, <code>cad/drawings_lit.py:62</code></td>
+<td><code>flange_solid_thickness_under_the_cavity</code> = 1.3 (&gt;= 0.8); <code>core_underside_has_no_felt_recess</code> = 1</td>
+</tr>
+<tr>
+<td>M5</td>
+<td>PET label washer added under every cap: 37.5 x 7.5 x 0.25 (7 in: 47.5 x 38.6). Plain stud 11.70 -&gt; 11.95; lit stud 11.70 -&gt; 11.65 (no felt, so its face is 0.3 lower: same tip depth, asserted). Plain recess 1.0 (+/-0.3) -&gt; 1.00 +/-0.05. Felt specified by loaded height.</td>
+<td><code>cad/sconce_cad.py:168</code>, <code>cad/sconce_cad.py:180</code>, <code>cad/sconce_lit.py:29</code>, <code>cad/sconce_lit.py:56</code>, <code>cad/assembly.py:71</code>, BOM line 6b</td>
+<td><code>pet_washer_od_minus_flange_od</code> = 0.9 (&gt;= 0.5); <code>pet_washer_od_minus_cap12_band_od</code> = -0.6 (hidden); <code>cap12_stud_tip_z_measured</code> = -11.95; <code>lit_tip_minus_plain_cap12_tip</code> = 0.0</td>
+</tr>
+<tr>
+<td>M6</td>
+<td>Centre contact: Mill-Max 0919, 2.24 usable, 0.09 margin -&gt; gold plunger, 4.9 travel, inside a PEEK guard tube whose top (z 2.1) is a hard stop below any correct stud. Hub relief 4.5 -&gt; 9.1. Return contact 0906 -&gt; 0919 at 7.5 working height. Tolerance stack (low 0.94, high 1.29) printed in checks.md. Birch deleted from the backplate RFQ; thickness 12.70 +/-0.15 measured.</td>
+<td><code>cad/sconce_lit.py:141</code>, <code>cad/sconce_lit.py:150</code>, <code>cad/sconce_lit.py:172</code>, <code>cad/sconce_lit.py:340</code>, <code>cad/sconce_lit.py:359</code>, <code>cad/sconce_cad.py:107</code>, <code>cad/build_all.py:240</code></td>
+<td>worst-case thick record compression = 0.56 (&gt;= 0.5); worst-case thin record tip above guard = 0.56 (&gt;= 0.2); spring margin with a stud on the guard = 0.7 (&gt;= 0.3); return pin 6.79..8.01 inside 6.63..8.87</td>
+</tr>
+<tr>
+<td>M7</td>
+<td>RS-CAP-7 stud 15.875 -&gt; 12.6, with an assert on tip position against RS-CAP-12. Bonded cap on a 1 in bolt superseded in the BOM. Any other screw stops on the guard tube.</td>
+<td><code>cad/sconce_cad.py:191</code>, <code>cad/sconce_cad.py:203</code>, <code>build/BOM.md</code> line 4</td>
+<td><code>cap_7in_tip_minus_cap_12in_tip</code> = 0.018 (abs &lt;= 0.05); plain cap and 7 in cap tips above the guard, worst case = 0.26 / 0.21 (&gt;= 0.2)</td>
+</tr>
+<tr>
+<td>M8</td>
+<td>Bore plain D 3.15 x 13.5 -&gt; stepped: D 3.15 x 10.00 then D 2.2 (sleeve seats on the shoulder). Pin plain D 1.588 -&gt; headed D 2.4 x 0.5, head in a D 2.5 x 0.55 counterbore in the sleeve tip. Loctite 609 and staking deleted. Pin recess 0.05 +0.05/-0.</td>
+<td><code>cad/sconce_lit.py:38</code>, <code>cad/sconce_lit.py:41</code>, <code>cad/sconce_lit.py:308</code>, <code>cad/drawings_lit.py:148</code></td>
+<td><code>core_bore_shoulder_found</code> = 1; <code>sleeve_top_z_minus_bore_shoulder_z_measured</code> = 0.0; <code>pin_head_minus_sleeve_bore</code> = 0.8; <code>plunger_to_brass_margin_worst</code> = 0.42 (&gt;= 0.3)</td>
+</tr>
+<tr>
+<td>M9</td>
+<td>Dog point "4.8" (+/-0.3, so 5.1 against a 4.98 insert) -&gt; 4.80 +0/-0.10. Stud +/-0.1 -&gt; +/-0.05. Recess, column top, boss step, bore step, sleeve, pin all toleranced on the sheet. Core dimensioned with dimension lines. <code>sheet()</code> now sizes the title block to its text and raises if notes or title block would cross the border (the tolerance line used to be below it). EN 5 um max, thread to accept a 2B GO gauge after plating. DATE 2026-11-09 -&gt; 2026-11-11.</td>
+<td><code>cad/sconce_cad.py:183</code>, <code>cad/drawings.py:105</code>, <code>cad/drawings.py:113</code>, <code>cad/drawings.py:361</code>, <code>cad/drawings_lit.py:52</code></td>
+<td><code>insert_minor_min_minus_dog_point_max</code> = 0.18 (&gt;= 0.1); lowest note line y = 0.029 and lowest title-block line y = 0.0216 (border 0.010); tolerance line on 19 of 19 sheets</td>
+</tr>
+<tr>
+<td>M10</td>
+<td>Panel jack (D 8.0 hole, mouth 7.5 mm off the wall) -&gt; 150 mm 18 AWG pigtail with an inline female 5.5 x 2.1 jack, P-clipped in the rear pocket (pilot D 2.4 at (-9.5, 4)). Cable hole D 6.5. Rear pocket 16.5 deep, to y 28.5 -&gt; 12.0 deep, to y 22. In-wall hole 1-1/4 in offset -&gt; 1 in on the plate centre.</td>
+<td><code>cad/sconce_cad.py:95</code>, <code>cad/sconce_cad.py:100</code>, <code>cad/sconce_cad.py:572</code>, <code>cad/sconce_cad.py:601</code>, hub cut <code>cad/sconce_cad.py:360</code>, <code>mounting-report.md</code>, <code>site/install.html</code>, BOM line 11</td>
+<td>everything stays 1.55 mm in front of the wall plane (&gt;= 0.5); mated plug ends 9.85 mm inside the backplate edge; jack passes a centred 1 in hole with 13.9; <code>hub_has_no_panel_jack_hole</code> = 1; <code>hub_p_clip_pilot_found</code> = 1</td>
+</tr>
+<tr>
+<td>M11</td>
+<td>See the table below.</td>
+<td></td>
+<td>document gates in checks.md, all 0 stale / 1 required</td>
+</tr>
+</tbody>
+</table>
+<h3>M11 contradictions</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Was</th>
+<th>Now</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a</td>
+<td>BOM and README: cap felt 1 x 3/8 x 1/8 (SAW1GY)</td>
+<td>1-1/4 x 3/8 x 1/16, die-cut (not a Durofelt stock size, checked)</td>
+<td><code>build/BOM.md</code> line 5, <code>cad/README.md</code>, <code>cad/sconce_cad.py:162</code></td>
+</tr>
+<tr>
+<td>b</td>
+<td>RFQ said 6 felt pockets, STEP had 3</td>
+<td>6 in the STEP (probed), outer pads at R 120; the guard now raises instead of skipping</td>
+<td><code>cad/sconce_cad.py:44</code>, <code>cad/sconce_cad.py:271</code></td>
+</tr>
+<tr>
+<td>c</td>
+<td>Alt stud "cut to 17.7" (really 10.7 exposed)</td>
+<td>Option deleted; one-piece only</td>
+<td><code>cad/build_all.py:323</code></td>
+</tr>
+<tr>
+<td>d</td>
+<td>Install sheet says clockwise, J-slots locked anticlockwise</td>
+<td>J-slot entries mirrored (stud angle +20 -&gt; -20): locks clockwise, and cap tightening seats the bayonet</td>
+<td><code>cad/sconce_cad.py:85</code></td>
+</tr>
+<tr>
+<td>e</td>
+<td>BOM: shoulder screws, M3 x 6, 1 in hole, jack at 6 o'clock</td>
+<td>PEM FH-832-10 + lock nuts, M3 x 12, 30 x 37 slot, pigtail hole at (0, +15)</td>
+<td><code>build/BOM.md</code> lines 2, 12, 13, 14</td>
+</tr>
+<tr>
+<td>f</td>
+<td>Site: 4 to 10 W</td>
+<td>about 4 W, up to 6 W</td>
+<td><code>site/faq.html</code>, <code>site/product.html</code>, <code>site/index.html</code>, <code>site/_gen/pages.py</code></td>
+</tr>
+<tr>
+<td>g</td>
+<td>Site and renders: record lifts off a post</td>
+<td>Copy fixed (the stud is part of the cap). Renders flagged, not redone</td>
+<td>site files above, <code>renders-final/README.md</code>, <code>NOTES.md</code></td>
+</tr>
+<tr>
+<td>h</td>
+<td>checks.md prose hard-coded (5/8 stud, 1.3..2.4 records)</td>
+<td>Every sentence printed from parameters</td>
+<td><code>cad/build_all.py:154</code></td>
+</tr>
+<tr>
+<td>i</td>
+<td>Renders: LED ring on the back face. CAD: rim</td>
+<td>CAD, drawings, BOM, site and DESIGN.md all say RIM. Render discrepancy recorded as an open decision</td>
+<td><code>NOTES.md</code> (2026-11-11), <code>START-HERE.html</code>, <code>build/BOM.md</code> line 8</td>
+</tr>
+<tr>
+<td>j</td>
+<td>Z1 12 V bidirectional on both boards</td>
+<td>Cap: 12 V unidirectional. Hub: 15 V standoff</td>
+<td><code>cad/label-light/PCB-SPEC.md</code>, <code>cad/label-light/pcb.py:60</code></td>
+</tr>
+</tbody>
+</table>
+<h2>SHOULD-FIX</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Status</th>
+<th>What</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S1</td>
+<td>Done</td>
+<td>Smooth D 7.10 +0/-0.05 x 2.0 shoulder under RS-CAP-12 and the lit core: the record centres on it with 0.14 to 0.27 slop instead of 0.9 on thread crests. <code>cad/sconce_cad.py:172</code>. No fixed pilot bushing was added (it would collide with the shoulder).</td>
+</tr>
+<tr>
+<td>S2</td>
+<td>Not done</td>
+<td>Low-set urethane instead of felt for the backing ring and cap washer. Needs a bench comparison; noted in DESIGN.md failure modes.</td>
+</tr>
+<tr>
+<td>S3</td>
+<td>Part</td>
+<td>Flangeless anchors are now in the BOM. The 0.6 mm bayonet play is unchanged.</td>
+</tr>
+<tr>
+<td>S4</td>
+<td>Part</td>
+<td>Rabbet is now painted (drawing + RFQ). Copy and BOM say about 4 W, 6 W max. No aluminium flat under the strip; no thermal test exists yet.</td>
+</tr>
+<tr>
+<td>S5</td>
+<td>Part</td>
+<td>F1 100 mA PTC on the label tap and "12 V DC ONLY" marking note added. The rail PTC + TVS against a 24 V adapter is specified in PCB-SPEC.md but is not a designed board.</td>
+</tr>
+<tr>
+<td>S6</td>
+<td>Part</td>
+<td>Spigot lead-in 0.3 -&gt; 0.6 (capture 0.69 against a 0.5 float); insert minor range 4.98..5.26 carried. The insert's real back-end land is still unmeasured.</td>
+</tr>
+<tr>
+<td>S7, S8</td>
+<td>Done</td>
+<td>Core finish note rewritten (nickel everywhere, mask from paint only; activator for Loctite 270). Cross-hole note corrected: it breaks out at the edge of the column top.</td>
+</tr>
+<tr>
+<td>S9</td>
+<td>Not done</td>
+<td>Louver locating step. Channel tolerance relaxed to +/-0.05 with a first-article check.</td>
+</tr>
+<tr>
+<td>S10</td>
+<td>Done</td>
+<td>Label fading disclosed in DESIGN.md failure modes. Not on the public site (the lit cap is not sold there yet).</td>
+</tr>
+<tr>
+<td>S11</td>
+<td>Done</td>
+<td>Rack on the stud only, mask do-not-chase, R 0.2 at the relief root, drawing date, README cap mass (54.8 g).</td>
+</tr>
+<tr>
+<td>S12</td>
+<td>Done</td>
+<td>UL sentence on the site reworded.</td>
+</tr>
+</tbody>
+</table>
+<h2>Could not fix, and why</h2>
+<ul>
+<li><strong>The centre contact is unproven.</strong> It replaces a catalogue part with a custom plunger and an unpicked spring. The geometry checks out and is gated; whether it makes reliable contact for years is a bench question.</li>
+<li><strong>Unverified purchased parts:</strong> the contact spring, the inline-jack pigtail (envelope assumed D 11.5 x 28), the die-cut felt and PET vendors, the TVS part numbers, the flat land on the back of the E-Z Lok insert, the Mill-Max 0919 barrel diameter.</li>
+<li><strong>Felt compression (0.5 mm assumed)</strong> sets record flatness at the centre. It needs one measurement on a first article.</li>
+<li><strong>Prices were not re-quoted.</strong> <code>build/cost-model.py</code>, <code>BOM.csv</code>, <code>assembly-SOP.md</code> and <code>sample-kit-shopping-list.md</code> still price and describe the bonded cap and panel jack; they carry banners. BOM lines 6a and 6b are not in the totals.</li>
+<li><strong>Renders not redone.</strong> The phantom post and the back-face halo remain in the product images; the lit-cap renders show the rev A cap (0.2 mm shorter, and with a different contact that is not visible).</li>
+<li><strong>Force and stress figures in the review</strong> (dish under clamp load, flange stress, preload decay, strip temperature) are hand calculations there and here. No FEA or thermal run was done.</li>
+<li><strong>HTML copies:</strong> the <code>.md</code> to <code>.html</code> mirror was regenerated with <code>_publish/md2html.py</code>; the published GitHub Pages copy was not touched.</li>
+</ul></main></body></html>

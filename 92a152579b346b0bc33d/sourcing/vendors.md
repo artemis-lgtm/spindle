@@ -34,6 +34,8 @@ Note on Blanda Inc: it advertises "Fort Lauderdale machine shop" but the address
 
 ## 3. Backplate (10.5" dia x 1/2", centre 25/64" hole, rim rabbet 0.40" x 0.06", lead notch; MDF or Baltic birch, painted matte black; aluminium at the $179 tier)
 
+> **Heading superseded 2026-11-11 (heat-safe layout, `../cad/FIXES-heat-layout.md`):** the current 12 in backplate (RS-BP-12-MDF rev C) is MDF only and has NO rim rabbet and NO lead notch; it has four blind pilot holes and a short channel on the back. The same vendors can cut it. Two new parts need vendors that are not in this file: a laser-cut aluminium ring and a cork ring (`../cad/rfq/heat-ring-aluminum/`, `../cad/rfq/cork-ring/`; first quotes in `quotes-2026-11-11/`).
+
 | Vendor | Material / service | Price | MOQ | Lead time | URL (fetch) | Notes |
 |---|---|---|---|---|---|---|
 | CNC Cut Service of Homestead, FL | CNC routing of plywood, MDF, melamine for cabinet shops across Miami-Dade, Broward, Monroe; overflow and tight deadlines welcome | Quote by form; estimate $4-6 per disc at 100 with our MDF, $8-12 at 10 | None stated | Days, local | https://cnccutservicefl.com/ (200); 225 SW 2nd Ave Bldg 2, Homestead 33030, (786) 339-9236, sales@cnccutservicefl.com | Closest fit to "local CNC shop" in the engineering BOM. One sheet of 1/2" MDF yields eight discs. |

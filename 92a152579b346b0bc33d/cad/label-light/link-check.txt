@@ -1,0 +1,10 @@
+Link check 2026-11-10 (UTC 01:21Z). curl = plain curl -L with a browser UA; browser = Playwright Chromium fetch() status on the live site (Digi-Key blocks curl with a bot wall, the real page returns 200 in a browser; prices were read off the loaded page).
+curl=403 browser=200 https://www.digikey.com/en/products/detail/lumileds/L128-2790SA35A0DF1/27376536
+curl=403 browser=200 https://www.digikey.com/en/products/detail/mill-max-manufacturing-corp/0919-0-15-20-89-14-11-0/6193088
+curl=403 browser=200 https://www.digikey.com/en/products/detail/mill-max-manufacturing-corp/0906-0-15-20-76-14-11-0/1147048
+curl=403 browser=200 https://www.digikey.com/en/products/detail/onsemi/NSI45020AT1G/2096220
+curl=403 browser=200 https://www.digikey.com/en/products/detail/yageo/RC0603FR-07100RL/726888
+curl=200 browser=n/a https://www.ibisscientific.com/peek-tube-natural-1-8od-x-0-062-id-length-100-feet/
+curl=200 browser=n/a https://www.durofelt.com/categories/self-adhesive-felt-washers
+curl=200 browser=n/a https://www.mill-max.com/products/new/3-mm-maximum-stroke-spring-loaded-pin
+curl=200 browser=n/a https://www.albanycountyfasteners.com/1-4-20-brass-thread-inserts-wood-400-4-p/117012.htm

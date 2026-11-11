@@ -1,3 +1,7 @@
+REVISION STATUS (2026-11-11): CURRENT = RS-BP-12-AL5 / -AL3 / RS-BP-7-AL5 rev A (geometry unchanged, sheets re-issued 2026-11-11).
+SUPERSEDED, DO NOT QUOTE OR BUILD: none.
+If you hold any earlier drawing, STEP or zip of these parts, discard it. See cad/rfq/README.md.
+
 RFQ: laser / waterjet flat aluminum backplates + countersinks + powder coat
 Parts: RS-BP-12-AL5 (D 266.7, 5.0 mm), RS-BP-12-AL3 (D 266.7, 3.0 mm), RS-BP-7-AL5 (D 152.4, 5.0 mm).
 Material: 5052-H32 aluminum sheet (6061-T6 acceptable). Thickness 5.0 mm (0.197 in; 3/16 in = 4.76 acceptable, tell us) or 3.0 mm.

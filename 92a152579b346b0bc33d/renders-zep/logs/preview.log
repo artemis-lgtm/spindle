@@ -1,0 +1,11 @@
+/Users/artemis/.openclaw/workspace/projects/record-sconces/renders-zep/src/zep.py:758: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes = True
+/Users/artemis/.openclaw/workspace/projects/record-sconces/renders-zep/src/zep.py:127: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes = True
+00:02.046  render           | Saved: '../preview/zep_close.png'
+BlenderMCP addon registered
+BlenderMCP addon unregistered
+WROTE ../preview/zep_close.png
+Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:51:40)
+
+Blender quit

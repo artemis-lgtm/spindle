@@ -1,0 +1,237 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>RS-CAP-12L PCB spec sheet, rev B (quote-ready: JLCPCB / PCBWay) | Spindle</title>
+<style>
+:root{--bg:#f6f2ea;--ink:#1b1916;--mute:#6b645a;--line:#e3dccf;--accent:#b8732e;--panel:#fffdf8}
+@media (prefers-color-scheme:dark){:root{--bg:#121110;--ink:#ece6da;--mute:#a19887;--line:#2c2925;--accent:#e6a456;--panel:#1a1816}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Inter",system-ui,sans-serif}
+main{max-width:880px;margin:0 auto;padding:28px 16px 80px}
+a{color:var(--accent)} .back{font-size:14px;display:inline-block;margin-bottom:18px}
+h1{font-size:28px;line-height:1.2} h2{margin-top:36px;font-size:21px} h3{font-size:17px}
+table{border-collapse:collapse;width:100%;display:block;overflow-x:auto;font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top} th{background:var(--panel)}
+code{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:0 4px;font-size:.9em}
+pre{background:var(--panel);border:1px solid var(--line);padding:12px;overflow-x:auto;border-radius:8px}
+img{max-width:100%}
+</style></head><body><main><a class="back" href="../../START-HERE.html">Back to START HERE</a>
+<h1>RS-CAP-12L PCB spec sheet, rev B (quote-ready: JLCPCB / PCBWay)</h1>
+<blockquote>
+<p>Rev B, 2026-11-11 (../FIXES-fable52.md). Supersedes the rev A / A.1 sheet. LED board: return ring on BOTH faces with stitching vias, Z1 unidirectional. Hub board: no holes, centre gold spring pad instead of a spring pin, the 0919 moves to the return position, Z1 15 V standoff, F1 added.</p>
+</blockquote>
+<p>Two boards. Outlines are in <code>pcb/RS-PCB-12L-LED.dxf</code> and <code>pcb/RS-PCB-12L-HUB.dxf</code> (mm, R2010, layer OUTLINE = board edge, DRILL = holes, COMP_* = component bodies for reference). Component positions: <code>pcb/placement.csv</code> (board origin = board centre, mm, rotation in degrees). Nothing has been ordered.</p>
+<h2>1. RS-PCB-12L-LED (inside the cap)</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Spec</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Outline</td>
+<td>Ring, OD 24.60, centre hole D 8.20 with a FLAT at x = +3.70 (D-shape, routed; keys the core's spigot flat so the dome boss cannot rotate the board), no other holes</td>
+</tr>
+<tr>
+<td>Stack</td>
+<td>2-layer FR4, <strong>0.8 mm</strong>, 1 oz Cu, ENIG</td>
+</tr>
+<tr>
+<td>Solder mask</td>
+<td><strong>White, both sides</strong> (it is part of the light-mixing cavity; reflectance matters). No silkscreen on the bottom except designators outside the LED rows.</td>
+</tr>
+<tr>
+<td>Copper</td>
+<td>Exposed ENIG ring r 4.10..6.00, no mask, on BOTH faces, stitched by D 0.3 vias on r 5.2 (none on the D-flat side): LED return. The bottom ring sits on the nickel column top, the top ring is clamped by the dome boss, so either face makes the return. Bottom: exposed pad D 1.2 at r 6.40, 60 deg: LED+ (hand-solder the 30 AWG PTFE lead).</td>
+</tr>
+<tr>
+<td>Assembly</td>
+<td><strong>Bottom side only</strong>, 8 parts (JLCPCB standard SMT, single side)</td>
+</tr>
+<tr>
+<td>Qty for quote</td>
+<td>10 (proto), 100, 500</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Ref</th>
+<th>Part</th>
+<th>Qty</th>
+<th>Link (loaded 2026-11-10)</th>
+<th>Price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D1-D6</td>
+<td>Lumileds LUXEON 2835 L128-2790SA35A0DF1, 2700 K, CRI 90 (min), 31 lm typ @ 65 mA, 2.7 V, 3.5 x 2.8 x 0.8, 120 deg</td>
+<td>6</td>
+<td>https://www.digikey.com/en/products/detail/lumileds/L128-2790SA35A0DF1/27376536</td>
+<td>$0.19 / 1, $0.0876 / 100, $0.06982 / 500 (67,550 in stock)</td>
+</tr>
+<tr>
+<td>Z1</td>
+<td>ESD/TVS 12 V standoff, UNIDIRECTIONAL, 0402, cathode to LED+, anode to LED-. A static-charged record discharging into the pin must not pass through the LEDs: forward ESD is clamped at about 15 V, reverse ESD at one diode drop (a bidirectional part let the reverse strike reach about -25 V across the 3-LED strings)</td>
+<td>1</td>
+<td>- (part not picked)</td>
+<td>~$0.03 E</td>
+</tr>
+<tr>
+<td>R1, R2</td>
+<td>100 ohm 1 % 0603 (Yageo RC0603FR-07100RL or the JLC basic-part equivalent)</td>
+<td>2</td>
+<td>https://www.digikey.com/en/products/detail/yageo/RC0603FR-07100RL/726888</td>
+<td>$0.10 / 1, $0.0136 / 100 (Digi-Key stock 0 on 11/10, JLC basic part is fine)</td>
+</tr>
+</tbody>
+</table>
+<p>Schematic (two strings in parallel, 10 mA each, fed by the 20 mA regulator on the hub board):</p>
+<pre><code>LED+ pad --+--[D1&gt;|--D2&gt;|--D3&gt;|]--[R1 100R]--+-- LED- ring (bottom)
+           |                                 |
+           +--[D4&gt;|--D5&gt;|--D6&gt;|]--[R2 100R]--+
+</code></pre>
+<p>LEDs face DOWN (toward the white flange), on r 8.50 at 30/90/150/210/270/330 deg, long side tangential. Use one flux and Vf bin for all six (current sharing between the strings: about +/-12 % for a 0.3 V string mismatch with 100 ohm ballast).</p>
+<h2>2. RS-PCB-12L-HUB (in the hub's centre relief)</h2>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Spec</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Outline</td>
+<td>Disc OD 13.00</td>
+</tr>
+<tr>
+<td>Stack</td>
+<td>2-layer FR4, <strong>1.6 mm</strong>, 1 oz, ENIG (the spring pad and the 0919 pad must be flat gold)</td>
+</tr>
+<tr>
+<td>Holes</td>
+<td>2x D 0.90 plated at (-1.2, +5.2) / (+1.2, +5.2) for the two 26 AWG leads from the splice cavity. No other holes.</td>
+</tr>
+<tr>
+<td>Centre pad</td>
+<td>Flat ENIG pad D 2.60 at (0, 0), no mask, no via in pad: the contact spring sits on it and carries the 20 mA</td>
+</tr>
+<tr>
+<td>Assembly</td>
+<td>Top side: U1, D1, Z1, F1, P2 (SMT, reflow). Nothing is soldered at P1.</td>
+</tr>
+<tr>
+<td>Copper</td>
+<td>U1 (CCR) pads: &gt;= 25 mm2 pour on each, stitched to the bottom layer. With the contact shorted (plain cap, metal chip) U1 dissipates 0.24 W continuously inside a PEEK pocket; without the pour it runs 80 K+ over ambient.</td>
+</tr>
+<tr>
+<td>Z1</td>
+<td>TVS, 15 V standoff, unidirectional, 0402 / SOD-523, from the P1 (contact) node to return, at (3.0, 3.6). With the cap off the node floats up to the 12 V rail, so a 12 V-standoff part would sit at its limit and leak; 15 V does not</td>
+</tr>
+<tr>
+<td>F1</td>
+<td>PTC resettable fuse, 100 mA hold, 0603, in the +12 V tap ahead of D1, at (-3.0, 3.6): the 26 AWG tap comes off a 2 A rail</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Ref</th>
+<th>Part</th>
+<th>Qty</th>
+<th>Link (loaded 2026-11-10)</th>
+<th>Price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>P2</td>
+<td>Mill-Max 0919-0-15-20-89-14-11-0, SMT spring pin, 3.0 mm stroke, 9.63 free, 85 gf mid-stroke, Au. RETURN contact at (-3.80, 0), working height 7.5 on the insert's back end</td>
+<td>1</td>
+<td>https://www.digikey.com/en/products/detail/mill-max-manufacturing-corp/0919-0-15-20-89-14-11-0/6193088</td>
+<td>$1.52 / 1, $1.0954 / 100, $0.97772 / 500 (9,852 in stock)</td>
+</tr>
+<tr>
+<td>P1</td>
+<td>no purchased part: RS-HUB-12L-PLUNGER + compression spring (OD 2.3, wire 0.20, free 11.2) in the carrier, on the centre pad</td>
+<td>1 + 1</td>
+<td>RFQ / catalogue spring not yet picked</td>
+<td>E</td>
+</tr>
+<tr>
+<td>U1</td>
+<td>onsemi NSI45020AT1G constant-current regulator 20 mA +/-10 %, 45 V, SOD-123</td>
+<td>1</td>
+<td>https://www.digikey.com/en/products/detail/onsemi/NSI45020AT1G/2096220</td>
+<td>$0.21 / 1, $0.1096 / 100 (84,000 in stock)</td>
+</tr>
+<tr>
+<td>D1</td>
+<td>1N4148WS, SOD-323, reverse-polarity block</td>
+<td>1</td>
+<td>(estimate, not loaded)</td>
+<td>~$0.02 E</td>
+</tr>
+</tbody>
+</table>
+<p>Schematic:</p>
+<pre><code>pigtail + (+12 V) --[F1 PTC]--[D1 &gt;|]--[U1 CCR 20 mA, A-&gt;K]--+-- P1 spring + plunger --&gt; gold pin in the cap --&gt; LED+
+                                                              +--[Z1 15 V]-- return
+pigtail - ---------------------------------------------------- P2 return pin (0919) &lt;-- E-Z Lok insert &lt;-- cap stud &lt;-- LED-
+</code></pre>
+<p>The halo strip is spliced straight to the pigtail in the hub's splice cavity; it does not go through this board. OPEN (review S5): the barrel is the universal 5.5 x 2.1, so a 24 V brick would quadruple the strip power. A 0.75 A hold PTC + 15 V TVS on the rail at the splice is the fix and is not yet a designed part; until then the hub is marked 12 V DC ONLY.</p>
+<h2>3. Electrical numbers</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Value</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Supply</td>
+<td>12 V DC Class 2 (existing UL adapter), inline PWM dimmer</td>
+<td>existing</td>
+</tr>
+<tr>
+<td>Label-light current</td>
+<td>20 mA total (CCR), 10 mA per LED</td>
+<td>design</td>
+</tr>
+<tr>
+<td>String voltage</td>
+<td>3 x ~2.55 V (Vf at 10 mA, estimated from the 2.7 V @ 65 mA datasheet point) + 1.0 V ballast = 8.65 V</td>
+<td>E</td>
+</tr>
+<tr>
+<td>CCR headroom</td>
+<td>12.0 - 0.7 (D1) - 8.65 = 2.65 V (11.4 V adapter: 2.05 V; NSI45020 regulates from ~1.8 V)</td>
+<td>E</td>
+</tr>
+<tr>
+<td>Power</td>
+<td>0.24 W from the adapter; 0.17 W inside the cap; 0.05 W in the CCR (hub)</td>
+<td>E</td>
+</tr>
+<tr>
+<td>Dimming</td>
+<td>Same PWM as the halo: the CCR switches with the supply, label light tracks the halo 1:1</td>
+<td>E (bench check)</td>
+</tr>
+<tr>
+<td>Short at the cap / plain cap in a lit sconce</td>
+<td>current is limited to 20 mA by U1; halo unaffected</td>
+<td>design</td>
+</tr>
+<tr>
+<td>Reverse-polarity adapter</td>
+<td>D1 blocks</td>
+<td>design</td>
+</tr>
+</tbody>
+</table></main></body></html>

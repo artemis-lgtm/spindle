@@ -1,0 +1,50 @@
+REVISION STATUS (2026-11-11): CURRENT = RS-CAP-12L rev B, every part in this packet.
+SUPERSEDED, DO NOT QUOTE OR BUILD: rev A and rev A.1 (2026-11-10), and the zip dome-cap-lit-RS-CAP-12L.zip. Rev A.1 could not be assembled as drawn.
+If you hold any earlier drawing, STEP or zip of these parts, discard it. See cad/rfq/README.md.
+
+RFQ: LIT dome cap RS-CAP-12L ("label light") - turned brass parts, plated, plus small plastic parts (sample run)
+Nothing has been sent. This packet is for quoting only. Master geometry = the STEP files; drawings carry finish and tolerances.
+
+A. TURNED BRASS (one shop, same as RS-CAP-12 if possible)
+ 1. RS-CAP-12L-DOME  chrome dome shell. D 38.10, 10.0 tall above its lip face. Outside identical to RS-CAP-12
+    (R 25.80 sphere segment 8.4 high on a 1.6 band, lip edge R 0.8). Hollow: bore D 25.0 in the lip, shell 1.2 at the
+    axis, centre boss D 12.0 with an INTERNAL M8x0.5 LEFT-HAND thread 4.6 deep (the STEP shows the D 7.46 tap-drill bore) and a
+    D 8.3 x 0.4 counterbore in the boss mouth. CRITICAL: boss face 0.60 +/-0.02 above the lip face.
+    Material brass C360. Finish OUTSIDE incl. the lip bottom face: polish to mirror Ra <= 0.1 um, then Cu + bright Ni +
+    decorative Cr per ASTM B456 SC2 (or PVD chrome over bright Ni). INSIDE: mask, no chrome; rack on the inside. Class A outside,
+    inspect at 300 mm daylight, zero pits/haze/polish lines. Variants -CR / -BR / -BK as RS-CAP-12.
+ 2. RS-CAP-12L-CORE  brass C360: hollow 1/4-20 UNC-2A stud 11.65 +/-0.05 long (tip = unthreaded dog point D 4.80 +0/-0.10
+    x 1.5), smooth shoulder D 7.10 +0/-0.05 x 2.0 under the flange, STEPPED bore D 3.15 +0.02/-0 x 10.00 +/-0.05
+    deep from the tip then D 2.2 (square shoulder between them; concentric to the thread within 0.05), D 36.6 flange with
+    an 8 deg cone on top and a FLAT underside (no recess), D 10 column with its top 4.80 +/-0.02 above the underside,
+    M8x0.5 LEFT-HAND male spigot 4.0 long of which the first 0.55 is an unthreaded D (flat at 3.6 from the axis), then
+    a D 7.3 x 0.5 run-out groove; one D 1.0 cross-hole at 45 deg into the bore (see drawing). Do NOT stake the bore.
+    Finish: electroless nickel 5 um MAX everywhere (NO chrome). Thread must accept a 1/4-20 2B GO gauge after plating.
+    Optional line: we paint the cavity zones ourselves; quote with and without.
+ 3. RS-CAP-12L-PIN   brass C360 headed pin: head D 2.4 x 0.5, shank D 1.588 (1/16 in), 9.0 overall, solder cup D 0.8 x 2.0
+    in the shank end, hard gold 1.3 um (50 uin) over 2.5 um Ni. Quote 500 / 1,000 (tiny part, plating lot charge separately).
+ 4. RS-HUB-12L-PLUNGER  brass C360 or BeCu: nose D 1.2 x 5.7 with R 0.3 crown, flange D 2.5 x 0.6, pilot D 1.5 x 0.8.
+    Same gold as the pin. Quote 500 / 1,000.
+ Tolerances: drawings, otherwise ISO 2768-m. Thread 1/4-20 must accept an E-Z Lok 400-4 brass insert by hand.
+ Quantity: samples 6 (chrome) + 3 (brass) + 3 (black); also 100 and 500 in chrome.
+
+B. PLASTIC
+ 5. RS-CAP-12L-LOUVER  louver ring D 35.0 x D 25.0 x 4.15, 5 conical fins 0.25 thick at 0.65 pitch (8/8/7/6/4 deg),
+    6 radial ribs 0.4 wide. Prototype: precision SLA, black resin, 25 um layers or finer (BMF microArch S240 class, or
+    Formlabs Form 4 Black if it holds 0.25 fins over 5 mm). Matte. Inner 1.5 mm of every fin white (we can dip it; quote
+    as option). Also quote a micro-moulding DFM review in black PC at 1,000 / 5,000 with tooling.
+ 6. RS-CAP-12L-WINDOW  clear PC ring D 36.10 x D 35.10 x 4.15, outer face light satin (~3 deg scatter; MT-11010 or a light
+    150-200 grit glass-bead blast), UV-stabilised grade. Quote turned-from-tube and moulded.
+ 7. RS-CAP-12L-SLEEVE  natural PEEK, turned: OD 3.175 x bore D 1.6 x 10.00 long, counterbore D 2.5 x 0.55 in one end.
+ 8. RS-HUB-12L-CARRIER  PEEK insulator + guard tube: body D 13.0 x 6.90 with a D 4.80 x 2.70 spigot; the spigot is bored
+    D 2.6 from the underside to 0.8 below its top and D 1.35 through; one D 1.9 guide bore, 4 underside pockets.
+    PEEK machined (preferred) or PA66-GF30; prototype SLA (Formlabs High Temp) acceptable.
+ Quantity: 12 samples each; 100 and 500.
+
+C. PCBs (separate vendor, JLCPCB / PCBWay): see PCB-SPEC.md, RS-PCB-12L-LED.dxf, RS-PCB-12L-HUB.dxf, placement.csv.
+
+Mates with: RS-HUB-01 rev B (centre relief 9.1 deep; rev A hubs do NOT fit) and RS-BP-12-MDF rev C (rev B fits the cap equally: thickness, bore and seat are unchanged) with the E-Z Lok 400-4 insert.
+Ship to: Florida, USA. State lead time, setup and plating minimum lot charges separately.
+Files: RS-CAP-12L-*.step, RS-HUB-12L-*.step, RS-PCB-12L-*.step, drawings RS-CAP-12L-*.pdf, RS-HUB-12L-CARRIER.pdf,
+RS-ASM-12L.pdf (stack section), PCB-SPEC.md, *.dxf, placement.csv.
+Contact: (fill in before sending; nothing has been sent)

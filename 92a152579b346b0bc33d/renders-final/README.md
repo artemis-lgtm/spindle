@@ -1,5 +1,7 @@
 # Record sconce: final product image set
 
+> **Flag, 2026-11-11 (cad/FIXES-fable52.md):** two things in this image set do not match the product the CAD builds. (1) The swap shots and the kit flat-lay show a fixed "post" the record lifts off, and a loose post in the box. There is no post: the 1/4-20 stud is part of the dome cap and comes away with it. STILL OPEN. (2) CLOSED 2026-11-11 (cad/FIXES-heat-layout.md): the halo in these images was lit with an LED ring on the BACK face of the backplate aimed at the wall, and the CAD, BOM and drawings now put the strip there too (heat-safe layout: strip on an aluminium ring over a cork ring). Two small differences remain and were not re-rendered: the images put the ring 4 to 14 mm inside the backplate rim (centre R 124) and add a weaker strip on the rim; the product's strip is 14 to 22 mm inside the rim (centre R 115) and there is no rim strip. The real halo should be compared with these images on the first prototype. Do not use the swap or flat-lay shots as assembly reference.
+
 Open `index.html` for the contact sheet (thumbnails link to the full PNGs).
 
 All stills are Blender 5.0.1 Cycles (Metal GPU, never EEVEE), OpenImageDenoise, AgX view

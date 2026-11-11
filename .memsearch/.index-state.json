@@ -1,11 +1,11 @@
 {
   "collection": "ms_spindle_pages_dc847a00",
   "failed_files": [],
-  "indexed_chunks": 1,
+  "indexed_chunks": 2,
   "indexed_files": 1,
-  "last_completed_at": "2026-11-11T21:03:44.810739Z",
-  "last_started_at": "2026-11-11T21:03:42.773021Z",
-  "last_success_at": "2026-11-11T21:03:44.810739Z",
+  "last_completed_at": "2026-11-11T21:24:50.877200Z",
+  "last_started_at": "2026-11-11T21:24:49.781417Z",
+  "last_success_at": "2026-11-11T21:24:50.877200Z",
   "milvus_uri": "~/.memsearch/milvus.db",
   "operation": "index",
   "paths": [
@@ -14,5 +14,5 @@
   "schema_version": 1,
   "status": "ok",
   "total_files": 1,
-  "updated_at": "2026-11-11T21:03:44.810739Z"
+  "updated_at": "2026-11-11T21:24:50.877200Z"
 }

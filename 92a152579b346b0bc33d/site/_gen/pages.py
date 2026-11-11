@@ -38,9 +38,9 @@ TRUST = f"""<div class="trust">
 
 FAQ_ITEMS = [
  ("Will the light heat up or warp my record?",
-  "<p>No. The LED ring sits on the rim of the backplate, pointing outward at the wall, with air between it and the record's edge and half an inch of insulating wood between it and the record's back. The whole ring draws 4 to 10 watts spread over a 33-inch circle. Vinyl starts to soften around 130 to 140 F; a low-power LED strip in free air runs tens of degrees below that and the record itself sits within a few degrees of room temperature. The only way this record gets hot is if you hang it over a radiator or in direct sun, which the hang sheet tells you not to do. Our acceptance test for every batch is record face under 95 F in a 75 F room after a two-hour soak, and we publish the numbers once measured.</p>"),
+  "<p>No. The LED ring sits on the back of the backplate, facing the wall, where it cannot see the record at all. It is mounted on a thin aluminium ring that spreads its warmth, with a layer of cork and half an inch of wood between it and the record. The whole ring draws about 4 watts, and never more than 6, spread over a 28-inch circle. Vinyl starts to soften around 130 to 140 F; our heat calculation puts the record about 6 F above the room. The only way this record gets hot is if you hang it over a radiator or in direct sun, which the hang sheet tells you not to do. Our acceptance test for every batch is record face under 95 F in a 75 F room after a two-hour soak, and we publish the numbers once measured.</p>"),
  ("Is my record safe? What touches it?",
-  "<p>Six felt pads on the backplate and a felt washer under the dome cap. That is the complete list. The cap threads onto a 1/4-20 post that passes through the spindle hole, which is wider than the post, so nothing is forced. You could take the record off tomorrow and play it. Three pads at the outer radius and three near the label hold it flat, which is more support than a record gets in a sleeve on a shelf.</p>"),
+  "<p>Felt and one clear washer. The record rests on six felt pads and a felt ring on the backplate; a thin clear polyester washer lies on the label so the cap never turns against the paper, and the cap's own felt sits on that. The cap carries its own threaded stud, which passes through the spindle hole into a brass insert in the backplate; the smooth collar under the cap is a hair smaller than the hole, so nothing is forced and the record centres itself. You could take the record off tomorrow and play it. Three pads near the edge, three part-way in and the ring behind the label hold it flat, which is more support than a record gets in a sleeve on a shelf.</p>"),
  ("Can I change the record?",
   "<p>Yes, that is the point. Unscrew the dome cap, lift the record off, set the next one on, screw the cap back. Under a minute, no tools, and the fixture stays on the wall. Collectors tell us this is the whole reason they want the Kit.</p>"),
  ("How does it get power? Do I need an electrician?",
@@ -60,7 +60,7 @@ FAQ_ITEMS = [
  ("Shipping and returns?",
   "<p>Free US shipping on every order. Fixtures ship in a 13 x 13 x 3 inch box with the record (if included) in its own sleeve. Returns: 30 days from delivery on the fixture, unused, in its packaging, for a full refund less return shipping. Records are graded and photographed before they leave, so a record is returnable only if it arrives damaged. Details on the <a href='shipping.html'>shipping</a> and <a href='returns.html'>returns</a> pages.</p>"),
  ("Is it UL listed?",
-  "<p>Every electrical component is UL or ETL listed: the 12-volt adapter, the LED strip and the cable. The only parts we make are the wooden backplate, the hub, the steel plate and the cap, none of which carry current above 12 volts DC. The 120-volt side of the system lives entirely inside the listed adapter at your outlet. That is the same architecture as every LED strip kit sold in the US.</p>"),
+  "<p>The parts that touch mains power or run inside your wall are UL or ETL listed: the 12-volt adapter, the LED strip and the cable. The only parts we make are the wooden backplate, the hub, the steel plate and the cap, none of which carry current above 12 volts DC. The 120-volt side of the system lives entirely inside the listed adapter at your outlet. That is the same architecture as every LED strip kit sold in the US.</p>"),
 ]
 
 def faq_html(items):
@@ -165,7 +165,7 @@ HOME = f"""
     <p class="eyebrow"><span class="dot"></span>Your record. Our light.</p>
     <h2 style="max-width:16em">Twelve inches of what you love, lit at 2700 K.</h2>
     <div class="story-grid reveal" style="margin-top:40px">
-      <div class="beat"><h3>Light behind it, not on it</h3><p>A ring of warm 2700K LEDs sits on the rim of a 10.5-inch backplate and throws its light at the wall. The record floats an inch off the plaster in its own amber halo. The grooves catch the edge light. The label sits in shadow, the way it does on a turntable.</p></div>
+      <div class="beat"><h3>Light behind it, not on it</h3><p>A ring of warm 2700K LEDs sits on the back of a 10.5-inch backplate and throws its light at the wall. The record floats an inch off the plaster in its own amber halo. The grooves catch the edge light. The label sits in shadow, the way it does on a turntable.</p></div>
       <div class="beat"><h3>One piece of jewellery</h3><p>The only hardware you see is the dome at the centre: solid metal, mirror chrome by default, brass or gloss black if your room asks for it. It threads through the spindle hole onto a brass insert and holds the record with a felt washer. It is the whole product in one part.</p></div>
       <div class="beat"><h3>Your record, every time</h3><p>Unscrew the dome, lift the record, set the next one down. Under a minute, no tools, the fixture never leaves the wall. Buy the Kit and mount what you already own. Buy the Spindle and we send a vintage LP from the decade you pick.</p></div>
     </div>
@@ -194,7 +194,7 @@ HOME = f"""
       <div class="steps reveal" style="grid-template-columns:1fr">
         <div class="step"><h3>Steel plate on the wall</h3><p>Four-inch plate, levels after the screws are in, fits drywall anchors, a stud, or any existing single-gang or round box.</p></div>
         <div class="step"><h3>Hub twist-locks on</h3><p>Three bayonet slots drop over the plate studs and turn twenty degrees. A set screw at six o'clock stops it ever untwisting.</p></div>
-        <div class="step"><h3>Backplate carries the light</h3><p>A 10.5-inch matte black disc with the dotless LED ring on its rim and a brass threaded insert at the centre.</p></div>
+        <div class="step"><h3>Backplate carries the light</h3><p>A 10.5-inch matte black disc with the dotless LED ring on its back, facing the wall, and a brass threaded insert at the centre.</p></div>
         <div class="step"><h3>Your record, then the dome</h3><p>Record on the felt pads, dome through the spindle hole, finger-tight. Plug in the 12-volt adapter. Dim to taste.</p></div>
       </div>
     </div>
@@ -209,7 +209,7 @@ HOME = f"""
         <p class="eyebrow"><span class="dot"></span>The sconce that takes requests</p>
         <h2>The dome comes off in two turns. Put on what you are playing this month.</h2>
         <p class="muted">The dome cap is the only fastener. Two turns, lift the record, set the next one down, two turns back. A picture disc for a party. The pressing you found at the flea market. The album you have been meaning to frame for ten years. The sconce stays on the wall; the record is the part that moves.</p>
-        <p class="muted">Nothing is glued, taped or drilled. Felt touches the record, and only felt.</p>
+        <p class="muted">Nothing is glued, taped or drilled. Felt holds the record; a clear washer guards the label.</p>
       </div>
       <div class="swap reveal" style="grid-template-columns:repeat(3,1fr)">
         <figure><div class="frame dark"><picture><source type="image/webp" srcset="img/cap-chrome.webp"><img src="img/cap-chrome.jpg" alt="Chrome dome cap on a record label" loading="lazy" decoding="async" width="500" height="500"></picture></div><figcaption>Chrome</figcaption></figure>
@@ -294,7 +294,7 @@ PRODUCT = f"""
 
     <div class="includes" style="margin-top:24px" data-includes="kit">
       <b>In the Kit box</b>
-      <ul><li>Backplate with 2700K dotless LED ring and brass 1/4-20 insert</li><li>Dome cap in your finish with felt washer</li><li>Hub with DC jack, steel mounting plate with three bayonet studs, set screw and key</li><li>Screws and anchors, 12 V UL-listed dimming adapter with 6 ft lead</li><li>The one-page hang sheet. You supply the 12-inch record.</li></ul>
+      <ul><li>Backplate with 2700K dotless LED ring and brass 1/4-20 insert</li><li>Dome cap in your finish with felt washer</li><li>Hub with a short power pigtail, steel mounting plate with three bayonet studs, set screw and key</li><li>Screws and anchors, 12 V UL-listed dimming adapter with 6 ft lead</li><li>The one-page hang sheet. You supply the 12-inch record.</li></ul>
     </div>
     <div class="includes" style="margin-top:24px" data-includes="sconce" hidden>
       <b>In the Spindle 12 box</b>
@@ -310,8 +310,8 @@ PRODUCT = f"""
     </div>
 
     <table class="spec" style="margin-top:28px">
-      <tr><th>Record</th><td>Any standard 12-inch LP (7-inch singles in the Set). Held by six felt pads and a felt washer. Nothing glued.</td></tr>
-      <tr><th>Light</th><td>2700K warm white, CRI 90+, dotless COB ring on the backplate rim. 4 to 10 W. Inline dimmer.</td></tr>
+      <tr><th>Record</th><td>Any standard 12-inch LP (7-inch singles in the Set). Held between felt, with a clear washer protecting the label. Nothing glued.</td></tr>
+      <tr><th>Light</th><td>2700K warm white, CRI 90+, dotless COB ring on the back of the backplate, facing the wall. About 4 W, up to 6 W. Inline dimmer.</td></tr>
       <tr><th>Power</th><td>12 V DC Class 2 from a UL-listed plug-in adapter, 6 ft lead. Optional in-wall CL2 cable kit.</td></tr>
       <tr><th>Cap</th><td>Solid metal dome, about 1.5 inch, on a 1/4-20 stud. Mirror chrome, brushed brass or gloss black.</td></tr>
       <tr><th>Backplate</th><td>10.5 inch matte black, 1/2 inch, brass threaded insert. 1 inch wall gap.</td></tr>
@@ -352,7 +352,7 @@ INSTALL = f"""
     <div>
       <h2>The mount</h2>
       <p class="muted">A 4-inch steel plate screws to the wall over a 1-inch hole. Its arc slots match a single-gang low-voltage bracket and a round box, and take two screws into anchors or a stud when there is no box. The slots give about nine degrees of rotation, so you level the plate after the screws are started.</p>
-      <p class="muted">The hub on the back of the sconce has three J-slots that drop over the plate's bayonet studs and twist about twenty degrees to lock. One set screw at six o'clock stops a knock from ever untwisting it. The low-voltage cable comes straight through the centre of the plate into a jack in the hub.</p>
+      <p class="muted">The hub on the back of the sconce has three J-slots that drop over the plate's bayonet studs and twist about twenty degrees to lock. One set screw at six o'clock stops a knock from ever untwisting it. The hub carries a short power lead with a socket on its end; the low-voltage cable plugs into it, in the wall or just behind the backplate.</p>
       <p class="muted">The record is clamped from the front by the dome cap, so swapping a record never touches the mount.</p>
     </div>
   </div>
@@ -374,7 +374,7 @@ INSTALL = f"""
       <div class="step"><h3>Pick the spot</h3><p>Record centre at 58 to 62 inches is typical. Stud finder: the hole must sit between studs, in the same bay as the outlet below.</p></div>
       <div class="step"><h3>Mark and cut</h3><p>Plate on the wall, bubble level on its top edge, mark two slots. Cut the 1-inch hole at centre. Cut the single-gang opening beside the outlet with the bracket's template.</p></div>
       <div class="step"><h3>Pull the cable</h3><p>Fish the CL2 cable from the top hole down to the bottom opening. Land the bottom end in the keystone coupler, screw the plate to the bracket.</p></div>
-      <div class="step"><h3>Plate, hub, level</h3><p>Screw the plate on a quarter-turn loose, level, tighten. Pass the plug through the plate into the hub jack. Hang, twist, set screw.</p></div>
+      <div class="step"><h3>Plate, hub, level</h3><p>Screw the plate on a quarter-turn loose, level, tighten. Plug the cable into the hub's power lead and tuck it through the plate. Hang, twist clockwise, set screw.</p></div>
       <div class="step"><h3>Record and dome</h3><p>Record on the felt pads, dome through the spindle hole with its felt washer, finger-tight.</p></div>
       <div class="step"><h3>Plug in</h3><p>Adapter lead into the jack plate, adapter into the outlet. Set the dimmer. Done.</p></div>
     </div>
@@ -387,7 +387,7 @@ INSTALL = f"""
     <div>
       <p class="eyebrow"><span class="dot"></span>Option B</p>
       <h2>Surface. About 15 minutes, two screws.</h2>
-      <p class="muted">Same plate, same hub. The 6-foot braided adapter lead plugs into the hub jack and leaves through the channel at six o'clock, then runs down the wall to the outlet. Add a paintable raceway if you want it flush, or let the braided cord be part of the look.</p>
+      <p class="muted">Same plate, same hub. The hub's short power lead comes out through the channel at six o'clock and the 6-foot braided adapter lead plugs into it, hidden behind the backplate, then runs down the wall to the outlet. Add a paintable raceway if you want it flush, or let the braided cord be part of the look.</p>
       <p class="muted">Renters: two screw holes, same as a picture frame. If you have a dead sconce box on the wall already, the plate bolts straight to it.</p>
       <p class="eyebrow" style="margin-top:28px"><span class="dot"></span>Option C</p>
       <h3>Hardwired, by your electrician</h3>
@@ -402,7 +402,7 @@ INSTALL = f"""
     <h2>Heat, in numbers</h2>
     <div class="two">
       <div>
-        <p class="muted">Vinyl softens around 130 to 140 F. A low-power LED strip in open air runs well under that, and in this design the strip points away from the record: it sits on the backplate rim radiating outward at the wall, with air between it and the record's edge and half an inch of insulating wood between it and the record's back. Four to ten watts over a 33-inch ring has no path to lift the record more than a few degrees above the room.</p>
+        <p class="muted">Vinyl softens around 130 to 140 F. A low-power LED strip in open air runs well under that, and in this design the strip points away from the record: it sits on the back of the backplate facing the wall, on an aluminium ring that spreads its warmth, with a layer of cork and half an inch of wood between it and the record. About four watts over a 28-inch ring is calculated to lift the record about 6 F above the room; we publish the measured number once the first units are tested.</p>
         <p class="muted">Our acceptance test for every batch is a two-hour soak with an infrared thermometer at three points: strip surface, record back at the pad radius, and the label. Pass is record face under 95 F in a 75 F room. The numbers get printed here once measured.</p>
         <p class="muted small">The one real heat risk is the room, not the lamp. Do not hang any record over a radiator or in direct sun.</p>
       </div>

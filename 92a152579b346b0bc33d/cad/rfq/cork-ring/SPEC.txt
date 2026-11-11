@@ -1,0 +1,19 @@
+REVISION STATUS (2026-11-11): CURRENT = RS-CK-12 rev A (new part, 2026-11-11).
+SUPERSEDED, DO NOT QUOTE OR BUILD: none.
+If you hold any earlier drawing, STEP or zip of these parts, discard it. See cad/rfq/README.md.
+
+RFQ: die-cut or knife-cut cork ring, 1/16 in (gasket cutter style order; we may also cut these in-house from roll)
+Part: RS-CK-12 rev A, "cork ring". One flat ring.
+Size: OD 260.0 mm (10.236 in), ID 200.0 mm (7.874 in), 4x D 4.0 mm holes on a D 211 mm bolt circle
+ (R 105.5) at 45/135/225/315 deg.
+Material: fine-grain composition cork sheet, 1.6 mm (1/16 in) +/-0.2. 1.5 mm sheet is acceptable. Pressure-sensitive adhesive on ONE face is
+ preferred (liner left on); plain cork with no adhesive is acceptable, tell us which you are quoting.
+Quantity: 10 samples; please also quote 100 and 250.
+Cutting: die, flash/knife or laser. Layer CUT in the DXF is the whole job, INCLUDING the 4 holes. Tolerance +/-0.5 mm.
+ If a 260 mm ring nests badly on your sheet, quote it as up to 4 butt-jointed segments as an option.
+What it does: it sits between a wooden disc and a warm aluminium ring as a heat break. It carries no load beyond 4 small screws.
+Packing: flat, not rolled.
+Ship to: Florida, USA. State lead time. DXF is mm, R2010, 1:1; STEP is the 3D master.
+
+Files in this folder: RS-CK-12.step, RS-CK-12.dxf, RS-CK-12.pdf
+Contact: (fill in before sending; nothing has been sent)

@@ -1,5 +1,7 @@
 # Record Sconces: engineering report
 
+> **Superseded in part, 2026-11-11 (heat-safe layout, `cad/FIXES-heat-layout.md`, `cad/THERMAL.md`):** this report puts the LED strip on the RIM of the backplate in a rim rabbet and argues the record is protected by half an inch of MDF. That argument missed the record's overhang: the outer 19 mm of a 12 in record hung 3.45 mm in front of the rim strip with only air between. On the 12 in sconce the strip is now on the BACK of the backplate, facing the wall, on an aluminium ring over a cork ring, and the backplate has no rim rabbet. Sections 1 to 3, the BOM row for the backplate, the assembly sequence and the modeller's dimensions below still describe the old rim layout and are kept as the record of 2026-11-09.
+
 Prepared 2026-11-09 for Austin. Research only: nothing bought, nobody contacted, nothing posted. This builds on scope-report.md and takes Austin's 11/9 decisions as fixed: halo backlit wall sconce around a real 12" LP; a light-only kit sold separately for the customer's own record; screw-on mount with a brass-head thumbscrew through the spindle hole into a threaded insert in the backplate; nothing glued to a customer's record; 12V Class 2 plug-in adapter only, no 120V inside our housing. Every number carries a URL or is marked (estimate). Etsy, Amazon and McMaster block the scraper, so those figures come from search snippets and are flagged where they are not confirmed on the page.
 
 ## 1. Mount mechanics

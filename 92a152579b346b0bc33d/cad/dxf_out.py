@@ -96,21 +96,44 @@ def backplate_al_dxf(path, d=S.BP12_D, t=5.0):
 
 
 def backplate_mdf_dxf(path, d=S.BP12_D):
-    """2D for the CNC router: through profile (CUT), rear features (POCKET), front felt targets (ETCH)."""
+    """2D for the CNC router: through profile (CUT), rear features (POCKET), and on the 7 in part the rabbet floor (ETCH).
+    12 in rev C has no rim rabbet, so it has no ETCH geometry."""
     bp = S.backplate(d, pads_out=(d > 200))
-    cut_edges = _section_edges(bp, S.BP_T / 2 + 0.3)            # inside the rabbet band: outer rim is the rabbet floor
-    # outer true profile at the front face level (outside the rabbet)
-    front_edges = _section_edges(bp, S.BP_T - 0.2)
+    back = S.halo_layout(d) == "back"
+    front_edges = _section_edges(bp, S.BP_T - 0.2)               # true outer profile + through holes + front features
     rear_edges = _section_edges(bp, 1.0)
     doc = _new_doc(); msp = doc.modelspace()
     _edges_to_dxf(msp, front_edges, "CUT")
-    _edges_to_dxf(msp, cut_edges, "ETCH")
+    if not back:
+        _edges_to_dxf(msp, _section_edges(bp, S.BP_T / 2 + 0.3), "ETCH")    # inside the rabbet band: the rim is the rabbet floor
     _edges_to_dxf(msp, rear_edges, "POCKET")
     R = d / 2
-    for i, n in enumerate([
-        f"1/2 in MDF or Baltic birch, D {d:.1f}. Layer CUT = front-face profile + through holes + 0.5 deep felt targets + #8 CSK (front).",
-        f"Layer ETCH = rim rabbet floor (D {d - 2 * S.RABBET_DEPTH:.1f}) : rabbet {S.RABBET_W} wide x {S.RABBET_DEPTH} deep centred on the rim, plus the 6 o'clock lead notch.",
-        f"Layer POCKET = REAR face features at depth: jack pocket {S.BP_JACK_POCKET[0]}x{S.BP_JACK_POCKET[1]} x {S.BP_JACK_POCKET[2]} deep @ (0,+{S.JACK_Y:.0f}); lead channel {S.BACK_CHAN_W} wide x {S.BACK_CHAN_D} deep, 6 o'clock to R60.",
-        "Centre bore 25/64 in (9.92) through for E-Z Lok 400-4. 3D reference: the STEP file of the same name. Units mm."]):
+    head = f"1/2 in MDF {S.BP_T:.2f} +/-0.15 (no birch), D {d:.1f}. Layer CUT = front-face profile + through holes + {S.PAD_TARGET_DEPTH} deep felt targets + scored centre-ring witness circle + #8 CSK (front)."
+    if back:
+        notes = [head,
+                 "REV C: NO rim rabbet, NO rim notch. Plain square rim. Layer ETCH is empty on this part.",
+                 f"Layer POCKET = REAR face features at depth: splice pocket {S.BP_JACK_POCKET[0]}x{S.BP_JACK_POCKET[1]} x {S.BP_JACK_POCKET[2]} deep @ (0,+{S.JACK_Y:.0f}); lead channel {S.BACK_CHAN_W} wide x {S.BACK_CHAN_D} deep, 6 o'clock, R{S.BACK_CHAN_R0:.0f} to R{S.BACK_CHAN_R1:.0f};",
+                 f"  4x BLIND pilot D {S.HALO_PILOT_D} x {S.HALO_PILOT_DEPTH:.1f} deep on R {S.HALO_SCREW_R} @ {'/'.join(str(a) for a in S.HALO_SCREW_ANGLES)} deg (heat-ring screws). Do not drill through.",
+                 "Centre bore 25/64 in (9.92) through for E-Z Lok 400-4. 3D reference: the STEP file of the same name. Units mm."]
+    else:
+        notes = [head,
+                 f"Layer ETCH = rim rabbet floor (D {d - 2 * S.RABBET_DEPTH:.1f}) : rabbet {S.RABBET_W} wide x {S.RABBET_DEPTH} deep centred on the rim, plus the 6 o'clock lead notch.",
+                 f"Layer POCKET = REAR face features at depth: splice pocket {S.BP_JACK_POCKET[0]}x{S.BP_JACK_POCKET[1]} x {S.BP_JACK_POCKET[2]} deep @ (0,+{S.JACK_Y:.0f}); lead channel {S.BACK_CHAN_W} wide x {S.BACK_CHAN_D} deep, 6 o'clock to R60.",
+                 "Centre bore 25/64 in (9.92) through for E-Z Lok 400-4. 3D reference: the STEP file of the same name. Units mm."]
+    for i, n in enumerate(notes):
         msp.add_text(n, dxfattribs={"layer": "NOTES", "height": 3}).set_placement((-R, -R - 10 - 6 * i))
     doc.saveas(path)
+
+
+def halo_ring_dxf(path, which="alu"):
+    """RS-HR-12 (aluminium) / RS-CK-12 (cork): outline + 4 holes on layer CUT, taken from the solid. 1:1, mm."""
+    angs = "/".join(str(a) for a in S.HALO_SCREW_ANGLES)
+    if which == "alu":
+        shape, t, hole = S.heat_ring(), S.HEAT_RING_T, S.HEAT_RING_HOLE_D
+        notes = [f"RS-HR-12 rev A. 5052-H32 aluminium {t:.1f} mm (0.040 in). Layer CUT = everything: OD {S.HALO_RING_OD:.1f}, ID {S.HALO_RING_ID:.1f}, 4x D {hole} on R {S.HALO_SCREW_R} @ {angs} deg.",
+                 "Flat, laser cut. Deburr both faces and both edges. Bare mill finish, no coating. Flat within 0.5. Units mm, 1:1."]
+    else:
+        shape, t, hole = S.cork_ring(), S.CORK_RING_T, S.CORK_RING_HOLE_D
+        notes = [f"RS-CK-12 rev A. Cork sheet {t:.1f} mm (1/16 in). Layer CUT = everything: OD {S.HALO_RING_OD:.1f}, ID {S.HALO_RING_ID:.1f}, 4x D {hole} on R {S.HALO_SCREW_R} @ {angs} deg.",
+                 "Die, knife or laser cut. Tolerance +/-0.5. Units mm, 1:1."]
+    flat_from_solid(shape, path, t / 2, notes=notes)

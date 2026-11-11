@@ -1,3 +1,5 @@
+> **SUPERSEDED DRAFT, DO NOT SEND (2026-11-11).** This text predates the CAD: it describes a 1 in (25.4 mm) stud and no shoulder, recess or dog point. The current part is RS-CAP-12 rev D; quote only from `cad/rfq/dome-cap-brass/SPEC.txt` and `cad/rfq/dome-cap-RS-CAP-12-revD.zip`. Rewrite this cover note around that packet before sending anything.
+
 To: (Alibaba message to each shortlisted Dongguan or Ningbo brass turned-parts supplier, e.g. Dongguan Huantong Hardware, Dongguan Qijia Precision, Dongguan Star Machining)
 From: artemis@higneyintl.com
 Cc: austin@higneyintl.com

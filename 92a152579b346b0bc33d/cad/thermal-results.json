@@ -1,0 +1,226 @@
+{
+ "assumptions": {
+  "eta_light": 0.35,
+  "h_room": 8.0,
+  "h_cavity": 6.0,
+  "h_strip": 12.0,
+  "k_W_mK": {
+   "mdf": 0.14,
+   "air": 0.026,
+   "pvc": 0.16,
+   "aluminium": 200.0,
+   "cork": 0.045
+  },
+  "stray_light_to_overhang_W_at_4W": 0.1,
+  "view_factor_rim_to_overhang": 0.321,
+  "vinyl_softens_C": "55-60",
+  "cases": {
+   "normal": {
+    "p_in": 4.0,
+    "h_scale": 1.0,
+    "room_C": 30.0
+   },
+   "worst": {
+    "p_in": 6.0,
+    "h_scale": 0.5,
+    "room_C": 35.0
+   }
+  }
+ },
+ "final_geometry": {
+  "ring_r_mm": [
+   100.0,
+   130.0
+  ],
+  "strip_r_mm": [
+   111.0,
+   119.0
+  ],
+  "cork_mm": 1.6,
+  "alu_mm": 1.0,
+  "backplate_r_mm": 133.35,
+  "backplate_t_mm": 12.7,
+  "record_r_mm": 152.39999999999998,
+  "record_seat_mm": 1.1,
+  "record_t_mm": 2.032
+ },
+ "final_name": "F  FINAL layout D as built in the CAD: ring r 100 to 130, strip r 111 to 119, cork 1.6",
+ "normal": {
+  "A  old: strip on the rim, facing out": {
+   "record_max": 4.880187604866103,
+   "record_max_r_mm": 129.75,
+   "record_overhang_max": 3.9234765741237956,
+   "record_under_cap_max": 0.0056279399046619315,
+   "source_max": 12.959369915750615,
+   "mdf_front_max": 7.812911968684528,
+   "q_overhang_W": 0.6149449867968422,
+   "record_C": 34.8801876048661,
+   "strip_C": 42.959369915750614
+  },
+  "B  strip on the back face, bare MDF": {
+   "record_max": 4.489974070686237,
+   "record_max_r_mm": 117.25,
+   "record_overhang_max": 1.6862997567950821,
+   "record_under_cap_max": 0.016238722855893,
+   "source_max": 17.24942545554487,
+   "mdf_front_max": 6.231587537437074,
+   "q_overhang_W": 0.1,
+   "record_C": 34.48997407068624,
+   "strip_C": 47.249425455544866
+  },
+  "C  back face on 1 mm aluminium ring, 30 mm wide": {
+   "record_max": 3.5109566657841134,
+   "record_max_r_mm": 116.25,
+   "record_overhang_max": 1.5837401163310294,
+   "record_under_cap_max": 0.019797170726087183,
+   "source_max": 8.003128030584367,
+   "mdf_front_max": 4.719921977613881,
+   "q_overhang_W": 0.1,
+   "record_C": 33.510956665784114,
+   "strip_C": 38.003128030584364
+  },
+  "D  study version: C plus 2 mm cork (ring r 103 to 133)": {
+   "record_max": 2.983177875775443,
+   "record_max_r_mm": 116.75,
+   "record_overhang_max": 1.3546596177500816,
+   "record_under_cap_max": 0.015250035637451252,
+   "source_max": 9.202380673307598,
+   "mdf_front_max": 4.029837584905196,
+   "q_overhang_W": 0.1,
+   "record_C": 32.98317787577544,
+   "strip_C": 39.2023806733076
+  },
+  "E  D with the ring pulled 10 mm in from the rim": {
+   "record_max": 3.2028632210237,
+   "record_max_r_mm": 107.25,
+   "record_overhang_max": 0.9515558907480117,
+   "record_under_cap_max": 0.03254348291150811,
+   "source_max": 9.891697068462765,
+   "mdf_front_max": 4.316904414551253,
+   "q_overhang_W": 0.1,
+   "record_C": 33.2028632210237,
+   "strip_C": 39.89169706846276
+  },
+  "F  FINAL layout D as built in the CAD: ring r 100 to 130, strip r 111 to 119, cork 1.6": {
+   "record_max": 3.1430810231198745,
+   "record_max_r_mm": 114.25,
+   "record_overhang_max": 1.2929132471054086,
+   "record_under_cap_max": 0.01986290952486011,
+   "source_max": 9.150345125498976,
+   "mdf_front_max": 4.236184040077422,
+   "q_overhang_W": 0.1,
+   "record_C": 33.143081023119876,
+   "strip_C": 39.15034512549897
+  }
+ },
+ "worst": {
+  "A  old: strip on the rim, facing out": {
+   "record_max": 14.574997118000812,
+   "record_max_r_mm": 129.75,
+   "record_overhang_max": 12.627585952547282,
+   "record_under_cap_max": 0.13231381569400572,
+   "source_max": 29.129930178829117,
+   "mdf_front_max": 19.978802573558447,
+   "q_overhang_W": 1.0441312192948426,
+   "record_C": 49.57499711800081,
+   "strip_C": 64.12993017882911
+  },
+  "B  strip on the back face, bare MDF": {
+   "record_max": 13.030840058017318,
+   "record_max_r_mm": 117.25,
+   "record_overhang_max": 6.419196653831849,
+   "record_under_cap_max": 0.2644752315135941,
+   "source_max": 34.413333920473875,
+   "mdf_front_max": 15.898507880639748,
+   "q_overhang_W": 0.15000000000000002,
+   "record_C": 48.03084005801732,
+   "strip_C": 69.41333392047387
+  },
+  "C  back face on 1 mm aluminium ring, 30 mm wide": {
+   "record_max": 10.997006108907913,
+   "record_max_r_mm": 116.75,
+   "record_overhang_max": 6.043598690028505,
+   "record_under_cap_max": 0.30241999535832864,
+   "source_max": 18.91600983209306,
+   "mdf_front_max": 13.076626011506482,
+   "q_overhang_W": 0.15000000000000002,
+   "record_C": 45.99700610890791,
+   "strip_C": 53.91600983209306
+  },
+  "D  study version: C plus 2 mm cork (ring r 103 to 133)": {
+   "record_max": 9.880626828972174,
+   "record_max_r_mm": 117.25,
+   "record_overhang_max": 5.46451388779566,
+   "record_under_cap_max": 0.2522737701325633,
+   "source_max": 21.53804559409102,
+   "mdf_front_max": 11.795924359507005,
+   "q_overhang_W": 0.15000000000000002,
+   "record_C": 44.880626828972176,
+   "strip_C": 56.53804559409102
+  },
+  "E  D with the ring pulled 10 mm in from the rim": {
+   "record_max": 10.241675448497935,
+   "record_max_r_mm": 107.25,
+   "record_overhang_max": 4.103988911215232,
+   "record_under_cap_max": 0.43170772610195235,
+   "source_max": 22.57221418162066,
+   "mdf_front_max": 12.199829378100798,
+   "q_overhang_W": 0.15000000000000002,
+   "record_C": 45.241675448497936,
+   "strip_C": 57.57221418162066
+  },
+  "F  FINAL layout D as built in the CAD: ring r 100 to 130, strip r 111 to 119, cork 1.6": {
+   "record_max": 10.157706506963821,
+   "record_max_r_mm": 114.25,
+   "record_overhang_max": 5.2332891940539135,
+   "record_under_cap_max": 0.3024893608135995,
+   "source_max": 21.17941754513338,
+   "mdf_front_max": 12.098907499212801,
+   "q_overhang_W": 0.15000000000000002,
+   "record_C": 45.15770650696382,
+   "strip_C": 56.179417545133376
+  }
+ },
+ "cork_comparison": {
+  "2.0": {
+   "normal": {
+    "record_C": 33.03650808440721,
+    "strip_C": 39.348503785499695
+   },
+   "worst": {
+    "record_C": 44.92468686285665,
+    "strip_C": 56.64805624534054
+   }
+  },
+  "1.6": {
+   "normal": {
+    "record_C": 33.143081023119876,
+    "strip_C": 39.15034512549897
+   },
+   "worst": {
+    "record_C": 45.15770650696382,
+    "strip_C": 56.179417545133376
+   }
+  },
+  "1.5": {
+   "normal": {
+    "record_C": 33.170156212080286,
+    "strip_C": 39.097644866613294
+   },
+   "worst": {
+    "record_C": 45.21602456286199,
+    "strip_C": 56.05686689092951
+   }
+  },
+  "0.0": {
+   "normal": {
+    "record_C": 33.54809427632403,
+    "strip_C": 38.00531523681316
+   },
+   "worst": {
+    "record_C": 45.975796657728885,
+    "strip_C": 53.70097452637836
+   }
+  }
+ }
+}

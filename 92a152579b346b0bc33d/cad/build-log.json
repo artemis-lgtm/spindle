@@ -2,7 +2,7 @@
  "parts": [
   {
    "part": "RS-BP-12-MDF",
-   "volume_mm3": 691756.5,
+   "volume_mm3": 704990.5,
    "bbox_mm": [
     266.78,
     266.7,
@@ -11,11 +11,29 @@
   },
   {
    "part": "RS-BP-7-MDF",
-   "volume_mm3": 220810.9,
+   "volume_mm3": 220801.9,
    "bbox_mm": [
     152.45,
     152.42,
     12.75
+   ]
+  },
+  {
+   "part": "RS-HR-12",
+   "volume_mm3": 21642.8,
+   "bbox_mm": [
+    260.16,
+    260.24,
+    1.32
+   ]
+  },
+  {
+   "part": "RS-CK-12",
+   "volume_mm3": 34602.8,
+   "bbox_mm": [
+    260.16,
+    260.24,
+    1.92
    ]
   },
   {
@@ -47,7 +65,7 @@
   },
   {
    "part": "RS-HUB-01",
-   "volume_mm3": 244787.6,
+   "volume_mm3": 248727.9,
    "bbox_mm": [
     127.09,
     127.06,
@@ -65,22 +83,112 @@
   },
   {
    "part": "RS-CAP-12",
-   "volume_mm3": 7398.2,
+   "volume_mm3": 6449.5,
    "bbox_mm": [
     38.18,
     38.17,
-    25.92
+    21.99
    ]
   },
   {
    "part": "RS-CAP-7",
-   "volume_mm3": 11831.6,
+   "volume_mm3": 11703.7,
    "bbox_mm": [
     48.15,
     48.13,
-    24.45
+    21.18
+   ]
+  },
+  {
+   "part": "RS-CAP-12L-DOME",
+   "volume_mm3": 4083.4,
+   "bbox_mm": [
+    38.18,
+    38.17,
+    10.04
+   ]
+  },
+  {
+   "part": "RS-CAP-12L-CORE",
+   "volume_mm3": 1847.8,
+   "bbox_mm": [
+    36.62,
+    36.64,
+    20.47
+   ]
+  },
+  {
+   "part": "RS-CAP-12L-LOUVER",
+   "volume_mm3": 619.7,
+   "bbox_mm": [
+    35.08,
+    35.08,
+    4.21
+   ]
+  },
+  {
+   "part": "RS-CAP-12L-WINDOW",
+   "volume_mm3": 232.2,
+   "bbox_mm": [
+    36.12,
+    36.13,
+    4.2
+   ]
+  },
+  {
+   "part": "RS-CAP-12L-PIN",
+   "volume_mm3": 18.1,
+   "bbox_mm": [
+    2.4,
+    2.4,
+    9.0
+   ]
+  },
+  {
+   "part": "RS-CAP-12L-SLEEVE",
+   "volume_mm3": 56.2,
+   "bbox_mm": [
+    3.15,
+    3.15,
+    10.0
+   ]
+  },
+  {
+   "part": "RS-HUB-12L-CARRIER",
+   "volume_mm3": 834.4,
+   "bbox_mm": [
+    13.0,
+    12.83,
+    9.61
+   ]
+  },
+  {
+   "part": "RS-HUB-12L-PLUNGER",
+   "volume_mm3": 10.8,
+   "bbox_mm": [
+    2.5,
+    2.5,
+    7.1
+   ]
+  },
+  {
+   "part": "RS-PCB-12L-LED",
+   "volume_mm3": 338.7,
+   "bbox_mm": [
+    24.62,
+    24.62,
+    0.83
+   ]
+  },
+  {
+   "part": "RS-PCB-12L-HUB",
+   "volume_mm3": 212.4,
+   "bbox_mm": [
+    13.01,
+    13.01,
+    1.62
    ]
   }
  ],
- "seconds": 49.0
+ "seconds": 64.0
 }

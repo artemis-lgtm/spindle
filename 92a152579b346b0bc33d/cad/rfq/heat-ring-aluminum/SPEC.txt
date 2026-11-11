@@ -1,0 +1,20 @@
+REVISION STATUS (2026-11-11): CURRENT = RS-HR-12 rev A (new part, 2026-11-11).
+SUPERSEDED, DO NOT QUOTE OR BUILD: none.
+If you hold any earlier drawing, STEP or zip of these parts, discard it. See cad/rfq/README.md.
+
+RFQ: flat laser-cut aluminium ring (SendCutSend / OSH Cut / Xometry sheet style order)
+Part: RS-HR-12 rev A, "heat ring". One flat ring, nothing formed.
+Size: OD 260.0 mm (10.236 in), ID 200.0 mm (7.874 in), 4x D 3.3 mm holes on a D 211 mm bolt circle
+ (R 105.5) at 45/135/225/315 deg.
+Material: 5052-H32 aluminium sheet, 1.0 mm (0.040 in). 6061-T6 or 3003-H14 at the same thickness is acceptable, tell us.
+Quantity: 10 samples; please also quote 100 and 250.
+Cutting: laser (or waterjet). Layer CUT in the DXF is the whole job.
+Finish: bare mill finish. NO anodise, paint or powder coat (an LED strip's adhesive tape and a cork ring's adhesive bond to it).
+ Deburr both faces and both edges; no dross, no heat tint. Flat within 0.5 mm.
+Tolerance: +/-0.2 on OD, ID and hole position.
+What it does: it sits behind a wooden disc and carries a 4 W LED strip; it spreads the strip's heat. Mass about 58 g.
+Packing: interleaved so the faces do not scratch each other.
+Ship to: Florida, USA. State lead time. DXF is mm, R2010, 1:1; STEP is the 3D master.
+
+Files in this folder: RS-HR-12.step, RS-HR-12.dxf, RS-HR-12.pdf
+Contact: (fill in before sending; nothing has been sent)

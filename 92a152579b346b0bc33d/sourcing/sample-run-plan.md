@@ -1,5 +1,7 @@
 # Sample run: 8 sconce bodies (6 x 12", 2 x 7") plus 5 in-wall kits
 
+> **SUPERSEDED IN PART, 2026-11-11 (heat-safe layout, `../cad/FIXES-heat-layout.md`):** the Backplates paragraph below orders 12 in discs with a rim rabbet and lead notch. The current 12 in backplate (RS-BP-12-MDF rev C) has neither; order from `../cad/rfq/backplate-mdf-cnc/`. Each 12 in unit also needs an aluminium heat ring and a cork ring (`../cad/rfq/heat-ring-aluminum/`, `../cad/rfq/cork-ring/`), which this plan does not list or cost.
+
 Purpose: enough finished units to photograph all three finishes, run the 2-hour thermal soak, hang two on real drywall (one in-wall, one surface), and fulfil the first of the 20 pre-sold units if Austin wants to. Nothing here is ordered; this is the shopping list with the vendor, the quantity, the price basis and the reason. Prices are from vendors.md; "live" means read off the page tonight, "est." is my estimate.
 
 ## What to order, from whom

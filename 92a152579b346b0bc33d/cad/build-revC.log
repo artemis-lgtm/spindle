@@ -1,0 +1,66 @@
+/Users/artemis/.openclaw/workspace/projects/record-sconces/cad/.venv/lib/python3.12/site-packages/cadquery/utils.py:82: FutureWarning: save will be removed in the next release.
+  warn(f"{f.__name__} will be removed in the next release.", FutureWarning)
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed x limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+Ignoring fixed y limits to fulfill fixed data aspect with adjustable data limits.
+  RS-BP-12-MDF: vol 691756 mm3, bbox 266.8 x 266.7 x 12.8
+  RS-BP-7-MDF: vol 220811 mm3, bbox 152.4 x 152.4 x 12.7
+  RS-BP-12-AL5: vol 277595 mm3, bbox 266.9 x 266.9 x 5.3
+  RS-BP-12-AL3: vol 166717 mm3, bbox 266.9 x 266.9 x 3.3
+  RS-BP-7-AL5: vol 89480 mm3, bbox 152.5 x 152.5 x 5.2
+  RS-HUB-01: vol 244788 mm3, bbox 127.1 x 127.1 x 25.5
+  RS-WP-01: vol 13055 mm3, bbox 101.7 x 103.5 x 12.1
+  RS-CAP-12: vol 6418 mm3, bbox 38.2 x 38.2 x 21.7
+  RS-CAP-7: vol 11807 mm3, bbox 48.1 x 48.1 x 24.5
+  assembly 12in_mdf: 20 solids, interferences: []
+  assembly 7in_mdf: 20 solids, interferences: []
+  assembly 12in_al5: 20 solids, interferences: []
+  assembly 12in_al3: 20 solids, interferences: []
+  plain cap RFQ zip: /Users/artemis/.openclaw/workspace/projects/record-sconces/cad/rfq/dome-cap-RS-CAP-12-revC.zip
+  RS-CAP-12L-DOME: vol 4035 mm3, bbox 38.2 x 38.2 x 10.0
+  RS-CAP-12L-CORE: vol 1719 mm3, bbox 36.6 x 36.6 x 20.5
+  RS-CAP-12L-LOUVER: vol 620 mm3, bbox 35.1 x 35.1 x 4.2
+  RS-CAP-12L-WINDOW: vol 232 mm3, bbox 36.1 x 36.1 x 4.2
+  RS-CAP-12L-PIN: vol 17 mm3, bbox 1.6 x 1.6 x 9.0
+  RS-HUB-12L-CARRIER: vol 320 mm3, bbox 13.0 x 12.8 x 4.6
+  RS-PCB-12L-LED: vol 339 mm3, bbox 24.6 x 24.6 x 0.8
+  RS-PCB-12L-HUB: vol 211 mm3, bbox 13.0 x 13.0 x 1.6
+  assembly 12in_mdf_lit_nominal: 32 solids, interferences: []
+  assembly 12in_mdf_lit_thin_record: 32 solids, interferences: []
+  assembly 12in_mdf_lit_thick_record: 32 solids, interferences: []
+pcb outlines written: /Users/artemis/.openclaw/workspace/projects/record-sconces/cad/label-light/pcb
+  label light RFQ: /Users/artemis/.openclaw/workspace/projects/record-sconces/cad/rfq/dome-cap-lit-RS-CAP-12L.zip
+done in 35s

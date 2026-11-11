@@ -489,7 +489,7 @@ $SKPOLY
   9
 $TDCREATE
  40
-2461354.9212268516
+2461356.7043518517
   9
 $TDUCREATE
  40
@@ -497,7 +497,7 @@ $TDUCREATE
   9
 $TDUPDATE
  40
-2461354.9212268516
+2461356.7043518517
   9
 $TDUUPDATE
  40
@@ -929,11 +929,11 @@ $PSTYLEMODE
   9
 $FINGERPRINTGUID
   2
-{E3DAE7C5-E38E-414C-BB27-EBEFBECEBC61}
+{61A2A8CF-D2E2-498F-9B41-19A49FF434C8}
   9
 $VERSIONGUID
   2
-{D957DBFB-2D6D-4D0F-8201-6EE79F390527}
+{E7A16E92-192A-494C-8292-9BEFE1504CF8}
   9
 $EXTNAMES
 290
@@ -1323,9 +1323,9 @@ ISM
   0
 CLASS
   1
-LAYOUT
+ACDBPLACEHOLDER
   2
-AcDbLayout
+AcDbPlaceHolder
   3
 ObjectDBX Classes
  90
@@ -1339,9 +1339,9 @@ ObjectDBX Classes
   0
 CLASS
   1
-ACDBPLACEHOLDER
+LAYOUT
   2
-AcDbPlaceHolder
+AcDbLayout
   3
 ObjectDBX Classes
  90
@@ -8171,7 +8171,7 @@ AcDbCircle
  30
 0.0
  40
-4.109999999999999
+4.110000000000003
   0
 CIRCLE
   5
@@ -8191,7 +8191,7 @@ AcDbCircle
  30
 0.0
  40
-4.109999999999999
+4.110000000000003
   0
 CIRCLE
   5
@@ -8231,7 +8231,7 @@ AcDbCircle
  30
 0.0
  40
-4.109999999999999
+4.110000000000003
   0
 CIRCLE
   5
@@ -13633,7 +13633,7 @@ AcDbText
  40
 3.0
   1
-1/2 in MDF or Baltic birch, D 152.4. Layer CUT = front-face profile + through holes + 0.5 deep felt targets + #8 CSK (front).
+1/2 in MDF 12.70 +/-0.15 (no birch), D 152.4. Layer CUT = front-face profile + through holes + 0.5 deep felt targets + scored centre-ring witness circle + #8 CSK (front).
  11
 -76.19999999999999
  21
@@ -13693,7 +13693,7 @@ AcDbText
  40
 3.0
   1
-Layer POCKET = REAR face features at depth: jack pocket 16.0x13.0 x 6.5 deep @ (0,+15); lead channel 6.0 wide x 4.0 deep, 6 o'clock to R60.
+Layer POCKET = REAR face features at depth: splice pocket 16.0x13.0 x 6.5 deep @ (0,+15); lead channel 6.0 wide x 4.0 deep, 6 o'clock to R60.
  11
 -76.19999999999999
  21
@@ -14835,7 +14835,7 @@ DictionaryVariables
 280
 0
   1
-1.4.5 @ 2026-11-10T03:06:34.429539+00:00
+1.4.5 @ 2026-11-11T21:54:16.494552+00:00
   0
 VISUALSTYLE
   5
@@ -15547,7 +15547,7 @@ DictionaryVariables
 280
 0
   1
-1.4.5 @ 2026-11-10T03:06:34.456765+00:00
+1.4.5 @ 2026-11-11T21:54:16.518421+00:00
   0
 ENDSEC
   0

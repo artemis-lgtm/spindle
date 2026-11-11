@@ -12,7 +12,8 @@ TMP = os.path.join(HERE, ".render-tmp")
 
 COLORS = {"steel": (0.55, 0.57, 0.60), "chrome": (0.9, 0.9, 0.92), "nut": (0.6, 0.6, 0.55), "petg": (0.12, 0.13, 0.15),
           "black": (0.02, 0.02, 0.02), "mdf": (0.03, 0.03, 0.03), "alu": (0.6, 0.62, 0.65), "brass": (0.8, 0.6, 0.25),
-          "led": (1.0, 0.7, 0.35), "felt": (0.4, 0.35, 0.28), "vinyl": (0.01, 0.01, 0.012)}
+          "led": (1.0, 0.7, 0.35), "felt": (0.4, 0.35, 0.28), "vinyl": (0.01, 0.01, 0.012),
+          "plastic": (0.05, 0.05, 0.05), "cork": (0.55, 0.38, 0.22)}   # plastic (P-clip, rev B) and cork (heat-safe halo) were missing
 METAL = {"steel": 1, "chrome": 1, "nut": 1, "alu": 1, "brass": 1}
 ROUGH = {"chrome": 0.05, "brass": 0.25, "steel": 0.45, "nut": 0.5, "alu": 0.35, "petg": 0.55, "black": 0.4,
          "mdf": 0.6, "vinyl": 0.25, "felt": 0.95, "led": 0.5}

@@ -1,21 +1,23 @@
 # Quotes for the two heat rings (pulled live 2026-11-11, guest quotes, no account)
 
 ## Aluminium heat ring RS-HR-12
-SendCutSend instant quote, file `RS-HR-12_heat-ring_5052-040.dxf` (OD 260 mm, ID 200 mm), 5052 H32 aluminium 0.040 in, laser cut, no finishing. Screenshot `scs_alu_a.png`.
+SendCutSend instant quote of the CANONICAL file `cad/parts/RS-HR-12.dxf` (OD 260 mm, ID 200 mm, four 3.3 mm holes on a 211 mm bolt circle), 5052 H32 aluminium 0.040 in, laser cut, no finishing. Re-quoted 2026-11-11 after the CAD was finished.
 
 | Quantity | Each |
 |---|---|
-| 1 | $26.48 |
-| 2 | $19.87 |
-| 10 | $13.50 |
-| 50 | $10.57 |
-| 100 | $7.19 |
-| 1000 | $4.57 |
+| 1 | $27.10 |
+| 2 | $20.34 |
+| 10 | $13.83 |
+| 50 | $10.85 |
+| 100 | $7.38 |
+| 1000 | $4.69 |
 
-"Arrives as soon as Sat, Nov 14" when quoted on Nov 11. Shipping and tax not shown until checkout.
+Arrives in 3 days. Shipping and tax not shown until checkout.
+
+The first quote that day used `RS-HR-12_heat-ring_5052-040.dxf` in this folder, a ring WITHOUT the four holes, and came to $7.19 at 100 ($26.48 at 1, $19.87 at 2, $13.50 at 10, $10.57 at 50, $4.57 at 1000; screenshot `scs_alu_a.png`). That file is not the part; do not order from it.
 
 ## Cork ring RS-CK-12
-Plain 2 mm cork sheet is not a stocked size. 1/16 in (1.6 mm) and 1.5 mm are. The spec moves to 1/16 in.
+Plain 2 mm cork sheet is not a stocked size. 1/16 in (1.6 mm) and 1.5 mm are. The spec moved to 1/16 in on 2026-11-11 and the CAD, drawing and heat study now say 1.6 mm (`cad/parts/RS-CK-12.dxf`; the ring needs four 4.0 mm holes punched on the same bolt circle as the aluminium ring).
 
 | Source | Price | Rings | Per ring |
 |---|---|---|---|

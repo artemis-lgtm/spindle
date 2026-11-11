@@ -1,0 +1,11 @@
+/Users/artemis/.openclaw/workspace/projects/record-sconces/renders-studio/src/studio.py:733: DeprecationWarning: 'World.use_nodes' is expected to be removed in Blender 6.0
+  world.use_nodes = True
+/Users/artemis/.openclaw/workspace/projects/record-sconces/renders-studio/src/studio.py:127: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat.use_nodes = True
+00:14.199  render           | Saved: '/Users/artemis/.openclaw/workspace/projects/record-sconces/renders-studio/preview/band_grid_wide.png'
+BlenderMCP addon registered
+BlenderMCP addon unregistered
+WROTE /Users/artemis/.openclaw/workspace/projects/record-sconces/renders-studio/preview/band_grid_wide.png
+Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:51:40)
+
+Blender quit

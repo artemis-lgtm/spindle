@@ -90,7 +90,7 @@ Hook first; the first sentence must survive alone.
 
 7. Designer halo sconces with a metal centre dome run $400 to $1,300. The Spindle does the same thing with a better disc: your record. From $89. Warm 2700K, CRI 90+, inline dimmer, nothing glued.
 
-8. Nothing is glued to your record. It rests on three felt pads, a felt washer sits under the chrome dome, and the dome finger-tightens on a quarter-inch post through the spindle hole. The light is a cool 12 volt ring on the rim behind it. Your record is safer on this wall than in the crate.
+8. Nothing is glued to your record. It rests on three felt pads, a felt washer sits under the chrome dome, and the dome finger-tightens on a quarter-inch post through the spindle hole. The light is a cool 12 volt ring on the back of the plate, facing the wall. Your record is safer on this wall than in the crate.
 
 9. We sold the first 20 before the website existed. Now the website exists. The Spindle: a real record, a warm halo, a chrome dome, a ten-second swap. $25 refundable deposit holds your spot in batch two.
 
@@ -122,7 +122,7 @@ Hook first; the first sentence must survive alone.
 
 23. Your record collection is the best art in your apartment and it is facing the wall in a crate. Put one up. The Spindle lights it from behind and lets you change it whenever you want. Plug-in. From $89.
 
-24. People ask if it damages the record. Felt pads, felt washer, finger-tight chrome dome, cool 12V light on the rim. Nothing warm, nothing sticky, nothing touching the grooves. The record comes off exactly as it went on.
+24. People ask if it damages the record. Felt pads, felt washer, finger-tight chrome dome, cool 12V light behind the plate, facing the wall. Nothing warm, nothing sticky, nothing touching the grooves. The record comes off exactly as it went on.
 
 25. Dim it to amber. The halo pulls in, the grooves go gold, the chrome dome goes dark. Bedroom light with a record in it. The Spindle, 2700K, inline dimmer, from $89.
 

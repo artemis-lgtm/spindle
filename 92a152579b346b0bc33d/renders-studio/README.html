@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Band-room renders (2026-11-10) | Spindle</title>
+<style>
+:root{--bg:#f6f2ea;--ink:#1b1916;--mute:#6b645a;--line:#e3dccf;--accent:#b8732e;--panel:#fffdf8}
+@media (prefers-color-scheme:dark){:root{--bg:#121110;--ink:#ece6da;--mute:#a19887;--line:#2c2925;--accent:#e6a456;--panel:#1a1816}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Inter",system-ui,sans-serif}
+main{max-width:880px;margin:0 auto;padding:28px 16px 80px}
+a{color:var(--accent)} .back{font-size:14px;display:inline-block;margin-bottom:18px}
+h1{font-size:28px;line-height:1.2} h2{margin-top:36px;font-size:21px} h3{font-size:17px}
+table{border-collapse:collapse;width:100%;display:block;overflow-x:auto;font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top} th{background:var(--panel)}
+code{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:0 4px;font-size:.9em}
+pre{background:var(--panel);border:1px solid var(--line);padding:12px;overflow-x:auto;border-radius:8px}
+img{max-width:100%}
+</style></head><body><main><a class="back" href="../START-HERE.html">Back to START HERE</a>
+<h1>Band-room renders (2026-11-10)</h1>
+<p>Austin asked for the room shots to read as a studio / band room, styled after his Lord Decor basement-studio reference, with the sconces hung the way a designer would.</p>
+<p>Finals (png/, Blender 5.0.1 Cycles, Metal GPU, 448 samples, OIDN, AgX):
+- band_set_wide.png: the room. Set of three behind the kit, 3x3 statement grid on the side wall.
+- band_grid_wide.png: close-up of the 3x3 statement wall. Strongest image.
+- band_row_wide.png: symmetric front view, row of three 12 in over the kit.
+- band_set_ad.png: 1080x1350 vertical for Meta ads.</p>
+<p>Source: src/band_scenes.py (new scene code), src/build_studio.py splices it into a copy of renders-final/src/final.py to make src/studio.py (original untouched). Re-render: <code>Blender -b -P src/studio.py -- band_set wide --samples 448</code> (scenes band_set band_row band_grid; aspects wide square tall ad).
+Fictional labels only. No band names, logos or album art. References in refs.md.</p>
+<p>Open: the drum kit, amps and organ are procedural set dressing; for a billboard-grade shot, buy real asset models. Ad crop puts the set top-left rather than centred.</p></main></body></html>

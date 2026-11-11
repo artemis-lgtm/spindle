@@ -1,31 +1,48 @@
 {
  "interference": {
   "12in_mdf": {
-   "parts": 20,
+   "parts": 30,
    "hits": []
   },
   "7in_mdf": {
-   "parts": 20,
+   "parts": 24,
    "hits": []
   },
   "12in_al5": {
-   "parts": 20,
+   "parts": 23,
    "hits": []
   },
   "12in_al3": {
-   "parts": 20,
+   "parts": 23,
    "hits": []
   }
  },
  "clearances": {
-  "cap_12in_thread_engagement_mm": 9.04,
-  "cap_12in_stud_end_above_backplate_back_face_mm": 3.66,
-  "cap_7in_thread_engagement_mm": 10.78,
-  "cap_7in_stud_end_above_backplate_back_face_mm": 1.92,
-  "cap_12in_worst_case_protrusion_no_felt_1.5mm_record_mm": 0.08,
-  "hub_cap_relief_depth_mm": 4.5,
+  "cap_12in_thread_engagement_mm": 8.27,
+  "cap_12in_threaded_engagement_past_dog_point_mm": 6.77,
+  "cap_12in_stud_end_above_backplate_back_face_mm": 4.43,
+  "cap_7in_thread_engagement_mm": 8.25,
+  "cap_7in_threaded_engagement_past_dog_point_mm": 6.75,
+  "cap_7in_stud_end_above_backplate_back_face_mm": 4.45,
+  "cap_7in_tip_minus_cap_12in_tip_mm(asserted <= 0.05)": 0.018,
+  "cap_12in_worst_case_stud_end_above_back_face_1.2mm_record_felt_flat_mm": 3.0,
+  "cap_12in_band_to_pet_washer_gap_compressed_mm": 0.3,
+  "cap_12in_metal_above_recess_floor_at_axis_mm": 9.0,
+  "record_back_face_above_backplate_front_face_mm": 1.1,
+  "centre_ring_loaded_top_minus_pad_top_mm(record dish at the clamp, must be 0)": 0.0,
+  "centre_ring_od_minus_cap_felt_od_mm(clamp is felt-record-felt in line)": 0.0,
+  "outer_pad_target_edge_to_backplate_rim_mm(12 in rev C has no rim rabbet)": 6.7,
+  "pet_washer_od_minus_cap12_band_od_mm(washer hidden under the cap)": -0.6,
+  "pet_washer_id_minus_shoulder_mm": 0.4,
+  "record_hole_min_minus_cap_shoulder_mm": 0.14,
+  "cap_shoulder_bottom_above_insert_top_worst_mm(1.2 record, felt flat, seat -0.3)": 0.22,
+  "dog_point_max_dia_mm": 4.8,
+  "insert_minor_min_minus_dog_point_max_mm": 0.18,
+  "cap_shoulder_wall_if_tapped_1/4-20_mm(why the separate-stud option is deleted)": 0.375,
+  "hub_cap_relief_depth_mm": 9.1,
+  "hub_web_relief_floor_to_rear_pocket_ceiling_mm": 4.3,
   "wall_screw_head(2.8)_to_recess_ceiling_mm": 0.8,
-  "jack_body_end_to_backplate_pocket_floor_mm": 2.3,
+  "hub_splice_cavity_depth_mm": 10.3,
   "backplate_mdf_left_under_jack_pocket_mm": 6.2,
   "backplate_web_jack_pocket_to_insert_bore_mm": 3.54,
   "plate_edge_to_hub_recess_wall_mm": 2.7,
@@ -37,26 +54,1702 @@
   "entry_hole_minus_nut_across_corners_mm": 0.72,
   "record12_overhang_past_backplate_mm": 19.05,
   "record7_overhang_past_backplate_mm": 12.7,
-  "led_strip_proud_of_rim_mm": 0.1,
-  "rabbet_width_minus_strip_mm": 2.2,
+  "7in_only_rim_strip_proud_of_rim_mm": 0.1,
+  "7in_only_rabbet_width_minus_strip_mm": 2.2,
+  "halo_ring_od_inside_backplate_rim_mm": 3.35,
+  "halo_ring_id_outside_hub_mm": 36.5,
+  "halo_ring_id_outside_hub_screw_countersinks_mm": 50.7,
+  "halo_ring_id_outside_bayonet_studs_mm": 64.92,
+  "halo_strip_inner_edge_radius_mm": 111.0,
+  "halo_strip_outer_edge_radius_mm": 119.0,
+  "halo_strip_outer_edge_inside_ring_od_mm": 11.0,
+  "halo_strip_outer_edge_inside_backplate_rim_mm(no line of sight from the LEDs to the record)": 14.35,
+  "halo_strip_inner_edge_to_screw_head_mm": 2.7,
+  "halo_screw_hole_edge_to_ring_id_mm": 3.85,
+  "halo_stack_height_at_the_strip_mm(cork + aluminium + strip)": 4.2,
+  "halo_stack_height_at_a_screw_head_mm": 4.7,
+  "halo_cavity_depth_mm(wall to backplate back face)": 25.4,
+  "halo_strip_face_to_wall_mm": 21.2,
+  "halo_screw_head_to_wall_mm": 20.7,
+  "halo_stack_to_inline_jack_gap_along_z_mm": 7.65,
+  "solid_material_between_strip_and_record_mm(aluminium + cork + MDF)": 15.3,
+  "halo_screw_engagement_in_mdf_mm": 6.92,
+  "halo_screw_tip_behind_backplate_front_face_mm": 5.78,
+  "halo_pilot_bottom_behind_backplate_front_face_mm": 4.7,
+  "halo_pilot_depth_minus_screw_engagement_mm": 1.08,
+  "halo_pilot_bottom_behind_felt_target_floor_mm(even if a pilot sat under a target)": 4.2,
+  "halo_screw_to_nearest_felt_target_edge_in_plan_mm": 24.66,
+  "halo_screw_to_back_lead_channel_in_plan_mm": 70.15,
+  "halo_screw_to_hub_edge_in_plan_mm": 39.2,
+  "halo_screw_to_nearest_hub_screw_in_plan_mm": 57.37,
+  "halo_screw_to_insert_bore_in_plan_mm": 99.09,
+  "back_lead_channel_end_inside_cork_ring_id_mm": 3.0,
+  "back_lead_channel_start_under_the_hub_mm": 3.5,
+  "7in_back_face_band_outside_the_hub_at_the_same_rim_margin_mm": 9.35,
+  "7in_ring_width_left_with_1mm_hub_clearance_mm(for an 8 mm strip and a 5.6 screw head)": 8.35,
   "m3x12_tip_past_tab_inner_face_mm": 1.2,
   "m3_tip_to_plate_edge_radial_mm": 0.7,
   "tab_to_tab_pocket_outer_wall_mm": 1.0,
   "tab_top_to_tab_pocket_ceiling_mm": 1.5,
-  "plug_body_edge_to_plate_slot_end_mm": 2.0,
-  "plug_body_edge_to_plate_slot_side_mm": 10.0,
-  "plug_body_edge_to_1-1/4in_wall_hole_at_y+6_mm": 1.88,
-  "pocket_wall_to_plug_body_mm": 8.5,
-  "jack_body_edge_to_cap_relief_edge_mm": 3.5,
+  "pigtail_everything_stays_in_front_of_the_wall_plane_mm(min z of cord + jack + plug)": 1.55,
+  "inline_jack_to_backplate_back_face_mm(wall gap minus jack)": 12.35,
+  "mated_plug_end_inside_backplate_radius_mm(hidden behind the backplate)": 9.85,
+  "cord_channel_width_minus_cord_mm": 4.5,
+  "cord_underside_above_wall_screw_head_mm": 1.6,
+  "cord_top_below_channel_ceiling_mm": 3.4,
+  "inline_jack_through_plate_slot_mm(in-wall route)": 18.5,
+  "inline_jack_through_1in_centred_wall_hole_mm(in-wall route)": 13.9,
+  "1in_centred_wall_hole_inside_plate_slot_mm": 2.3,
+  "pigtail_free_length_minus_surface_path_mm(slack tucks behind the backplate)": 66.5,
+  "clip_pilot_to_centre_relief_wall_mm": 2.11,
+  "clip_pilot_end_below_hub_front_face_mm": 7.4,
+  "bayonet_locks_clockwise_seen_from_the_room(1 = yes)": 1,
+  "rear_pocket_to_75deg_nut_pocket_web_mm": 5.64,
+  "splice_cavity_edge_to_cap_relief_edge_mm": 1.5,
   "al_flat_head_height_mm": 3.68,
-  "al3_pan_head_to_hub_relief_floor_mm": 1.1,
+  "al3_pan_head_to_hub_relief_floor_mm": 5.7,
   "al3_pan_head_to_hub_relief_wall_radial_mm": 0.75,
-  "al_cap_stud_into_standoff_mm": 10.64,
-  "al_standoff_free_thread_between_screw_and_cap_mm": 7.54,
+  "al_cap_stud_into_standoff_mm": 9.37,
+  "al_standoff_free_thread_between_screw_and_cap_mm": 8.84,
   "al_neon_ring_top_to_wall_mm": 13.4,
   "hub_screw_1in_tip_depth_into_hub_mm": 12.7,
   "hub_pilot_depth_minus_screw_penetration_mm": 1.3,
   "hub_pilot_bottom_above_nut_pocket_ceiling_mm(radial_offset_so_no_overlap)": 6.25,
   "wall_gap_mm": 25.4
- }
+ },
+ "geometry_probes": {
+  "backplate_12in_felt_target_pockets_found_in_the_solid": 6,
+  "backplate_12in_centre_ring_seat_found_in_the_solid(1 = yes)": 1,
+  "backplate_7in_felt_target_pockets_found_in_the_solid": 3,
+  "backplate_7in_centre_ring_seat_found_in_the_solid(1 = yes)": 1,
+  "hub_centre_relief_measured_depth_ok(1 = yes)": 1,
+  "hub_has_no_panel_jack_hole(1 = yes: solid at r 3.7 from the cable hole axis)": 1,
+  "hub_p_clip_pilot_found(1 = yes)": 1,
+  "hub_j_slot_entry_is_clockwise_side_in_the_solid(1 = yes)": 1,
+  "cap12_stud_tip_z_measured_mm": -11.95,
+  "cap7_stud_tip_z_measured_mm": -12.6,
+  "cap12_smooth_shoulder_found(1 = yes)": 1,
+  "cap12_mass_g_brass_8.5": 54.8,
+  "cap7_mass_g_brass_8.5": 99.5,
+  "core_bore_shoulder_found(1 = yes: open below the step, solid above it)": 1,
+  "core_underside_has_no_felt_recess(1 = yes)": 1,
+  "core_key_top_measured_below_min_pcb_top(1 = yes)": 1,
+  "dome_boss_counterbore_found(1 = yes)": 1,
+  "dome_lip_face_z_measured_mm": 5.0,
+  "louver_top_z_measured_mm": 4.75,
+  "window_top_z_measured_mm": 4.75,
+  "lip_gap_measured_on_the_solids_mm": 0.25,
+  "pin_head_dia_measured_mm": 2.4,
+  "sleeve_top_z_minus_bore_shoulder_z_measured_mm": 0.0,
+  "guard_tube_top_z_measured_mm": 2.1,
+  "plunger_free_tip_z_measured_mm": 7.0,
+  "backplate_12in_rim_rabbet_is_gone(1 = yes: solid 0.5 inside the rim at mid thickness)": 1,
+  "backplate_12in_rim_notch_is_gone(1 = yes: solid at 6 o'clock, 0.5 inside the rim, 1.0 above the back face)": 1,
+  "backplate_12in_heat_ring_pilots_found_in_the_solid": 4,
+  "backplate_12in_front_face_is_solid_over_every_pilot(1 = yes)": 1,
+  "backplate_12in_back_channel_runs_R60_to_R97_only(1 = yes)": 1,
+  "backplate_7in_still_has_its_rim_rabbet(1 = yes: variant deliberately unchanged)": 1,
+  "backplate_7in_volume_minus_rev_B_volume_mm3(0 = geometry unchanged)": 0.0,
+  "heat_ring_od_measured_mm": 260.0,
+  "heat_ring_thickness_measured_mm": 1.0,
+  "heat_ring_id_measured_ok(1 = yes: open at R 99.9, solid at R 100.1)": 1,
+  "heat_ring_screw_holes_found_in_the_solid": 4,
+  "cork_ring_od_measured_mm": 260.0,
+  "cork_ring_thickness_measured_mm": 1.6,
+  "cork_ring_id_measured_ok(1 = yes: open at R 99.9, solid at R 100.1)": 1,
+  "cork_ring_screw_holes_found_in_the_solid": 4,
+  "heat_ring_mass_g_5052_at_2.68": 58.0,
+  "plain_and_lit_assemblies_carry_the_identical_halo_stack(1 = yes, 7 solids)": 1,
+  "plain_strip_face_to_wall_measured_mm": 21.2,
+  "plain_halo_lowest_point_to_wall_measured_mm": 20.7,
+  "plain_halo_stack_top_minus_backplate_back_face_measured_mm": 0.0,
+  "plain_aluminium_ring_to_hub_measured_mm": 36.5,
+  "plain_halo_stack_to_inline_jack_measured_mm": 9.75,
+  "plain_halo_stack_to_adapter_plug_and_cable_measured_mm": 8.65,
+  "plain_halo_stack_to_bayonet_studs_measured_mm": 65.112,
+  "plain_record_front_face_from_wall_measured_mm": 41.23,
+  "lit_strip_face_to_wall_measured_mm": 21.2,
+  "lit_halo_lowest_point_to_wall_measured_mm": 20.7,
+  "lit_halo_stack_top_minus_backplate_back_face_measured_mm": 0.0,
+  "lit_aluminium_ring_to_hub_measured_mm": 36.5,
+  "lit_halo_stack_to_inline_jack_measured_mm": 9.75,
+  "lit_halo_stack_to_adapter_plug_and_cable_measured_mm": 8.65,
+  "lit_halo_stack_to_bayonet_studs_measured_mm": 65.112,
+  "lit_record_front_face_from_wall_measured_mm": 41.23,
+  "plain_cap_tip_from_wall_measured_mm": 51.78,
+  "lit_cap_tip_from_wall_measured_mm": 56.48,
+  "plain_furthest_point_of_anything_from_wall_measured_mm": 51.78,
+  "lit_furthest_point_of_anything_from_wall_measured_mm": 56.48,
+  "negative_control_ring_without_holes_is_caught_as_interference(1 = yes)": 1
+ },
+ "label_light": {
+  "interference": {
+   "12in_mdf_lit_nominal": {
+    "parts": 42,
+    "hits": []
+   },
+   "12in_mdf_lit_thin_record": {
+    "parts": 42,
+    "hits": []
+   },
+   "12in_mdf_lit_thick_record": {
+    "parts": 42,
+    "hits": []
+   }
+  },
+  "clearances": {
+   "lit_nominal_thread_engagement_mm": 8.27,
+   "lit_nominal_threaded_engagement_past_dog_point_mm": 6.77,
+   "lit_nominal_centre_contact_compression_mm(0.5..4.9)": 2.52,
+   "lit_nominal_stud_tip_above_guard_tube_mm": 2.33,
+   "lit_thick_record_thread_engagement_mm": 7.6,
+   "lit_thick_record_threaded_engagement_past_dog_point_mm": 6.1,
+   "lit_thick_record_centre_contact_compression_mm(0.5..4.9)": 1.85,
+   "lit_thick_record_stud_tip_above_guard_tube_mm": 3.0,
+   "lit_thin_record_thread_engagement_mm": 9.1,
+   "lit_thin_record_threaded_engagement_past_dog_point_mm": 7.6,
+   "lit_thin_record_centre_contact_compression_mm(0.5..4.9)": 3.35,
+   "lit_thin_record_stud_tip_above_guard_tube_mm": 1.5,
+   "tolerance_stack_low_side_sum_mm": 0.94,
+   "tolerance_stack_high_side_sum_mm": 1.29,
+   "tolerance_stack_rss_mm": 0.53,
+   "worst_case_thin_record_stud_tip_above_guard_tube_mm(must be >= 0.2)": 0.56,
+   "lit_tip_minus_plain_cap12_tip_nominal_mm(asserted <= 0.05)": -0.0,
+   "worst_case_thin_record_centre_contact_compression_mm(must be <= travel)": 4.29,
+   "worst_case_thick_record_centre_contact_compression_mm(must be >= 0.5)": 0.56,
+   "centre_contact_travel_mm(nose free tip to guard top)": 4.9,
+   "worst_case_thick_record_threaded_engagement_mm(must be >= 5.0)": 5.72,
+   "plunger_flange_underside_above_spring_solid_height_with_stud_on_guard_mm": 0.7,
+   "plunger_pilot_end_above_hub_pcb_with_stud_on_guard_mm": 2.5,
+   "spring_force_cap_off_N": 0.45,
+   "spring_force_min_contact_N(thick record, worst case)": 0.53,
+   "spring_force_max_N(stud on the guard)": 1.18,
+   "guard_tube_wall_mm": 1.1,
+   "plain_cap12_in_lit_sconce_thin_record_tip_above_guard_tube_worst_mm": 0.26,
+   "cap7_in_lit_sconce_thin_45_tip_above_guard_tube_worst_mm": 0.21,
+   "any_longer_screw_stops_on_the_guard_tube_at_mm_above_back_face": 2.1,
+   "return_pin_working_height_nominal_mm(6.63..8.87)": 7.5,
+   "return_pin_working_height_worst_min_mm(must be >= 6.63)": 6.79,
+   "return_pin_working_height_worst_max_mm(must be <= 8.87)": 8.01,
+   "carrier_top_below_backplate_back_face_mm(insert may stand 0.35 proud)": 0.6,
+   "spigot_key_flat_to_pcb_flat_clearance_mm": 0.1,
+   "plunger_contact_edge_radius_worst_mm": 1.16,
+   "pin_head_gold_face_radius_mm": 1.2,
+   "brass_annulus_inner_radius_mm": 1.575,
+   "plunger_to_brass_margin_worst_mm(short-circuit guard)": 0.42,
+   "pin_head_to_brass_bore_radial_peek_mm": 0.375,
+   "hollow_stud_wall_at_thread_root_mm": 0.82,
+   "hollow_stud_tensile_area_mm2": 10.3,
+   "spigot_radial_clearance_in_insert_minor_min_mm": 0.09,
+   "spigot_radial_clearance_in_insert_minor_max_mm": 0.23,
+   "spigot_lead_in_capture_range_mm(carrier floats +/-0.5)": 0.69,
+   "record_hole_min_minus_shoulder_mm": 0.14,
+   "sleeve_od_minus_wire_bore_mm(sleeve seats on the bore shoulder)": 0.975,
+   "pin_head_minus_sleeve_bore_mm(head cannot pass up the sleeve)": 0.8,
+   "sleeve_top_to_bore_shoulder_gap_mm": 0.0,
+   "pin_head_top_to_sleeve_counterbore_floor_gap_mm": 0.0,
+   "sleeve_wall_at_pin_head_counterbore_mm": 0.337,
+   "led_pcb_edge_to_dome_inner_wall_mm": 0.2,
+   "led_body_outer_to_louver_inner_mm": 2.6,
+   "led_body_inner_to_column_mm": 2.1,
+   "led_underside_to_flange_top_mm": 2.7,
+   "flange_solid_thickness_under_the_cavity_mm(no felt recess; must be >= 0.8)": 1.3,
+   "cross_hole_lower_edge_above_contact_face_at_the_shoulder_mm": 2.44,
+   "window_to_lip_edge_overhang_mm": 1.0,
+   "louver_to_window_radial_gap_mm": 0.05,
+   "dome_boss_to_led_body_mm": 1.1,
+   "pcb_clamp_ring_width_mm(boss r6 - pcb ID r4.1)": 1.9,
+   "pcb_min_top_minus_key_top_mm(must be > 0: boss clamps the PCB, not the key)": 0.17,
+   "boss_counterbore_dia_minus_key_dia_mm(must be > 0)": 0.3,
+   "boss_thread_minor_dia_minus_key_dia_mm(negative = why the counterbore exists)": -0.54,
+   "spigot_thread_engagement_in_dome_boss_mm": 2.8,
+   "boss_face_above_lip_face_mm": 0.6,
+   "louver_top_to_dome_lip_gap_mm": 0.25,
+   "window_top_to_dome_lip_gap_mm": 0.25,
+   "lip_gap_tolerance_stack_worst_mm": 0.12,
+   "lip_gap_minus_tolerance_stack_mm(must be > 0: the boss is always the stop)": 0.13,
+   "flange_thickness_at_window_seat_mm": 0.6,
+   "louver_bottom_channel_open_at_outer_edge_mm": 0.6,
+   "lit_cap_height_above_contact_face_mm": 15.0,
+   "lit_cap_height_minus_plain_cap_mm": 5.0,
+   "light_slot_height_visible_mm(flange rim + window, under the lip)": 5.0,
+   "window_height_mm": 4.15,
+   "pet_washer_od_minus_flange_od_mm(flange rides on PET, never on the label)": 0.9,
+   "negative_control_revA1_key_0.9_would_fail_the_pcb_gate(1 = yes)": 1
+  }
+ },
+ "drawings": {
+  "sheets_drawn": 21,
+  "lowest_note_line_y(border at 0.010)": 0.029,
+  "lowest_title_block_line_y(border at 0.010)": 0.0216,
+  "sheets_with_the_general_tolerance_line": 21,
+  "smallest_note_font_pt": 5.0,
+  "revisions": "RS-HUB-01 B, RS-WP-01 A, RS-CAP-12 D, RS-CAP-7 C, RS-BP-12-MDF C, RS-BP-7-MDF B, RS-HR-12 A, RS-CK-12 A, RS-BP-12-AL5 A, RS-BP-12-AL3 A, RS-BP-7-AL5 A, RS-ASM-12-MDF B, RS-ASM-7-MDF A, RS-ASM-12-AL5 A, RS-ASM-12L B.1, RS-CAP-12L-DOME B, RS-CAP-12L-CORE B, RS-CAP-12L-LOUVER B, RS-CAP-12L-WINDOW B, RS-CAP-12L-PIN B, RS-HUB-12L-CARRIER B"
+ },
+ "thermal": {
+  "final_geometry_matches_cad(1 = yes)": 1,
+  "final_geometry": "ring r 100 to 130, strip r 111 to 119, cork 1.6, aluminium 1.0",
+  "final_normal_record_rise_K": 3.1,
+  "final_normal_record_C_in_30C_room": 33.1,
+  "final_normal_hottest_spot_radius_mm": 114.2,
+  "final_normal_strip_C_in_30C_room": 39.2,
+  "final_normal_record_under_the_cap_rise_K": 0.02,
+  "final_worst_case_record_rise_K": 10.2,
+  "final_worst_case_record_C_in_35C_room": 45.2,
+  "final_worst_case_strip_C_in_35C_room": 56.2,
+  "old_rim_strip_normal_record_C_in_30C_room": 34.9,
+  "old_rim_strip_worst_case_record_C_in_35C_room": 49.6,
+  "THERMAL.md_quotes_these_four_final_temperatures(1 = yes)": 1
+ },
+ "documents": {
+  "STALE site/product.html: wattage 4 to 10 W (hard cap is 6 W)": 0,
+  "STALE site/faq.html: wattage 4 to 10 W (hard cap is 6 W)": 0,
+  "STALE site/index.html: wattage 4 to 10 W (hard cap is 6 W)": 0,
+  "STALE site/faq.html: phantom post (the stud is part of the cap)": 0,
+  "STALE site/product.html: phantom post (the stud is part of the cap)": 0,
+  "STALE site/index.html: phantom post (the stud is part of the cap)": 0,
+  "STALE site/faq.html: UL over-claim": 0,
+  "STALE site/product.html: panel jack in the hub (now a pigtail)": 0,
+  "STALE build/BOM.md: M3 x 6 set screw (cannot reach the tab)": 0,
+  "STALE build/BOM.md: shoulder-screw bayonet (CAD uses PEM FH-832-10 + lock nuts)": 0,
+  "STALE build/BOM.md: 1/8 in cap felt (stands 2.2 proud)": 0,
+  "STALE build/BOM.md: 1 in round centre hole in the plate (it is a 30 x 37 slot)": 0,
+  "STALE build/BOM.md: jack at 6 o'clock": 0,
+  "STALE build/BOM.md: bonded cap on a 1 in bolt": 0,
+  "STALE mounting-report.md: surface cord into a wall-normal jack": 0,
+  "STALE mounting-report.md: bayonet direction": 0,
+  "STALE cad/README.md: 1/8 in cap felt": 0,
+  "STALE cad/README.md: cap mass 63 g": 0,
+  "STALE cad/label-light/PCB-SPEC.md: bidirectional 12 V TVS": 0,
+  "STALE cad/label-light/DESIGN.md: anaerobic on PEEK": 0,
+  "STALE cad/rfq/dome-cap-brass/SPEC.txt: separate-stud option": 0,
+  "STALE build/BOM.md: 12 in strip on the rim": 0,
+  "STALE build/BOM.md: 12 in backplate with a rim rabbet": 0,
+  "STALE cad/README.md: rim placement as the decision": 0,
+  "STALE cad/label-light/DESIGN.md: halo strip on the rim": 0,
+  "STALE site/product.html: LED ring on the rim in the site copy": 0,
+  "STALE site/faq.html: LED ring on the rim in the site copy": 0,
+  "STALE site/index.html: LED ring on the rim in the site copy": 0,
+  "STALE site/install.html: LED ring on the rim in the site copy": 0,
+  "STALE cad/explode_fix.py: hand-injected fake ring parts in the heat-safe drawing": 0,
+  "STALE build/BOM.md: 2.0 mm cork in the BOM": 0,
+  "STALE build/BOM.md: heat rings left unpriced in the BOM": 0,
+  "STALE cad/explode_fix.py: 2 mm cork in the heat-safe drawing legend": 0,
+  "STALE cad/explode_view.py: 2 mm cork in the exploded drawing legend": 0,
+  "STALE cad/rfq/cork-ring/SPEC.txt: 5/64 in (2 mm) cork in the cork RFQ": 0,
+  "REQUIRED cad/rfq/dome-cap-brass/SPEC.txt: revision block on the plain cap RFQ": 1,
+  "REQUIRED cad/rfq/dome-cap-lit/SPEC.txt: revision block on the lit cap RFQ": 1,
+  "REQUIRED cad/rfq/backplate-mdf-cnc/SPEC.txt: six felt targets in the backplate RFQ": 1,
+  "REQUIRED cad/rfq/README.md: RFQ index lists superseded revisions": 1,
+  "REQUIRED site/product.html: 6 W cap on the product page": 1,
+  "REQUIRED site/faq.html: site FAQ puts the LED ring on the back of the backplate": 1,
+  "REQUIRED NOTES.md: render / CAD LED placement discrepancy is on record": 1,
+  "REQUIRED build/BOM.md: aluminium heat ring is in the BOM": 1,
+  "REQUIRED build/BOM.md: cork ring is in the BOM": 1,
+  "REQUIRED build/BOM.md: 12 in parts total at 100 includes the two heat rings and their screws": 1,
+  "REQUIRED build/BOM.md: heat ring price is the quote of the canonical file with its holes": 1,
+  "REQUIRED build/BOM.csv: BOM.csv 12 in total matches BOM.md": 1,
+  "REQUIRED cad/rfq/cork-ring/SPEC.txt: cork RFQ says 1/16 in": 1,
+  "REQUIRED cad/rfq/heat-ring-aluminum/SPEC.txt: revision block on the heat ring RFQ": 1,
+  "REQUIRED cad/rfq/cork-ring/SPEC.txt: revision block on the cork ring RFQ": 1,
+  "REQUIRED cad/rfq/backplate-mdf-cnc/SPEC.txt: 12 in backplate RFQ says the rabbet is gone": 1,
+  "REQUIRED cad/THERMAL.md: thermal table carries the final geometry": 1,
+  "REQUIRED mounting-report.md: install sheet says clockwise (matches the J-slots)": 1,
+  "superseded zips still sitting in cad/rfq/": 0
+ },
+ "gates": [
+  {
+   "item": "all",
+   "check": "interference hits, 12in_mdf",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "all",
+   "check": "interference hits, 7in_mdf",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "all",
+   "check": "interference hits, 12in_al5",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "all",
+   "check": "interference hits, 12in_al3",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "all",
+   "check": "interference hits, 12in_mdf_lit_nominal",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "all",
+   "check": "interference hits, 12in_mdf_lit_thin_record",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "all",
+   "check": "interference hits, 12in_mdf_lit_thick_record",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M1",
+   "check": "centre_ring_loaded_top_minus_pad_top_mm(record dish at the clamp, must be 0)",
+   "value": 0.0,
+   "rule": "abs<= 0.05",
+   "ok": true
+  },
+  {
+   "item": "M1",
+   "check": "centre_ring_od_minus_cap_felt_od_mm(clamp is felt-record-felt in line)",
+   "value": 0.0,
+   "rule": "abs<= 0.5",
+   "ok": true
+  },
+  {
+   "item": "M1",
+   "check": "record_back_face_above_backplate_front_face_mm",
+   "value": 1.1,
+   "rule": "== 1.1",
+   "ok": true
+  },
+  {
+   "item": "M1",
+   "check": "backplate_12in_centre_ring_seat_found_in_the_solid(1 = yes)",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M1",
+   "check": "backplate_7in_centre_ring_seat_found_in_the_solid(1 = yes)",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M2",
+   "check": "pcb_min_top_minus_key_top_mm(must be > 0: boss clamps the PCB, not the key)",
+   "value": 0.17,
+   "rule": ">= 0.1",
+   "ok": true
+  },
+  {
+   "item": "M2",
+   "check": "boss_counterbore_dia_minus_key_dia_mm(must be > 0)",
+   "value": 0.3,
+   "rule": ">= 0.2",
+   "ok": true
+  },
+  {
+   "item": "M2",
+   "check": "spigot_thread_engagement_in_dome_boss_mm",
+   "value": 2.8,
+   "rule": ">= 2.5",
+   "ok": true
+  },
+  {
+   "item": "M2",
+   "check": "negative_control_revA1_key_0.9_would_fail_the_pcb_gate(1 = yes)",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M2",
+   "check": "core_key_top_measured_below_min_pcb_top(1 = yes)",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M2",
+   "check": "dome_boss_counterbore_found(1 = yes)",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M3",
+   "check": "louver_top_to_dome_lip_gap_mm",
+   "value": 0.25,
+   "rule": ">= 0.25",
+   "ok": true
+  },
+  {
+   "item": "M3",
+   "check": "window_top_to_dome_lip_gap_mm",
+   "value": 0.25,
+   "rule": ">= 0.25",
+   "ok": true
+  },
+  {
+   "item": "M3",
+   "check": "lip_gap_minus_tolerance_stack_mm(must be > 0: the boss is always the stop)",
+   "value": 0.13,
+   "rule": ">= 0.1",
+   "ok": true
+  },
+  {
+   "item": "M3",
+   "check": "lip_gap_measured_on_the_solids_mm",
+   "value": 0.25,
+   "rule": ">= 0.25",
+   "ok": true
+  },
+  {
+   "item": "M4",
+   "check": "flange_solid_thickness_under_the_cavity_mm(no felt recess; must be >= 0.8)",
+   "value": 1.3,
+   "rule": ">= 0.8",
+   "ok": true
+  },
+  {
+   "item": "M4",
+   "check": "core_underside_has_no_felt_recess(1 = yes)",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M5",
+   "check": "pet_washer_od_minus_flange_od_mm(flange rides on PET, never on the label)",
+   "value": 0.9,
+   "rule": ">= 0.5",
+   "ok": true
+  },
+  {
+   "item": "M5",
+   "check": "pet_washer_od_minus_cap12_band_od_mm(washer hidden under the cap)",
+   "value": -0.6,
+   "rule": "<= 0.0",
+   "ok": true
+  },
+  {
+   "item": "M5",
+   "check": "pet_washer_od_minus_cap12_band_od_mm(washer hidden under the cap)",
+   "value": -0.6,
+   "rule": ">= -1.0",
+   "ok": true
+  },
+  {
+   "item": "M5",
+   "check": "pet_washer_id_minus_shoulder_mm",
+   "value": 0.4,
+   "rule": ">= 0.2",
+   "ok": true
+  },
+  {
+   "item": "M5",
+   "check": "cap12_stud_tip_z_measured_mm",
+   "value": -11.95,
+   "rule": "== -11.95",
+   "ok": true
+  },
+  {
+   "item": "M5",
+   "check": "lit_tip_minus_plain_cap12_tip_nominal_mm(asserted <= 0.05)",
+   "value": -0.0,
+   "rule": "abs<= 0.05",
+   "ok": true
+  },
+  {
+   "item": "M6",
+   "check": "centre_contact_travel_mm(nose free tip to guard top)",
+   "value": 4.9,
+   "rule": ">= 4.5",
+   "ok": true
+  },
+  {
+   "item": "M6",
+   "check": "worst_case_thin_record_stud_tip_above_guard_tube_mm(must be >= 0.2)",
+   "value": 0.56,
+   "rule": ">= 0.2",
+   "ok": true
+  },
+  {
+   "item": "M6",
+   "check": "worst_case_thick_record_centre_contact_compression_mm(must be >= 0.5)",
+   "value": 0.56,
+   "rule": ">= 0.5",
+   "ok": true
+  },
+  {
+   "item": "M6",
+   "check": "plunger_flange_underside_above_spring_solid_height_with_stud_on_guard_mm",
+   "value": 0.7,
+   "rule": ">= 0.3",
+   "ok": true
+  },
+  {
+   "item": "M6",
+   "check": "return_pin_working_height_worst_min_mm(must be >= 6.63)",
+   "value": 6.79,
+   "rule": ">= 6.63",
+   "ok": true
+  },
+  {
+   "item": "M6",
+   "check": "return_pin_working_height_worst_max_mm(must be <= 8.87)",
+   "value": 8.01,
+   "rule": "<= 8.87",
+   "ok": true
+  },
+  {
+   "item": "M6",
+   "check": "worst_case_thick_record_threaded_engagement_mm(must be >= 5.0)",
+   "value": 5.72,
+   "rule": ">= 5.0",
+   "ok": true
+  },
+  {
+   "item": "M6",
+   "check": "guard_tube_top_z_measured_mm",
+   "value": 2.1,
+   "rule": "== 2.1",
+   "ok": true
+  },
+  {
+   "item": "M6",
+   "check": "hub_centre_relief_measured_depth_ok(1 = yes)",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M7",
+   "check": "cap_7in_tip_minus_cap_12in_tip_mm(asserted <= 0.05)",
+   "value": 0.018,
+   "rule": "abs<= 0.05",
+   "ok": true
+  },
+  {
+   "item": "M7",
+   "check": "plain_cap12_in_lit_sconce_thin_record_tip_above_guard_tube_worst_mm",
+   "value": 0.26,
+   "rule": ">= 0.2",
+   "ok": true
+  },
+  {
+   "item": "M7",
+   "check": "cap7_in_lit_sconce_thin_45_tip_above_guard_tube_worst_mm",
+   "value": 0.21,
+   "rule": ">= 0.2",
+   "ok": true
+  },
+  {
+   "item": "M7",
+   "check": "cap7_stud_tip_z_measured_mm",
+   "value": -12.6,
+   "rule": "== -12.6",
+   "ok": true
+  },
+  {
+   "item": "M8",
+   "check": "sleeve_od_minus_wire_bore_mm(sleeve seats on the bore shoulder)",
+   "value": 0.975,
+   "rule": ">= 0.5",
+   "ok": true
+  },
+  {
+   "item": "M8",
+   "check": "pin_head_minus_sleeve_bore_mm(head cannot pass up the sleeve)",
+   "value": 0.8,
+   "rule": ">= 0.5",
+   "ok": true
+  },
+  {
+   "item": "M8",
+   "check": "sleeve_top_to_bore_shoulder_gap_mm",
+   "value": 0.0,
+   "rule": "abs<= 0.001",
+   "ok": true
+  },
+  {
+   "item": "M8",
+   "check": "pin_head_top_to_sleeve_counterbore_floor_gap_mm",
+   "value": 0.0,
+   "rule": "abs<= 0.001",
+   "ok": true
+  },
+  {
+   "item": "M8",
+   "check": "pin_head_to_brass_bore_radial_peek_mm",
+   "value": 0.375,
+   "rule": ">= 0.3",
+   "ok": true
+  },
+  {
+   "item": "M8",
+   "check": "plunger_to_brass_margin_worst_mm(short-circuit guard)",
+   "value": 0.42,
+   "rule": ">= 0.3",
+   "ok": true
+  },
+  {
+   "item": "M8",
+   "check": "core_bore_shoulder_found(1 = yes: open below the step, solid above it)",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M8",
+   "check": "sleeve_top_z_minus_bore_shoulder_z_measured_mm",
+   "value": 0.0,
+   "rule": "abs<= 0.001",
+   "ok": true
+  },
+  {
+   "item": "M9",
+   "check": "insert_minor_min_minus_dog_point_max_mm",
+   "value": 0.18,
+   "rule": ">= 0.1",
+   "ok": true
+  },
+  {
+   "item": "M9",
+   "check": "lowest_note_line_y(border at 0.010)",
+   "value": 0.029,
+   "rule": ">= 0.012",
+   "ok": true
+  },
+  {
+   "item": "M9",
+   "check": "lowest_title_block_line_y(border at 0.010)",
+   "value": 0.0216,
+   "rule": ">= 0.012",
+   "ok": true
+  },
+  {
+   "item": "M9",
+   "check": "every sheet carries the GENERAL TOLERANCES line",
+   "value": 21,
+   "rule": "== 21",
+   "ok": true
+  },
+  {
+   "item": "M10",
+   "check": "pigtail_everything_stays_in_front_of_the_wall_plane_mm(min z of cord + jack + plug)",
+   "value": 1.55,
+   "rule": ">= 0.5",
+   "ok": true
+  },
+  {
+   "item": "M10",
+   "check": "inline_jack_to_backplate_back_face_mm(wall gap minus jack)",
+   "value": 12.35,
+   "rule": ">= 2.0",
+   "ok": true
+  },
+  {
+   "item": "M10",
+   "check": "mated_plug_end_inside_backplate_radius_mm(hidden behind the backplate)",
+   "value": 9.85,
+   "rule": ">= 0.0",
+   "ok": true
+  },
+  {
+   "item": "M10",
+   "check": "cord_underside_above_wall_screw_head_mm",
+   "value": 1.6,
+   "rule": ">= 1.0",
+   "ok": true
+  },
+  {
+   "item": "M10",
+   "check": "inline_jack_through_1in_centred_wall_hole_mm(in-wall route)",
+   "value": 13.9,
+   "rule": ">= 5.0",
+   "ok": true
+  },
+  {
+   "item": "M10",
+   "check": "1in_centred_wall_hole_inside_plate_slot_mm",
+   "value": 2.3,
+   "rule": ">= 1.0",
+   "ok": true
+  },
+  {
+   "item": "M10",
+   "check": "hub_has_no_panel_jack_hole(1 = yes: solid at r 3.7 from the cable hole axis)",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M10",
+   "check": "hub_p_clip_pilot_found(1 = yes)",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M11b",
+   "check": "backplate_12in_felt_target_pockets_found_in_the_solid",
+   "value": 6,
+   "rule": "== 6",
+   "ok": true
+  },
+  {
+   "item": "M11b",
+   "check": "backplate_7in_felt_target_pockets_found_in_the_solid",
+   "value": 3,
+   "rule": "== 3",
+   "ok": true
+  },
+  {
+   "item": "M11b",
+   "check": "outer_pad_target_edge_to_backplate_rim_mm(12 in rev C has no rim rabbet)",
+   "value": 6.7,
+   "rule": ">= 3.0",
+   "ok": true
+  },
+  {
+   "item": "M11d",
+   "check": "bayonet_locks_clockwise_seen_from_the_room(1 = yes)",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M11d",
+   "check": "hub_j_slot_entry_is_clockwise_side_in_the_solid(1 = yes)",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "hub",
+   "check": "rear_pocket_to_75deg_nut_pocket_web_mm",
+   "value": 5.64,
+   "rule": ">= 2.0",
+   "ok": true
+  },
+  {
+   "item": "hub",
+   "check": "hub_web_relief_floor_to_rear_pocket_ceiling_mm",
+   "value": 4.3,
+   "rule": ">= 3.0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE site/product.html: wattage 4 to 10 W (hard cap is 6 W)",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE site/faq.html: wattage 4 to 10 W (hard cap is 6 W)",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE site/index.html: wattage 4 to 10 W (hard cap is 6 W)",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE site/faq.html: phantom post (the stud is part of the cap)",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE site/product.html: phantom post (the stud is part of the cap)",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE site/index.html: phantom post (the stud is part of the cap)",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE site/faq.html: UL over-claim",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE site/product.html: panel jack in the hub (now a pigtail)",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE build/BOM.md: M3 x 6 set screw (cannot reach the tab)",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE build/BOM.md: shoulder-screw bayonet (CAD uses PEM FH-832-10 + lock nuts)",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE build/BOM.md: 1/8 in cap felt (stands 2.2 proud)",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE build/BOM.md: 1 in round centre hole in the plate (it is a 30 x 37 slot)",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE build/BOM.md: jack at 6 o'clock",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE build/BOM.md: bonded cap on a 1 in bolt",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE mounting-report.md: surface cord into a wall-normal jack",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE mounting-report.md: bayonet direction",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE cad/README.md: 1/8 in cap felt",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE cad/README.md: cap mass 63 g",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE cad/label-light/PCB-SPEC.md: bidirectional 12 V TVS",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE cad/label-light/DESIGN.md: anaerobic on PEEK",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE cad/rfq/dome-cap-brass/SPEC.txt: separate-stud option",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE build/BOM.md: 12 in strip on the rim",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE build/BOM.md: 12 in backplate with a rim rabbet",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE cad/README.md: rim placement as the decision",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE cad/label-light/DESIGN.md: halo strip on the rim",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE site/product.html: LED ring on the rim in the site copy",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE site/faq.html: LED ring on the rim in the site copy",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE site/index.html: LED ring on the rim in the site copy",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE site/install.html: LED ring on the rim in the site copy",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE cad/explode_fix.py: hand-injected fake ring parts in the heat-safe drawing",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE build/BOM.md: 2.0 mm cork in the BOM",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE build/BOM.md: heat rings left unpriced in the BOM",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE cad/explode_fix.py: 2 mm cork in the heat-safe drawing legend",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE cad/explode_view.py: 2 mm cork in the exploded drawing legend",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE cad/rfq/cork-ring/SPEC.txt: 5/64 in (2 mm) cork in the cork RFQ",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "REQUIRED cad/rfq/dome-cap-brass/SPEC.txt: revision block on the plain cap RFQ",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "REQUIRED cad/rfq/dome-cap-lit/SPEC.txt: revision block on the lit cap RFQ",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "REQUIRED cad/rfq/backplate-mdf-cnc/SPEC.txt: six felt targets in the backplate RFQ",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "REQUIRED cad/rfq/README.md: RFQ index lists superseded revisions",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "REQUIRED site/product.html: 6 W cap on the product page",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "REQUIRED site/faq.html: site FAQ puts the LED ring on the back of the backplate",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "REQUIRED NOTES.md: render / CAD LED placement discrepancy is on record",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "REQUIRED build/BOM.md: aluminium heat ring is in the BOM",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "REQUIRED build/BOM.md: cork ring is in the BOM",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "REQUIRED build/BOM.md: 12 in parts total at 100 includes the two heat rings and their screws",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "REQUIRED build/BOM.md: heat ring price is the quote of the canonical file with its holes",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "REQUIRED build/BOM.csv: BOM.csv 12 in total matches BOM.md",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "REQUIRED cad/rfq/cork-ring/SPEC.txt: cork RFQ says 1/16 in",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "REQUIRED cad/rfq/heat-ring-aluminum/SPEC.txt: revision block on the heat ring RFQ",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "REQUIRED cad/rfq/cork-ring/SPEC.txt: revision block on the cork ring RFQ",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "REQUIRED cad/rfq/backplate-mdf-cnc/SPEC.txt: 12 in backplate RFQ says the rabbet is gone",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "REQUIRED cad/THERMAL.md: thermal table carries the final geometry",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "REQUIRED mounting-report.md: install sheet says clockwise (matches the J-slots)",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "superseded zips still sitting in cad/rfq/",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "S1",
+   "check": "record_hole_min_minus_cap_shoulder_mm",
+   "value": 0.14,
+   "rule": ">= 0.1",
+   "ok": true
+  },
+  {
+   "item": "S1",
+   "check": "cap_shoulder_bottom_above_insert_top_worst_mm(1.2 record, felt flat, seat -0.3)",
+   "value": 0.22,
+   "rule": ">= 0.1",
+   "ok": true
+  },
+  {
+   "item": "S1",
+   "check": "cap12_smooth_shoulder_found(1 = yes)",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "S6",
+   "check": "spigot_lead_in_capture_range_mm(carrier floats +/-0.5)",
+   "value": 0.69,
+   "rule": ">= 0.5",
+   "ok": true
+  },
+  {
+   "item": "stack",
+   "check": "cap_12in_threaded_engagement_past_dog_point_mm",
+   "value": 6.77,
+   "rule": ">= 5.0",
+   "ok": true
+  },
+  {
+   "item": "stack",
+   "check": "cap_12in_worst_case_stud_end_above_back_face_1.2mm_record_felt_flat_mm",
+   "value": 3.0,
+   "rule": ">= 0.5",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "halo_ring_od_inside_backplate_rim_mm",
+   "value": 3.35,
+   "rule": "== 3.35",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "halo_ring_id_outside_hub_mm",
+   "value": 36.5,
+   "rule": ">= 10.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "halo_ring_id_outside_hub_screw_countersinks_mm",
+   "value": 50.7,
+   "rule": ">= 10.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "halo_ring_id_outside_bayonet_studs_mm",
+   "value": 64.92,
+   "rule": ">= 10.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "plain_aluminium_ring_to_hub_measured_mm",
+   "value": 36.5,
+   "rule": ">= 10.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "plain_halo_stack_to_bayonet_studs_measured_mm",
+   "value": 65.112,
+   "rule": ">= 10.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "plain_halo_stack_to_inline_jack_measured_mm",
+   "value": 9.75,
+   "rule": ">= 5.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "plain_halo_stack_to_adapter_plug_and_cable_measured_mm",
+   "value": 8.65,
+   "rule": ">= 5.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "plain_halo_stack_top_minus_backplate_back_face_measured_mm",
+   "value": 0.0,
+   "rule": "abs<= 0.001",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "plain_strip_face_to_wall_measured_mm",
+   "value": 21.2,
+   "rule": "== 21.2",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "plain_halo_lowest_point_to_wall_measured_mm",
+   "value": 20.7,
+   "rule": ">= 15.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "lit_aluminium_ring_to_hub_measured_mm",
+   "value": 36.5,
+   "rule": ">= 10.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "lit_halo_stack_to_bayonet_studs_measured_mm",
+   "value": 65.112,
+   "rule": ">= 10.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "lit_halo_stack_to_inline_jack_measured_mm",
+   "value": 9.75,
+   "rule": ">= 5.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "lit_halo_stack_to_adapter_plug_and_cable_measured_mm",
+   "value": 8.65,
+   "rule": ">= 5.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "lit_halo_stack_top_minus_backplate_back_face_measured_mm",
+   "value": 0.0,
+   "rule": "abs<= 0.001",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "lit_strip_face_to_wall_measured_mm",
+   "value": 21.2,
+   "rule": "== 21.2",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "lit_halo_lowest_point_to_wall_measured_mm",
+   "value": 20.7,
+   "rule": ">= 15.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "halo_strip_inner_edge_radius_mm",
+   "value": 111.0,
+   "rule": "== 111.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "halo_strip_outer_edge_radius_mm",
+   "value": 119.0,
+   "rule": "== 119.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "halo_strip_outer_edge_inside_ring_od_mm",
+   "value": 11.0,
+   "rule": ">= 5.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "halo_strip_outer_edge_inside_backplate_rim_mm(no line of sight from the LEDs to the record)",
+   "value": 14.35,
+   "rule": ">= 10.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "halo_strip_inner_edge_to_screw_head_mm",
+   "value": 2.7,
+   "rule": ">= 2.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "halo_screw_hole_edge_to_ring_id_mm",
+   "value": 3.85,
+   "rule": ">= 3.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "solid_material_between_strip_and_record_mm(aluminium + cork + MDF)",
+   "value": 15.3,
+   "rule": ">= 15.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "halo_stack_height_at_the_strip_mm(cork + aluminium + strip)",
+   "value": 4.2,
+   "rule": "== 4.2",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "halo_stack_height_at_a_screw_head_mm",
+   "value": 4.7,
+   "rule": "<= 6.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "halo_cavity_depth_mm(wall to backplate back face)",
+   "value": 25.4,
+   "rule": "== 25.4",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "halo_strip_face_to_wall_mm",
+   "value": 21.2,
+   "rule": ">= 20.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "halo_stack_to_inline_jack_gap_along_z_mm",
+   "value": 7.65,
+   "rule": ">= 5.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "halo_screw_engagement_in_mdf_mm",
+   "value": 6.92,
+   "rule": ">= 6.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "halo_screw_tip_behind_backplate_front_face_mm",
+   "value": 5.78,
+   "rule": ">= 5.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "halo_pilot_bottom_behind_backplate_front_face_mm",
+   "value": 4.7,
+   "rule": ">= 4.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "halo_pilot_depth_minus_screw_engagement_mm",
+   "value": 1.08,
+   "rule": ">= 1.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "halo_pilot_bottom_behind_felt_target_floor_mm(even if a pilot sat under a target)",
+   "value": 4.2,
+   "rule": ">= 3.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "halo_screw_to_nearest_felt_target_edge_in_plan_mm",
+   "value": 24.66,
+   "rule": ">= 10.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "halo_screw_to_back_lead_channel_in_plan_mm",
+   "value": 70.15,
+   "rule": ">= 10.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "halo_screw_to_hub_edge_in_plan_mm",
+   "value": 39.2,
+   "rule": ">= 10.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "halo_screw_to_nearest_hub_screw_in_plan_mm",
+   "value": 57.37,
+   "rule": ">= 10.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "halo_screw_to_insert_bore_in_plan_mm",
+   "value": 99.09,
+   "rule": ">= 10.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "back_lead_channel_end_inside_cork_ring_id_mm",
+   "value": 3.0,
+   "rule": ">= 2.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "back_lead_channel_start_under_the_hub_mm",
+   "value": 3.5,
+   "rule": ">= 2.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "backplate_12in_rim_rabbet_is_gone(1 = yes: solid 0.5 inside the rim at mid thickness)",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "backplate_12in_rim_notch_is_gone(1 = yes: solid at 6 o'clock, 0.5 inside the rim, 1.0 above the back face)",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "backplate_12in_heat_ring_pilots_found_in_the_solid",
+   "value": 4,
+   "rule": "== 4",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "backplate_12in_front_face_is_solid_over_every_pilot(1 = yes)",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "backplate_12in_back_channel_runs_R60_to_R97_only(1 = yes)",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "heat_ring_od_measured_mm",
+   "value": 260.0,
+   "rule": "== 260.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "heat_ring_thickness_measured_mm",
+   "value": 1.0,
+   "rule": "== 1.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "heat_ring_id_measured_ok(1 = yes: open at R 99.9, solid at R 100.1)",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "heat_ring_screw_holes_found_in_the_solid",
+   "value": 4,
+   "rule": "== 4",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "cork_ring_od_measured_mm",
+   "value": 260.0,
+   "rule": "== 260.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "cork_ring_thickness_measured_mm",
+   "value": 1.6,
+   "rule": "== 1.6",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "cork_ring_id_measured_ok(1 = yes: open at R 99.9, solid at R 100.1)",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "cork_ring_screw_holes_found_in_the_solid",
+   "value": 4,
+   "rule": "== 4",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "negative_control_ring_without_holes_is_caught_as_interference(1 = yes)",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "plain_and_lit_assemblies_carry_the_identical_halo_stack(1 = yes, 7 solids)",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "plain_record_front_face_from_wall_measured_mm",
+   "value": 41.23,
+   "rule": "== 41.23",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "lit_record_front_face_from_wall_measured_mm",
+   "value": 41.23,
+   "rule": "== 41.23",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "plain_cap_tip_from_wall_measured_mm",
+   "value": 51.78,
+   "rule": "== 51.78",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "lit_cap_tip_from_wall_measured_mm",
+   "value": 56.48,
+   "rule": "== 56.48",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "plain_furthest_point_of_anything_from_wall_measured_mm",
+   "value": 51.78,
+   "rule": "== 51.78",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "lit_furthest_point_of_anything_from_wall_measured_mm",
+   "value": 56.48,
+   "rule": "== 56.48",
+   "ok": true
+  },
+  {
+   "item": "HEAT-7",
+   "check": "backplate_7in_still_has_its_rim_rabbet(1 = yes: variant deliberately unchanged)",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "HEAT-7",
+   "check": "backplate_7in_volume_minus_rev_B_volume_mm3(0 = geometry unchanged)",
+   "value": 0.0,
+   "rule": "abs<= 0.1",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "thermal: THERMAL.md_quotes_these_four_final_temperatures(1 = yes)",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "thermal: final_geometry_matches_cad(1 = yes)",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "thermal: final_normal_record_C_in_30C_room (vinyl softens 55 to 60 C; gate keeps 5 K below 55)",
+   "value": 33.1,
+   "rule": "<= 40.0",
+   "ok": true
+  },
+  {
+   "item": "HEAT",
+   "check": "thermal: final_worst_case_record_C_in_35C_room (vinyl softens 55 to 60 C; gate keeps 5 K below 55)",
+   "value": 45.2,
+   "rule": "<= 50.0",
+   "ok": true
+  }
+ ]
 }

@@ -35,7 +35,7 @@ Preview: The part everyone asks about.
 
 Hi [FIRST NAME],
 
-The first question I get is whether the light damages the record. It doesn't. The record rests on three felt pads and a felt washer sits under the chrome dome, which finger-tightens on a quarter-inch post through the spindle hole. No adhesive, no clips on the edge, no heat near the vinyl. The light is a 12 volt ring on the rim of the backplate, so the record never touches anything warm.
+The first question I get is whether the light damages the record. It doesn't. The record rests on three felt pads and a felt washer sits under the chrome dome, which finger-tightens on a quarter-inch post through the spindle hole. No adhesive, no clips on the edge, no heat near the vinyl. The light is a 12 volt ring on the back of the backplate, facing the wall, so the record never touches anything warm.
 
 That is also why you can change it. Ten seconds, one hand, and a different record is on the wall. People who have the first batch are already swapping with the season.
 
