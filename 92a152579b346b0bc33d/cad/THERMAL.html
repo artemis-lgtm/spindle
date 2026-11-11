@@ -1,0 +1,111 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Record temperature from the halo strip (2026-11-11) | Spindle</title>
+<style>
+:root{--bg:#f6f2ea;--ink:#1b1916;--mute:#6b645a;--line:#e3dccf;--accent:#b8732e;--panel:#fffdf8}
+@media (prefers-color-scheme:dark){:root{--bg:#121110;--ink:#ece6da;--mute:#a19887;--line:#2c2925;--accent:#e6a456;--panel:#1a1816}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Inter",system-ui,sans-serif}
+main{max-width:880px;margin:0 auto;padding:28px 16px 80px}
+a{color:var(--accent)} .back{font-size:14px;display:inline-block;margin-bottom:18px}
+h1{font-size:28px;line-height:1.2} h2{margin-top:36px;font-size:21px} h3{font-size:17px}
+table{border-collapse:collapse;width:100%;display:block;overflow-x:auto;font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top} th{background:var(--panel)}
+code{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:0 4px;font-size:.9em}
+pre{background:var(--panel);border:1px solid var(--line);padding:12px;overflow-x:auto;border-radius:8px}
+img{max-width:100%}
+</style></head><body><main><a class="back" href="../START-HERE.html">Back to START HERE</a>
+<h1>Record temperature from the halo strip (2026-11-11)</h1>
+<p>Question from Austin: will the light heat the vinyl, and what goes between them. Answered with a model this time, not a sentence.</p>
+<p>Model: <code>cad/thermal.py</code>, steady-state axisymmetric finite-volume conduction (MDF, air gap, PVC record, aluminium, cork) with film coefficients to room air, plus the light and infrared that land on the record's overhang (view factor 0.32 for the rim strip). Results in <code>cad/thermal-results.json</code>. It is a calculation. The buoyant air plume is not modelled and nothing has been measured.</p>
+<p>Geometry fact that was missed before: the record (304.8 mm) is wider than the backplate (266.7 mm). Its outer 19 mm overhangs the rim strip, 3.45 mm in front of it, with only air between.</p>
+<p>Normal case: 4 W strip, 30 C (86 F) room. Temperatures are rise over room air.</p>
+<table>
+<thead>
+<tr>
+<th>Layout</th>
+<th>Strip</th>
+<th>Record, hottest spot</th>
+<th>Record in a 30 C room</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A. Today: strip on the rim, facing out</td>
+<td>+12.9 K</td>
+<td>+4.9 K</td>
+<td>34.9 C (95 F)</td>
+</tr>
+<tr>
+<td>B. Strip on the back face, bare MDF</td>
+<td>+17.3 K</td>
+<td>+4.5 K</td>
+<td>34.5 C</td>
+</tr>
+<tr>
+<td>C. Back face on a 1 mm aluminium ring, 30 mm wide</td>
+<td>+8.0 K</td>
+<td>+3.5 K</td>
+<td>33.5 C</td>
+</tr>
+<tr>
+<td>D. C plus 2 mm cork under the aluminium</td>
+<td>+9.2 K</td>
+<td>+3.0 K</td>
+<td>33.0 C (91 F)</td>
+</tr>
+<tr>
+<td>E. D with the ring 10 mm further in</td>
+<td>+9.9 K</td>
+<td>+3.2 K</td>
+<td>33.2 C</td>
+</tr>
+</tbody>
+</table>
+<p>Stacked worst case: the wrong 6 W strip, dead-still air (film coefficients halved), 35 C (95 F) room.</p>
+<table>
+<thead>
+<tr>
+<th>Layout</th>
+<th>Record</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A. Today</td>
+<td>49.7 C (121 F)</td>
+</tr>
+<tr>
+<td>D. Aluminium ring + cork, back face</td>
+<td>44.9 C (113 F)</td>
+</tr>
+</tbody>
+</table>
+<p>Vinyl softens at about 55 to 60 C (130 to 140 F).</p>
+<p>Recommendation: layout D. The strip moves to the back face of the backplate, about 15 mm in from the rim, facing the wall. It sits on a 1 mm aluminium ring (30 mm wide, r 103 to 133 mm) that spreads the heat, with a 2 mm cork ring between the aluminium and the wood. The LEDs then have no line of sight to the record at all, and the wood plus cork sit between them. This is also the layout the approved product photos were lit with, so it closes the halo-mismatch flag. Nothing gets thicker: ring + cork + strip is about 5 mm inside the 25.4 mm gap behind the backplate.</p>
+<p>Not done yet: the CAD, drawings, BOM and RFQ packets still describe the rim strip. First prototype: thermocouple on the record's back at r 117 mm and at the top edge, 2 hours on, before anything ships.</p>
+<p>Projection from the wall, installed and tightened (from <code>assembly.py</code> / <code>assembly_lit.py</code>):</p>
+<table>
+<thead>
+<tr>
+<th>Surface</th>
+<th>From the wall</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Backplate back (the halo gap)</td>
+<td>25.40 mm = 1.00 in</td>
+</tr>
+<tr>
+<td>Record front face</td>
+<td>41.23 mm = 1.62 in</td>
+</tr>
+<tr>
+<td>Plain chrome cap tip</td>
+<td>51.78 mm = 2.04 in</td>
+</tr>
+<tr>
+<td>Lit cap tip</td>
+<td>56.48 mm = 2.22 in</td>
+</tr>
+</tbody>
+</table></main></body></html>

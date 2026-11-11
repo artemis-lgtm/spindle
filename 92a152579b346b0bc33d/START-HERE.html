@@ -46,6 +46,17 @@ ol.next li{margin:6px 0}
 footer{margin:60px 0 40px;color:var(--mute);font-size:14px}
 .toggle{position:fixed;top:12px;right:12px;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:13px;cursor:pointer}
 @media (max-width:720px){.hero{grid-template-columns:1fr}.hero .side{grid-template-columns:1fr 1fr}}
+
+.simple{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.scard{display:block;background:var(--panel);border:1px solid var(--line);border-left:5px solid var(--accent);border-radius:12px;padding:16px 18px;color:var(--ink)}
+.scard:hover{text-decoration:none;border-color:var(--accent)} .scard b{display:block;font-size:20px;margin-bottom:4px} .scard span{color:var(--mute)}
+.draws{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px;align-items:start}
+.draws figure{margin:0} .draws img{width:100%;display:block;border-radius:12px;border:1px solid var(--line);background:#f4f1eb}
+.draws figcaption{font-size:14px;color:var(--mute);margin-top:6px} .draws figcaption b{color:var(--ink)}
+@media (max-width:760px){.draws{grid-template-columns:1fr}}
+details.deep{margin-top:52px;border:1px solid var(--line);border-radius:12px;padding:4px 18px 18px;background:var(--panel)}
+details.deep>summary{cursor:pointer;font-weight:600;font-size:18px;padding:14px 0}
+details.deep h2{margin-top:28px}
 </style>
 </head>
 <body>
@@ -55,7 +66,7 @@ footer{margin:60px 0 40px;color:var(--mute);font-size:14px}
 <header>
   <div class="eyebrow">Record sconce · package of 10 Nov 2026</div>
   <h1>Spindle. <em>Change the record. Change the room.</em></h1>
-  <p class="lede">A wall light built around a real 12 inch record. The record floats an inch off the wall on a black backplate, a warm 2700K LED ring behind it throws an amber halo on the wall, and a mirror chrome dome screws through the spindle hole to hold it. The customer swaps records in under a minute with no tools. Nothing above 12 volts lives in the fixture; power comes from a UL listed plug-in adapter, with the thin cable hidden inside the wall by default. Four SKUs: the Kit (your own record), the Sconce with a vintage record, a Named title, and a 3-piece Set. First batch of 20 already sold.</p>
+  <p class="lede">A wall light built around a real record. The record floats an inch off the wall, a warm glow lights the wall behind it, and a chrome cap screws through the middle to hold it. You swap records in under a minute with no tools. First batch of 20 already sold.</p>
 </header>
 
 <div class="hero">
@@ -66,12 +77,27 @@ footer{margin:60px 0 40px;color:var(--mute);font-size:14px}
   </div>
 </div>
 
+<h2>Start with these two</h2>
+<p class="sub">The plain versions. Everything further down is detail you can skip.</p>
+<div class="simple">
+  <a class="scard" href="PARTS-SIMPLE.html"><b>How we get every piece</b><span>Each part, where it comes from, what it costs, and what is still not sorted. Written like you are five.</span></a>
+  <a class="scard" href="cad/THERMAL.html"><b>Will the light hurt the record?</b><span>No. The heat numbers, and the change that makes it safer.</span></a>
+</div>
+
+<h2>How it goes together</h2>
+<p class="sub">Every piece, numbered, in the order it stacks from the wall out. Tap a drawing to open it full size.</p>
+<div class="draws">
+  <figure><a href="renders-exploded/spindle-heat-safe-layout.png"><img src="renders-exploded/spindle-heat-safe-layout.png" alt="Heat-safe layout, exploded and numbered, with a side cut"></a><figcaption><b>The layout I recommend.</b> Light on the back of the plate, with a metal ring and a cork ring between it and the record. Sticks out 2.04 inches from the wall.</figcaption></figure>
+  <figure><a href="renders-exploded/spindle-exploded-labelled.png"><img src="renders-exploded/spindle-exploded-labelled.png" alt="Current CAD, exploded and numbered"></a><figcaption><b>What the shop files say today.</b> Same sconce, light still on the rim.</figcaption></figure>
+  <figure><a href="renders-exploded/spindle-lit-exploded-labelled.png"><img src="renders-exploded/spindle-lit-exploded-labelled.png" alt="Lit cap version, exploded and numbered"></a><figcaption><b>The premium lit cap.</b> The cap lights the label. Designed, never built.</figcaption></figure>
+</div>
+
 <h2>Five decisions you owe</h2>
 <p class="sub">Each with my pick. Everything else can move without you.</p>
 <div class="decisions">
   <div class="dec"><h3>The name</h3><p>Spindle is clear in lighting, and spindlelighting.com plus @spindlelighting were free last night. Side A lost because someone owns SIDE A for vinyl sleeves.</p><p class="pick">My pick: Spindle. Buy the domain and handles today, before someone else does.</p></div>
   <div class="dec"><h3>Kit price</h3><p>At $89 the Kit makes $25 a unit before ads and loses money once an ad has to sell it. At $99 it makes about $35.</p><p class="pick">My pick: $99, and let the $129 Sconce and the Set carry the ads. The Kit is the upsell for collectors.</p></div>
-  <div class="dec"><h3>Where the LEDs go</h3><p>The renders only got the tight halo from your reference photo with the LED ring on the back of the plate, near the rim, facing the wall. CAD and the parts list still put it on the rim edge.</p><p class="pick">My pick: back of the plate. CAD and the parts list get updated before any shop sees a drawing.</p></div>
+  <div class="dec"><h3>Where the LEDs go</h3><p>Today the shop files put the light strip on the rim of the black disc. The record's edge hangs out past that rim, so the light sits an eighth of an inch from bare vinyl. A heat study on 11 Nov says the record stays around 95°F in a warm room, but the worst case gets too close to the 130°F where vinyl softens.</p><p class="pick">My pick: move the strip to the back of the disc, facing the wall, on a thin metal ring with a cork ring behind it. The record drops to about 91°F and the light can no longer see the vinyl. It is also how your approved photos were lit.</p><p>The shop files are not changed yet. Say yes and the CAD, parts list and shop packets all get updated together. <a href="cad/THERMAL.html">The heat numbers.</a></p></div>
   <div class="dec"><h3>Which company sells it</h3><p>Options: a product line under Monarch Digital Holdings (fast, $50), or its own Florida LLC ($125, about a day). Not Higney International.</p><p class="pick">My pick: new LLC owned by Monarch. It is the only product you own that can start a fire, and that should not reach Ghost Audio.</p></div>
   <div class="dec"><h3>Green light the prototypes</h3><p>Three hand-built prototypes this week: about $400 in parts plus $300 to $360 in tools. Then the real sample run: 8 units with real parts, $1,300 to $1,700, about 3 weeks (the chrome caps are the slow part). The quote sites need an account or a login from you.</p><p class="pick">My pick: yes to both, prototypes now. And send me the list of the 20 buyers.</p></div>
 </div>
@@ -87,11 +113,12 @@ footer{margin:60px 0 40px;color:var(--mute);font-size:14px}
 </table></div>
 <p class="sub" style="margin-top:12px">Cash out before the first production unit ships: about $5,300 (parts $3,807, records $420, prototypes and jigs, insurance). 100 deposits at $25 cover about half. Ads: a $15 a day test first; 100 deposits at a typical $39 per deposit is about $3,900 of ad spend.</p>
 
+<details class="deep"><summary>The detailed files (for the shops and for me, you can skip these)</summary>
 <h2>Everything, by folder</h2>
 <div class="grid">
   <div class="card"><span class="status done">done</span><h3>Final renders</h3><p>46 stills in three sizes plus an 8 second halo loop. Chrome, brass and black, the Set, living room, bar, studio, bedroom, macro, change-the-record, unboxing, install cutaway.</p><ul><li><a href="renders-final/index.html">Contact sheet</a></li><li><a href="renders-final/video/halo_fade_loop_1080x1920.mp4">Halo loop video</a></li><li><a href="renders-final/README.html">Notes</a></li></ul></div>
   <div class="card"><span class="status done">done</span><h3>Website (not live)</h3><p>12 pages: home with a dimmer hero, product with SKU picker, install, FAQ, reserve with $25 refundable deposit or free waitlist, policies.</p><ul><li><a href="site/index.html">Open the site</a></li><li><a href="site/product.html">Product page</a></li><li><a href="site/reserve.html">Reserve page</a></li></ul></div>
-  <div class="card"><span class="status done">done</span><h3>CAD for the shop</h3><p>9 parts as STEP, STL and DXF, 12 drawing sheets, 4 assemblies, interference checked, 5 quote packets ready for a laser shop, a CNC router and a brass turner.</p><ul><li><a href="cad/drawings/RS-ASM-12-MDF.pdf">12 inch assembly drawing</a></li><li><a href="cad/drawings/RS-CAP-12.pdf">Chrome dome drawing</a></li><li><a href="cad/drawings/RS-WP-01.pdf">Wall plate drawing</a></li><li><a href="cad/README.html">Parts list and dimensions</a></li></ul></div>
+  <div class="card"><span class="status done">done</span><h3>CAD for the shop</h3><p>9 parts as STEP, STL and DXF, 12 drawing sheets, 4 assemblies, interference checked, 5 quote packets ready for a laser shop, a CNC router and a brass turner.</p><ul><li><a href="cad/drawings/RS-ASM-12-MDF.pdf">12 inch assembly drawing</a></li><li><a href="cad/drawings/RS-CAP-12.pdf">Chrome dome drawing</a></li><li><a href="cad/drawings/RS-WP-01.pdf">Wall plate drawing</a></li><li><a href="cad/README.html">Parts list and dimensions</a></li><li><a href="cad/FIXES-fable52.html">Review fixes, 11 Nov: what changed (cap rev D, lit cap rev B)</a></li><li><a href="cad/rfq/README.html">Which quote packets are current</a></li><li><a href="cad/checks.html">Checks and regression gates</a></li></ul></div>
   <div class="card"><span class="status done">done</span><h3>Build and costs</h3><p>Parts list for every SKU, the prototype shopping list, step by step assembly, QC tests, and the cost model.</p><ul><li><a href="build/README.html">Summary</a></li><li><a href="build/BOM.html">Parts list</a></li><li><a href="build/cost-model.html">Cost model</a></li><li><a href="build/sample-kit-shopping-list.html">Prototype shopping list</a></li></ul></div>
   <div class="card"><span class="status done">done</span><h3>Sourcing</h3><p>45 vendors with prices and lead times, the 8-unit sample run plan, and 13 quote request emails drafted. Nothing sent.</p><ul><li><a href="sourcing/vendors.html">Vendors</a></li><li><a href="sourcing/sample-run-plan.html">Sample run plan</a></li><li><a href="sourcing/rfq-drafts/README.html">Quote request drafts</a></li></ul></div>
   <div class="card"><span class="status done">done</span><h3>Brand</h3><p>Name check on 8 candidates, logo and lockups, colours and type, mailer box art, insert and warranty cards.</p><ul><li><a href="brand/brand-guide.html">Brand guide</a></li><li><a href="brand/naming-report.html">Naming report</a></li><li><a href="brand/packaging/spec-sheet.html">Packaging spec</a></li></ul></div>
@@ -134,6 +161,8 @@ footer{margin:60px 0 40px;color:var(--mute);font-size:14px}
   <li><b>Sourcing placeholders.</b> Sourcing made rough stand-in shapes for quote tools before the CAD existed. The real files in cad/ replace them; quote requests should attach the cad quote packets.</li>
   <li><b>7 inch cap.</b> Not quoted by anyone yet; it is carried at the 12 inch dome cost.</li>
 </ul>
+
+</details>
 
 <h2>Next steps</h2>
 <ol class="next">
