@@ -73,6 +73,7 @@ FOOT = """</main>
       <div>
         <a href="index.html" aria-label="{brand} home"><img class="footer-lockup" src="img/lockup-horizontal.svg" alt="{brand}" width="546" height="158" loading="lazy"></a>
         <p class="tagline" style="margin-top:14px">Change the record. <em>Change the room.</em></p>
+        <p class="slogan-foot">YOUR favorite records light up YOUR favorite room</p>
         <p style="margin-top:12px;max-width:28em">Wall sconces built around a real 12-inch record. Warm 2700K halo, 12-volt plug-in, nothing glued to your vinyl. Made in Fort Lauderdale, Florida.</p>
         <p><a data-email href="mailto:hello@example.com">hello@example.com</a></p>
       </div>
