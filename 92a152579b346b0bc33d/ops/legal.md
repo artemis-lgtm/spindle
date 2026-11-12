@@ -51,3 +51,12 @@ Florida sales tax: register with the Department of Revenue and get the annual re
 - IP lawyer hour (knockout search + Named tier wording). Estimate $300 to $500.
 - The list of the 20 buyers.
 - Domain and handles.
+
+
+## Product audit additions, 2026-11-11 evening (`../audits/AUDIT-product.md`)
+
+1. **The 20 pre-sold units are already on a clock.** 16 CFR 435.2: ship within the time stated at sale, or within 30 days if no time was stated (https://www.law.cornell.edu/cfr/text/16/435.2). If those 20 buyers paid and were given no ship date, the 30 days started on the day they paid. Nothing can ship before the prototype tests pass, the cap alone is 2 to 3 weeks from order, and no cap quote exists. So a delay notice is almost certainly owed. A first delay of 30 days or less: send a notice with a new date and the right to cancel for a full refund; silence counts as agreeing. A longer or open-ended delay, or a second delay: the order is cancelled and refunded unless the buyer expressly agrees. Refunds within 7 working days (16 CFR 435.1). **Needs from Austin: who the 20 are, the date each paid, the amount, and what they were told about delivery.**
+2. **Written warranty.** If a written warranty is offered on a product over $15 it needs the 16 CFR 701.3 disclosures, and implied warranties cannot then be disclaimed (15 USC 2308).
+3. **"Made in USA."** Not available: the LEDs, adapter, dimmer and probably the cap are imported, and the standard is "all or virtually all" (16 CFR 323.2). "Assembled in Florida" or "Built in Florida from US and imported parts" is the honest form.
+4. **Render labels.** The fictional labels "Ember" and "Meridian" in the renders: Ember Records was a real UK label. Check both before paid use. Every image in `../renders-zep/` shows a real label, band name, symbols and track list and must stay out of all marketing.
+5. **Florida.** Only the general refund-policy statute was found (501.142, which exempts custom goods). No Florida pre-order or deposit statute was found; that is "not found", not "does not exist".

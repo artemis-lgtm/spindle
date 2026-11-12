@@ -86,6 +86,81 @@ def geometry_probes():
     out["guard_tube_top_z_measured_mm"] = round(car.val().BoundingBox().zmax, 3)
     out["plunger_free_tip_z_measured_mm"] = round(L.plunger().val().BoundingBox().zmax, 3)
     out.update(halo_probes())
+    out.update(mount_probes())
+    return out
+
+
+def mount_probes():
+    """Audit 2026-11-11 (audits/AUDIT-product.md). Two things no earlier gate looked at:
+    1. MOTION. Every interference check ran with the hub already locked. The hub has to be hung 20 deg off and twisted
+       home, and the rev B hub could not do it: the plate's bent tab swept through solid hub. Checked here at every
+       2.5 deg of the twist, and during the push-on, against the plate, its studs and its nuts.
+    2. PEM stud holes need 7.14 mm (0.281 in) of sheet from the hole centre to the nearest edge (PEM bulletin FH)."""
+    import math
+    out = {}
+    plate = S.wall_plate()
+    fixed = plate
+    for a in S.STUD_ANGLES:
+        x, y = S.pol(S.STUD_R, a)
+        fixed = fixed.union(S.pem_stud().translate((x, y, 0))).union(S.lock_nut().translate((x, y, S.PLATE_T + S.NUT_GAP)))
+
+    def worst(hub):
+        w = 0.0
+        hang = -S.LOCK_ENTRY_SIGN * S.LOCK_ARC_DEG          # hub rotation that puts the J-slot entries over the studs
+        steps = [hang * i / 8 for i in range(9)]            # locked (0) ... hung, every 2.5 deg, hub seated
+        for ang in steps:
+            v = hub.rotate((0, 0, 0), (0, 0, 1), ang).intersect(fixed).val().Volume()
+            w = max(w, v)
+        for dz in (4.0, 8.0, 12.0, 16.0):                   # the push-on, in the hung orientation
+            v = hub.rotate((0, 0, 0), (0, 0, 1), hang).translate((0, 0, dz)).intersect(fixed).val().Volume()
+            w = max(w, v)
+        return w
+    out["hub_hang_and_twist_worst_overlap_with_plate_studs_nuts_mm3(13 positions; must be 0)"] = round(worst(S.hub()), 2)
+    out["negative_control_rev_B_hub_pocket_is_caught_by_the_twist_check(1 = yes)"] = int(worst(S.hub_rev_b_pocket_only()) > 50.0)
+    a0, a1 = S.tab_sweep_angles()
+    out["hub_tab_pocket_end_to_cord_channel_edge_deg"] = round(
+        (270 - math.degrees((S.CORD_CHAN_W / 2) / S.TAB_POCKET_R0)) - a1, 2)
+    out["hub_tab_pocket_start_past_the_210deg_hub_screw_deg"] = round(a0 - 210, 2)
+    # PEM: every point closer than 7.14 - 0.05 to a stud hole centre (outside the hole itself) must be steel
+    zmid = S.PLATE_T / 2
+    bad = 0
+    for a in S.STUD_ANGLES:
+        cx, cy = S.pol(S.STUD_R, a)
+        for k in range(72):
+            for rr in (S.STUD_HOLE_D / 2 + 0.15, 4.0, 5.5, S.PEM_MIN_CL_TO_EDGE - 0.05):
+                t = math.radians(k * 5)
+                if not _inside(plate, cx + rr * math.cos(t), cy + rr * math.sin(t), zmid):
+                    bad += 1
+    out["wall_plate_points_within_7.14mm_of_a_stud_hole_centre_that_are_not_steel(must be 0)"] = bad
+    # analytic twin of the same check: the gang slot end nearest the 75 deg stud
+    worst_edge = 1e9
+    for a in S.STUD_ANGLES:
+        cx, cy = S.pol(S.STUD_R, a)
+        for r, angs, half in ((S.SLOT_R_GANG, S.SLOT_ANGLES_GANG, S.SLOT_HALF_DEG_GANG), (S.SLOT_R_ROUND, S.SLOT_ANGLES_ROUND, S.SLOT_HALF_DEG)):
+            for sa in angs:
+                for i in range(41):
+                    px, py = S.pol(r, sa - half + 2 * half * i / 40)
+                    worst_edge = min(worst_edge, math.hypot(px - cx, py - cy) - S.SLOT_W / 2)
+        worst_edge = min(worst_edge, S.PLATE_D / 2 - S.STUD_R)
+    out["wall_plate_stud_hole_centre_to_nearest_slot_or_rim_edge_mm(PEM FH-832 minimum 7.14)"] = round(worst_edge, 2)
+    out["wall_plate_stud_hole_dia_mm(PEM FH-832 band 4.14 to 4.22)"] = S.STUD_HOLE_D
+    # 3. The strip cannot bend sideways. Prove the buildable version (7 straight 100 mm pieces) fits the ring and the screws.
+    n, seg, ap, w = S.HALO_POLY_N, S.HALO_POLY_SEG_L, S.HALO_POLY_APOTHEM, S.LED_W
+    side = 2 * ap * math.tan(math.pi / n)
+    corner_r = math.hypot(ap + w / 2, seg / 2)
+    out["halo_polygon_gap_between_straight_strip_pieces_mm(room for the jumper)"] = round(side - seg, 2)
+    out["halo_polygon_strip_outer_corner_inside_aluminium_ring_od_mm"] = round(S.HALO_RING_OD / 2 - corner_r, 2)
+    out["halo_polygon_strip_inner_edge_outside_aluminium_ring_id_mm"] = round((ap - w / 2) - S.HALO_RING_ID / 2, 2)
+    out["halo_polygon_led_centreline_furthest_point_inside_backplate_rim_mm(no line of sight to the record)"] = round(
+        S.BP12_D / 2 - math.hypot(ap, seg / 2), 2)
+    worst_screw = 1e9
+    step = 360.0 / n
+    for sa in S.HALO_SCREW_ANGLES:
+        off = min(abs(((sa - (S.HALO_POLY_VERTEX_DEG + step / 2 + k * step) + 180) % 360) - 180) for k in range(n))
+        inner_r_here = (ap - w / 2) / math.cos(math.radians(off))
+        worst_screw = min(worst_screw, inner_r_here - (S.HALO_SCREW_R + S.HALO_SCREW_HEAD[0] / 2))
+    out["halo_polygon_strip_inner_edge_to_nearest_screw_head_mm"] = round(worst_screw, 2)
+    out["halo_polygon_total_strip_length_mm"] = n * seg
     return out
 
 
@@ -218,6 +293,13 @@ STALE = [
     ("cad/explode_fix.py", r"2 mm of insulation|cork ring, 2 mm", "2 mm cork in the heat-safe drawing legend"),
     ("cad/explode_view.py", r"2 mm of cork", "2 mm cork in the exploded drawing legend"),
     ("cad/rfq/cork-ring/SPEC.txt", r"5/64", "5/64 in (2 mm) cork in the cork RFQ"),
+    # AUDIT 2026-11-11: the build documents were rewritten for the canonical CAD; these sentences are the old build
+    ("build/assembly-SOP.md", r"J3 Dome fill|fender washer|panel jack|lead notch|rim rabbet", "old cap / jack / rim strip in the assembly procedure"),
+    ("build/sample-kit-shopping-list.md", r"uxcell|Adafruit 610", "old cap shell or panel jack in the prototype shopping list"),
+    ("build/cost-model.md", r"OUT OF DATE", "cost-model.md still bannered instead of rewritten"),
+    ("build/QC-test-plan.md", r"rim rabbet|panel jack", "old rim strip or panel jack in the test plan"),
+    ("cad/THERMAL.md", r"Vinyl softens at about 55 to 60 C", "optimistic vinyl softening figure in the heat study"),
+    ("build/BOM.md", r"1\.5 mm L key", "L key that cannot reach the set screw"),
 ]
 # (file, regex that MUST match, what it proves)
 REQUIRED = [
@@ -230,14 +312,20 @@ REQUIRED = [
     ("NOTES.md", r"(?i)render discrepancy", "render / CAD LED placement discrepancy is on record"),
     ("build/BOM.md", r"RS-HR-12", "aluminium heat ring is in the BOM"),
     ("build/BOM.md", r"RS-CK-12", "cork ring is in the BOM"),
-    ("build/BOM.md", r"\$47\.46", "12 in parts total at 100 includes the two heat rings and their screws"),
+    ("build/BOM.md", r"\*\*\$78\.04\*\*", "12 in parts total at 100 is the audited total (live prices, 2026-11-11)"),
     ("build/BOM.md", r"\$7\.38", "heat ring price is the quote of the canonical file with its holes"),
-    ("build/BOM.csv", r"TOTAL parts,91\.98,68\.0,47\.46,38\.48", "BOM.csv 12 in total matches BOM.md"),
+    ("build/BOM.csv", r"TOTAL parts,278\.98,211\.33,78\.04,60\.29", "BOM.csv 12 in total matches BOM.md"),
+    ("build/cost-model.md", r"12\" unit \$278\.98 / \$211\.33 / \$78\.04 / \$60\.29", "cost-model.md quotes the same 12 in totals as BOM.md"),
     ("cad/rfq/cork-ring/SPEC.txt", r"1\.6 mm \(1/16 in\)", "cork RFQ says 1/16 in"),
     ("cad/rfq/heat-ring-aluminum/SPEC.txt", r"REVISION STATUS", "revision block on the heat ring RFQ"),
     ("cad/rfq/cork-ring/SPEC.txt", r"REVISION STATUS", "revision block on the cork ring RFQ"),
     ("cad/rfq/backplate-mdf-cnc/SPEC.txt", r"NO rim rabbet", "12 in backplate RFQ says the rabbet is gone"),
     ("cad/THERMAL.md", r"F  FINAL", "thermal table carries the final geometry"),
+    ("cad/THERMAL.md", r"US patent 3,975,321", "heat study cites its source for the vinyl limit"),
+    ("cad/THERMAL.md", r"## Sensitivity", "heat study carries the sensitivity table"),
+    ("build/QC-test-plan.md", r"TC1 \| Record BACK face, 114 mm", "test plan has the thermocouple heat soak with positions"),
+    ("build/assembly-SOP.md", r"seven 100 mm", "assembly procedure lays the strip as straight pieces (a flat strip cannot bend sideways)"),
+    ("build/assembly-SOP.md", r"0\.42 A", "assembly procedure rejects an over-power strip by measured current"),
     ("mounting-report.md", r"twist clockwise", "install sheet says clockwise (matches the J-slots)"),
 ]
 
@@ -351,6 +439,21 @@ def run_gates(checks):
     gate("M11d", g, "hub_j_slot_entry_is_clockwise_side_in_the_solid(1 = yes)", "==", 1)
     gate("hub", c, "rear_pocket_to_75deg_nut_pocket_web_mm", ">=", 2.0)
     gate("hub", c, "hub_web_relief_floor_to_rear_pocket_ceiling_mm", ">=", 3.0)
+    # AUDIT 2026-11-11: the motion of hanging the hub, and the PEM edge distance (audits/AUDIT-product.md)
+    gate("AUDIT", g, "hub_hang_and_twist_worst_overlap_with_plate_studs_nuts_mm3(13 positions; must be 0)", "<=", 0.5)
+    gate("AUDIT", g, "negative_control_rev_B_hub_pocket_is_caught_by_the_twist_check(1 = yes)", "==", 1)
+    gate("AUDIT", g, "hub_tab_pocket_end_to_cord_channel_edge_deg", ">=", 3.0)
+    gate("AUDIT", g, "hub_tab_pocket_start_past_the_210deg_hub_screw_deg", ">=", 5.0)
+    gate("AUDIT", g, "wall_plate_points_within_7.14mm_of_a_stud_hole_centre_that_are_not_steel(must be 0)", "==", 0)
+    gate("AUDIT", g, "wall_plate_stud_hole_centre_to_nearest_slot_or_rim_edge_mm(PEM FH-832 minimum 7.14)", ">=", 7.14)
+    gate("AUDIT", g, "wall_plate_stud_hole_dia_mm(PEM FH-832 band 4.14 to 4.22)", ">=", 4.14)
+    gate("AUDIT", g, "wall_plate_stud_hole_dia_mm(PEM FH-832 band 4.14 to 4.22)", "<=", 4.22)
+    gate("AUDIT", g, "halo_polygon_gap_between_straight_strip_pieces_mm(room for the jumper)", ">=", 5.0)
+    gate("AUDIT", g, "halo_polygon_strip_outer_corner_inside_aluminium_ring_od_mm", ">=", 1.0)
+    gate("AUDIT", g, "halo_polygon_strip_inner_edge_outside_aluminium_ring_id_mm", ">=", 5.0)
+    gate("AUDIT", g, "halo_polygon_led_centreline_furthest_point_inside_backplate_rim_mm(no line of sight to the record)", ">=", 5.0)
+    gate("AUDIT", g, "halo_polygon_strip_inner_edge_to_nearest_screw_head_mm", ">=", 1.0)
+    gate("AUDIT", g, "halo_polygon_total_strip_length_mm", "<=", 723.0)
     for k, v in doc.items():
         if k.startswith("STALE") or k.startswith("superseded"):
             res.append(("M11", k, v, "== 0", v == 0))
@@ -440,5 +543,5 @@ def run_gates(checks):
         if lim is None:
             res.append(("HEAT", "thermal: " + key, v, "== 1", v == 1))
         else:
-            res.append(("HEAT", "thermal: " + key + " (vinyl softens 55 to 60 C; gate keeps 5 K below 55)", v, f"<= {lim}", v is not None and v <= lim))
+            res.append(("HEAT", "thermal: " + key + " (limit unchanged; AUDIT 2026-11-11: record compound loses stiffness from 48 to 50 C, Tg 52 to 54 C, per US 3,975,321, not 55 to 60)", v, f"<= {lim}", v is not None and v <= lim))
     return res

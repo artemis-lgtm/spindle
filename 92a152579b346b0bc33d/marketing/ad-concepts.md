@@ -1,10 +1,37 @@
-# Spindle: ad concepts (14)
+# Spindle: ad concepts (14, audited)
+
+Audited 2026-11-11 (CHANGELOG.md, ../audits/AUDIT-marketing.md). These are the v1 paid-ad concepts with every false or unprovable line corrected and a status line added to each. They are for the Gate 2 paid test only (strategy.md sections 3 and 7). The organic versions, with first frames and the short-video laws they use, are in tiktok-laws-and-video-concepts.md, and that file wins wherever the two differ.
+
+Status of each concept after the audit:
+
+| # | Concept | Status | Earliest gate |
+|---|---|---|---|
+| 1 | The switch-on | Keep, real footage only | 2 |
+| 2 | The swap | Keep, with the measured time | 2 |
+| 3 | "Does it damage the record?" | Rewritten around the measured heat number | 2 |
+| 4 | Renter install | Keep, with the measured time | 2 |
+| 5 | Cord in the wall | Keep as organic how-to; softer legal wording; needs a real in-wall kit | 2 |
+| 6 | $755 vs $129 | Cut | never |
+| 7 | The gift (Kit) | Keep only with a ship week on the certificate; not in paid while the Kit is $89 | 2 |
+| 8 | Founder talking head | Keep, reworded; 15 seconds | 2 |
+| 9 | Listening corner | Keep | 2 |
+| 10 | Three halos (the Set) | Parked: the 7 in is not on the heat-safe layout and the Set is off sale | after the 7 in is fixed |
+| 11 | Coloured vinyl glow | Keep only if the edge glow shows on the real unit | 2 |
+| 12 | "Now Playing" shelf comparison | Parked: a comparison ad before we have a review is a poor trade, and back-lit record displays already exist (Vylumi) | 3 at the earliest |
+| 13 | Engineering flex | Keep as organic bench content; no "UL" on screen | 1 (organic) |
+| 14 | The 20 | Replaced by "Unit number 1" (concept 13 in tiktok-laws-and-video-concepts.md) | 2 |
+
+Paid is off. After the product audit's cost model (the $129 Sconce clears $12.77 before ads; the $89 Kit loses $19.90), no paid test runs until a real cap quote and new prices give the hero SKU at least $45 of contribution (strategy.md sections 4 and 7). If that happens, the order is ads 1, 2 and 3 as real footage plus the best organic post of the previous two weeks, one ad set, $20 a day for 21 days. Until then these concepts are organic only. Chrome is the only finish shown; every "brass or black" in the v1 text below is void, and so is every price.
+
+Images (from the product audit, ../audits/AUDIT-product.md): only macro_* is true as it stands. hero_chrome_*, swap3_* and living_* may be used on the page with a "rendering, real glow may differ" line. The swap triptych, flat-lay, install, 7 in, set, bedroom, brass and black images and everything in renders-zep/ show things the product does not do or have and are not used anywhere.
+
+Original preamble follows, corrected.
 
 Prepared 2026-11-09. Nothing produced or posted yet. Each concept lists: the hook in the first 2 seconds, script and shot list, on-screen text, primary text, headline, CTA, which render or UGC shot it needs, and the proven ad or viral format it is modeled on with a link. Reference links are in the "Proven references" section at the end (verified by curl or WebFetch on 11/9 where marked; the Meta Ad Library itself returns 403 to curl and needs a logged-in browser, so Ad Library links are given as the brand search URL and should be opened in Chrome).
 
-Compliance on every concept: no band, artist or album names or logos; plain-label records only in shots; "sold out" only as "First batch of 20 sold out"; no ship date unless set; no stock counters; claims match the landing page. Formats: 9:16 for Reels/Stories/TikTok, 1:1 and 4:5 for feed. Sound-off first: every video must work muted with text.
+Compliance on every concept: no band, artist or album names or logos; plain-label records only in shots; no ship date unless set; no stock counters; claims match the landing page. Added in the audit: "first batch of 20 sold out" only from Gate 3 ("the first 20 are spoken for" from Gate 2, with the ledger on file); no heat adjectives, only the measured reading; no "made in"; no "UL" on screen; no other brand's name. Formats: 9:16 for Reels/Stories/TikTok, 1:1 and 4:5 for feed. Sound-off first: every video must work muted with text.
 
-Renders available now (render/): sconce_hero_chrome.png, sconce_hero_brass.png, sconce_hero_black.png (straight-on hero on a warm wall, halo lit), sconce_exploded_chrome.png (wall, backplate with LED rim, standoff, record, felt washer, chrome dome), sconce_v2_cutaway.png (in-wall wiring), sconce_v2_rear.png (steel plate + twist-lock hub). renders-final/ is adding the set and detail shots overnight. UGC shots need one physical unit and a phone.
+Renders (not ad assets: the audit bars renders from paid and organic video, and the swap and flat-lay renders show a post that does not exist; a render used anywhere must be captioned as a render). Files in render/: sconce_hero_chrome.png, sconce_hero_brass.png, sconce_hero_black.png (straight-on hero on a warm wall, halo lit), sconce_exploded_chrome.png (wall, backplate with LED rim, standoff, record, felt washer, chrome dome), sconce_v2_cutaway.png (in-wall wiring), sconce_v2_rear.png (steel plate + twist-lock hub). renders-final/ is adding the set and detail shots overnight. UGC shots need one physical unit and a phone.
 
 ---
 
@@ -12,58 +39,61 @@ Renders available now (render/): sconce_hero_chrome.png, sconce_hero_brass.png, 
 
 Hook (0-2s): pitch-black frame, a click, the wall blooms amber around a black disc.
 Script / shots: (0-2s) black, click, halo fades up. (2-6s) slow push-in on the lit record, chrome dome catching the room. (6-10s) hand turns the inline dimmer, halo pulls in to deep amber. (10-13s) end card.
-On-screen text: "Your record, lit." then "First batch of 20 sold out" then "Batch two: $25 refundable deposit".
-Primary text: Flip the switch. The wall goes amber, the grooves catch the light, the chrome dome reflects the room. That's it. That's the product. First batch of 20 sold out; batch two deposits are open, $25 and refundable.
+On-screen text: "Your record, lit." then "The first 20 are spoken for" then "Batch two ships the week of [SHIP WEEK]. $25 holds one."
+Primary text: Flip the switch. The wall goes amber, the grooves catch the light, the chrome dome reflects the room. That's it. That's the product. The first 20 are spoken for; batch two ships the week of [SHIP WEEK], and $25, refundable, holds one.
 Headline: Your record, lit.
 CTA: Learn more.
-Needs: UGC clip, dark room, phone on a tripod, exposure locked for the wall glow. Fallback: animate sconce_hero_chrome.png from black with a brightness ramp.
+Needs: a real unit, dark room, phone on a tripod, exposure locked for the wall glow. No render fallback. First frame should show a dim room and a hand on the dimmer, not pure black (a cold viewer needs something to stop on).
 Modeled on: the "lights off, lights on" reveal that every lighting DTC (Govee, Nanoleaf, Poplight) runs as its evergreen ad; see references R1, R2.
 
-## 2. The swap (ten seconds)
+## 2. The swap (timed)
 
 Hook: hands unscrew a chrome dome off a record on a lit wall.
 Script / shots: (0-2s) tight on hands, dome unthreading, real audio. (2-5s) record lifts off, halo still on, backplate visible for a beat. (5-8s) new record (different label colour) drops onto the felt pads, dome threads on. (8-12s) pull back to the new record lit. (12-15s) end card.
-On-screen text: "Change the record" / "change the room" / "Nothing glued. 10 seconds."
-Primary text: Change the record, change the room. The Spindle is a halo sconce that holds any 12" LP on a felt-padded plate with a polished chrome cap. Ten seconds to swap. Warm, dimmable, nothing touches your record but felt. Made to order in Fort Lauderdale.
-Headline: Swap the record in ten seconds
+On-screen text: "Change the record" / "change the room" / "Nothing glued. [N] seconds." ([N] is the stopwatch time from the one-take video.)
+Primary text: Change the record, change the room. The Spindle is a halo sconce that holds any 12" LP on a felt-padded plate with a polished chrome cap. [N] seconds to swap, on video. Warm, dimmable, nothing glued. Assembled to order in Fort Lauderdale.
+Headline: Swap the record in [N] seconds
 CTA: Learn more.
-Needs: UGC, two plain-label records, macro-capable phone. The exploded render (sconce_exploded_chrome.png) as a 1-second insert at 5s to show the stack.
+Needs: a real unit, two plain-label records, one unbroken take with a stopwatch on screen. No render insert: the old exploded render shows the light on the rim, which is no longer the design. Show the real hardware: the stud is part of the dome and comes away with it.
 Modeled on: "satisfying" product-mechanism clips (Art Vinyl flip-frame swap videos, magnetic-mount demos); the format where the mechanism is the whole ad. References R3, R9.
 
 ## 3. "Does it damage the record?" (objection killer)
 
 Hook: text "Does it damage the record?" over a macro of a dome tightening on a label.
-Script / shots: (0-2s) question on screen. (2-5s) macro: felt washer under the dome. (5-8s) macro: three felt pads on the plate, record set down on them. (8-11s) hand behind the edge of the backplate: "the light is back here, facing the wall, 12 volts, cool". (11-14s) record lifted off clean, label untouched. End card.
-On-screen text: "Felt washer" / "Felt pads" / "12V ring on the rim, nothing warm" / "Comes off exactly as it went on".
-Primary text: People ask if it damages the record. Felt pads, felt washer, finger-tight chrome dome, cool 12V light on the rim. Nothing warm, nothing sticky, nothing touching the grooves. The record comes off exactly as it went on.
-Headline: Nothing glued to your record. Ever.
+Script / shots: (0-2s) question on screen. (2-5s) macro: felt washer under the dome. (5-8s) macro: three felt pads on the plate, record set down on them. (8-11s) the thermocouple reading after two hours, probe on the back edge of the record, room thermometer beside it. (11-14s) record lifted off clean, label untouched. End card.
+On-screen text: "Clear washer on the label" / "Felt pads" / "2 hours on: record [Y] F, room [X] F" / "Comes off the way it went on".
+Primary text: People ask if it damages the record. It rests on felt pads, a clear washer protects the label, and the dome is finger-tight. We measured the heat: two hours on, the record read [Y] F in a [X] F room. Nothing is glued.
+Headline: Nothing glued to your record
 CTA: Learn more.
-Needs: UGC macro shots. Engineering flex insert: sconce_exploded_chrome.png.
+Needs: real macro shots and the logged heat test. This ad does not run until the test is done and passed.
 Modeled on: FAQ / "reply to comment" style ads that lead with the top objection (common in Tushy, Ruggable, Hexclad creative where the first line is the doubt). References R6, R7.
 
 ## 4. Renter install in 60 seconds
 
-Hook: "Designer sconce. Renter install. 15 minutes." over a drill going into a wall.
-Script / shots: time-lapse: (0-3s) plate held to wall with a level. (3-8s) two screws, plate on. (8-14s) hub twists on with a click, set screw. (14-20s) braided cord down to the outlet in a paintable channel. (20-26s) record on, dome on. (26-30s) lights off, switch on, halo.
+Hook: "Wall light. Renter install. [N] minutes." over a drill going into a wall. ([N] is the timed install.)
+Script / shots: time-lapse: (0-3s) plate held to wall with a level. (3-8s) two screws, plate on. (8-14s) hub twists on with a click, set screw. (14-20s) cord down to the outlet in a paintable channel. (20-26s) record on, dome on. (26-30s) lights off, switch on, halo.
 On-screen text: step labels "1 plate" "2 twist" "3 plug" "4 record" and "comes off when you move".
-Primary text: Renters: a designer wall light you can actually install. Steel plate, two screws, twist-lock, plug in. Fifteen minutes. The braided cord runs down the wall or, if you own the place, the low-voltage cable goes inside it. Takes your records. Comes with you when you move.
+Primary text: Renters: a designer wall light you can actually install. Steel plate, two screws, twist-lock, plug in. [N] minutes on video. The cord runs down the wall or, if you own the place, the low-voltage cable can go inside it. Takes your records. Comes with you when you move.
 Headline: Plug-in. No electrician.
 CTA: Learn more.
-Needs: UGC time-lapse; sconce_v2_rear.png as a 1-second insert at the twist-lock step.
+Needs: a real timed install with the clock on screen. No render insert.
 Modeled on: Poplight's install videos (the renter-friendly sconce that went viral on the "no electrician" promise) and Wooj's two-screw mounting clips. References R1, R4.
 
-## 5. Hide the cord in the wall (legally)
+## 5. Hide the cord in the wall
 
 Hook: "There is no cord." Camera pans down a bare wall under a lit record.
 Script / shots: (0-3s) lit record, pan down, nothing on the wall. (3-8s) cut to the cutaway render (sconce_v2_cutaway.png) showing the CL2 cable dropping inside the wall to a plate by the outlet. (8-14s) UGC: hole saw, cable fished, keystone plate clicked in. (14-18s) back to the lit wall, text.
-On-screen text: "Only the 12V side goes in the wall" / "No electrician" / "45 minutes".
-Primary text: Hide the cord in the wall, legally. The Spindle runs 12 volts only, so the cable can go inside the wall to a small plate by the outlet, no electrician. The adapter stays at the outlet. Or run the braided cord down the wall. Your choice at install.
+On-screen text: "Only the 12V cable goes in the wall" / "Allowed in most US homes. Check local rules." / "[N] minutes".
+Primary text: Hide the cord in the wall. Spindle runs on 12 volts, so the cable can go inside the wall to a small plate by the outlet. That is allowed in most US homes under the National Electrical Code; check your local rules. The adapter stays at the outlet. Or run the braided cord down the wall. Your choice at install.
 Headline: In-wall wiring, no visible cord
 CTA: Learn more.
 Needs: sconce_v2_cutaway.png plus a UGC install sequence.
 Modeled on: TV-mount "hide your cables" content (PowerBridge-style before/after) which is a reliably high-save format in #homedecor. Reference R10.
 
-## 6. $755 vs $129 (price anchor)
+## 6. $755 vs $129 (price anchor): CUT
+
+Audit: cut. It sets a product that has not been built beside a real designer piece and says "Same halo. Better disc." If a price anchor is wanted after Gate 3, use the comparables that are close and real (a $240 lit record stand, $248 to $298 designer wall lights; strategy.md section 1), as two prices with no brand named. The original text is kept below for the record only.
+
 
 Hook: split screen, "Designer halo sconce: $755" left, "The Spindle: $129" right, both lit.
 Script / shots: static or 6-second video; left is our own render of a generic ringed-glass disc silhouette (no brand photo, no logo), right is sconce_hero_chrome.png. Text swaps in: "pressed glass" vs "your record", "chrome dome" vs "chrome dome".
@@ -78,8 +108,8 @@ Modeled on: the comparison static (the single highest-volume static format in DT
 
 Hook: "The gift for someone who has every record." Record collection shelf, pan to an empty wall.
 Script / shots: (0-3s) crates and shelves of records (spines, no readable titles). (3-6s) empty wall above them. (6-10s) the Spindle lit on that wall, a hand swapping the record. (10-14s) a gift certificate card on a table: "A Spindle is on its way." End card.
-On-screen text: "They pick the record." / "You give the light." / "$89 kit, chrome, brass or black".
-Primary text: The gift for the person who already has every record. The Spindle Kit lights the record they choose, so you cannot pick the wrong album. $89, chrome, brass or black. A $25 deposit holds a spot in the next batch and we send a certificate you can wrap.
+On-screen text: "They pick the record." / "You give the light." / "Ships the week of [SHIP WEEK]".
+Primary text: The gift for the person who already has every record. The Spindle Kit lights the record they choose, so you cannot pick the wrong album. [KIT PRICE], chrome, brass or black. Reserve now and we send a certificate with the real ship week on it.
 Headline: They pick the record. You give the light.
 CTA: Learn more.
 Needs: UGC in a room with records; printed certificate prop (brand/ packaging).
@@ -88,26 +118,29 @@ Modeled on: gift-season "for the person who has everything" ads (Uncommon Goods,
 ## 8. Gift, talking head (Austin)
 
 Hook: Austin to camera, "If you're shopping for someone who owns more records than you understand, watch this."
-Script: 20 seconds, no script beyond beats: what it is (3s), nothing glued (4s), they pick the record (4s), first 20 sold out and deposit holders get first ship slots (5s), certificate you can wrap (4s). Cut to a 3-second switch-on.
-On-screen text: captions auto, plus "First batch of 20 sold out".
-Primary text: If the person you're shopping for owns more records than you understand, this is the gift. A halo wall light that holds whichever record they pick, swappable, nothing glued. $89 kit, $129 with one of our vintage pressings. Deposit now, certificate to wrap.
+Script: 15 seconds, object in frame before his face, no script beyond beats: what it is (3s), nothing glued (3s), they pick the record (3s), the first 20 are spoken for and batch two ships the week of [SHIP WEEK] (4s). Cut to a 2-second switch-on.
+On-screen text: captions auto, plus "Ships the week of [SHIP WEEK]".
+Primary text: If the person you're shopping for owns more records than you understand, this is the gift. A halo wall light that holds whichever record they pick, swappable, nothing glued. $129 with one of our vintage pressings. Reserve now and get a certificate with the real ship week.
 Headline: For the collector who has everything
 CTA: Learn more.
 Needs: Austin, phone, the sconce lit behind him.
-Modeled on: founder-to-camera ads, which outperform polished brand video for small DTC on Meta in 2025-2026 (Loftie, Hatch, and most sub-$1M DTC accounts lean on founder UGC). Reference R12.
+Modeled on: founder-to-camera ads (reference R12). Audit: v1 said these "outperform polished brand video" and named brands; no source was given and the audit found none, so treat it as an untested belief.
 
 ## 9. The listening corner (POV)
 
 Hook: "POV: you finally built the listening corner." Wide shot, dusk.
 Script / shots: (0-3s) wide: chair, turntable, shelf, lit record on the wall as the only light. (3-7s) needle drop (visual only; commercial-library audio). (7-11s) slow push on the halo. (11-14s) end card.
 On-screen text: "POV: the corner is done." / "The Spindle, from $89".
-Primary text: You own a turntable, a shelf of records and a plain wall. The Spindle fixes the wall. Halo-backlit, real record, chrome dome, made to order. $25 refundable deposit for batch two.
+Primary text: You own a turntable, a shelf of records and a plain wall. The Spindle fixes the wall. Halo-backlit, real record, chrome dome, assembled to order. Batch two ships the week of [SHIP WEEK].
 Headline: The wall light built around a record
 CTA: Learn more.
 Needs: UGC in a styled corner (Austin's house or a creator's).
 Modeled on: the #listeningroom / "rate my setup" genre and the "POV" aspirational format that dominates #vinylcommunity Reels. References R13, R14.
 
-## 10. Three halos (the Set / home bar)
+## 10. Three halos (the Set / home bar): PARKED
+
+Audit: parked. The 7 in single is not on the heat-safe layout (its plate has 9.35 mm outside the hub and the strip does not fit) and its cap is unquoted, so the Set is off sale and no Set creative runs. The "zero cords" line is also only true for in-wall installs.
+
 
 Hook: three records light up one after another across a wall, left to right.
 Script / shots: (0-3s) dark wall, three clicks, three halos. (3-8s) 30-degree angle, halos overlapping on the wall (reference image composition). (8-12s) detail on a 7" with the chromed 45-adapter cap. (12-15s) pull back, bottles or a bar cart below.
@@ -120,16 +153,22 @@ Modeled on: multi-panel lighting "wall transformation" reveals (Nanoleaf / Govee
 
 ## 11. Coloured vinyl glow
 
+Audit: the edge glow is a guess from renders. Film it on the real unit first; if translucent vinyl does not visibly glow with the light on the back of the plate, drop this concept.
+
+
 Hook: a translucent red record glowing at its edge, macro.
 Script / shots: (0-3s) macro on the edge glow. (3-7s) swap to a clear record, then to black. (7-10s) three stills in a row. End card.
-On-screen text: "Coloured vinyl in this thing is unfair." / "Any 12" record. Swap in 10 seconds."
+On-screen text: "Coloured vinyl in this thing is unfair." / "Any 12" record. Swap in [N] seconds."
 Primary text: Coloured vinyl glows at the edge. Black vinyl turns to a dark mirror. White labels float. Every record looks different in it, which is the point of being able to swap. The Spindle, from $89, chrome, brass or black.
 Headline: Light the record, not a sign
 CTA: Learn more.
 Needs: UGC with 2-3 coloured plain-label records (buy blanks or no-text coloured pressings).
 Modeled on: "satisfying" close-up texture content that carries #vinyltok (coloured-vinyl unboxings are the genre's most-viewed subformat). Reference R14.
 
-## 12. "Now Playing" shelf vs The Spindle
+## 12. "Now Playing" shelf vs The Spindle: PARKED
+
+Audit: parked until Gate 3. The line "light the record, not a sign" may describe us but must not suggest nobody else lights a record: Vylumi sells a back-lit record display with a wall hanger (https://vylumi.com/, opened 2026-11-11).
+
 
 Hook: "You bought the shelf that lights up a sign. This lights the record."
 Script / shots: (0-3s) generic acrylic "now playing" stand on a shelf (no brand shown, bought as a prop, slogan blurred or out of focus). (3-6s) cut to the Spindle lit. (6-10s) text contrast. (10-13s) end card.
@@ -144,14 +183,17 @@ Modeled on: "them vs us" demonstration ads; the category's top seller is the Yua
 
 Hook: the back of the fixture: steel plate, three bayonet studs, a hub twisting on with a click.
 Script / shots: (0-3s) sconce_v2_rear.png animated or UGC of the rear. (3-7s) twist-lock, set screw. (7-11s) exploded stack (sconce_exploded_chrome.png): plate, LED rim, standoff, record, felt, dome. (11-14s) front view lit.
-On-screen text: "Steel plate. Twist lock. Set screw." / "1/4-20 brass insert" / "UL-listed 12V adapter. Nothing 120V inside."
-Primary text: Built from parts you can read: a steel wall plate, a twist-lock hub, a 2700K CRI 90 COB ring, a felt-padded plate, a 1/4-20 brass insert and a polished chrome dome. A UL-listed 12V adapter at the outlet. Nothing 120V inside. The Spindle, made in Fort Lauderdale.
+On-screen text: "Steel plate. Twist lock. Set screw." / "1/4-20 brass insert" / "12 volts. Nothing 120V inside."
+Primary text: Built from parts you can read: a steel wall plate, a twist-lock hub, a warm 2700K light ring on an aluminium heat ring, a felt-padded plate, a 1/4-20 brass insert and a polished chrome dome. It runs on 12 volts; nothing 120V is inside. Spindle, designed and assembled in Fort Lauderdale from US and imported parts.
 Headline: Steel plate. Twist lock. Done.
 CTA: Learn more.
-Needs: sconce_v2_rear.png, sconce_exploded_chrome.png.
+Needs: real bench footage of the rear and the stack. The old exploded render shows the light on the rim and is retired.
 Modeled on: "how it's built" cutaway ads that hardware DTC uses to justify price (Floyd furniture, Hexclad layers). Reference R7.
 
-## 14. The 20 (social proof)
+## 14. The 20 (social proof): REPLACED
+
+Audit: replaced. "We sold the first 20 before the website existed" over "three finished units" and "first batch of 20 sold out" describes stock that was never built, and who the 20 buyers are is not on file. The true version is "Twenty people paid for this before one existed. This is number one." (concept 13 in tiktok-laws-and-video-concepts.md), and it runs only with the ledger and a ship week. Original text kept below for the record.
+
 
 Hook: "We sold the first 20 before the website existed."
 Script / shots: (0-3s) text over a bench with hubs and plates lined up. (3-8s) quick cuts: three finished units in three finishes lit. (8-12s) "Batch two is made to order. Deposit holders pick finish first." (12-15s) end card.
@@ -164,13 +206,15 @@ Modeled on: launch-recap / "we sold out" creative, used truthfully; the Poplight
 
 ---
 
-## Launch order and test plan
+## Launch order and test plan (v1, superseded by the table at the top of this file and strategy.md section 7)
 
 Week 1 (3 ads, $15/day, one Purchase ad set): 1 (switch-on), 2 (swap), 14 (the 20) as a still if no bench footage. Week 2: replace the lowest CTR with 3 (objection) and 4 (renter). Week 3 (holiday): add 7 and 8 (gift) in their own ad set if week-one CPD was under $45. Week 4: 10 (Set) for the home-bar audience, 6 (price anchor) as the static. Keep 5, 9, 11, 12, 13 as organic first; promote whichever clears 10k organic views.
 
 Prune rule (Ghost Audio precedent): after 1,000 impressions, pause anything under 0.5% CTR or over 2x the median cost per result. Six live ads maximum.
 
 ## Proven references
+
+Audit status of this section: on 2026-11-11 four of the TikTok rows were re-checked with yt-dlp and matched (V1 27.2M, V7 492.1K, V9 313.4K, V10 198.4K). The Meta Ad Library rows were not re-opened; they are the v1 agent's reading and say themselves that the videos were not watched. Running time in the Ad Library shows that an advertiser kept paying for an ad; it does not show the ad was profitable, so "a winner by definition" below is too strong. The Poplight Kickstarter figure of $162,498 could not be matched: Poplight's own pages say "over $175,000" (https://thepoplight.com/blogs/news/how-it-all-started) and "just under $200,000 in 22 minutes" (https://thepoplight.com/), both opened 2026-11-11, and the Kickstarter page itself returned 403. The Vylumi Kickstarter figure was not verified either (the guessed URL returned 404; https://vylumi.com/ advertises a Kickstarter dated August 2026 and "funded in 9 min"). PETRU's "started on Reddit" line is from its ad as v1 read it; PETRU's about page says only that it is "a father and son business".
 
 Filled from the research pass; status is the HTTP code or fetch result on 11/9. Where a page needs a logged-in browser, it says so.
 

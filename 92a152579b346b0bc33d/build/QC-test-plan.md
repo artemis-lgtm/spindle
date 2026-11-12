@@ -1,133 +1,133 @@
-# QC and test plan (build/QC-test-plan.md)
+# Test and inspection plan: 12 in Spindle sconce
 
-> **SUPERSEDED IN PART, 2026-11-11 (heat-safe layout, `../cad/FIXES-heat-layout.md` and `../cad/THERMAL.md`):** on the 12 in unit the LED strip is now on the BACK of the backplate on an aluminium ring over a cork ring, not on the rim. Test 1 points T1 (strip face at 3 o'clock on the rim) and T2 (rim wood beside the strip) no longer exist as described. Measure instead: the strip face from behind (limit under 55 C), the aluminium ring, and the record's BACK face 114 mm from the centre, at the top edge and under the cap (limit: no more than 5 C above the room). The record-face limits in this plan are unchanged. This plan has not been rewritten.
+Rewritten 2026-11-11 by the product audit (`../audits/AUDIT-product.md`) for the canonical CAD (strip on the back of the backplate on an aluminium ring over cork; turned one-piece cap; pigtail power; twist-lock hub rev C). The plan from 2026-11-10 is in `SUPERSEDED/QC-test-plan-2026-11-10.md`.
 
-Prepared 2026-11-10. Five tests. Tests 1 to 4 run on all three prototypes and on the first 10 production units; tests 2 to 4 run on every production unit as a 90-second check; test 5 runs on three packed boxes before the first shipment. Acceptance limits come from engineering-report.md section 3 (heat) and the mounting report (mount); shipping limits are an ISTA 3A-lite reading of the real ISTA 3A procedure for small parcels, scaled to one home-built drop rig.
+Nothing in this file has been run. Nothing exists to test yet. Section 4 is the list of tests the first three prototypes must pass **before any unit is sold or shipped**, including the 20 already pre-sold.
 
-Equipment: IR thermometer with emissivity set to 0.95, a room thermometer, a 1-gallon water jug (8.3 lb), a #8 screw-and-loop hook, a tape measure, a phone camera at 240 fps (slow-motion mode), a bathroom scale, a hard floor (concrete garage or tile), masking tape, the pass/fail sheet in section 6.
+## 1. Incoming inspection
 
-## 1. Heat soak, 2 hours
+| Part | Check | Tool | Accept | Sample |
+|---|---|---|---|---|
+| Backplate RS-BP-12-MDF rev C | Diameter 266.7; thickness 12.70 +/-0.15; plain square rim; four blind holes on the back, none through; six felt targets; paint covers every routed surface | Caliper, eyes | All in tolerance; no raw MDF | Every part of the first lot, then 1 in 10 |
+| Hub RS-HUB-01 rev C | Hangs and twists on the master plate; the tab pocket is the long arc (about 32 degrees), not a 10 mm notch | Master plate | Full 20 degree twist, no scrape | Every part |
+| Wall plate RS-WP-01 rev B | Three studs tight (cannot be turned by hand with pliers on the thread at about 2 N m); tab square; flat within 0.3 | Pliers, square | No loose stud | Every part of the first lot |
+| Aluminium ring RS-HR-12 | OD 260, ID 200, 1.0 thick, four holes; flat on a table within 0.5; no burr on the inner edge (the leads cross it) | Caliper, finger | As listed | 1 in 10 |
+| Cork | Thickness: measure it. The supplier's page says both 1/16 in and 2 mm. | Caliper | 1.5 to 2.0 mm; record which | Every roll |
+| LED strip | Cut one 700 mm length, power at 12.0 V, read the current after 5 minutes | Bench supply | **0.20 to 0.42 A. Over 0.42 A the reel is rejected** | Every reel |
+| LED strip | Listing mark printed on the strip or reel (UL or ETL file number) | Eyes | Present; write the number in the lot record | Every reel |
+| Adapter | Marked 12 V DC, Class 2 (or LPS), UL or ETL listed with a file number, efficiency level VI, centre positive, FCC statement | Eyes, meter | All present; open-circuit voltage 11.4 to 12.6 V | Every lot, 3 pieces |
+| Dimmer | Passes 12 V at 100%; no coin-cell remote in the box (a coin-cell remote triggers Reese's Law labelling) | Meter | As listed | Every lot, 3 pieces |
+| Cap RS-CAP-12 rev D | Stud length 11.95 +/-0.05; shoulder 7.10 +0/-0.05; thread accepts a 1/4-20 nut by fingers after plating; no pits or burn in the chrome | Caliper, nut | As listed | Every part |
+| Insert E-Z Lok 400-4 | 1/4-20 internal, 12.7 long | Caliper | As listed | 3 per bag |
 
-Why: vinyl softens around 55 to 60 C and creeps under load from about 30 to 38 C over long periods (engineering-report.md section 3). Our target, which we print on the product page once measured, is record face under 35 C in a 24 C room.
+## 2. In-process checks
 
-Setup: unit mounted on a plain painted drywall or plywood panel exactly as it ships (1" wall gap, record clamped on the pads), in a still room with no sun on it. Record the room temperature at the start. Adapter and dimmer at FULL brightness (worst case). Record a reading at 0, 15, 30, 60, 90 and 120 minutes at each of these points, IR from 4" away:
+These are the right-hand column of `assembly-SOP.md`. The three that stop a unit: ring current over 0.42 A (step 6), a bulge on the front face over a ring screw (step 7), a short at the splice (step 8).
 
-| Point | Where | Limit at 120 min |
+## 3. Final check, every unit
+
+| # | Check | Accept |
 |---|---|---|
-| T1 Strip surface | The COB face at 3 o'clock on the rim | under 60 C (strip makers' substrate limit) |
-| T2 Backplate rim, wood | 1/4" inboard of the strip, on the painted rim | under 45 C |
-| T3 Record back face | Through the gap at the 6 o'clock edge, aimed at the vinyl at the 5" pad radius | under 35 C, and no more than 8 C over room |
-| T4 Record label, front | Centre of the label beside the dome | under 35 C |
-| T5 Dome cap | Top of the chrome dome | under 35 C (it is a touch point) |
-| T6 Adapter body | The wall-wart case | under 50 C (typical Class 2 adapter case limit, UL 1310 class) |
-| T7 Wall behind the hub | Through the gap, the wall surface at 12 o'clock | under 35 C |
-| T8 Room | Thermometer 6 ft away | log only |
+| 1 | Current at 12.0 V, full brightness | 0.20 to 0.42 A |
+| 2 | 30 minute burn-in done | No dark piece, no flicker, no smell |
+| 3 | Dimmer sweep | Smooth, no visible flicker, no whine at arm's length |
+| 4 | Trial hang on the master plate, set screw in and out | Pass |
+| 5 | Cap spins in by fingers, stops firmly, comes out again | Pass |
+| 6 | Front face under the record area | No bulge over ring screws, insert flush, hub screws flush, seven felt pieces in place |
+| 7 | Box contents against the packing list (including the straight hex driver and the PET washer) | Complete |
+| 8 | Rating label and serial number on the hub | Present, readable |
 
-Pass: all limits met at 120 minutes AND the 90 to 120 minute readings differ by under 1 C (steady state reached). Fail: any limit exceeded, or still rising at 120 minutes (extend to 180 and re-judge; if still rising, fail). After the soak: unclamp the record, lay it on a flat table, sight the edge against a straightedge; any new dish or ripple = fail.
+## 4. Prototype tests. All must pass before any sale.
 
-Repeat once at minimum dimmer (PWM at low duty cycles can run some drivers warmer) and log T6 only.
+Three prototypes. Keep photos and the raw readings in `build/test-records/` (folder does not exist yet).
 
-Then run one unit for 48 hours continuously at full brightness, repeat the straightedge check on the record. Log only; this is the "lives on a wall" confidence test.
+### T1. Two-hour heat soak (the test that decides whether the record is safe)
 
-## 2. Mount: pull, drop, bump
+Why: `../cad/THERMAL.md` is a calculation. It predicts the record 3.1 C above the room with a 4 W strip. It leaves out the warm air that rises behind the backplate, which the audit estimates adds 1 to 2 C. Record vinyl begins to lose stiffness at about 48 to 50 C and its glass transition is 52 to 54 C (US patent 3,975,321, Table III).
 
-Why: a 12" lever arm on a 1.5 lb fixture; a sconce that lifts off when a door slams is a returned sconce and a cracked record.
+Set-up:
+- Room 20 to 26 C, steady within 1 C for the whole run. Still air: air conditioning vents closed or off, doors shut, nobody walking past, no sun on the test wall.
+- The sconce hangs on a real interior drywall wall, or on a piece of 1/2 in drywall at least 600 x 600 mm backed with 50 mm of foam board. Centre of the sconce about 1.5 m from the floor. Nothing within 300 mm above it for run A.
+- In-wall style install (no surface cord under the unit).
+- The kit's own adapter and dimmer, dimmer at full. Measure and write down the voltage at the pigtail jack and the current.
+- A black 180 g record for runs A and B. Repeat run A once with a thin record (about 120 g).
+- Thermocouples: type K or T, fine wire (30 AWG or thinner), each bead taped flat with polyimide tape and a dab of thermal paste. A data logger or a multi-channel meter read every minute.
 
-Install per mounting-report.md: steel plate on two #8 screws into drywall anchors (worst case; no stud), hub twist-locked, set screw turned in.
-
-| Test | Method | Pass |
+| Channel | Where | Why |
 |---|---|---|
-| 2a Static pull, down | Hook J6 on the dome stud (record removed), hang the 8.3 lb jug for 60 seconds. That is 5x the fixture weight. | No movement of plate or hub; set screw still seated; anchors not loosened (check by hand). |
-| 2b Static pull, out | Pull straight away from the wall on the hub rim with a luggage scale to 10 lb for 10 seconds. | Hub does not come off the studs; no visible gap opening between plate and wall. |
-| 2c Twist | With the set screw IN, try to untwist the hub by hand, hard (about 10 lb-ft, two hands on the rim). Then back the set screw OUT and repeat. | Set screw in: no rotation. Set screw out: rotates and lifts off only with the 20 degree twist, never by a straight pull. |
-| 2d Bump | Record clamped. Strike the record's edge at 3 o'clock with the heel of a hand, five times, hard enough to hear it (about a door slam). Repeat at 12 o'clock downward. | Record does not rotate on the pads more than 2 degrees (mark the edge with tape first); dome does not loosen; hub does not shift on the plate. |
-| 2e Record swap x20 | Unscrew the dome, lift the record off, set it back, screw on. Twenty cycles. | The insert does not loosen in the MDF (check with a torque of finger-tight plus 1/4 turn, no spin); the dome stud does not turn in the epoxy; felt washer still attached. |
-| 2f Drop (unit, not packaged) | Fixture face-up (record off) dropped 12" onto carpet over concrete, hub down, once. Simulates a slip while hanging. | Strip still fully lit; no hub-to-plate glue crack; jack still tight. |
+| TC1 | Record BACK face, 114 mm from the centre, at 12 o'clock | The predicted hot spot, at the top where the rising warm air also arrives |
+| TC2 | Record back face, 114 mm from the centre, at 6 o'clock | Same radius, no rising air |
+| TC3 | Record back face, 143 mm from the centre (the overhang), at 12 o'clock | The edge that hangs past the backplate |
+| TC4 | Record FRONT face, 25 mm from the centre, beside the cap | Under-cap region |
+| TC5 | Aluminium ring, beside the strip, at 12 o'clock | Strip temperature |
+| TC6 | Backplate FRONT face, 114 mm from the centre, at 12 o'clock (under the record) | Checks the model's wood temperature |
+| TC7 | Air, in the gap behind the backplate at the top (125 mm above the centre, mid-gap), bead shielded from the LED light with a foil flag | The rising air the model leaves out |
+| TC8 | Wall surface behind the strip at 12 o'clock | Wall heating |
+| TC9 | Hub side wall at 12 o'clock | Plastic temperature |
+| TC10 | Room air, 1 m to the side at the same height, shielded from the halo | Reference |
 
-Any fail on 2a to 2c is a design stop, not a unit reject: change the anchor spec or the slot geometry before the next unit.
+Procedure: start logging with the light off for 15 minutes (all channels must agree within 0.5 C; if not, fix the thermocouples). Switch on at full. Log for at least 120 minutes and until no channel moves more than 0.5 C in 15 minutes.
 
-## 3. 7" and the keyhole plate
-
-The 7" uses the Hardwick keyhole (a third the weight). Run 2a with a 3 lb weight and 2d only. Pass: no lift-off, no rotation beyond 2 degrees.
-
-## 4. Dimmer flicker
-
-Why: PWM dimmers at low duty cycles can strobe on camera and on some eyes; the product sells on photos and video.
-
-| Check | Method | Pass |
+| Run | Condition | Pass: rise above TC10 at the end |
 |---|---|---|
-| 4a Eye | In a dark room, sweep the dimmer slowly from full to minimum and back, twice, looking at the halo on the wall and at the strip edge. | No visible flicker, stepping or colour shift at any point; smooth to about 5% before cut-off. |
-| 4b Camera | Phone in 240 fps slow-motion, 10 seconds at full, at 50% and at the lowest visible setting; play back. Then a normal 30 fps video at each. | 30 fps: no rolling bands. 240 fps: banding is allowed (every PWM shows it) but the 30 fps hero video must be clean. If 30 fps shows bands, the PWM frequency is too low; swap to a higher-frequency dimmer (the Ecolocity LC-OL-8DIM spec sheet gives its frequency; log it). |
-| 4c Minimum | Note the lowest dimmer position that keeps every COB segment lit. | Whole ring lit at minimum; no segment drops out earlier than the rest. |
-| 4d Warm-up colour | IR not needed. Photograph the halo at 0 and 30 minutes, same exposure. | No visible colour drift (CRI 90+ 2700K should hold). Log only. |
-| 4e Adapter hum | Ear 6" from the adapter and from the dimmer at 50%. | No audible whine in a quiet room. Hum = reject that adapter unit. |
+| A | Normal: production strip, open wall | Record (TC1 to TC4) **6.0 C or less**. Aluminium ring (TC5) 15 C or less. Gap air (TC7) 8 C or less. Wall (TC8) 15 C or less. Hub (TC9) 10 C or less |
+| B | Abnormal: a shelf or board fixed 50 mm above the top of the record, full width, and the supply raised to 13.2 V (or a 6 W strip fitted) | Record **10.0 C or less** (so that in a 35 C room it stays at or under 45 C). Aluminium ring 30 C or less |
+| C | Wrong adapter: 24 V on the jack, behind a shield, fire extinguisher in reach, 10 minutes or until the strip dies | No flame, no smoke that continues after the strip fails, no charring of the MDF, record 48 C or less. Write down what failed and how long it took |
 
-## 5. Packaging drop test (ISTA 3A-lite)
+If run A fails: do not sell. Lower the strip power and repeat. If run A passes with less than 1 C of margin, treat it as a fail.
 
-Why: a 12" record in a flat box is a frisbee; the dome is the premium signal and a dented dome is a refund.
+Flatness, same runs: before switching on, lay a steel straightedge across the record on three diameters and measure the largest gap with feeler gauges. Repeat at the end of run A while hot, and again 2 hours after switching off. Pass: the hot reading within 0.5 mm of the cold one, and the cooled reading within 0.2 mm of the first. A thin record that cups when warm and does not come back is a fail even if every temperature passes.
 
-Based on ISTA 3A for parcels under 150 lb: drop sequence on corners, edges and faces from a height set by weight (for under 20 lb ISTA 3A uses 18"; we use 30" for the three test boxes because small-parcel carriers are rougher than the standard assumes, then 18" for any later re-test). Three packed boxes, each with a real record, dome, adapter and card. Hard floor.
+Endurance: leave one prototype on at full for 500 hours. Each week: flatness, every strip piece still stuck down at both ends, current unchanged within 10%.
 
-Sequence per box (10 drops):
-1. Corner: the bottom corner where the record edge sits closest to the box wall, 30".
-2 to 4. The three edges radiating from that corner, 30".
-5 to 10. All six faces, 30".
-Then: a 10-second vibration stand-in: carry the box down a flight of stairs at a trot and back up (ISTA 3A's vibration table is not available; log that this was substituted).
+### T2. Wall mount
 
-Open and inspect:
+Mount a prototype on 1/2 in drywall with the kit's own two anchors and screws, away from a stud.
+- 67 N (15 lb) outward on the backplate rim at 12 o'clock, held 1 minute, with a luggage scale and a strap.
+- 133 N (30 lb) straight down on the cap, held 1 minute.
+- Pass: nothing moves more than 1 mm, no anchor pulls, the hub does not unlock, nothing cracks.
+- Then pull outward on the rim until something fails. Write down the force and what failed. Why: a 10 lb tug on the backplate rim puts about 18 lb on each anchor (hand calculation in the audit), which is the working limit of a good plastic anchor.
 
-| Item | Pass |
-|---|---|
-| Record | No crack, chip or new warp (straightedge). |
-| Dome cap | No dent, no scratch through the polish, stud still rigid in the epoxy. |
-| Backplate | No corner chip in the MDF, strip fully adhered, lights on first plug-in. |
-| Hub | Not cracked at the jack pocket or the J-slots; still glued flat. |
-| Box | Outer box may be scuffed; no puncture; foam corners intact; nothing migrated. |
+### T3. Twist-lock
 
-Pass = 3 of 3 boxes pass every row. 2 of 3 = change the foam (add a die-cut pad over the record) and re-test. Record the box weight of each (cost-model.md needs the real 3 to 4 lb).
+- 50 hang, twist, set-screw-in, set-screw-out, twist-off cycles on one hub and plate. Pass: still locks, no white stress marks or cracks at the J-slots.
+- With the set screw IN: 2 N m anticlockwise on the backplate by hand. Pass: does not unlock.
+- With the set screw OUT: hold the record and unscrew a firmly tightened cap. Write down whether the hub unlocks from the plate. If it does, the install card must make the set screw step impossible to skip.
+- Hand the unit, the plate on a wall and the straight hex driver to someone who has not seen it. Pass: they fit the set screw in under 2 minutes without help and without touching the LED strip.
 
-## 6. Pass/fail sheet (one per unit; print and keep in the build log)
+### T4. Threaded insert in MDF
 
-```
-Unit #: ______   Date: ______   Builder: ______   SKU: Kit / Sconce / 7" / Set   Cap: Chrome / Brass / Black
-Room temp at start: ____ C
+Why: E-Z Lok lists this knife-thread insert for hardwood and points to a different type for MDF.
+- 300 cap on and off cycles at finger torque. Pass: insert has not turned or risen; cap thread shows brass-coloured wear at most, no flaking that jams the thread.
+- Tighten the cap hard by hand, then unscrew: the insert must stay put (5 times).
+- Pull the cap straight out with 200 N (45 lb). Pass: insert does not move.
 
-HEAT (prototypes + first 10 only)        0   15   30   60   90  120 min   Limit     P/F
-T1 strip surface                        __  __   __   __   __   __       <60 C      __
-T2 rim wood                             __  __   __   __   __   __       <45 C      __
-T3 record back @5" radius               __  __   __   __   __   __       <35 C, <room+8   __
-T4 record label                         __  __   __   __   __   __       <35 C      __
-T5 dome                                 __  __   __   __   __   __       <35 C      __
-T6 adapter case                         __  __   __   __   __   __       <50 C      __
-T7 wall behind hub                      __  __   __   __   __   __       <35 C      __
-Steady at 120 (90->120 delta <1 C)                                                  __
-Record flat after soak (straightedge)                                               __
+### T5. Label
 
-MOUNT (prototypes + first 10; 2d and 2e every unit)
-2a 8.3 lb hang 60 s, no movement                                                    __
-2b 10 lb pull-out 10 s                                                              __
-2c twist: locked with set screw / releases only by twist                            __
-2d bump x5 at 3 and 12 o'clock, rotation <2 deg                                     __
-2e swap x20: insert tight, stud rigid, felt on                                      __
-2f 12" drop onto carpet, still lit                                                  __
+50 cap cycles on a paper-label record with the PET washer in place. Pass: no ring worn into the label, no tear at the centre hole.
 
-ELECTRICAL (every unit)
-Polarity tester red = centre positive                                               __
-Full brightness, all segments lit 60 s                                              __
-4a eye sweep, no flicker                                                            __
-4b 30 fps video clean at full / 50% / min                                           __
-4c whole ring lit at minimum                                                        __
-4e no adapter or dimmer whine                                                       __
-Hot glue strain relief present at strip and in channel                              __
+### T6. Humidity
 
-PACK (every unit)
-Dome bagged, 45 adapter, adapter+dimmer, mount bag, card, shake test silent         __
-Box weight: ____ lb
+One finished backplate (insert, felt, ring screwed on) for 7 days in a closed tote at room temperature over a saturated salt solution (potassium chloride gives about 84% relative humidity), then 2 days in a normal room. Pass: thickness change 0.3 mm or less, no cracked paint, insert not proud, ring screws still tight, ring still flat. Standard MDF moves about 0.3% in length between 50 and 80% humidity, which is 0.8 mm across this disc.
 
-PACKAGING DROP (3 boxes before first ship)   Box A __  Box B __  Box C __
+### T7. Shipping drop
 
-RESULT:  PASS / FAIL    Notes: ____________________________________________
-```
+Packed as it will ship, with a record in the box for the Sconce. Ten drops from 760 mm (30 in) onto concrete: the ISTA 1A height for a parcel under 21 lb. One on each face, then corners and edges. Pass: backplate edge not chipped, paint intact, cap still in its pocket and not dented, record not cracked or scuffed, strip lights, hub not cracked.
 
-## 7. What gets printed on the product page after the prototypes pass
-"Tested: record surface stays within X C of room temperature after two hours at full brightness (measured with an IR thermometer on prototype units). Mount holds 5x the fixture's weight. Nothing in the fixture carries more than 12 volts." Fill X from T3. Do not publish until measured.
+### T8. What it looks like
+
+- Photograph the lit halo straight on in a dim room and in a daylit room, beside the approved render. The product's strip is at 115 mm; the approved images were lit at 124 mm with an extra rim strip, so the real halo may be narrower and dimmer. Austin signs the photo or the design changes.
+- Stand beside the wall. From about 65 degrees off straight-on the bare edge of the aluminium and cork rings comes into view under the backplate rim, and the strip corners soon after. Photograph at 65 and 80 degrees. If the bright metal edge shows, paint the ring's outer edge black.
+- Surface-cord install: check for a shadow notch in the halo at 6 o'clock from the cord and connector.
+
+### T9. Electrical
+
+- Dimmer at 10%, 50%, 100%: phone slow-motion video of the halo. No rolling bands at any setting. If a scope is to hand, the PWM frequency should be 1.25 kHz or higher.
+- Quiet room at night, 1 m away: no whine from adapter or dimmer at any setting.
+- An AM radio 1 m away: no new buzz when the dimmer is at 50%.
+- Reverse polarity for 1 minute (centre negative): no damage, lights normally afterwards.
+- Short the jack for 10 seconds on the kit adapter: adapter shuts down and recovers, nothing warm.
+
+## 5. Records
+
+For every lot: strip reel listing number and measured current, adapter model and listing number, cork thickness, T1 run sheets, who built and who checked each serial number. These are also the documents an insurer or a safety lab will ask for.

@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Reserved | Spindle</title>
 <meta name="description" content="Deposit received.">
+<meta name="robots" content="noindex">
 <link rel="canonical" href="https://example.com/thanks-deposit.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Spindle">
@@ -22,15 +23,15 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preload" as="font" type="font/woff2" href="fonts/inter-tight-latin.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="fonts/instrument-serif-italic-latin.woff2" crossorigin>
-<link rel="preload" as="font" type="font/woff2" href="fonts/jetbrains-mono-latin.woff2" crossorigin>
 <link rel="stylesheet" href="css/fonts.css">
 <link rel="stylesheet" href="css/style.css">
 <script src="js/config.js"></script>
 <script src="js/main.js" defer></script>
+<noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </head>
 <body data-page="thanks" data-thanks="purchase">
 <a class="sr-only" href="#main">Skip to content</a>
-<div class="bar">First batch of <span data-batch-size>20</span> sold out. Batch two is open for <span data-deposit>$25</span> refundable deposits.</div>
+<div class="bar">First <span data-batch-size>20</span> sold out. Batch two: <span data-deposit>$25</span> refundable hold.</div>
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="index.html" aria-label="Spindle home"><span class="mark" aria-hidden="true"></span><span data-brand>Spindle</span></a>
@@ -55,22 +56,32 @@
 
 <section class="section thanks">
   <div class="wrap">
+    <p class="demo-banner" data-demo-banner hidden>TEST MODE. Nothing was sent and no payment was taken. The checkout link and the waitlist form are not connected yet (js/config.js).</p>
+    <div data-no-session hidden>
+      <p class="eyebrow"><span class="dot"></span>Reserve</p>
+      <h1>No hold found on this page.</h1>
+      <p class="lede" style="margin:0 auto">This page appears after checkout. If you paid a deposit, your Stripe receipt email is your proof and your place is safe. If you have not, you can hold one below.</p>
+      <p style="margin-top:28px"><a class="btn btn-primary" href="reserve.html"><span>Hold one for <span data-deposit>$25</span></span></a></p>
+    </div>
+    <div data-has-session>
     <div class="ring" aria-hidden="true"></div>
     <p class="eyebrow"><span class="dot"></span>Reserved</p>
     <h1>Your Spindle is held.</h1>
-    <p class="lede" style="margin:0 auto">Thank you. Your <span data-deposit>$25</span> deposit for <b data-thanks-selection>Spindle 12 in Chrome</b> is in, and a receipt from Stripe is on its way to your inbox.</p>
+    <p class="lede" style="margin:0 auto">Thank you. Your <span data-deposit>$25</span> hold for <b data-thanks-selection>Spindle 12</b> is in, and a receipt from Stripe is on its way to your inbox.</p>
     <p class="tagline" style="margin-top:10px">Put something on.</p>
     <div class="offer" style="max-width:36em;margin:28px auto 0;text-align:left">
       <h3>What happens next</h3>
       <ul>
-        <li>Batch two ships <span data-ship>the week of [SHIP DATE]</span>. We charge the balance only when your unit is ready to ship, and we email you first.</li>
-        <li>If we cannot ship by that date we will email you a new date and you can cancel for a full refund.</li>
-        <li>Your deposit is fully refundable at any time before shipping. Reply to the receipt email and it goes back to your card.</li>
-        <li>Named model: the title menu comes in your confirmation email. Spindle 12: tell us your decade by replying.</li>
+        <li>Your batch is not built yet. We build and heat-test the first units, then yours. It is planned to ship <span data-ship>the week of [SHIP DATE]</span>.</li>
+        <li>If we will miss that date we email you before it with a new one, and you can keep your place or take a full refund.</li>
+        <li>When yours is ready we email you a link to pay the rest. Nothing is charged automatically.</li>
+        <li>Your <span data-deposit>$25</span> is refundable any time before shipping. Reply to the receipt email and it goes back to your card within 5 business days.</li>
+        <li>Spindle 12: reply with your decade. Named: we email the album menu before you pay your balance.</li>
       </ul>
-      <p class="tiny" style="margin:0">Need to change the finish or model? Reply to the receipt email. Nothing is locked until we build it.</p>
+      <p class="tiny" style="margin:0">Need to change the version? Reply to the receipt email. Nothing is locked until we build it.</p>
     </div>
     <p style="margin-top:28px"><a class="btn btn-ghost" href="install.html">Read the install guide while you wait</a></p>
+    </div>
   </div>
 </section>
 </main>
@@ -81,14 +92,13 @@
         <a href="index.html" aria-label="Spindle home"><img class="footer-lockup" src="img/lockup-horizontal.svg" alt="Spindle" width="546" height="158" loading="lazy"></a>
         <p class="tagline" style="margin-top:14px">Change the record. <em>Change the room.</em></p>
         <p class="slogan-foot">YOUR favorite records light up YOUR favorite room</p>
-        <p style="margin-top:12px;max-width:28em">Wall sconces built around a real 12-inch record. Warm 2700K halo, 12-volt plug-in, nothing glued to your vinyl. Made in Fort Lauderdale, Florida.</p>
+        <p style="margin-top:12px;max-width:28em">A wall light built around a real 12-inch record. Warm glow, low-voltage plug-in, nothing glued to your vinyl. Designed and assembled in Fort Lauderdale, Florida.</p>
         <p><a data-email href="mailto:hello@example.com">hello@example.com</a></p>
       </div>
       <div>
         <h4>Shop</h4>
         <a href="product.html">Spindle 12</a>
         <a href="product.html#kit">Spindle Kit</a>
-        <a href="product.html#set">Spindle Set</a>
         <a href="reserve.html">Reserve batch two</a>
       </div>
       <div>
@@ -102,13 +112,14 @@
         <h4>Policies</h4>
         <a href="shipping.html">Shipping</a>
         <a href="returns.html">Returns</a>
+        <a href="warranty.html">Warranty</a>
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
       </div>
     </div>
     <div class="disclaimer">
-      <p>Every record we ship is a genuine, previously owned pressing. Label wear is part of the piece. <span data-brand>Spindle</span> is not affiliated with, sponsored by or endorsed by any artist, band or record label. Album names, where they appear, describe the material only. We never reproduce cover art or logos.</p>
-      <p>Pre-order terms: deposits are fully refundable at any time before your sconce ships. Batch two ships <span data-ship>the week of [SHIP DATE]</span>. If we cannot ship by then we will tell you and you may cancel for a full refund.</p>
+      <p>Every record we supply is a real, previously owned pressing. Label wear is part of the piece. <span data-brand>Spindle</span> is not affiliated with, sponsored by or endorsed by any artist, band or record label. Album names, where they appear, describe the material only. We never reproduce cover art or logos.</p>
+      <p>Pre-order terms: this is a pre-order for a product that has not been built yet. Deposits are fully refundable at any time before your sconce ships. Batch two is planned to ship <span data-ship>the week of [SHIP DATE]</span>, which is an estimate. If we cannot ship by then we will tell you first and you may cancel for a full refund. Images are computer renderings. The Spindle is not UL listed; its plug-in power adapter is.</p>
       <p>&copy; <span data-year>2026</span> <span data-brand>Spindle</span>. All rights reserved. <span class="mono" style="color:var(--ash)">Change the record. Change the room.</span></p>
     </div>
   </div>

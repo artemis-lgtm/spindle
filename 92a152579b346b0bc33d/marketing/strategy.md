@@ -1,153 +1,204 @@
-# Spindle: launch marketing strategy
+# Spindle: launch marketing strategy (v2, rewritten after the 2026-11-11 audit)
 
-Prepared 2026-11-09 (overnight build) for Austin. Nothing here has been posted, sent, or bought. Name: "Spindle" is both brand and product (brand/naming-report.md, 11/9: "Side A" conflicts with a live trademark on vinyl record sleeves; Deadwax is reserved for any later editorial side). Handles @spindlelighting are free on IG and TikTok, spindlelighting.com is free (not bought). Primary tagline: "Change the record. Change the room." Voice and palette: brand/brand-guide.html. Every number is either from scope-report.md, engineering-report.md, design-report.md, or carries its own URL. Estimates are marked.
+Rewritten 2026-11-11 by the marketing auditor. The v1 plan (2026-11-09) is superseded; what changed and why is in CHANGELOG.md and in ../audits/AUDIT-marketing.md. Nothing here has been posted, sent, bought or registered.
+
+Three facts drive every change below.
+
+1. Nothing has been built or heat-tested. The product photos are renders, some of them show a "post" that does not exist, and the 7 in single is not on the heat-safe layout (../NOTES.md, 2026-11-11 entries; ../renders-final/README.md).
+2. The margins moved, twice. The v1 plan was written on a parts cost of about $27. The product audit re-priced the bill of materials at prices that can be bought today: $78.04 at 100 units and $211.33 at 20, with the chrome cap carried as a $15.00 placeholder that no supplier has quoted (../build/cost-model.md and cost-model.csv, rewritten the evening of 2026-11-11; ../audits/AUDIT-product.md). An earlier draft of this file used $47.46; that figure is superseded.
+3. A $25 deposit is a partial payment. Under the FTC mail order rule the clock starts when a partial payment is received, and with no ship time stated the seller must have a reasonable basis to ship within 30 days (16 CFR 435.1(c) and 435.2(a)(1), read 2026-11-11 at https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-435). So the deposit button cannot be live until there is a ship week with records behind it.
+
+The plan is therefore gated on what physically exists, not on calendar dates.
 
 ## 1. Positioning
 
-One sentence: The Spindle is a wall light that turns the record you already love into a lit object, and lets you change it whenever you change your mind.
+One sentence: Spindle is a wall light that turns the record you already own into a lit object, and lets you change it whenever you like.
 
-What it is, in the customer's words: a halo sconce. A warm 2700K ring of light sits behind a real 12" LP, throws an amber halo on the wall, and a polished chrome dome screws the record on through the spindle hole. Nothing is glued. Unscrew the dome, swap the record, screw it back. Plug-in, low voltage, no electrician. Wiring can disappear inside the wall or run down it.
+In the customer's words: a warm ring of light sits behind a real 12 in LP and throws a halo on the wall. A chrome dome screws the record on through the spindle hole. Nothing is glued. Plug-in, low voltage.
 
-Why it wins (from design-report.md section 1): backlit discs with a metal centre dome are a $400 to $1,300 designer object (Tom Dixon Press $755 at DWR, https://www.dwr.com/lighting-ceiling/press-surface-light/2585264.html?lang=en_US; Diesel Living with Lodes "Vinyl" $740, https://citylightssf.com/products/vinyl-wall-light-by-diesel-living-with-lodes). Nobody in that category uses a real record as the disc. Below us the $20.89 resin "record" toy (https://www.walmart.com/ip/Record-Store-Retro-Wall-Light-Vintage-Vinyl-Record-Wall-Decor-Music-Lover-Gift-Retro-Room-Aesthetic-Record-Collector-Gift/16764366840) and the $27 to $66 "Now Playing" acrylic shelves (https://www.billboard.com/culture/product-recommendations/light-up-vinyl-record-stand-now-playing-sign-buy-online-1235950991/) light a sign, not the record, and read as a gadget. We sit at $89 to $249, in the gap the market has left between $66 and $740.
+Honest competitive picture (v1 said nobody lights the record; that is wrong):
 
-The one-liner ladder (use in order of how much room we have):
+| Product | What it is | Price / proof shown on its own page | Opened 2026-11-11 |
+|---|---|---|---|
+| Vylumi Nova | Backlit, sound-reactive display for one record, desk stand or wall hanger, USB power. Sells on record safety: "100% SAFE FOR YOUR RECORDS. Runs cool to the touch with no heat and no warping" and "low-heat / low-UV LEDs, two air gaps to kill heat transfer". Says "FUNDED IN 9 MIN" on Kickstarter, August 2026. | "4.82, 125 reviews" | https://vylumi.com/ |
+| PETRU Smart Now Playing Stand | Stand that holds the sleeve with an audio-reactive light. Father and son business. Lists "Find a retailer". | $239.90, "812 reviews" | https://petrudesign.com/ and https://petrudesign.com/pages/about-us |
+| Gantri wall lights | Designer plug-in wall lights. Spec line on the home page: "Warm, inviting 2700K light. True-to-life color with 90+ CRI. 600+ lumens, fully dimmable." | $248 to $298 | https://www.gantri.com/ |
+| Poplight | Renter wall sconce, stick-on. | $89 to $99, "Hundreds of 5 star reviews" in the page title | https://thepoplight.com/ |
+| Record Props | Wall and tabletop record display, no light. | holiday banner, 60-day returns | https://recordprops.com/ |
+| Art Vinyl Flip Frame | Swap-without-unhanging record frame. What Hi-Fi reports "some 200,000 customers" for the 12 in frame. | about 30 to 40 GBP | https://www.whathifi.com/news/artvinyl-launches-vinyl-storage-kickstarter |
+
+What that means for us:
+- Our real difference is narrow and still true: it is a room light (a halo on the wall, dimmable), the record is held by a visible piece of hardware, and it reads as a fixture, not a gadget. Say that. Do not say "the only one that lights the record".
+- Collectors already pay about $240 for a lit display with 812 reviews behind it, and design buyers pay $248 to $298 for a 2700K, 90+ CRI wall light. Those are the price anchors to use. They are close comparables with real prices on pages we opened. The $755 designer sconce is a weaker anchor and naming that brand in an ad adds risk for nothing.
+- Every comparable shows a review count on the first screen. We have zero reviews and zero photos of a real unit. Closing that gap is the first marketing job, ahead of any ad.
+- Record safety is a headline claim in this category. We may not use it until the thermocouple test is done (section 3), and when it is done we publish the measured number, which beats an adjective.
+
+One-liner ladder:
 - 3 words: Your record, lit.
 - 7 words: The wall light built around your records.
-- Full: A warm halo behind a real record. Chrome dome screws it on. Change the record, change the room.
+- Full: A warm halo behind a real record. A chrome dome screws it on. Change the record, change the room.
 
-Proof points we can state truthfully today:
-- "First batch of 20 sold out." (Austin, 11/9: 20 units sold. This exact phrasing only. Never "sold out" bare, never a stock counter not wired to real numbers. scope-report.md section 4, FTC dark-patterns report https://www.ftc.gov/reports/bringing-dark-patterns-light.)
-- Real vinyl, not resin. Nothing glued to your record.
-- 2700K warm white, CRI 90+, dotless COB, inline dimmer.
-- 12V Class 2 from a UL-listed adapter; nothing 120V inside the fixture.
-- Swap in 10 seconds. Steel plate twist-lock mount; in-wall wiring kit or surface cord.
-- Made in Fort Lauderdale, FL.
+## 2. What we may and may not say (claims register)
 
-Things we never say: any band or artist name, any album title in a headline, "official", "limited edition <artist>", "UL listed" about the finished fixture (only the adapter and components are listed), "sold out" without "first batch of 20", any ship date we have not set with a two-week buffer.
+A claim goes in an ad, a post, an email or the page only when the "proof needed" column is satisfied and the proof is saved in ../audits/ or ../build/.
 
-## 2. Audiences
+| Claim | Status today | Proof needed before use |
+|---|---|---|
+| "First batch of 20 sold out" | Hold. Austin reported 20 pre-sold; who bought and what they paid is not on file (../ops/legal.md section 4 says the same). | A ledger: name, date, amount, what was promised. Then the honest wording is "The first 20 are spoken for", because nothing was built. "Sold out" comes back once the 20 have shipped. |
+| "We built 20", "people who have the first batch", "how the first twenty hung theirs", any photo "of a first-batch unit" | False today. Removed everywhere. | 20 delivered units. |
+| "Nothing glued to your record", "felt pads", "chrome dome screws it on" | True to the CAD. | A photo of the real stack. |
+| "Cool", "nothing warm", "no heat near the vinyl", "safer on this wall than in the crate" | Not allowed. The thermal model says 33.1 C in a 30 C room and 45.2 C stacked worst case, and the product audit found that standard record compound starts to lose stiffness at 48 to 50 C, lower than the 55 to 60 C the project had assumed, so the worst case lands on the limit (../audits/AUDIT-product.md). Nothing is measured. | Thermocouple on the back edge of the record, 2-hour soak, per ../build/QC-test-plan.md. Then state the number: "after two hours the record measured N F in a 75 F room". Never "safer than the crate". |
+| "Swap in ten seconds", "one hand" | Unmeasured. | Time it on camera on the real unit and use the real number. Drop "one hand" unless it is true on video. |
+| "15-minute install", "45 minutes in-wall" | Unmeasured. | Time both on camera. |
+| "2700K, CRI 90+, dotless, dimmable" | Not allowed yet. The product audit found the only priced 4 W strip is 2900 to 3200K, not 2700K, and the dimmer is untested for flicker on camera. Say "warm, dimmable" until then. | The datasheet of the strip actually bought, and a flicker check on video. |
+| "UL-listed 12V adapter" | Only on the page and the spec sheet, never in an ad headline or on-screen text, and always with "the fixture itself is not UL listed". | The UL file number of the adapter actually bought (../ops/safety.md lists this as open). |
+| "No electrician", "legal to run in the wall" | "Plug-in, no electrician" is fine for the surface cord. In-wall: "allowed inside walls in most US homes under the National Electrical Code; check local rules" (../ops/safety.md section 4). | None beyond the softer wording. |
+| "Made in Fort Lauderdale", "made to order in Fort Lauderdale" | Not allowed as written. The FTC treats references to a US factory location as a possible US-origin claim, and an unqualified claim needs "all or virtually all" US content (https://www.ftc.gov/business-guidance/resources/complying-made-usa-standard, fetched 2026-11-11; 16 CFR 323.1 to 323.3). The LED strip, adapter and dimmer are catalogue electronics that are very likely imported (the BOM does not record country of origin). | Use "Designed and assembled in Fort Lauderdale from US and imported parts". The FTC guide gives "Made in USA of U.S. and imported parts" as an example of a qualified claim. Ask the IP lawyer in the same hour. |
+| Any band, artist, album or label name; any real label in a render | Never in ads, posts, emails or renders. The band-label renders in ../renders-zep/ (a computer-made label carrying a band name and track titles) are not marketing assets: 17 USC 113(c) covers "pictures or photographs" of the real article (https://www.law.cornell.edu/uscode/text/17/113), and a render is our own reproduction of someone's label. | Named-title tier stays off until the IP lawyer hour. |
+| "Ships by", any countdown, any stock number | Never until a ship week exists with a reasonable basis and the count is read from Stripe. | Sample run finished, supplier lead times in writing. |
+| A competitor's name in an ad | Never. | n/a |
 
-Four audiences, in order of expected efficiency. Each gets its own ad set only once the pixel has data; day one runs Advantage+ with interest hints (scope-report.md section 5 and the Ghost Audio precedent: pixel first, one audition ad set, prune on CTR).
+## 3. The gates (sequence replaces the dated calendar)
 
-| Audience | Who | What they buy | Message | Where they are | Interest hints for Meta |
+v1 had the page live with a deposit link on 11/10, ads on 11/11 and ten gift Kits shipping on 11/12. None of that could happen: there is no unit. The order below is the fix. Dates are estimates from ../sourcing/ lead times (sample run about 3 weeks from order, chrome caps the long pole) and nothing has been ordered.
+
+### Gate 0: paper (now). Cost: under $50.
+
+Done when all of these are true:
+- The ledger of the 20 exists (who, when, how much, what they were told about delivery). If money was taken, each of those 20 is already an order under the mail order rule and needs a ship date or a refund offer; that is the first email (email-sms-flows.md, flow 8).
+- spindlelighting.com and @spindlelighting (TikTok, Instagram) are registered under a Spindle identity. Nothing runs through Ghost Audio, Elbo Room or Higney International accounts: new Meta business and ad account, new pixel, its own email tool login, its own sending mailbox on the Spindle domain. v1 proposed the HI Mailchimp, the Ghost Postiz and an HI email address; all three are removed.
+- The public page has the free waitlist only. The deposit button is off. Every render on it carries the caption "Render. First units are being built now." and the swap and flat-lay renders with the phantom post are not used.
+- A real quote for 100 chrome caps is in hand, and Austin has re-set the prices from it (section 4), and decided deposit versus full pre-order (section 5).
+- The sample-run parts are ordered. Marketing cannot move past this gate on its own.
+
+Marketing allowed at Gate 0: the build-in-public series from the real bench (tiktok-laws-and-video-concepts.md, concepts 1 to 4), the waitlist, and account warm-up. No paid, no outreach, no press, no "sold out".
+
+### Gate 1: one real unit that passes the heat test. Estimate: late November at the earliest.
+
+Done when: one unit hangs on a real wall; the 2-hour soak is logged with the record's back-edge temperature; swap and install are timed on camera; the halo has been compared with the renders (../renders-final/README.md asks for this).
+
+Then, and only then:
+- Shoot the real asset library in one evening: switch-on in the dark, the swap with a visible timer, the dome macro, the install in real time, the wall at dusk, the heat reading. This replaces every render in ads and organic.
+- Daily organic begins (organic-plan.md).
+- One comment in the r/vinyl projects megathread (pr-and-communities.md).
+- Austin's 15-second founder clip.
+
+### Gate 2: a ship week with a reasonable basis. Estimate: mid December or later.
+
+Done when: the sample run of 8 is assembled and has survived the QC plan; lead times for the 100-unit parts order are in writing; the first 20 are scheduled; product liability insurance is bound (../ops/insurance.md); the ship week is chosen with a two-week buffer; the 7 in question is answered (either the 7 in is on the heat-safe layout or the Set stays off sale).
+
+Then:
+- The deposit or pre-order button goes live with the ship week printed next to it and in the confirmation email.
+- Paid ads stay off unless section 7's margin condition is met.
+- The first three creators get real units (ugc-creators.md).
+
+### Gate 3: the first 20 are delivered.
+
+Then: "First batch of 20 sold out" is fully true; review requests go to all 20; customer photos replace our own; the second creator wave and any scaling of paid begin.
+
+### Holiday 2026, plainly
+
+No Spindle can be promised for Christmas 2026. Parts are not ordered, the sample run takes about three weeks, and Christmas is 44 days out. Black Friday and Cyber Monday (11/27 to 11/30) are not a sales event for us this year; they are four days of bench content and waitlist building. The printable gift certificate is fine only after Gate 2, with the real ship week printed on it. v1's Black Friday offer (free in-wall kit on Set deposits) is cancelled: the Set is not sellable and deposits are not open.
+
+## 4. Unit economics (updated the evening of 2026-11-11 from the product audit's cost model)
+
+Contribution before ads = price minus parts, record, labour, shipping and Stripe. Every figure is from ../build/cost-model.csv as rewritten by the product audit. "Break-even ROAS" is price divided by contribution. "Deposit ceiling" is the most a deposit can cost if half of deposits become paid orders (the 50% is a planning assumption; no source exists for a $25 deposit on a product like this).
+
+| SKU | Price | Contribution at 100 | Break-even ROAS | Deposit ceiling at 50% paid | Contribution at 20 |
 |---|---|---|---|---|---|
-| A. Vinyl collectors | 25-45, own 50+ records, already display 1-4 on ledges, follow #vinylcommunity, shop Discogs and record stores | Spindle Kit $89 (their record), Set $249 later | "Stop hiding your favourite pressing in a crate." The swap is the hook. Label legible, record untouched. | TikTok/IG #vinylcollection #vinylcommunity #vinyltok, r/vinyl, YouTube vinyl channels, Discogs | Discogs, Vinyl Me Please, Record Store Day, Crosley, Audio-Technica, Fluance, U-Turn, Pro-Ject, Vinyl records, Turntables |
-| B. Gift buyers | 28-60, partner/parent/friend of a collector; shopping Nov 10 to Dec 20 | Sconce with record $129, Named title $179, Kit $89 as "they pick the record" | "The gift for the person who already has every record." Kit = no risk of picking the wrong album. Gift certificate for the batch-two spot. | Meta feed and Reels, gift guides, Pinterest "gifts for vinyl lovers" | Gifts for music lovers, Uncommon Goods, Etsy, Urban Outfitters, Record Store Day, Spotify Wrapped season (Dec) |
-| C. Renters / apartment decor | 24-38, rent, want a "designed" plug-in light, follow Apartment Therapy, Poplight-aware | Kit $89 or Sconce $129 (surface cord, raceway) | "Designer wall light. Plug-in. No electrician. Comes off the wall when you move." Poplight-style renter framing. | TikTok #apartmentdecor #renterfriendly, IG interiors feature accounts, Apartment Therapy, Domino | Apartment Therapy, Domino, Poplight, Wooj, West Elm, CB2, IKEA, Article, Ruggable |
-| D. Home bar / listening room | 30-55, homeowner, building a bar or listening corner, buys in sets | Set $249/$329, Sconce $129 x2, in-wall wiring | "Three records, three halos, zero cords." The reference image composition. Behind-the-wall wiring is the premium story. | Pinterest home bar boards, r/homebar, YouTube listening-room tours, Houzz | Home bar, Audiophile, Sonos, KEF, Klipsch, Rejuvenation, Schoolhouse, Restoration Hardware, Houzz |
+| Kit | $89 | minus $19.90 | none, loses money | none | minus $156.52 |
+| Sconce, vintage record | $129 | $12.77 | 10.1x | $6.39 | minus $123.85 |
+| Sconce, named title | $179 | $33.32 | 5.4x | $16.66 | minus $103.30 |
+| Set, kit (not buildable today) | $249 | $45.01 | 5.5x | $22.51 | minus $110.10 |
+| Set, with records (not buildable today) | $329 | $108.36 | 3.0x | $54.18 | minus $46.75 |
+| In-wall kit add-on | $29 | $19.31 | attach only | n/a | $16.16 |
 
-Secondary, later: record stores and bars as B2B (10+ units, trade pricing), musicians and small labels wanting their own pressing on a wall (we never use their marks; they can use their own).
+These are soft in the worst direction. The chrome cap is in the model at $15.00 at 100 units and the only live prices are $121 to $156 each for 1 to 50 pieces; one prototype costs about $279 in parts (cost-model.md). If the cap quote for 100 comes back above $15, every row drops by the difference.
 
-## 3. Offer ladder
+The one benchmark panel I opened that publishes its spread (19 managed DTC accounts, $2.88M spend, October 2025 to September 2026, https://topgrowthmarketing.com/dtc-ecommerce-benchmarks/meta-ads-benchmarks/): median cost per purchase $33.80, middle half $24.97 to $51.09; median ROAS 2.55, middle half 1.82 to 3.87. Those are experienced accounts; a new one should expect worse. A second source puts art and home decor at 0.61% conversion and $26.16 CAC (https://lebesgue.io/facebook-ads/facebook-benchmarks-by-industry-ctr-cpm-cr-and-cac; method not shown).
 
-All prices from design-report.md section 4 and NOTES.md. Deposit mechanics from scope-report.md section 5.
+What the numbers say:
+- No 12 in SKU can carry paid advertising at today's prices and costs. The best case, the $179 named-title Sconce, needs a 5.4x return, above the 75th percentile of an experienced panel, and it is not on sale until the IP lawyer hour. The $129 Sconce clears $12.77; even the panel's best quartile cost per purchase ($24.97) loses money on it.
+- The Kit at $89 loses $19.90 on every order before any marketing. The cost model says it needs to be about $125 to clear $15.
+- The first 20, built at 20-unit prices, lose over $100 each on every SKU. If those 20 were promised at $89 or $129, that is a loss of roughly $2,500 to $3,100 on the batch before marketing. Not a marketing decision, but Austin should see the number.
+- For marketing to have any budget per order, the contribution has to be about $45 or more. At today's costs that means roughly $165 for the Sconce and $155 for the Kit (price times 0.971, minus $112.49 or $106.32 of cost and fees), or a cap quote far under the placeholder. A $149 Sconce clears about $32.20 and a $169 Sconce about $52.
+- The price anchors in section 1 say $149 to $179 is not out of range for this buyer: PETRU sells a lit record stand at $239.90 with 812 reviews, and Gantri's wall lights are $248 to $298. That is a pricing argument Austin can use; whether buyers accept it is untested.
+- v1's pass mark was "cost per deposit at or under $45". At today's contribution the ceiling for the $129 Sconce is $6.39. That is not a reachable number.
+- Wholesale to record stores is far underwater: half of $129 is $64.50 and the landed cost is $112.19.
+- The $29 in-wall kit adds $19.31, more than a $129 Sconce earns. Attach matters more than ever.
 
-| Rung | Offer | Price | Who | Contribution before ads (estimate) |
+Decisions this forces (Austin): the price of every SKU, after a real cap quote for 100 pieces. Until then no price appears in any ad or email, and the page should not take money at $89 or $129.
+
+## 5. Offer ladder (v2)
+
+| Rung | Offer | Price | Live from | Notes |
 |---|---|---|---|---|
-| 0 | Free waitlist (email + SMS optional) | $0 | Anyone not ready | converts 1-3% to purchase, 15-25% opens (scope-report.md section 5 sources) |
-| 1 | Batch-two spot: $25 refundable deposit, applied to the balance | $25 | Everyone we advertise to | converts 20-40% to purchase, 60-80% opens (same sources) |
-| 2 | Spindle Kit, chrome / brass / black, customer's own record | $89 | Collectors, renters | about $45 (BOM ~$27 at 100, ship ~$14, processing ~$2.90; engineering-report.md section BOM, scope-report.md section 3) |
-| 3 | Spindle Sconce with a genuine vintage LP, "your decade, our pick" | $129 | Gift buyers, renters | about $79 to $84 |
-| 4 | Named-title Sconce (menu of ten over-pressed classics, title in body copy only, after the IP hour) | $179 | Gift buyers | about $99 |
-| 5 | The Set: 12" plus two 7" with chromed 45-adapter caps | $249 kit / $329 with records | Home bar, listening room | about $150 kit-only (design-report.md estimate) |
-| Add-ons | In-wall wiring kit (CL2 cable, bracket, keystone coupler), paintable raceway, spare cap in a second finish, gift certificate | $29 / $15 / $19-24 / any | | raceway and cap near 50% (estimate) |
+| 0 | Free waitlist, email only | $0 | Gate 0 | No SMS at launch (email-sms-flows.md explains why). |
+| 1 | Reserve a batch-two unit | $25 refundable deposit, or full price | Gate 2 | Ship week printed beside the button. Recommendation: offer full pre-order as the main button and the deposit as the second, because a full pre-order has no deposit-to-paid leak and the allowable CAC is the whole contribution. Austin's call. |
+| 2 | Spindle Sconce with a vintage record, our pick from your decade | $129 today; under review (section 4) | Gate 2 | The hero SKU. |
+| 3 | Spindle Kit, your own record | $89 today loses $19.90 an order; about $125 clears $15 | Gate 2, and only after it is re-priced | Never advertised below a price that clears a margin. |
+| 4 | Named-title Sconce | $179 | After the IP lawyer hour | Off until then. |
+| 5 | The Set | $249 / $329 | After the 7 in is on the heat-safe layout and its cap is quoted | Off until then. No Set creative runs before that. |
+| Add-on | In-wall wiring kit | $29 | Gate 2 | Offered on the page and in the confirmation email. |
 
-Offer rules:
-- The deposit is the hero ask in paid. Free list is the fallback CTA on the same page, never a separate campaign objective at $15/day (two objectives split a tiny budget).
-- No discounts in month one. Price integrity is the premium signal; "first batch of 20 sold out" is the urgency. The only incentive is "deposit holders get first pick of finish and first ship date."
-- Gift path for the holiday: a printable "Your Spindle is coming" certificate emailed on deposit, so a gift buyer has something to wrap on 12/25 even if batch two ships in January. This is honest and solves the biggest problem a made-to-order product has in Q4.
-- Set bundle: the Set is priced so three units cost less than $129 x 2 (two sconces = $258). State it that way on the page.
-- Black Friday / Cyber Monday (11/27 to 11/30): no price cut. Instead "deposit now, pick your finish first" plus free in-wall wiring kit on Set deposits that weekend only, if Austin approves. Real dates, real cap (first 20 Set deposits), stated on the page.
+Finishes: chrome only. The product audit found no real part behind the brass and black caps, and the lit cap's centre contact has never been built (../audits/AUDIT-product.md). No brass, black or lit-cap copy or image is used until those parts exist.
 
-## 4. Channels
+Rules: no discounts; no urgency that is not a real date or a Stripe-read number; the gift certificate carries the real ship week or does not exist.
 
-Priority follows what the Ghost Audio precedent proved we can run autonomously and what the numbers support.
+## 6. Channels, in the order they can actually run
 
-1. Meta (Facebook + Instagram) paid. The only paid channel in month one. Pixel first: Lead event on the free-list thank-you, Purchase event on the Stripe deposit success redirect, both confirmed in Events Manager before any spend (scope-report.md section 5). One campaign, one Purchase-optimised ad set as the audition set, Advantage+ audience, US, 25-54, plus a $2/day retargeting ad set once the pixel has 100+ page views. Six live ads max, prune after 1,000 impressions if CTR under 0.5% or cost per result over 2x the median (Ghost rule), feed winners new variants weekly.
-2. Organic TikTok + Instagram Reels. Daily short video from the shop: the "change the record" swap series, the light-switch reveal, install, unboxing. Every ad concept doubles as an organic post and every organic winner auditions as an ad (object_story_id, same as Ghost). See organic-plan.md.
-3. UGC / creator gifting. 25+ vinyl, apartment and home-bar creators; gift a Kit, ask for an honest video, whitelist the best as Partnership Ads. See ugc-creators.md.
-4. Email + SMS. Klaviyo or Mailchimp (Austin already runs Mailchimp for HI) and a Stripe webhook for deposit confirmations. Flows in email-sms-flows.md.
-5. Communities and PR. Reddit as a maker, not a marketer (rules-aware, see pr-and-communities.md). Gift guides pitched by 11/14 for the few still open; most 2026 guides closed in September. Design blogs via their tip lines. Kickstarter: no (reasons in pr-and-communities.md).
-6. Not now: TikTok Ads ($20/day per ad group floor, separate app review, month two at best per Ghost notes), Google Shopping (no catalogue, no reviews), Pinterest Ads (month two if organic pins show saves), Amazon (never, price anchors and fakes), Etsy (never for the brand; maybe later as a secondary storefront for the Kit).
+1. Organic TikTok and Reels, starting as a build-in-public series (Gate 0) and becoming product video at Gate 1. This is the lead channel because it is free, it is where the comparables grew (Poplight: "we've gone multi viral on TikTok", https://thepoplight.com/blogs/news/how-it-all-started; Custom Neon: "During the first 12 months, we didn't need to spend a dime on advertising, instead relying on user-generated content (UGC) and word-of-mouth", https://buffer.com/resources/side-hustle-to-business/), and it produces the footage every other channel needs. The laws and 14 shot-by-shot concepts are in tiktok-laws-and-video-concepts.md.
+2. Email waitlist. Three plain emails, then quiet until there is a date (email-sms-flows.md).
+3. The first 20 buyers. They are the only source of reviews and real-wall photos for months. Custom Neon's version: "Every time we ship a sign, we include a note asking a customer to share the final result ... and tag us" (same Buffer article). A card in every box does the same.
+4. Communities: one megathread comment at Gate 1, real-photo posts only after Gate 3 (pr-and-communities.md).
+5. Creator seeding, small: three real units at Gate 2, more only if those produce video (ugc-creators.md).
+6. Paid Meta, last and small, as an amplifier of organic posts that already worked and as retargeting of people who visited the page. Not as the engine. Section 4 shows why.
+7. Press and gift guides: not this year. Nothing to photograph or send, and most 2026 guides closed in the autumn. Pitch the rolling lists once there are reviews and real photos; pitch the 2027 guides in August 2027.
 
-## 5. 30-day launch calendar (Tue 2026-11-10 to Wed 2026-12-09)
+Not now: TikTok Ads, Google Shopping, Pinterest Ads, Amazon, Etsy, Kickstarter. On Kickstarter see pr-and-communities.md section 3; the decision is Austin's and the audit asks him to look at it again, because every close comparable (Poplight, Vylumi, Art Vinyl) used it for exactly this stage.
 
-Assumes the site/ folder's page goes live 11/10 and Austin confirms the 20 buyers list. Dates for batch two ship are placeholders until Austin sets them; nothing dated goes to customers before then.
+## 7. Paid ads: off until the margin exists
 
-Week 1 (11/10 to 11/16): prove the funnel
-- Tue 11/10: page live with deposit link, free list, pixel verified (Lead + Purchase test events). Build one physical unit if not already built; shoot the three core shots (hero in a dim room, dome detail, the swap) and the 15-second switch-on clip. Post 1 organic TikTok + Reel: "We sold the first 20 in a day. Here is what it is." Email the 20 buyers (flow 3 in email-sms-flows.md) with the "tell a friend" link.
-- Wed 11/11: launch the audition ad set at $15/day with 3 creatives (render hero still, switch-on clip, swap clip). Post organic daily from here.
-- Thu 11/12: first UGC gifting wave: 10 creators, Kit only, no cash. Drafts in ugc-creators.md, Austin approves the list, we send.
-- Fri 11/13 to Sun 11/15: Reddit maker post in r/somethingimade or r/DIY style subs (rules in pr-and-communities.md); no link-drops in r/vinyl, answer questions only. Pitch the 3 to 5 gift guides still open.
-- Mon 11/16: week-one read against the pass marks (section 7). Decide: scale, hold, or fix creative.
+At today's costs there is no paid test worth running. The $129 Sconce clears $12.77 and the cheapest quartile of experienced advertisers pays $24.97 per purchase (section 4). Spending to learn that an ad loses money on a product that loses money is not a test.
 
-Week 2 (11/17 to 11/23): find the winning hook
-- Add 3 new creatives from ad-concepts.md based on week-one CTR (swap the loser). Start the $2/day retargeting ad set if 100+ page views.
-- Second UGC wave (10 creators). First creator videos land late this week; whitelist the best one as a Partnership Ad.
-- Email flow 1 (waitlist welcome) and flow 2 (deposit confirmation) live; batch-two countdown email only if Austin has set the date.
-- Organic: launch the "Change the Record" series (one record swap per day, 7 days, each a different label colour).
+Paid switches on only when all of these are true: Gate 2 is passed; a real cap quote is in the cost model; the hero SKU clears at least $45 before ads at the price on the page.
 
-Week 3 (11/24 to 11/30): holiday weekend
-- Thanksgiving 11/26, Black Friday 11/27, Cyber Monday 11/30. CPMs spike 30-60% this week (industry norm; estimate), so hold the budget flat and let organic + email carry it. No discounting. Gift-certificate angle leads every email and ad from 11/24.
-- Gift-buyer ad set added with gift creatives (concepts 7 and 8) if week-one CPD was under $45.
-- Reddit: r/vinyl and r/VinylCollectors only if a mod-approved thread or weekly self-promo thread exists (verify in pr-and-communities.md); otherwise skip.
+If and when that happens, the test is:
+- $20 a day for 21 days, $420 total, one campaign, one ad set, Advantage+ audience, US, 25 to 54. Three or four ads, all real footage. Austin sets the account spending limit to $450.
+- Read the funnel stage by stage: link click-through (under 1% after 3,000 impressions means the creative failed; the opened panels put the 10th percentile at 1.16%), page view to checkout start, checkout start to order.
+- Verdict after $420 or 12 orders, whichever comes first: cost per order at or under half the contribution, continue; up to the full contribution, keep only a $3 a day retargeting ad set aimed at people who visited the page; above it, stop.
+- $420 still leaves wide error bars. A pass is permission to spend the next $400, not proof.
 
-Week 4 (12/1 to 12/9): scale or stop
-- If cost per deposit is at or under $45 on 20+ deposits: raise the Purchase ad set to $50-75/day (scope-report.md section 5), add the Set ad set for the home-bar audience, and keep auditioning two new creatives a week.
-- If cost per deposit is $45 to $80: hold at $15 to $25/day, rebuild creative around the best hook, extend two weeks.
-- If cost per deposit is over $80 after $150 spent: stop paid, keep organic and email, and revisit price and creative before any more spend (scope-report.md kill line).
-- 12/9: 30-day report: spend, deposits, CPD, email list, creator videos, organic views, and a go/no-go on ordering parts (parts order triggers at deposit 100 per NOTES.md).
+v1's test was $15 a day with a verdict after $150. At a true cost per deposit of $45 that buys about 3 deposits; its "stop at $80" rule would fire 15% of the time on a healthy campaign and miss a $100 campaign 44% of the time (Poisson arithmetic). It could not tell good from bad, and its pass mark was eight times today's ceiling.
 
-Holiday shipping reality: batch two cannot be promised for Christmas unless parts are ordered by about 11/20 and assembly starts by 12/1 (scope-report.md: 6-8 weeks from a day-one deposit is a reasonable basis). Unless Austin orders early, every holiday message sells the certificate, not a December delivery.
+Creator budget: ugc-creators.md. A gifted unit costs about $242 at 20-unit prices and $106 at 100-unit prices, so seeding is three units, not twenty.
 
-## 6. Budget: $15/day test, then scale rules
+Total marketing cash before the first 100 units ship, with paid off: about $50 for names, $320 to $730 of gifted units, $0 to $20 a month for email. Under $800. The $420 test is extra and conditional.
 
-Test (days 1 to 14): $15/day, one Purchase-optimised ad set, 3 to 6 ads. Expected from 2026 benchmarks (scope-report.md section 5: CPM $15.06, CPC $0.57, CTR 2.39%, purchase CVR 1.53%, CPA $38.99; sources https://www.skalestrategy.com/blog/meta-ads-benchmarks-ecommerce-2026, https://topgrowthmarketing.com/dtc-ecommerce-benchmarks/meta-ads-benchmarks/): per week about 7,000 impressions, about 170 clicks, 3-4 deposits and 15-25 free signups for $105. Two weeks: 6-8 deposits, 30-50 signups, $210. This is a signal test, not a route to 100. Cross-check: other 2026 sources put home-decor CTR lower (0.9% modeled, AdRiseLab) and CVR lower (0.61%, Lebesgue), with CPA $26 to $56; see ad-concepts.md "2026 benchmark cross-check". Plan on the scope-report numbers, judge against the pass marks, and do not be surprised by 1% CTR on a cold account.
+## 8. KPIs and kill lines
 
-Learning phase: Meta wants 50 optimisation events in 7 days to exit learning (https://admakeai.com/blog/facebook-ads-learning-phase-explained). At $15/day and a $39 CPA we will never exit learning; that is accepted for the test. When scaling, the daily budget should be near 7x the observed CPD (about $270/day at a $39 CPD) or the ad set stays in learning; the compromise is $50-75/day with Purchase optimisation and accepting "learning limited".
+Gate 0 to 1 (no product): posts made (target 5 a week), waitlist signups (any), median views per post. Expectation set from our own history, not hope: the Ghost Audio TikTok account, run by the same operator, sat at 93 to 194 views per daily post and 590 followers after months (../../../memory/research/tiktok-pattern-strategy-2026-09-17.md and tiktok-audience/analytics-2026-10-12.json). A different niche, but the same starting point: a new account with no audience. v1's targets (1,000 followers per platform, 10 posts over 10k, 2 over 100k in 30 days) had no basis and are withdrawn.
 
-Scale rules (all tied to the scope-report pass marks):
-- Scale up 20-30% every 3 days (not faster, or the ad set re-enters learning) while CPD stays at or under $45 and CTR at or over 2%.
-- Cap at $75/day until deposit 50, then re-check the economics: 100 deposits at $39 CPD is about $3,900, which 100 sconces repay at $79 contribution each ($7,900) with ad cost already inside CPA (scope-report.md section 5).
-- Never run two Purchase ad sets under $50/day each; they compete in the auction.
-- Monthly cap: Austin sets it. The Ghost precedent was a $200/month lifetime cap on the ad account that must be raised monthly or it becomes a one-time budget; set this account's cap deliberately and note it in the calendar.
+30 days after Gate 1: median views per post over 500; one post over 10,000; 100 waitlist signups; saves per 1,000 views tracked on every post (in our harvest, outliers saved at 26 per 1,000 against 13 for the rest).
 
-Creator and content budget (month one): gifting 20 Kits at about $45 landed cost each is about $900 of product, no cash. Paid creator fees: $0 in month one; from month two, $150 to $600 per video for 20k to 100k follower creators (estimate, standard $10-25 per 1,000 followers range; see ugc-creators.md).
-
-Tools: Stripe (2.9% + 30c), Klaviyo free to 250 contacts then $20/month (https://www.klaviyo.com/pricing) or Mailchimp (already in use for HI), Postiz already runs for Ghost Audio scheduling.
-
-## 7. KPIs and kill lines
-
-Every line below is from scope-report.md section 5 unless marked.
-
-Week-one pass marks (read on 11/16):
-- CTR at or above 2% (link CTR).
-- Landing-page deposit conversion at or above 2% of clicks.
-- Cost per deposit at or below $45.
-- Free-list conversion at or above 15% of clicks.
-- Pixel: Purchase and Lead events firing with matching Stripe and form counts (no event, no scaling).
-
-Month-one targets (12/9):
-- 20+ deposits paid, 150+ free-list signups, 5+ creator videos delivered, 1 whitelisted Partnership Ad live, 10 organic posts over 10k views (estimate of what "working" looks like at this scale; not a scope-report number).
-- Deposit-to-purchase intent check: reply rate to the "pick your finish" email over 50% (deposit lists open at 60-80%).
+After Gate 2: deposits or pre-orders counted in Stripe, cost per deposit from section 7, in-wall kit attach rate (target 25%, estimate), refund rate on deposits.
 
 Kill lines:
-- Cost per deposit over $80 after $150 of spend: stop paid, keep the page up, fix price or creative before spending again.
-- Any ad disapproved for misleading claims: pause the campaign, fix the landing page and copy the same day (Meta reviews the landing page as well as the ad, https://transparency.meta.com/policies/ad-standards/).
-- Pixel silent for 24 hours: pause spend.
-- Refund rate on deposits over 20% before ship: stop acquisition and find out why before more spend.
-- Any cease-and-desist on a named title: pull that title within two days, no argument (scope-report.md risk 2).
+- Heat test fails (record back edge over 35 C in the 2-hour soak, the QC plan's own limit): all marketing stops until engineering fixes it. Nothing that has been posted may have promised otherwise.
+- Paid: stays off until section 7's conditions are met.
+- Any ad disapproved for a misleading claim: pause everything, fix page and copy the same day.
+- Deposit refunds over 20% before ship: stop acquisition and find out why.
+- Any rights holder asks for a title to come down: down within two business days, no argument (../ops/legal.md).
+- Ship week slips: flow 7 goes out before the promised date, in the form the rule requires.
 
-Scale triggers:
-- CPD at or under $45 on 20+ deposits: scale per section 6.
-- A single creative over 3% CTR for 3 days: make 3 variants of it.
-- Any organic post over 100k views: boost it as an ad the same day (object_story_id) and email the list with it.
+## 9. What Austin owes marketing
 
-## 8. What Austin owes marketing (decisions)
-
-1. Confirm the name Spindle (brand/naming-report.md) and buy spindlelighting.com plus the @spindlelighting handles. Everything in this folder uses Spindle.
-2. The list of the 20 buyers and what they paid; they are the first email and the first review request.
-3. Batch-two ship week (with a two-week buffer). Until set, no countdown and no dates in any email.
-4. Monthly ad cap and the card on the ad account (he does the card, I do everything else, same as Ghost).
-5. Yes/no on the Black Friday "free in-wall kit on Set deposits, first 20" offer.
-6. Approval of the first 10 creators to gift (ugc-creators.md) and a go on the Reddit maker post.
+1. The ledger of the 20: who, when, how much, what they were told. Until it exists the "first 20" line is off.
+2. Order the sample-run parts. Every later gate waits on this.
+3. A real quote for 100 chrome caps, then new prices for every SKU (section 4). At today's costs the Kit loses money at $89 and the $129 Sconce clears $12.77.
+4. Deposit, full pre-order, or both (recommendation: both, pre-order first).
+5. Register the domain and handles under a Spindle identity, and a Spindle ad account (no spend until section 7's condition is met).
+6. A valid postal address for the email footer (required by 15 USC 7704(a)(5)(A)(iii)).
+7. One hour with an IP lawyer: the "assembled in Fort Lauderdale" wording, the named-title tier, and whether a creator's video showing real labels can be run as our ad.
+8. A second look at Kickstarter for batch two (pr-and-communities.md section 3).
+9. Fifteen seconds on camera once unit one is on the wall.

@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1"><title>Sample-kit shopping list: 3 hand-built prototypes this week | Spindle</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Prototype shopping list: three 12 in Spindle sconces | Spindle</title>
 <style>
 :root{--bg:#f6f2ea;--ink:#1b1916;--mute:#6b645a;--line:#e3dccf;--accent:#b8732e;--panel:#fffdf8}
 @media (prefers-color-scheme:dark){:root{--bg:#121110;--ink:#ece6da;--mute:#a19887;--line:#2c2925;--accent:#e6a456;--panel:#1a1816}}
@@ -13,420 +13,319 @@ code{background:var(--panel);border:1px solid var(--line);border-radius:4px;padd
 pre{background:var(--panel);border:1px solid var(--line);padding:12px;overflow-x:auto;border-radius:8px}
 img{max-width:100%}
 </style></head><body><main><a class="back" href="../START-HERE.html">Back to START HERE</a>
-<h1>Sample-kit shopping list: 3 hand-built prototypes this week</h1>
-<blockquote>
-<p><strong>SUPERSEDED IN PART, 2026-11-11 (heat-safe layout, <code>../cad/FIXES-heat-layout.md</code>):</strong> the prototypes now also need, per 12 in unit, one 260 x 200 mm ring of 0.040 in aluminium, one matching ring of 1/16 in (1.6 mm) cork and four #4 x 3/8 in pan-head screws. None of these is on this list or priced. Question D.1 below ("rim-mounted outward-facing COB") is superseded: the strip is on the back of the backplate facing the wall. The backplate needs no rim rabbet.</p>
-<p><strong>SUPERSEDED IN PART, 2026-11-11:</strong> lines 8, 10 and 15 (1 in dome bolts, 1/8 in SAW1GY felt washers, panel jacks) are superseded. Current parts: RS-CAP-12 rev D (one-piece turned cap), RS-HUB-01 rev B (150 mm power pigtail, no jack), PEM FH-832-10 studs, die-cut 1/16 in felt, PET label washer, centre backing ring. See <code>BOM.md</code> and <code>../cad/FIXES-fable52.md</code>. Do not buy from this list until it is rewritten.</p>
-</blockquote>
-<p>Prepared 2026-11-10. Goal: Austin and I build three working 12" units (one chrome, one brass, one black cap) plus one 7" test, by hand, before any custom part (CNC backplate, printed hub, laser plate, turned dome) exists. Off-the-shelf stand-ins are used where the final part is custom. Nothing has been ordered; this is the list to order from. Prices as fetched 2026-11-09/10; V = confirmed on the page tonight, P = confirmed 11/9 and rate-limited tonight, S = snippet, E = estimate. Home Depot, Amazon and Harbor Freight return 403/503 to scrapers, so those prices are marked E or S and the links are for a human browser.</p>
-<h2>A. Parts (for 3 x 12" + 1 x 7")</h2>
+<h1>Prototype shopping list: three 12 in Spindle sconces</h1>
+<p>Rewritten 2026-11-11 by the product audit (<code>../audits/AUDIT-product.md</code>) for the canonical CAD. The list from 2026-11-10 (glued stainless dome, panel jack, rim strip, HitLights COB reel) is in <code>SUPERSEDED/sample-kit-shopping-list-2026-11-10.md</code> and must not be ordered from.</p>
+<p>Nothing has been ordered. Prices are what the vendor page or the guest instant quote showed on 2026-11-11 unless marked "est" (estimate) or "not checked". Three units, because the tests in <code>QC-test-plan.md</code> section 4 need three.</p>
+<h2>A. Custom parts (need a file upload or a quote)</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Part</th>
+<th>Qty</th>
+<th>Where</th>
+<th>Price seen</th>
+<th>Lead time</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A1</td>
+<td>Chrome cap RS-CAP-12 rev D</td>
+<td>3</td>
+<td>PCBWay guest pre-quote, brass C360 + chrome</td>
+<td>$155.93 each at 1, $139.91 at 5</td>
+<td>8 to 10 business days + 2 to 4 shipping</td>
+<td>THE LONG POLE and the biggest cost. Email quotes will be lower; the RFQ packet <code>../cad/rfq/dome-cap-RS-CAP-12-revD.zip</code> is ready and unsent. Cheaper for prototypes: JLCCNC polished brass, no chrome, $42.72 at 1, $180.40 for 5 (thread needs the drawing uploaded)</td>
+</tr>
+<tr>
+<td>A1b</td>
+<td>Stand-in cap so testing does not wait for A1</td>
+<td>3</td>
+<td>Outwater STD-40CAP-PC, 1-1/4 in chrome cap, 1/4-20</td>
+<td>$4.50</td>
+<td>in stock</td>
+<td>Flat, 31.75 mm, thread 3/4 in long: cut the thread to 12 mm. Good enough for the heat, mount and drop tests; not for photos</td>
+</tr>
+<tr>
+<td>A2</td>
+<td>Wall plate RS-WP-01 rev B, galvanized, bent, 3 studs pressed</td>
+<td>3 (order 10)</td>
+<td>SendCutSend</td>
+<td>$33.24 at 1, $9.22 each at 10</td>
+<td>about 8 days</td>
+<td>Upload <code>../cad/parts/RS-WP-01_flat.dxf</code> (rev B). Re-quoted 2026-11-11: accepted with the bend and three studs. The old rev A file was refused for the stud</td>
+</tr>
+<tr>
+<td>A3</td>
+<td>Aluminium ring RS-HR-12</td>
+<td>3 (order 10)</td>
+<td>SendCutSend</td>
+<td>$27.10 at 1, $13.83 each at 10</td>
+<td>about 5 days</td>
+<td><code>../cad/parts/RS-HR-12.dxf</code></td>
+</tr>
+<tr>
+<td>A4</td>
+<td>Backplate RS-BP-12-MDF rev C</td>
+<td>3</td>
+<td>Local CNC shop</td>
+<td>est $25 to $40 each for three</td>
+<td>not checked</td>
+<td>No shop has quoted the rev C file. Material: one Home Depot 1/2 in MDF panel, $14.58 (page not checked 11-11)</td>
+</tr>
+<tr>
+<td>A5</td>
+<td>Hub RS-HUB-01 rev C</td>
+<td>3</td>
+<td>Own printer or a print service</td>
+<td>est $6 each in filament; service est $25 to $40 each</td>
+<td>overnight, or 5 to 10 days</td>
+<td>Print the rev C file. A rev B hub cannot be twisted onto the plate</td>
+</tr>
+</tbody>
+</table>
+<h2>B. Stock parts</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Part</th>
+<th>Qty</th>
+<th>Where</th>
+<th>Price seen</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>B1</td>
+<td>E-Z Lok 400-4 insert</td>
+<td>5</td>
+<td>Albany County Fasteners</td>
+<td>$1.90 each</td>
+<td>Drive tool on the same page, $17.63</td>
+</tr>
+<tr>
+<td>B2</td>
+<td>LED strip, 12 V, 8 mm, 1.46 W/ft, ETL</td>
+<td>1 x 3 m</td>
+<td>Ecolocity Ribbon Star low-power 2835</td>
+<td>$44.99</td>
+<td>Enough for 4 rings. The page says 2900 to 3200K. Do NOT buy the HitLights COB reel (10 W per metre)</td>
+</tr>
+<tr>
+<td>B2b</td>
+<td>Second strip to compare</td>
+<td>1 x 5 m</td>
+<td>Armacost 131232, UL, 2700K</td>
+<td>$29.99</td>
+<td>Wattage is not on its page: measure it. Buy only if both are wanted on the bench</td>
+</tr>
+<tr>
+<td>B3</td>
+<td>Adapter, UL Class 2, 12 V 2 A</td>
+<td>3</td>
+<td>LED Updates</td>
+<td>$12.99 each</td>
+<td></td>
+</tr>
+<tr>
+<td>B4</td>
+<td>Inline dimmer</td>
+<td>3</td>
+<td>Ecolocity LC-OL-8DIM</td>
+<td>$3.99 each (sale; 7 in stock)</td>
+<td></td>
+</tr>
+<tr>
+<td>B5</td>
+<td>Pigtail with inline female 5.5 x 2.1 jack</td>
+<td>3</td>
+<td>cctvcameraworld</td>
+<td>$4.00 each</td>
+<td>Check the wire gauge on arrival (18 AWG wanted)</td>
+</tr>
+<tr>
+<td>B6</td>
+<td>Felt pads 1/2 in, bag of 100</td>
+<td>1</td>
+<td>Durofelt SAW12BK-100</td>
+<td>$7.00</td>
+<td></td>
+</tr>
+<tr>
+<td>B7</td>
+<td>Adhesive felt sheet, 1/16 in, for the cap felt and centre ring</td>
+<td>1</td>
+<td>not checked</td>
+<td>est $8</td>
+<td>Punch by hand for prototypes: 1-1/4 in and 3/8 in hollow punches, est $20</td>
+</tr>
+<tr>
+<td>B8</td>
+<td>Clear matte PET film 0.010 in, one sheet</td>
+<td>1</td>
+<td>not checked</td>
+<td>est $8</td>
+<td>Cut three 37.5 x 7.5 mm washers</td>
+</tr>
+<tr>
+<td>B9</td>
+<td>Cork roll 1/16 in x 12 in x 30 ft</td>
+<td>1</td>
+<td>WidgetCo</td>
+<td>$66.00</td>
+<td>35 rings. Smaller: The Cork Store CR117 sheets, 15 for $90</td>
+</tr>
+<tr>
+<td>B10</td>
+<td>#4 x 3/8 pan-head sheet-metal screws, box of 100</td>
+<td>1</td>
+<td>Tanner Bolt</td>
+<td>$2.90</td>
+<td>Ring screws and P-clip screw</td>
+</tr>
+<tr>
+<td>B11</td>
+<td>#8 x 1 in flat-head wood screws; #8 x 1-1/4 pan-head; 8-32 nylon lock nuts; 1/4 in nylon P-clips</td>
+<td>1 box each</td>
+<td>hardware store</td>
+<td>est $20</td>
+<td></td>
+</tr>
+<tr>
+<td>B12</td>
+<td>Unflanged drywall anchors, Toggler Alligator</td>
+<td>1 box</td>
+<td>toggler.com dealer</td>
+<td>not checked, est $12</td>
+<td>Use the anchor the kit will ship with</td>
+</tr>
+<tr>
+<td>B13</td>
+<td>M3 heat-set inserts, 50</td>
+<td>1</td>
+<td>Adafruit 4255</td>
+<td>$5.95</td>
+<td></td>
+</tr>
+<tr>
+<td>B14</td>
+<td>M3 x 12 flat-point set screws; 1.5 mm x 100 mm straight hex driver</td>
+<td>10; 3</td>
+<td>not checked</td>
+<td>est $15</td>
+<td></td>
+</tr>
+<tr>
+<td>B15</td>
+<td>22 AWG and 18 AWG red/black wire, heat-shrink assortment</td>
+<td>1</td>
+<td>hardware store</td>
+<td>est $15</td>
+<td></td>
+</tr>
+<tr>
+<td>B16</td>
+<td>Box 13 x 13 x 3, bundle of 25</td>
+<td>1</td>
+<td>Uline S-19090</td>
+<td>$1.62 each</td>
+<td>Single wall, 200 lb. Foam est $20</td>
+</tr>
+<tr>
+<td>B17</td>
+<td>Test records: two 180 g, two thin (about 120 g), two paper-label throwaways</td>
+<td>6</td>
+<td>thrift</td>
+<td>est $12</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2>C. Test equipment (once)</h2>
 <table>
 <thead>
 <tr>
 <th>#</th>
 <th>Item</th>
-<th>Where</th>
-<th>Link</th>
-<th>Qty</th>
 <th>Price</th>
-<th>Status</th>
+<th>For</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1</td>
-<td>Records: 3 x 12" LPs with plain labels (no recognisable artist, for photos), 2 x 7" singles</td>
-<td>Goodwill / Salvation Army, Broward; or Radio-Active Records, Fort Lauderdale</td>
-<td>local</td>
-<td>5</td>
-<td>$12</td>
-<td>E</td>
+<td>C1</td>
+<td>4-channel thermocouple logger with type K probes (two, or one 8 to 12 channel logger)</td>
+<td>est $60 to $180</td>
+<td>Heat soak T1 needs 10 channels</td>
 </tr>
 <tr>
-<td>2</td>
-<td>Backplate stock: ProWood 1/2" x 2' x 4' MDF project panel (makes 8 x 10.5" discs + the 6" and 5" hub discs)</td>
-<td>Home Depot</td>
-<td>https://www.homedepot.com/p/ProWood-1-2-in-x-2-ft-x-4-ft-Medium-Density-Fiberboard-Project-Panel-109097/202093821</td>
-<td>1</td>
-<td>$14.58</td>
-<td>P (HD 403)</td>
+<td>C2</td>
+<td>Fine-wire type K thermocouples, 10</td>
+<td>est $25</td>
+<td>T1</td>
 </tr>
 <tr>
-<td>3</td>
-<td>Hub stand-in: two 5" MDF discs glued = 1" thick hub, cut from the same panel. If a 3D printer is available, print the hub from <code>render/sconce_v2.py</code> geometry instead.</td>
-<td>same panel</td>
-<td></td>
-<td>0</td>
-<td>$0</td>
-<td></td>
+<td>C3</td>
+<td>Polyimide tape, thermal paste</td>
+<td>est $12</td>
+<td>T1</td>
 </tr>
 <tr>
-<td>4</td>
-<td>Threaded inserts: E-Z Lok 400-4, 1/4-20, pack of 10</td>
-<td>Albany County Fasteners</td>
-<td>https://www.albanycountyfasteners.com/1-4-20-brass-thread-inserts-wood-400-4-p/117012.htm</td>
-<td>1 pk</td>
-<td>$17.63</td>
-<td>V</td>
+<td>C4</td>
+<td>Bench supply 0 to 30 V with current display</td>
+<td>est $50</td>
+<td>Strip current, 24 V fault test</td>
 </tr>
 <tr>
-<td>5</td>
-<td>Cap stand-in A (brass): Rockler decorative solid brass knurled knob 1/4-20 x 1", 4-pack</td>
-<td>Rockler</td>
-<td>https://www.rockler.com/decorative-solid-brass-knurled-knob-1-4-x-20-x-1-4-per-pack</td>
-<td>1 pk</td>
-<td>$7.99</td>
-<td>V</td>
+<td>C5</td>
+<td>Luggage scale, steel straightedge 300 mm, feeler gauges</td>
+<td>est $30</td>
+<td>T2, flatness</td>
 </tr>
 <tr>
-<td>6</td>
-<td>Cap stand-in B (chrome hero): uxcell 38 mm mirror-polished 304 stainless hemisphere, 4-pack</td>
-<td>Walmart</td>
-<td>https://www.walmart.com/ip/Uxcell-4-Pack-Hollow-Half-Ball-38mm-1-5-OD-Stainless-Steel-Mirror-Polished-Hemisphere-Hollow-Half-Railing-Ball-Cap-Gazing-Balls-Garden-Gate-Stair-Han/20104314020</td>
-<td>1 pk</td>
-<td>$13.89</td>
-<td>V (dome-cap agent)</td>
-</tr>
-<tr>
-<td>7</td>
-<td>Cap stand-in C (black and flat fallback): Outwater "Cap It Off" 1-1/4" cap, 1/4-20 stud, black nickel; also one in polished chrome to compare against the dome</td>
-<td>Outwater</td>
-<td>https://www.outwater.com/STD-CAP-PARENT?finish=2577&amp;diameter=7&amp;cap-type=10</td>
-<td>2</td>
-<td>$9</td>
-<td>V ($1.61 to $4.50 each)</td>
-</tr>
-<tr>
-<td>8</td>
-<td>Dome bolts: 1/4-20 x 1" hex bolts (4) + 1-1/2" OD fender washers (4), zinc</td>
-<td>Home Depot aisle</td>
-<td></td>
-<td>1</td>
-<td>$4</td>
-<td>E</td>
-</tr>
-<tr>
-<td>9</td>
-<td>Epoxy for the dome fill: JB Weld original 2 oz</td>
-<td>Home Depot</td>
-<td></td>
-<td>1</td>
-<td>$7</td>
-<td>E</td>
-</tr>
-<tr>
-<td>10</td>
-<td>Felt washers 1" OD x 3/8" ID x 1/8", Durofelt SAW1GY-50 (50)</td>
-<td>Durofelt</td>
-<td>https://www.durofelt.com/categories/self-adhesive-felt-washers</td>
-<td>1 pk</td>
-<td>$8.00</td>
-<td>V</td>
-</tr>
-<tr>
-<td>11</td>
-<td>Felt pads 1/2" OD x 1/16", Durofelt SAW12BK-100 (100)</td>
-<td>Durofelt</td>
-<td>same page</td>
-<td>1 pk</td>
-<td>$7.00</td>
-<td>V</td>
-</tr>
-<tr>
-<td>12</td>
-<td>COB LED strip 12 V 2700K CRI 90+ UL, 16.4 ft reel (enough for 5 units)</td>
-<td>Amazon, HitLights or BTF-Lighting</td>
-<td>https://www.amazon.com/cob-led-strip-light-2700k/s?k=cob+led+strip+light+2700k</td>
-<td>1</td>
-<td>$25</td>
-<td>E (Amazon 503)</td>
-</tr>
-<tr>
-<td>12b</td>
-<td>Dotted fallback with a verified price and ETL file: Ecolocity Ribbon Star 2835 warm white, 3 m</td>
-<td>Ecolocity</td>
-<td>https://www.ecolocityled.com/product/low-power-2835-warm-strip</td>
-<td>1</td>
-<td>$44.99</td>
-<td>V (buy only if 12 is out of stock)</td>
-</tr>
-<tr>
-<td>13</td>
-<td>Power adapters: UL 12 V 2 A 24 W with on/off, 5.5 x 2.1</td>
-<td>LED Updates</td>
-<td>https://ledupdates.com/products/ul-listed-12v-2a-24w-power-supply-driver-with-on-off-switch</td>
-<td>4</td>
-<td>$47.96</td>
-<td>P ($11.99 each)</td>
-</tr>
-<tr>
-<td>14</td>
-<td>Inline PWM dimmers 12 to 24 V 2 A, Ecolocity LC-OL-8DIM</td>
-<td>Ecolocity</td>
-<td>https://www.ecolocityled.com/product/led_pwm_dimmer_inline_12V</td>
-<td>4</td>
-<td>$15.96</td>
-<td>V ($3.99 sale, 10 in stock)</td>
-</tr>
-<tr>
-<td>15</td>
-<td>DC panel jacks 5.5 x 2.1, Adafruit 610</td>
-<td>Adafruit</td>
-<td>https://www.adafruit.com/product/610</td>
-<td>4</td>
-<td>$11.80</td>
-<td>V</td>
-</tr>
-<tr>
-<td>16</td>
-<td>Mount stand-in for the 12" (the twist-lock plate is custom): Westinghouse 7011100 crossbar (bolts to a box or two anchors, gives us the "plate on wall, hub on plate" test)</td>
-<td>Light Bulb Surplus</td>
-<td>https://lightbulbsurplus.com/westinghouse-7011100/</td>
-<td>3</td>
-<td>$11.19</td>
-<td>V (inwall-parts)</td>
-</tr>
-<tr>
-<td>17</td>
-<td>Keyhole plates for the 7" and as the bump-test baseline: Hardwick heavy gauge</td>
-<td>Hardwick &amp; Sons</td>
-<td>https://hardwickandsons.com/products/steel-keyhole-hanger-plate</td>
-<td>10</td>
-<td>$4.50</td>
-<td>P ($0.45 each)</td>
-</tr>
-<tr>
-<td>18</td>
-<td>45 rpm adapters, handful</td>
-<td>the record shop in item 1</td>
-<td></td>
-<td>4</td>
-<td>$4</td>
-<td>E</td>
-</tr>
-<tr>
-<td>19</td>
-<td>Wall screws #8 x 1-1/4" + drywall anchors, small pack</td>
-<td>Home Depot</td>
-<td></td>
-<td>1</td>
-<td>$5</td>
-<td>E</td>
-</tr>
-<tr>
-<td>20</td>
-<td>Clear silicone bumpers, 100</td>
-<td>eBay</td>
-<td>https://www.ebay.com/itm/128096161974</td>
-<td>1</td>
-<td>$6.51</td>
-<td>P</td>
-</tr>
-<tr>
-<td>21</td>
-<td>18 AWG red/black zip wire 10 ft + 3/16" heat shrink assortment</td>
-<td>Home Depot / Amazon</td>
-<td></td>
-<td>1</td>
-<td>$12</td>
-<td>E</td>
-</tr>
-<tr>
-<td>22</td>
-<td>Rust-Oleum matte black spray, 2 cans</td>
-<td>Home Depot</td>
-<td></td>
-<td>2</td>
-<td>$16</td>
-<td>E</td>
-</tr>
-<tr>
-<td>23</td>
-<td>Thin CA glue (for the inserts in MDF) + wood glue</td>
-<td>Home Depot</td>
-<td></td>
-<td>1</td>
-<td>$10</td>
-<td>E</td>
-</tr>
-<tr>
-<td>24</td>
-<td>In-wall test: Arlington LV1 bracket</td>
-<td>AV Outlet</td>
-<td>https://www.avoutlet.com/cable-management/boxes-brackets-wall-plates/lv-brackets/arlington-lv1/</td>
-<td>1</td>
-<td>$1.80</td>
-<td>V</td>
-</tr>
-<tr>
-<td>25</td>
-<td>In-wall test: Datacomm 45-0001-WH recessed plate</td>
-<td>Zack Electronics</td>
-<td>https://www.zackelectronics.com/datacomm-45-0001-wh-1-gang-recessed-low-voltage-cable-plate-white.html</td>
-<td>1</td>
-<td>$3.45</td>
-<td>V</td>
-</tr>
-<tr>
-<td>26</td>
-<td>In-wall test: CL2 18/2 cable 50 ft</td>
-<td>Monoprice p_id 4044</td>
-<td>https://www.monoprice.com/product?p_id=4044</td>
-<td>1</td>
-<td>$18.54</td>
-<td>S (Cloudflare)</td>
-</tr>
-<tr>
-<td>27</td>
-<td>In-wall test: screw-terminal barrel plug pairs, 10</td>
-<td>Amazon</td>
-<td>https://www.amazon.com/dp/B07D67B3HM</td>
-<td>1</td>
-<td>$13.50</td>
-<td>S</td>
-</tr>
-<tr>
-<td>28</td>
-<td>Shipping test: 13 x 13 x 3 boxes (Uline sells in 25s; for 3 prototypes a 5-pack of 13x13x3 or 14x14x4 from Amazon/Office Depot is fine) + foam corners</td>
-<td>Uline or Amazon</td>
-<td>https://www.uline.com (13x13x3 200# box)</td>
-<td>5</td>
-<td>$25</td>
-<td>E</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>Parts subtotal</strong></td>
-<td></td>
-<td></td>
-<td></td>
-<td><strong>about $400</strong></td>
-<td></td>
+<td>C6</td>
+<td>24 V 1 A adapter with a 5.5 x 2.1 plug</td>
+<td>est $10</td>
+<td>T1 run C</td>
 </tr>
 </tbody>
 </table>
-<p>Ordering notes: Albany, Durofelt, Ecolocity, Adafruit, Outwater, AV Outlet and Zack are small web shops with 1 to 2 day ship, so order those Monday and they land midweek. Walmart and Home Depot are same-day pickup. Monoprice is 2 to 4 days. If Austin wants a 10.5" backplate without routing, a 12" Baltic birch circle ($20.30 single at Woodpeckers, https://woodpeckerscrafts.com/products/12-circle-wooden-cutout-1-2-thick, P) works for a lighting test but will show at the edge of the record; the MDF cut to 10.5" is the honest prototype.</p>
-<h2>B. Tools Austin probably needs to buy</h2>
-<p>Checked against what a house without a workshop has. Skip anything he owns. Harbor Freight and Amazon block scrapers so these are estimates for a human browser.</p>
+<h2>Totals (three prototypes)</h2>
 <table>
 <thead>
 <tr>
-<th>#</th>
-<th>Tool</th>
-<th>Why</th>
-<th>Where</th>
-<th>Est.</th>
+<th>Path</th>
+<th>Custom parts</th>
+<th>Stock parts</th>
+<th>Test gear</th>
+<th>Total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1</td>
-<td>Infrared thermometer with adjustable emissivity (set 0.95 for vinyl), -58 to 1,000 F class. Harbor Freight 62660 or Klein IR1</td>
-<td>The 2-hour heat soak in QC-test-plan.md</td>
-<td>Harbor Freight https://www.harborfreight.com (search "infrared thermometer") or Home Depot (Klein IR1)</td>
-<td>$25 to $35</td>
+<td>With three real chrome caps (A1 at about $140 to $156 each)</td>
+<td>about $760 to $810</td>
+<td>about $370</td>
+<td>about $190 to $310</td>
+<td><strong>about $1,320 to $1,490</strong></td>
 </tr>
 <tr>
-<td>2</td>
-<td>60 W temperature-controlled soldering iron + solder (63/37 rosin core) + brass tip cleaner</td>
-<td>COB strip to jack</td>
-<td>Amazon / Harbor Freight</td>
-<td>$30 to $40</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Wire stripper, 22 to 10 AWG, and flush cutters</td>
-<td></td>
-<td>Home Depot (Klein)</td>
-<td>$20</td>
-</tr>
-<tr>
-<td>4</td>
-<td>Heat gun (or a $10 mini) for heat shrink</td>
-<td></td>
-<td>Harbor Freight</td>
-<td>$15 to $25</td>
-</tr>
-<tr>
-<td>5</td>
-<td>Hot glue gun + sticks</td>
-<td>Strain relief on the solder joint</td>
-<td>Home Depot</td>
-<td>$12</td>
-</tr>
-<tr>
-<td>6</td>
-<td>Router with a circle-cutting jig (or jigsaw + sanding) for the 10.5" and 6" discs; a 1/4" straight bit</td>
-<td>Backplates without a CNC shop</td>
-<td>Harbor Freight trim router $40 to $60 + jig $20</td>
-<td>$60 to $80</td>
-</tr>
-<tr>
-<td>7</td>
-<td>Drill bits: 25/64" (E-Z Lok 400-4 spec), 8 mm (jack), 1" hole saw (wall), 5/16" and 7/32"</td>
-<td></td>
-<td>Home Depot</td>
-<td>$30</td>
-</tr>
-<tr>
-<td>8</td>
-<td>E-Z Lok 500-4 hex drive tool for the 400-4 insert, or a 1/4-20 bolt with two jam nuts (free)</td>
-<td>Driving inserts straight</td>
-<td>Albany County Fasteners</td>
-<td>$0 to $10</td>
-</tr>
-<tr>
-<td>9</td>
-<td>Digital calipers</td>
-<td>Checking the 7.26 mm spindle hole, cap fit, rabbet depth</td>
-<td>Harbor Freight</td>
-<td>$15 to $25</td>
-</tr>
-<tr>
-<td>10</td>
-<td>Multimeter</td>
-<td>Polarity check before plugging anything in (assembly-SOP.md step 8)</td>
-<td>Harbor Freight</td>
-<td>$15 to $25</td>
-</tr>
-<tr>
-<td>11</td>
-<td>Stud finder + 24" level</td>
-<td>Wall mount and pull test</td>
-<td>Home Depot</td>
-<td>$30</td>
-</tr>
-<tr>
-<td>12</td>
-<td>Kitchen/postal scale to 10 lb</td>
-<td>Shipping weight for the cost model</td>
-<td>Amazon</td>
-<td>$15</td>
-</tr>
-<tr>
-<td>13</td>
-<td>Spring clamps x4, 120/220 sandpaper, painter's pyramids</td>
-<td>Gluing hubs flat, painting</td>
-<td>Home Depot</td>
-<td>$20</td>
-</tr>
-<tr>
-<td></td>
-<td><strong>Tools subtotal</strong></td>
-<td></td>
-<td></td>
-<td><strong>$300 to $360</strong></td>
+<td>With stand-in caps first (A1b), real caps ordered after a proper quote</td>
+<td>about $350</td>
+<td>about $370</td>
+<td>about $190 to $310</td>
+<td><strong>about $910 to $1,030</strong></td>
 </tr>
 </tbody>
 </table>
-<h2>C. Total this week</h2>
-<p>Parts about $400 plus tools $300 to $360 = about $700 to $760 if he owns nothing on list B. If he has a drill, a jigsaw, a level and a soldering iron already, closer to $500.</p>
-<h2>D. What the prototypes answer</h2>
+<p>About half the entries carry an estimate. The quoted ones are A1, A1b, A2, A3, B1 to B6, B9, B10, B13, B16.</p>
+<h2>Order of work</h2>
 <ol>
-<li>Does the 1" wall gap + rim-mounted outward-facing COB give the halo in refs/austin-reference-1.jpg on a cream wall and on a dark wall. Photos become the first ad creatives.</li>
-<li>Does the 38 mm chrome dome read as jewellery on a 4" label or bury it (design-report.md asked for 1.25" vs 1.5" on the label; the dome is 1.5").</li>
-<li>Heat: record face under 35 C after 2 hours (QC-test-plan.md).</li>
-<li>Does the bonded dome survive 50 on/off cycles of the thumbscrew without the bolt spinning in the epoxy.</li>
-<li>Is the in-wall path (1" hole, LV1 bracket, Datacomm plate, barrel pair) a 45-minute homeowner job as mounting-report.md claims.</li>
-<li>Real box weight for the shipping lines in cost-model.md (model assumes 3 to 4 lb).</li>
+<li>Today: upload the rev B plate and the ring to SendCutSend; order B1 to B6, B9, B10, B13; send the hub to the printer; take the backplate file to a CNC shop.</li>
+<li>Today: decide the cap route. Stand-in caps let every test in the QC plan start in about 8 days. Waiting for chrome caps means about 3 weeks before the first test.</li>
+<li>When parts land: build one unit by <code>assembly-SOP.md</code>, run test T1 run A the same day.</li>
 </ol></main></body></html>

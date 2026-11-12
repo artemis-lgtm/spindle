@@ -52,6 +52,16 @@ HEAT_RING_T = 1.0            # 5052-H32, 0.040 in, laser cut, flat
 CORK_RING_T = 1.6            # 1/16 in cork sheet. Was 2.0 until the live quotes of 2026-11-11: 2 mm sheet is not a stocked size,
                              # 1/16 in is (sourcing/quotes-2026-11-11). Heat cost of the thinner cork: 0.1 K, see THERMAL.md.
 HALO_STRIP_R = 115.0         # centreline of the 8 mm strip on the aluminium's wall-facing face: R 111 to 119
+# AUDIT 2026-11-11: a flat LED strip does NOT bend sideways (in its own plane) to R 115; engineering-report.md said so on
+# 11/9 and cad/README.md says so for the aluminium variants. The solid below is still drawn as a circle (it is what the heat
+# model uses), but the strip that can actually be BUILT on this ring is one of:
+#   (a) seven straight 100 mm pieces of ordinary strip laid as a heptagon and joined with jumpers (numbers below, gated), or
+#   (b) one piece of "S-shape" / zigzag strip, which is made to bend sideways (6 mm wide; no listed 4 W class part picked yet).
+# Decision needed from Austin; see audits/AUDIT-product.md. The heptagon fits the ring and the four screws as they are.
+HALO_POLY_N = 7              # straight pieces
+HALO_POLY_SEG_L = 100.0      # each piece: two 50 mm cut units of a 12 V 60-LED/m strip (700 mm total, about 3.4 W at 1.46 W/ft)
+HALO_POLY_APOTHEM = 114.0    # centre line of each piece, at its middle, from the sconce centre
+HALO_POLY_VERTEX_DEG = 270.0 # one corner (and the power leads) at 6 o'clock
 # Fastening: the cork is laid on the aluminium on the bench (stuck to it if the cork has an adhesive face), then 4 screws
 # clamp the pair to the MDF. No adhesive is asked to hold on painted MDF, and the ring can come off for service. Same #4 x 3/8 screw as the P-clip.
 HALO_SCREW_R = 105.5         # bolt circle, in the 11 mm band between the ring ID (R 100) and the strip (R 111)
@@ -138,7 +148,8 @@ CORD_CHAN_W = 9.5            # surface-cord channel, rear face, 6 o'clock
 CORD_CHAN_D = 12.0
 TAB_ANGLE = 250.0            # set-screw tab, about 6:40 (clears the 6 o'clock cord channel)
 TAB_POCKET_R0, TAB_POCKET_R1 = 49.0, 55.6
-TAB_POCKET_W = 10.0
+TAB_POCKET_W = 10.0          # tangential clearance pocket for the 8 mm tab at the LOCKED position
+TAB_POCKET_SWEEP_EXTRA = 1.5 # deg of pocket beyond the tab edge at each end of the twist (rev C)
 TAB_POCKET_DEPTH = 13.5
 SET_SCREW_Z = 9.5
 SET_SCREW_HOLE_D = 3.2       # M3 clearance through the rim
@@ -151,14 +162,20 @@ PLATE_T = 0.0747 * IN        # 1.90 (14 ga steel)
 PLATE_HOLE_D = 30.0          # cable / plug pass-through slot width (plug body 10 dia at y=+15)
 PLATE_HOLE_Y0, PLATE_HOLE_Y1 = -15.0, 22.0   # slot end-centres... overall y extent -15..+22 -> see wall_plate()
 SLOT_W = 4.8                 # #8 / 6-32 screws
-SLOT_HALF_DEG = 10.0         # +/- rotation for levelling
+SLOT_HALF_DEG = 10.0         # +/- rotation for levelling (round-box pair at 0/180)
+SLOT_HALF_DEG_GANG = 8.0     # rev B (audit 2026-11-11): the single-gang pair at 90/270 was +/-10. Its end at 80 deg put the slot
+                             # edge 6.83 mm from the centre of the 75 deg PEM stud hole; PEM FH-832 needs 7.14 (0.281 in) from hole
+                             # centre to the nearest edge, and SendCutSend's guest quote refused the stud for exactly that
+                             # ("Hole Collision"). +/-8 gives 7.35. The plate still levels +/-8 deg on a gang box.
+PEM_MIN_CL_TO_EDGE = 0.281 * IN   # 7.14: PEM bulletin FH, FH-832, minimum hole centreline to edge
 SLOT_R_GANG = 83.3 / 2       # single-gang / LV bracket 83.3 mm (mounting-report)
 SLOT_R_ROUND = 88.9 / 2      # round / octagon box 88.9 mm (mounting-report)
 SLOT_ANGLES_GANG = (90, 270)
 SLOT_ANGLES_ROUND = (0, 180)
 STUD_R = 33.0
 STUD_ANGLES = (75, 195, 315)
-STUD_HOLE_D = 4.22           # PEM FH-832 clinch hole (verify on PEM bulletin FH)
+STUD_HOLE_D = 4.17           # PEM FH-832 clinch hole: 0.163 in +0.003/-0.000 = 4.14 to 4.22 (PEM catalog, read 2026-11-11).
+                             # Was 4.22, the top limit: any laser kerf growth made a loose stud. 4.17 sits mid-band.
 STUD_D = 0.164 * IN          # 4.17  8-32 major dia
 STUD_L = 0.625 * IN          # 15.9  FH-832-10
 NUT_AF = 11.0 / 32.0 * IN    # 8.73  8-32 nylon-insert lock nut across flats
@@ -427,6 +444,10 @@ def hub():
         h = h.cut(arc_slot(STUD_R, a, ae, NUT_POCKET_W, zweb1, NUT_POCKET_TOP))         # nut pocket
     # set-screw tab pocket and the M3 hole through the rim
     h = h.cut(radial_box(TAB_POCKET_W, TAB_POCKET_R0, TAB_POCKET_R1, -1, TAB_POCKET_DEPTH, TAB_ANGLE))
+    # rev C (audit 2026-11-11): the pocket above only cleared the tab in the LOCKED position. The plate's bent tab stands
+    # 12 mm tall at R 52.7 to 54.6 and the hub has to be hung 20 deg off and twisted home, so the tab swept through solid
+    # hub (114 mm3 of overlap at every step of the twist, measured). The pocket is now an arc that covers the whole twist.
+    h = h.cut(tab_sweep_pocket())
     hole = (cq.Workplane("XY").circle(SET_SCREW_HOLE_D / 2).extrude(R + 2 - TAB_POCKET_R1 + 1)
             .translate((0, 0, TAB_POCKET_R1 - 1)))
     ins = (cq.Workplane("XY").circle(SET_INSERT_D / 2).extrude(SET_INSERT_DEPTH + 2)
@@ -443,6 +464,34 @@ def hub():
     return h
 
 
+def tab_sweep_angles():
+    """Hub-frame angles the plate tab occupies from the hang position to the locked position, with clearance.
+    Locked: the tab is at TAB_ANGLE. Hung (before the twist): the hub sits LOCK_ARC_DEG the other way, so in the hub's
+    frame the tab is at TAB_ANGLE + LOCK_ENTRY_SIGN * LOCK_ARC_DEG."""
+    half_tab = math.degrees((TAB_W / 2) / (PLATE_D / 2 + BEND_RI)) + TAB_POCKET_SWEEP_EXTRA
+    a_hang = TAB_ANGLE + LOCK_ENTRY_SIGN * LOCK_ARC_DEG
+    return min(TAB_ANGLE, a_hang) - half_tab, max(TAB_ANGLE, a_hang) + half_tab
+
+
+def tab_sweep_pocket():
+    a0, a1 = tab_sweep_angles()
+    seg = (cq.Workplane("XY").circle(TAB_POCKET_R1).circle(TAB_POCKET_R0).extrude(TAB_POCKET_DEPTH + 1).translate((0, 0, -1)))
+    wedge = (cq.Workplane("XY").polyline([(0, 0)] + [pol(TAB_POCKET_R1 + 5, a0 + (a1 - a0) * i / 12) for i in range(13)]).close()
+             .extrude(TAB_POCKET_DEPTH + 3).translate((0, 0, -2)))
+    return seg.intersect(wedge)
+
+
+def hub_rev_b_pocket_only():
+    """NEGATIVE CONTROL for the gate: the rev B hub (tab pocket at the locked position only)."""
+    global tab_sweep_pocket
+    keep = tab_sweep_pocket
+    tab_sweep_pocket = lambda: cyl(0.01, 0.01, 0, 0, -50)      # cut nothing
+    try:
+        return hub()
+    finally:
+        tab_sweep_pocket = keep
+
+
 # ================================================================ STEEL WALL PLATE (formed)
 def bend_allowance(angle_deg=90.0, ri=BEND_RI, t=PLATE_T, k=K_FACTOR):
     return math.radians(angle_deg) * (ri + k * t)
@@ -456,7 +505,7 @@ def wall_plate():
     p = p.cut(cq.Workplane("XY").center(0, yc).slot2D(PLATE_HOLE_Y1 - PLATE_HOLE_Y0, PLATE_HOLE_D, 90)
               .extrude(t + 2).translate((0, 0, -1)))
     for a in SLOT_ANGLES_GANG:
-        p = p.cut(arc_slot(SLOT_R_GANG, a - SLOT_HALF_DEG, a + SLOT_HALF_DEG, SLOT_W, -1, t + 1))
+        p = p.cut(arc_slot(SLOT_R_GANG, a - SLOT_HALF_DEG_GANG, a + SLOT_HALF_DEG_GANG, SLOT_W, -1, t + 1))
     for a in SLOT_ANGLES_ROUND:
         p = p.cut(arc_slot(SLOT_R_ROUND, a - SLOT_HALF_DEG, a + SLOT_HALF_DEG, SLOT_W, -1, t + 1))
     for a in STUD_ANGLES:

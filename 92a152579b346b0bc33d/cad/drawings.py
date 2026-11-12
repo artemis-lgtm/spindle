@@ -436,7 +436,7 @@ def draw_hub(out_base):
                  f"Rear cord channel {S.CORD_CHAN_W} x {S.CORD_CHAN_D} deep, 6 o'clock, pocket to rim: the pigtail leaves here for a surface cord, or turns back through the plate slot for in-wall. Front lead channel {S.FRONT_CHAN_W} x {S.FRONT_CHAN_D} deep, 6 o'clock, rim to cavity.",
                  f"Front centre relief D {S.CAP_RELIEF_D} x {S.CAP_RELIEF_DEPTH} +/-0.2 deep (rev A 4.5), floor flat: seat of the label-light contact module. Mark '12 V DC ONLY' beside the cord channel (label or deboss 0.4).",
                  f"M3 heat-set insert (D {S.SET_INSERT_D} x {S.SET_INSERT_DEPTH} pilot) in the rim at {S.TAB_ANGLE:.0f} deg, z={S.SET_SCREW_Z}; M3x12 set screw lands in the plate tab. 3x D {S.HUB_SCREW_PILOT_D} x {S.HUB_SCREW_PILOT_DEPTH} pilots on R {S.HUB_SCREW_R} (front) for #8 x 1 in screws."],
-                "SCALE: as shown", rev="B", supersedes="rev A")
+                "SCALE: as shown", rev="C", supersedes="rev A, rev B (rev B could not be twisted onto the plate: tab pocket too short)")
     rear = plan_polylines(h, ("x", "y"), zmax=S.NUT_POCKET_TOP)
     ax = view(fig, [0.03, 0.22, 0.47, 0.74], [(rear, "k", 0.6, "-")], title="PLAN (features up to z=19, +X to the right = room-side orientation). +Y = 12 o'clock")
     dim_h(ax, -R, R, -R - 10, f"D {mm_in(S.HUB_D)}", off=1.0, ext_from=-R)
@@ -448,7 +448,7 @@ def draw_hub(out_base):
     leader(ax, S.CLIP_POS, (-R * 0.95, R * 0.55), f"P-clip pilot D {S.CLIP_PILOT_D} x {S.CLIP_PILOT_DEPTH}\n@ ({S.CLIP_POS[0]}, {S.CLIP_POS[1]})")
     leader(ax, (0, -R + 5), (R * 0.2, -R * 0.95), f"cord channel {S.CORD_CHAN_W} wide")
     tx, ty = S.pol(S.TAB_POCKET_R1 - 2, S.TAB_ANGLE)
-    leader(ax, (tx, ty), (-R * 0.95, -R * 0.75), f"set-screw tab pocket @ {S.TAB_ANGLE:.0f} deg")
+    leader(ax, (tx, ty), (-R * 0.95, -R * 0.75), f"set-screw tab pocket: arc {S.tab_sweep_angles()[0]:.0f} to {S.tab_sweep_angles()[1]:.0f} deg\n(REV C: covers the whole 20 deg twist;\nset screw at {S.TAB_ANGLE:.0f} deg)")
     secx = section_polylines(h.val(), "YZ", 0.0)
     ax2 = view(fig, [0.52, 0.56, 0.46, 0.38], [(secx, "k", 0.9, "-")], title="SECTION B-B (x=0): cable pocket, web, channels, splice cavity, centre relief")
     dim_v(ax2, 0, S.HUB_T, R + 4, mm_in(S.HUB_T), off=1.5)
@@ -471,21 +471,21 @@ def draw_wall_plate(out_base):
     g = S.wall_plate_flat_geometry()
     fig = sheet("WALL MOUNTING PLATE, 14 ga steel, formed", "RS-WP-01",
                 "Mild steel CRS, 14 ga (0.0747 in / 1.90 mm). Alt: 304 SS 14 ga",
-                "Zinc plate clear (ASTM B633 Fe/Zn 8) or black zinc; or powder coat black. Hidden part",
+                "Powder coat black, studs masked (SendCutSend cannot zinc plate 0.074 in steel, checked 2026-11-11). Alt: G90 galvanized sheet, no finish. Hidden part",
                 ["Flat pattern in RS-WP-01_flat.dxf (1:1, mm). One 90 deg bend UP (toward the hub side), inside radius 1.9 (1t), K=0.44, tab at the 250 deg position.",
                  f"3x PEM self-clinching studs FH-832-10 (8-32 x 5/8) pressed from the WALL face (flush side to wall), in D {S.STUD_HOLE_D} holes on R {S.STUD_R} @ {', '.join(str(a) for a in S.STUD_ANGLES)} deg. Verify hole size on PEM bulletin FH before cutting.",
-                 f"4x arc slots {S.SLOT_W} wide, +/-{S.SLOT_HALF_DEG:.0f} deg: pair on D 83.3 (single-gang / LV bracket) at 90/270 deg; pair on D 88.9 (round / octagon box) at 0/180 deg.",
+                 f"4x arc slots {S.SLOT_W} wide: pair on D 83.3 (single-gang / LV bracket) at 90/270 deg, +/-{S.SLOT_HALF_DEG_GANG:.0f} deg (REV B: was +/-10, too close to the 75 deg stud hole); pair on D 88.9 (round / octagon box) at 0/180 deg, +/-{S.SLOT_HALF_DEG:.0f} deg. Stud holes D {S.STUD_HOLE_D} (PEM FH-832: 4.14 to 4.22), each at least {S.PEM_MIN_CL_TO_EDGE:.2f} from any edge.",
                  f"Centre slot {S.PLATE_HOLE_D} wide x {S.PLATE_HOLE_Y1 - S.PLATE_HOLE_Y0:.0f} long passes the hub pigtail and its inline jack (in-wall route); the wall hole is 1 in, on the plate centre.",
                  f"Tab: {S.TAB_W} wide, stands {S.TAB_TOP_Z} above the wall face, D {S.TAB_HOLE_D} hole at z={S.TAB_HOLE_Z} for the M3 set screw.",
                  "Deburr all edges; no sharp edge toward the wall. Flat within 0.3 after forming."],
-                "SCALE: as shown")
+                "SCALE: as shown", rev="B", supersedes="rev A (gang slots +/-10 deg, stud holes D 4.22)")
     plan = plan_polylines(p, ("x", "y"))
     ax = view(fig, [0.03, 0.22, 0.47, 0.74], [(plan, "k", 0.7, "-")], title="VIEW FROM THE HUB SIDE (studs toward viewer). +Y = 12 o'clock")
     dim_h(ax, -R, R, -R - 14, f"D {mm_in(S.PLATE_D)}", off=1.0, ext_from=-R)
     x, y = S.pol(S.STUD_R, 315)
     leader(ax, (x, y), (R * 0.75, -R * 0.75), f"3x D {S.STUD_HOLE_D} PEM FH-832 on R {S.STUD_R}")
     x, y = S.pol(S.SLOT_R_GANG, 90)
-    leader(ax, (x, y), (R * 0.35, R * 1.12), f"2x arc slot {S.SLOT_W} w, R {S.SLOT_R_GANG:.2f} (D 83.3), +/-10 deg")
+    leader(ax, (x, y), (R * 0.35, R * 1.12), f"2x arc slot {S.SLOT_W} w, R {S.SLOT_R_GANG:.2f} (D 83.3), +/-{S.SLOT_HALF_DEG_GANG:.0f} deg")
     x, y = S.pol(S.SLOT_R_ROUND, 0)
     leader(ax, (x, y), (R * 0.75, R * 0.35), f"2x arc slot {S.SLOT_W} w, R {S.SLOT_R_ROUND:.2f} (D 88.9), +/-10 deg")
     leader(ax, (S.PLATE_HOLE_D / 2, 5), (R * 0.55, R * 0.7), f"slot {S.PLATE_HOLE_D} x {S.PLATE_HOLE_Y1 - S.PLATE_HOLE_Y0:.0f} (y {S.PLATE_HOLE_Y0:+.0f}..{S.PLATE_HOLE_Y1:+.0f})")

@@ -25,12 +25,15 @@ window.SITE = {
   META_PIXEL_ID: 'REPLACE_WITH_PIXEL_ID',             // Meta pixel id. Placeholder = events logged to console only.
   CONTACT_EMAIL: 'hello@example.com',                  // PLACEHOLDER
 
-  // Price ladder (design-report.md, 2026-11-09)
+  // Price ladder. DO NOT EDIT THE NUMBERS HERE: they are written by _gen/build.py from _gen/pages.py
+  // (KIT_PRICE etc. at the top of that file). Edit there, then run python3 _gen/build.py.
+  FINISHES_OPEN: false,            // generated. false = chrome only (brass and black caps are not real parts yet)
+  SET_OPEN: false,                 // generated. false = the Set cannot be reserved (7-inch single is not engineered yet)
   SKUS: {
     kit:    { name: 'Spindle Kit',          price: 89,  tag: 'Your record',        blurb: 'The light, the mount and the cap. You supply the record.' },
     sconce: { name: 'Spindle 12',          price: 129, tag: 'With a vintage LP',  blurb: 'Same kit plus a genuine used LP from the decade you pick. Our choice of title.' },
     named:  { name: 'Spindle 12, Named',   price: 179, tag: 'You name the album', blurb: 'Same kit plus an original pressing of a title from our menu of ten classics.' },
-    set:    { name: 'Spindle Set',              price: 249, priceWithRecords: 329, tag: '12" + two 7"', blurb: 'One 12" Spindle and two 7" singles with chromed 45-adapter caps. $249 with your records, $329 with ours.' }
+    set:    { name: 'Spindle Set',              price: 249, priceWithRecords: 329, tag: '12" + two 7"', blurb: 'One 12" Spindle and two 7" singles.' }
   },
   FINISHES: {
     chrome: { name: 'Chrome', hex: '#d9dbdd' },

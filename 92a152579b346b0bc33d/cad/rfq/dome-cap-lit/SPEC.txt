@@ -43,7 +43,7 @@ B. PLASTIC
 
 C. PCBs (separate vendor, JLCPCB / PCBWay): see PCB-SPEC.md, RS-PCB-12L-LED.dxf, RS-PCB-12L-HUB.dxf, placement.csv.
 
-Mates with: RS-HUB-01 rev B (centre relief 9.1 deep; rev A hubs do NOT fit) and RS-BP-12-MDF rev C (rev B fits the cap equally: thickness, bore and seat are unchanged) with the E-Z Lok 400-4 insert.
+Mates with: RS-HUB-01 rev C (centre relief 9.1 deep; rev A hubs do NOT fit) and RS-BP-12-MDF rev C (rev B fits the cap equally: thickness, bore and seat are unchanged) with the E-Z Lok 400-4 insert.
 Ship to: Florida, USA. State lead time, setup and plating minimum lot charges separately.
 Files: RS-CAP-12L-*.step, RS-HUB-12L-*.step, RS-PCB-12L-*.step, drawings RS-CAP-12L-*.pdf, RS-HUB-12L-CARRIER.pdf,
 RS-ASM-12L.pdf (stack section), PCB-SPEC.md, *.dxf, placement.csv.

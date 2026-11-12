@@ -180,7 +180,20 @@
   "lit_cap_tip_from_wall_measured_mm": 56.48,
   "plain_furthest_point_of_anything_from_wall_measured_mm": 51.78,
   "lit_furthest_point_of_anything_from_wall_measured_mm": 56.48,
-  "negative_control_ring_without_holes_is_caught_as_interference(1 = yes)": 1
+  "negative_control_ring_without_holes_is_caught_as_interference(1 = yes)": 1,
+  "hub_hang_and_twist_worst_overlap_with_plate_studs_nuts_mm3(13 positions; must be 0)": 0.0,
+  "negative_control_rev_B_hub_pocket_is_caught_by_the_twist_check(1 = yes)": 1,
+  "hub_tab_pocket_end_to_cord_channel_edge_deg": 8.6,
+  "hub_tab_pocket_start_past_the_210deg_hub_screw_deg": 14.15,
+  "wall_plate_points_within_7.14mm_of_a_stud_hole_centre_that_are_not_steel(must be 0)": 0,
+  "wall_plate_stud_hole_centre_to_nearest_slot_or_rim_edge_mm(PEM FH-832 minimum 7.14)": 7.36,
+  "wall_plate_stud_hole_dia_mm(PEM FH-832 band 4.14 to 4.22)": 4.17,
+  "halo_polygon_gap_between_straight_strip_pieces_mm(room for the jumper)": 9.8,
+  "halo_polygon_strip_outer_corner_inside_aluminium_ring_od_mm": 1.84,
+  "halo_polygon_strip_inner_edge_outside_aluminium_ring_id_mm": 10.0,
+  "halo_polygon_led_centreline_furthest_point_inside_backplate_rim_mm(no line of sight to the record)": 8.87,
+  "halo_polygon_strip_inner_edge_to_nearest_screw_head_mm": 2.4,
+  "halo_polygon_total_strip_length_mm": 700.0
  },
  "label_light": {
   "interference": {
@@ -284,7 +297,7 @@
   "lowest_title_block_line_y(border at 0.010)": 0.0216,
   "sheets_with_the_general_tolerance_line": 21,
   "smallest_note_font_pt": 5.0,
-  "revisions": "RS-HUB-01 B, RS-WP-01 A, RS-CAP-12 D, RS-CAP-7 C, RS-BP-12-MDF C, RS-BP-7-MDF B, RS-HR-12 A, RS-CK-12 A, RS-BP-12-AL5 A, RS-BP-12-AL3 A, RS-BP-7-AL5 A, RS-ASM-12-MDF B, RS-ASM-7-MDF A, RS-ASM-12-AL5 A, RS-ASM-12L B.1, RS-CAP-12L-DOME B, RS-CAP-12L-CORE B, RS-CAP-12L-LOUVER B, RS-CAP-12L-WINDOW B, RS-CAP-12L-PIN B, RS-HUB-12L-CARRIER B"
+  "revisions": "RS-HUB-01 C, RS-WP-01 B, RS-CAP-12 D, RS-CAP-7 C, RS-BP-12-MDF C, RS-BP-7-MDF B, RS-HR-12 A, RS-CK-12 A, RS-BP-12-AL5 A, RS-BP-12-AL3 A, RS-BP-7-AL5 A, RS-ASM-12-MDF B, RS-ASM-7-MDF A, RS-ASM-12-AL5 A, RS-ASM-12L B.1, RS-CAP-12L-DOME B, RS-CAP-12L-CORE B, RS-CAP-12L-LOUVER B, RS-CAP-12L-WINDOW B, RS-CAP-12L-PIN B, RS-HUB-12L-CARRIER B"
  },
  "thermal": {
   "final_geometry_matches_cad(1 = yes)": 1,
@@ -337,6 +350,12 @@
   "STALE cad/explode_fix.py: 2 mm cork in the heat-safe drawing legend": 0,
   "STALE cad/explode_view.py: 2 mm cork in the exploded drawing legend": 0,
   "STALE cad/rfq/cork-ring/SPEC.txt: 5/64 in (2 mm) cork in the cork RFQ": 0,
+  "STALE build/assembly-SOP.md: old cap / jack / rim strip in the assembly procedure": 0,
+  "STALE build/sample-kit-shopping-list.md: old cap shell or panel jack in the prototype shopping list": 0,
+  "STALE build/cost-model.md: cost-model.md still bannered instead of rewritten": 0,
+  "STALE build/QC-test-plan.md: old rim strip or panel jack in the test plan": 0,
+  "STALE cad/THERMAL.md: optimistic vinyl softening figure in the heat study": 0,
+  "STALE build/BOM.md: L key that cannot reach the set screw": 0,
   "REQUIRED cad/rfq/dome-cap-brass/SPEC.txt: revision block on the plain cap RFQ": 1,
   "REQUIRED cad/rfq/dome-cap-lit/SPEC.txt: revision block on the lit cap RFQ": 1,
   "REQUIRED cad/rfq/backplate-mdf-cnc/SPEC.txt: six felt targets in the backplate RFQ": 1,
@@ -346,14 +365,20 @@
   "REQUIRED NOTES.md: render / CAD LED placement discrepancy is on record": 1,
   "REQUIRED build/BOM.md: aluminium heat ring is in the BOM": 1,
   "REQUIRED build/BOM.md: cork ring is in the BOM": 1,
-  "REQUIRED build/BOM.md: 12 in parts total at 100 includes the two heat rings and their screws": 1,
+  "REQUIRED build/BOM.md: 12 in parts total at 100 is the audited total (live prices, 2026-11-11)": 1,
   "REQUIRED build/BOM.md: heat ring price is the quote of the canonical file with its holes": 1,
   "REQUIRED build/BOM.csv: BOM.csv 12 in total matches BOM.md": 1,
+  "REQUIRED build/cost-model.md: cost-model.md quotes the same 12 in totals as BOM.md": 1,
   "REQUIRED cad/rfq/cork-ring/SPEC.txt: cork RFQ says 1/16 in": 1,
   "REQUIRED cad/rfq/heat-ring-aluminum/SPEC.txt: revision block on the heat ring RFQ": 1,
   "REQUIRED cad/rfq/cork-ring/SPEC.txt: revision block on the cork ring RFQ": 1,
   "REQUIRED cad/rfq/backplate-mdf-cnc/SPEC.txt: 12 in backplate RFQ says the rabbet is gone": 1,
   "REQUIRED cad/THERMAL.md: thermal table carries the final geometry": 1,
+  "REQUIRED cad/THERMAL.md: heat study cites its source for the vinyl limit": 1,
+  "REQUIRED cad/THERMAL.md: heat study carries the sensitivity table": 1,
+  "REQUIRED build/QC-test-plan.md: test plan has the thermocouple heat soak with positions": 1,
+  "REQUIRED build/assembly-SOP.md: assembly procedure lays the strip as straight pieces (a flat strip cannot bend sideways)": 1,
+  "REQUIRED build/assembly-SOP.md: assembly procedure rejects an over-power strip by measured current": 1,
   "REQUIRED mounting-report.md: install sheet says clockwise (matches the J-slots)": 1,
   "superseded zips still sitting in cad/rfq/": 0
  },
@@ -849,6 +874,104 @@
    "ok": true
   },
   {
+   "item": "AUDIT",
+   "check": "hub_hang_and_twist_worst_overlap_with_plate_studs_nuts_mm3(13 positions; must be 0)",
+   "value": 0.0,
+   "rule": "<= 0.5",
+   "ok": true
+  },
+  {
+   "item": "AUDIT",
+   "check": "negative_control_rev_B_hub_pocket_is_caught_by_the_twist_check(1 = yes)",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "AUDIT",
+   "check": "hub_tab_pocket_end_to_cord_channel_edge_deg",
+   "value": 8.6,
+   "rule": ">= 3.0",
+   "ok": true
+  },
+  {
+   "item": "AUDIT",
+   "check": "hub_tab_pocket_start_past_the_210deg_hub_screw_deg",
+   "value": 14.15,
+   "rule": ">= 5.0",
+   "ok": true
+  },
+  {
+   "item": "AUDIT",
+   "check": "wall_plate_points_within_7.14mm_of_a_stud_hole_centre_that_are_not_steel(must be 0)",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "AUDIT",
+   "check": "wall_plate_stud_hole_centre_to_nearest_slot_or_rim_edge_mm(PEM FH-832 minimum 7.14)",
+   "value": 7.36,
+   "rule": ">= 7.14",
+   "ok": true
+  },
+  {
+   "item": "AUDIT",
+   "check": "wall_plate_stud_hole_dia_mm(PEM FH-832 band 4.14 to 4.22)",
+   "value": 4.17,
+   "rule": ">= 4.14",
+   "ok": true
+  },
+  {
+   "item": "AUDIT",
+   "check": "wall_plate_stud_hole_dia_mm(PEM FH-832 band 4.14 to 4.22)",
+   "value": 4.17,
+   "rule": "<= 4.22",
+   "ok": true
+  },
+  {
+   "item": "AUDIT",
+   "check": "halo_polygon_gap_between_straight_strip_pieces_mm(room for the jumper)",
+   "value": 9.8,
+   "rule": ">= 5.0",
+   "ok": true
+  },
+  {
+   "item": "AUDIT",
+   "check": "halo_polygon_strip_outer_corner_inside_aluminium_ring_od_mm",
+   "value": 1.84,
+   "rule": ">= 1.0",
+   "ok": true
+  },
+  {
+   "item": "AUDIT",
+   "check": "halo_polygon_strip_inner_edge_outside_aluminium_ring_id_mm",
+   "value": 10.0,
+   "rule": ">= 5.0",
+   "ok": true
+  },
+  {
+   "item": "AUDIT",
+   "check": "halo_polygon_led_centreline_furthest_point_inside_backplate_rim_mm(no line of sight to the record)",
+   "value": 8.87,
+   "rule": ">= 5.0",
+   "ok": true
+  },
+  {
+   "item": "AUDIT",
+   "check": "halo_polygon_strip_inner_edge_to_nearest_screw_head_mm",
+   "value": 2.4,
+   "rule": ">= 1.0",
+   "ok": true
+  },
+  {
+   "item": "AUDIT",
+   "check": "halo_polygon_total_strip_length_mm",
+   "value": 700.0,
+   "rule": "<= 723.0",
+   "ok": true
+  },
+  {
    "item": "M11",
    "check": "STALE site/product.html: wattage 4 to 10 W (hard cap is 6 W)",
    "value": 0,
@@ -1095,6 +1218,48 @@
   },
   {
    "item": "M11",
+   "check": "STALE build/assembly-SOP.md: old cap / jack / rim strip in the assembly procedure",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE build/sample-kit-shopping-list.md: old cap shell or panel jack in the prototype shopping list",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE build/cost-model.md: cost-model.md still bannered instead of rewritten",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE build/QC-test-plan.md: old rim strip or panel jack in the test plan",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE cad/THERMAL.md: optimistic vinyl softening figure in the heat study",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "STALE build/BOM.md: L key that cannot reach the set screw",
+   "value": 0,
+   "rule": "== 0",
+   "ok": true
+  },
+  {
+   "item": "M11",
    "check": "REQUIRED cad/rfq/dome-cap-brass/SPEC.txt: revision block on the plain cap RFQ",
    "value": 1,
    "rule": "== 1",
@@ -1158,7 +1323,7 @@
   },
   {
    "item": "M11",
-   "check": "REQUIRED build/BOM.md: 12 in parts total at 100 includes the two heat rings and their screws",
+   "check": "REQUIRED build/BOM.md: 12 in parts total at 100 is the audited total (live prices, 2026-11-11)",
    "value": 1,
    "rule": "== 1",
    "ok": true
@@ -1173,6 +1338,13 @@
   {
    "item": "M11",
    "check": "REQUIRED build/BOM.csv: BOM.csv 12 in total matches BOM.md",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "REQUIRED build/cost-model.md: cost-model.md quotes the same 12 in totals as BOM.md",
    "value": 1,
    "rule": "== 1",
    "ok": true
@@ -1208,6 +1380,41 @@
   {
    "item": "M11",
    "check": "REQUIRED cad/THERMAL.md: thermal table carries the final geometry",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "REQUIRED cad/THERMAL.md: heat study cites its source for the vinyl limit",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "REQUIRED cad/THERMAL.md: heat study carries the sensitivity table",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "REQUIRED build/QC-test-plan.md: test plan has the thermocouple heat soak with positions",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "REQUIRED build/assembly-SOP.md: assembly procedure lays the strip as straight pieces (a flat strip cannot bend sideways)",
+   "value": 1,
+   "rule": "== 1",
+   "ok": true
+  },
+  {
+   "item": "M11",
+   "check": "REQUIRED build/assembly-SOP.md: assembly procedure rejects an over-power strip by measured current",
    "value": 1,
    "rule": "== 1",
    "ok": true
@@ -1739,14 +1946,14 @@
   },
   {
    "item": "HEAT",
-   "check": "thermal: final_normal_record_C_in_30C_room (vinyl softens 55 to 60 C; gate keeps 5 K below 55)",
+   "check": "thermal: final_normal_record_C_in_30C_room (limit unchanged; AUDIT 2026-11-11: record compound loses stiffness from 48 to 50 C, Tg 52 to 54 C, per US 3,975,321, not 55 to 60)",
    "value": 33.1,
    "rule": "<= 40.0",
    "ok": true
   },
   {
    "item": "HEAT",
-   "check": "thermal: final_worst_case_record_C_in_35C_room (vinyl softens 55 to 60 C; gate keeps 5 K below 55)",
+   "check": "thermal: final_worst_case_record_C_in_35C_room (limit unchanged; AUDIT 2026-11-11: record compound loses stiffness from 48 to 50 C, Tg 52 to 54 C, per US 3,975,321, not 55 to 60)",
    "value": 45.2,
    "rule": "<= 50.0",
    "ok": true

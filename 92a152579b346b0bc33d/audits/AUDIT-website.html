@@ -1,0 +1,711 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Spindle website audit (pessimist pass, 2026-11-11) | Spindle</title>
+<style>
+:root{--bg:#f6f2ea;--ink:#1b1916;--mute:#6b645a;--line:#e3dccf;--accent:#b8732e;--panel:#fffdf8}
+@media (prefers-color-scheme:dark){:root{--bg:#121110;--ink:#ece6da;--mute:#a19887;--line:#2c2925;--accent:#e6a456;--panel:#1a1816}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Inter",system-ui,sans-serif}
+main{max-width:880px;margin:0 auto;padding:28px 16px 80px}
+a{color:var(--accent)} .back{font-size:14px;display:inline-block;margin-bottom:18px}
+h1{font-size:28px;line-height:1.2} h2{margin-top:36px;font-size:21px} h3{font-size:17px}
+table{border-collapse:collapse;width:100%;display:block;overflow-x:auto;font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top} th{background:var(--panel)}
+code{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:0 4px;font-size:.9em}
+pre{background:var(--panel);border:1px solid var(--line);padding:12px;overflow-x:auto;border-radius:8px}
+img{max-width:100%}
+</style></head><body><main><a class="back" href="../START-HERE.html">Back to START HERE</a>
+<h1>Spindle website audit (pessimist pass, 2026-11-11)</h1>
+<p>Auditor: claude-fable-5-2. Scope: <code>projects/record-sconces/site/</code> only. Nothing deployed, sent, bought or committed.</p>
+<h2>Verdict</h2>
+<p>Mechanically the site was already clean (no horizontal scroll, no console errors, no broken links, light pages). The words were the problem. The site described a product that does not exist yet as if it had been built, shipped to 20 people and tested: "hand-built", "went to friends who saw the prototype on a wall", "collectors tell us", a UL claim covering parts nobody has bought, a weight that is off by about a pound, a heat pass mark twice as loose as the engineering one, and a reserve button that, in its unconfigured state, told a visitor "your deposit is in" without taking a cent. All of that is fixed in the generator and regenerated. The site is now honest and follows the page laws below (25 of 30, from 10), but it still cannot sell: there is no ship date, no checkout link, no email address, no real photograph and no real customer voice. Those five need Austin, not code.</p>
+<h2>Second pass, same day: facts from the product audit</h2>
+<p>After the first pass the product auditor sent findings that change site copy (<code>audits/AUDIT-product.md</code>). I read the cited lines there before acting, did not re-derive its sources, and took the more cautious wording in every case. Applied in the generator and rebuilt; the audit and click-through scripts were re-run afterwards (0 overflow, 0 errors on 14 pages x 2 sizes; flow output unchanged except "swatches on page: 0").</p>
+<table>
+<thead>
+<tr>
+<th>Product-audit fact</th>
+<th>Site before</th>
+<th>Site now</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Record vinyl loses stiffness at 48 to 54 C (118 to 129 F), not 55 to 60 C</td>
+<td>"Vinyl starts to soften around 130 to 140 F"</td>
+<td>"Record vinyl starts to lose its stiffness at roughly 120 F" (FAQ, install page, heat card)</td>
+</tr>
+<tr>
+<td>The only priced listed 4 W strip is 2900 to 3200 K</td>
+<td>"2700 K" in a heading, the FAQ and the spec table</td>
+<td>No colour number anywhere. "Warm white ... The exact strip is not chosen yet, so we do not quote a colour number." The home heading "Twelve inches of what you love, lit at 2700 K." now ends "lit from behind." (this edits a brand tagline; Austin to confirm)</td>
+</tr>
+<tr>
+<td>Brass and black caps are not real parts</td>
+<td>Three finishes, picker on three pages</td>
+<td><code>FINISHES_OPEN = False</code>: chrome only, no picker, no brass or black render used, "Brass and black are ideas we like and have not engineered yet, so we are not selling them."</td>
+</tr>
+<tr>
+<td><code>bedroom_*</code> shows a 4 W strip lighting a whole room</td>
+<td>Used on the home page and in the gallery (my first pass added it)</td>
+<td>Removed. Gallery uses <code>macro</code> instead</td>
+</tr>
+<tr>
+<td>Renders need a "real glow may differ" line</td>
+<td>"Computer renderings" only</td>
+<td>Added to the room image and the product gallery captions</td>
+</tr>
+<tr>
+<td>Los Angeles and North Carolina require a listed fixture</td>
+<td>Not mentioned</td>
+<td><code>NO_SHIP_PLACES</code>: stated on the shipping page and in the UL answer</td>
+</tr>
+<tr>
+<td>In-wall wiring: say "Class 2 low-voltage wiring, check your local code"</td>
+<td>"allowed inside walls in most US homes under the National Electrical Code"</td>
+<td>Reworded to exactly that, no code citation</td>
+</tr>
+<tr>
+<td>Parts are $78.04 at 100 at live prices (<code>build/cost-model.md</code>, read by me); the $89 Kit loses $19.90 an order before ads, $99 about $10</td>
+<td>Comment on <code>KIT_PRICE</code> said $89 clears about $16</td>
+<td>Comment now quotes cost-model.md and marks the old figure superseded. Price still not chosen</td>
+</tr>
+</tbody>
+</table>
+<p>Score effect: law 12 (few choices) goes to 2, total 25 / 30. Law 15 stays at 1 because the hero is still a pre-change render.</p>
+<h2>How I checked (all run in this session)</h2>
+<ul>
+<li>Served <code>site/</code> with <code>python3 -m http.server 8739</code>, loaded every page at 390x844 (2x, touch) and 1440x900 in headless Chromium via Playwright, before and after. Script: scratchpad <code>audit.py</code>. Server killed afterwards (<code>curl</code> returned 000).</li>
+<li>Clicked the reserve path, the waitlist form, the version picker, the gallery, the mobile menu and the thank-you pages. Script: scratchpad <code>flow.py</code>.</li>
+<li>Looked at the screenshots (fold and full page, both sizes).</li>
+<li>Compared every product claim with <code>cad/THERMAL.md</code>, <code>cad/FIXES-heat-layout.md</code>, <code>build/BOM.md</code>, <code>NOTES.md</code>, <code>ops/safety.md</code> and <code>ops/policies/*.md</code>.</li>
+<li>Grepped the built pages for the strings <code>cad/gates.py</code> requires and forbids.</li>
+</ul>
+<p>Screenshots: <code>site/screenshots/audit-2026-11-11/before/</code> (48 images + results.json) and <code>.../after/</code> (56 page images, 6 flow images, results.json).</p>
+<p>Result table, after the fixes (from <code>after/results.json</code>):</p>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Before</th>
+<th>After</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Horizontal overflow, 12 then 14 pages x 2 sizes</td>
+<td>0 px on all</td>
+<td>0 px on all</td>
+</tr>
+<tr>
+<td>Console errors / failed requests / 4xx</td>
+<td>0 / 0 / 0</td>
+<td>0 / 0 / 0</td>
+</tr>
+<tr>
+<td>Images without alt / broken images</td>
+<td>0 / 0</td>
+<td>0 / 0</td>
+</tr>
+<tr>
+<td>Internal links and anchors that go nowhere</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Home page weight, mobile</td>
+<td>235 KB, 14 requests</td>
+<td>272 KB, 16 requests (two room images added, lazy)</td>
+</tr>
+<tr>
+<td>Product page weight, mobile</td>
+<td>370 KB</td>
+<td>246 KB (thumbnails moved from JPEG to WebP)</td>
+</tr>
+<tr>
+<td>Largest image on first paint</td>
+<td>sq-chrome WebP, 25 KB</td>
+<td>same</td>
+</tr>
+<tr>
+<td><code>[SHIP DATE]</code> or example.com visible on a page</td>
+<td>every page</td>
+<td>every page (needs Austin; build now has a launch check)</td>
+</tr>
+<tr>
+<td>404 page</td>
+<td>server default</td>
+<td><code>404.html</code> exists</td>
+</tr>
+</tbody>
+</table>
+<p>Headless Chromium on a local server is not evidence about real mobile Safari or a real network. Load times are not reported for that reason.</p>
+<h2>Findings, worst first</h2>
+<h3>1. The site wrote about an unbuilt product as if it existed (fixed)</h3>
+<p>Nothing has been built or measured (<code>cad/THERMAL.md</code>: "Nothing has been measured"; NOTES 2026-11-11). The old copy said otherwise. Line numbers are from <code>site/_gen/pages.py</code> as it stood before this audit (backup of the old generator: scratchpad <code>_gen.orig/</code>).</p>
+<table>
+<thead>
+<tr>
+<th>Old line</th>
+<th>Old claim</th>
+<th>Why it is false or unprovable</th>
+<th>Now</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pages.py 440</td>
+<td>"The first 20 went to friends and the people who saw the prototype on a wall"</td>
+<td>There is no prototype</td>
+<td>"The first 20 were spoken for before this site went up. Those get built and tested first."</td>
+</tr>
+<tr>
+<td>226</td>
+<td>"20 of 20 ... Every unit hand-built in Fort Lauderdale"</td>
+<td>No unit is built</td>
+<td>"First batch sold out before this site went up. Those ship first."</td>
+</tr>
+<tr>
+<td>45</td>
+<td>"Collectors tell us this is the whole reason they want the Kit"</td>
+<td>Invented testimonial</td>
+<td>Deleted</td>
+</tr>
+<tr>
+<td>49</td>
+<td>"many renters do it anyway"</td>
+<td>Invented</td>
+<td>Deleted</td>
+</tr>
+<tr>
+<td>263</td>
+<td>"Photographs of the batch-one units replace these as they are shot"</td>
+<td>Implies units exist</td>
+<td>"Computer renderings of the design, not photographs. No unit has been built yet."</td>
+</tr>
+<tr>
+<td>434, build.py 77</td>
+<td>"Built in Fort Lauderdale", "Made in Fort Lauderdale"</td>
+<td>Not built; and "Made in" is an origin claim the imported LED strip and adapter cannot support</td>
+<td>"Designed in", "To be assembled by hand in"</td>
+</tr>
+<tr>
+<td>41</td>
+<td>"Will the light warp my record? No."</td>
+<td>An absolute on a calculation</td>
+<td>"It is designed not to, and we will test it on real units before anything ships", with the numbers labelled calculated</td>
+</tr>
+<tr>
+<td>41, 406</td>
+<td>Pass mark "record face under 95 F in a 75 F room" (20 F rise)</td>
+<td>THERMAL.md accepts no more than 5 K, which is 9 F</td>
+<td>"within 9 F of the room"</td>
+</tr>
+<tr>
+<td>51</td>
+<td>"throws an amber halo about 4 inches past the edge"</td>
+<td>Never measured, and the renders were lit before the layout change</td>
+<td>"glows on the wall around the record"</td>
+</tr>
+<tr>
+<td>53</td>
+<td>"Picture discs and coloured vinyl look spectacular with light behind them"; "Warped records ... still hang fine"</td>
+<td>The light is behind an opaque backplate; neither tried</td>
+<td>"including coloured vinyl and picture discs. A badly warped record will not sit flat."</td>
+</tr>
+<tr>
+<td>319</td>
+<td>"Weight: about 1.5 lb with record"</td>
+<td>Backplate 705 cm3 of MDF is about 530 g, hub 200 to 250 g (BOM), heat ring 58 g and cap 55 g (checks.md), plate about 100 g, record about 140 g: roughly 1.1 to 1.2 kg</td>
+<td>"Roughly 2.5 lb with a record. Calculated from the design, not yet weighed."</td>
+</tr>
+<tr>
+<td>35, 210, 211</td>
+<td>"one turn", "two turns"</td>
+<td>Thread engagement not specified to the customer anywhere</td>
+<td>"a few turns"</td>
+</tr>
+<tr>
+<td>270</td>
+<td>"Designer ringed-disc sconces run $740 to $755; this one holds a real record"</td>
+<td>One reference (a $755 lamp) stretched into a market claim</td>
+<td>Deleted</td>
+</tr>
+<tr>
+<td>168</td>
+<td>"The record floats an inch off the plaster"</td>
+<td>Record face is 1.62 in from the wall; the backplate is 1 in</td>
+<td>"about an inch and a half off the wall"</td>
+</tr>
+</tbody>
+</table>
+<h3>2. UL and electrical wording over-claimed (fixed)</h3>
+<ul>
+<li>Old FAQ (pages.py 63): "The parts that touch mains power or run inside your wall are UL or ETL listed: the 12-volt adapter, the LED strip and the cable." The strip and cable are not bought, <code>ops/safety.md</code> says the file numbers still need checking, and the strip does not touch mains. Now: "The Spindle itself is not UL listed. The plug-in power adapter we ship is a UL-listed Class 2 adapter ... If your building or landlord requires the whole light fixture to be listed, this is not the right product for that wall yet." Every UL sentence on the built site now refers to the adapter only (listed by script; 14 pages carry "The Spindle is not UL listed; its plug-in power adapter is" in the footer).</li>
+<li>Old Kit box (297): "12 V UL-listed dimming adapter". The BOM has a listed adapter (line 9) plus a separate, unlisted inline dimmer (line 10). Now two separate items.</li>
+<li>Old FAQ (47): cable allowed in walls "in every US jurisdiction that follows the National Electrical Code". <code>ops/safety.md</code> section 4 flagged this as over-reach. Now "in most US homes ... check your local rules, or ask an electrician".</li>
+<li>Old install page (392 to 394) offered "Option C: hardwired, by your electrician" with "a one-page sheet for the electrician". <code>ops/safety.md</code>: NEC 410.6 wants a listed luminaire on a hardwired install and the Spindle is not one. Option C is removed; the page says "Not for hardwiring."</li>
+<li>Old install page (381): in-wall kit "sold as an add-on at checkout". Checkout is a $25 Stripe link with no add-ons, and the kit has no price (BOM: "not set"). Now: offered when you pay the balance, price shown before you pay.</li>
+</ul>
+<h3>3. The deposit flow could tell someone their money was taken when it was not (fixed), and still has no real checkout (needs Austin)</h3>
+<ul>
+<li>With the placeholder Stripe link, every reserve button went to <code>thanks-deposit.html</code>, which said "Your Spindle is held ... your $25 deposit is in" and fired a Meta Purchase event. Anyone opening that page directly got the same. Now: demo mode shows a red "TEST MODE. Nothing was sent and no payment was taken" banner; opening the page without a Stripe <code>session_id</code> shows "No hold found on this page"; Purchase fires only with a session id. Verified: <code>flow.py</code> lines 6, 7, 8.</li>
+<li>The waitlist form accepted "notanemail" and did not enforce the consent box (the form is <code>novalidate</code> and the script returned early without stopping the submit). Now it stops and shows a message. Verified: <code>flow.py</code> lines 9, 10, 11.</li>
+<li>Old copy said "the balance is charged when your unit is ready". A Stripe Payment Link cannot charge later. Now: "we email you a link to pay the rest. Nothing is charged automatically", which matches <code>ops/policies/shipping.md</code>.</li>
+<li>Old copy said "Shipping address and record preference are collected at checkout." Not known to be true of the link. Now: "We ask for your shipping address before we ship, not today."</li>
+<li>New: <code>python3 _gen/build.py --launch-check</code> exits 1 and lists six blockers (ship date, Stripe link, waitlist endpoint, contact email, pixel id, domain). It currently prints "6 blockers, do not deploy".</li>
+</ul>
+<h3>4. Deposits for an unbuilt, untested, non-listed light were not described honestly (fixed in copy; the date is Austin's)</h3>
+<p>The old reserve block promised "Ships the week of [SHIP DATE]" with "we do" have a reasonable basis (shipping page), for a product with no prototype. The FTC guide (opened): "you must have a reasonable basis for stating or implying that you can ship within a certain time." Aptera's reservation page (opened) shows the pattern for an unfinished product: "$100 Due Today", "Vehicle shown is in testing and validation; specifications are subject to change."</p>
+<p>Now, next to every reserve button: "Where this stands today. Spindle is designed and engineered, and the first units have not been built yet. Nothing ships until our heat test on real units passes. That is why today is a refundable $25 hold and not a purchase." The reserve card lists: refundable within 5 business days, not built yet, planned ship week is an estimate, you pay the rest by emailed link, capped at 100. The footer of every page repeats it in one paragraph.</p>
+<h3>5. The site sold a version that is not engineered (switched off, needs Austin)</h3>
+<p>The Spindle Set includes two 7-inch singles. <code>cad/FIXES-heat-layout.md</code>: the 7-inch "was NOT moved to this layout", its record still overhangs a rim strip, and its cap is unquoted. Every heat sentence on the site describes the 12-inch. <code>SET_OPEN = False</code> in <code>site/_gen/pages.py</code> now removes the Set from the picker, the footer, the JSON-LD and <code>config.js</code>, and shows "planned for later, join the free list". Flip it to <code>True</code> when the 7-inch is real.</p>
+<h3>6. Site policies disagreed with <code>ops/policies/</code> (fixed)</h3>
+<table>
+<thead>
+<tr>
+<th>Topic</th>
+<th>Site said</th>
+<th>ops/policies says</th>
+<th>Now</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Free shipping</td>
+<td>"Free US shipping on every order", Alaska and Hawaii free</td>
+<td>Contiguous US included; AK, HI, APO pay the difference</td>
+<td>"Free shipping in the lower 48" everywhere (one constant, <code>SHIPPING_LINE</code>)</td>
+</tr>
+<tr>
+<td>Return shipping</td>
+<td>"deducted from the refund" (amount not given)</td>
+<td>Flat $12</td>
+<td>Flat $12</td>
+</tr>
+<tr>
+<td>Refund timing</td>
+<td>"within 7 business days"; deposits "within one billing cycle"</td>
+<td>5 business days for both</td>
+<td>5 business days</td>
+</tr>
+<tr>
+<td>Returning a record we supplied</td>
+<td>Only if it arrives damaged</td>
+<td>Send it back with the sconce</td>
+<td>Matches ops</td>
+</tr>
+<tr>
+<td>Named-title return</td>
+<td>Not mentioned</td>
+<td>$25 restocking fee</td>
+<td>Added</td>
+</tr>
+<tr>
+<td>Warranty</td>
+<td>One paragraph covering "LED ring, adapter and hub"</td>
+<td>Two-year limited warranty on the whole light, record excluded; must be readable before purchase (16 CFR 702)</td>
+<td>New <code>warranty.html</code>, linked from the buy box and footer</td>
+</tr>
+<tr>
+<td>Second delay</td>
+<td>"will not ship without your express consent"</td>
+<td>Same, plus "if we do not hear from you, we refund you"</td>
+<td>Matches ops</td>
+</tr>
+</tbody>
+</table>
+<p>The ops policies are marked "DRAFT. Have a lawyer review before publishing." So are these pages, in effect.</p>
+<h3>7. Layout and usability defects found in the screenshots (fixed)</h3>
+<ul>
+<li>Mobile hero text sat flush against the left edge of the screen, with the orange dot half cut off (<code>.hero-content</code> zeroed the gutter). See <code>before/index-m-fold.png</code>.</li>
+<li>The product was a black box for up to 2.8 s on load ("Scroll or tap to turn it on"). It is now visible, dim, in the first frame and comes up after 0.7 s; lit by default with JavaScript off. See <code>after/flow-0-home-250ms.png</code>.</li>
+<li>On a phone the price was below the fold on the home page and the product page, and the reserve button was cut by the fold. Both are now above it (<code>after/index-m-fold.png</code>, <code>after/product-m-fold.png</code>).</li>
+<li>The mobile sticky buy bar on the product page only appeared after scrolling past the entire page section, which is never while choosing. It now shows whenever the main reserve button is off screen (<code>flow.py</code> line 14: shown True).</li>
+<li>The long reserve button split into two columns ("Reserve batch two," | "$25 refundable") and the "privacy policy" link floated away from its sentence (flex layout splitting text). Both wrapped in one span.</li>
+<li>Small grey text (<code>--ash</code> #5F6468 on #16130F) was about 3.1:1 contrast. It now uses the existing <code>--mute</code> token (about 6:1).</li>
+<li>Tap targets: Menu button 36 px high, footer links 28 px, consent checkbox 13 px. Now 44, 44 and 22 px.</li>
+<li>Austin's slogan line in the hero had been typed into <code>index.html</code> by hand and was not in the generator. A rebuild would have deleted it. It is now in <code>pages.py</code>.</li>
+<li>Sections faded in by script and stayed invisible with JavaScript off. A <code>noscript</code> rule shows them.</li>
+<li>Three different labels for the one action ("Reserve batch two, $25 refundable", "Reserve Spindle 12 with a $25 refundable deposit", "Reserve, $25"). Now one phrase: "Hold mine for $25, refundable".</li>
+</ul>
+<h3>8. Jargon (fixed outside the spec table)</h3>
+<p>Removed from customer copy: Class 2, CL2 (kept once, explained), NEC 725, NEC 400.12, 16 CFR Part 435, bayonet, J-slots, COB, dotless, CRI (kept in the spec table), keystone coupler, single-gang, old-work bracket, 1/4-20 insert, first-sale doctrine. The colour number "2700 K" was removed entirely in the second pass (see above); the light is described as "about the colour of an old filament bulb".</p>
+<h2>Price decision (not made here)</h2>
+<p><code>site/_gen/pages.py</code>, top of file: <code>KIT_PRICE = 89</code>, marked DECISION OWED. The comment quotes <code>build/cost-model.md</code>: parts $78.04 at 100, so the $89 Kit loses $19.90 an order before ads, $99 loses about $10, and the Kit needs about $125 to clear $15. The earlier "$89 clears about $16" figure is superseded. Change that one number, run <code>python3 _gen/build.py</code>, and the pages, meta descriptions, JSON-LD and <code>js/config.js</code> follow (build prints "synced js/config.js prices"). Verified at $89: picker shows $89, button reads "Hold my Spindle Kit for $25, refundable".</p>
+<h2>Reference pages actually opened (2026-11-11)</h2>
+<p>Fetched through the web-fetch agent, which sees HTML without scripts. "Not visible" means not in the fetched HTML, not "absent".</p>
+<table>
+<thead>
+<tr>
+<th>Page</th>
+<th>URL</th>
+<th>Above the fold</th>
+<th>Price</th>
+<th>Proof</th>
+<th>Trust near the button</th>
+<th>Ship promise</th>
+<th>Safety wording</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gantri sconce</td>
+<td>https://www.gantri.com/products/10326/premiere-wall-sconce-by-simon-schmitz?sku=10326-0-sedona</td>
+<td>Photos, title</td>
+<td>$398 on the listing</td>
+<td>"2 Reviews", 4.0</td>
+<td>"returned within 30 days of delivery if unused", "Industry leading 3-year warranty"</td>
+<td>"Made to order. 30 day returns. 3 year warranty."</td>
+<td>"UL Listed for US and Canada"</td>
+</tr>
+<tr>
+<td>Humanhome sconce</td>
+<td>https://humanhome.co/products/gallery-sconce</td>
+<td>5 photos, title, price</td>
+<td>"Regular price $540.00"</td>
+<td>not visible</td>
+<td>"Free 30 Day Returns", "1 Year Warranty"</td>
+<td>"3 - 5 Business Days" beside Add to cart</td>
+<td>"CERTIFICATIONS: UL and cUL Listed"</td>
+</tr>
+<tr>
+<td>Tom Dixon lamp</td>
+<td>https://www.tomdixon.net/lighting/portable/jack-large-portable-light-white-japo01whun</td>
+<td>Carousel, title, prices, "Add To Bag"</td>
+<td>"£425" struck, "£331.50"</td>
+<td>not visible</td>
+<td>"hassle-free returns within 14 days"</td>
+<td>not visible</td>
+<td>"Fully IP65 rated", no UL wording</td>
+</tr>
+<tr>
+<td>Oura Ring 5</td>
+<td>https://ouraring.com/store/rings/oura-ring-5</td>
+<td>Gallery, title, "Shop Now"</td>
+<td>$399 / $499 by finish</td>
+<td>"99% Heart Rate Accuracy" style stats</td>
+<td>not visible</td>
+<td>not visible</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td>Ember (home page only)</td>
+<td>https://ember.com/</td>
+<td>Video hero, "Buy Mug 3", "How Ember works"</td>
+<td>"$149.95 USD $99.99 USD"</td>
+<td>"Over 4 Million Sold", press row</td>
+<td>"30-day returns", "Free shipping", warranty line</td>
+<td>not visible</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td>HexClad pan (buy box only)</td>
+<td>https://hexclad.com/products/12-hexclad-pan-with-lid</td>
+<td>Title, "$199.00", "Add to Cart"</td>
+<td>$199.00</td>
+<td>cut off</td>
+<td>cut off</td>
+<td>bar: "FREE SHIPPING"</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td>Daylight</td>
+<td>https://daylightcomputer.com</td>
+<td>"Order now"</td>
+<td>not visible</td>
+<td>not visible</td>
+<td>not visible</td>
+<td>"In stock · Ships in 3-5 business days"</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td>Aptera reserve</td>
+<td>https://aptera.us/reserve/</td>
+<td>Price, "$100 Due Today", "CHECKOUT"</td>
+<td>"Target Price $40,000"</td>
+<td>n/a</td>
+<td>none found</td>
+<td>none stated</td>
+<td>"Vehicle shown is in testing and validation; specifications are subject to change."</td>
+</tr>
+<tr>
+<td>Toneoptic</td>
+<td>https://www.toneoptic.com</td>
+<td>Brand line</td>
+<td>"From $325"</td>
+<td>Press logos, named critics</td>
+<td>not visible</td>
+<td>"Taxes and shipping calculated at checkout"</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Record Props</td>
+<td>https://www.recordprops.com</td>
+<td>"Get Versatile with your vinyl Record Display"</td>
+<td>"$20.00 ea", sale from $22</td>
+<td>Press logos</td>
+<td>"30 Day Return Policy"</td>
+<td>"Free Shipping on all U.S. Domestic Orders"</td>
+<td>none</td>
+</tr>
+<tr>
+<td>Flipbin</td>
+<td>https://www.flipbin.com</td>
+<td>"Fill! Flip! Play! Display!"</td>
+<td>"$99.00" struck, "$89.00"</td>
+<td>"226 reviews"</td>
+<td>not visible</td>
+<td>not visible</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<p>Guidance opened: Baymard, https://baymard.com/blog/current-state-ecommerce-product-page-ux (return policy link "should be prominently displayed on the product page"; show full order cost); NN/g, https://www.nngroup.com/articles/ecommerce-product-pages/ ("Price, including any additional product-specific charges", "Communicate product availability"); NN/g, https://www.nngroup.com/articles/trustworthy-design/ (upfront disclosure of all charges); FTC, https://www.ftc.gov/business-guidance/resources/business-guide-ftcs-mail-internet-or-telephone-order-merchandise-rule ("you must have a reasonable basis for stating or implying that you can ship within a certain time").</p>
+<p>NOT CHECKED (fetch refused or empty): Ridge (403), Dyson (403), Tesla (403), Kickstarter (403), Etsy (403), Lumens (403), Rejuvenation product (403), Pooky, Tala and Schoolhouse product pages (429), Allbirds and Ember product pages (429), Rivian and Framework knowledge base (script-only), Baymard trust article (paywall), any UL page stating the rule on "UL Listed" claims for assemblies. Sticky buy bars could not be seen in any fetched page, so law 13 rests on general practice, not on these fetches.</p>
+<h2>The laws, and the score</h2>
+<p>Scored 0 (fails), 1 (partly), 2 (meets).</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Law</th>
+<th>Seen at</th>
+<th>Before</th>
+<th>After</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>The product is visible in the first frame</td>
+<td>Gantri, Humanhome, Oura, Ember</td>
+<td>1</td>
+<td>2</td>
+<td>Was a dark box for up to 2.8 s</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Name, price and the one button above the fold on a phone</td>
+<td>HexClad, Humanhome, NN/g</td>
+<td>0</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>One action, one phrase, everywhere</td>
+<td>Ember, Daylight</td>
+<td>1</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr>
+<td>4</td>
+<td>When it ships, stated beside the button, and true</td>
+<td>Humanhome, Daylight, FTC</td>
+<td>1</td>
+<td>1</td>
+<td>Still "[SHIP DATE]". Needs Austin</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Returns, warranty and shipping in a strip by the button, each linked</td>
+<td>Ember, Humanhome, Gantri, Baymard</td>
+<td>1</td>
+<td>2</td>
+<td>Warranty page did not exist</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Full cost up front, no surprises</td>
+<td>Baymard, NN/g</td>
+<td>1</td>
+<td>2</td>
+<td>$12 return fee and AK/HI now stated</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Real proof from real people</td>
+<td>Ember, Flipbin, Toneoptic, Gantri</td>
+<td>0</td>
+<td>0</td>
+<td>None exists. One invented line removed</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Plain specs; certification stated exactly</td>
+<td>Gantri, Humanhome</td>
+<td>0</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr>
+<td>9</td>
+<td>Show it in a room, at scale</td>
+<td>Gantri</td>
+<td>0</td>
+<td>1</td>
+<td>Room renders were sitting unused in <code>img/</code>; now on the home page and gallery. Renders, not photos</td>
+</tr>
+<tr>
+<td>10</td>
+<td>How it works in three or four plain steps</td>
+<td>Ember</td>
+<td>1</td>
+<td>2</td>
+<td>Old diagram showed the old design</td>
+</tr>
+<tr>
+<td>11</td>
+<td>A pre-order says what is unfinished, what you pay today and how you get it back</td>
+<td>Aptera, FTC</td>
+<td>0</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr>
+<td>12</td>
+<td>Few choices</td>
+<td>Oura, HexClad</td>
+<td>1</td>
+<td>2</td>
+<td>Four versions down to three, one finish; "Named" still has no menu</td>
+</tr>
+<tr>
+<td>13</td>
+<td>A buy bar that follows you on a phone</td>
+<td>general practice</td>
+<td>1</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr>
+<td>14</td>
+<td>Fast, light, no errors</td>
+<td>all</td>
+<td>2</td>
+<td>2</td>
+<td></td>
+</tr>
+<tr>
+<td>15</td>
+<td>Every picture and sentence true of the product</td>
+<td>FTC</td>
+<td>0</td>
+<td>1</td>
+<td>Words fixed; pictures are still pre-change renders</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Total</strong></td>
+<td></td>
+<td><strong>10 / 30</strong></td>
+<td><strong>25 / 30</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2>Images to re-render (nothing was faked or retouched)</h2>
+<table>
+<thead>
+<tr>
+<th>File(s)</th>
+<th>Used on the site now</th>
+<th>Problem</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>img/exploded-900/1600.*</code></td>
+<td>No (removed from home, product, install)</td>
+<td>Old design: light on the rim, felt washer only, no heat rings</td>
+</tr>
+<tr>
+<td><code>img/rear-900/1600.*</code></td>
+<td>No (removed from install and product gallery)</td>
+<td>Callouts say "LED ring on the rim" and "barrel plug into the hub jack"; the hub jack is now a pigtail</td>
+</tr>
+<tr>
+<td><code>img/swap1/2/3-*</code>, <code>renders-final/png/swap*</code>, <code>swap_triptych.png</code></td>
+<td>No</td>
+<td>Phantom fixed post</td>
+</tr>
+<tr>
+<td><code>img/flatlay-*</code>, <code>renders-final/png/flatlay*</code></td>
+<td>No</td>
+<td>Loose "post" in the box that does not exist; no heat rings, no clear washer</td>
+</tr>
+<tr>
+<td><code>img/bedroom-*</code>, <code>img/bar-*</code>, <code>img/sq-brass-*</code>, <code>img/sq-black-*</code>, <code>img/hero-brass-*</code>, <code>img/hero-black-*</code>, <code>img/cap-brass.*</code>, <code>img/cap-black.*</code></td>
+<td>No (second pass)</td>
+<td>Bedroom: a 4 W strip lighting a whole room. The rest: cap finishes with no real part</td>
+</tr>
+<tr>
+<td><code>img/sq-chrome-*</code>, <code>img/hero-chrome-*</code>, <code>img/living-*</code>, <code>img/og.jpg</code></td>
+<td>Yes</td>
+<td>Lit before the layout change with a ring near the rim. The strip is now 14 mm further in, so the real halo may be softer or narrower. Captioned as renderings. Re-render from the final CAD, then replace with photographs of a built unit</td>
+</tr>
+<tr>
+<td><code>img/set-*</code>, <code>img/studio-*</code></td>
+<td>No</td>
+<td>Show 7-inch singles, which are not on the heat-safe layout</td>
+</tr>
+<tr>
+<td><code>img/cutaway-*</code></td>
+<td>Yes (install)</td>
+<td>Callout "Cable exits hub back centre"; the lead hole is 15 mm off centre. Minor</td>
+</tr>
+<tr>
+<td><code>img/cap-*</code>, <code>img/macro-*</code></td>
+<td>cap: yes</td>
+<td>No clear washer visible under the cap. Minor</td>
+</tr>
+<tr>
+<td>New: <code>img/layout-900/1600.*</code></td>
+<td>Yes</td>
+<td>Cropped from <code>renders-exploded/spindle-heat-safe-layout.png</code> (the current design). A light technical drawing inside a dark site: accurate, not pretty. A dark-styled render of the same view would fit the look</td>
+</tr>
+</tbody>
+</table>
+<h2>What I changed</h2>
+<p>All inside <code>site/</code>. Generated HTML was never hand-edited.</p>
+<ul>
+<li><code>_gen/pages.py</code>: rewritten copy per the findings; price and switch constants at the top; FAQ now 13 questions with "Is this a finished product I can buy today?" first; new warranty and 404 pages; room images and the current-design drawing added; old exploded and rear images removed.</li>
+<li><code>_gen/build.py</code>: writes prices into <code>js/config.js</code>; <code>--launch-check</code>; footer and announcement bar wording; <code>noindex</code> on thank-you and 404 pages; <code>noscript</code> fallback.</li>
+<li><code>js/main.js</code>: hero timing; honest thank-you logic; waitlist validation; sticky bar trigger; Set switch.</li>
+<li><code>js/config.js</code>: <code>SET_OPEN</code>, comment that prices are generated.</li>
+<li><code>css/style.css</code>: gutter, contrast, tap targets, the new blocks. Same tokens, same fonts, same look. No new colours except the diagram's own paper background and a red test-mode banner.</li>
+<li>New files: <code>warranty.html</code>, <code>404.html</code>, <code>img/layout-*.{jpg,webp}</code>, <code>screenshots/audit-2026-11-11/</code>.</li>
+<li><code>README.md</code> in <code>site/</code>: section added describing the above.</li>
+</ul>
+<p>Not changed: brand, palette, type, the hero tagline, the slogan, the "First batch of 20 sold out" line (Austin's decision, recorded as true on 2026-11-09), the $25 deposit, the 100 cap. Changed in the second pass and owed a yes from Austin: chrome only, and the "lit at 2700 K" heading.</p>
+<h2>Needs Austin</h2>
+<ol>
+<li><strong>Kit price</strong>: 89, 99, or about 125 (<code>KIT_PRICE</code>). Per <code>build/cost-model.md</code> both 89 and 99 lose money on every order before ads.</li>
+<li><strong>Ship week</strong>, with a basis. No prototype exists, the chrome cap is the long pole, and the first 20 ship first. Until a date exists the honest options are a wide window or waitlist only.</li>
+<li><strong>The 20</strong>: who they are and whether they paid. The site says "sold out" on his word; if they are verbal, "20 reserved" is the true phrase. It now says they have not shipped.</li>
+<li><strong>Stripe link, waitlist endpoint, contact email, pixel id, domain</strong> (the launch check lists them).</li>
+<li><strong>Chrome only</strong> (<code>FINISHES_OPEN</code>) and <strong>no Los Angeles or North Carolina</strong> (<code>NO_SHIP_PLACES</code>): both switched on the product audit's word. <strong>Set</strong>: stay closed until the 7-inch is engineered? And <strong>Named</strong>: keep it on sale before the album menu and the IP lawyer hour exist?</li>
+<li><strong>In-wall as the default</strong>: he said most people will want it. On the page the two-screw plug-in route now comes first because it is the one a renter and a nervous buyer can say yes to; in-wall is option B. Swap back if he prefers.</li>
+<li><strong>Lawyer</strong> on the four policy pages and the warranty (ops drafts say so).</li>
+<li><strong>Seller identity</strong>: the terms and warranty name no legal entity or address.</li>
+</ol>
+<h2>Could not verify</h2>
+<ul>
+<li>Real mobile Safari, real Android, any real network speed. Headless Chromium only.</li>
+<li>Real Stripe checkout, the redirect back with <code>session_id</code>, real waitlist delivery, the Meta pixel in Events Manager.</li>
+<li>Lighthouse or Core Web Vitals (not run).</li>
+<li>Whether the 20 pre-sales are real, paid or verbal.</li>
+<li>Whether the renders match what a built unit looks like. Nothing is built.</li>
+<li><code>img/og.jpg</code> was checked for size (1200x630, 112 KB) but I did not open it to judge the picture.</li>
+<li>Mount details I simplified but did not re-derive (4-inch plate, three pins, one set screw, "about 15 minutes", "about 45 minutes"): taken from <code>mounting-report.md</code> and labelled as estimates.</li>
+<li><code>cad/build_all.py</code> was not run. I grepped the built pages for the gate strings instead: "up to 6 W" on product.html (1), "sits on the back of the backplate, facing the wall" on faq.html (2), none of the forbidden strings on any page.</li>
+</ul>
+<h2>Top five reasons this site would still fail to sell</h2>
+<ol>
+<li><strong>No proof it is real.</strong> Every picture is a rendering and the page now says so. A stranger from an ad is asked to trust a product nobody has photographed.</li>
+<li><strong>No date.</strong> "Planned to ship the week of [SHIP DATE]" is a blank. A deposit page without a date converts badly and a date without a basis is an FTC problem.</li>
+<li><strong>No voices.</strong> Zero reviews, zero photos from the 20, zero press. The reference pages all lead with one of those.</li>
+<li><strong>The honest heat answer is "calculated, not measured".</strong> For a record collector that is the whole objection. One thermocouple photo from a real unit is worth more than every sentence on the page.</li>
+<li><strong>The money.</strong> At $89 the Kit loses $19.90 on every order before ads (<code>build/cost-model.md</code>). The $129 Sconce clears $12.77, which one average ad purchase wipes out. A page that converts loses money faster.</li>
+</ol></main></body></html>

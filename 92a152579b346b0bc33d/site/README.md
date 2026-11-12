@@ -70,3 +70,15 @@ GitHub Pages: push the `site/` contents to a `gh-pages` branch or a repo root wi
 - All three finish heroes and squares (`img/hero-*`, `img/sq-*`) now come from `renders-final/png`. The exploded, cutaway, rear and cap-detail images still come from `render/`. Rerun `_gen/import-finals.sh` as the macro, swap, flat-lay and room scenes land; it picks them up automatically, then wire them into product.html thumbs and the swap section.
 - The 8-second halo loop video (`renders-final/video/`) was not there yet; a `<video>` in the hero is the natural upgrade, autoplay muted, plain file, no clever loading (Austin's pedal-card rule).
 - Heat numbers on install.html are the engineering acceptance criterion, not a measurement. Replace with the IR readings from the first prototype soak.
+
+## Audit pass, 2026-11-11 (full report: ../audits/AUDIT-website.md)
+
+- **The generator owns the HTML.** Edit `_gen/pages.py` and `_gen/build.py`, then run `python3 _gen/build.py`. Do not hand-edit the `.html` files: a hand edit (the hero slogan) was nearly lost that way.
+- **Prices live in one place**: the constants at the top of `_gen/pages.py` (`KIT_PRICE`, `SCONCE_PRICE`, ...). The build writes them into the pages, the meta descriptions, the JSON-LD and `js/config.js`. The Kit price (89 or 99) is still Austin's decision.
+- **`SET_OPEN = False`** hides the Set from the picker and footer until the 7-inch single is engineered.
+- **`python3 _gen/build.py --launch-check`** exits 1 while any placeholder a customer would see is still in place (ship date, Stripe link, waitlist endpoint, contact email, pixel id, domain). Do not deploy until it prints PASS.
+- **Truth rules** are at the top of `_gen/pages.py`: nothing is built or measured yet; heat numbers are calculated; "UL listed" describes the plug-in adapter only. `cad/gates.py` greps the built pages, so keep "up to 6 W" on product.html and "sits on the back of the backplate, facing the wall" on faq.html.
+- Thank-you pages: with placeholders they show a red TEST MODE banner; `thanks-deposit.html` without a Stripe `session_id` says no hold was found and does not fire the Purchase event. Set the Stripe link's success URL to `<DOMAIN>/thanks-deposit.html?session_id={CHECKOUT_SESSION_ID}`.
+- New pages: `warranty.html`, `404.html`. 14 pages now. The "QA done" and "Truth rules" sections above describe the site before this pass.
+- Images no longer used because they show the old design: `exploded-*`, `rear-*`. Never used and wrong: `swap*`, `flatlay*` (phantom post), `set-*`, `studio-*` (7-inch). `layout-*` is cropped from `renders-exploded/spindle-heat-safe-layout.png`.
+- **`FINISHES_OPEN = False`** sells chrome only (brass and black caps are not real parts). **`NO_SHIP_PLACES`** names where we do not ship until the fixture is listed. No colour temperature number is quoted until the strip is chosen. Vinyl softening is stated as roughly 120 F (product audit), not 130 to 140 F.

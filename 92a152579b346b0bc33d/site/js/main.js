@@ -1,4 +1,4 @@
-/* Side A / The Spindle: site behaviour. No dependencies. */
+/* Spindle: site behaviour. No dependencies. */
 (function () {
   'use strict';
   var S = window.SITE || {};
@@ -37,6 +37,9 @@
   /* ---------- Selection state (shared between home, product, reserve) ---------- */
   var state = { sku: 'sconce', finish: 'chrome', withRecords: false };
   try { var saved = JSON.parse(localStorage.getItem('spindle-sel') || 'null'); if (saved) state = Object.assign(state, saved); } catch (e) {}
+  if (!S.SKUS[state.sku] || (state.sku === 'set' && !S.SET_OPEN)) state.sku = 'sconce';
+  if (!S.FINISHES[state.finish] || !S.FINISHES_OPEN) state.finish = 'chrome';
+  var DEMO_PAY = isPlaceholder(S.STRIPE_PAYMENT_LINK);
   function saveState() { try { localStorage.setItem('spindle-sel', JSON.stringify(state)); } catch (e) {} }
   function price() {
     var sku = S.SKUS[state.sku]; if (!sku) return 0;
@@ -115,15 +118,16 @@
   /* ---------- Sticky buy bar (mobile) ---------- */
   function updateSticky() {
     var bar = document.querySelector('.sticky-bar'); if (!bar) return;
-    var n = bar.querySelector('[data-sticky-name]'); if (n) n.textContent = S.SKUS[state.sku].name + ', ' + S.FINISHES[state.finish].name;
-    var p = bar.querySelector('[data-sticky-price]'); if (p) p.textContent = '$' + price() + ' at ship. ' + '$' + S.DEPOSIT_AMOUNT + ' refundable deposit today.';
+    var n = bar.querySelector('[data-sticky-name]'); if (n) n.textContent = S.SKUS[state.sku].name + (S.FINISHES_OPEN ? ', ' + S.FINISHES[state.finish].name : '');
+    var p = bar.querySelector('[data-sticky-price]'); if (p) p.textContent = '$' + price() + ' when it ships. $' + S.DEPOSIT_AMOUNT + ' refundable hold today.';
   }
   function wireSticky() {
     var bar = document.querySelector('.sticky-bar'); if (!bar) return;
     document.body.classList.add('has-sticky');
     var anchor = document.querySelector('[data-sticky-anchor]');
     if (!anchor || !('IntersectionObserver' in window)) { bar.classList.add('show'); return; }
-    new IntersectionObserver(function (es) { es.forEach(function (e) { bar.classList.toggle('show', !e.isIntersecting && e.boundingClientRect.top < 0); }); }, { threshold: 0 }).observe(anchor);
+    /* the bar is there whenever the main reserve button is off screen, above or below */
+    new IntersectionObserver(function (es) { es.forEach(function (e) { bar.classList.toggle('show', !e.isIntersecting); }); }, { threshold: 0 }).observe(anchor);
   }
 
   /* ---------- Hero: the room turns on ---------- */
@@ -139,12 +143,13 @@
       if (range && !user) range.value = Math.round(level * 100);
     }
     function turnOn() { if (armed) return; armed = true; setLevel(1); }
-    setLevel(reduce ? 1 : 0);
+    /* the product is visible from the first frame (dim), then the room comes up. Never a black box. */
+    setLevel(reduce ? 1 : 0.32);
     if (reduce) armed = true;
-    /* turn on when the page is scrolled or the hero is tapped; fall back after 2.8s so no one stares at a black box */
+    /* turn on when the page is scrolled or the hero is tapped, or by itself after 0.7s */
     window.addEventListener('scroll', turnOn, { passive: true, once: true });
     hero.addEventListener('pointerdown', function (e) { if (e.target.closest('a,button,input,label')) return; if (armed) { setLevel(level > 0.5 ? 0.12 : 1); } else turnOn(); });
-    setTimeout(turnOn, 2800);
+    setTimeout(turnOn, 700);
     if (range) {
       range.addEventListener('input', function () { armed = true; setLevel(range.value / 100, true); });
       range.addEventListener('pointerdown', function (e) { e.stopPropagation(); });
@@ -158,8 +163,11 @@
     if (!demo) { f.action = S.WAITLIST_FORM_ACTION; f.method = 'POST'; }
     var nxt = f.querySelector('input[name=_next]'); if (nxt) nxt.value = location.origin + location.pathname.replace(/[^/]*$/, '') + 'thanks.html';
     f.addEventListener('submit', function (e) {
-      var email = f.querySelector('input[type=email]');
-      if (!email || !email.validity.valid) return;
+      var email = f.querySelector('input[type=email]'), consent = f.querySelector('input[name=consent]'), err = document.getElementById('wl-err');
+      if (!email || !email.value || !email.validity.valid || (consent && !consent.checked)) {
+        e.preventDefault(); if (err) err.hidden = false; (email && (!email.value || !email.validity.valid) ? email : consent).focus(); return;
+      }
+      if (err) err.hidden = true;
       track('Lead', { content_name: 'waitlist', content_category: 'waitlist' });
       try { localStorage.setItem('spindle-waitlist', JSON.stringify({ email: email.value, finish: state.finish, sku: state.sku, t: Date.now() })); } catch (err) {}
       if (demo) { e.preventDefault(); location.href = 'thanks.html?demo=1'; }
@@ -170,9 +178,17 @@
   function wireThanks() {
     var t = document.body.getAttribute('data-thanks'); if (!t) return;
     if (t === 'lead') track('Lead', { content_name: 'waitlist', status: 'confirmed' });
-    if (t === 'purchase') track('Purchase', { value: S.DEPOSIT_AMOUNT, currency: 'USD', content_name: 'batch-two-deposit', content_type: 'product', contents: [{ id: state.sku + '-' + state.finish, quantity: 1 }] });
+    var qs = location.search, demo = /[?&]demo=1/.test(qs), hasSession = /[?&]session_id=/.test(qs);
+    if (demo) document.querySelectorAll('[data-demo-banner]').forEach(function (el) { el.hidden = false; });
+    if (t === 'purchase' && !demo && !hasSession) {
+      /* someone opened this page without paying: never tell them a deposit is in, never fire Purchase */
+      document.querySelectorAll('[data-has-session]').forEach(function (el) { el.hidden = true; });
+      document.querySelectorAll('[data-no-session]').forEach(function (el) { el.hidden = false; });
+      return;
+    }
+    if (t === 'purchase' && hasSession) track('Purchase', { value: S.DEPOSIT_AMOUNT, currency: 'USD', content_name: 'batch-two-deposit', content_type: 'product', contents: [{ id: state.sku + '-' + state.finish, quantity: 1 }] });
     var sel = document.querySelector('[data-thanks-selection]');
-    if (sel) sel.textContent = S.SKUS[state.sku].name + ' in ' + S.FINISHES[state.finish].name;
+    if (sel) sel.textContent = S.SKUS[state.sku].name + (S.FINISHES_OPEN ? ' in ' + S.FINISHES[state.finish].name : '');
   }
 
   /* ---------- Misc ---------- */
@@ -200,7 +216,8 @@
         var src = b.getAttribute('data-full');
         if (b.hasAttribute('data-finish-img')) { src = src.replace(/\{finish\}/g, state.finish); main.closest('picture') && main.closest('picture').setAttribute('data-src-tpl', b.getAttribute('data-full')); }
         var pic = main.closest('picture'); if (pic) pic.querySelectorAll('source').forEach(function (s) { s.remove(); });
-        main.removeAttribute('srcset'); main.src = src;
+        main.removeAttribute('srcset'); main.removeAttribute('sizes'); main.src = src;
+        g.querySelector('.main').classList.toggle('contain', b.hasAttribute('data-contain'));
         main.alt = b.querySelector('img').alt;
       });
     });

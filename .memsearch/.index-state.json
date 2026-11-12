@@ -1,10 +1,10 @@
 {
   "collection": "ms_spindle_pages_dc847a00",
   "failed_files": [],
-  "indexed_chunks": 2,
-  "indexed_files": 1,
-  "last_completed_at": "2026-11-11T21:58:02.227735Z",
-  "last_started_at": "2026-11-11T21:58:01.204572Z",
+  "last_completed_at": "2026-11-11T23:30:24.902510Z",
+  "last_error": "RuntimeError: Could not open the local Milvus database at /Users/artemis/.memsearch/milvus.db: <ConnectionConfigException: (code=1, message=Open local milvus failed)>. This can happen if another process already has the database open, if file permissions are wrong, or if the file is damaged. Close other processes using this database and verify that the path is writable. If the problem continues, preserve the database and inspect the application logs before attempting recovery.",
+  "last_failed_at": "2026-11-11T23:30:24.902510Z",
+  "last_started_at": "2026-11-11T23:30:22.542071Z",
   "last_success_at": "2026-11-11T21:58:02.227735Z",
   "milvus_uri": "~/.memsearch/milvus.db",
   "operation": "index",
@@ -12,7 +12,6 @@
     "/Users/artemis/projects/spindle-pages/.memsearch/memory"
   ],
   "schema_version": 1,
-  "status": "ok",
-  "total_files": 1,
-  "updated_at": "2026-11-11T21:58:02.227735Z"
+  "status": "error",
+  "updated_at": "2026-11-11T23:30:24.902510Z"
 }

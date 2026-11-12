@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1"><title>Assembly SOP: one 12&quot; unit (build/assembly-SOP.md) | Spindle</title>
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Assembly procedure: 12 in Spindle sconce, MDF backplate, plain chrome cap | Spindle</title>
 <style>
 :root{--bg:#f6f2ea;--ink:#1b1916;--mute:#6b645a;--line:#e3dccf;--accent:#b8732e;--panel:#fffdf8}
 @media (prefers-color-scheme:dark){:root{--bg:#121110;--ink:#ece6da;--mute:#a19887;--line:#2c2925;--accent:#e6a456;--panel:#1a1816}}
@@ -13,192 +13,192 @@ code{background:var(--panel);border:1px solid var(--line);border-radius:4px;padd
 pre{background:var(--panel);border:1px solid var(--line);padding:12px;overflow-x:auto;border-radius:8px}
 img{max-width:100%}
 </style></head><body><main><a class="back" href="../START-HERE.html">Back to START HERE</a>
-<h1>Assembly SOP: one 12" unit (build/assembly-SOP.md)</h1>
-<blockquote>
-<p><strong>SUPERSEDED IN PART, 2026-11-11 (heat-safe layout, <code>../cad/FIXES-heat-layout.md</code>):</strong> on the 12 in unit the LED strip no longer goes in a rim rabbet. Jig J4 (the 6 o'clock kerf in the rabbet), the rabbet and notch checks in step 1, and step 6 (pressing the strip into the rabbet, LEDs outward) are superseded. Current build: stick the cork ring's adhesive face to the aluminium ring; wipe the ring's other face with alcohol and lay about 700 mm of strip on it centred 115 mm from the centre, joint and leads at 6 o'clock; sleeve the solder joints; fix the ring to the BACK of the backplate with four #4 x 3/8 in screws, snug only; run the leads in the back channel to the hub. This SOP has not been rewritten or timed for that.</p>
-<p><strong>SUPERSEDED IN PART, 2026-11-11:</strong> steps 4, 10 and 11 (panel jack pressed into the hub, bonded dome on a 1 in bolt, shoulder-screw studs) describe parts that no longer exist. Current parts: RS-CAP-12 rev D (one-piece turned cap), RS-HUB-01 rev B (150 mm power pigtail, no jack), PEM FH-832-10 studs, die-cut 1/16 in felt, PET label washer, centre backing ring. See <code>BOM.md</code> and <code>../cad/FIXES-fable52.md</code>. Do not buy from this list until it is rewritten.</p>
-</blockquote>
-<p>Prepared 2026-11-10. Builds one Kit or Sconce from the BOM.md parts. Times are for one person with the jigs in section 1 already made; the first three prototypes will take about double. Target: 20 minutes per unit at batch 100 (cost-model.md assumes 25 minutes for the first 20, 20 minutes at 100). Dimensions come from engineering-report.md section 6 and mounting-report.md section 1 and are not re-derived.</p>
-<p>Safety rule that governs every step: nothing in this fixture carries more than 12 V DC. The UL-listed adapter is the only part that touches 120 V and it is never opened, modified or placed inside a wall.</p>
-<h2>1. Jigs to make once (about 2 hours total)</h2>
+<h1>Assembly procedure: 12 in Spindle sconce, MDF backplate, plain chrome cap</h1>
+<p>Rewritten 2026-11-11 by the product audit (<code>../audits/AUDIT-product.md</code>) to match the canonical CAD: backplate RS-BP-12-MDF rev C, hub RS-HUB-01 rev C, wall plate RS-WP-01 rev B, cap RS-CAP-12 rev D, aluminium ring RS-HR-12 rev A, cork ring RS-CK-12 rev A. The procedure from 2026-11-10 (glued dome cap, a jack fixed in the hub, LED strip on the edge of the backplate) is in <code>SUPERSEDED/assembly-SOP-2026-11-10.md</code> and must not be used.</p>
+<p>Nothing has been built yet. Every time below is an estimate. The first three units are prototypes and go through <code>QC-test-plan.md</code> section 4 before anything is sold.</p>
+<p>Not covered here, because the design is not settled: the 7 in sconce, the lit cap, the aluminium-backplate variants.</p>
+<h2>Before you start: two decisions this procedure assumes</h2>
+<ol>
+<li><strong>The LED strip is laid as seven straight pieces.</strong> A flat LED strip cannot bend sideways into a circle on a flat ring. This procedure uses seven 100 mm pieces of ordinary 8 mm strip laid as a seven-sided ring and joined with short jumpers. The CAD proves that fits the aluminium ring and misses the four screws (gates tagged AUDIT in <code>../cad/checks.md</code>). If an S-shape strip that bends sideways is chosen instead, step 6 becomes one piece and no jumpers.</li>
+<li><strong>Strip power is 5 W or less at 12.0 V.</strong> The heat study assumes 4 W and treats 6 W as the wrong part. Do not use the HitLights COB reel named in the old sample plan: it is 10 W per metre, which is 7 W on this ring.</li>
+</ol>
+<h2>Tools and jigs</h2>
 <table>
 <thead>
 <tr>
-<th>Jig</th>
-<th>What it is</th>
-<th>Why</th>
+<th>Item</th>
+<th>What it is for</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>J1 Felt-pad template</td>
-<td>A 10.5" paper or 1/8" hardboard disc with a 25/64" centre hole and six 1/2" holes: three at 5.00" radius and three at 2.75" radius, 120 degrees apart, one of each at 12 o'clock. Mark 12 o'clock on the edge.</td>
-<td>Pads land in the same place every time; the three-point plane is what stops warp and rotation.</td>
+<td>Bench supply, 12.0 V, with a current display (or a 12 V adapter and a multimeter in series)</td>
+<td>Step 6 and step 9 power checks</td>
 </tr>
 <tr>
-<td>J2 Hub centring jig</td>
-<td>A 10.5" ring of 1/4" ply with a 5.00" hole in the centre and a 12 o'clock notch. Drop over the backplate's back, the hub goes in the hole.</td>
-<td>Hub concentric to the plate within 1/32" so the record sits centred over the hub.</td>
+<td>Soldering iron, 60/40 or lead-free solder, 22 AWG red/black wire, 3 mm and 5 mm heat-shrink</td>
+<td>Strip jumpers, leads, splice</td>
 </tr>
 <tr>
-<td>J3 Dome fill fixture</td>
-<td>A block of 2x4 with four 38 mm holes drilled 10 mm deep, open side up.</td>
-<td>Holds four shells level while the epoxy cures; bolt stands vertical in each.</td>
+<td>M3 heat-set insert tip for the iron</td>
+<td>Hub set-screw insert</td>
 </tr>
 <tr>
-<td>J4 Strip start mark</td>
-<td>A 1/4" wide saw kerf at 6 o'clock in the rim rabbet, cut when the backplate is made.</td>
-<td>Every strip starts and ends at the lead notch; the leads come out at 6 o'clock to the jack.</td>
+<td>Isopropyl alcohol and lint-free wipes</td>
+<td>Degrease the aluminium ring before the strip goes on</td>
 </tr>
 <tr>
-<td>J5 Polarity tester</td>
-<td>A spare 5.5 x 2.1 barrel plug on 6" of wire with a red LED + 1 kohm resistor across it. Lights only when centre is positive.</td>
-<td>Thirty-second polarity check before any unit is powered.</td>
+<td>J1 strip template: a 260 mm card or acrylic ring printed with the seven-sided layout (each side 100 mm, its middle 114 mm from the centre, one corner at 6 o'clock) and the four screw holes</td>
+<td>Lays the strip pieces in the right place</td>
 </tr>
 <tr>
-<td>J6 Pull-test hook</td>
-<td>A #8 screw with a loop of cord, and a 1-gallon water jug (8.3 lb).</td>
-<td>QC-test-plan.md pull test.</td>
+<td>J2 nut gauge: a 7.2 mm thick slotted shim</td>
+<td>Sets the three lock nuts on the wall plate studs</td>
+</tr>
+<tr>
+<td>J3 master wall plate screwed to a board</td>
+<td>Trial hang of every hub</td>
+</tr>
+<tr>
+<td>Circle cutter and a 4 mm hollow punch (only if cork rings are cut in-house)</td>
+<td>Cork ring</td>
+</tr>
+<tr>
+<td>#1 Phillips, #2 Phillips, 1.5 mm hex driver</td>
+<td>Screws</td>
+</tr>
+<tr>
+<td>Thin CA glue</td>
+<td>Insert bore</td>
 </tr>
 </tbody>
 </table>
-<h2>2. Build steps</h2>
-<p>Stack convention: 12 o'clock is up on the wall. Looking at the FRONT (record side) of the backplate, the lead notch and the jack are at 6 o'clock.</p>
+<h2>Steps</h2>
 <table>
 <thead>
 <tr>
+<th>#</th>
 <th>Step</th>
-<th>Minutes</th>
-<th>What to do</th>
-<th>Check</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1. Backplate prep</td>
-<td>3 (0 if CNC-cut arrives finished)</td>
-<td>Confirm 10.50" diameter, 25/64" centre hole, rim rabbet 0.40" wide x 0.06" deep centred on the rim, 1/4" lead notch at 6 o'clock running to the back face. Sand 220, two coats matte black, front, rim and back. Dry 1 hour between coats.</td>
-<td>Paint fully cured before felt or strip; tacky paint lifts adhesive within a week.</td>
-</tr>
-<tr>
-<td>2. Insert</td>
-<td>1</td>
-<td>Wet the centre hole with thin CA, wait 30 seconds, drive the E-Z Lok 400-4 from the FRONT with the hex drive (or a 1/4-20 bolt and two jam nuts) until the insert is flush with the front face. The insert is 0.500" long and fills the full plate thickness.</td>
-<td>Thread a 1/4-20 bolt through from the front; it must turn freely and protrude about 1/4" out the back.</td>
-</tr>
-<tr>
-<td>3. Felt pads</td>
-<td>1</td>
-<td>Lay J1 on the front, 12 o'clock to 12 o'clock. Press one 1/2" pad through each of the six holes. Remove J1, burnish each pad with a thumb for 3 seconds.</td>
-<td>Six pads, none on the rim, none over the hole.</td>
-</tr>
-<tr>
-<td>4. Hub prep</td>
-<td>2</td>
-<td>Printed PETG hub (5" x 1"): press the DC jack (Adafruit 610) into the 8 mm pocket at the 6 o'clock edge from the outside, nut on the inside, lugs pointing into the cable channel. Fit the M3 set screw into its rim boss (two turns). Press the two silicone bumpers at 5 and 7 o'clock on the wall face.</td>
-<td>Jack nut tight; jack sits flush with the hub rim.</td>
-</tr>
-<tr>
-<td>5. Hub to plate</td>
-<td>2 + cure</td>
-<td>Wood glue (MDF plate) on the hub's plate face. Drop J2 over the back of the plate, set the hub in J2's hole with the jack at 6 o'clock aligned with the lead notch, and the J-slot "12" mark at 12 o'clock. Two #8 x 3/4" screws from the hub side into the plate at 3 and 9 o'clock, away from the insert's 0.30" clearance pocket. Clamp flat, 30 minutes.</td>
-<td>The 1/4-20 bolt from step 2 must still turn freely: the clearance pocket is behind the insert.</td>
-</tr>
-<tr>
-<td>6. Strip</td>
-<td>4</td>
-<td>Cut 36" of COB at the nearest cut mark (COB cut marks every 1" to 2"). Peel 2" of liner, start at J4 (the 6 o'clock notch), LEDs facing OUTWARD (radially), press into the rabbet. Work clockwise, peeling as you go, keeping the strip centred in the rabbet. The strip is a face bend at 5.25" radius; never fold it edgewise. Finish at the notch; trim at the last cut mark so the ends meet with a 1/8" gap. Burnish the whole ring with a soft cloth.</td>
-<td>No lifted edges; both ends at the notch; the strip edge flush with the rim.</td>
-</tr>
-<tr>
-<td>7. Solder leads</td>
-<td>3</td>
-<td>Tin the strip's + and - pads at the START end (the end that still has the factory solder pads; if neither, use a COB solder-pad connector). Solder 12" of 18 AWG: RED to +, BLACK to -. Slide 3/16" heat shrink over each joint and shrink. Route both leads through the lead notch to the back, along the hub's cable channel to the jack. Solder RED to the jack's CENTRE pin lug, BLACK to the SLEEVE (outer) lug. Heat shrink both lugs.</td>
-<td>Centre positive. Our adapter and dimmer are centre-positive 5.5 x 2.1; a reversed COB simply does not light, but the convention must match the in-wall barrel pairs the customer may wire later.</td>
-</tr>
-<tr>
-<td>8. Polarity + smoke test</td>
-<td>1</td>
-<td>Plug J5 into the adapter + dimmer chain: red LED lights = centre positive. Then plug the chain into the hub jack. Full brightness, then dim to minimum: no flicker visible to the eye, no dead segments. Hold 60 seconds.</td>
-<td>Any dark segment = re-seat or replace the strip. Any flicker at low dim = swap the dimmer (QC-test-plan.md section 4).</td>
-</tr>
-<tr>
-<td>9. Strain relief</td>
-<td>1</td>
-<td>A pea of hot glue over each solder joint at the strip, and a hot-glue dab holding the lead in the notch and in the hub channel at two points so a tug on the jack cannot reach the COB pads.</td>
-<td>Pull the leads with 2 lb; nothing moves.</td>
-</tr>
-<tr>
-<td>10. Dome cap assembly (batched, 4 at a time in J3)</td>
-<td>3 per 4 caps + 24 h cure</td>
-<td>Degrease the inside of a 38 mm shell with alcohol. Thread the 1/4-20 x 1" bolt through the 1-1/2" fender washer, head on the washer. Set the shell open-side-up in J3, fill to 3 mm below the rim with mixed JB Weld, lower the bolt head into the epoxy so the washer seats on the shell's rim, bolt pointing straight up. Check plumb with a square. Cure 24 h. Stick one 1" felt washer (Durofelt SAW1GY-50) to the washer face, centred on the stud.</td>
-<td>After cure: grip the dome, turn the stud with fingers; zero rotation. Stud protrudes 0.73" to 0.78" below the felt.</td>
-</tr>
-<tr>
-<td>11. Mount plate + studs</td>
-<td>1</td>
-<td>Fit the three 8-32 shoulder screws into the steel plate's stud holes, heads on the wall side, shoulders towards the room. Bag with 2 x #8 x 1-1/4" screws, 2 anchors, the M3 key.</td>
-<td>Studs tight, all three the same height.</td>
-</tr>
-<tr>
-<td>12. Record fit (Sconce only; Kit skips)</td>
-<td>2</td>
-<td>Set the LP label-out on the six pads, spindle hole over the insert. Drop the dome's stud through the hole, turn until finger-snug (about 1/4 turn past contact). Push the record's edge firmly sideways: no rotation. Unscrew, bag the dome.</td>
-<td>The clamp stack is record 0.07" + felt 0.125" + pads 0.0625" = about 0.27"; the stud bottoms in the insert before the dome bottoms on the label. If the dome bottoms first, add a second felt washer.</td>
-</tr>
-<tr>
-<td>13. Pack</td>
-<td>2</td>
-<td>13 x 13 x 3 box, foam corners. Backplate face up (hub down) on the corners. Record (if any) in a black poly-lined sleeve on top of the backplate. Dome in its pouch sitting in the centre where the spindle hole is, so it is the first thing seen. Adapter, dimmer, mount plate bag and 45 adapter in the corner pockets. Card on top. Tape. Weigh and write the weight on the box for the shipping log.</td>
-<td>Shake test: nothing moves. Weight 3 to 4 lb for a Sconce (cost-model.md assumption; log the real number).</td>
-</tr>
-</tbody>
-</table>
-<p>Total: about 26 minutes of touch time plus cures on the first units; 20 minutes once the dome caps and hubs are batched ahead.</p>
-<h2>3. In-wall kit assembly (the add-on bag)</h2>
-<table>
-<thead>
-<tr>
-<th>Step</th>
-<th>Minutes</th>
-<th>What to do</th>
+<th>Min</th>
+<th>How</th>
+<th>Check before moving on</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>1</td>
-<td>2</td>
-<td>Cut CL2 18/2 to 8 ft. Strip 1/4" from both conductors at both ends.</td>
+<td>Backplate in</td>
+<td>1</td>
+<td>Take a painted RS-BP-12-MDF rev C. Front face has six shallow felt targets and a scored circle round the centre hole. Back face has one short channel (60 to 97 mm from the centre, toward 6 o'clock) and four small blind holes. The rim is a plain square edge.</td>
+<td>No step cut into the rim (that is the old rev B). Paint covers every routed surface, including the channel, the targets and the edge. Raw MDF anywhere = back to paint.</td>
 </tr>
 <tr>
 <td>2</td>
+<td>Threaded insert</td>
 <td>2</td>
-<td>Top end: screw-terminal MALE barrel plug (goes into the hub jack). Red (or the ribbed/marked conductor) to the terminal marked + or to the centre pin, black to -. Tighten; tug. This end passes through the 1" wall hole and the plate's centre; a 5.5 mm plug body is 10 mm wide and fits.</td>
+<td>Wick thin CA into the centre bore, wait 30 seconds, drive the E-Z Lok 400-4 in from the FRONT until it is flush to 0.2 mm below the front face. Let it cure 10 minutes before any screw goes in.</td>
+<td>Flush or just below. Not proud (a proud insert dishes the record). Thread clean: the cap spins in by fingers.</td>
 </tr>
 <tr>
 <td>3</td>
+<td>Felt</td>
 <td>2</td>
-<td>Bottom end: screw-terminal FEMALE barrel jack, same colours. The adapter's own male lead plugs into this at outlet height behind the Datacomm plate.</td>
+<td>Six 1/2 in felt pads into the six targets. Centre felt ring (1-1/4 x 3/8 x 1/16 in) inside the scored circle, round the insert.</td>
+<td>All seven pieces seated flat, none overhanging its target.</td>
 </tr>
 <tr>
 <td>4</td>
-<td>1</td>
-<td>Check with J5 from the bottom end: plug the adapter into the female, J5 into the male; red LED must light.</td>
+<td>Hub prep</td>
+<td>4</td>
+<td>Heat-set the M3 insert into the hole in the hub rim (about 220 C, flush). Thread the M3 x 12 set screw in from outside until its tip is flush with the inside of the tab pocket (not into it). Fix the pigtail in the rear pocket with the nylon P-clip and one #4 x 3/8 screw: 150 mm free beyond the clip, bare ends up through the 6.5 mm hole into the front splice cavity. Stick the "12 V DC ONLY" label beside the cord channel.</td>
+<td>Tug the pigtail with about 2 kg: it must not move in the clip. Set screw turns freely.</td>
 </tr>
 <tr>
 <td>5</td>
+<td>Hub to backplate</td>
+<td>3</td>
+<td>Hub front face to the backplate back face, hub's front lead channel at 6 o'clock lined up with the backplate's back channel. Three #8 x 1 in flat-head wood screws from the FRONT of the backplate into the hub pilots, heads flush in their countersinks. Snug only: the pilots are in printed plastic. No glue is needed and wood glue does not bond PETG.</td>
+<td>Heads flush or below (a proud head touches the record). Hub does not rock.</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Halo ring, on the bench</td>
+<td>12</td>
+<td>Wipe the aluminium ring with alcohol. Lay the cork ring under it, holes lined up (if the cork has an adhesive face, stick it to the aluminium). Lay template J1 on the aluminium. Cut seven 100 mm strip pieces on the cut marks. Peel and press each piece onto the aluminium on a template side, LEDs up, all with + on the same edge, 30 seconds of firm thumb pressure along each piece. Solder six jumper pairs (about 15 mm, + to + and - to -) across six of the seven corners. Leave the corner at 6 o'clock open: solder the red and black leads (250 mm) to the two pads at one side of that corner. Slide 5 mm heat-shrink over each lead where it will cross the ring's inner edge.</td>
+<td>Power the ring at 12.0 V: all seven pieces light, even colour. <strong>Current between 0.20 and 0.42 A (2.4 to 5 W). Above 0.42 A: wrong strip, reject.</strong> No bare copper within 2 mm of a screw hole.</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Ring to backplate</td>
+<td>3</td>
+<td>Ring onto the back of the backplate, cork against the wood, strip facing away from the wood, open corner at 6 o'clock. Four #4 x 3/8 pan-head screws through the aluminium and cork into the four blind holes. Stop when the head touches: the thread is in MDF and strips easily.</td>
+<td>Look at the FRONT face: no bulge or crack over any of the four screws. Ring does not rattle. Screw heads do not touch the strip.</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Leads and splice</td>
+<td>5</td>
+<td>Run the two leads inward over the ring's inner edge (heat-shrink at the edge), into the backplate's back channel, into the hub's front channel, to the splice cavity. Solder to the pigtail (red to centre pin). Heat-shrink each joint, then one sleeve over both. Press into the cavity.</td>
+<td>Continuity check, no short between + and - (meter). Polarity: centre positive at the jack.</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Burn-in</td>
+<td>2 + 30 unattended</td>
+<td>Plug in the kit's own adapter and dimmer. Run at full for 30 minutes.</td>
+<td>Still lit, no dark piece, no smell. Touch the aluminium ring beside the strip: warm, not hot (about 40 C). Dimmer sweeps smoothly with no flicker to the eye and no whine from the adapter at arm's length.</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Trial hang</td>
+<td>2</td>
+<td>Offer the hub to master plate J3 with the unit turned about 20 degrees anticlockwise (the top of the unit at about 11 o'clock), push it flat, twist CLOCKWISE until it stops. Drive the set screw in with the straight hex driver until it stops in the plate tab. Back the screw out, twist off.</td>
+<td>It goes on, turns the full 20 degrees without scraping, the set screw finds the tab hole, and the unit cannot be turned back by hand with the screw in. Leave the set screw backed out flush.</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Wall plate kit</td>
+<td>2</td>
+<td>Wall plate arrives with its three studs pressed in. Spin a lock nut onto each stud down to gauge J2 (7.2 mm between plate and nut). Bag: plate, two #8 x 1-1/4 screws, two named drywall anchors, the 1.5 mm x 100 mm straight hex driver.</td>
+<td>Three nuts at gauge height. An L-shaped hex key is not a substitute: it cannot reach the set screw.</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Cap</td>
 <td>1</td>
-<td>Bag: cable, Arlington LV1 bracket, Datacomm 45-0001-WH plate, 10 ft pull string, the drill-size card (1" hole saw at the sconce centre, single-gang cutout from the LV1 template, 12 to 18" off the floor, same stud bay as the outlet).</td>
+<td>Felt washer into the recess under the chrome cap. Bag the cap with one clear PET washer.</td>
+<td>Stud thread clean, cap spins into a test insert by fingers. No chrome flakes on the thread.</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Record (Sconce only)</td>
+<td>4</td>
+<td>Record on the six pads, label out. PET washer on the label, matte side to the paper. Cap through the washer and the record into the insert, finger tight.</td>
+<td>Record sits flat on all six pads (slide a strip of paper under each pad position: it should drag). Cap stops firmly. Record does not rattle when the unit is shaken. For shipping, take the record off again: it ships in its own sleeve, not clamped.</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Label and final check</td>
+<td>2</td>
+<td>Rating label on the hub: "Spindle. 12 V DC, 0.5 A max. Use only the supplied Class 2 adapter. Indoor, dry locations only." plus a serial number and build date. Run the per-unit checklist in <code>QC-test-plan.md</code> section 3.</td>
+<td>Checklist signed.</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Pack</td>
+<td>3</td>
+<td>See <code>QC-test-plan.md</code> test T7 for the pack that passed the drop test. Cap in its own foam pocket, never loose.</td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<p>Note from inwall-parts (2026-11-10): the DC keystone coupler idea is dropped; the common 5.5 x 2.1 keystone is rated 0.5 A and the COB ring draws about 1 A. The barrel pair above replaces it.</p>
-<h2>4. Polarity and connector reference</h2>
+<p>Total: about 40 minutes of hands-on time a unit for the first units, about 32 once jigged, plus the unattended burn-in. A Sconce adds step 13.</p>
+<h2>Rework and scrap rules</h2>
 <ul>
-<li>Barrel: 5.5 mm OD x 2.1 mm ID, centre POSITIVE, throughout (adapter, dimmer, hub jack, in-wall pair).</li>
-<li>Wire colour: red = +, black = -. If the CL2 cable is two black conductors, the ribbed or printed one is +.</li>
-<li>COB strip: 12 V DC; 36" of a 16.4 ft reel rated about 3 W/ft draws about 9 W = 0.75 A at 12 V. A 2 A adapter has margin for the Set's three units on one adapter if that design change is ever made (27 W would exceed a 24 W adapter; it is not assumed).</li>
-<li>Never splice the adapter's own cord; never put the adapter inside the wall (NEC 400.12, mounting-report.md).</li>
+<li>A screw that spins in the MDF (step 7): do not glue it and ship. Fill with CA and MDF dust, re-drill 2.2 mm, or scrap the backplate.</li>
+<li>A strip piece that lifts at an end after burn-in: replace the piece; do not press it back.</li>
+<li>Any unit over 0.42 A at 12.0 V: strip the ring and rebuild with the right strip.</li>
+<li>A record that will not sit on all six pads is a warped record: use another record. Do not tighten the cap to flatten it.</li>
 </ul>
-<h2>5. Batch rhythm for 100 units</h2>
-<p>Day 1: receive CNC backplates, paint all (2 coats, racks). Day 2: inserts + pads on all (steps 2 to 3), 25 dome caps in J3 x 6 fixtures. Day 3: hubs + jacks + glue (4 to 5), strip and solder (6 to 9) on 25 units. Days 3 to 6: 25 units per day through steps 6 to 13, heat-soak the first 10 (QC-test-plan.md), ship as they pass. Two people halve the calendar.</p></main></body></html>
+<h2>Batch flow for 100</h2>
+<p>Day 1: receive and inspect (section 1 of the QC plan), inserts and felt on all backplates. Day 2: hub prep and hub to backplate. Days 3 to 5: ring sub-assemblies (about 5 an hour), ring to backplate, splice, burn-in in groups of 10. Day 6: trial hang, wall plate kits, caps, labels. Day 7: pack. One person, about 55 hours in all. This is a plan, not a measurement.</p></main></body></html>

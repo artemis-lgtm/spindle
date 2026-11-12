@@ -1,77 +1,70 @@
-# Spindle: organic TikTok and Instagram plan
+# Spindle: organic TikTok and Instagram plan (v2)
 
-Prepared 2026-11-09. Nothing posted. Handle: @spindlelighting on TikTok and Instagram (free as of 11/9 per brand/, not yet registered; register before the first post). Scheduling runs through Postiz, which already posts for Ghost Audio.
+Rewritten 2026-11-11 after the audit (CHANGELOG.md). Nothing posted. Handle: @spindlelighting on TikTok and Instagram, to be registered under a Spindle identity before the first post. Scheduling uses its own login; nothing is posted through the Ghost Audio scheduler or any Ghost Audio, Elbo Room or Higney International account.
+
+The laws behind this plan and the 14 shot-by-shot concepts are in tiktok-laws-and-video-concepts.md. The gates (0 to 3) are defined in strategy.md section 3. This file is the operating schedule.
 
 ## Principle
 
-One product, one wall, one camera, daily. The product does the work: a light switching on, a record coming off and another going on, a chrome dome reflecting a room. Every post is shot in the shop or at Austin's house on a phone in a dim room with the sconce as the only light source (design-report.md photography brief). No band names or logos: use plain-label records (promo blanks, house labels, coloured vinyl with no text) in every clip. The product page can show a real label as a factual example; social cannot, because a logo in a Reel is a logo in our marketing.
+One product, one wall, one phone, real footage. Until a unit exists the account is a build diary; once one exists it becomes two repeating clips (the light coming on, the record changing) and the questions people ask. No renders in organic video. No band, artist, album or label names anywhere, including replies.
 
-Every organic post is an ad audition. Anything over 10k views in 48 hours gets boosted from the Meta ad account using the post itself (object_story_id), the Ghost Audio pattern. Anything over 100k views goes to the email list the same day.
+v1 said every organic post is an ad audition and anything over 10k views gets boosted. That holds only after Gate 2, when there is something to buy and a ship week to state. Before that, nothing is boosted.
 
-## Cadence (first 30 days)
+## Cadence
 
-- TikTok: 1 post per day, 7 days a week. 7 to 20 seconds. Native text, trending sound only when it is in the Commercial Music Library (ads cannot run on non-commercial sounds; organic posts that may be boosted use commercial sounds from day one).
-- Instagram: the same clip as a Reel, 5 days a week, plus 2 carousel or still posts a week (render hero, detail shots), plus daily Stories (behind the bench, polls: "chrome or brass", "which label colour").
-- YouTube Shorts: repost the top 3 TikToks of the week. Low effort, long tail, and the vinyl audience is heavily on YouTube (see ugc-creators.md).
-- Pinterest: every still render and every finished-wall photo pinned to boards named "Vinyl wall ideas", "Record room", "Home bar lighting", "Renter friendly lighting". Pinterest is slow and compounding; start day one.
+| Phase | TikTok | Instagram | Other |
+|---|---|---|---|
+| Gate 0 (no unit) | 3 to 5 posts a week, the "Day N" build series | The same clip as a Reel | Nothing else. No Pinterest, no Shorts yet: there are no real stills to pin and renders are not pinned as if they were photos. |
+| Gate 1 (unit passes heat test) | 1 post a day, 5 to 7 days a week | Same clip as a Reel, plus 2 real photos a week, plus Stories from the bench | YouTube Shorts: the week's best two. Pinterest: real photos only, boards "Vinyl wall ideas", "Record room", "Home bar lighting". |
+| Gate 2 (ship week exists) | Same, with the link in bio pointing at the reserve page | Same | Paid stays off until the margin exists (strategy.md section 7). Nothing is boosted. |
+| Gate 3 (20 delivered) | Customer walls enter the rotation | Customer photos, with permission | |
 
-## Formats that carry the account
+One person can keep this up only if it is cheap: every Gate 1 clip is shot on the same wall with the phone on the same tripod mark, in one 20-minute session at dusk, three clips per session.
 
-Formats below are the proven ones in #homedecor and #vinylcollection content. Reference videos with view counts (verified 11/9) are in ad-concepts.md under "Viral organic references" (V1 to V17): the 27.2M-view vinyl wall "here is how it was made" reply (@alexjbauer), the 7.1M "finally upgraded from my suitcase player" setup (@nadismit), the 2.4M "finally built my vinyl corner" (@johns_paul), the 198K "POV: your favorite album becomes wall art" swap (@wexelart), and the renter-lighting clips (@pridoladesign 492K, @floridaw0man 178K). TikTok Creative Center hashtag totals need a login and are not quoted.
+## What to post, in order
 
-1. The switch-on reveal. Dark room, hand on the dimmer, the wall goes amber. 5 to 8 seconds, no talking. The single most reused lighting-product format (Govee, Poplight, Nanoleaf installs all use it).
-2. The swap (the "Change the Record" series). One take: unscrew the dome, lift, new record on, screw, step back. ASMR-grade audio of the thread and the felt. 10 to 15 seconds. Different record every day; the series is the reason to follow.
-3. "Things in my apartment that just make sense" style: the sconce as one item in a quick pan, text on screen. Borrow the format, not the sound.
-4. POV / aspirational: "POV: you finally have a listening corner". Wide shot, chair, turntable, the lit record.
-5. Rate my setup / wall tour: a slow pan across three sconces on one wall.
-6. Install in 60 seconds: time-lapse of the in-wall run, hole saw to glowing record. The "satisfying" edit.
-7. Founder talking head: Austin, 20 seconds, why he made it, plain speech, no script. Do these weekly; they build trust for a deposit product.
-8. Stitch / reply: answer a comment ("does it damage the record?") with a 10-second clip of the felt pads.
-9. Before / after: crate on the floor, then the record on the wall lit.
-10. Unboxing: lid off, chrome dome sitting in the centre of the tray first (design-report.md packaging), then the record, then the plate.
+Gate 0: concept 1 (Day 1), 3 (the part nobody films), 12 (what went wrong), 2 (the warp test, when a powered stack and a thermocouple exist), 4 (the dome, when the first real chrome cap arrives).
 
-## 20 post ideas (shoot list with on-screen text)
+Gate 1: concept 5 (switch-on), 6 (the swap, timed), 9 (crate to wall), 10 (install, real time), 7 (heat reply), 8 (you pick tomorrow's record), 11 (the corner at dusk). Then 6 and 8 repeat as the running series: each day's record is the one the comments chose.
 
-1. "We sold the first 20 before the website existed." Switch-on reveal. Caption: first batch of 20 sold out, batch two deposits open, link in bio.
-2. "Change the record, change the room. Day 1." Swap series, black vinyl to a solid red label.
-3. "Does it damage the record? No. Here's why." Macro of felt pads and felt washer, dome finger-tightening.
-4. "Plug-in sconce, 15-minute install, no electrician." Surface install time-lapse.
-5. "Hide the cord in the wall. Legally." In-wall install time-lapse with the text "only the 12V side goes in the wall".
-6. "$755 designer sconce vs ours." Side-by-side of the Tom Dixon reference silhouette (our render, not their photo) and the Spindle. Text only, no brand logos shown.
-7. "Chrome or brass?" Split screen, both lit, poll in caption.
-8. "Coloured vinyl in this thing is unfair." Translucent coloured record glowing at the edge.
-9. "POV: you finally built the listening corner." Wide, dusk, one lamp off, sconce on.
-10. "Rate my wall." Three sconces, slow pan, reference-image composition.
-11. "What a 45 looks like in it." 7" on the chromed adapter cap.
-12. "Things in my apartment that just make sense." Quick pan including the sconce, text pop.
-13. "Dim it." Dimmer turn, halo pulling in to amber. 5 seconds.
-14. "Why we don't glue records." Austin talking head, 20 seconds.
-15. "Unboxing the first production unit." Lid, dome, record, plate.
-16. "The part nobody sees." Rear of the hub, steel plate, twist lock, set screw. Engineering flex.
-17. "Change the record, change the room. Day 7: the holiday record." Swap to a green or red label.
-18. "Record room tour, 5 pm vs 9 pm." Same wall, daylight then halo only.
-19. "Reply to @[commenter]: yes, it comes off the wall when you move." Twist-unlock, lift off.
-20. "How the first 20 hung theirs." Carousel of customer photos (with permission, labels blurred or plain), one line each.
+Gate 2: concept 13 (unit number 1).
 
-## The "Change the Record" series
+Gate 3: concept 14 and every customer wall after it.
 
-Rules: same wall, same camera position, same time of day (dusk), new record every day for the first 30 days. Each clip is 10 to 15 seconds: hands in, dome off, record off, new record on, dome on, step back, light already on throughout. Audio is the real sound of the thread and the felt, no music, or a commercial-library track at low volume. Title card text: "Change the record. Day N." Caption names the label colour, not the record. Viewers will ask what the records are in comments; answer "a 1970s pressing with a red label" and never the title. Day 30: a 60-second supercut of all 30 swaps, which is the month's best-performing post and the one to boost.
+Removed from v1's list of 20 post ideas:
+- "We sold the first 20 before the website existed" as post 1: held until the ledger of the 20 exists, and reworded (concept 13).
+- "How the first 20 hung theirs": there are no hung units. Returns at Gate 3 as concept 14.
+- "$755 designer sconce vs ours": dropped. It compares a product nobody has seen with a named designer's piece. If a price comparison is ever wanted, it uses two prices and no brand.
+- "Unboxing the first production unit", "What a 45 looks like in it", "Rate my wall" (three sconces): wait for the hardware. The 7 in is not on the heat-safe layout.
+- "Hide the cord in the wall. Legally.": becomes "Hiding the cord in the wall" with the softer wording from ../ops/safety.md section 4, and is filmed only when the in-wall kit exists.
 
-Why this series: it demonstrates the one thing no competitor can show (swappable, nothing glued), it is a repeatable format that costs ten minutes a day, and it builds a reason to follow rather than a reason to watch once.
+## The running series, "Change the record"
 
-## Hashtags and captions
+Same wall, same tripod mark, dusk. Each clip: hands in, dome off, record off, new record on, dome on, step back; the light stays on throughout. Title text "Change the record. Day N." The caption names the label colour, never the record. The comments choose the next one (concept 8). Real sound of the thread and the felt, or a Commercial Music Library track at low volume.
 
-TikTok: 3 to 5 per post from #vinyl #vinylcollection #vinylcommunity #vinyltok #recordcollection #homedecor #apartmentdecor #renterfriendly #moodlighting #homebar #listeningroom #wallsconce #interiordesign. Rotate; never all at once.
-Instagram: up to 10, same pool plus #vinyloftheday #nowspinning #vinyljunkie #diyhomedecor #lightingdesign.
-Caption rule: one line of value, one line of proof ("first batch of 20 sold out"), one CTA ("link in bio for batch two"). Plain prose.
+v1 promised that the day-30 supercut would be "the month's best-performing post". Nobody can know that. It is a cheap thing to cut and worth posting; that is all.
 
-## Community management
+## Captions and hashtags
 
-- Reply to every comment in the first hour (algorithm and trust). Questions about damage, install, price and ship date get a video reply within 24 hours.
-- Ship date questions: "Deposit holders get the real ship week by email; we don't post dates we haven't locked." Never guess a date in a comment.
-- "What record is that?": "A 1970s pressing with a [colour] label. Any 12" record works." Never the title.
-- Negative comments about price: "Designer halo sconces run $400 to $1,300; ours is from $89 because the disc is your record." Once, politely, then move on.
+One line of what it is, one question. 3 to 5 hashtags from: #vinyl #vinylcommunity #recordcollection #vinyltok #homedecor #walllight #apartmentdecor #diy #listeningroom #homebar. The research found no edge from caption length (median 100 characters for outliers against 93 for the rest), so keep it short for the reader, not for the algorithm.
 
-## Measurement
+"First batch of 20 sold out" does not appear in captions until Gate 3. From Gate 2 the proof line is "The first 20 are spoken for", and only if the ledger exists.
 
-Weekly: views, average watch time, follows per 1k views, saves (Pinterest-style intent), link clicks (bio link with UTM), deposits attributed to organic (UTM utm_source=tiktok / instagram). Target by day 30: 1,000 followers each platform (estimate), 10 posts over 10k views, 2 posts over 100k, organic deposits at least 20% of total.
+## Comments
+
+- Answer every question, the same day. v1 said "in the first hour (algorithm and trust)"; the algorithm part has no source and one person cannot staff it. The trust part is real.
+- Heat or damage: answer with the measured number or, before it exists, "testing that this week, I'll post the reading". Never "it's safe".
+- Ship dates: "No date until the test units pass. The waitlist hears first." After Gate 2: the real ship week.
+- "What record is that?": "A 1970s pressing with a red label. Any 12 in record fits."
+- Price: state it once. Do not argue and do not name other brands.
+- A rights holder or a label asks about anything: take it down and tell Austin.
+
+## Measurement and honest expectations
+
+Log every post: views at 48 hours and at 7 days, saves per 1,000 views, comments, profile visits, link clicks (UTM on the bio link), waitlist signups that day.
+
+What to expect: our own TikTok account for Ghost Audio, run the same way, sat at 93 to 194 views per daily post (September strategy note) and had 590 followers on 2026-10-12, 48% of them in Argentina and 21% in the United States (tiktok-audience/analytics-2026-10-12.json in the workspace memory). A new account starts there. v1's 30-day targets (1,000 followers per platform, ten posts over 10k views, two over 100k, a fifth of deposits from organic) had no evidence behind them and are withdrawn.
+
+Working targets, 30 days after Gate 1: median views per post over 500; one post over 10,000; 100 waitlist signups from the bio link; one format with ten posts logged so it can be judged. If after 20 posts the median is under 300 and nothing has passed 3,000, the hooks are wrong: change the first frame before changing anything else (law G1), and review with Austin.
+
+Check the audience location in TikTok Studio weekly. If the US share is under half, the views are not our buyers and the numbers above mean less than they look.

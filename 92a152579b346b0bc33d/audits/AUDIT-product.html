@@ -1,0 +1,541 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>Spindle product audit (pessimist pass, 2026-11-11) | Spindle</title>
+<style>
+:root{--bg:#f6f2ea;--ink:#1b1916;--mute:#6b645a;--line:#e3dccf;--accent:#b8732e;--panel:#fffdf8}
+@media (prefers-color-scheme:dark){:root{--bg:#121110;--ink:#ece6da;--mute:#a19887;--line:#2c2925;--accent:#e6a456;--panel:#1a1816}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 -apple-system,BlinkMacSystemFont,"Inter",system-ui,sans-serif}
+main{max-width:880px;margin:0 auto;padding:28px 16px 80px}
+a{color:var(--accent)} .back{font-size:14px;display:inline-block;margin-bottom:18px}
+h1{font-size:28px;line-height:1.2} h2{margin-top:36px;font-size:21px} h3{font-size:17px}
+table{border-collapse:collapse;width:100%;display:block;overflow-x:auto;font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top} th{background:var(--panel)}
+code{background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:0 4px;font-size:.9em}
+pre{background:var(--panel);border:1px solid var(--line);padding:12px;overflow-x:auto;border-radius:8px}
+img{max-width:100%}
+</style></head><body><main><a class="back" href="../START-HERE.html">Back to START HERE</a>
+<h1>Spindle product audit (pessimist pass, 2026-11-11)</h1>
+<p>Auditor: claude-fable-5-2. Scope: the product itself. The CAD and how it mounts and works (<code>cad/</code>, <code>mounting-report.md</code>, <code>engineering-report.md</code>), parts and sourcing (<code>sourcing/</code>, <code>build/</code>), the renders as a description of the real product, and compliance (<code>ops/</code>). Nothing was sent, ordered, committed, published or signed up for. Guest instant quotes were read; nobody was contacted.</p>
+<h2>Verdict</h2>
+<p><strong>Not ready to build, and not ready to sell.</strong> The 12 in design is close and the heat-safe layout was the right call, but when I tested the things nobody had tested I found three faults that would each have stopped the first prototype on the bench: the hub could not physically be twisted onto its wall plate, the LED strip is drawn in a circle that no flat strip can follow, and the laser shop refuses to press a stud into the wall plate as drawn. All three are now fixed or worked around in the CAD and held by new gates. What is left is bigger than geometry. The parts cost at live prices is <strong>$78.04 at 100 units, not $47.46</strong>, so the $89 Kit loses about $20 an order before advertising, and the chrome cap has no price at 100 from anyone (the only live numbers are $121 to $156 each). The fixture has no safety listing, and the electrical code rule that applies to it is stricter than the one the notes cite. The vinyl softening temperature everyone has been quoting (55 to 60 C) is too high: the sourced figure is 48 to 54 C. Normal use is still safe on paper with about 13 K in hand. The stacked worst case is not. Nothing has been built or measured, the 7 in sconce is not buildable, and the 20 pre-sold units are very likely already inside a Federal Trade Commission shipping deadline.</p>
+<h2>What I ran</h2>
+<ul>
+<li><code>cad/.venv/bin/python cad/build_all.py</code> before touching anything: <code>gates: 199 pass, 0 FAIL</code>.</li>
+<li>The same after my changes: <strong><code>gates: 225 pass, 0 FAIL</code></strong> (199 + 14 new geometry gates tagged AUDIT + 12 new document gates). All seven assemblies still report no interference.</li>
+<li><code>cad/.venv/bin/python cad/thermal.py</code>: reproduces 33.1 C normal and 45.2 C stacked worst case.</li>
+<li>A motion check the build never had: the hub rotated through the 20 degree twist and lifted through the push-on, intersected with the plate, studs and nuts at 13 positions.</li>
+<li>A sensitivity run of the heat model with one assumption changed at a time (table below and in <code>cad/THERMAL.md</code>).</li>
+<li>Four research passes (compliance, live sourcing with guest quotes, render review, engineering data). Their source links are in the sections below. I opened the two screenshots that carry the most weight myself (the cap price table and the laser shop's stud refusal).</li>
+</ul>
+<h2>Findings, ranked</h2>
+<h3>Safety</h3>
+<p><strong>S1. The fixture is unlisted and the rule is stricter than <code>ops/safety.md</code> said.</strong>
+Evidence: the notes cite NEC 410.6. The rule that fits a 12 V product is NEC 411: lighting at 30 V or less must be a listed system or built only from listed parts, and being Class 2 does not exempt it (secondary source, the NFPA text was not readable). A wood disc on a printed hub with our own wiring is neither. Selling it is not a federal offence, but Los Angeles (LAMC 93.0402) and North Carolina (GS 66-25) require listing or lab evaluation of electrical equipment. The standard a lab would use is UL 2108 with UL 8750. Sources in <code>ops/safety.md</code>, audit section.
+Fix applied: <code>ops/safety.md</code> corrected and extended. <strong>Decision needed:</strong> the compliance path (section below), and whether to ship to Los Angeles and North Carolina before a listing.</p>
+<p><strong>S2. The heat margin is thinner than stated.</strong>
+Evidence: <code>cad/THERMAL.md</code> and four other files said vinyl softens at 55 to 60 C. US patent 3,975,321, Table III, puts standard record compound at 48 to 50 C for loss of stiffness and 52 to 54 C glass transition. The model also leaves out the warm air rising behind the backplate; a chimney estimate gives 4 to 7 K of warmer air at 4 W and the model says the record takes 0.31 K per 1 K of it. With that, the stacked worst case goes from 45.2 C to 48.7 C, or 51.0 C with an inefficient strip. And the "wrong 6 W strip" in the worst case is not hypothetical: <code>sourcing/sample-run-plan.md</code> orders the HitLights COB reel, which is 10 W per metre, 7 W on this ring.
+Fix applied: <code>THERMAL.md</code> corrected with the source and a sensitivity table; a gate now fails the build if the old sentence comes back; the assembly procedure rejects any ring that draws more than 0.42 A at 12.0 V (5 W); the sample plan is bannered "do not order"; <code>build/QC-test-plan.md</code> test T1 is a full two-hour soak with ten thermocouple positions and pass limits. <strong>Decision needed:</strong> none until T1 is run. Nothing ships before it.</p>
+<p><strong>S3. A 24 V adapter fits the same jack and nothing stops it.</strong>
+Evidence: 5.5 x 2.1 mm is the commonest barrel size for both 12 V and 24 V LED supplies. On 24 V a 12 V strip draws several times its power; the model puts the strip near 76 C and rising within minutes and vendors call it a fire hazard (hitlights.com page in <code>ops/safety.md</code>). The only guard is a label.
+Options: (a) label only, as now, free; (b) a resettable fuse (0.5 A hold) plus a 15 V clamp diode soldered into the hub splice, about $0.40 and two minutes a unit, which also covers a shorted strip; (c) a less common plug size (for example 5.5 x 2.5 mm) on the pigtail and the supplied adapter, free, but the in-wall barrel pairs must match. <strong>Recommendation: (b).</strong> Test T1 run C checks whichever is chosen.</p>
+<p><strong>S4. The wall mount depends on parts and steps that were left vague.</strong>
+Evidence, hand calculation from the CAD: the hung parts weigh about 1.0 kg (2.2 lb), centre of gravity 30 mm off the wall, so the static load on two anchors is under 1 lb each. That is not the risk. A 10 lb outward tug on the backplate rim, which is what taking it down wrongly looks like, puts about 18 lb on each anchor, and the BOM said "hardware store" anchors. A good plastic anchor (Toggler Alligator, 85 lb ultimate tension in 1/2 in drywall per a retailer listing; the maker's table was not opened) has a working load near 21 lb at the usual 4 to 1. A generic ribbed anchor does not. Second: unscrewing the cap turns the same way that unlocks the hub. Only the set screw stops it, and the set screw sits 70 mm in under the backplate at about 6:40, in a 21 mm gap, right beside the LED strip. The BOM supplied a 1.5 mm L key whose long arm is about 45 mm. It cannot reach. People will skip the screw.
+Fix applied: BOM names the anchor class and replaces the L key with a 100 mm straight hex driver; tests T2 and T3 added (pull test, 50 hang cycles, a stranger fitting the set screw in under two minutes, and what happens when the cap is unscrewed with the set screw out). <strong>Decision needed after T3:</strong> if the hub unlocks with the screw out, add a snap detent to the twist-lock so it cannot unlock without the screw. That is a hub change and was not made.</p>
+<p><strong>S5. Things the safety card must say, and one legal trap.</strong> Direct sun on a black record is worse than anything the LEDs do. Not above a radiator. Not in a closed niche. Exterior walls and walls with fire blocking stop the in-wall cable. A dimmer with a coin-cell remote brings Reese's Law labelling; use the knob dimmer. A small maker of recycled-record products was hit with a Prop 65 lead notice in 2015 and paid $24,500 despite the small-business exemption. All in <code>ops/safety.md</code>.</p>
+<p><strong>S6. The 20 pre-sold units.</strong> Under 16 CFR 435 they must ship within the time promised, or within 30 days of payment if none was promised. The cap alone is two to three weeks after an order that cannot yet be placed. A delay notice with a right to cancel is almost certainly owed. <code>ops/legal.md</code> has the rule. <strong>Needs from Austin: who the 20 are, when each paid, how much, and what they were told.</strong></p>
+<h3>Will it work</h3>
+<p><strong>W1. The hub could not be hung on the wall plate. FIXED.</strong>
+Evidence: every interference check in the build ran with the hub already locked. The wall plate has a bent tab that stands 12 mm tall. The hub's pocket for it was 10 mm wide, at the locked position only. To hang the sconce the hub goes on 20 degrees off and twists home, and for that whole twist the tab was inside solid plastic: 114 mm3 of overlap at every step, measured on the solids. The first prototype would not have gone on the wall.
+Fix applied: <code>cad/sconce_cad.py</code>, the tab pocket is now an arc from 224 to 256 degrees; RS-HUB-01 is <strong>rev C</strong>. New gates check the motion at 13 positions and prove the check catches the old hub.</p>
+<p><strong>W2. The LED strip is drawn as a circle that no flat strip can follow. Worked around, decision needed.</strong>
+Evidence: a flat LED strip bends the easy way (round a drum), not sideways in its own plane. <code>engineering-report.md</code> said so on 11/9 and gave it as the reason for the rim mount. When the strip moved to the back face it was modelled as a flat circle 115 mm from the centre and the BOM said "700 mm, one piece".
+Options: (a) seven straight 100 mm pieces laid as a seven-sided ring with six jumpers. I proved in the CAD that this fits the existing aluminium ring and misses the four screws (2.4 mm to the nearest screw head, 1.8 mm inside the ring edge, no LED within 8.8 mm of the backplate rim, 9.8 mm between pieces for the jumper). It works with the listed strip already identified. It adds about 10 minutes of soldering a unit. (b) An "S-shape" strip made to bend sideways: one piece, no jumpers, but no listed 4 W part has been found. <strong>Recommendation: (a) for prototypes, look for (b) for production.</strong> Fix applied: constants and gates in the CAD, <code>build/assembly-SOP.md</code> step 6, BOM lines. The strip solid in the model is still a circle (the heat model uses it).</p>
+<p><strong>W3. The laser shop refused to press a stud into the wall plate as drawn. FIXED and re-quoted.</strong>
+Evidence: SendCutSend guest quote, "Hole Collision Issue, 1 hole affected, Hardware" (screenshot <code>sourcing/quotes-2026-11-11/audit-evening/scs_plate_plating.png</code>). The stud hole at 75 degrees was 6.83 mm from the end of an arc slot; the stud maker (PEM, FH-832) requires 7.14 mm.
+Fix applied: RS-WP-01 <strong>rev B</strong>: that slot pair is +/-8 degrees instead of +/-10, giving 7.36 mm, probed on the solid by a gate. Stud holes 4.17 mm (were 4.22, the very top of PEM's band). I re-uploaded the rev B file the same evening: SendCutSend accepted the bend and all three studs with no collision ($6.40 each at 100 in galvanized, arrives in 8 days; screenshots <code>sourcing/quotes-2026-11-11/audit-evening/scs_plate_revB_*.png</code>). The plate still levels 8 degrees on a single-gang box and 10 on a round box. <code>mounting-report.md</code> still says "about +/-9 degrees" (not my file to edit).</p>
+<p><strong>W4. The threaded insert is the wrong family for MDF.</strong>
+Evidence: E-Z Lok's own guide lists the knife-thread insert (400-4) for hardwoods and a different, hex-drive type for "soft woods, plywood, MDF". Its pull-out table has no MDF column (535 lb in spruce). Pull-out is not the worry at these loads; turning is. Unscrewing a tight cap puts loosening torque straight on the insert.
+Fix applied: glue step kept in the procedure; test T4 (300 cycles, a stuck-cap test, 200 N pull). <strong>Decision if T4 fails:</strong> an insert or tee nut with a flange on the BACK face, which the cap pulls tighter instead of out. The hub's centre relief would need to grow to take the flange.</p>
+<p><strong>W5. The 7 in sconce cannot be built.</strong> Four separate reasons: the halo has no heat-safe design (known); <code>build/BOM.md</code> prices a 4 in hub with a keyhole plate while the CAD builds it on the 5 in hub and steel plate; that keyhole plate is sold out with no second source; and the 7 in cap has a 37.6 mm boss that only fits big-hole 45s, so a small-hole 7 in record (most UK and many modern singles) sits on the boss with no washer under it. Options below.</p>
+<p><strong>W6. What it looks like from the side, and at 6 o'clock.</strong> From the CAD: standing beside the wall, the bare edge of the aluminium and cork rings comes into view under the backplate rim at 64.5 degrees off straight-on, and the corners of the seven-piece strip at 63.4 degrees. In a hallway that is the normal view. On a surface-cord install the connector hangs 8 to 10 mm in front of the strip at 6 o'clock, and the strip has a gap there too. The approved pictures were lit from 124 mm with an extra rim strip; the product lights from 115 mm with none, so the real halo will be narrower and dimmer than the pictures. None of this can be judged without a prototype (test T8). Cheap fix if the metal shows: paint the ring's outer edge black.</p>
+<p><strong>W7. Smaller items.</strong> The only listed 4 W strip with a price is 2900 to 3200K, not the 2700K in the copy. The dimmer's switching frequency is unknown; cheap ones flicker on camera and make adapters whine (test T9). Standard MDF grows about 0.3% between 50 and 80% humidity, 0.8 mm across the disc: every routed surface must be painted (test T6). A thin record may cup slightly when warm from the temperature difference across it; my rough estimate says a 120 g record could show it in the worst case, which is why T1 includes a flatness check hot and cold. The shipping box found is single wall, the BOM says double wall, and the 55 g brass cap must not ride loose next to a record (test T7).</p>
+<p><strong>W8. The lit cap's centre contact has never been built.</strong> Options below.</p>
+<h3>Cost</h3>
+<p><strong>C1. Parts are $78.04 at 100, not $47.46, and the $89 Kit loses money.</strong>
+Evidence: <code>build/BOM.md</code> section 2, every line re-opened on 2026-11-11. The old total priced a glued shell for the cap ($3.40), a guessed strip ($2.50), a hoped-for bulk adapter ($8.50), a sale-price dimmer as if 100 could be bought (7 in stock), an out-of-stock panel jack the design no longer uses, and left two washers out. At live prices: cap $15.00 (a placeholder), strip $11.25, adapter $12.99, plate with bend and studs $6.40. Result at 100 units, before advertising: <strong>$89 Kit: minus $19.90. $99 Kit: about minus $10. $129 Sconce: plus $12.77. $179 Sconce: plus $33.32.</strong> The Kit needs to be about $125 to clear $15. Cash for the first 100: about $8,200, not $5,200.
+Fix applied: <code>cost-model.py</code>, <code>BOM.md</code>, <code>BOM.csv</code>, <code>cost-model.csv</code>, <code>cost-model.md</code> all rewritten and gated to agree. With a $10 cap, an $8.50 adapter and the cheaper Armacost strip (wattage unverified) the total is about $62. It does not get back to $47.</p>
+<p><strong>C2. The cap is the unknown that decides everything.</strong> PCBWay guest pre-quote, brass with chrome: $155.93 at 1, $131.70 at 10, $121.36 at 50, "customized quote" at 100. JLCCNC polished brass without plating: $42.72 at 1, $32.81 at 10. No price at 100 exists. Emailed quotes are normally far below instant pre-quotes, but nobody has been asked: all 13 RFQ drafts are unsent.</p>
+<p><strong>C3. The 20 pre-sold units at 20-unit prices cost about $211 each in parts with real caps</strong> ($132 of it the cap). With a $4.50 stock chrome cap as a declared stand-in, about $84.</p>
+<p><strong>C4. Not in the model at all:</strong> a safety listing ($5,000 to $15,000, published figures), product liability insurance ($700 to $3,000 a year), test equipment (about $200 to $300), and the extra labour (40 minutes a unit, not 25).</p>
+<h3>Schedule</h3>
+<p><strong>T1. The chrome cap is the long pole:</strong> 8 to 10 business days to make plus 2 to 4 to ship, after a quote that does not exist. Two to three weeks at best. The "3 week" sample plan has no slack for it. Stand-in caps let testing start in about 8 days.
+<strong>T2. Second: the die-cut felt and PET washers</strong> have no vendor; 5 to 7 business days after a quote and tooling. Hand punches remove the wait for prototypes.
+<strong>T3. The wall plate</strong> ships in about a week. Only the rev B file can be ordered.
+<strong>T4. A listing, if wanted, is 6 to 12 weeks.</strong>
+<strong>T5. Nothing has been built.</strong> Every test in the QC plan is still ahead.</p>
+<h2>Options where I was told not to redesign</h2>
+<h3>The 7 in sconce</h3>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>What</th>
+<th>Numbers</th>
+<th>For</th>
+<th>Against</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A. Smaller hub, same heat-safe stack</td>
+<td>A 4 in (101.6 mm) hub, which the BOM already assumes. Ring from 53 to 72.85 mm radius (19.85 mm wide), strip centred at 66 mm, four screws at 56.5 mm</td>
+<td>Eight 50 mm strip pieces fit as an octagon (corners at 71.3 mm, inside the ring edge). About 400 mm of strip, about 1.9 W</td>
+<td>Same construction as the 12 in; LEDs cannot see the record</td>
+<td>New hub, new small rings, needs its own mount (the 4 in steel plate does not fit inside a 4 in hub), needs its own heat run</td>
+</tr>
+<tr>
+<td>B. Keep the 5 in hub, 5 or 6 mm strip</td>
+<td>Ring 8.35 mm wide in the 9.35 mm band</td>
+<td>1.2 to 1.7 mm each side of the strip, no room for a screw</td>
+<td>No new hub</td>
+<td>Glue only, on painted MDF; a straight-piece layout does not fit (needs 9.6 mm); only an S-shape strip would work</td>
+</tr>
+<tr>
+<td>C. Keep the rim strip, narrow and low power, on the wall-side half of the rim</td>
+<td>5 mm strip, about 3 W per metre</td>
+<td>Old rim layout at 4.8 W per metre: record +4.9 K normal, 49.6 C worst. Scaled to 3 W per metre: about +3 K normal, about 44 C worst</td>
+<td>No new parts; a rim strip bends the easy way</td>
+<td>LEDs still face the record's overhang 9 mm away; worst case not modelled, only scaled</td>
+</tr>
+<tr>
+<td>D. Do not sell the 7 in or the Set in the first batch</td>
+<td></td>
+<td></td>
+<td>Costs nothing, removes four open problems</td>
+<td>No Set at launch</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Recommendation: D now, then A.</strong> Also decide whether the 7 in is "big-hole 45s only" or ships with the 12 in style cap and a small felt ring for small-hole records (the two caps already land at the same depth).</p>
+<h3>The lit cap's centre contact</h3>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>What</th>
+<th>Cost and risk</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Build it as designed and bench-test</td>
+<td>Custom gold plunger, catalogue spring, PEEK guard tube, 4.9 mm travel</td>
+<td>Three tiny custom parts, estimated $10 to $20 a unit at 100. Unproven. Pass test: contact resistance under 0.1 ohm and no flicker over 500 record swaps, thin and thick records</td>
+</tr>
+<tr>
+<td>2. Replace plunger and spring with a stock leaf-spring contact on the hub board</td>
+<td>A stamped battery-style spring finger has 3 to 6 mm of travel as a stock part; the PEEK tube stays as the hard stop</td>
+<td>Under $1, one stock part instead of two custom ones. No part number picked (not checked). Needs a small redesign of the hub module</td>
+</tr>
+<tr>
+<td>3. Launch with the plain cap only</td>
+<td>Hub rev C already has the 9.1 mm centre relief, so a lit cap can be added later without changing the hub or backplate</td>
+<td>Free. The lit cap becomes a second-batch upsell</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Recommendation: 3 now, test 1 on the bench, fall back to 2 if the plunger sticks or the price is silly.</strong></p>
+<h2>Heat: sensitivity table</h2>
+<p>Final geometry, one assumption changed at a time. "Plume" is warm air in the gap behind the backplate, which <code>thermal.py</code> leaves out. Limits to stay under: 48 C (stiffness starts to go) and 52 C (glass transition).</p>
+<table>
+<thead>
+<tr>
+<th>Case</th>
+<th>Record hottest spot</th>
+<th>Rise</th>
+<th>Strip</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Baseline in <code>THERMAL.md</code>: 4 W, 30 C room</td>
+<td>33.1 C</td>
+<td>+3.1 K</td>
+<td>39.2 C</td>
+</tr>
+<tr>
+<td>Cheap strip, only 20% of power leaves as light</td>
+<td>33.9 C</td>
+<td>+3.9 K</td>
+<td>41.3 C</td>
+</tr>
+<tr>
+<td>All light absorbed behind the plate (upper bound)</td>
+<td>34.8 C</td>
+<td>+4.8 K</td>
+<td>44.1 C</td>
+</tr>
+<tr>
+<td>Stray light on the record's overhang 5 times larger</td>
+<td>33.2 C</td>
+<td>+3.2 K</td>
+<td>39.2 C</td>
+</tr>
+<tr>
+<td>Gap film coefficient quartered (niche, shelf above, corner)</td>
+<td>35.6 C</td>
+<td>+5.6 K</td>
+<td>45.6 C</td>
+</tr>
+<tr>
+<td>All film coefficients halved (dead air)</td>
+<td>36.8 C</td>
+<td>+6.8 K</td>
+<td>44.1 C</td>
+</tr>
+<tr>
+<td>Plume, low estimate (gap air +3 K)</td>
+<td>33.9 C</td>
+<td>+3.9 K</td>
+<td>41.0 C</td>
+</tr>
+<tr>
+<td>Plume, high estimate (gap air +6 K)</td>
+<td>34.7 C</td>
+<td>+4.7 K</td>
+<td>42.9 C</td>
+</tr>
+<tr>
+<td>Hot wall behind (gap air +10 K: radiator below, sunlit or attic-side wall)</td>
+<td>35.8 C</td>
+<td>+5.8 K</td>
+<td>45.4 C</td>
+</tr>
+<tr>
+<td>The sample plan's strip: 7 W</td>
+<td>35.5 C</td>
+<td>+5.5 K</td>
+<td>46.0 C</td>
+</tr>
+<tr>
+<td>7 W strip with its plume</td>
+<td>38.2 C</td>
+<td>+8.2 K</td>
+<td>52.5 C</td>
+</tr>
+<tr>
+<td>35 C room, 4 W, plume</td>
+<td>39.7 C</td>
+<td>+4.7 K</td>
+<td>47.9 C</td>
+</tr>
+<tr>
+<td><code>THERMAL.md</code> stacked worst case: 6 W, films halved, 35 C room</td>
+<td>45.2 C</td>
+<td>+10.2 K</td>
+<td>56.2 C</td>
+</tr>
+<tr>
+<td>Same, plus plume (gap air +12 K)</td>
+<td><strong>48.7 C</strong></td>
+<td>+13.7 K</td>
+<td>62.4 C</td>
+</tr>
+<tr>
+<td>Same, plus plume, plus cheap strip</td>
+<td><strong>51.0 C</strong></td>
+<td>+16.0 K</td>
+<td>67.3 C</td>
+</tr>
+<tr>
+<td>12 V strip on a 24 V adapter, first minutes (about 16 W)</td>
+<td>46.5 C</td>
+<td>+16.5 K</td>
+<td>75.9 C and rising</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Is the 12 in safe on paper?</strong> In normal use, yes: about 34 to 35 C in a 30 C room once the plume is counted, 13 K or more under the lowest limit. In the stacked worst case, no: it lands on the limit. The film coefficients (8 and 6 W/m2K) are ordinary textbook values for still indoor air; the 35% light fraction matters little; the plume and the strip wattage matter most. <strong>The one measurement that proves it:</strong> a thermocouple on the back of the record, 114 mm from the centre at 12 o'clock, after two hours at full brightness on a real wall in still air. Pass: 6 K or less above the room.</p>
+<h2>Compliance path</h2>
+<p>How comparable products handle it: the record-display lights found either avoid mains entirely (Sharper Image lighted album frame, 3 AA batteries; Vylumi record backlight, USB) or, like 12 V neon signs, lean on a "UL-listed power supply" claim for the adapter only. No product was found that puts a real record on a mains-adapter LED fixture with a fixture listing, and no warping reports were found for the battery and USB ones. Links: sharperimage.com/products/lighted-album-cover-frame, vylumi.com, neonific.com/products/retro-disc.</p>
+<table>
+<thead>
+<tr>
+<th>Path</th>
+<th>What</th>
+<th>Cost</th>
+<th>Time</th>
+<th>Good for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cheapest defensible</td>
+<td>Plug-in only (drop the hardwired version). Say "listed Class 2 adapter" and nothing more about the fixture. In-wall copy becomes "Class 2 low-voltage wiring, check your local code". Verify the adapter's listing file, level VI mark and FCC statement. Knob dimmer, no coin-cell remote. Run and keep the heat soak and pull tests. Insurance with electrical cover confirmed in writing. Prop 65 short-form warning on California orders. No shipments to Los Angeles or North Carolina. Serial numbers and lot records. Delay notices to the 20 buyers</td>
+<td>$1,500 to $4,000 (insurance, test gear, an hour of a lawyer)</td>
+<td>2 to 4 weeks</td>
+<td>The first 100 from our own site</td>
+</tr>
+<tr>
+<td>Proper</td>
+<td>All of the above, plus an ETL or QAI listing of the fixture with its named adapter to UL 2108 and UL 8750, lit cap included if it will ever be sold</td>
+<td>$7,000 to $18,000 in year one; about $3,500 a year after (published figures, not quotes)</td>
+<td>6 to 12 weeks</td>
+<td>Amazon, wholesale, any hardwired version, Los Angeles, peace of mind</td>
+</tr>
+</tbody>
+</table>
+<p>Amazon, Etsy, Walmart and Wayfair policy pages could not be opened (login or 403). A secondary summary says Amazon wants a test report from an accredited lab for decorative lighting. Treat marketplace sale as needing the proper path until someone logs in and reads the real requirement.</p>
+<h2>Sourcing: live check, 2026-11-11</h2>
+<p>Full table with every link: <code>build/BOM.md</code> section 2. Evidence and screenshots: <code>sourcing/quotes-2026-11-11/README.md</code> and <code>audit-evening/</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th>Old BOM at 100</th>
+<th>Live at 100</th>
+<th>Second source</th>
+<th>Lead time</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chrome cap</td>
+<td>$3.40 (wrong part)</td>
+<td>no price; $121.36 at 50</td>
+<td>JLCCNC, no plating, $32.81 at 10</td>
+<td>2 to 3 weeks</td>
+<td><strong>Long pole. Unknown cost</strong></td>
+</tr>
+<tr>
+<td>LED strip</td>
+<td>$2.50 est</td>
+<td>$11.25 (Ecolocity, ETL, 1.46 W/ft; 2900 to 3200K)</td>
+<td>Armacost UL 2700K, $4.28, wattage unknown</td>
+<td>stock</td>
+<td>Planned HitLights reel is over the heat cap</td>
+</tr>
+<tr>
+<td>Adapter</td>
+<td>$8.50 est</td>
+<td>$12.99</td>
+<td>GXILEE with dimmer, $13.88</td>
+<td>stock</td>
+<td>No bulk price exists</td>
+</tr>
+<tr>
+<td>Dimmer</td>
+<td>$2.50 est</td>
+<td>$3.99 sale, 7 in stock</td>
+<td>Super Bright LEDs $7.99, out of stock</td>
+<td>stock</td>
+<td>Cannot buy 100 today</td>
+</tr>
+<tr>
+<td>Pigtail</td>
+<td>$2.36 (panel jack, out of stock)</td>
+<td>$4.00 at 1; bulk not checked</td>
+<td>none found</td>
+<td>stock</td>
+<td>Old line priced the wrong part</td>
+</tr>
+<tr>
+<td>Wall plate + 3 studs</td>
+<td>$4.40 est</td>
+<td>$6.40 galvanized; $8.69 black powder (rev B file)</td>
+<td>Westinghouse crossbar $3.73 as a stand-in</td>
+<td>about 8 days</td>
+<td>Rev B accepted with studs</td>
+</tr>
+<tr>
+<td>Aluminium ring</td>
+<td>$7.38</td>
+<td>$7.38 (re-confirmed)</td>
+<td>none</td>
+<td>about 5 days</td>
+<td>Matches</td>
+</tr>
+<tr>
+<td>Cork</td>
+<td>$1.89</td>
+<td>$1.89 (roll $66; page says both 1/16 in and 2 mm; no adhesive shown)</td>
+<td>The Cork Store, 1.5 mm, peel-and-stick option, about $1.00</td>
+<td>stock</td>
+<td>Measure on arrival</td>
+</tr>
+<tr>
+<td>Insert</td>
+<td>$1.70</td>
+<td>$1.70</td>
+<td>ezlok.com (price needs login)</td>
+<td>stock</td>
+<td>Old "$17.63 per 10" was the drive tool</td>
+</tr>
+<tr>
+<td>Felt pads</td>
+<td>$0.42</td>
+<td>$0.42</td>
+<td>none found</td>
+<td>stock</td>
+<td>Single source</td>
+</tr>
+<tr>
+<td>Felt washer, centre ring, PET washer</td>
+<td>$0.16 (two not counted)</td>
+<td>$0.65 est</td>
+<td>CS Hyde, Strouse: no published price</td>
+<td>5 to 7 business days</td>
+<td>No vendor</td>
+</tr>
+<tr>
+<td>Ring screws</td>
+<td>$0.12 est</td>
+<td>$0.12 (Tanner Bolt, $2.90 per 100)</td>
+<td>hardware store</td>
+<td>stock</td>
+<td>Head 5.56 x 2.03 mm per the standard table: CAD's 5.6 x 2.1 is safe. Thread diameters not found</td>
+</tr>
+<tr>
+<td>Box</td>
+<td>$3.50 est</td>
+<td>box $1.48; foam and sleeve est</td>
+<td>none</td>
+<td>next day</td>
+<td>Single wall, not double</td>
+</tr>
+<tr>
+<td>Backplate, hub</td>
+<td>$4.50, $3.00 est</td>
+<td>not checked</td>
+<td></td>
+<td>1 to 2 weeks</td>
+<td>No quote from any shop</td>
+</tr>
+<tr>
+<td>In-wall kit</td>
+<td>$6.47</td>
+<td>LV1 bracket $1.80 and recessed plate $2.97 confirmed; cable $33.42 per 100 ft</td>
+<td>Sunco brackets; JacobsParts plugs</td>
+<td>plugs arrive 11/19 to 11/27</td>
+<td>PowerBridge add-on is out of stock</td>
+</tr>
+</tbody>
+</table>
+<p>Estimates that move the 100-unit total by more than $0.50: cap (+$11.60), strip (+$8.75), adapter (+$4.49), wall plate, studs and nuts (+$2.22 galvanized, +$4.51 powder), set screw kit (+$1.60), dimmer (+$1.49). Still estimates and each worth more than $0.50 either way: backplate ($4.50), hub ($3.00), packaging foam and sleeve (about $2.00), cap.</p>
+<h2>Renders: where the pictures show what the product does not do</h2>
+<p>Full re-render list: <code>renders-final/README.md</code> (audit section).</p>
+<table>
+<thead>
+<tr>
+<th>Images</th>
+<th>What is shown that is not true</th>
+<th>Level</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>renders-zep/*</code> (8)</td>
+<td>Real Atlantic label, band name, the four symbols, producer credit, track list</td>
+<td>Misleading, and a legal problem</td>
+</tr>
+<tr>
+<td><code>swap1_*</code>, <code>swap2_*</code>, <code>swap_triptych</code></td>
+<td>Record stays on the wall with the cap off; LED dots on the backplate rim; captions "lift the record off" a post; cap has no stud; no clear washer</td>
+<td>Misleading</td>
+</tr>
+<tr>
+<td><code>flatlay_*</code></td>
+<td>A loose post that does not exist; no dimmer; no clear washer; a second chrome cap instead of the 45 adapter; rim strip on the backplate; wrong wall plate; card says set screw at 6 o'clock (it is at about 6:40)</td>
+<td>Misleading</td>
+</tr>
+<tr>
+<td><code>install_*</code></td>
+<td>"4 screws" (the kit has 2 screws and 2 anchors); shows in-wall cable and a wall jack that are not in the box; no dimmer</td>
+<td>Misleading labels</td>
+</tr>
+<tr>
+<td><code>single7_*</code>, <code>set_*</code>, <code>studio_*</code>, <code>band_set_*</code></td>
+<td>7 in units with the 12 in halo; the 7 in halo is not designed. No cords on any</td>
+<td>Misleading</td>
+</tr>
+<tr>
+<td><code>hero_brass_*</code>, <code>hero_black_*</code>, <code>bar_*</code>, <code>close_off</code></td>
+<td>Cap finishes with no real part. Black shown with a chrome bezel that exists nowhere</td>
+<td>Misleading</td>
+</tr>
+<tr>
+<td><code>bedroom_*</code></td>
+<td>A 4 W strip lighting a whole room</td>
+<td>Misleading</td>
+</tr>
+<tr>
+<td><code>hero_chrome_*</code>, <code>living_*</code>, <code>swap3_*</code>, <code>band_row_wide</code>, <code>band_grid_wide</code></td>
+<td>Halo wider and brighter than a 4 W ring at 115 mm will make; perfectly even, no gap at 6 o'clock; no cord (so in-wall installs only)</td>
+<td>Look may differ</td>
+</tr>
+<tr>
+<td><code>renders-labellight/close_on</code>, <code>ab_close</code>, <code>band_grid_labellight</code></td>
+<td>Lit cap drawn with a wide skirt, about 54% of the label (real: 38 mm on a 100 mm label); a visible white crescent of light source</td>
+<td>Misleading geometry</td>
+</tr>
+<tr>
+<td><code>macro_*</code></td>
+<td>Dome reads taller than the real 10 mm; a felt ring shows where the clear washer would</td>
+<td>Minor</td>
+</tr>
+<tr>
+<td>Three labelled drawings in <code>renders-exploded/</code></td>
+<td>Match the CAD. The plain exploded view has no callout for the insert or the screws; the heat-safe drawing calls a stud a "post" in one label</td>
+<td>Fine, two small fixes</td>
+</tr>
+<tr>
+<td>Every image</td>
+<td>None shows the 1 in gap, the 5 in hub, or the side view</td>
+<td>Missing</td>
+</tr>
+</tbody>
+</table>
+<p>Safe to use today as they are: <code>macro_*</code> and the three labelled drawings. Usable with a "rendering, real glow may differ" line until a photo exists: <code>hero_chrome_*</code>, <code>swap3_*</code>, <code>living_*</code>.</p>
+<h2>What I changed</h2>
+<p>CAD (<code>cad/</code>): <code>sconce_cad.py</code> (hub tab pocket arc, plate slot angle, stud hole size, straight-strip layout constants), <code>gates.py</code> (14 geometry gates tagged AUDIT, 12 document gates, updated BOM total gates), <code>build_all.py</code> (hub rev C, plate rev B, RFQ text), <code>drawings.py</code>, <code>dxf_out.py</code>; everything <code>build_all.py</code> regenerates (STEP, STL, DXF, drawings, RFQ packets, <code>checks.md</code>); <code>THERMAL.md</code>, <code>README.md</code>, <code>FIXES-heat-layout.md</code> (correction notes).</p>
+<p>Build (<code>build/</code>): <code>assembly-SOP.md</code>, <code>QC-test-plan.md</code>, <code>sample-kit-shopping-list.md</code>, <code>cost-model.md</code> rewritten; <code>BOM.md</code> section 2, 4, 6, 7 rewritten; <code>cost-model.py</code> re-priced, which regenerates <code>BOM.csv</code> and <code>cost-model.csv</code>; <code>README.md</code>. The versions they replace are in <code>build/SUPERSEDED/</code>.</p>
+<p>Sourcing: <code>quotes-2026-11-11/README.md</code> (new quotes), <code>quotes-2026-11-11/audit-evening/</code> (11 screenshots), banner on <code>sample-run-plan.md</code>.</p>
+<p>Ops: audit sections added to <code>ops/safety.md</code> and <code>ops/legal.md</code>.</p>
+<p>Renders: audit section and re-render list in <code>renders-final/README.md</code>. No image was re-rendered.</p>
+<p>Not touched: <code>site/</code>, <code>marketing/</code>, <code>mounting-report.md</code>, <code>engineering-report.md</code>, <code>START-HERE.html</code>, <code>PARTS-SIMPLE.html</code>, <code>NOTES.md</code>. Several of those now disagree with the CAD and the BOM: any "$47" or "$38" parts figure, "vinyl softens at 55 to 60 C", "+/-9 degrees" of levelling, "1.5 mm L key", "legal everywhere" in-wall claims, 2700K.</p>
+<h2>What I could not verify</h2>
+<ul>
+<li>Anything physical. No part exists. Every temperature, load and fit is a calculation.</li>
+<li>A cap price at 100 pieces from anyone. Xometry, Protolabs Network and RapidDirect guest pricing (upload did not advance).</li>
+<li>Toggler's own load table and safety factor; any pull-out figure for a flangeless anchor; E-Z Lok data in MDF; brass thread wear over cycles; #4 screw thread diameters.</li>
+<li>Record warp over time at 35 to 45 C: Library of Congress, National Archives and IASA guidance pages did not load. PVC creep data by temperature: not found. The softening figures rest on one patent.</li>
+<li>The plume: my chimney estimate is a hand calculation, not a flow model.</li>
+<li>Whether a thin record cups when warm: a rough plate-buckling estimate only.</li>
+<li>Strip details: the Armacost strip's wattage, any listed S-shape strip, the real adhesive on any strip, strip thickness (1.6 mm is assumed).</li>
+<li>Dimmer switching frequency, whine, radio noise. The adapter's listing file number.</li>
+<li>Home Depot MDF, eBay adapters, Monoprice cable, McMaster, Zoro, Digi-Key (blocked or not opened).</li>
+<li>NFPA code text, Amazon, Etsy, Walmart and Wayfair policies, fcc.gov and ftc.gov guidance pages, Chicago and New York City code, any lab or insurance quote.</li>
+<li>The aluminium-backplate variants and the lit cap's heat. Not modelled, not audited beyond noting they are open.</li>
+<li><code>renders-lit/</code>, the halo video, and the images under <code>site/img/</code> were not reviewed.</li>
+<li>Who the 20 buyers are and what they were promised.</li>
+</ul>
+<h2>The five ways this fails in a customer's home</h2>
+<ol>
+<li><strong>It comes off the wall.</strong> The customer skips the set screw because they cannot reach it, later unscrews a tight cap to change the record, the hub turns with it and unlocks, and a 1 kg disc with a record on it drops. Or they pull it straight off the wall and the anchors come with it.</li>
+<li><strong>The record warps and they blame the light.</strong> A sunny wall, a spot above a radiator, a tight niche, or a unit built with too strong a strip. The record is theirs, sometimes valuable, and "we calculated 33 C" is not a defence without a measurement.</li>
+<li><strong>Someone plugs in the wrong adapter.</strong> A 24 V supply from a drawer fits the jack. The strip cooks within minutes, on a wooden disc, on a wall.</li>
+<li><strong>The in-wall install defeats them.</strong> Fire blocking or insulation stops the cable, or an inspector or landlord objects to an unlisted fixture wired through the wall, and the default story becomes a refund.</li>
+<li><strong>It does not look like the pictures.</strong> A narrower, dimmer halo than the renders, a cord nobody was shown, a dark notch at 6 o'clock, bright metal visible from the hallway, a hum or flicker from a $4 dimmer. Returned, with a review.</li>
+</ol>
+<h2>Decisions for Austin</h2>
+<ol>
+<li>Price: the $89 Kit loses money. Raise it (about $125), drop it, or accept a loss leader knowingly.</li>
+<li>Cap: send the RFQ (nothing can be priced without it), and say whether the first units may ship with a declared stand-in cap.</li>
+<li>Strip: seven straight pieces now, or wait for an S-shape strip.</li>
+<li>Compliance path: cheapest defensible or proper. And Los Angeles and North Carolina.</li>
+<li>The 20 buyers: the list, the dates, what they were told. Delay notices.</li>
+<li>7 in and Set: out of the first batch (recommended) or pick an option.</li>
+<li>Lit cap: second batch (recommended).</li>
+<li>24 V protection in the hub: yes (recommended) or label only.</li>
+<li>Approve about $900 to $1,500 for three prototypes and the test gear, so that test T1 can be run.</li>
+</ol></main></body></html>

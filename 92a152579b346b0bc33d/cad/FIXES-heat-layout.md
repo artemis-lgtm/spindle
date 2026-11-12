@@ -1,5 +1,7 @@
 # Heat-safe halo layout made canonical (2026-11-11)
 
+> **Later the same evening, product audit (`../audits/AUDIT-product.md`):** three things in this layout and its neighbours were wrong and are now fixed or flagged in the CAD. (1) A flat LED strip cannot bend sideways into the circle drawn here; the buildable version is seven straight 100 mm pieces (gated, tag AUDIT) or an S-shape strip. (2) The hub (now rev C) could not be twisted onto the wall plate: the plate's tab hit solid plastic; the tab pocket is now an arc. (3) The wall plate (now rev B) had a slot too close to a stud hole and SendCutSend refused the stud. The build now ends with more gates than the 199 quoted below.
+
 Austin's instruction: "the heat safe spec needs to be the same for the light version and the cap without the light version". This file records what was changed to do that, every file touched, every number that moved, how each claim was checked, and what is not done.
 
 Applied 2026-11-11 by claude-fable-5-2. Nothing was sent, ordered, published, pushed or committed.
@@ -123,7 +125,7 @@ Numbers that did NOT move, measured on the rebuilt assemblies and gated:
 
 Cork thickness, same geometry otherwise: 2.0 mm gives 33.04 / 44.92 C, 1.6 mm gives 33.14 / 45.16 C, 1.5 mm gives 33.17 / 45.22 C, no cork 33.55 / 45.98 C. The table is in `THERMAL.md`. The model's grid through the thickness was refined from 0.25 mm to 0.1 mm so it can tell 1.6 from 1.5; a few older rows moved by 0.1 (old rim strip worst case 49.7 became 49.6).
 
-Vinyl softens at about 55 to 60 C. Lit cap: it adds 0.17 W at the centre; `label-light/DESIGN.md` section 4 estimates the cap's own rise at about 11 K worst case, 5 to 7 K expected, and the halo adds 0.02 K (normal) to 0.30 K (worst) under the cap, so the two do not stack. The cap is not in the heat model.
+Vinyl softens at about 55 to 60 C (CORRECTED 2026-11-11 by the product audit: the sourced figures are lower, 48 to 50 C for loss of stiffness and 52 to 54 C glass transition, US patent 3,975,321; see the sensitivity table in THERMAL.md). Lit cap: it adds 0.17 W at the centre; `label-light/DESIGN.md` section 4 estimates the cap's own rise at about 11 K worst case, 5 to 7 K expected, and the halo adds 0.02 K (normal) to 0.30 K (worst) under the cap, so the two do not stack. The cap is not in the heat model.
 
 ## What was verified, and how
 

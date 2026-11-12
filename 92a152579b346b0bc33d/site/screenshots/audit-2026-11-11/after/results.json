@@ -1,0 +1,2812 @@
+{
+ "index-m": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "INPUT Hero light dimmer 246x3",
+   "INPUT checkbox 22x22",
+   "A hello@example.com 358x44",
+   "A Spindle 12 358x44",
+   "A Spindle Kit 358x44",
+   "A Reserve batch two 358x44",
+   "A How it works 358x44",
+   "A In-wall install 358x44",
+   "A FAQ 358x44",
+   "A About 358x44",
+   "A Shipping 358x44",
+   "A Returns 358x44",
+   "A Warranty 358x44",
+   "A Privacy 358x44",
+   "A Terms 358x44"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "reserve.html",
+   "product.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "reserve.html",
+   "thanks-deposit.html?demo=1&ref=sconce-chrome",
+   "privacy.html",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main",
+   "top",
+   "dimmer",
+   "story",
+   "room",
+   "finishes",
+   "how",
+   "swap",
+   "proof",
+   "faq-preview",
+   "reserve",
+   "waitlist-form",
+   "wl-email",
+   "wl-err",
+   "wl-finish"
+  ],
+  "h1": 1,
+  "placeholders": 3,
+  "height": 10050,
+  "errors": [],
+  "failed": [],
+  "bytes": 232162,
+  "nreq": 13,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    24714,
+    "sq-chrome-1080.webp"
+   ],
+   [
+    24119,
+    "index.html"
+   ]
+  ],
+  "lcp": {
+   "t": 176,
+   "url": "http://127.0.0.1:8739/img/sq-chrome-1080.webp",
+   "tag": "IMG",
+   "txt": ""
+  }
+ },
+ "product-m": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "INPUT radio 18x18",
+   "INPUT radio 18x18",
+   "INPUT radio 18x18",
+   "A hello@example.com 358x44",
+   "A Spindle 12 358x44",
+   "A Spindle Kit 358x44",
+   "A Reserve batch two 358x44",
+   "A How it works 358x44",
+   "A In-wall install 358x44",
+   "A FAQ 358x44",
+   "A About 358x44",
+   "A Shipping 358x44",
+   "A Returns 358x44",
+   "A Warranty 358x44",
+   "A Privacy 358x44",
+   "A Terms 358x44"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "reserve.html#waitlist-form",
+   "thanks-deposit.html?demo=1&ref=sconce-chrome",
+   "reserve.html#waitlist-form",
+   "returns.html",
+   "warranty.html",
+   "shipping.html",
+   "faq.html",
+   "thanks-deposit.html?demo=1&ref=sconce-chrome",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main",
+   "pdp-main",
+   "kit",
+   "sconce",
+   "named"
+  ],
+  "h1": 1,
+  "placeholders": 3,
+  "height": 5590,
+  "errors": [],
+  "failed": [],
+  "bytes": 249486,
+  "nreq": 16,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    24714,
+    "sq-chrome-1080.webp"
+   ],
+   [
+    19879,
+    "product.html"
+   ]
+  ],
+  "lcp": {
+   "t": 144,
+   "url": "http://127.0.0.1:8739/img/sq-chrome-1080.webp",
+   "tag": "IMG",
+   "txt": ""
+  }
+ },
+ "install-m": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "INPUT checkbox 22x22",
+   "A hello@example.com 358x44",
+   "A Spindle 12 358x44",
+   "A Spindle Kit 358x44",
+   "A Reserve batch two 358x44",
+   "A How it works 358x44",
+   "A In-wall install 358x44",
+   "A FAQ 358x44",
+   "A About 358x44",
+   "A Shipping 358x44",
+   "A Returns 358x44",
+   "A Warranty 358x44",
+   "A Privacy 358x44",
+   "A Terms 358x44"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "reserve.html",
+   "thanks-deposit.html?demo=1&ref=sconce-chrome",
+   "privacy.html",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main",
+   "surface",
+   "in-wall",
+   "heat",
+   "safety",
+   "reserve",
+   "waitlist-form",
+   "wl-email",
+   "wl-err",
+   "wl-finish"
+  ],
+  "h1": 1,
+  "placeholders": 3,
+  "height": 8630,
+  "errors": [],
+  "failed": [],
+  "bytes": 204339,
+  "nreq": 13,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    20012,
+    "hero-chrome-800.webp"
+   ],
+   [
+    17596,
+    "install.html"
+   ]
+  ],
+  "lcp": {
+   "t": 68,
+   "url": "http://127.0.0.1:8739/img/layout-900.webp",
+   "tag": "IMG",
+   "txt": ""
+  }
+ },
+ "faq-m": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "INPUT checkbox 22x22",
+   "A hello@example.com 358x44",
+   "A Spindle 12 358x44",
+   "A Spindle Kit 358x44",
+   "A Reserve batch two 358x44",
+   "A How it works 358x44",
+   "A In-wall install 358x44",
+   "A FAQ 358x44",
+   "A About 358x44",
+   "A Shipping 358x44",
+   "A Returns 358x44",
+   "A Warranty 358x44",
+   "A Privacy 358x44",
+   "A Terms 358x44"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "mailto:hello@example.com",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "reserve.html",
+   "thanks-deposit.html?demo=1&ref=sconce-chrome",
+   "privacy.html",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main",
+   "reserve",
+   "waitlist-form",
+   "wl-email",
+   "wl-err",
+   "wl-finish"
+  ],
+  "h1": 1,
+  "placeholders": 4,
+  "height": 4406,
+  "errors": [],
+  "failed": [],
+  "bytes": 168581,
+  "nreq": 10,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    22422,
+    "faq.html"
+   ],
+   [
+    15684,
+    "instrument-serif-italic-latin.woff2"
+   ]
+  ],
+  "lcp": {
+   "t": 32,
+   "url": "",
+   "tag": "H1",
+   "txt": "Everything people ask before they reserv"
+  }
+ },
+ "about-m": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "INPUT checkbox 22x22",
+   "A hello@example.com 358x44",
+   "A Spindle 12 358x44",
+   "A Spindle Kit 358x44",
+   "A Reserve batch two 358x44",
+   "A How it works 358x44",
+   "A In-wall install 358x44",
+   "A FAQ 358x44",
+   "A About 358x44",
+   "A Shipping 358x44",
+   "A Returns 358x44",
+   "A Warranty 358x44",
+   "A Privacy 358x44",
+   "A Terms 358x44"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "reserve.html",
+   "thanks-deposit.html?demo=1&ref=sconce-chrome",
+   "privacy.html",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main",
+   "reserve",
+   "waitlist-form",
+   "wl-email",
+   "wl-err",
+   "wl-finish"
+  ],
+  "h1": 1,
+  "placeholders": 3,
+  "height": 4577,
+  "errors": [],
+  "failed": [],
+  "bytes": 182235,
+  "nreq": 11,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    24714,
+    "sq-chrome-1080.webp"
+   ],
+   [
+    15684,
+    "instrument-serif-italic-latin.woff2"
+   ]
+  ],
+  "lcp": {
+   "t": 88,
+   "url": "",
+   "tag": "H1",
+   "txt": "Designed in Fort Lauderdale by people wh"
+  }
+ },
+ "reserve-m": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "INPUT radio 18x18",
+   "INPUT radio 18x18",
+   "INPUT radio 18x18",
+   "INPUT checkbox 22x22",
+   "A hello@example.com 358x44",
+   "A Spindle 12 358x44",
+   "A Spindle Kit 358x44",
+   "A Reserve batch two 358x44",
+   "A How it works 358x44",
+   "A In-wall install 358x44",
+   "A FAQ 358x44",
+   "A About 358x44",
+   "A Shipping 358x44",
+   "A Returns 358x44",
+   "A Warranty 358x44",
+   "A Privacy 358x44",
+   "A Terms 358x44"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "thanks-deposit.html?demo=1&ref=sconce-chrome",
+   "returns.html",
+   "warranty.html",
+   "shipping.html",
+   "reserve.html",
+   "thanks-deposit.html?demo=1&ref=sconce-chrome",
+   "privacy.html",
+   "thanks-deposit.html?demo=1&ref=sconce-chrome",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main",
+   "reserve-img",
+   "kit",
+   "sconce",
+   "named",
+   "reserve",
+   "waitlist-form",
+   "wl-email",
+   "wl-err",
+   "wl-finish"
+  ],
+  "h1": 1,
+  "placeholders": 3,
+  "height": 4571,
+  "errors": [],
+  "failed": [],
+  "bytes": 183726,
+  "nreq": 11,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    24714,
+    "sq-chrome-1080.webp"
+   ],
+   [
+    15684,
+    "instrument-serif-italic-latin.woff2"
+   ]
+  ],
+  "lcp": {
+   "t": 52,
+   "url": "http://127.0.0.1:8739/img/sq-chrome-1080.webp",
+   "tag": "IMG",
+   "txt": ""
+  }
+ },
+ "thanks-m": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "A hello@example.com 358x44",
+   "A Spindle 12 358x44",
+   "A Spindle Kit 358x44",
+   "A Reserve batch two 358x44",
+   "A How it works 358x44",
+   "A In-wall install 358x44",
+   "A FAQ 358x44",
+   "A About 358x44",
+   "A Shipping 358x44",
+   "A Returns 358x44",
+   "A Warranty 358x44",
+   "A Privacy 358x44",
+   "A Terms 358x44"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "reserve.html",
+   "index.html",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main"
+  ],
+  "h1": 1,
+  "placeholders": 2,
+  "height": 2152,
+  "errors": [],
+  "failed": [],
+  "bytes": 152351,
+  "nreq": 10,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    15684,
+    "instrument-serif-italic-latin.woff2"
+   ],
+   [
+    15211,
+    "main.js"
+   ]
+  ],
+  "lcp": {
+   "t": 92,
+   "url": "",
+   "tag": "P",
+   "txt": "One email when batch two is ready to ord"
+  }
+ },
+ "thanks-deposit-m": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "A hello@example.com 358x44",
+   "A Spindle 12 358x44",
+   "A Spindle Kit 358x44",
+   "A Reserve batch two 358x44",
+   "A How it works 358x44",
+   "A In-wall install 358x44",
+   "A FAQ 358x44",
+   "A About 358x44",
+   "A Shipping 358x44",
+   "A Returns 358x44",
+   "A Warranty 358x44",
+   "A Privacy 358x44",
+   "A Terms 358x44"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "reserve.html",
+   "install.html",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main"
+  ],
+  "h1": 2,
+  "placeholders": 2,
+  "height": 2018,
+  "errors": [],
+  "failed": [],
+  "bytes": 153724,
+  "nreq": 10,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    15684,
+    "instrument-serif-italic-latin.woff2"
+   ],
+   [
+    15211,
+    "main.js"
+   ]
+  ],
+  "lcp": {
+   "t": 48,
+   "url": "",
+   "tag": "P",
+   "txt": "This page appears after checkout. If you"
+  }
+ },
+ "shipping-m": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "A hello@example.com 358x44",
+   "A Spindle 12 358x44",
+   "A Spindle Kit 358x44",
+   "A Reserve batch two 358x44",
+   "A How it works 358x44",
+   "A In-wall install 358x44",
+   "A FAQ 358x44",
+   "A About 358x44",
+   "A Shipping 358x44",
+   "A Returns 358x44",
+   "A Warranty 358x44",
+   "A Privacy 358x44",
+   "A Terms 358x44"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "mailto:hello@example.com",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main"
+  ],
+  "h1": 1,
+  "placeholders": 4,
+  "height": 3262,
+  "errors": [],
+  "failed": [],
+  "bytes": 153954,
+  "nreq": 10,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    15684,
+    "instrument-serif-italic-latin.woff2"
+   ],
+   [
+    15211,
+    "main.js"
+   ]
+  ],
+  "lcp": {
+   "t": 120,
+   "url": "",
+   "tag": "P",
+   "txt": "If we cannot ship by that date, we will "
+  }
+ },
+ "returns-m": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "A hello@example.com 358x44",
+   "A Spindle 12 358x44",
+   "A Spindle Kit 358x44",
+   "A Reserve batch two 358x44",
+   "A How it works 358x44",
+   "A In-wall install 358x44",
+   "A FAQ 358x44",
+   "A About 358x44",
+   "A Shipping 358x44",
+   "A Returns 358x44",
+   "A Warranty 358x44",
+   "A Privacy 358x44",
+   "A Terms 358x44"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "warranty.html",
+   "mailto:hello@example.com",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main"
+  ],
+  "h1": 1,
+  "placeholders": 3,
+  "height": 2918,
+  "errors": [],
+  "failed": [],
+  "bytes": 153387,
+  "nreq": 10,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    15684,
+    "instrument-serif-italic-latin.woff2"
+   ],
+   [
+    15211,
+    "main.js"
+   ]
+  ],
+  "lcp": {
+   "t": 204,
+   "url": "",
+   "tag": "P",
+   "txt": "Your $25 deposit is fully refundable at "
+  }
+ },
+ "privacy-m": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "A hello@example.com 358x44",
+   "A Spindle 12 358x44",
+   "A Spindle Kit 358x44",
+   "A Reserve batch two 358x44",
+   "A How it works 358x44",
+   "A In-wall install 358x44",
+   "A FAQ 358x44",
+   "A About 358x44",
+   "A Shipping 358x44",
+   "A Returns 358x44",
+   "A Warranty 358x44",
+   "A Privacy 358x44",
+   "A Terms 358x44"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "mailto:hello@example.com",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main"
+  ],
+  "h1": 1,
+  "placeholders": 3,
+  "height": 2913,
+  "errors": [],
+  "failed": [],
+  "bytes": 153195,
+  "nreq": 10,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    15684,
+    "instrument-serif-italic-latin.woff2"
+   ],
+   [
+    15211,
+    "main.js"
+   ]
+  ],
+  "lcp": {
+   "t": 208,
+   "url": "",
+   "tag": "P",
+   "txt": "This site uses the Meta pixel to measure"
+  }
+ },
+ "terms-m": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "A hello@example.com 358x44",
+   "A Spindle 12 358x44",
+   "A Spindle Kit 358x44",
+   "A Reserve batch two 358x44",
+   "A How it works 358x44",
+   "A In-wall install 358x44",
+   "A FAQ 358x44",
+   "A About 358x44",
+   "A Shipping 358x44",
+   "A Returns 358x44",
+   "A Warranty 358x44",
+   "A Privacy 358x44",
+   "A Terms 358x44"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "mailto:hello@example.com",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main"
+  ],
+  "h1": 1,
+  "placeholders": 3,
+  "height": 3789,
+  "errors": [],
+  "failed": [],
+  "bytes": 154726,
+  "nreq": 10,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    15684,
+    "instrument-serif-italic-latin.woff2"
+   ],
+   [
+    15211,
+    "main.js"
+   ]
+  ],
+  "lcp": {
+   "t": 40,
+   "url": "",
+   "tag": "P",
+   "txt": "A deposit holds one place in a batch, in"
+  }
+ },
+ "warranty-m": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "A hello@example.com 358x44",
+   "A Spindle 12 358x44",
+   "A Spindle Kit 358x44",
+   "A Reserve batch two 358x44",
+   "A How it works 358x44",
+   "A In-wall install 358x44",
+   "A FAQ 358x44",
+   "A About 358x44",
+   "A Shipping 358x44",
+   "A Returns 358x44",
+   "A Warranty 358x44",
+   "A Privacy 358x44",
+   "A Terms 358x44"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "mailto:hello@example.com",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main"
+  ],
+  "h1": 1,
+  "placeholders": 3,
+  "height": 3194,
+  "errors": [],
+  "failed": [],
+  "bytes": 153717,
+  "nreq": 10,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    15684,
+    "instrument-serif-italic-latin.woff2"
+   ],
+   [
+    15211,
+    "main.js"
+   ]
+  ],
+  "lcp": {
+   "t": 24,
+   "url": "",
+   "tag": "P",
+   "txt": "For two years from the day your order is"
+  }
+ },
+ "404-m": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "A hello@example.com 358x44",
+   "A Spindle 12 358x44",
+   "A Spindle Kit 358x44",
+   "A Reserve batch two 358x44",
+   "A How it works 358x44",
+   "A In-wall install 358x44",
+   "A FAQ 358x44",
+   "A About 358x44",
+   "A Shipping 358x44",
+   "A Returns 358x44",
+   "A Warranty 358x44",
+   "A Privacy 358x44",
+   "A Terms 358x44"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "index.html",
+   "faq.html",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main"
+  ],
+  "h1": 1,
+  "placeholders": 2,
+  "height": 2068,
+  "errors": [],
+  "failed": [],
+  "bytes": 151945,
+  "nreq": 10,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    15684,
+    "instrument-serif-italic-latin.woff2"
+   ],
+   [
+    15211,
+    "main.js"
+   ]
+  ],
+  "lcp": {
+   "t": 116,
+   "url": "",
+   "tag": "H1",
+   "txt": "That page is not here."
+  }
+ },
+ "index-d": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "A Spindle 12 60x20",
+   "A How it works 78x20",
+   "A FAQ 25x20",
+   "A About 36x20",
+   "A Reserve batch two 155x40",
+   "INPUT Hero light dimmer 246x3",
+   "INPUT checkbox 22x22",
+   "A hello@example.com 430x30",
+   "A Spindle 12 215x30",
+   "A Spindle Kit 215x30",
+   "A Reserve batch two 215x30",
+   "A How it works 215x30",
+   "A In-wall install 215x30",
+   "A FAQ 215x30",
+   "A About 215x30",
+   "A Shipping 215x30",
+   "A Returns 215x30",
+   "A Warranty 215x30",
+   "A Privacy 215x30",
+   "A Terms 215x30"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "reserve.html",
+   "product.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "reserve.html",
+   "thanks-deposit.html?demo=1&ref=sconce-chrome",
+   "privacy.html",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main",
+   "top",
+   "dimmer",
+   "story",
+   "room",
+   "finishes",
+   "how",
+   "swap",
+   "proof",
+   "faq-preview",
+   "reserve",
+   "waitlist-form",
+   "wl-email",
+   "wl-err",
+   "wl-finish"
+  ],
+  "h1": 1,
+  "placeholders": 3,
+  "height": 8716,
+  "errors": [],
+  "failed": [],
+  "bytes": 261282,
+  "nreq": 14,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    26576,
+    "living-1600.webp"
+   ],
+   [
+    24714,
+    "sq-chrome-1080.webp"
+   ]
+  ],
+  "lcp": {
+   "t": 80,
+   "url": "http://127.0.0.1:8739/img/sq-chrome-1080.webp",
+   "tag": "IMG",
+   "txt": ""
+  }
+ },
+ "product-d": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "A Spindle 12 60x20",
+   "A How it works 78x20",
+   "A FAQ 25x20",
+   "A About 36x20",
+   "A Reserve batch two 155x40",
+   "INPUT radio 18x18",
+   "INPUT radio 18x18",
+   "INPUT radio 18x18",
+   "A hello@example.com 430x30",
+   "A Spindle 12 215x30",
+   "A Spindle Kit 215x30",
+   "A Reserve batch two 215x30",
+   "A How it works 215x30",
+   "A In-wall install 215x30",
+   "A FAQ 215x30",
+   "A About 215x30",
+   "A Shipping 215x30",
+   "A Returns 215x30",
+   "A Warranty 215x30",
+   "A Privacy 215x30",
+   "A Terms 215x30"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "reserve.html#waitlist-form",
+   "thanks-deposit.html?demo=1&ref=sconce-chrome",
+   "reserve.html#waitlist-form",
+   "returns.html",
+   "warranty.html",
+   "shipping.html",
+   "faq.html",
+   "thanks-deposit.html?demo=1&ref=sconce-chrome",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main",
+   "pdp-main",
+   "kit",
+   "sconce",
+   "named"
+  ],
+  "h1": 1,
+  "placeholders": 3,
+  "height": 4013,
+  "errors": [],
+  "failed": [],
+  "bytes": 249486,
+  "nreq": 16,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    24714,
+    "sq-chrome-1080.webp"
+   ],
+   [
+    19879,
+    "product.html"
+   ]
+  ],
+  "lcp": {
+   "t": 156,
+   "url": "http://127.0.0.1:8739/img/sq-chrome-1080.webp",
+   "tag": "IMG",
+   "txt": ""
+  }
+ },
+ "install-d": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "A Spindle 12 60x20",
+   "A How it works 78x20",
+   "A FAQ 25x20",
+   "A About 36x20",
+   "A Reserve batch two 155x40",
+   "INPUT checkbox 22x22",
+   "A hello@example.com 430x30",
+   "A Spindle 12 215x30",
+   "A Spindle Kit 215x30",
+   "A Reserve batch two 215x30",
+   "A How it works 215x30",
+   "A In-wall install 215x30",
+   "A FAQ 215x30",
+   "A About 215x30",
+   "A Shipping 215x30",
+   "A Returns 215x30",
+   "A Warranty 215x30",
+   "A Privacy 215x30",
+   "A Terms 215x30"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "reserve.html",
+   "thanks-deposit.html?demo=1&ref=sconce-chrome",
+   "privacy.html",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main",
+   "surface",
+   "in-wall",
+   "heat",
+   "safety",
+   "reserve",
+   "waitlist-form",
+   "wl-email",
+   "wl-err",
+   "wl-finish"
+  ],
+  "h1": 1,
+  "placeholders": 3,
+  "height": 5826,
+  "errors": [],
+  "failed": [],
+  "bytes": 197575,
+  "nreq": 12,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    20012,
+    "hero-chrome-800.webp"
+   ],
+   [
+    17596,
+    "install.html"
+   ]
+  ],
+  "lcp": {
+   "t": 148,
+   "url": "http://127.0.0.1:8739/img/layout-900.webp",
+   "tag": "IMG",
+   "txt": ""
+  }
+ },
+ "faq-d": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "A Spindle 12 60x20",
+   "A How it works 78x20",
+   "A FAQ 25x20",
+   "A About 36x20",
+   "A Reserve batch two 155x40",
+   "INPUT checkbox 22x22",
+   "A hello@example.com 430x30",
+   "A Spindle 12 215x30",
+   "A Spindle Kit 215x30",
+   "A Reserve batch two 215x30",
+   "A How it works 215x30",
+   "A In-wall install 215x30",
+   "A FAQ 215x30",
+   "A About 215x30",
+   "A Shipping 215x30",
+   "A Returns 215x30",
+   "A Warranty 215x30",
+   "A Privacy 215x30",
+   "A Terms 215x30"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "mailto:hello@example.com",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "reserve.html",
+   "thanks-deposit.html?demo=1&ref=sconce-chrome",
+   "privacy.html",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main",
+   "reserve",
+   "waitlist-form",
+   "wl-email",
+   "wl-err",
+   "wl-finish"
+  ],
+  "h1": 1,
+  "placeholders": 4,
+  "height": 3079,
+  "errors": [],
+  "failed": [],
+  "bytes": 168581,
+  "nreq": 10,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    22422,
+    "faq.html"
+   ],
+   [
+    15684,
+    "instrument-serif-italic-latin.woff2"
+   ]
+  ],
+  "lcp": {
+   "t": 160,
+   "url": "",
+   "tag": "H1",
+   "txt": "Everything people ask before they reserv"
+  }
+ },
+ "about-d": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "A Spindle 12 60x20",
+   "A How it works 78x20",
+   "A FAQ 25x20",
+   "A About 36x20",
+   "A Reserve batch two 155x40",
+   "INPUT checkbox 22x22",
+   "A hello@example.com 430x30",
+   "A Spindle 12 215x30",
+   "A Spindle Kit 215x30",
+   "A Reserve batch two 215x30",
+   "A How it works 215x30",
+   "A In-wall install 215x30",
+   "A FAQ 215x30",
+   "A About 215x30",
+   "A Shipping 215x30",
+   "A Returns 215x30",
+   "A Warranty 215x30",
+   "A Privacy 215x30",
+   "A Terms 215x30"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "reserve.html",
+   "thanks-deposit.html?demo=1&ref=sconce-chrome",
+   "privacy.html",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main",
+   "reserve",
+   "waitlist-form",
+   "wl-email",
+   "wl-err",
+   "wl-finish"
+  ],
+  "h1": 1,
+  "placeholders": 3,
+  "height": 2707,
+  "errors": [],
+  "failed": [],
+  "bytes": 182235,
+  "nreq": 11,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    24714,
+    "sq-chrome-1080.webp"
+   ],
+   [
+    15684,
+    "instrument-serif-italic-latin.woff2"
+   ]
+  ],
+  "lcp": {
+   "t": 116,
+   "url": "http://127.0.0.1:8739/img/sq-chrome-1080.webp",
+   "tag": "IMG",
+   "txt": ""
+  }
+ },
+ "reserve-d": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "A Spindle 12 60x20",
+   "A How it works 78x20",
+   "A FAQ 25x20",
+   "A About 36x20",
+   "A Reserve batch two 155x40",
+   "INPUT radio 18x18",
+   "INPUT radio 18x18",
+   "INPUT radio 18x18",
+   "INPUT checkbox 22x22",
+   "A hello@example.com 430x30",
+   "A Spindle 12 215x30",
+   "A Spindle Kit 215x30",
+   "A Reserve batch two 215x30",
+   "A How it works 215x30",
+   "A In-wall install 215x30",
+   "A FAQ 215x30",
+   "A About 215x30",
+   "A Shipping 215x30",
+   "A Returns 215x30",
+   "A Warranty 215x30",
+   "A Privacy 215x30",
+   "A Terms 215x30"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "thanks-deposit.html?demo=1&ref=sconce-chrome",
+   "returns.html",
+   "warranty.html",
+   "shipping.html",
+   "reserve.html",
+   "thanks-deposit.html?demo=1&ref=sconce-chrome",
+   "privacy.html",
+   "thanks-deposit.html?demo=1&ref=sconce-chrome",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main",
+   "reserve-img",
+   "kit",
+   "sconce",
+   "named",
+   "reserve",
+   "waitlist-form",
+   "wl-email",
+   "wl-err",
+   "wl-finish"
+  ],
+  "h1": 1,
+  "placeholders": 3,
+  "height": 2821,
+  "errors": [],
+  "failed": [],
+  "bytes": 183726,
+  "nreq": 11,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    24714,
+    "sq-chrome-1080.webp"
+   ],
+   [
+    15684,
+    "instrument-serif-italic-latin.woff2"
+   ]
+  ],
+  "lcp": {
+   "t": 44,
+   "url": "http://127.0.0.1:8739/img/sq-chrome-1080.webp",
+   "tag": "IMG",
+   "txt": ""
+  }
+ },
+ "thanks-d": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "A Spindle 12 60x20",
+   "A How it works 78x20",
+   "A FAQ 25x20",
+   "A About 36x20",
+   "A Reserve batch two 155x40",
+   "A hello@example.com 430x30",
+   "A Spindle 12 215x30",
+   "A Spindle Kit 215x30",
+   "A Reserve batch two 215x30",
+   "A How it works 215x30",
+   "A In-wall install 215x30",
+   "A FAQ 215x30",
+   "A About 215x30",
+   "A Shipping 215x30",
+   "A Returns 215x30",
+   "A Warranty 215x30",
+   "A Privacy 215x30",
+   "A Terms 215x30"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "reserve.html",
+   "index.html",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main"
+  ],
+  "h1": 1,
+  "placeholders": 2,
+  "height": 1401,
+  "errors": [],
+  "failed": [],
+  "bytes": 152351,
+  "nreq": 10,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    15684,
+    "instrument-serif-italic-latin.woff2"
+   ],
+   [
+    15211,
+    "main.js"
+   ]
+  ],
+  "lcp": {
+   "t": 84,
+   "url": "",
+   "tag": "H1",
+   "txt": "We will write when batch two is ready."
+  }
+ },
+ "thanks-deposit-d": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "A Spindle 12 60x20",
+   "A How it works 78x20",
+   "A FAQ 25x20",
+   "A About 36x20",
+   "A Reserve batch two 155x40",
+   "A hello@example.com 430x30",
+   "A Spindle 12 215x30",
+   "A Spindle Kit 215x30",
+   "A Reserve batch two 215x30",
+   "A How it works 215x30",
+   "A In-wall install 215x30",
+   "A FAQ 215x30",
+   "A About 215x30",
+   "A Shipping 215x30",
+   "A Returns 215x30",
+   "A Warranty 215x30",
+   "A Privacy 215x30",
+   "A Terms 215x30"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "reserve.html",
+   "install.html",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main"
+  ],
+  "h1": 2,
+  "placeholders": 2,
+  "height": 1280,
+  "errors": [],
+  "failed": [],
+  "bytes": 153724,
+  "nreq": 10,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    15684,
+    "instrument-serif-italic-latin.woff2"
+   ],
+   [
+    15211,
+    "main.js"
+   ]
+  ],
+  "lcp": {
+   "t": 40,
+   "url": "",
+   "tag": "P",
+   "txt": "This page appears after checkout. If you"
+  }
+ },
+ "shipping-d": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "A Spindle 12 60x20",
+   "A How it works 78x20",
+   "A FAQ 25x20",
+   "A About 36x20",
+   "A Reserve batch two 155x40",
+   "A hello@example.com 430x30",
+   "A Spindle 12 215x30",
+   "A Spindle Kit 215x30",
+   "A Reserve batch two 215x30",
+   "A How it works 215x30",
+   "A In-wall install 215x30",
+   "A FAQ 215x30",
+   "A About 215x30",
+   "A Shipping 215x30",
+   "A Returns 215x30",
+   "A Warranty 215x30",
+   "A Privacy 215x30",
+   "A Terms 215x30"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "mailto:hello@example.com",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main"
+  ],
+  "h1": 1,
+  "placeholders": 4,
+  "height": 2061,
+  "errors": [],
+  "failed": [],
+  "bytes": 153954,
+  "nreq": 10,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    15684,
+    "instrument-serif-italic-latin.woff2"
+   ],
+   [
+    15211,
+    "main.js"
+   ]
+  ],
+  "lcp": {
+   "t": 48,
+   "url": "",
+   "tag": "P",
+   "txt": "Shipping inside the contiguous US (the l"
+  }
+ },
+ "returns-d": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "A Spindle 12 60x20",
+   "A How it works 78x20",
+   "A FAQ 25x20",
+   "A About 36x20",
+   "A Reserve batch two 155x40",
+   "A hello@example.com 430x30",
+   "A Spindle 12 215x30",
+   "A Spindle Kit 215x30",
+   "A Reserve batch two 215x30",
+   "A How it works 215x30",
+   "A In-wall install 215x30",
+   "A FAQ 215x30",
+   "A About 215x30",
+   "A Shipping 215x30",
+   "A Returns 215x30",
+   "A Warranty 215x30",
+   "A Privacy 215x30",
+   "A Terms 215x30"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "warranty.html",
+   "mailto:hello@example.com",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main"
+  ],
+  "h1": 1,
+  "placeholders": 3,
+  "height": 1905,
+  "errors": [],
+  "failed": [],
+  "bytes": 153387,
+  "nreq": 10,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    15684,
+    "instrument-serif-italic-latin.woff2"
+   ],
+   [
+    15211,
+    "main.js"
+   ]
+  ],
+  "lcp": {
+   "t": 80,
+   "url": "",
+   "tag": "P",
+   "txt": "Your $25 deposit is fully refundable at "
+  }
+ },
+ "privacy-d": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "A Spindle 12 60x20",
+   "A How it works 78x20",
+   "A FAQ 25x20",
+   "A About 36x20",
+   "A Reserve batch two 155x40",
+   "A hello@example.com 430x30",
+   "A Spindle 12 215x30",
+   "A Spindle Kit 215x30",
+   "A Reserve batch two 215x30",
+   "A How it works 215x30",
+   "A In-wall install 215x30",
+   "A FAQ 215x30",
+   "A About 215x30",
+   "A Shipping 215x30",
+   "A Returns 215x30",
+   "A Warranty 215x30",
+   "A Privacy 215x30",
+   "A Terms 215x30"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "mailto:hello@example.com",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main"
+  ],
+  "h1": 1,
+  "placeholders": 3,
+  "height": 1853,
+  "errors": [],
+  "failed": [],
+  "bytes": 153195,
+  "nreq": 10,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    15684,
+    "instrument-serif-italic-latin.woff2"
+   ],
+   [
+    15211,
+    "main.js"
+   ]
+  ],
+  "lcp": {
+   "t": 48,
+   "url": "",
+   "tag": "P",
+   "txt": "This site uses the Meta pixel to measure"
+  }
+ },
+ "terms-d": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "A Spindle 12 60x20",
+   "A How it works 78x20",
+   "A FAQ 25x20",
+   "A About 36x20",
+   "A Reserve batch two 155x40",
+   "A hello@example.com 430x30",
+   "A Spindle 12 215x30",
+   "A Spindle Kit 215x30",
+   "A Reserve batch two 215x30",
+   "A How it works 215x30",
+   "A In-wall install 215x30",
+   "A FAQ 215x30",
+   "A About 215x30",
+   "A Shipping 215x30",
+   "A Returns 215x30",
+   "A Warranty 215x30",
+   "A Privacy 215x30",
+   "A Terms 215x30"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "mailto:hello@example.com",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main"
+  ],
+  "h1": 1,
+  "placeholders": 3,
+  "height": 2468,
+  "errors": [],
+  "failed": [],
+  "bytes": 154726,
+  "nreq": 10,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    15684,
+    "instrument-serif-italic-latin.woff2"
+   ],
+   [
+    15211,
+    "main.js"
+   ]
+  ],
+  "lcp": {
+   "t": 48,
+   "url": "",
+   "tag": "P",
+   "txt": "A deposit holds one place in a batch, in"
+  }
+ },
+ "warranty-d": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "A Spindle 12 60x20",
+   "A How it works 78x20",
+   "A FAQ 25x20",
+   "A About 36x20",
+   "A Reserve batch two 155x40",
+   "A hello@example.com 430x30",
+   "A Spindle 12 215x30",
+   "A Spindle Kit 215x30",
+   "A Reserve batch two 215x30",
+   "A How it works 215x30",
+   "A In-wall install 215x30",
+   "A FAQ 215x30",
+   "A About 215x30",
+   "A Shipping 215x30",
+   "A Returns 215x30",
+   "A Warranty 215x30",
+   "A Privacy 215x30",
+   "A Terms 215x30"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "mailto:hello@example.com",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main"
+  ],
+  "h1": 1,
+  "placeholders": 3,
+  "height": 2067,
+  "errors": [],
+  "failed": [],
+  "bytes": 153717,
+  "nreq": 10,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    15684,
+    "instrument-serif-italic-latin.woff2"
+   ],
+   [
+    15211,
+    "main.js"
+   ]
+  ],
+  "lcp": {
+   "t": 44,
+   "url": "",
+   "tag": "H1",
+   "txt": "Two-year limited warranty"
+  }
+ },
+ "404-d": {
+  "over": 0,
+  "small": [
+   "A Skip to content 1x1",
+   "A Spindle 109x26",
+   "A Spindle 12 60x20",
+   "A How it works 78x20",
+   "A FAQ 25x20",
+   "A About 36x20",
+   "A Reserve batch two 155x40",
+   "A hello@example.com 430x30",
+   "A Spindle 12 215x30",
+   "A Spindle Kit 215x30",
+   "A Reserve batch two 215x30",
+   "A How it works 215x30",
+   "A In-wall install 215x30",
+   "A FAQ 215x30",
+   "A About 215x30",
+   "A Shipping 215x30",
+   "A Returns 215x30",
+   "A Warranty 215x30",
+   "A Privacy 215x30",
+   "A Terms 215x30"
+  ],
+  "noalt": [],
+  "broken": [],
+  "anchors": [
+   "#main",
+   "index.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "product.html",
+   "install.html",
+   "faq.html",
+   "about.html",
+   "reserve.html",
+   "index.html",
+   "faq.html",
+   "index.html",
+   "mailto:hello@example.com",
+   "product.html",
+   "product.html#kit",
+   "reserve.html",
+   "install.html",
+   "install.html#in-wall",
+   "faq.html",
+   "about.html",
+   "shipping.html",
+   "returns.html",
+   "warranty.html",
+   "privacy.html",
+   "terms.html"
+  ],
+  "ids": [
+   "mobile-nav",
+   "main"
+  ],
+  "h1": 1,
+  "placeholders": 2,
+  "height": 1364,
+  "errors": [],
+  "failed": [],
+  "bytes": 151945,
+  "nreq": 10,
+  "bad": [],
+  "big": [
+   [
+    44916,
+    "inter-tight-latin.woff2"
+   ],
+   [
+    31340,
+    "jetbrains-mono-latin.woff2"
+   ],
+   [
+    26599,
+    "style.css"
+   ],
+   [
+    15684,
+    "instrument-serif-italic-latin.woff2"
+   ],
+   [
+    15211,
+    "main.js"
+   ]
+  ],
+  "lcp": {
+   "t": 52,
+   "url": "",
+   "tag": "H1",
+   "txt": "That page is not here."
+  }
+ }
+}

@@ -40,7 +40,39 @@ The record's hottest spot in the final layout is at r 114 mm, directly in front 
 | D. Study version | +9.9 K | 44.9 C (113 F) | 56.5 C |
 | **F  FINAL, as built in the CAD** | **+10.2 K** | **45.2 C (113 F)** | **56.2 C (133 F)** |
 
-Vinyl softens at about 55 to 60 C (130 to 140 F). The final layout keeps the record about 10 K below that even in the stacked worst case, and 22 K below it in the normal case.
+**Corrected 2026-11-11 (product audit):** this file used to say vinyl softens at about 55 to 60 C. The one hard source found says lower. US patent 3,975,321 (record moulding compounds), Table III, gives the standard vinyl chloride / vinyl acetate record compound a glass transition of 52 to 54 C and puts the temperature at which its stiffness has fallen to 135,000 psi at 48 to 50 C (https://patents.google.com/patent/US3975321A/en). So the limits to stay under are **48 C** (stiffness starts to go) and **52 C** (glass transition), not 55 to 60. Against those, the normal case (33.1 C) has about 15 K of margin. The stacked worst case (45.2 C) has under 3 K, before the rising warm air that this model leaves out.
+
+## Sensitivity: what happens when the assumptions are wrong (added 2026-11-11 by the product audit)
+
+Same model, same final geometry, one assumption changed at a time. The model was extended for this table only (script kept outside the repo) so the air in the gap behind the backplate can be warmer than the room. A simple chimney estimate of that gap (25 mm deep, 267 mm tall, about 140 mm of open width beside the hub) gives air leaving the top 4 to 7 K above the room at 4 W and about 9 K at 6 W, and the model says the record picks up 0.31 K for each 1 K of warmer gap air. None of this is measured.
+
+| Case | Record hottest spot | Rise over the room | Record overhang | Strip |
+|---|---|---|---|---|
+| Baseline, as in THERMAL.md (4 W, 30 C room) | 33.1 C | +3.1 K | 31.3 C | 39.2 C |
+| Cheap strip: only 20% of the power leaves as light | 33.9 C | +3.9 K | 31.5 C | 41.3 C |
+| All the light soaked up behind the plate (upper bound: 100% heat) | 34.8 C | +4.8 K | 31.9 C | 44.1 C |
+| Stray light on the record's overhang 5x larger (0.5 W) | 33.2 C | +3.2 K | 32.1 C | 39.2 C |
+| Cavity film coefficient quartered (alcove, shelf above, tight to a corner) | 35.6 C | +5.6 K | 32.2 C | 45.6 C |
+| All film coefficients halved (dead air) | 36.8 C | +6.8 K | 33.5 C | 44.1 C |
+| Air in the cavity 3 K warmer than the room (plume, low estimate) | 33.9 C | +3.9 K | 31.6 C | 41.0 C |
+| Air in the cavity 6 K warmer than the room (plume, high estimate) | 34.7 C | +4.7 K | 31.8 C | 42.9 C |
+| Hot wall behind: cavity air 10 K above the room (radiator below, sunlit or attic-side wall) | 35.8 C | +5.8 K | 32.2 C | 45.4 C |
+| Planned sample-run strip: HitLights COB 10 W/m x 0.7 m = 7 W | 35.5 C | +5.5 K | 32.3 C | 46.0 C |
+| 7 W strip + plume 6 K x 7/4 | 38.2 C | +8.2 K | 33.2 C | 52.5 C |
+| 35 C room, 4 W, plume 6 K (Florida porch or no AC) | 39.7 C | +4.7 K | 36.8 C | 47.9 C |
+| THERMAL.md stacked worst case (6 W, films halved, 35 C room) | 45.2 C | +10.2 K | 40.2 C | 56.2 C |
+| Same + plume (cavity air +12 K: 6 W into slower air) | 48.7 C | +13.7 K | 41.8 C | 62.4 C |
+| Same + plume + cheap strip (20% light) | 51.0 C | +16.0 K | 42.9 C | 67.3 C |
+| 12 V strip on a 24 V adapter, first minutes (about 4x power = 16 W, before it burns out) | 46.5 C | +16.5 K | 36.5 C | 75.9 C |
+
+Reading it:
+- Light fraction, stray light on the overhang, and cork thickness barely matter: under 2 K between them.
+- Dead air and the wrong strip are what matter. The sample plan's HitLights COB reel is 10 W per metre, 7 W on this ring: it alone costs 2.4 K, 5 K with its plume.
+- The stacked worst case with the plume the model leaves out is 48.7 C, and 51.0 C with an inefficient strip. That is at the 48 to 52 C limit, with nothing in hand. The stack is unlikely (wrong strip AND a closed-in spot AND a 35 C room), but two of the three are in the customer's hands and the third was in the purchasing plan.
+- On a 24 V adapter the strip itself goes to about 76 C and climbing in the first minutes. The record is not the first thing to fail there; the strip and its adhesive are. Nothing in the fixture stops a 24 V plug: it is the same barrel size.
+- Direct sun on a black record is outside this model and is worse than anything in the table. The safety card must say so.
+
+**Is the 12 in sconce safe on paper?** In normal use, yes, with about 13 to 15 K in hand once the plume is counted (record about 34 to 35 C in a 30 C room). Not in the stacked worst case. **The one measurement that proves it:** a thermocouple on the BACK of the record, 114 mm from the centre at 12 o'clock, after two hours at full brightness on a real wall in still air (test T1, run A, in `build/QC-test-plan.md`). Pass is 6 K or less above the room.
 
 The final geometry differs from the study version (D) in two ways: the ring is 3 mm further in, so it clears the rim by 3.35 mm, and the cork is 1.6 mm instead of 2.0 mm. Together that costs 0.1 K in the normal case and 0.3 K in the worst case.
 
@@ -73,7 +105,7 @@ The lit cap adds 0.17 W at the centre of the record, 95 mm away from the halo's 
 
 ## First prototype test (not done, nothing exists to test yet)
 
-Thermocouple on the record's back at r 114 mm, at the top edge, and under the cap. Two hours on, in a still room. Accept: record no more than 5 K above the room with the 4 W strip. Nothing ships before this.
+Thermocouple on the record's back at r 114 mm, at the top edge, and under the cap. Two hours on, in a still room. Full procedure with ten thermocouple positions and pass limits: `build/QC-test-plan.md` test T1. Accept: record no more than 6 K above the room with the production strip (the model says 3.1 K, the plume adds an estimated 1 to 2 K). Nothing ships before this.
 
 ## Projection from the wall, installed and tightened
 

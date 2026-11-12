@@ -1,77 +1,65 @@
-# Sample-kit shopping list: 3 hand-built prototypes this week
+# Prototype shopping list: three 12 in Spindle sconces
 
-> **SUPERSEDED IN PART, 2026-11-11 (heat-safe layout, `../cad/FIXES-heat-layout.md`):** the prototypes now also need, per 12 in unit, one 260 x 200 mm ring of 0.040 in aluminium, one matching ring of 1/16 in (1.6 mm) cork and four #4 x 3/8 in pan-head screws. None of these is on this list or priced. Question D.1 below ("rim-mounted outward-facing COB") is superseded: the strip is on the back of the backplate facing the wall. The backplate needs no rim rabbet.
+Rewritten 2026-11-11 by the product audit (`../audits/AUDIT-product.md`) for the canonical CAD. The list from 2026-11-10 (glued stainless dome, panel jack, rim strip, HitLights COB reel) is in `SUPERSEDED/sample-kit-shopping-list-2026-11-10.md` and must not be ordered from.
 
-> **SUPERSEDED IN PART, 2026-11-11:** lines 8, 10 and 15 (1 in dome bolts, 1/8 in SAW1GY felt washers, panel jacks) are superseded. Current parts: RS-CAP-12 rev D (one-piece turned cap), RS-HUB-01 rev B (150 mm power pigtail, no jack), PEM FH-832-10 studs, die-cut 1/16 in felt, PET label washer, centre backing ring. See `BOM.md` and `../cad/FIXES-fable52.md`. Do not buy from this list until it is rewritten.
+Nothing has been ordered. Prices are what the vendor page or the guest instant quote showed on 2026-11-11 unless marked "est" (estimate) or "not checked". Three units, because the tests in `QC-test-plan.md` section 4 need three.
 
-Prepared 2026-11-10. Goal: Austin and I build three working 12" units (one chrome, one brass, one black cap) plus one 7" test, by hand, before any custom part (CNC backplate, printed hub, laser plate, turned dome) exists. Off-the-shelf stand-ins are used where the final part is custom. Nothing has been ordered; this is the list to order from. Prices as fetched 2026-11-09/10; V = confirmed on the page tonight, P = confirmed 11/9 and rate-limited tonight, S = snippet, E = estimate. Home Depot, Amazon and Harbor Freight return 403/503 to scrapers, so those prices are marked E or S and the links are for a human browser.
+## A. Custom parts (need a file upload or a quote)
 
-## A. Parts (for 3 x 12" + 1 x 7")
-
-| # | Item | Where | Link | Qty | Price | Status |
+| # | Part | Qty | Where | Price seen | Lead time | Note |
 |---|---|---|---|---|---|---|
-| 1 | Records: 3 x 12" LPs with plain labels (no recognisable artist, for photos), 2 x 7" singles | Goodwill / Salvation Army, Broward; or Radio-Active Records, Fort Lauderdale | local | 5 | $12 | E |
-| 2 | Backplate stock: ProWood 1/2" x 2' x 4' MDF project panel (makes 8 x 10.5" discs + the 6" and 5" hub discs) | Home Depot | https://www.homedepot.com/p/ProWood-1-2-in-x-2-ft-x-4-ft-Medium-Density-Fiberboard-Project-Panel-109097/202093821 | 1 | $14.58 | P (HD 403) |
-| 3 | Hub stand-in: two 5" MDF discs glued = 1" thick hub, cut from the same panel. If a 3D printer is available, print the hub from `render/sconce_v2.py` geometry instead. | same panel | | 0 | $0 | |
-| 4 | Threaded inserts: E-Z Lok 400-4, 1/4-20, pack of 10 | Albany County Fasteners | https://www.albanycountyfasteners.com/1-4-20-brass-thread-inserts-wood-400-4-p/117012.htm | 1 pk | $17.63 | V |
-| 5 | Cap stand-in A (brass): Rockler decorative solid brass knurled knob 1/4-20 x 1", 4-pack | Rockler | https://www.rockler.com/decorative-solid-brass-knurled-knob-1-4-x-20-x-1-4-per-pack | 1 pk | $7.99 | V |
-| 6 | Cap stand-in B (chrome hero): uxcell 38 mm mirror-polished 304 stainless hemisphere, 4-pack | Walmart | https://www.walmart.com/ip/Uxcell-4-Pack-Hollow-Half-Ball-38mm-1-5-OD-Stainless-Steel-Mirror-Polished-Hemisphere-Hollow-Half-Railing-Ball-Cap-Gazing-Balls-Garden-Gate-Stair-Han/20104314020 | 1 pk | $13.89 | V (dome-cap agent) |
-| 7 | Cap stand-in C (black and flat fallback): Outwater "Cap It Off" 1-1/4" cap, 1/4-20 stud, black nickel; also one in polished chrome to compare against the dome | Outwater | https://www.outwater.com/STD-CAP-PARENT?finish=2577&diameter=7&cap-type=10 | 2 | $9 | V ($1.61 to $4.50 each) |
-| 8 | Dome bolts: 1/4-20 x 1" hex bolts (4) + 1-1/2" OD fender washers (4), zinc | Home Depot aisle | | 1 | $4 | E |
-| 9 | Epoxy for the dome fill: JB Weld original 2 oz | Home Depot | | 1 | $7 | E |
-| 10 | Felt washers 1" OD x 3/8" ID x 1/8", Durofelt SAW1GY-50 (50) | Durofelt | https://www.durofelt.com/categories/self-adhesive-felt-washers | 1 pk | $8.00 | V |
-| 11 | Felt pads 1/2" OD x 1/16", Durofelt SAW12BK-100 (100) | Durofelt | same page | 1 pk | $7.00 | V |
-| 12 | COB LED strip 12 V 2700K CRI 90+ UL, 16.4 ft reel (enough for 5 units) | Amazon, HitLights or BTF-Lighting | https://www.amazon.com/cob-led-strip-light-2700k/s?k=cob+led+strip+light+2700k | 1 | $25 | E (Amazon 503) |
-| 12b | Dotted fallback with a verified price and ETL file: Ecolocity Ribbon Star 2835 warm white, 3 m | Ecolocity | https://www.ecolocityled.com/product/low-power-2835-warm-strip | 1 | $44.99 | V (buy only if 12 is out of stock) |
-| 13 | Power adapters: UL 12 V 2 A 24 W with on/off, 5.5 x 2.1 | LED Updates | https://ledupdates.com/products/ul-listed-12v-2a-24w-power-supply-driver-with-on-off-switch | 4 | $47.96 | P ($11.99 each) |
-| 14 | Inline PWM dimmers 12 to 24 V 2 A, Ecolocity LC-OL-8DIM | Ecolocity | https://www.ecolocityled.com/product/led_pwm_dimmer_inline_12V | 4 | $15.96 | V ($3.99 sale, 10 in stock) |
-| 15 | DC panel jacks 5.5 x 2.1, Adafruit 610 | Adafruit | https://www.adafruit.com/product/610 | 4 | $11.80 | V |
-| 16 | Mount stand-in for the 12" (the twist-lock plate is custom): Westinghouse 7011100 crossbar (bolts to a box or two anchors, gives us the "plate on wall, hub on plate" test) | Light Bulb Surplus | https://lightbulbsurplus.com/westinghouse-7011100/ | 3 | $11.19 | V (inwall-parts) |
-| 17 | Keyhole plates for the 7" and as the bump-test baseline: Hardwick heavy gauge | Hardwick & Sons | https://hardwickandsons.com/products/steel-keyhole-hanger-plate | 10 | $4.50 | P ($0.45 each) |
-| 18 | 45 rpm adapters, handful | the record shop in item 1 | | 4 | $4 | E |
-| 19 | Wall screws #8 x 1-1/4" + drywall anchors, small pack | Home Depot | | 1 | $5 | E |
-| 20 | Clear silicone bumpers, 100 | eBay | https://www.ebay.com/itm/128096161974 | 1 | $6.51 | P |
-| 21 | 18 AWG red/black zip wire 10 ft + 3/16" heat shrink assortment | Home Depot / Amazon | | 1 | $12 | E |
-| 22 | Rust-Oleum matte black spray, 2 cans | Home Depot | | 2 | $16 | E |
-| 23 | Thin CA glue (for the inserts in MDF) + wood glue | Home Depot | | 1 | $10 | E |
-| 24 | In-wall test: Arlington LV1 bracket | AV Outlet | https://www.avoutlet.com/cable-management/boxes-brackets-wall-plates/lv-brackets/arlington-lv1/ | 1 | $1.80 | V |
-| 25 | In-wall test: Datacomm 45-0001-WH recessed plate | Zack Electronics | https://www.zackelectronics.com/datacomm-45-0001-wh-1-gang-recessed-low-voltage-cable-plate-white.html | 1 | $3.45 | V |
-| 26 | In-wall test: CL2 18/2 cable 50 ft | Monoprice p_id 4044 | https://www.monoprice.com/product?p_id=4044 | 1 | $18.54 | S (Cloudflare) |
-| 27 | In-wall test: screw-terminal barrel plug pairs, 10 | Amazon | https://www.amazon.com/dp/B07D67B3HM | 1 | $13.50 | S |
-| 28 | Shipping test: 13 x 13 x 3 boxes (Uline sells in 25s; for 3 prototypes a 5-pack of 13x13x3 or 14x14x4 from Amazon/Office Depot is fine) + foam corners | Uline or Amazon | https://www.uline.com (13x13x3 200# box) | 5 | $25 | E |
-| | **Parts subtotal** | | | | **about $400** | |
+| A1 | Chrome cap RS-CAP-12 rev D | 3 | PCBWay guest pre-quote, brass C360 + chrome | $155.93 each at 1, $139.91 at 5 | 8 to 10 business days + 2 to 4 shipping | THE LONG POLE and the biggest cost. Email quotes will be lower; the RFQ packet `../cad/rfq/dome-cap-RS-CAP-12-revD.zip` is ready and unsent. Cheaper for prototypes: JLCCNC polished brass, no chrome, $42.72 at 1, $180.40 for 5 (thread needs the drawing uploaded) |
+| A1b | Stand-in cap so testing does not wait for A1 | 3 | Outwater STD-40CAP-PC, 1-1/4 in chrome cap, 1/4-20 | $4.50 | in stock | Flat, 31.75 mm, thread 3/4 in long: cut the thread to 12 mm. Good enough for the heat, mount and drop tests; not for photos |
+| A2 | Wall plate RS-WP-01 rev B, galvanized, bent, 3 studs pressed | 3 (order 10) | SendCutSend | $33.24 at 1, $9.22 each at 10 | about 8 days | Upload `../cad/parts/RS-WP-01_flat.dxf` (rev B). Re-quoted 2026-11-11: accepted with the bend and three studs. The old rev A file was refused for the stud |
+| A3 | Aluminium ring RS-HR-12 | 3 (order 10) | SendCutSend | $27.10 at 1, $13.83 each at 10 | about 5 days | `../cad/parts/RS-HR-12.dxf` |
+| A4 | Backplate RS-BP-12-MDF rev C | 3 | Local CNC shop | est $25 to $40 each for three | not checked | No shop has quoted the rev C file. Material: one Home Depot 1/2 in MDF panel, $14.58 (page not checked 11-11) |
+| A5 | Hub RS-HUB-01 rev C | 3 | Own printer or a print service | est $6 each in filament; service est $25 to $40 each | overnight, or 5 to 10 days | Print the rev C file. A rev B hub cannot be twisted onto the plate |
 
-Ordering notes: Albany, Durofelt, Ecolocity, Adafruit, Outwater, AV Outlet and Zack are small web shops with 1 to 2 day ship, so order those Monday and they land midweek. Walmart and Home Depot are same-day pickup. Monoprice is 2 to 4 days. If Austin wants a 10.5" backplate without routing, a 12" Baltic birch circle ($20.30 single at Woodpeckers, https://woodpeckerscrafts.com/products/12-circle-wooden-cutout-1-2-thick, P) works for a lighting test but will show at the edge of the record; the MDF cut to 10.5" is the honest prototype.
+## B. Stock parts
 
-## B. Tools Austin probably needs to buy
+| # | Part | Qty | Where | Price seen | Note |
+|---|---|---|---|---|---|
+| B1 | E-Z Lok 400-4 insert | 5 | Albany County Fasteners | $1.90 each | Drive tool on the same page, $17.63 |
+| B2 | LED strip, 12 V, 8 mm, 1.46 W/ft, ETL | 1 x 3 m | Ecolocity Ribbon Star low-power 2835 | $44.99 | Enough for 4 rings. The page says 2900 to 3200K. Do NOT buy the HitLights COB reel (10 W per metre) |
+| B2b | Second strip to compare | 1 x 5 m | Armacost 131232, UL, 2700K | $29.99 | Wattage is not on its page: measure it. Buy only if both are wanted on the bench |
+| B3 | Adapter, UL Class 2, 12 V 2 A | 3 | LED Updates | $12.99 each | |
+| B4 | Inline dimmer | 3 | Ecolocity LC-OL-8DIM | $3.99 each (sale; 7 in stock) | |
+| B5 | Pigtail with inline female 5.5 x 2.1 jack | 3 | cctvcameraworld | $4.00 each | Check the wire gauge on arrival (18 AWG wanted) |
+| B6 | Felt pads 1/2 in, bag of 100 | 1 | Durofelt SAW12BK-100 | $7.00 | |
+| B7 | Adhesive felt sheet, 1/16 in, for the cap felt and centre ring | 1 | not checked | est $8 | Punch by hand for prototypes: 1-1/4 in and 3/8 in hollow punches, est $20 |
+| B8 | Clear matte PET film 0.010 in, one sheet | 1 | not checked | est $8 | Cut three 37.5 x 7.5 mm washers |
+| B9 | Cork roll 1/16 in x 12 in x 30 ft | 1 | WidgetCo | $66.00 | 35 rings. Smaller: The Cork Store CR117 sheets, 15 for $90 |
+| B10 | #4 x 3/8 pan-head sheet-metal screws, box of 100 | 1 | Tanner Bolt | $2.90 | Ring screws and P-clip screw |
+| B11 | #8 x 1 in flat-head wood screws; #8 x 1-1/4 pan-head; 8-32 nylon lock nuts; 1/4 in nylon P-clips | 1 box each | hardware store | est $20 | |
+| B12 | Unflanged drywall anchors, Toggler Alligator | 1 box | toggler.com dealer | not checked, est $12 | Use the anchor the kit will ship with |
+| B13 | M3 heat-set inserts, 50 | 1 | Adafruit 4255 | $5.95 | |
+| B14 | M3 x 12 flat-point set screws; 1.5 mm x 100 mm straight hex driver | 10; 3 | not checked | est $15 | |
+| B15 | 22 AWG and 18 AWG red/black wire, heat-shrink assortment | 1 | hardware store | est $15 | |
+| B16 | Box 13 x 13 x 3, bundle of 25 | 1 | Uline S-19090 | $1.62 each | Single wall, 200 lb. Foam est $20 |
+| B17 | Test records: two 180 g, two thin (about 120 g), two paper-label throwaways | 6 | thrift | est $12 | |
 
-Checked against what a house without a workshop has. Skip anything he owns. Harbor Freight and Amazon block scrapers so these are estimates for a human browser.
+## C. Test equipment (once)
 
-| # | Tool | Why | Where | Est. |
+| # | Item | Price | For |
+|---|---|---|---|
+| C1 | 4-channel thermocouple logger with type K probes (two, or one 8 to 12 channel logger) | est $60 to $180 | Heat soak T1 needs 10 channels |
+| C2 | Fine-wire type K thermocouples, 10 | est $25 | T1 |
+| C3 | Polyimide tape, thermal paste | est $12 | T1 |
+| C4 | Bench supply 0 to 30 V with current display | est $50 | Strip current, 24 V fault test |
+| C5 | Luggage scale, steel straightedge 300 mm, feeler gauges | est $30 | T2, flatness |
+| C6 | 24 V 1 A adapter with a 5.5 x 2.1 plug | est $10 | T1 run C |
+
+## Totals (three prototypes)
+
+| Path | Custom parts | Stock parts | Test gear | Total |
 |---|---|---|---|---|
-| 1 | Infrared thermometer with adjustable emissivity (set 0.95 for vinyl), -58 to 1,000 F class. Harbor Freight 62660 or Klein IR1 | The 2-hour heat soak in QC-test-plan.md | Harbor Freight https://www.harborfreight.com (search "infrared thermometer") or Home Depot (Klein IR1) | $25 to $35 |
-| 2 | 60 W temperature-controlled soldering iron + solder (63/37 rosin core) + brass tip cleaner | COB strip to jack | Amazon / Harbor Freight | $30 to $40 |
-| 3 | Wire stripper, 22 to 10 AWG, and flush cutters | | Home Depot (Klein) | $20 |
-| 4 | Heat gun (or a $10 mini) for heat shrink | | Harbor Freight | $15 to $25 |
-| 5 | Hot glue gun + sticks | Strain relief on the solder joint | Home Depot | $12 |
-| 6 | Router with a circle-cutting jig (or jigsaw + sanding) for the 10.5" and 6" discs; a 1/4" straight bit | Backplates without a CNC shop | Harbor Freight trim router $40 to $60 + jig $20 | $60 to $80 |
-| 7 | Drill bits: 25/64" (E-Z Lok 400-4 spec), 8 mm (jack), 1" hole saw (wall), 5/16" and 7/32" | | Home Depot | $30 |
-| 8 | E-Z Lok 500-4 hex drive tool for the 400-4 insert, or a 1/4-20 bolt with two jam nuts (free) | Driving inserts straight | Albany County Fasteners | $0 to $10 |
-| 9 | Digital calipers | Checking the 7.26 mm spindle hole, cap fit, rabbet depth | Harbor Freight | $15 to $25 |
-| 10 | Multimeter | Polarity check before plugging anything in (assembly-SOP.md step 8) | Harbor Freight | $15 to $25 |
-| 11 | Stud finder + 24" level | Wall mount and pull test | Home Depot | $30 |
-| 12 | Kitchen/postal scale to 10 lb | Shipping weight for the cost model | Amazon | $15 |
-| 13 | Spring clamps x4, 120/220 sandpaper, painter's pyramids | Gluing hubs flat, painting | Home Depot | $20 |
-| | **Tools subtotal** | | | **$300 to $360** |
+| With three real chrome caps (A1 at about $140 to $156 each) | about $760 to $810 | about $370 | about $190 to $310 | **about $1,320 to $1,490** |
+| With stand-in caps first (A1b), real caps ordered after a proper quote | about $350 | about $370 | about $190 to $310 | **about $910 to $1,030** |
 
-## C. Total this week
+About half the entries carry an estimate. The quoted ones are A1, A1b, A2, A3, B1 to B6, B9, B10, B13, B16.
 
-Parts about $400 plus tools $300 to $360 = about $700 to $760 if he owns nothing on list B. If he has a drill, a jigsaw, a level and a soldering iron already, closer to $500.
+## Order of work
 
-## D. What the prototypes answer
-1. Does the 1" wall gap + rim-mounted outward-facing COB give the halo in refs/austin-reference-1.jpg on a cream wall and on a dark wall. Photos become the first ad creatives.
-2. Does the 38 mm chrome dome read as jewellery on a 4" label or bury it (design-report.md asked for 1.25" vs 1.5" on the label; the dome is 1.5").
-3. Heat: record face under 35 C after 2 hours (QC-test-plan.md).
-4. Does the bonded dome survive 50 on/off cycles of the thumbscrew without the bolt spinning in the epoxy.
-5. Is the in-wall path (1" hole, LV1 bracket, Datacomm plate, barrel pair) a 45-minute homeowner job as mounting-report.md claims.
-6. Real box weight for the shipping lines in cost-model.md (model assumes 3 to 4 lb).
+1. Today: upload the rev B plate and the ring to SendCutSend; order B1 to B6, B9, B10, B13; send the hub to the printer; take the backplate file to a CNC shop.
+2. Today: decide the cap route. Stand-in caps let every test in the QC plan start in about 8 days. Waiting for chrome caps means about 3 weeks before the first test.
+3. When parts land: build one unit by `assembly-SOP.md`, run test T1 run A the same day.

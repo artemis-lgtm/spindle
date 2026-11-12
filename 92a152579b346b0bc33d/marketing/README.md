@@ -1,35 +1,43 @@
-# marketing/ : the Spindle launch campaign
+# marketing/ : the Spindle launch campaign (v2)
 
-Built overnight 2026-11-09 to 11-10 by the marketing agent. Nothing in this folder has been posted, sent, bought or registered. Brand and product name throughout: Spindle (brand/naming-report.md; "Side A" dropped for a live trademark conflict). Handles @spindlelighting and spindlelighting.com were free on 11/9 and are not yet registered.
+First built overnight 2026-11-09 by the marketing agent. Audited and rewritten 2026-11-11 by a pessimist auditor; the changes are listed in CHANGELOG.md and the reasons, evidence and comparables are in ../audits/AUDIT-marketing.md. Nothing in this folder has been posted, sent, bought or registered.
+
+Read in this order: strategy.md, then tiktok-laws-and-video-concepts.md.
+
+## The one idea that organises everything
+
+Nothing has been built or heat-tested, so the plan runs on four gates, not dates (strategy.md section 3):
+
+- Gate 0, paper: the ledger of the 20 buyers, names registered, waitlist only. Build-diary videos are allowed.
+- Gate 1, one real unit that passed the heat test: real footage replaces renders; daily organic starts.
+- Gate 2, a ship week with a reasonable basis: reservations open and three creators get units. Paid ads stay off until the hero SKU clears $45 or more before ads.
+- Gate 3, the first 20 delivered: reviews, customer photos, "first batch of 20 sold out", press.
 
 ## What is here
 
 | File | What it is | State |
 |---|---|---|
-| strategy.md | Positioning, four audiences with Meta interest hints, offer ladder with contribution per rung, channels, 30-day calendar (11/10 to 12/9), $15/day test and scale rules, KPIs and kill lines tied to scope-report.md, the six decisions Austin owes | Complete |
-| ad-concepts.md | 14 ad concepts (hook, shot list, on-screen text, primary text, headline, CTA, which render or UGC shot), launch order, plus the proven-reference table: 17 live Meta Ad Library ads with IDs and start dates, 17 viral TikToks with view counts, Kickstarter launch numbers, 2026 benchmark cross-check | Complete; Ad Library IDs open in a logged-in browser |
-| ad-copy-bank.md | 50 headlines, 30 primary texts, 10 descriptions, CTA rules, cut lines with reasons | Complete, compliant |
-| ugc-creators.md | 48 verified creators (36 TikTok, 12 YouTube) with handles, URLs, follower counts, fit, gift vs paid, rate estimates; wave 1 and 2 shortlists; program rules (FTC disclosure, no scripts, plain-label records); outreach drafts | Complete; Instagram counts need a logged-in check |
-| organic-plan.md | TikTok/IG/Shorts/Pinterest cadence, 10 formats, 20 post ideas, the "Change the Record" 30-day series, hashtags, comment rules, measurement | Complete |
-| email-sms-flows.md | 8 flows, paste-ready: waitlist welcome, deposit confirmation, batch-two countdown (real dates only), shipping, review request, abandoned deposit, FTC delay notice, the first-20 email; SMS variants with STOP language | Complete; placeholders in brackets must be filled |
-| pr-and-communities.md | Reddit rules read verbatim from live sidebars for 9 subs with a per-sub move; gift-guide and design-blog targets with verification status; Kickstarter no (with the numbers); design communities; pitch draft | Complete; 10 subreddits still need their rules read in a browser (Reddit rate-limited the scrape) |
+| strategy.md | Positioning and honest competitor table, claims register, the gates, unit economics per SKU at the 2026-11-11 costs, offer ladder, channels, paid test design, KPIs and kill lines, what Austin owes | v2 |
+| tiktok-laws-and-video-concepts.md | The Ghost Audio TikTok research re-computed and sorted into what transfers and what does not, laws from comparables, and 14 shot-by-shot video concepts | new |
+| organic-plan.md | Cadence by gate, posting order, comment rules, realistic targets | v2 |
+| ad-concepts.md | The 14 v1 paid concepts with a status table and corrections; reference tables with a note on what was re-verified | audited |
+| ad-copy-bank.md | 30 headlines, 15 primary texts, 8 descriptions, each tagged by gate; cut list with reasons | v2 |
+| ugc-creators.md | Seeding program (3 units at Gate 2), real costs, view-based pricing, disclosure rules, drafts; the v1 list of 48 creators | v2 program, v1 list |
+| email-sms-flows.md | Eight email flows gated and corrected; delay notice in the two legally required versions; SMS parked with reasons | v2 |
+| pr-and-communities.md | Reddit rules (v1 research), sequencing by gate, press for after Gate 3, Kickstarter with an audit note | audited |
+| CHANGELOG.md | What changed on 2026-11-11 | new |
 
-## Ground truth used
+## Open items for Austin
 
-scope-report.md (ad math, FTC and Meta rules, pricing), engineering-report.md (BOM, contribution), design-report.md (price ladder, photography brief, competitor table), mounting-report.md (install story), NOTES.md (the 20 sold, the "sold out" decision), BRIEF.md (house rules), brand/brand-guide.html (voice, taglines), the Ghost Audio paid-promo precedent (Meta-only, pixel first, audition ad set, prune on CTR).
+1. The ledger of the 20: who, when, how much, what they were told about delivery.
+2. Order the sample-run parts; every gate after 0 waits on a real unit.
+3. A real quote for 100 chrome caps, then new prices. At the product audit's costs ($78.04 parts at 100) the $89 Kit loses $19.90 an order and the $129 Sconce clears $12.77.
+4. Deposit, full pre-order, or both.
+5. Register spindlelighting.com and @spindlelighting under a Spindle identity; a Spindle-only ad account with a $450 limit; a Spindle-only email tool.
+6. A postal address for email footers.
+7. One hour with an IP lawyer: "assembled in Fort Lauderdale" wording, the named-title tier, real labels in creator videos used as ads.
+8. A second look at Kickstarter (pr-and-communities.md section 3).
 
-## Compliance rules applied everywhere
+## Not verified (carried from v1 or outside this audit)
 
-No band, artist or album names; no logos; "sold out" only as "First batch of 20 sold out"; no ship dates, countdowns or stock counts not wired to real numbers; "UL-listed" only about the adapter; no discounting in month one; plain prose, no em-dashes; emails are plain paragraphs with no bold or bullets.
-
-## Open items (for Austin or the morning pass)
-
-1. Confirm Spindle as the name; register @spindlelighting (TikTok, IG) and spindlelighting.com.
-2. The list of the 20 buyers and what they paid (first email, first reviews).
-3. Batch-two ship week with a two-week buffer; until then flow 3 and every date placeholder stay off.
-4. Monthly ad cap and the card on the Meta ad account.
-5. Approve the wave-1 creator list (10 Kits) and the Reddit maker post.
-6. Black Friday Set offer (free in-wall kit, first 20 Set deposits): yes or no.
-7. Shoot the three UGC shots and the 15-second switch-on clip from a real unit; the renders carry the first ads but the creators and Reddit need real photos.
-8. Read the rules for r/somethingimade, r/DIY, r/lighting, r/BuyItForLife in a browser before posting there (r/homebar has no posted rules).
-9. Logged-in Instagram pass for creator and feature-account follower counts.
+The 17 Meta Ad Library references and 13 of the 17 TikTok references in ad-concepts.md; all 48 creator follower counts (read 11/9, not re-read); Instagram counts; the gift-guide outlet list; rules for ten subreddits; Florida's quiet-hours rules for texts; Stripe's terms for long-dated pre-orders.

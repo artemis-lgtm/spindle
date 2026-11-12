@@ -3,7 +3,7 @@
 numbers quoted in BOM.md / cost-model.md. Run: python3 cost-model.py
 Every line carries a source tag. "est" = estimate, not a quoted price.
 Tiers are per-unit cost when buying for 1 / 20 / 100 / 500 units.
-Prices as fetched 2026-11-09 to 2026-11-10 (see BOM.md for URLs and fetch status).
+Prices as fetched 2026-11-09 to 2026-11-10, then the 12 in unit re-opened line by line on 2026-11-11 (audits/AUDIT-product.md).
 2026-11-11: the 12 in unit gained the two heat-safe rings and their screws (three lines above the box line).
 The box line must stay LAST in PARTS_12 and PARTS_7: the Set total subtracts parts[-1]."""
 import csv, os
@@ -15,29 +15,34 @@ TIERS = ["q1", "q20", "q100", "q500"]
 # status: V = price confirmed on page by curl this session; P = confirmed 11/9 by an
 # earlier report, page rate-limited/blocked tonight; S = search snippet; E = estimate
 PARTS_12 = [
-    ("Backplate 10.5in x 1/2in MDF, CNC-cut, painted matte black", (6.00, 5.00, 4.50, 3.50), "E (HD ProWood panel $14.58 = $1.82/disc + CNC + paint)"),
-    ("Hub, 5in x 1in PETG print (J-slots, jack pocket, cable channel)", (6.00, 4.50, 3.00, 2.00), "E (PETG $0.02-0.03/g, ~250 g + machine time)"),
-    ("Threaded insert E-Z Lok 400-4 brass 1/4-20 x 0.5in", (1.90, 1.76, 1.70, 1.60), "V Albany County Fasteners $1.90 ea, $17.63/10, $170/100; 500 est"),
-    ("Chrome dome cap assembly (38 mm 304 SS hemisphere + 1/4-20 x 1in bolt + fender washer + epoxy + felt)", (5.15, 4.65, 3.40, 2.65), "dome-cap agent: shell $3.47 (Walmart uxcell 4-pk $13.89, V) to ~$1.05 bulk (S); +$0.65 hardware (E)"),
-    ("Felt washer 1in OD x 3/8in ID x 1/8in self-adhesive (Durofelt SAW1GY-50)", (0.16, 0.16, 0.16, 0.14), "V Durofelt $8.00/50"),
-    ("Felt pads x6, 1/2in OD x 1/16in self-adhesive (Durofelt SAW12BK-100)", (0.42, 0.42, 0.42, 0.36), "V Durofelt $7.00/100"),
-    ("45 rpm snap-in adapter (ships in every box)", (0.50, 0.50, 0.15, 0.13), "P eBay $36.99/250, $79.99/500, $131.89/1000; qty1 local shop est"),
-    ("COB LED strip 12V 2700K CRI90+ UL, ~3 ft (0.92 m)", (5.00, 4.00, 2.50, 2.00), "E (HitLights/BTF 16.4 ft reel ~$25, Amazon blocks bots). Verified alt: Ecolocity 2835 ETL $17.99/m, $44.99/3 m (V)"),
-    ("Power adapter UL Class 2 12V 2A 24W, 5.5x2.1 barrel, 6 ft", (11.99, 11.00, 8.50, 7.00), "P LED Updates $11.99 (verified 11/9; 429 tonight); bulk est"),
-    ("Inline PWM dimmer 12-24V 2A, barrel in/out (Ecolocity LC-OL-8DIM)", (3.99, 3.99, 2.50, 2.00), "V Ecolocity $3.99 sale (list $12.99); bulk est"),
-    ("DC panel-mount jack 5.5x2.1 (Adafruit 610)", (2.95, 2.66, 2.36, 1.50), "V Adafruit $2.95, $2.66 @10+, $2.36 @100+; 500 est (CUI via Digi-Key)"),
-    ("Steel mounting plate 4in 14 ga, 4 arc slots, laser-cut + finish", (10.00, 6.00, 3.50, 2.25), "E inwall-parts: SendCutSend laser $6-10/$3-4/$1.50-2.50/$1-1.50 + powder coat $2-3; upload DXF for real quote"),
-    ("Bayonet studs x3, 8-32 shoulder screws", (1.80, 1.50, 0.90, 0.60), "E pending (McMaster class)"),
-    ("M3 set screw + L key", (0.40, 0.30, 0.20, 0.15), "E pending"),
-    ("Wall screws #8 x 1-1/4in x2 + drywall anchors x2", (0.60, 0.40, 0.30, 0.20), "E hardware store"),
-    ("Silicone bumpers x2 clear self-adhesive", (0.13, 0.13, 0.13, 0.10), "P eBay 100/$6.51"),
-    ("Lead wire 18 AWG 12in, heat shrink, hot glue", (0.30, 0.25, 0.15, 0.10), "E"),
+    # AUDIT 2026-11-11 (audits/AUDIT-product.md): every line below now describes the part the canonical CAD builds, and every
+    # price was re-opened on the vendor page that day where the page would load. V = seen on the page 2026-11-11.
+    ("Backplate RS-BP-12-MDF rev C, 10.5in x 1/2in MDF, CNC-cut both faces, painted matte black", (6.00, 5.00, 4.50, 3.50), "E (HD ProWood panel $14.58 = $1.82/disc + CNC + paint; Home Depot page not checked, blocks bots; no CNC shop quote)"),
+    ("Hub RS-HUB-01 rev C, 5in x 1in PETG print", (6.00, 4.50, 3.00, 2.00), "E (PETG $0.02-0.03/g, about 175 g printed at 40% infill + machine time; no print-service quote)"),
+    ("Threaded insert E-Z Lok 400-4 brass 1/4-20 x 0.5in", (1.90, 1.90, 1.70, 1.70), "V Albany County Fasteners $1.90 ea, $1.70 at 100, $1.50 at 1,000, in stock (the old $17.63 per 10 was the drive tool)"),
+    ("Dome cap RS-CAP-12 rev D, turned C360 brass, one piece with its stud, mirror polish + chrome", (155.93, 131.70, 15.00, 10.00), "q1 and q20: V PCBWay guest pre-quote 2026-11-11, brass C360 + chrome ($155.93 at 1, $131.70 at 10, $121.36 at 50; 100 = manual quote). q100 and q500: E, NOT a quote, a placeholder. This is the biggest unknown in the model"),
+    ("Felt washer under the cap, 1-1/4in x 3/8in x 1/16in adhesive felt, die-cut or punched in-house", (0.50, 0.40, 0.25, 0.15), "E no vendor picked (CS Hyde and Strouse take small runs, tooling paid by us, no published price)"),
+    ("Centre backing ring, same felt blank, on the backplate front", (0.50, 0.40, 0.25, 0.15), "E same order as the cap felt"),
+    ("PET label washer 37.5 x 7.5 x 0.25 mm, clear, matte one side", (0.40, 0.30, 0.15, 0.10), "E no vendor picked"),
+    ("Felt pads x6, 1/2in OD x 1/16in self-adhesive (Durofelt SAW12BK-100)", (0.42, 0.42, 0.42, 0.36), "V Durofelt $7.00/100, in stock; no second source found"),
+    ("45 rpm snap-in adapter (ships in every box)", (0.50, 0.50, 0.15, 0.13), "P eBay $36.99/250 (eBay not checked 2026-11-11, blocks bots); qty1 local shop est"),
+    ("LED strip 12V warm white 8 mm, 4 W class, listed, 700 mm as seven 100 mm pieces", (12.59, 11.25, 11.25, 9.00), "V Ecolocity Ribbon Star 2835 60/m 1.46 W/ft ETL: $17.99 per 1 m, $44.99 per 3 m (4 units), in stock; the page says 2900-3200K, not 2700K. q500 E. Unverified cheaper option: Armacost 131232 UL 2700K $29.99 per 5 m ($4.28 a unit), wattage not on its page"),
+    ("Strip jumpers x6 (22 AWG pair, 15 mm) + heat shrink", (0.30, 0.25, 0.15, 0.10), "E; needed because a flat strip cannot bend sideways into a ring"),
+    ("Power adapter UL Class 2 12V 2A 24W, 5.5x2.1 barrel, 6 ft", (12.99, 12.99, 12.99, 9.00), "V LED Updates $12.99 (was $11.99); no bulk price published; q500 E. Second source GXILEE B09J4KCY4T $13.88 with a dimmer in the cord"),
+    ("Inline PWM dimmer 12-24V 2A, barrel in/out (Ecolocity LC-OL-8DIM)", (3.99, 3.99, 3.99, 3.00), "V Ecolocity $3.99 SALE price (list $12.99) with 7 in stock: 100 cannot be bought there today. Second source Super Bright LEDs LDP-2A $7.99, out of stock. q500 E"),
+    ("Power pigtail, 150 mm 18 AWG with inline FEMALE 5.5x2.1 jack", (4.00, 4.00, 2.00, 1.00), "q1 V cctvcameraworld $4.00 (5 in lead, wire gauge not stated); bulk E, not looked up"),
+    ("Steel wall plate RS-WP-01 rev B, G90 galvanized 0.074in, laser cut + one bend + 3 PEM FH-832-10 studs pressed, no finish", (33.24, 9.22, 6.40, 6.40), "V SendCutSend guest quote of the REV B file cad/parts/RS-WP-01_flat.dxf, 2026-11-11 21:10: accepted with bend and 3 studs, no hole collision. $33.24 at 1, $9.22 at 10, $6.73 at 50, $6.40 at 100, $5.11 at 1,000; q20 uses the 10 price, q500 the 100 price. Black powder coat on mild steel instead: $48.12 / $13.33 / $8.69"),
+    ("8-32 nylon-insert lock nuts x3", (0.30, 0.25, 0.22, 0.15), "E not looked up"),
+    ("M3 x 12 set screw + M3 heat-set insert + 1.5 mm x 100 mm straight hex driver", (3.50, 2.50, 1.80, 1.20), "insert V Adafruit 4255 $5.95/50; screw and driver E. A 45 mm L key cannot reach the screw, it is 70 mm in under the backplate"),
+    ("Wall screws #8 x 1-1/4in x2 + 2 named flangeless anchors (Toggler Alligator class)", (0.80, 0.60, 0.45, 0.35), "E no price captured"),
+    ("Silicone bumpers x2 clear self-adhesive", (0.13, 0.13, 0.13, 0.10), "V eBay 100/$6.51, 1 to 2 weeks"),
+    ("Lead wire 18 AWG 12in, heat shrink", (0.30, 0.25, 0.15, 0.10), "E"),
     ("Hang + safety card, printed", (0.50, 0.40, 0.20, 0.10), "E"),
     # Heat-safe halo, added 2026-11-11 (cad/FIXES-heat-layout.md). Evidence: sourcing/quotes-2026-11-11/README.md
-    ("Aluminium heat ring RS-HR-12, 5052-H32 0.040in, OD 260 ID 200, 4 holes, laser cut", (27.10, 13.83, 7.38, 7.38), "V SendCutSend guest quote of the canonical cad/parts/RS-HR-12.dxf, 2026-11-11: $27.10 @1, $20.34 @2, $13.83 @10, $10.85 @50, $7.38 @100, $4.69 @1000; q20 uses the 10 price, q500 uses the 100 price"),
-    ("Cork ring RS-CK-12, 1/16in cork, OD 260 ID 200, 4 punched holes, cut in-house", (1.89, 1.89, 1.89, 1.89), "V material: WidgetCo 1/16in x 12in x 30ft roll $66 = 35 rings; E cutting (tool not picked, no labour in this price)"),
-    ("Heat-ring screws x4, #4 x 3/8in pan head sheet-metal", (0.20, 0.16, 0.12, 0.08), "E hardware store / box of 100, not looked up"),
-    ("Box 13x13x3 double-wall + foam corners + inner poly sleeve + cap pouch", (5.00, 4.50, 3.50, 2.75), "E Uline/Amazon; scope report $3-4 box at 25"),
+    ("Aluminium heat ring RS-HR-12, 5052-H32 0.040in, OD 260 ID 200, 4 holes, laser cut", (27.10, 13.83, 7.38, 7.38), "V SendCutSend guest quote of the canonical cad/parts/RS-HR-12.dxf, re-confirmed 2026-11-11 evening: $27.10 @1, $13.83 @10, $7.38 @100; q20 uses the 10 price, q500 the 100 price"),
+    ("Cork ring RS-CK-12, 1/16in cork, OD 260 ID 200, 4 punched holes, cut in-house", (1.89, 1.89, 1.89, 1.49), "V material: WidgetCo 1/16in x 12in x 30ft roll $66 ($52 at 5 rolls) = 35 rings; the page shows no adhesive back and calls it both 1/16 inch and 2 mm; cutting labour is in LABOR. Second source The Cork Store CR117 1.5 mm, peel-and-stick option, about $1.00 a ring"),
+    ("Heat-ring screws x4, #4 x 3/8in pan head sheet-metal", (0.20, 0.16, 0.12, 0.08), "V Tanner Bolt $2.90 per 100 (thread type not stated on the page)"),
+    ("Box 13x13x3 + foam corners + inner poly sleeve + cap pouch", (5.00, 4.50, 3.50, 2.75), "box V Uline S-19090 $1.62 at 25, $1.48 at 100 (200 lb single wall, NOT double wall); foam, sleeve and pouch E"),
 ]
 PARTS_7 = [
     ("Backplate 6in x 1/2in MDF, CNC-cut, painted", (3.00, 2.50, 2.00, 1.50), "E same panel, 20+ discs"),
@@ -48,10 +53,10 @@ PARTS_7 = [
     ("Felt pads x3", (0.21, 0.21, 0.21, 0.18), "V Durofelt"),
     ("45 rpm adapter", (0.50, 0.50, 0.15, 0.13), "P eBay"),
     ("COB LED strip ~1.6 ft (19in rim)", (2.75, 2.20, 1.40, 1.10), "E"),
-    ("Power adapter UL 12V 2A", (11.99, 11.00, 8.50, 7.00), "P LED Updates"),
-    ("Inline PWM dimmer", (3.99, 3.99, 2.50, 2.00), "V Ecolocity"),
-    ("DC panel jack (Adafruit 610)", (2.95, 2.66, 2.36, 1.50), "V Adafruit"),
-    ("Keyhole plate heavy gauge (Hardwick & Sons) + #8 screw + anchor", (0.75, 0.75, 0.60, 0.50), "P Hardwick $0.45, $40.50/100 (verified 11/9; 429 tonight)"),
+    ("Power adapter UL 12V 2A", (12.99, 12.99, 12.99, 9.00), "V LED Updates $12.99; q500 E"),
+    ("Inline PWM dimmer", (3.99, 3.99, 3.99, 3.00), "V Ecolocity sale price, 7 in stock"),
+    ("Power pigtail with inline female jack", (4.00, 4.00, 2.00, 1.00), "q1 V cctvcameraworld; bulk E"),
+    ("Keyhole plate heavy gauge (Hardwick & Sons) + #8 screw + anchor", (0.75, 0.75, 0.60, 0.50), "P Hardwick $0.45; SOLD OUT on 2026-11-11, no second source"),
     ("Silicone bumpers x2", (0.13, 0.13, 0.13, 0.10), "P eBay"),
     ("Lead wire, heat shrink", (0.30, 0.25, 0.15, 0.10), "E"),
     ("Hang card", (0.50, 0.40, 0.20, 0.10), "E"),
@@ -67,8 +72,9 @@ INWALL_KIT = [
 RECORD_ANON = 2.00    # scope report: $0.50-3 craft grade; use $2
 RECORD_NAMED = 30.00  # scope report: $20-40 marquee title in player grade
 
-# Labor: 25 min/unit until jigged, 20 min at 100+, at $25/hr (scope report assumption)
-LABOR = {"q1": 25/60*25, "q20": 25/60*25, "q100": 20/60*25, "q500": 18/60*25}
+# Labor at $25/hr. AUDIT 2026-11-11: the heat-safe halo added a ring sub-assembly (cut and punch the cork, lay seven strip
+# pieces, solder six jumpers, four screws): 25 min became 40 min, 20 min became 32 min. Timed on nothing; nothing is built.
+LABOR = {"q1": 40/60*25, "q20": 40/60*25, "q100": 32/60*25, "q500": 28/60*25}
 LABOR_7 = {k: v*0.7 for k, v in LABOR.items()}
 LABOR_SET_EXTRA = 5/60*25  # packing three units in one box
 
@@ -153,5 +159,10 @@ if __name__ == "__main__":
     t = "q100"; p12 = total(PARTS_12, t)
     parts_cash = 100*p12
     records_cash = 60*RECORD_ANON + 10*RECORD_NAMED
+    cap = [p for p in PARTS_12 if p[0].startswith("Dome cap")][0][1][2]
+    kit = [r for r in rows if r["tier"] == "q100" and r["sku"] == "Kit 12in"][0]["contribution_before_ads"]
+    print(f"\nCap sensitivity at 100 (the cap is carried at ${cap:.2f}, an estimate): Kit contribution before ads")
+    for c in (8, 15, 25, 40, 121.36):
+        print(f"  cap ${c:>6.2f}: 12in parts ${p12 - cap + c:>7.2f}, $89 Kit clears ${kit + cap - c:>7.2f}, $99 Kit clears ${kit + cap - c + 10*(1-STRIPE_PCT):>7.2f}")
     print(f"\nCash, first 100 x 12in (70 sconce/30 kit): parts ${parts_cash:,.0f} + records ${records_cash:,.0f} = ${parts_cash+records_cash:,.0f}")
     print(f"  plus shipping at ship time 100 x ${SHIP_12:.2f} = ${100*SHIP_12:,.0f}; labor 100 x ${LABOR[t]:.2f} = ${100*LABOR[t]:,.0f}")

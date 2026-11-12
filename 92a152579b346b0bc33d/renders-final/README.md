@@ -57,3 +57,25 @@ Re-render one image: `Blender -b -P src/final.py -- <scene> <wide|square|tall> -
 - The 7 in cap is rendered as the design report's chromed 45 adapter; the 12 in dome is 1.5 in
   diameter, low segment of sphere. Both still need machine-shop quotes (mounting-report.md).
 - Nothing was sent anywhere.
+
+
+## Product audit, 2026-11-11 evening: what these images show that the product does not do
+
+Full table: `../audits/AUDIT-product.md`, section "Renders". Nothing was re-rendered. The real product: the stud is part of the cap (no post anywhere); one LED strip on the BACK of the backplate, 115 mm from the centre, facing the wall, about 4 W; record front 1.62 in off the wall on a 5 in hub; power by a cord from 6 o'clock or through the wall; only the chrome cap has a real part.
+
+Safe to use today as they are: `macro_*` only (the dome reads a little taller than the real 10 mm cap).
+
+Usable only with a visible line such as "Rendering. In-wall wiring shown. Real glow may differ." and only until a photo of a real unit exists: `hero_chrome_*`, `swap3_*`, `living_*`.
+
+Do not use: `swap1_*`, `swap2_*`, `swap_triptych.png` (record stays on the wall with the cap off; LED dots on the rim; captions describe a post), `flatlay_*` (loose post, no dimmer, no PET washer, wrong wall plate, rim strip), `install_*` (says 4 screws, shows parts that are not in the box, no dimmer), `single7_*`, `set_*`, `studio_*` (the 7 in halo is not designed), `hero_brass_*`, `hero_black_*`, `bar_*` (finishes with no real part), `bedroom_*` (a 4 W strip lighting a whole room).
+
+Re-render list, in order:
+1. `swap1`: a hand holds the record flat while the cap, with its stud showing, comes out. Clear washer on the label.
+2. `swap2`: the bare backplate face on: brass threaded hole, six felt pads, felt ring, nothing sticking out. No LED dots on the rim.
+3. `swap_triptych`: rebuild from 1 and 2. Captions: "Unscrew the cap", "Take the record away", "Hold the next one up, screw the cap in".
+4. `flatlay`: remove the post. Add the inline dimmer, the clear washer, the real 45 adapter, the straight hex driver. Stud on the cap. Hub fixed to the backplate. Real wall plate (30 x 37 slot, four arc slots, bent tab, three studs). Card text: set screw at about 6:40. Same contents in all three crops.
+5. `install`: "2 screws + 2 anchors". Draw the surface cord with dimmer and adapter. Mark in-wall parts "not included". Leaders off the record face.
+6. Every lit scene, starting with `hero_chrome` and `bedroom`: move the light to one ring 115 mm from the centre on the back face, delete the rim strip, expose for about 4 W. Add the cord or say it is in the wall.
+7. New: one true side view showing the 1 in gap, the 5 in hub and the record 1.62 in off the wall. One room shot with a surface cord.
+8. `single7`, `set`, `studio`: hold until the 7 in halo is designed.
+9. Label names "Ember", "Meridian": check against real record labels before any paid use (Ember Records was a real UK label).

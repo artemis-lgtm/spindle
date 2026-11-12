@@ -45,7 +45,7 @@ def plate_flat_pattern(path):
     flat = flat.cut(cq.Workplane("XY").center(0, yc).slot2D(S.PLATE_HOLE_Y1 - S.PLATE_HOLE_Y0, S.PLATE_HOLE_D, 90)
                     .extrude(t + 2).translate((0, 0, -1)))
     for a in S.SLOT_ANGLES_GANG:
-        flat = flat.cut(S.arc_slot(S.SLOT_R_GANG, a - S.SLOT_HALF_DEG, a + S.SLOT_HALF_DEG, S.SLOT_W, -1, t + 1))
+        flat = flat.cut(S.arc_slot(S.SLOT_R_GANG, a - S.SLOT_HALF_DEG_GANG, a + S.SLOT_HALF_DEG_GANG, S.SLOT_W, -1, t + 1))
     for a in S.SLOT_ANGLES_ROUND:
         flat = flat.cut(S.arc_slot(S.SLOT_R_ROUND, a - S.SLOT_HALF_DEG, a + S.SLOT_HALF_DEG, S.SLOT_W, -1, t + 1))
     for a in S.STUD_ANGLES:
