@@ -6,8 +6,11 @@
      - framing per host and a scroll pull-back on the hero (track gets .pull, progress in --p)
      - a label you can change: house label drawn here (no real artwork), or the visitor's own photo, local only
      - phone manners: vertical swipes scroll the page, the loop stops off screen, pixel ratio steps down if slow
+     - laptop manners (2026-11-20, after Austin's Intel MacBook crawled): pixel ratio capped at 1.5 (1.0 and no
+       MSAA on an Intel or software GPU), and it draws ON DEMAND: while it is being dragged or hovered, while the
+       spring settles, during the hello tilt, on scroll and when the label changes. Otherwise nothing renders.
    Loaded after window load by the inline module in index.html. If anything here fails the still image stays. */
-import * as THREE from 'three';
+import * as THREE from './vendor/three.module.min.js';   // relative, so no import map is needed (Safari before 16.4 has none)
 import { RGBELoader } from './vendor/addons/loaders/RGBELoader.js';
 import { EffectComposer } from './vendor/addons/postprocessing/EffectComposer.js';
 import { RenderPass } from './vendor/addons/postprocessing/RenderPass.js';
@@ -33,7 +36,17 @@ let renderer;
 try {
   renderer = new THREE.WebGLRenderer({ canvas, antialias: true, powerPreference: 'high-performance' });
 } catch (e) { root.classList.add('no3d'); throw e; }
-let PR = Math.min(Math.max(devicePixelRatio, 1) * 1.5, 3); // supersampled so circle edges stay clean
+// How much GPU is there? Chrome and Firefox name it; Safari says only "Apple GPU", so a slow machine there is
+// caught by the frame timer in frame() instead, which steps the quality down.
+let GPU = '';
+try {
+  const gl = renderer.getContext(), ext = gl.getExtension('WEBGL_debug_renderer_info');
+  GPU = String((ext && gl.getParameter(ext.UNMASKED_RENDERER_WEBGL)) || gl.getParameter(gl.RENDERER) || '');
+} catch (_) {}
+const LOW = !MAXQ && /Intel|SwiftShader|llvmpipe|Software|Mali-4|Adreno \(TM\) [2-5]/i.test(GPU);
+const MIN_PR = 0.75;
+let PR = MAXQ ? Math.min(Math.max(devicePixelRatio, 1) * 1.5, 3) : LOW ? 1 : Math.min(Math.max(devicePixelRatio, 1), 1.5);
+let SAMPLES = LOW ? 0 : 4;
 renderer.setPixelRatio(PR);
 renderer.toneMapping = THREE.ACESFilmicToneMapping;
 renderer.toneMappingExposure = 1.0;
@@ -326,7 +339,7 @@ function photoLabel(img, zoom = 1) {       // the visitor's own photo. Drawn her
 // ---------- chrome dome cap on a rolled bezel ----------
 // A true mirror: every frame a probe at the cap photographs the room, the label and the vinyl
 // around it, and the chrome shows exactly that. No stand-in highlights.
-const probeRT = new THREE.WebGLCubeRenderTarget(mobile ? 384 : 512, { type: THREE.HalfFloatType, generateMipmaps: true, minFilter: THREE.LinearMipmapLinearFilter });
+const probeRT = new THREE.WebGLCubeRenderTarget(LOW ? 256 : mobile ? 384 : 512, { type: THREE.HalfFloatType, generateMipmaps: true, minFilter: THREE.LinearMipmapLinearFilter });
 const probe = new THREE.CubeCamera(0.02, 100, probeRT);
 probe.layers.enable(ROOM_LAYER);
 scene.add(probe);
@@ -383,7 +396,7 @@ function shootProbe() {
 }
 
 // ---------- film: MSAA, then a breath of grain so the wall gradient never bands ----------
-const rt = new THREE.WebGLRenderTarget(1, 1, { type: THREE.HalfFloatType, samples: 4 });
+const rt = new THREE.WebGLRenderTarget(1, 1, { type: THREE.HalfFloatType, samples: SAMPLES });
 const composer = new EffectComposer(renderer, rt);
 composer.addPass(new RenderPass(scene, camera));
 composer.addPass(new OutputPass());
@@ -449,13 +462,22 @@ let dragging = false, start = null, touch = false, reach = 0, gyroAsked = false;
 const MAX = 0.62; // about 35 degrees
 
 function onDown(e) {
-  dragging = true; reach = 0;
+  dragging = true; reach = 0; hover.set(0, 0); wake(400);
   touch = e.pointerType === 'touch';
   start = { x: e.clientX, y: e.clientY };
   try { canvas.setPointerCapture(e.pointerId); } catch (_) {}
 }
+const hover = new THREE.Vector2();
 function onMove(e) {
-  if (!dragging) return;
+  wake(300);
+  if (!dragging) {
+    // a mouse resting on it leans it a little toward the cursor: the cheapest way to say "this is 3D"
+    if (e.pointerType === 'mouse' && W && H) {
+      const b = canvas.getBoundingClientRect();
+      hover.set(THREE.MathUtils.clamp(((e.clientX - b.left) / b.width - 0.5) * 0.5, -0.2, 0.2), THREE.MathUtils.clamp(((e.clientY - b.top) / b.height - 0.5) * 0.34, -0.14, 0.14));
+    }
+    return;
+  }
   const s = 2.4 / Math.min(W, H, 900);
   const dx = e.clientX - start.x, dy = e.clientY - start.y;
   reach = Math.max(reach, Math.abs(dx));
@@ -465,7 +487,7 @@ function onMove(e) {
 }
 function onUp(e) {
   if (!dragging) return;
-  dragging = false; target.set(0, 0);
+  dragging = false; target.set(0, 0); wake(400);
   // iOS shares the gyroscope only if asked. Ask after a deliberate tilt, never on first touch.
   if (e && e.type === 'pointerup' && reach > 40 && !gyroAsked && typeof DeviceOrientationEvent !== 'undefined' && DeviceOrientationEvent.requestPermission) {
     gyroAsked = true;
@@ -476,15 +498,31 @@ canvas.addEventListener('pointerdown', onDown);
 canvas.addEventListener('pointermove', onMove);
 canvas.addEventListener('pointerup', onUp);
 canvas.addEventListener('pointercancel', onUp);
+canvas.addEventListener('pointerleave', () => { hover.set(0, 0); wake(300); });
 addEventListener('deviceorientation', e => {
   if (e.gamma == null || calm) return;
   gyro.set(THREE.MathUtils.clamp(e.gamma / 45, -1, 1) * 0.18, THREE.MathUtils.clamp((e.beta - 50) / 45, -1, 1) * 0.12);
+  wake(200);
 });
 
-// ---------- loop ----------
+// ---------- loop: on demand ----------
+// visible = a host is on screen and the tab is showing. The rAF loop runs only while visible AND awake.
+// wake(ms) keeps it drawing for at least ms; frame() puts it back to sleep once the spring has settled.
 const clock = new THREE.Clock();
-let running = false, frames = 0, slow = 0, steps = 0;
+let visible = false, looping = false, wakeUntil = 0, drawn = 0, introAt = 0, introDone = false;
+let frames = 0, slow = 0, steps = 0, probeTick = 0;
+function wake(ms) {
+  wakeUntil = Math.max(wakeUntil, performance.now() + (ms || 250));
+  if (visible && !looping) { looping = true; clock.getDelta(); frames = 0; slow = 0; renderer.setAnimationLoop(frame); }
+}
+function sleep() { if (looping) { looping = false; renderer.setAnimationLoop(null); } }
+function stepDown() {                      // fewer pixels, and no MSAA, for a GPU that cannot keep up
+  if (SAMPLES) { SAMPLES = 0; [composer.renderTarget1, composer.renderTarget2].forEach(t => { t.samples = 0; t.dispose(); }); }
+  else PR = Math.max(MIN_PR, PR * 0.75);
+  steps++; layout(true);
+}
 function frame() {
+  const now = performance.now();
   const raw = clock.getDelta(), dt = Math.min(raw, 1 / 30), t = clock.elapsedTime;
   if (active === hosts.hero && track && track.classList.contains('pull')) {
     const r = track.getBoundingClientRect(), span = r.height - active.offsetHeight;
@@ -494,7 +532,14 @@ function frame() {
   }
   layout(false);
   goal.copy(target);
-  if (!dragging && !gridN) { goal.add(gyro); if (!calm) goal.x += Math.sin(t * 0.6) * 0.02; }
+  if (!dragging && !gridN) {
+    goal.add(gyro).add(hover);
+    // the hello tilt: once, as the model appears, it leans out and settles so nobody mistakes it for a picture
+    if (introAt && now >= introAt) {
+      const u = (now - introAt) / 1500;
+      if (u < 1) { goal.x += 0.34 * Math.sin(Math.PI * u); goal.y -= 0.12 * Math.sin(Math.PI * u); } else introAt = 0;
+    }
+  }
   const k = dragging ? 140 : 38, damp = dragging ? 22 : 5.5; // snappy while held, a little wobble on release
   vel.x += ((goal.x - tilt.x) * k - vel.x * damp) * dt;
   vel.y += ((goal.y - tilt.y) * k - vel.y * damp) * dt;
@@ -510,23 +555,27 @@ function frame() {
   film.uniforms.t.value = t;
   renderer.shadowMap.needsUpdate = true;   // shadows once per frame, for the page camera
   composer.render();
-  shootProbe();                            // the mirror reuses them; it shows on the next frame
+  drawn++;
+  if (!LOW || (probeTick++ & 1) === 0) shootProbe();   // the mirror reuses them; it shows on the next frame
 
-  // a phone that cannot hold the frame rate gets fewer pixels, not a slideshow
-  if (!MAXQ && steps < 3 && ++frames > 20) {
+  // a machine that cannot hold the frame rate gets fewer pixels, not a slideshow (30-frame windows, first 8 skipped)
+  if (!MAXQ && looping && steps < 5 && ++frames > 8) {
     slow += raw;
-    if (frames === 80) {
-      if (slow / 60 > 0.026 && PR > 1.25) { PR = Math.max(1.25, PR * 0.75); steps++; layout(true); }
-      else steps = 3;
+    if (frames === 38) {
+      if (slow / 30 > 0.024 && (SAMPLES || PR > MIN_PR)) stepDown(); else if (slow / 30 <= 0.024) steps = 5;
       frames = 0; slow = 0;
     }
   }
+  // nothing moving and nobody asking: stop drawing
+  const moving = dragging || introAt || Math.abs(vel.x) + Math.abs(vel.y) > 0.004 || Math.abs(goal.x - tilt.x) + Math.abs(goal.y - tilt.y) > 0.002;
+  if (looping && !moving && now > wakeUntil && !MAXQ && !gridN) sleep();
 }
 function run(on) {
-  if (on === running) return;
-  running = on; clock.getDelta();
-  renderer.setAnimationLoop(on ? frame : null);
+  if (on === visible) return;
+  visible = on;
+  if (on) wake(500); else sleep();
 }
+addEventListener('scroll', () => wake(250), { passive: true });
 
 // ---------- hosts: the one canvas goes wherever the visitor is looking ----------
 const seen = new Map();
@@ -542,7 +591,9 @@ function attach(host) {
   if (host.dataset.was) host.classList.add('snap');
   host.dataset.was = '1';
   requestAnimationFrame(() => host.classList.add('live'));
+  if (host === hosts.hero && !introDone && !calm && scrollY < 200) { introDone = true; introAt = performance.now() + 650; }
   run(!document.hidden);
+  wake(1200);
 }
 function freeze(host) {                    // leave a still of what they made behind, so the frame is never stale
   if (host !== hosts.pick || !labelState.custom) return;
@@ -562,7 +613,7 @@ function choose() {
   else if (v('pick') > 0) attach(hosts.pick);
   else attach(null);
 }
-document.addEventListener('visibilitychange', () => run(!!active && !document.hidden));
+document.addEventListener('visibilitychange', () => { hover.set(0, 0); run(!!active && !document.hidden); });
 
 // ---------- label state and the picker ----------
 const labelState = { ...DEFAULT_LABEL, artist: '', title: '', photo: null, zoom: 1, custom: false, house: false };
@@ -586,7 +637,7 @@ function currentLabel() {
 function repaint() {
   if (!faceTex) return;
   paintLabelInto(faceTex.image.getContext('2d'), faceTex.image.width, currentLabel(), faceTex.userData.seed);
-  faceTex.needsUpdate = true;
+  faceTex.needsUpdate = true; wake(400);
 }
 function setLabel(patch, now) {
   Object.assign(labelState, patch); labelState.custom = true;
@@ -627,7 +678,7 @@ const WALL = [
   ['#7a3550', 'Last call'], ['#d8a53a', 'Side two'], ['#4a5d3a', 'The one Dad played'],
 ];
 function grid(n) {
-  gridN = n; const gap = R * 2.72, off = (n - 1) / 2; let i = 0;
+  gridN = n; wake(60000); const gap = R * 2.72, off = (n - 1) / 2; let i = 0;
   key.angle = Math.PI / 3.2; key.intensity = 60; key.position.set(0, 13, 9); key.shadow.mapSize.set(4096, 4096);
   for (let row = 0; row < n; row++) for (let colm = 0; colm < n; colm++, i++) {
     const x = (colm - off) * gap, y = (off - row) * gap;
@@ -685,16 +736,17 @@ async function boot() {
   faceTex = vinylFace(currentLabel());
   faceMat.map = faceTex; faceMat.needsUpdate = true;
   await tick();
-  await hdrReady;
+  await Promise.race([hdrReady, new Promise(r => setTimeout(r, 6000))]);   // a stalled download must not hold the model back
+  hdrReady.then(() => wake(400));
 
   // the pull-back adds scroll length, so it is only switched on if nobody has started reading yet
   if (track && !calm && scrollY < 60) track.classList.add('pull');
   wirePicker();
   root.classList.add('has3d');
-  window.SpindleSconce = { setLabel, grid, state: labelState, renderer };
+  window.SpindleSconce = { setLabel, grid, state: labelState, renderer, wake, get frames() { return drawn; }, quality: () => ({ gpu: GPU, low: LOW, pixelRatio: +PR.toFixed(2), msaa: SAMPLES, steps, looping }) };
   const io = new IntersectionObserver(es => { es.forEach(e => seen.set(e.target, e.isIntersecting ? e.intersectionRatio : 0)); choose(); }, { threshold: [0, 0.15, 0.35, 0.6, 0.9] });
   Object.values(hosts).forEach(h => io.observe(h));
-  addEventListener('resize', () => layout(false));
+  addEventListener('resize', () => { layout(false); wake(300); });
   renderer.domElement.addEventListener('webglcontextlost', e => { e.preventDefault(); run(false); if (active) active.classList.remove('live', 'snap'); root.classList.add('no3d'); root.classList.remove('has3d'); });
 }
 boot().catch(err => { root.classList.add('no3d'); if (window.console) console.warn('[sconce3d] still image stays:', err); });

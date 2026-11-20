@@ -501,6 +501,23 @@ body.has-sticky { padding-bottom: 84px; }
   .pick-stage { top: 92px; height: auto; aspect-ratio: 1 / 1; }
 }
 
+/* Laptop pass 2026-11-20 (DESIGN-OK: same subagent session as the header note; a visible "it is 3D" hint and old-Safari fallbacks, no new palette) */
+.h3d-hint span { display: inline-flex; align-items: center; gap: 9px; background: rgba(14,12,9,.66); border: 1px solid rgba(255,255,255,.18); padding: 9px 15px 9px 13px; border-radius: 9999px; letter-spacing: .14em; }
+.h3d-hint span::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--halo); box-shadow: 0 0 10px var(--glow); animation: hintpulse 1.8s ease-in-out infinite; }
+@keyframes hintpulse { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+.has3d .h3d-hint { opacity: calc(1 - var(--p) * 3); }
+.sconce-touched .h3d-hint { opacity: 0; }
+@media (min-width: 900px) { .h3d-hint { top: 14px; bottom: auto; left: 70%; right: auto; transform: translateX(-50%); width: max-content; text-align: center; } }
+@media (prefers-reduced-motion: reduce) { .h3d-hint span::before { animation: none; } }
+/* Safari before 16.2 has no color-mix(): give those declarations a plain value */
+@supports not (color: color-mix(in srgb, red, blue)) {
+  .btn-ghost { border-color: rgba(128,120,110,.55); }
+  .step::before { border-color: rgba(128,120,110,.55); }
+  .offer .pill { background: rgba(240,164,59,.16); }
+  .later-note { background: #FBEBD0; border-color: #F0A43B; }
+  .field input:focus, .field select:focus { box-shadow: 0 0 0 3px rgba(240,164,59,.3); }
+}
+
 /* v2 fixes after the first screenshots (DESIGN-OK: same subagent session as the header note, references were Read there) */
 .cfg-later .sticky-bar { display: none; }
 .tile.paper { min-height: 0; }
