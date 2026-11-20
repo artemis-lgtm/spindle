@@ -503,6 +503,9 @@ body.has-sticky { padding-bottom: 84px; }
 
 /* v2 fixes after the first screenshots (DESIGN-OK: same subagent session as the header note, references were Read there) */
 .cfg-later .sticky-bar { display: none; }
+.tile.paper { min-height: 0; }
+.tile::after { background: linear-gradient(180deg, rgba(22,19,15,0) 18%, rgba(22,19,15,.55) 52%, rgba(22,19,15,.92) 100%); }
+@media (max-width: 899px) { .tile { min-height: 420px; } .tile.paper { min-height: 0; } .band picture img { object-position: 62% 50%; } }
 .h3d-copy .hero-ctas { flex-direction: row; }
 .h3d-copy .hero-ctas .btn { flex: 1 1 0; padding: 0 12px; }
 @media (min-width: 900px) { .h3d-copy .hero-ctas .btn { flex: none; padding: 0 26px; } }
