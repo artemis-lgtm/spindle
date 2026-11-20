@@ -14,25 +14,57 @@
     document.querySelectorAll('[data-batch-size]').forEach(function (el) { el.textContent = S.FIRST_BATCH_SIZE; });
     document.querySelectorAll('[data-batch-two-cap]').forEach(function (el) { el.textContent = S.BATCH_TWO_CAP; });
     document.querySelectorAll('[data-deposit]').forEach(function (el) { el.textContent = '$' + S.DEPOSIT_AMOUNT; });
-    document.querySelectorAll('[data-sold-date]').forEach(function (el) { el.textContent = S.FIRST_BATCH_SOLD_OUT_DATE ? ' in ' + S.FIRST_BATCH_SOLD_OUT_DATE : ''; });
     if (document.title.indexOf('Spindle |') !== -1 && S.BRAND !== 'Spindle') document.title = document.title.replace(/Spindle \|/g, S.BRAND + ' |');
     var y = document.querySelector('[data-year]'); if (y) y.textContent = new Date().getFullYear();
   }
 
-  /* ---------- Meta pixel wrapper ---------- */
+  /* ---------- Meta pixel wrapper: the ONLY place events leave the page ----------
+     Every event goes through track(). It logs to window.SpindlePixel.log (and the console)
+     whether or not a real pixel id is set, so the funnel can be tested before the pixel exists.
+     Spindle needs its OWN pixel: never paste Ghost Audio's id into config.js. */
+  var PIX = window.SpindlePixel = { live: false, log: [] };
   function initPixel() {
     if (isPlaceholder(S.META_PIXEL_ID)) {
-      window.fbq = function () { if (window.console) console.log('[pixel placeholder]', Array.prototype.slice.call(arguments)); };
-      window.fbq('init', 'PLACEHOLDER'); window.fbq('track', 'PageView');
-      return;
+      window.fbq = function () {};
+    } else {
+      /* Standard Meta pixel bootstrap */
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      window.fbq('init', S.META_PIXEL_ID);
+      PIX.live = true;
     }
-    /* Standard Meta pixel bootstrap */
-    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
-    window.fbq('init', S.META_PIXEL_ID);
-    window.fbq('track', 'PageView');
+    track('PageView');
   }
-  function track(name, params) { try { window.fbq && window.fbq('track', name, params || {}); } catch (e) {} }
+  function track(name, params, eventID) {
+    params = params || {};
+    PIX.log.push({ event: name, params: params, eventID: eventID || null, live: PIX.live, t: Date.now() });
+    try { if (window.console) console.log(PIX.live ? '[pixel]' : '[pixel placeholder]', name, JSON.stringify(params), eventID || ''); } catch (e) {}
+    try { if (eventID) window.fbq('track', name, params, { eventID: eventID }); else window.fbq('track', name, params); } catch (e) {}
+  }
   window.track = track;
+
+  /* ---------- Ad attribution: UTM + click ids, first and last touch ---------- */
+  var ATTR_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term', 'fbclid', 'gclid', 'ttclid'];
+  function readAttr() { try { return JSON.parse(localStorage.getItem('spindle-attr') || 'null') || {}; } catch (e) { return {}; } }
+  function captureAttribution() {
+    var q, hit = {}, any = false;
+    try { q = new URLSearchParams(location.search); } catch (e) { return; }
+    ATTR_KEYS.forEach(function (k) { var v = q.get(k); if (v) { hit[k] = v.slice(0, 200); any = true; } });
+    var a = readAttr();
+    var touch = function () { return Object.assign({ landing_page: location.pathname.split('/').pop() || 'index.html', referrer: (document.referrer || '').slice(0, 300), ts: new Date().toISOString() }, hit); };
+    if (!a.first) a.first = touch();
+    if (any || !a.last) a.last = touch();
+    try { localStorage.setItem('spindle-attr', JSON.stringify(a)); } catch (e) {}
+  }
+  function cookie(n) { var m = document.cookie.match(new RegExp('(?:^|; )' + n + '=([^;]*)')); return m ? decodeURIComponent(m[1]) : ''; }
+  function attributionFields() {
+    var a = readAttr(), last = a.last || {}, first = a.first || {}, out = {};
+    ATTR_KEYS.forEach(function (k) { out[k] = last[k] || first[k] || ''; });
+    out.first_utm_source = first.utm_source || ''; out.first_utm_campaign = first.utm_campaign || '';
+    out.landing_page = last.landing_page || first.landing_page || ''; out.referrer = last.referrer || first.referrer || '';
+    out.first_seen = first.ts || ''; out.fbp = cookie('_fbp'); out.fbc = cookie('_fbc');
+    return out;
+  }
+  function newEventId(prefix) { return prefix + '-' + Date.now().toString(36) + '-' + Math.random().toString(36).slice(2, 8); }
 
   /* ---------- Selection state (shared between home, product, reserve) ---------- */
   var state = { sku: 'sconce', finish: 'chrome', withRecords: false };
@@ -49,11 +81,15 @@
     var ref = state.sku + '-' + state.finish + (state.sku === 'set' && state.withRecords ? '-records' : '');
     var base = S.STRIPE_PAYMENT_LINK;
     if (isPlaceholder(base)) return 'thanks-deposit.html?demo=1&ref=' + encodeURIComponent(ref);
-    return base + (base.indexOf('?') === -1 ? '?' : '&') + 'client_reference_id=' + encodeURIComponent(ref);
+    var at = attributionFields(), extra = '';
+    ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'].forEach(function (k) { if (at[k]) extra += '&' + k + '=' + encodeURIComponent(at[k]); });
+    return base + (base.indexOf('?') === -1 ? '?' : '&') + 'client_reference_id=' + encodeURIComponent(ref) + extra;
   }
   function wireDepositLinks() {
     document.querySelectorAll('[data-deposit-link]').forEach(function (a) {
       a.href = depositUrl();
+      if (a.hasAttribute('data-wired')) return;   /* this runs on every SKU/finish change: one listener per link, one event per click */
+      a.setAttribute('data-wired', '');
       a.addEventListener('click', function () {
         track('InitiateCheckout', { content_name: S.SKUS[state.sku].name + ' ' + S.FINISHES[state.finish].name, content_category: 'deposit', value: S.DEPOSIT_AMOUNT, currency: 'USD' });
         saveState();
@@ -102,8 +138,8 @@
         var v = l.querySelector('input').value; var on = v === state.sku;
         l.classList.toggle('selected', on); l.querySelector('input').checked = on;
       });
-      var p = document.querySelector('[data-price]'); if (p) p.textContent = '$' + price();
-      var n = document.querySelector('[data-sku-name]'); if (n) n.textContent = S.SKUS[state.sku].name;
+      document.querySelectorAll('[data-price]').forEach(function (p) { p.textContent = '$' + price(); });
+      document.querySelectorAll('[data-sku-name]').forEach(function (n) { n.textContent = S.SKUS[state.sku].name; });
       var setOpts = document.getElementById('set-options'); if (setOpts) setOpts.hidden = state.sku !== 'set';
       document.querySelectorAll('[data-includes]').forEach(function (el) { el.hidden = el.getAttribute('data-includes') !== state.sku; });
       wireDepositLinks(); updateSticky(); saveState();
@@ -156,37 +192,55 @@
     }
   }
 
-  /* ---------- Waitlist form ---------- */
+  /* ---------- Waitlist form ----------
+     Posts JSON to WAITLIST_FORM_ACTION (our /api/waitlist on Vercel, or any endpoint that accepts JSON,
+     Formspree included). Placeholder = demo: nothing is sent, the payload is kept in sessionStorage
+     ('spindle-wl-demo') so the funnel can be checked, and thanks.html shows the TEST MODE banner.
+     Lead fires ONCE, on thanks.html, and only after a real submit from this browser. */
   function wireWaitlist() {
     var f = document.getElementById('waitlist-form'); if (!f) return;
-    var demo = isPlaceholder(S.WAITLIST_FORM_ACTION);
-    if (!demo) { f.action = S.WAITLIST_FORM_ACTION; f.method = 'POST'; }
-    var nxt = f.querySelector('input[name=_next]'); if (nxt) nxt.value = location.origin + location.pathname.replace(/[^/]*$/, '') + 'thanks.html';
+    var demo = isPlaceholder(S.WAITLIST_FORM_ACTION), busy = false;
     f.addEventListener('submit', function (e) {
-      var email = f.querySelector('input[type=email]'), consent = f.querySelector('input[name=consent]'), err = document.getElementById('wl-err');
+      e.preventDefault(); if (busy) return;
+      var email = f.querySelector('input[type=email]'), consent = f.querySelector('input[name=consent]'), err = document.getElementById('wl-err'), fail = document.getElementById('wl-fail');
+      var trap = f.querySelector('input[name=_gotcha]'), version = f.querySelector('[name=version]'), btn = f.querySelector('button[type=submit]');
+      if (fail) fail.hidden = true;
       if (!email || !email.value || !email.validity.valid || (consent && !consent.checked)) {
-        e.preventDefault(); if (err) err.hidden = false; (email && (!email.value || !email.validity.valid) ? email : consent).focus(); return;
+        if (err) err.hidden = false; (email && (!email.value || !email.validity.valid) ? email : consent).focus(); return;
       }
       if (err) err.hidden = true;
-      track('Lead', { content_name: 'waitlist', content_category: 'waitlist' });
-      try { localStorage.setItem('spindle-waitlist', JSON.stringify({ email: email.value, finish: state.finish, sku: state.sku, t: Date.now() })); } catch (err) {}
-      if (demo) { e.preventDefault(); location.href = 'thanks.html?demo=1'; }
+      if (trap && trap.value) { location.href = 'thanks.html'; return; }   /* bot: look successful, record nothing */
+      var id = newEventId('lead');
+      var payload = Object.assign({ email: email.value.trim(), interest: version ? version.value : '', consent: true, page: location.pathname.split('/').pop() || 'index.html', event_id: id }, attributionFields());
+      var done = function (q) { try { sessionStorage.setItem('spindle-lead-pending', id); } catch (x) {} location.href = 'thanks.html' + (q || ''); };
+      if (demo) { try { sessionStorage.setItem('spindle-wl-demo', JSON.stringify(payload)); } catch (x) {} done('?demo=1'); return; }
+      busy = true; if (btn) btn.disabled = true;
+      fetch(S.WAITLIST_FORM_ACTION, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(payload) })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); done(''); })
+        .catch(function () { busy = false; if (btn) btn.disabled = false; if (fail) fail.hidden = false; });
     });
   }
 
-  /* ---------- Thanks pages fire the conversion events ---------- */
+  /* ---------- Thanks pages fire the conversion events (once each) ---------- */
   function wireThanks() {
     var t = document.body.getAttribute('data-thanks'); if (!t) return;
-    if (t === 'lead') track('Lead', { content_name: 'waitlist', status: 'confirmed' });
-    var qs = location.search, demo = /[?&]demo=1/.test(qs), hasSession = /[?&]session_id=/.test(qs);
+    var qs = location.search, demo = /[?&]demo=1/.test(qs), sid = (qs.match(/[?&]session_id=([^&]+)/) || [])[1];
+    if (t === 'lead') {
+      var lid = null; try { lid = sessionStorage.getItem('spindle-lead-pending'); sessionStorage.removeItem('spindle-lead-pending'); } catch (e) {}
+      if (lid) track('Lead', { content_name: 'waitlist', content_category: 'waitlist' }, lid);
+    }
     if (demo) document.querySelectorAll('[data-demo-banner]').forEach(function (el) { el.hidden = false; });
-    if (t === 'purchase' && !demo && !hasSession) {
+    if (t === 'purchase' && !demo && !sid) {
       /* someone opened this page without paying: never tell them a deposit is in, never fire Purchase */
       document.querySelectorAll('[data-has-session]').forEach(function (el) { el.hidden = true; });
       document.querySelectorAll('[data-no-session]').forEach(function (el) { el.hidden = false; });
       return;
     }
-    if (t === 'purchase' && hasSession) track('Purchase', { value: S.DEPOSIT_AMOUNT, currency: 'USD', content_name: 'batch-two-deposit', content_type: 'product', contents: [{ id: state.sku + '-' + state.finish, quantity: 1 }] });
+    if (t === 'purchase' && sid) {
+      var key = 'spindle-purchase-' + sid, seen = false;
+      try { seen = !!localStorage.getItem(key); localStorage.setItem(key, '1'); } catch (e) {}
+      if (!seen) track('Purchase', { value: S.DEPOSIT_AMOUNT, currency: 'USD', content_name: 'batch-two-deposit', content_type: 'product', contents: [{ id: state.sku + '-' + state.finish, quantity: 1 }] }, 'dep-' + sid);
+    }
     var sel = document.querySelector('[data-thanks-selection]');
     if (sel) sel.textContent = S.SKUS[state.sku].name + (S.FINISHES_OPEN ? ' in ' + S.FINISHES[state.finish].name : '');
   }
@@ -224,7 +278,7 @@
   }
 
   document.addEventListener('DOMContentLoaded', function () {
-    applyBrand(); initPixel(); wireNav(); wireHero(); wireSwatches(); wireSkus(); wireGallery(); wireSticky(); wireDepositLinks(); wireWaitlist(); wireThanks(); wireReveal(); updateSticky();
+    applyBrand(); captureAttribution(); initPixel(); wireNav(); wireHero(); wireSwatches(); wireSkus(); wireGallery(); wireSticky(); wireDepositLinks(); wireWaitlist(); wireThanks(); wireReveal(); updateSticky();
     if (document.body.getAttribute('data-page') === 'product') track('ViewContent', { content_name: S.SKUS[state.sku].name, value: price(), currency: 'USD' });
   });
 })();

@@ -2,35 +2,40 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Spindle | Change the record. Change the room.</title>
-<meta name="description" content="A wall light that holds a real 12-inch vinyl record and glows warm behind it. Nothing glued to your vinyl. From $89. Pre-order: hold one from batch two with a refundable $25.">
+<meta name="description" content="A wall light that holds a real 12-inch vinyl record and glows warm behind it. Nothing glued to your vinyl. From $99. Pre-order: hold one from batch two with a refundable $25.">
 <link rel="canonical" href="https://example.com/index.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Spindle">
 <meta property="og:title" content="Spindle | Change the record. Change the room.">
-<meta property="og:description" content="A wall light that holds a real 12-inch vinyl record and glows warm behind it. Nothing glued to your vinyl. From $89. Pre-order: hold one from batch two with a refundable $25.">
+<meta property="og:description" content="A wall light that holds a real 12-inch vinyl record and glows warm behind it. Nothing glued to your vinyl. From $99. Pre-order: hold one from batch two with a refundable $25.">
 <meta property="og:url" content="https://example.com/index.html">
 <meta property="og:image" content="https://example.com/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Spindle | Change the record. Change the room.">
-<meta name="twitter:description" content="A wall light that holds a real 12-inch vinyl record and glows warm behind it. Nothing glued to your vinyl. From $89. Pre-order: hold one from batch two with a refundable $25.">
+<meta name="twitter:description" content="A wall light that holds a real 12-inch vinyl record and glows warm behind it. Nothing glued to your vinyl. From $99. Pre-order: hold one from batch two with a refundable $25.">
 <meta name="twitter:image" content="https://example.com/img/og.jpg">
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="preload" as="font" type="font/woff2" href="fonts/inter-tight-latin.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="fonts/instrument-serif-italic-latin.woff2" crossorigin>
 <link rel="stylesheet" href="css/fonts.css">
 <link rel="stylesheet" href="css/style.css">
-<link rel="preload" as="image" href="img/sq-chrome-1080.webp" imagesrcset="img/sq-chrome-640.webp 640w, img/sq-chrome-1080.webp 1080w" imagesizes="(min-width: 900px) 66vw, 100vw" type="image/webp" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero3d-phone.webp" type="image/webp" media="(max-width: 899px)" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero3d-wide.webp" type="image/webp" media="(min-width: 900px)" fetchpriority="high">
+<script type="importmap">{"imports":{"three":"./js/vendor/three.module.min.js"}}</script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Product","name":"Spindle 12","brand":{"@type":"Brand","name":"Spindle"},
 "description":"A wall light that holds a real 12-inch vinyl record and glows warm on the wall behind it. Low-voltage plug-in, mirror-chrome dome cap. Nothing glued to the record. Pre-order: not yet shipping.",
 "image":["https://example.com/img/sq-chrome-1080.jpg"],
 "offers":[
- {"@type":"Offer","name":"Spindle Kit","price":"89","priceCurrency":"USD","availability":"https://schema.org/PreOrder","url":"https://example.com/product.html#kit"},
+ {"@type":"Offer","name":"Spindle Kit","price":"99","priceCurrency":"USD","availability":"https://schema.org/PreOrder","url":"https://example.com/product.html#kit"},
  {"@type":"Offer","name":"Spindle 12","price":"129","priceCurrency":"USD","availability":"https://schema.org/PreOrder","url":"https://example.com/product.html"},
  {"@type":"Offer","name":"Spindle 12, Named","price":"179","priceCurrency":"USD","availability":"https://schema.org/PreOrder","url":"https://example.com/product.html#named"}
 ]}
@@ -41,7 +46,7 @@
 </head>
 <body data-page="home">
 <a class="sr-only" href="#main">Skip to content</a>
-<div class="bar">First <span data-batch-size>20</span> sold out. Batch two: <span data-deposit>$25</span> refundable hold.</div>
+<div class="bar">The first <span data-batch-size>20</span> are spoken for. Batch two: <span data-deposit>$25</span> refundable hold.</div>
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="index.html" aria-label="Spindle home"><span class="mark" aria-hidden="true"></span><span data-brand>Spindle</span></a>
@@ -64,32 +69,34 @@
 </header>
 <main id="main">
 
-<section class="hero" id="top" aria-label="The Spindle in a dark room">
-  <div class="hero-media">
+<section class="hero3d" id="top" aria-label="The Spindle, a record on a wall with a warm glow behind it">
+  <div class="h3d-stage" data-sconce="hero">
     <picture>
-      <source type="image/webp" srcset="img/sq-chrome-640.webp 640w, img/sq-chrome-1080.webp 1080w" sizes="(min-width: 900px) 66vw, 100vw">
-      <img src="img/sq-chrome-1080.jpg" srcset="img/sq-chrome-640.jpg 640w, img/sq-chrome-1080.jpg 1080w" sizes="(min-width: 900px) 66vw, 100vw" alt="A black 12-inch record mounted flat on a wall with a mirror-chrome dome at its centre and a warm amber glow on the wall behind it. Computer rendering of the design." fetchpriority="high" decoding="async" width="1080" height="1080">
+      <source media="(min-width: 900px)" type="image/webp" srcset="img/hero3d-wide.webp">
+      <source media="(min-width: 900px)" srcset="img/hero3d-wide.jpg">
+      <source type="image/webp" srcset="img/hero3d-phone.webp">
+      <img src="img/hero3d-phone.jpg" alt="A black 12-inch record mounted on a wall with a mirror-chrome dome at its centre and a warm amber glow on the wall behind it. Computer rendering of the design." fetchpriority="high" decoding="async" width="830" height="1604">
     </picture>
-    <div class="hero-glow" aria-hidden="true"></div>
-    <div class="hero-vignette" aria-hidden="true"></div>
-  </div>
-  <div class="wrap hero-content">
-    <div>
-      <p class="eyebrow"><span class="dot"></span>First batch of <span data-batch-size>20</span> sold out</p>
-      <h1>Change the record.<br>Change the room.</h1>
-      <p class="tagline slogan">YOUR favorite records light up <em>YOUR favorite room</em></p>
-      <p class="hero-price">A wall light that holds a real record. From <b>$89</b> with your own record, <b>$129</b> with a vintage LP.</p>
-      <div class="hero-ctas">
-        <a class="btn btn-primary" href="reserve.html"><span>Hold mine for <span data-deposit>$25</span>, refundable</span></a>
-        <a class="btn btn-ghost" href="product.html">See Spindle 12</a>
-      </div>
-      <p class="hero-fine">Pre-order. Not built yet: pay <span data-deposit>$25</span> now, the rest when yours is ready. Free shipping in the lower 48.</p>
+    <div class="h3d-scrim" aria-hidden="true"></div>
+    <div class="h3d-foot" aria-hidden="true"></div>
+    <p class="h3d-hint" aria-hidden="true">Drag the record</p>
+    <div class="h3d-beat" aria-hidden="true">
+      <p class="tagline">One record. <em>One warm glow.</em></p>
+      <p class="mono">12 inches across. About 2 inches off the wall.</p>
     </div>
-    <div>
-      <div class="dimmer"><label for="dimmer">Dimmer</label><input id="dimmer" type="range" min="0" max="100" value="100" aria-label="Hero light dimmer"></div>
+    <div class="wrap h3d-copy">
+      <h1>Change the record.<br>Change the room.</h1>
+      <p class="hero-price">A wall light that holds a real record. From <b>$99</b> with your own record, <b>$129</b> with a vintage LP.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#pick">Make yours</a>
+        <a class="h3d-alt" href="reserve.html">or hold one for <span data-deposit>$25</span>, refundable</a>
+      </div>
+      <p class="hero-fine">Pre-order, not built yet. This is a 3D model of the design, not a photograph.</p>
     </div>
   </div>
 </section>
+<!-- PHOTO SLOT: the first real prototype photographs go here, directly under the hero, the day they exist.
+     Until then nothing sits here on purpose. Do not fill it with another rendering. -->
 
 <section class="section tight"><div class="wrap"><div class="trust">
   <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Nothing glued, drilled or stuck to your record.</span></div>
@@ -97,6 +104,64 @@
   <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span>Low voltage (12 V). Plugs into a normal outlet.</span></div>
   <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><span data-deposit>$25</span> hold, refundable any time before it ships.</span></div>
 </div></div></section>
+
+<section class="section" id="wall">
+  <div class="wrap two">
+    <div class="frame dark reveal"><picture class=""><source type="image/webp" srcset="img/wall-nine-900.webp 900w, img/wall-nine-1600.webp 1600w" sizes="(min-width: 900px) 50vw, 100vw"><img src="img/wall-nine-1600.jpg" srcset="img/wall-nine-900.jpg 900w, img/wall-nine-1600.jpg 1600w" sizes="(min-width: 900px) 50vw, 100vw" alt="Rendering of nine records in a three by three grid on a wall, each with a chrome dome and its own warm glow" loading="lazy" decoding="async" width="1600" height="1600"></picture></div>
+    <div class="reveal">
+      <p class="eyebrow"><span class="dot"></span>One, then a few</p>
+      <h2>One is a light. Nine is a collection.</h2>
+      <p class="muted">Every Spindle is its own plug-in light with its own record, so a wall grows one at a time: the first album you bought, the one from the wedding, the one you found for two dollars.</p>
+      <p class="caption">A computer rendering from the same 3D model, not a photograph. The labels are stand-ins. Each Spindle is sold on its own and needs its own outlet or a shared power strip.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="pick">
+  <div class="wrap">
+    <p class="eyebrow"><span class="dot"></span>Pick your record</p>
+    <h2 style="max-width:14em">Put your record on it.</h2>
+    <div class="pick-grid">
+      <div class="pick-stage frame dark" data-sconce="pick"><picture class=""><source type="image/webp" srcset="img/pick3d-640.webp 640w, img/pick3d-1080.webp 1080w" sizes="(min-width: 900px) 50vw, 100vw"><img src="img/pick3d-1080.jpg" srcset="img/pick3d-640.jpg 640w, img/pick3d-1080.jpg 1080w" sizes="(min-width: 900px) 50vw, 100vw" alt="Rendering of the Spindle seen straight on: black record, chrome dome, warm glow on the wall" loading="lazy" decoding="async" width="1080" height="1080"></picture></div>
+      <div class="pick-panel" data-pick>
+        <div class="pick-live">
+          <p class="muted">Type the record you would hang and watch it go on. Then drag it around.</p>
+          <div class="field"><label for="pick-artist">Artist</label><input id="pick-artist" data-pick-artist type="text" maxlength="40" autocomplete="off" autocapitalize="words" spellcheck="false" placeholder="Who is it by?"></div>
+          <div class="field"><label for="pick-title">Album</label><input id="pick-title" data-pick-title type="text" maxlength="48" autocomplete="off" autocapitalize="words" spellcheck="false" placeholder="What is it called?"></div>
+          <div class="pick-row"><span class="lbl">Label colour</span><div class="chips" role="group" aria-label="Label colour"><button type="button" class="chip" data-pick-color="#b4432e" aria-pressed="true" aria-label="Brick label" style="--c:#b4432e"><span></span></button><button type="button" class="chip" data-pick-color="#d8a53a" aria-pressed="false" aria-label="Mustard label" style="--c:#d8a53a"><span></span></button><button type="button" class="chip" data-pick-color="#2d6f6a" aria-pressed="false" aria-label="Teal label" style="--c:#2d6f6a"><span></span></button><button type="button" class="chip" data-pick-color="#27406b" aria-pressed="false" aria-label="Navy label" style="--c:#27406b"><span></span></button><button type="button" class="chip" data-pick-color="#e6dcc4" aria-pressed="false" aria-label="Cream label" style="--c:#e6dcc4"><span></span></button><button type="button" class="chip" data-pick-color="#1f1c1a" aria-pressed="false" aria-label="Black label" style="--c:#1f1c1a"><span></span></button></div></div>
+          <div class="pick-row">
+            <label class="btn btn-ghost pick-file"><input class="sr-only" data-pick-file type="file" accept="image/*">Use a photo of your label</label>
+            <div class="pick-photo" data-pick-photo-row hidden><label for="pick-zoom">Zoom</label><input id="pick-zoom" data-pick-zoom type="range" min="1" max="2.5" step="0.01" value="1"><button type="button" data-pick-clear>Remove photo</button></div>
+          </div>
+          <p class="pick-note">The label you type is a stand-in drawn in your browser. Your real record keeps its real label. A photo you add stays on your device: it is never uploaded. The model is a 3D rendering of the design, not a photograph.</p>
+        </div>
+        <p class="pick-off muted">The live model needs WebGL, which this browser has switched off or does not have. The picture is a rendering of the same design.</p>
+        <div class="pick-buy">
+          <h3>Now, whose record is it?</h3>
+          <div class="skus">
+            <label class="sku" id="kit">
+      <input type="radio" name="sku" value="kit">
+      <span><span class="t">Your record</span><br><span class="n">Spindle Kit</span><span class="b" style="display:block">You already own it. We send the light, the mount and the cap.</span></span>
+      <span class="pr">$99</span>
+    </label>
+            <label class="sku selected" id="sconce">
+      <input type="radio" name="sku" value="sconce" checked>
+      <span><span class="t">With a vintage LP</span><br><span class="n">Spindle 12</span><span class="b" style="display:block">We send a real used LP from the decade you pick. Our choice of title.</span></span>
+      <span class="pr">$129</span>
+    </label>
+            <label class="sku" id="named">
+      <input type="radio" name="sku" value="named">
+      <span><span class="t">You name the album</span><br><span class="n">Spindle 12, Named</span><span class="b" style="display:block">An original pressing you choose from our short menu.</span></span>
+      <span class="pr">$179</span>
+    </label>
+          </div>
+          <a class="btn btn-primary btn-block" data-deposit-link href="reserve.html"><span>Hold my <span data-sku-name>Spindle 12</span> for <span data-deposit>$25</span>, refundable</span></a>
+          <p class="form-note">Pre-order. Price when it ships: <b data-price style="color:var(--ink)">$129</b>, less your <span data-deposit>$25</span>. Free shipping in the lower 48.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section" id="story">
   <div class="wrap">
@@ -152,26 +217,12 @@
   </div>
 </section>
 
-<section class="section" id="swap">
-  <div class="wrap">
-    <div class="two rev">
-      <div class="reveal">
-        <p class="eyebrow"><span class="dot"></span>The sconce that takes requests</p>
-        <h2>Put up what you are playing this month.</h2>
-        <p class="muted">The dome is the only fastener. Unscrew it, lift the record, set the next one down, screw it back. A picture disc for a party. The pressing you found at the flea market. The album you have been meaning to frame for ten years.</p>
-        <p class="muted">Nothing is glued, taped or drilled. Felt holds the record and a clear washer guards the label.</p>
-      </div>
-      <div class="reveal"><div class="frame dark"><picture><source type="image/webp" srcset="img/cap-chrome.webp"><img src="img/cap-chrome.jpg" alt="Rendering of the chrome dome cap on a record label" loading="lazy" decoding="async" width="500" height="500" style="width:100%"></picture></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="section alt" id="proof">
+<section class="section" id="proof">
   <div class="wrap">
     <p class="eyebrow"><span class="dot"></span>Straight answers</p>
     <h2 style="max-width:16em">What is true today, in plain numbers.</h2>
     <div class="proof reveal" style="margin-top:28px">
-      <div class="card"><div class="num"><span data-batch-size>20</span> of <span data-batch-size>20</span></div><div class="label">First batch sold out<span data-sold-date></span> before this site went up. Those ship first. Batch two is capped at <span data-batch-two-cap>100</span>.</div></div>
+      <div class="card"><div class="num"><span data-batch-size>20</span> of <span data-batch-size>20</span></div><div class="label">The first batch was spoken for before this site went up. Those ship first. Batch two is capped at <span data-batch-two-cap>100</span>.</div></div>
       <div class="card"><div class="num">+6 F</div><div class="label">How much warmer than the room we calculate your record gets. Calculated, not yet measured. We test real units before any ship and post the results.</div></div>
       <div class="card"><div class="num">12 V</div><div class="label">Low voltage from a UL-listed plug-in adapter. The adapter is the listed part; the Spindle as a whole is not UL listed.</div></div>
     </div>
@@ -181,7 +232,7 @@
   </div>
 </section>
 
-<section class="section" id="faq-preview">
+<section class="section alt" id="faq-preview">
   <div class="wrap">
     <p class="eyebrow"><span class="dot"></span>The questions everyone asks</p>
     <h2>Heat, your record, wiring, refunds.</h2>
@@ -193,7 +244,7 @@
 <section class="section" id="reserve">
   <div class="wrap">
     <p class="eyebrow"><span class="dot"></span>Batch two</p>
-    <h2>First batch of <span data-batch-size>20</span> sold out<span data-sold-date></span>. Batch two is open.</h2>
+    <h2>The first <span data-batch-size>20</span> are spoken for. Batch two is open.</h2>
     <p class="lede">Two ways in. A refundable <span data-deposit>$25</span> hold saves you a unit. The free list just gets an email when the next batch opens.</p>
     <div class="reserve-grid" style="margin-top:32px">
       <div class="offer primary">
@@ -214,11 +265,9 @@
         <span class="pill">Free</span>
         <h3>Join the waitlist</h3>
         <p class="muted small">One email when batch two is ready to order, one when batch three opens. Nothing else.</p>
-        <form id="waitlist-form" action="#" method="get" novalidate>
-          <input type="hidden" name="_next" value="thanks.html">
-          <input type="hidden" name="_subject" value="Spindle waitlist signup">
+        <form id="waitlist-form" action="#" method="post" novalidate>
           <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <div class="field"><label for="wl-email">Email</label><input id="wl-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@example.com"><span class="field-err" id="wl-err" role="alert" hidden>Please enter a valid email and tick the box below.</span></div>
+          <div class="field"><label for="wl-email">Email</label><input id="wl-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@example.com"><span class="field-err" id="wl-err" role="alert" hidden>Please enter a valid email and tick the box below.</span><span class="field-err" id="wl-fail" role="alert" hidden>That did not go through. Please try again in a minute.</span></div>
           <div class="field"><label for="wl-finish">Which one are you leaning toward?</label>
             <select id="wl-finish" name="version"><option value="kit">Kit, my own record</option><option value="sconce">With a vintage LP</option><option value="named">I want to name the album</option><option value="undecided">Not sure yet</option></select></div>
           <label class="consent"><input type="checkbox" name="consent" required><span>Email me about batch two and three. Unsubscribe any time. See the <a href="privacy.html" class="u">privacy policy</a>.</span></label>
@@ -269,6 +318,15 @@
     </div>
   </div>
 </footer>
-
+<script type="module">
+const off = () => document.documentElement.classList.add('no3d');
+const c = navigator.connection;
+if ((c && (c.saveData || /2g/.test(c.effectiveType || ''))) || !window.WebGL2RenderingContext) off();
+else {
+  const go = () => import('./js/sconce3d.js').catch(off);
+  const idle = () => ('requestIdleCallback' in window ? requestIdleCallback(go, { timeout: 1200 }) : setTimeout(go, 200));
+  if (document.readyState === 'complete') idle(); else addEventListener('load', idle, { once: true });
+}
+</script>
 </body>
 </html>

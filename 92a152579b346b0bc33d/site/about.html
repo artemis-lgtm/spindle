@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>About | Spindle</title>
 <meta name="description" content="Designed in Fort Lauderdale by people who could not find a real-record wall light anywhere. Nothing glued to a record, ever.">
@@ -20,6 +21,8 @@
 <meta name="twitter:image" content="https://example.com/img/og.jpg">
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 <link rel="preload" as="font" type="font/woff2" href="fonts/inter-tight-latin.woff2" crossorigin>
 <link rel="preload" as="font" type="font/woff2" href="fonts/instrument-serif-italic-latin.woff2" crossorigin>
 <link rel="stylesheet" href="css/fonts.css">
@@ -30,7 +33,7 @@
 </head>
 <body data-page="about">
 <a class="sr-only" href="#main">Skip to content</a>
-<div class="bar">First <span data-batch-size>20</span> sold out. Batch two: <span data-deposit>$25</span> refundable hold.</div>
+<div class="bar">The first <span data-batch-size>20</span> are spoken for. Batch two: <span data-deposit>$25</span> refundable hold.</div>
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="index.html" aria-label="Spindle home"><span class="mark" aria-hidden="true"></span><span data-brand>Spindle</span></a>
@@ -73,7 +76,7 @@
 <section class="section" id="reserve">
   <div class="wrap">
     <p class="eyebrow"><span class="dot"></span>Batch two</p>
-    <h2>First batch of <span data-batch-size>20</span> sold out<span data-sold-date></span>. Batch two is open.</h2>
+    <h2>The first <span data-batch-size>20</span> are spoken for. Batch two is open.</h2>
     <p class="lede">Two ways in. A refundable <span data-deposit>$25</span> hold saves you a unit. The free list just gets an email when the next batch opens.</p>
     <div class="reserve-grid" style="margin-top:32px">
       <div class="offer primary">
@@ -94,11 +97,9 @@
         <span class="pill">Free</span>
         <h3>Join the waitlist</h3>
         <p class="muted small">One email when batch two is ready to order, one when batch three opens. Nothing else.</p>
-        <form id="waitlist-form" action="#" method="get" novalidate>
-          <input type="hidden" name="_next" value="thanks.html">
-          <input type="hidden" name="_subject" value="Spindle waitlist signup">
+        <form id="waitlist-form" action="#" method="post" novalidate>
           <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <div class="field"><label for="wl-email">Email</label><input id="wl-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@example.com"><span class="field-err" id="wl-err" role="alert" hidden>Please enter a valid email and tick the box below.</span></div>
+          <div class="field"><label for="wl-email">Email</label><input id="wl-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder="you@example.com"><span class="field-err" id="wl-err" role="alert" hidden>Please enter a valid email and tick the box below.</span><span class="field-err" id="wl-fail" role="alert" hidden>That did not go through. Please try again in a minute.</span></div>
           <div class="field"><label for="wl-finish">Which one are you leaning toward?</label>
             <select id="wl-finish" name="version"><option value="kit">Kit, my own record</option><option value="sconce">With a vintage LP</option><option value="named">I want to name the album</option><option value="undecided">Not sure yet</option></select></div>
           <label class="consent"><input type="checkbox" name="consent" required><span>Email me about batch two and three. Unsubscribe any time. See the <a href="privacy.html" class="u">privacy policy</a>.</span></label>
