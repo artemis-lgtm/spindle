@@ -30,10 +30,13 @@ window.SITE = {
   META_PIXEL_ID: 'REPLACE_WITH_PIXEL_ID',
   CONTACT_EMAIL: 'hello@example.com',                  // PLACEHOLDER
 
+  // PUBLIC: false while this is the password-gated, noindex preview. Set true for the real domain.
+  PUBLIC: false,
   // Label the live 3D model wears before the visitor types one. '' = the plain house label (drawn in the browser).
-  // 'img/label-zep4.jpg' = Austin's 2026-11-12 pick, a photo of a real pressing: a trademark/copyright question,
-  // so it is OFF on the public site until he decides. AUSTIN'S CALL.
-  LABEL_REF: '',
+  // 'img/label-zep4.jpg' = Austin's pick (2026-11-12: "just put the Led Zeppelin one on there, it's just for a
+  // reference"), a photo of a real pressing. Fine in the gated preview. MUST be '' before public launch
+  // (real label art = trademark/copyright): launch-check and launch-qa.js both fail if PUBLIC is true and this is set.
+  LABEL_REF: 'img/label-zep4.jpg',
 
   // Price ladder. DO NOT EDIT THE NUMBERS HERE: they are written by _gen/build.py from _gen/pages.py
   // (KIT_PRICE etc. at the top of that file). Edit there, then run python3 _gen/build.py.

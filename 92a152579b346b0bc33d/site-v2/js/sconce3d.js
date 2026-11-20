@@ -568,7 +568,7 @@ document.addEventListener('visibilitychange', () => run(!!active && !document.hi
 const labelState = { ...DEFAULT_LABEL, artist: '', title: '', photo: null, zoom: 1, custom: false, house: false };
 // Default label: the plain house label, drawn in the browser. SITE.LABEL_REF (js/config.js) can point at a
 // photo to wear instead until the visitor makes their own. Austin picked img/label-zep4.jpg on 2026-11-12, a
-// photo of a real pressing; it is switched OFF since 2026-11-20 (no real label art on the public site).
+// photo of a real pressing: on in the gated preview, must be '' before public launch (launch-check enforces it).
 let refLabel = null;
 const REF_SRC = (window.SITE && window.SITE.LABEL_REF) || '';
 const refReady = new Promise(res => { if (!REF_SRC) return res(); const im = new Image(); im.onload = () => { refLabel = im; res(); }; im.onerror = () => res(); im.src = REF_SRC; });
